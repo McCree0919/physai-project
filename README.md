@@ -204,8 +204,17 @@ python scripts/reach_debug.py evaluate --model results/reach_v1/Reach.onnx --epi
 
 ## 第 1 层：身体与静态抓握
 
-设计见 [LAYER1_DESIGN.md](docs/LAYER1_DESIGN.md)，身体与脚本攀爬验收见 [LAYER1_ACCEPTANCE.md](docs/LAYER1_ACCEPTANCE.md)，抖动/平台翻越核查见 [LAYER1_AUDIT.md](docs/LAYER1_AUDIT.md)。
+设计与范围见 [LAYER1_DESIGN.md](docs/LAYER1_DESIGN.md)，身体实测和逐场地结果见 [LAYER1_ACCEPTANCE.md](docs/LAYER1_ACCEPTANCE.md)。身体、脚本及手动控制器位于 `Assets/Scripts/Climber/`，与 Reach 独立；尚未接入强化学习。
 
-点击 **Tools → Build Layer 1 Climber Arenas**，打开 `Assets/Scenes/ClimberTraining.unity` 后点击 Play，16 个静态横档场地自动完成至少 3 次左右换手及翻上顶部平台。选中场地根节点查看臂长球、目标与施力/负载信息；身体组件 Log Diagnostics 可启用周期日志。
+编辑器菜单 **Tools → Build Layer 1 Climber Arenas** 生成并打开 `Assets/Scenes/ClimberTraining.unity`。点击 Play 并聚焦 Game 窗口，默认手动控制第 0 个场地。**F1** 重置并切换到 16 场地脚本演示，再按 F1 重置回手动。选中场地根节点查看手臂范围、目标、抓握状态、主动施力占比和峰值约束负载；身体组件勾选 `Log Diagnostics` 后每秒输出诊断。抓取使用层索引 8，通过组件 LayerMask 筛选，不修改项目层定义或碰撞矩阵。
 
-关闭 Unity 后运行 `.\scripts\test_layer1.ps1`，重建场景并执行全部 12 项身体/脚本 PlayMode 测试。结果在 `results/layer1-tests.xml`，日志在 `results/layer1-tests.log`。脚本恢复测试工具自动写入的编辑器设置，不保留 ProjectSettings 差异。手动控制器、HUD 和跟随相机在下一份提交中提供。
+**1/2/3** 选择左/右/双手；**WASD** 移动肩部相对目标的左右前后，**Q/E** 降低/升高目标；滚轮每格调整努力值 0.05（默认 0.70）；空格切换抓握请求；**R** 重置。已抓手按 Q 会抬升躯干，按 S 会使躯干向平台内移动。HUD 显示请求与实际抓握、冷却、努力值、主动施力比例、手目标、躯干高度和拒绝原因；相机跟随角色并覆盖墙面与顶部平台。完整的“换手攀爬→双手撑起→到达”按键顺序见 [LAYER1_MANUAL.md](docs/LAYER1_MANUAL.md)。
+
+关闭 Unity 后运行全部 PlayMode 测试：
+
+```powershell
+.\scripts\test_layer1.ps1
+# 自定义 Unity 路径时添加 -UnityPath 'D:\Unity\Editor\Unity.exe'
+```
+
+脚本重建场景，随后运行 Test Runner 并检查退出码、编译日志和 NUnit XML；测试命令不带 `-quit`，由 Test Runner 完成后退出。Unity 依赖与测试工具自动改写的编辑器设置会按运行前原始内容恢复。结果为 `results/layer1-tests.xml`，完整日志为 `results/layer1-tests.log`，生成/编译日志为 `results/layer1-generate.log`。

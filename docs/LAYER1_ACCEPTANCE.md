@@ -2,11 +2,13 @@
 
 日期：2026-11-09（America/Los_Angeles）。Unity 6000.3.24f1。设计按本次确认范围修订，未修改 Reach、第 0 层训练配置或 ProjectSettings。
 
-本页记录身体与脚本攀爬的自动化验收。额外抖动与翻越核查见 [LAYER1_AUDIT.md](LAYER1_AUDIT.md)。
+本页记录身体、脚本、手动接口和相机构图的自动化验收。实际按键操作顺序见 [LAYER1_MANUAL.md](LAYER1_MANUAL.md)。
+
+逐样本休眠、毫米位移、PD 力与独立翻越测试的专项证据见 [LAYER1_AUDIT.md](LAYER1_AUDIT.md)。身体独立版本 12/12 和包含手动功能的完整版本 15/15 均已验证。
 
 ## 结论
 
-**编译零错误，PlayMode 12/12 通过，0 失败、0 跳过，Unity 退出码 0。**
+**编译零错误，PlayMode 15/15 通过，0 失败、0 跳过，Unity 退出码 0。**
 
 1 个场地完成实际左右换手 3 次并到达顶部目标区域；16 个平移场地逐个通过。另测试 16 个绕 y 轴 ±30° 的场地，及保存后场景的正常 FixedUpdate 运行，均通过。所有成功都由躯干中心在区域内持续 0.30 s 且速度 <0.50 m/s 判定，不使用手部接触作为到达条件。
 
@@ -19,7 +21,7 @@
 - 场景：`Assets/Scenes/ClimberTraining.unity`，16 场地、每场地 4 个静态交替横档、实体顶部平台与中心目标区域。
 - 自动化：`Assets/Tests/PlayMode/ClimberTests.cs`、`scripts/test_layer1.ps1`。
 
-编辑器点击 **Tools → Build Layer 1 Climber Arenas**，打开 **Assets/Scenes/ClimberTraining.unity** 后点击 Play，脚本自动运行。选中场地根节点查看 Gizmo；Log Diagnostics 可启用周期日志。手动控制、HUD 和跟随相机单独提交。
+编辑器点击 **Tools → Build Layer 1 Climber Arenas**，打开 **Assets/Scenes/ClimberTraining.unity**，点击 Play 并聚焦 Game 窗口。默认手动控制第 0 个场地；F1 重置并切换脚本演示，再按 F1 回到手动。选中 ClimberArena 根物体可看臂长球、手目标、抓握状态、主动力占比和峰值约束负载；勾选身体组件的 Log Diagnostics 可每秒输出诊断。
 
 关闭 Unity 后复验：
 
@@ -78,6 +80,9 @@ u=0.10、0.25 无主动抬升；较高动作能够抬升。最大臂长未超过
 | GripBreaksButShoulderDoesNot | Passed |
 | LiftThresholdSweep(0.0f) | Passed |
 | LiftThresholdSweep(45.0f) | Passed |
+| ManualSelectionTargetsEffortAndModeOwnership | Passed |
+| ManualGrabRequiresReleaseBeforeRearmAndResetClearsGrip | Passed |
+| FollowCameraFramesBodyHandsAndPlatform | Passed |
 | ScriptedHandoversAndArrival(1,False) | Passed |
 | ScriptedHandoversAndArrival(16,False) | Passed |
 | ScriptedHandoversAndArrival(16,True) | Passed |
@@ -124,6 +129,6 @@ u=0.10、0.25 无主动抬升；较高动作能够抬升。最大臂长未超过
 
 测试临时切换运行时模拟模式/时间倍率，结束后恢复；没有保留 ProjectSettings 文件差异。Reach、原场景、原训练配置与 layer0-done 无差异。
 
-本轮未实现动态/运动学抓点、一般动态双手闭环、肩部扭矩预算、解锁旋转的角动量专项测试、完整事件系统、GetLoadState 扩展或强化学习。已经实现非径向内力的反作用力偶补偿。当前通过的是指定静态教学路线及夹具，不代表任意攀爬结构已可解。
+本轮未实现动态/运动学抓点、一般动态双手闭环、肩部扭矩预算、解锁旋转的角动量专项测试、完整事件系统、GetLoadState 扩展或强化学习。已经实现非径向内力的反作用力偶补偿。当前通过的是指定静态教学路线及夹具，不代表任意攀爬结构已可解；手动部分验证了命令接口、模式切换和取景，不是一次真人键盘通关录像。
 
 未创建提交。

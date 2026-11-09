@@ -16,9 +16,16 @@ public static class ClimberSceneBuilder
         material.staticFriction=material.dynamicFriction=.15f;material.frictionCombine=PhysicsMaterialCombine.Average;material.bounciness=0;material.bounceCombine=PhysicsMaterialCombine.Average;
         EditorUtility.SetDirty(material);
         var scene=EditorSceneManager.NewScene(NewSceneSetup.EmptyScene,NewSceneMode.Single);
-        for(int i=0;i<16;i++)ClimberArenaFactory.Create("ClimberArena_"+i,new Vector3((i%4)*5,0,(i/4)*5),material);
+        var bodies=new ClimberBody[16];
+        for(int i=0;i<16;i++)
+        {
+            bodies[i]=ClimberArenaFactory.Create("ClimberArena_"+i,new Vector3((i%4)*5,0,(i/4)*5),material);
+            bodies[i].GetComponent<ClimberScriptController>().enabled=false;
+        }
+        var controls=new GameObject("ManualControls").AddComponent<ClimberManualController>();controls.Configure(bodies);
         var camera=new GameObject("Camera",typeof(Camera),typeof(AudioListener));camera.tag="MainCamera";
         camera.transform.position=new Vector3(7.5f,14,-12);camera.transform.rotation=Quaternion.Euler(35,0,0);camera.GetComponent<Camera>().farClipPlane=100;
+        camera.AddComponent<ClimberFollowCamera>().Configure(controls);
         var light=new GameObject("Light",typeof(Light));light.GetComponent<Light>().type=LightType.Directional;light.transform.rotation=Quaternion.Euler(50,-30,0);
         EditorSceneManager.SaveScene(scene,"Assets/Scenes/ClimberTraining.unity");AssetDatabase.SaveAssets();
         Debug.Log("LAYER1_SCENE_GENERATED 16 static arenas");

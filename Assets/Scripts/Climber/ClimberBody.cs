@@ -14,7 +14,7 @@ namespace PhysicalAI.Climber
     {
         public Vector3 Position, Velocity, ShoulderPosition, TargetOffset, CommandForce;
         public Quaternion Rotation;
-        public bool Grabbed;
+        public bool Grabbed, GrabRequested, NeedsRearm;
         public float ArmLength, Effort, ForceFraction, PeakConstraintLoad, Cooldown;
     }
     public struct GripCandidate
@@ -215,6 +215,7 @@ namespace PhysicalAI.Climber
                 Velocity=transform.InverseTransformVector(hands[i].linearVelocity),ShoulderPosition=transform.InverseTransformPoint(Shoulder(i)),
                 Rotation=Quaternion.Inverse(transform.rotation)*hands[i].rotation,
                 TargetOffset=targets[i],CommandForce=transform.InverseTransformVector(forces[i]),Grabbed=held[i] && grips[i]!=null,
+                GrabRequested=wantsGrab[i],NeedsRearm=!(held[i] && grips[i]!=null) && !armed[i],
                 ArmLength=Vector3.Distance(hands[i].position,Shoulder(i)),Effort=appliedEffort[i],
                 ForceFraction=forces[i].magnitude/(held[i]?PullForce:FreeForce),PeakConstraintLoad=peak[i],Cooldown=cooldown[i]};
         }

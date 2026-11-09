@@ -155,7 +155,7 @@ PhysX 文档明确区分约束受力与驱动受力；驱动力不应被假定�
 
 ## 7. 身体与控制器接口
 
-身体组件是唯一可以施力、改变肩部驱动、创建/销毁抓握关节及执行重置的主体。手动控制器、脚本控制器、未来 ML-Agents 都只能提交身体命令或读取快照，不能直接访问 Rigidbody、Joint 或 Transform 进行修改。当前已实现脚本控制器，手动控制器将独立提交；本设计不预先确定 ML-Agents 的观察与奖励。
+身体组件是唯一可以施力、改变肩部驱动、创建/销毁抓握关节及执行重置的主体。手动控制器、脚本控制器、未来 ML-Agents 都只能提交身体命令或读取快照，不能直接访问 Rigidbody、Joint 或 Transform 进行修改。当前已实现脚本及手动控制器；本设计不预先确定 ML-Agents 的观察与奖励。
 
 ### 7.1 命令合同（设计签名，不是代码实现）
 
@@ -220,8 +220,8 @@ PD 不是只允许拉伸的绳索电机：手固定后，目标相对肩部位�
 
 目标区域是训练场局部的躯干中心区域：中心 (0,2.60,0.60) m，尺寸 (0.80,0.40,0.60) m，即 x∈[-0.40,0.40]、y∈[2.40,2.80]、z∈[0.30,0.90]。到达要求中心在区域内连续 0.30 s，且躯干线速度 <0.50 m/s。目标区域仅检测躯干中心，不以手接触触发成功；平台实体碰撞保持开启。
 
-## 12. 身体与脚本验收
+## 12. 本轮实现与实测记录
 
-身体和脚本控制器位于 `Assets/Scripts/Climber/`；Editor 生成器为 `Assets/Editor/ClimberSceneBuilder.cs`。本提交的默认场景使用脚本控制器，手动控制、HUD 和跟随相机单独提交。
+身体与脚本控制器分别位于 `Assets/Scripts/Climber/ClimberBody.cs` 和 `ClimberScriptController.cs`；手动输入/HUD 为 `ClimberManualController.cs`，相机为 `ClimberFollowCamera.cs`。Editor 场景生成器为 `Assets/Editor/ClimberSceneBuilder.cs`，生成 `Assets/Scenes/ClimberTraining.unity`。执行 `.\scripts\test_layer1.ps1` 可 batchmode 重建并运行全部 PlayMode 验收。当前扩展测试 15/15 通过，包含原有 1/16 场地换手与翻越测试、±30° 场地、保存场景加载，以及手动接口与相机构图。
 
-运行 `.\scripts\test_layer1.ps1`，全部 12 项身体/脚本 PlayMode 测试通过。详见 [LAYER1_ACCEPTANCE.md](LAYER1_ACCEPTANCE.md)。本轮额外核查的逐样本休眠、毫米位移、PD 力与平台翻越数据见 [LAYER1_AUDIT.md](LAYER1_AUDIT.md)。第 2 层延期项未实施。
+身体关键数值与逐场地结果见 [LAYER1_ACCEPTANCE.md](LAYER1_ACCEPTANCE.md)，手动操作顺序和新增测试见 [LAYER1_MANUAL.md](LAYER1_MANUAL.md)。手动默认努力值 0.70、滚轮步长 0.05；F1 重置并切换控制器，确保同一时刻只有一个控制器提交身体命令。HandState 增加只读抓握请求和重新武装状态，供 HUD 如实显示。第 2 层延期项未实施。

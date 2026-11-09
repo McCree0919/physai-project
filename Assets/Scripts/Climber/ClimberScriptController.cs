@@ -18,6 +18,12 @@ namespace PhysicalAI.Climber
         readonly int[] reachPhase=new int[2];
         readonly Vector3[] reachGoal={Vector3.one*999,Vector3.one*999};
         public void Configure(ClimberBody value,ClimberGoal target) {body=value;goal=target;}
+        public void RestartController()
+        {
+            next=0;stable=0;topLeft=topRight=clearedEdge=Completed=false;
+            Handovers=0;Elapsed=0;Stage="Climb";
+            for(int i=0;i<2;i++){reachPhase[i]=0;reachGoal[i]=Vector3.one*999;}
+        }
         internal void BeginTopPress() {next=4;topLeft=topRight=true;}
         void FixedUpdate() { Step(Time.fixedDeltaTime); }
         internal void Step(float dt)

@@ -229,6 +229,57 @@ public sealed class ClimberTests
         Debug.Log($"LAYER1_PRESS pos={b.GetBodyState().Position} stage={controller.Stage}");
         Assert.IsTrue(controller.Completed,"Press-up goal");
     }
+    ClimberManualController Manual(ClimberBody b)
+    {
+        var go=new GameObject("ManualTest");extras.Add(go);
+        var controls=go.AddComponent<ClimberManualController>();controls.Configure(new[]{b});controls.enabled=false;
+        return controls;
+    }
+    [Test] public void ManualSelectionTargetsEffortAndModeOwnership()
+    {
+        var b=Create(0,true);var controls=Manual(b);
+        Assert.IsFalse(b.GetComponent<ClimberScriptController>().enabled);
+        Assert.AreEqual(.7f,controls.Effort(HandId.Left),.0001f);
+        var left=controls.Target(HandId.Left);var right=controls.Target(HandId.Right);
+        controls.SelectHands(0);controls.MoveTarget(Vector3.up*.05f);
+        Assert.AreEqual(left+Vector3.up*.05f,controls.Target(HandId.Left));Assert.AreEqual(right,controls.Target(HandId.Right));
+        controls.SelectHands(2);controls.AdjustEffort(2);Assert.AreEqual(.8f,controls.Effort(HandId.Left),.0001f);Assert.AreEqual(.8f,controls.Effort(HandId.Right),.0001f);
+        controls.ToggleGrab();Assert.IsTrue(controls.GrabRequested(HandId.Left));Assert.IsTrue(controls.GrabRequested(HandId.Right));
+        controls.ToggleGrab();Assert.IsFalse(controls.GrabRequested(HandId.Left));Assert.IsFalse(controls.GrabRequested(HandId.Right));
+        controls.SetScriptMode(true);Assert.IsTrue(b.GetComponent<ClimberScriptController>().enabled);
+        controls.SetScriptMode(false);Assert.IsFalse(b.GetComponent<ClimberScriptController>().enabled);
+        Assert.Less(Vector3.Distance(new Vector3(0,.4f,-.4f),b.GetBodyState().Position),.0001f);
+        Assert.IsFalse(controls.GrabRequested(HandId.Left));Assert.AreEqual(.7f,controls.Effort(HandId.Left),.0001f);
+        HangFixture(b,0);Assert.IsTrue(b.GetHandState(HandId.Left).Grabbed);
+        controls.ResetToWall();Step(2);
+        Assert.IsFalse(b.GetHandState(HandId.Left).Grabbed);
+        Assert.Less(Vector3.Distance(new Vector3(0,.4f,-.4f),b.GetBodyState().Position),.02f,"R must clear an existing grip, not pull back to the old anchor");
+    }
+    [Test] public void ManualGrabRequiresReleaseBeforeRearmAndResetClearsGrip()
+    {
+        var b=Create(0,true);HangFixture(b,0);var controls=Manual(b);
+        // Adopt no hidden grab intent. A key press enables the request explicitly.
+        controls.SelectHands(0);controls.ToggleGrab();controls.SubmitCommands(.02f);Step();
+        b.Hand(0).AddForce(Vector3.down*100,ForceMode.Impulse);Step(2);controls.SubmitCommands(.02f);
+        Assert.IsFalse(b.GetHandState(HandId.Left).Grabbed);
+        Step(20);controls.SubmitCommands(.02f);
+        StringAssert.Contains("rearm",controls.GripReason(HandId.Left));
+        controls.ToggleGrab();Assert.IsFalse(controls.GrabRequested(HandId.Left));
+        controls.ToggleGrab();Assert.IsTrue(controls.GrabRequested(HandId.Left));
+        controls.ResetToWall();Assert.IsFalse(controls.GrabRequested(HandId.Left));Assert.IsFalse(b.GetHandState(HandId.Left).Grabbed);
+    }
+    [Test] public void FollowCameraFramesBodyHandsAndPlatform()
+    {
+        var b=Create(0,true);var controls=Manual(b);
+        var go=new GameObject("FollowTest",typeof(Camera));extras.Add(go);
+        var follow=go.AddComponent<ClimberFollowCamera>();follow.Configure(controls);follow.FrameTarget(.02f);
+        var camera=go.GetComponent<Camera>();
+        foreach(var p in new[]{b.GetBodyState().Position,b.GetHandState(HandId.Left).Position,b.GetHandState(HandId.Right).Position,new Vector3(-1,2,0),new Vector3(1,2,1.5f)})
+        {
+            var v=camera.WorldToViewportPoint(b.transform.TransformPoint(p));
+            Assert.Greater(v.z,0);Assert.That(v.x,Is.InRange(0f,1f));Assert.That(v.y,Is.InRange(0f,1f));
+        }
+    }
     [TestCase(1,false)] [TestCase(16,false)] [TestCase(16,true)] public void ScriptedHandoversAndArrival(int count,bool rotateArenas)
     {
         for(int i=0;i<count;i++)
@@ -265,6 +316,11 @@ public sealed class ClimberTests
             var c=root.GetComponent<ClimberScriptController>();if(c!=null)loaded.Add(c);
         }
         Assert.AreEqual(16,loaded.Count);Physics.SyncTransforms();
+        ClimberManualController manual=null;
+        foreach(var root in roots)if(root.TryGetComponent(out ClimberManualController found))manual=found;
+        Assert.NotNull(manual);Assert.IsFalse(manual.ScriptMode);
+        foreach(var c in loaded)Assert.IsFalse(c.enabled,"Saved scene defaults to manual ownership");
+        manual.SetScriptMode(true);
         Physics.simulationMode=SimulationMode.FixedUpdate;Time.timeScale=5;
         try
         {
