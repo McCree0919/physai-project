@@ -201,3 +201,11 @@ python scripts/reach_debug.py evaluate --model results/reach_v1/Reach.onnx --epi
 低摩擦降低了小动作死区，但持续满力仍可能把球推下平台；调试工具将此压力测试结果明确列为失败，不会自动增加阻尼或限速。`reach_v1` 沿用原 `config/reach.yaml` 训练 500000 步；原构建备份位于本机 `Builds/Reach_v0/`，原模型和训练结果保留在 `results/reach_v0/`。
 
 本轮实测结果见 [REACH_V1_EXPERIMENT.md](REACH_V1_EXPERIMENT.md)：v1 固定种子确定性评估 **112/112 成功**，原构建复评 v0 为 **0/112**。最后 10 个汇总窗口成功率均值由 5.54% 提升到 99.86%，平均回合长度由 178.92 降至 9.32 次决策。持续最大动作压力测试仍会出界，未为此追加其他改动。
+
+## 第 1 层：身体与静态抓握
+
+设计见 [LAYER1_DESIGN.md](docs/LAYER1_DESIGN.md)，身体与脚本攀爬验收见 [LAYER1_ACCEPTANCE.md](docs/LAYER1_ACCEPTANCE.md)，抖动/平台翻越核查见 [LAYER1_AUDIT.md](docs/LAYER1_AUDIT.md)。
+
+点击 **Tools → Build Layer 1 Climber Arenas**，打开 `Assets/Scenes/ClimberTraining.unity` 后点击 Play，16 个静态横档场地自动完成至少 3 次左右换手及翻上顶部平台。选中场地根节点查看臂长球、目标与施力/负载信息；身体组件 Log Diagnostics 可启用周期日志。
+
+关闭 Unity 后运行 `.\scripts\test_layer1.ps1`，重建场景并执行全部 12 项身体/脚本 PlayMode 测试。结果在 `results/layer1-tests.xml`，日志在 `results/layer1-tests.log`。脚本恢复测试工具自动写入的编辑器设置，不保留 ProjectSettings 差异。手动控制器、HUD 和跟随相机在下一份提交中提供。
