@@ -1,0 +1,65 @@
+{
+  "successes": 934,
+  "trials": 1040,
+  "failures": {
+    "unreachable": 103,
+    "fall": 3
+  },
+  "successTimeMedian": 10.8,
+  "successTimeRange": [
+    10.3,
+    18.3
+  ],
+  "maxConstraint": 64.92743,
+  "maxActive": 315.0,
+  "failureStages": {
+    "Rung0 phase=2": 48,
+    "Support lost at Rung0": 3,
+    "Rung0 phase=3": 13,
+    "Rung2 phase=2": 22,
+    "Rung4 phase=2": 12,
+    "Rung3 phase=1": 4,
+    "Rung2 phase=1": 4
+  },
+  "throughput": [
+    {
+      "arenas": 16,
+      "physics": 85210.69655829619,
+      "ticks": 5325.668534893512,
+      "decisions": 17043.205928630443,
+      "min": 17024.505374888602,
+      "max": 17068.373806252526,
+      "cv": 0.12914672446927536,
+      "minutes5M": 4.889533910597407,
+      "minutes20M": 19.55813564238963,
+      "episodes": 5952,
+      "successes": 5952
+    },
+    {
+      "arenas": 32,
+      "physics": 145438.1361864858,
+      "ticks": 4544.941755827681,
+      "decisions": 29087.62723729716,
+      "min": 28998.56089698612,
+      "max": 29244.775279657315,
+      "cv": 0.42825400349585163,
+      "minutes5M": 2.864906534090909,
+      "minutes20M": 11.459626136363635,
+      "episodes": 10240,
+      "successes": 10240
+    },
+    {
+      "arenas": 64,
+      "physics": 182606.19424504024,
+      "ticks": 2853.221785078754,
+      "decisions": 36521.23884900805,
+      "min": 36377.03592749534,
+      "max": 36755.62737269676,
+      "cv": 0.5227655867569758,
+      "minutes5M": 2.2817772879464284,
+      "minutes20M": 9.127109151785714,
+      "episodes": 13056,
+      "successes": 13056
+    }
+  ]
+}
