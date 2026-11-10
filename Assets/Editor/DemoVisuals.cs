@@ -99,6 +99,11 @@ public static class DemoVisuals
         foreach(var cam in Object.FindObjectsByType<Camera>(FindObjectsSortMode.None)){cam.clearFlags=CameraClearFlags.SolidColor;cam.backgroundColor=new Color(.07f,.08f,.1f);}
     }
 
+    public static void Overlay()
+    {
+        if(Object.FindFirstObjectByType<DemoHud>()==null)new GameObject("DemoHud").AddComponent<DemoHud>();
+    }
+
     [MenuItem("Tools/Demo/Apply Palette To Existing Scenes")]
     public static void ApplyToExistingScenes()
     {
@@ -109,6 +114,8 @@ public static class DemoVisuals
             var scene=EditorSceneManager.OpenScene(path,OpenSceneMode.Single);
             foreach(var body in Object.FindObjectsByType<ClimberBody>(FindObjectsSortMode.None))Dress(body,p);
             Lighting();
+            // The Layer 1 manual scene keeps its own control HUD and camera; the box scenes get the demo overlay.
+            if(path.Contains("Box"))Overlay();
             EditorSceneManager.SaveScene(scene);
         }
         AssetDatabase.SaveAssets();Debug.Log("DEMO_PALETTE_APPLIED "+string.Join(",",ExistingScenes));
