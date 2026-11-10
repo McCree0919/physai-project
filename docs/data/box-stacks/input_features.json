@@ -1,0 +1,1022 @@
+[
+  {
+    "difficulty": "Easy",
+    "seed": 0,
+    "features": {
+      "levels": 1,
+      "constructionLevels": 1,
+      "overhangCount": 0,
+      "exposedTopEdges": 4,
+      "coarseMinimumTransitions": 1,
+      "maxRise": 1.05,
+      "maxVerticalFace": 1.05000007,
+      "maxUntoppedRise": 1.05000007,
+      "maxOverhang": 0.0,
+      "maxGap": 0.0,
+      "totalHeight": 1.05
+    }
+  },
+  {
+    "difficulty": "Easy",
+    "seed": 1,
+    "features": {
+      "levels": 2,
+      "constructionLevels": 2,
+      "overhangCount": 0,
+      "exposedTopEdges": 5,
+      "coarseMinimumTransitions": 1,
+      "maxRise": 0.5,
+      "maxVerticalFace": 0.5,
+      "maxUntoppedRise": 0.5,
+      "maxOverhang": 0.0,
+      "maxGap": 0.0,
+      "totalHeight": 1.0
+    }
+  },
+  {
+    "difficulty": "Easy",
+    "seed": 2,
+    "features": {
+      "levels": 1,
+      "constructionLevels": 1,
+      "overhangCount": 0,
+      "exposedTopEdges": 4,
+      "coarseMinimumTransitions": 1,
+      "maxRise": 1.05,
+      "maxVerticalFace": 1.05000007,
+      "maxUntoppedRise": 1.05000007,
+      "maxOverhang": 0.0,
+      "maxGap": 0.0,
+      "totalHeight": 1.05
+    }
+  },
+  {
+    "difficulty": "Easy",
+    "seed": 3,
+    "features": {
+      "levels": 2,
+      "constructionLevels": 2,
+      "overhangCount": 0,
+      "exposedTopEdges": 5,
+      "coarseMinimumTransitions": 1,
+      "maxRise": 0.5,
+      "maxVerticalFace": 0.5,
+      "maxUntoppedRise": 0.5,
+      "maxOverhang": 0.0,
+      "maxGap": 0.0,
+      "totalHeight": 1.0
+    }
+  },
+  {
+    "difficulty": "Easy",
+    "seed": 4,
+    "features": {
+      "levels": 1,
+      "constructionLevels": 1,
+      "overhangCount": 0,
+      "exposedTopEdges": 4,
+      "coarseMinimumTransitions": 1,
+      "maxRise": 1.05,
+      "maxVerticalFace": 1.05000007,
+      "maxUntoppedRise": 1.05000007,
+      "maxOverhang": 0.0,
+      "maxGap": 0.0,
+      "totalHeight": 1.05
+    }
+  },
+  {
+    "difficulty": "Easy",
+    "seed": 5,
+    "features": {
+      "levels": 2,
+      "constructionLevels": 2,
+      "overhangCount": 0,
+      "exposedTopEdges": 5,
+      "coarseMinimumTransitions": 1,
+      "maxRise": 0.5,
+      "maxVerticalFace": 0.5,
+      "maxUntoppedRise": 0.5,
+      "maxOverhang": 0.0,
+      "maxGap": 0.0,
+      "totalHeight": 1.0
+    }
+  },
+  {
+    "difficulty": "Easy",
+    "seed": 6,
+    "features": {
+      "levels": 1,
+      "constructionLevels": 1,
+      "overhangCount": 0,
+      "exposedTopEdges": 4,
+      "coarseMinimumTransitions": 1,
+      "maxRise": 1.05,
+      "maxVerticalFace": 1.05000007,
+      "maxUntoppedRise": 1.05000007,
+      "maxOverhang": 0.0,
+      "maxGap": 0.0,
+      "totalHeight": 1.05
+    }
+  },
+  {
+    "difficulty": "Easy",
+    "seed": 7,
+    "features": {
+      "levels": 2,
+      "constructionLevels": 2,
+      "overhangCount": 0,
+      "exposedTopEdges": 5,
+      "coarseMinimumTransitions": 1,
+      "maxRise": 0.5,
+      "maxVerticalFace": 0.5,
+      "maxUntoppedRise": 0.5,
+      "maxOverhang": 0.0,
+      "maxGap": 0.0,
+      "totalHeight": 1.0
+    }
+  },
+  {
+    "difficulty": "Easy",
+    "seed": 8,
+    "features": {
+      "levels": 1,
+      "constructionLevels": 1,
+      "overhangCount": 0,
+      "exposedTopEdges": 4,
+      "coarseMinimumTransitions": 1,
+      "maxRise": 1.05,
+      "maxVerticalFace": 1.05000007,
+      "maxUntoppedRise": 1.05000007,
+      "maxOverhang": 0.0,
+      "maxGap": 0.0,
+      "totalHeight": 1.05
+    }
+  },
+  {
+    "difficulty": "Easy",
+    "seed": 9,
+    "features": {
+      "levels": 2,
+      "constructionLevels": 2,
+      "overhangCount": 0,
+      "exposedTopEdges": 5,
+      "coarseMinimumTransitions": 1,
+      "maxRise": 0.5,
+      "maxVerticalFace": 0.5,
+      "maxUntoppedRise": 0.5,
+      "maxOverhang": 0.0,
+      "maxGap": 0.0,
+      "totalHeight": 1.0
+    }
+  },
+  {
+    "difficulty": "Easy",
+    "seed": 10,
+    "features": {
+      "levels": 1,
+      "constructionLevels": 1,
+      "overhangCount": 0,
+      "exposedTopEdges": 4,
+      "coarseMinimumTransitions": 1,
+      "maxRise": 1.05,
+      "maxVerticalFace": 1.05000007,
+      "maxUntoppedRise": 1.05000007,
+      "maxOverhang": 0.0,
+      "maxGap": 0.0,
+      "totalHeight": 1.05
+    }
+  },
+  {
+    "difficulty": "Easy",
+    "seed": 11,
+    "features": {
+      "levels": 2,
+      "constructionLevels": 2,
+      "overhangCount": 0,
+      "exposedTopEdges": 5,
+      "coarseMinimumTransitions": 1,
+      "maxRise": 0.5,
+      "maxVerticalFace": 0.5,
+      "maxUntoppedRise": 0.5,
+      "maxOverhang": 0.0,
+      "maxGap": 0.0,
+      "totalHeight": 1.0
+    }
+  },
+  {
+    "difficulty": "Easy",
+    "seed": 12,
+    "features": {
+      "levels": 1,
+      "constructionLevels": 1,
+      "overhangCount": 0,
+      "exposedTopEdges": 4,
+      "coarseMinimumTransitions": 1,
+      "maxRise": 1.05,
+      "maxVerticalFace": 1.05000007,
+      "maxUntoppedRise": 1.05000007,
+      "maxOverhang": 0.0,
+      "maxGap": 0.0,
+      "totalHeight": 1.05
+    }
+  },
+  {
+    "difficulty": "Easy",
+    "seed": 13,
+    "features": {
+      "levels": 2,
+      "constructionLevels": 2,
+      "overhangCount": 0,
+      "exposedTopEdges": 5,
+      "coarseMinimumTransitions": 1,
+      "maxRise": 0.5,
+      "maxVerticalFace": 0.5,
+      "maxUntoppedRise": 0.5,
+      "maxOverhang": 0.0,
+      "maxGap": 0.0,
+      "totalHeight": 1.0
+    }
+  },
+  {
+    "difficulty": "Easy",
+    "seed": 14,
+    "features": {
+      "levels": 1,
+      "constructionLevels": 1,
+      "overhangCount": 0,
+      "exposedTopEdges": 4,
+      "coarseMinimumTransitions": 1,
+      "maxRise": 0.95,
+      "maxVerticalFace": 0.95,
+      "maxUntoppedRise": 0.95,
+      "maxOverhang": 0.0,
+      "maxGap": 0.0,
+      "totalHeight": 0.95
+    }
+  },
+  {
+    "difficulty": "Easy",
+    "seed": 15,
+    "features": {
+      "levels": 2,
+      "constructionLevels": 2,
+      "overhangCount": 0,
+      "exposedTopEdges": 5,
+      "coarseMinimumTransitions": 1,
+      "maxRise": 0.5,
+      "maxVerticalFace": 0.5,
+      "maxUntoppedRise": 0.5,
+      "maxOverhang": 0.0,
+      "maxGap": 0.0,
+      "totalHeight": 1.0
+    }
+  },
+  {
+    "difficulty": "Easy",
+    "seed": 16,
+    "features": {
+      "levels": 1,
+      "constructionLevels": 1,
+      "overhangCount": 0,
+      "exposedTopEdges": 4,
+      "coarseMinimumTransitions": 1,
+      "maxRise": 0.95,
+      "maxVerticalFace": 0.95,
+      "maxUntoppedRise": 0.95,
+      "maxOverhang": 0.0,
+      "maxGap": 0.0,
+      "totalHeight": 0.95
+    }
+  },
+  {
+    "difficulty": "Easy",
+    "seed": 17,
+    "features": {
+      "levels": 2,
+      "constructionLevels": 2,
+      "overhangCount": 0,
+      "exposedTopEdges": 5,
+      "coarseMinimumTransitions": 1,
+      "maxRise": 0.5,
+      "maxVerticalFace": 0.5,
+      "maxUntoppedRise": 0.5,
+      "maxOverhang": 0.0,
+      "maxGap": 0.0,
+      "totalHeight": 1.0
+    }
+  },
+  {
+    "difficulty": "Easy",
+    "seed": 18,
+    "features": {
+      "levels": 1,
+      "constructionLevels": 1,
+      "overhangCount": 0,
+      "exposedTopEdges": 4,
+      "coarseMinimumTransitions": 1,
+      "maxRise": 0.95,
+      "maxVerticalFace": 0.95,
+      "maxUntoppedRise": 0.95,
+      "maxOverhang": 0.0,
+      "maxGap": 0.0,
+      "totalHeight": 0.95
+    }
+  },
+  {
+    "difficulty": "Easy",
+    "seed": 19,
+    "features": {
+      "levels": 2,
+      "constructionLevels": 2,
+      "overhangCount": 0,
+      "exposedTopEdges": 5,
+      "coarseMinimumTransitions": 1,
+      "maxRise": 0.5,
+      "maxVerticalFace": 0.5,
+      "maxUntoppedRise": 0.5,
+      "maxOverhang": 0.0,
+      "maxGap": 0.0,
+      "totalHeight": 1.0
+    }
+  },
+  {
+    "difficulty": "Standard",
+    "seed": 0,
+    "features": {
+      "levels": 3,
+      "constructionLevels": 2,
+      "overhangCount": 1,
+      "exposedTopEdges": 7,
+      "coarseMinimumTransitions": 2,
+      "maxRise": 0.549999952,
+      "maxVerticalFace": 1.05000007,
+      "maxUntoppedRise": 1.0,
+      "maxOverhang": 0.0499999523,
+      "maxGap": 0.100000024,
+      "totalHeight": 1.55
+    }
+  },
+  {
+    "difficulty": "Standard",
+    "seed": 1,
+    "features": {
+      "levels": 3,
+      "constructionLevels": 3,
+      "overhangCount": 2,
+      "exposedTopEdges": 5,
+      "coarseMinimumTransitions": 2,
+      "maxRise": 0.950000048,
+      "maxVerticalFace": 0.95,
+      "maxUntoppedRise": 1.45,
+      "maxOverhang": 0.1500001,
+      "maxGap": 0.0,
+      "totalHeight": 1.95
+    }
+  },
+  {
+    "difficulty": "Standard",
+    "seed": 2,
+    "features": {
+      "levels": 2,
+      "constructionLevels": 2,
+      "overhangCount": 1,
+      "exposedTopEdges": 5,
+      "coarseMinimumTransitions": 1,
+      "maxRise": 1.0,
+      "maxVerticalFace": 1.0,
+      "maxUntoppedRise": 1.0,
+      "maxOverhang": 0.100000024,
+      "maxGap": 0.0,
+      "totalHeight": 1.5
+    }
+  },
+  {
+    "difficulty": "Standard",
+    "seed": 3,
+    "features": {
+      "levels": 4,
+      "constructionLevels": 3,
+      "overhangCount": 2,
+      "exposedTopEdges": 7,
+      "coarseMinimumTransitions": 2,
+      "maxRise": 0.549999952,
+      "maxVerticalFace": 1.05000007,
+      "maxUntoppedRise": 1.05000019,
+      "maxOverhang": 0.149999976,
+      "maxGap": 0.0999999642,
+      "totalHeight": 2.05
+    }
+  },
+  {
+    "difficulty": "Standard",
+    "seed": 4,
+    "features": {
+      "levels": 2,
+      "constructionLevels": 2,
+      "overhangCount": 1,
+      "exposedTopEdges": 5,
+      "coarseMinimumTransitions": 2,
+      "maxRise": 1.05,
+      "maxVerticalFace": 1.05000007,
+      "maxUntoppedRise": 1.05000019,
+      "maxOverhang": 0.100000024,
+      "maxGap": 0.0,
+      "totalHeight": 1.55
+    }
+  },
+  {
+    "difficulty": "Standard",
+    "seed": 5,
+    "features": {
+      "levels": 3,
+      "constructionLevels": 3,
+      "overhangCount": 2,
+      "exposedTopEdges": 6,
+      "coarseMinimumTransitions": 2,
+      "maxRise": 0.950000048,
+      "maxVerticalFace": 0.95,
+      "maxUntoppedRise": 0.950000048,
+      "maxOverhang": 0.1500001,
+      "maxGap": 0.0,
+      "totalHeight": 1.95
+    }
+  },
+  {
+    "difficulty": "Standard",
+    "seed": 6,
+    "features": {
+      "levels": 3,
+      "constructionLevels": 2,
+      "overhangCount": 0,
+      "exposedTopEdges": 8,
+      "coarseMinimumTransitions": 1,
+      "maxRise": 0.5,
+      "maxVerticalFace": 1.0,
+      "maxUntoppedRise": 1.0,
+      "maxOverhang": 0.0,
+      "maxGap": 0.100000024,
+      "totalHeight": 1.5
+    }
+  },
+  {
+    "difficulty": "Standard",
+    "seed": 7,
+    "features": {
+      "levels": 3,
+      "constructionLevels": 3,
+      "overhangCount": 2,
+      "exposedTopEdges": 5,
+      "coarseMinimumTransitions": -1,
+      "maxRise": 1.05,
+      "maxVerticalFace": 1.05000007,
+      "maxUntoppedRise": 1.55000019,
+      "maxOverhang": 0.149999976,
+      "maxGap": 0.0,
+      "totalHeight": 2.05
+    }
+  },
+  {
+    "difficulty": "Standard",
+    "seed": 8,
+    "features": {
+      "levels": 2,
+      "constructionLevels": 2,
+      "overhangCount": 1,
+      "exposedTopEdges": 5,
+      "coarseMinimumTransitions": 1,
+      "maxRise": 0.950000048,
+      "maxVerticalFace": 0.95,
+      "maxUntoppedRise": 0.950000048,
+      "maxOverhang": 0.0499999523,
+      "maxGap": 0.0,
+      "totalHeight": 1.45
+    }
+  },
+  {
+    "difficulty": "Standard",
+    "seed": 9,
+    "features": {
+      "levels": 4,
+      "constructionLevels": 3,
+      "overhangCount": 1,
+      "exposedTopEdges": 7,
+      "coarseMinimumTransitions": 2,
+      "maxRise": 0.5,
+      "maxVerticalFace": 1.0,
+      "maxUntoppedRise": 1.0,
+      "maxOverhang": 0.0499999523,
+      "maxGap": 0.100000024,
+      "totalHeight": 2.0
+    }
+  },
+  {
+    "difficulty": "Standard",
+    "seed": 10,
+    "features": {
+      "levels": 2,
+      "constructionLevels": 2,
+      "overhangCount": 1,
+      "exposedTopEdges": 5,
+      "coarseMinimumTransitions": 2,
+      "maxRise": 1.05,
+      "maxVerticalFace": 1.05000007,
+      "maxUntoppedRise": 1.05000019,
+      "maxOverhang": 0.100000024,
+      "maxGap": 0.0,
+      "totalHeight": 1.55
+    }
+  },
+  {
+    "difficulty": "Standard",
+    "seed": 11,
+    "features": {
+      "levels": 3,
+      "constructionLevels": 3,
+      "overhangCount": 2,
+      "exposedTopEdges": 6,
+      "coarseMinimumTransitions": 2,
+      "maxRise": 0.950000048,
+      "maxVerticalFace": 0.95,
+      "maxUntoppedRise": 0.950000048,
+      "maxOverhang": 0.200000048,
+      "maxGap": 0.0,
+      "totalHeight": 1.95
+    }
+  },
+  {
+    "difficulty": "Standard",
+    "seed": 12,
+    "features": {
+      "levels": 3,
+      "constructionLevels": 2,
+      "overhangCount": 0,
+      "exposedTopEdges": 8,
+      "coarseMinimumTransitions": 1,
+      "maxRise": 0.5,
+      "maxVerticalFace": 1.0,
+      "maxUntoppedRise": 1.0,
+      "maxOverhang": 0.0,
+      "maxGap": 0.100000024,
+      "totalHeight": 1.5
+    }
+  },
+  {
+    "difficulty": "Standard",
+    "seed": 13,
+    "features": {
+      "levels": 3,
+      "constructionLevels": 3,
+      "overhangCount": 2,
+      "exposedTopEdges": 5,
+      "coarseMinimumTransitions": 2,
+      "maxRise": 1.0,
+      "maxVerticalFace": 1.0,
+      "maxUntoppedRise": 1.5,
+      "maxOverhang": 0.149999976,
+      "maxGap": 0.0,
+      "totalHeight": 2.0
+    }
+  },
+  {
+    "difficulty": "Standard",
+    "seed": 14,
+    "features": {
+      "levels": 2,
+      "constructionLevels": 2,
+      "overhangCount": 1,
+      "exposedTopEdges": 5,
+      "coarseMinimumTransitions": 2,
+      "maxRise": 1.05,
+      "maxVerticalFace": 1.05000007,
+      "maxUntoppedRise": 1.05000019,
+      "maxOverhang": 0.25,
+      "maxGap": 0.0,
+      "totalHeight": 1.55
+    }
+  },
+  {
+    "difficulty": "Standard",
+    "seed": 15,
+    "features": {
+      "levels": 4,
+      "constructionLevels": 3,
+      "overhangCount": 1,
+      "exposedTopEdges": 8,
+      "coarseMinimumTransitions": 2,
+      "maxRise": 0.5,
+      "maxVerticalFace": 1.0,
+      "maxUntoppedRise": 1.0,
+      "maxOverhang": 0.0499999523,
+      "maxGap": 0.100000024,
+      "totalHeight": 1.95
+    }
+  },
+  {
+    "difficulty": "Standard",
+    "seed": 16,
+    "features": {
+      "levels": 2,
+      "constructionLevels": 2,
+      "overhangCount": 1,
+      "exposedTopEdges": 5,
+      "coarseMinimumTransitions": 1,
+      "maxRise": 1.0,
+      "maxVerticalFace": 1.0,
+      "maxUntoppedRise": 1.0,
+      "maxOverhang": 0.1500001,
+      "maxGap": 0.0,
+      "totalHeight": 1.5
+    }
+  },
+  {
+    "difficulty": "Standard",
+    "seed": 17,
+    "features": {
+      "levels": 3,
+      "constructionLevels": 3,
+      "overhangCount": 2,
+      "exposedTopEdges": 6,
+      "coarseMinimumTransitions": 3,
+      "maxRise": 1.05,
+      "maxVerticalFace": 1.05000007,
+      "maxUntoppedRise": 1.05000019,
+      "maxOverhang": 0.199999928,
+      "maxGap": 0.0,
+      "totalHeight": 2.05
+    }
+  },
+  {
+    "difficulty": "Standard",
+    "seed": 18,
+    "features": {
+      "levels": 3,
+      "constructionLevels": 2,
+      "overhangCount": 1,
+      "exposedTopEdges": 7,
+      "coarseMinimumTransitions": 1,
+      "maxRise": 0.5,
+      "maxVerticalFace": 1.0,
+      "maxUntoppedRise": 1.0,
+      "maxOverhang": 0.05000007,
+      "maxGap": 0.0999999642,
+      "totalHeight": 1.45
+    }
+  },
+  {
+    "difficulty": "Standard",
+    "seed": 19,
+    "features": {
+      "levels": 3,
+      "constructionLevels": 3,
+      "overhangCount": 2,
+      "exposedTopEdges": 5,
+      "coarseMinimumTransitions": 2,
+      "maxRise": 1.0,
+      "maxVerticalFace": 1.0,
+      "maxUntoppedRise": 1.5,
+      "maxOverhang": 0.100000024,
+      "maxGap": 0.0,
+      "totalHeight": 2.0
+    }
+  },
+  {
+    "difficulty": "Hard",
+    "seed": 0,
+    "features": {
+      "levels": 4,
+      "constructionLevels": 3,
+      "overhangCount": 2,
+      "exposedTopEdges": 11,
+      "coarseMinimumTransitions": 2,
+      "maxRise": 0.549999952,
+      "maxVerticalFace": 1.05000007,
+      "maxUntoppedRise": 0.5500002,
+      "maxOverhang": 0.149999976,
+      "maxGap": 0.200000048,
+      "totalHeight": 2.05
+    }
+  },
+  {
+    "difficulty": "Hard",
+    "seed": 1,
+    "features": {
+      "levels": 5,
+      "constructionLevels": 4,
+      "overhangCount": 3,
+      "exposedTopEdges": 12,
+      "coarseMinimumTransitions": 2,
+      "maxRise": 0.5,
+      "maxVerticalFace": 1.0,
+      "maxUntoppedRise": 0.5,
+      "maxOverhang": 0.250000119,
+      "maxGap": 0.24999994,
+      "totalHeight": 2.45
+    }
+  },
+  {
+    "difficulty": "Hard",
+    "seed": 2,
+    "features": {
+      "levels": 4,
+      "constructionLevels": 3,
+      "overhangCount": 2,
+      "exposedTopEdges": 11,
+      "coarseMinimumTransitions": 2,
+      "maxRise": 0.5,
+      "maxVerticalFace": 1.0,
+      "maxUntoppedRise": 0.5,
+      "maxOverhang": 0.200000048,
+      "maxGap": 0.300000072,
+      "totalHeight": 2.0
+    }
+  },
+  {
+    "difficulty": "Hard",
+    "seed": 3,
+    "features": {
+      "levels": 5,
+      "constructionLevels": 4,
+      "overhangCount": 3,
+      "exposedTopEdges": 12,
+      "coarseMinimumTransitions": 3,
+      "maxRise": 0.549999952,
+      "maxVerticalFace": 1.05000007,
+      "maxUntoppedRise": 0.5500002,
+      "maxOverhang": 0.399999976,
+      "maxGap": 0.349999964,
+      "totalHeight": 2.55
+    }
+  },
+  {
+    "difficulty": "Hard",
+    "seed": 4,
+    "features": {
+      "levels": 4,
+      "constructionLevels": 3,
+      "overhangCount": 2,
+      "exposedTopEdges": 11,
+      "coarseMinimumTransitions": 2,
+      "maxRise": 0.549999952,
+      "maxVerticalFace": 1.05000007,
+      "maxUntoppedRise": 0.5500002,
+      "maxOverhang": 0.149999976,
+      "maxGap": 0.399999976,
+      "totalHeight": 2.05
+    }
+  },
+  {
+    "difficulty": "Hard",
+    "seed": 5,
+    "features": {
+      "levels": 5,
+      "constructionLevels": 4,
+      "overhangCount": 3,
+      "exposedTopEdges": 12,
+      "coarseMinimumTransitions": 2,
+      "maxRise": 0.5,
+      "maxVerticalFace": 1.0,
+      "maxUntoppedRise": 0.5,
+      "maxOverhang": 0.250000119,
+      "maxGap": 0.200000048,
+      "totalHeight": 2.45
+    }
+  },
+  {
+    "difficulty": "Hard",
+    "seed": 6,
+    "features": {
+      "levels": 4,
+      "constructionLevels": 3,
+      "overhangCount": 2,
+      "exposedTopEdges": 11,
+      "coarseMinimumTransitions": 2,
+      "maxRise": 0.5,
+      "maxVerticalFace": 1.0,
+      "maxUntoppedRise": 0.5,
+      "maxOverhang": 0.299999952,
+      "maxGap": 0.25,
+      "totalHeight": 2.0
+    }
+  },
+  {
+    "difficulty": "Hard",
+    "seed": 7,
+    "features": {
+      "levels": 5,
+      "constructionLevels": 4,
+      "overhangCount": 3,
+      "exposedTopEdges": 12,
+      "coarseMinimumTransitions": 3,
+      "maxRise": 0.549999952,
+      "maxVerticalFace": 1.05000007,
+      "maxUntoppedRise": 0.5500002,
+      "maxOverhang": 0.3499999,
+      "maxGap": 0.299999952,
+      "totalHeight": 2.55
+    }
+  },
+  {
+    "difficulty": "Hard",
+    "seed": 8,
+    "features": {
+      "levels": 4,
+      "constructionLevels": 3,
+      "overhangCount": 2,
+      "exposedTopEdges": 11,
+      "coarseMinimumTransitions": 2,
+      "maxRise": 0.5,
+      "maxVerticalFace": 1.0,
+      "maxUntoppedRise": 0.5,
+      "maxOverhang": 0.200000048,
+      "maxGap": 0.350000024,
+      "totalHeight": 1.95
+    }
+  },
+  {
+    "difficulty": "Hard",
+    "seed": 9,
+    "features": {
+      "levels": 5,
+      "constructionLevels": 4,
+      "overhangCount": 3,
+      "exposedTopEdges": 12,
+      "coarseMinimumTransitions": 2,
+      "maxRise": 0.5,
+      "maxVerticalFace": 1.0,
+      "maxUntoppedRise": 0.5,
+      "maxOverhang": 0.250000119,
+      "maxGap": 0.399999976,
+      "totalHeight": 2.5
+    }
+  },
+  {
+    "difficulty": "Hard",
+    "seed": 10,
+    "features": {
+      "levels": 4,
+      "constructionLevels": 3,
+      "overhangCount": 2,
+      "exposedTopEdges": 11,
+      "coarseMinimumTransitions": 2,
+      "maxRise": 0.549999952,
+      "maxVerticalFace": 1.05000007,
+      "maxUntoppedRise": 0.5500002,
+      "maxOverhang": 0.25,
+      "maxGap": 0.200000048,
+      "totalHeight": 2.05
+    }
+  },
+  {
+    "difficulty": "Hard",
+    "seed": 11,
+    "features": {
+      "levels": 5,
+      "constructionLevels": 4,
+      "overhangCount": 3,
+      "exposedTopEdges": 12,
+      "coarseMinimumTransitions": 2,
+      "maxRise": 0.5,
+      "maxVerticalFace": 1.0,
+      "maxUntoppedRise": 0.5,
+      "maxOverhang": 0.350000024,
+      "maxGap": 0.25,
+      "totalHeight": 2.45
+    }
+  },
+  {
+    "difficulty": "Hard",
+    "seed": 12,
+    "features": {
+      "levels": 4,
+      "constructionLevels": 3,
+      "overhangCount": 2,
+      "exposedTopEdges": 11,
+      "coarseMinimumTransitions": 2,
+      "maxRise": 0.5,
+      "maxVerticalFace": 1.0,
+      "maxUntoppedRise": 0.5,
+      "maxOverhang": 0.125,
+      "maxGap": 0.300000072,
+      "totalHeight": 2.0
+    }
+  },
+  {
+    "difficulty": "Hard",
+    "seed": 13,
+    "features": {
+      "levels": 5,
+      "constructionLevels": 4,
+      "overhangCount": 3,
+      "exposedTopEdges": 12,
+      "coarseMinimumTransitions": 2,
+      "maxRise": 0.5,
+      "maxVerticalFace": 1.0,
+      "maxUntoppedRise": 0.5,
+      "maxOverhang": 0.249999881,
+      "maxGap": 0.350000024,
+      "totalHeight": 2.5
+    }
+  },
+  {
+    "difficulty": "Hard",
+    "seed": 14,
+    "features": {
+      "levels": 4,
+      "constructionLevels": 3,
+      "overhangCount": 2,
+      "exposedTopEdges": 11,
+      "coarseMinimumTransitions": 2,
+      "maxRise": 0.549999952,
+      "maxVerticalFace": 1.05000007,
+      "maxUntoppedRise": 0.5500002,
+      "maxOverhang": 0.350000024,
+      "maxGap": 0.400000036,
+      "totalHeight": 2.05
+    }
+  },
+  {
+    "difficulty": "Hard",
+    "seed": 15,
+    "features": {
+      "levels": 5,
+      "constructionLevels": 4,
+      "overhangCount": 3,
+      "exposedTopEdges": 12,
+      "coarseMinimumTransitions": 2,
+      "maxRise": 0.5,
+      "maxVerticalFace": 1.0,
+      "maxUntoppedRise": 0.5,
+      "maxOverhang": 0.4000001,
+      "maxGap": 0.200000048,
+      "totalHeight": 2.45
+    }
+  },
+  {
+    "difficulty": "Hard",
+    "seed": 16,
+    "features": {
+      "levels": 4,
+      "constructionLevels": 3,
+      "overhangCount": 2,
+      "exposedTopEdges": 11,
+      "coarseMinimumTransitions": 2,
+      "maxRise": 0.5,
+      "maxVerticalFace": 1.0,
+      "maxUntoppedRise": 0.5,
+      "maxOverhang": 0.200000048,
+      "maxGap": 0.24999994,
+      "totalHeight": 2.0
+    }
+  },
+  {
+    "difficulty": "Hard",
+    "seed": 17,
+    "features": {
+      "levels": 5,
+      "constructionLevels": 4,
+      "overhangCount": 3,
+      "exposedTopEdges": 12,
+      "coarseMinimumTransitions": 3,
+      "maxRise": 0.549999952,
+      "maxVerticalFace": 1.05000007,
+      "maxUntoppedRise": 0.5500002,
+      "maxOverhang": 0.25,
+      "maxGap": 0.299999952,
+      "totalHeight": 2.55
+    }
+  },
+  {
+    "difficulty": "Hard",
+    "seed": 18,
+    "features": {
+      "levels": 4,
+      "constructionLevels": 3,
+      "overhangCount": 2,
+      "exposedTopEdges": 11,
+      "coarseMinimumTransitions": 2,
+      "maxRise": 0.5,
+      "maxVerticalFace": 1.0,
+      "maxUntoppedRise": 0.5,
+      "maxOverhang": 0.300000072,
+      "maxGap": 0.349999964,
+      "totalHeight": 1.95
+    }
+  },
+  {
+    "difficulty": "Hard",
+    "seed": 19,
+    "features": {
+      "levels": 5,
+      "constructionLevels": 4,
+      "overhangCount": 3,
+      "exposedTopEdges": 12,
+      "coarseMinimumTransitions": 2,
+      "maxRise": 0.5,
+      "maxVerticalFace": 1.0,
+      "maxUntoppedRise": 0.5,
+      "maxOverhang": 0.3499999,
+      "maxGap": 0.399999976,
+      "totalHeight": 2.5
+    }
+  }
+]

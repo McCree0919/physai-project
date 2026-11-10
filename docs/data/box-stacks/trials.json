@@ -1,0 +1,3874 @@
+{
+    "trials": [
+        {
+            "difficulty": "Easy",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/easy-0.json",
+            "seed": 0,
+            "passed": true,
+            "features": {
+                "levels": 1,
+                "constructionLevels": 1,
+                "overhangCount": 0,
+                "exposedTopEdges": 4,
+                "coarseMinimumTransitions": 1,
+                "maxRise": 1.0499999523162842,
+                "maxVerticalFace": 1.0500000715255738,
+                "maxUntoppedRise": 1.0500000715255738,
+                "maxOverhang": 0.0,
+                "maxGap": 0.0,
+                "totalHeight": 1.0499999523162842
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "d279d8c2aa02311eb7a0f43064abb55bb781cfcb6b437e142d072a12c651bb4d",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 1,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0,
+                "boxes": [
+                    {
+                        "id": "base",
+                        "displacement": 1.8921704203478386e-9,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 1.9139132501067026e-9,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Easy",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/easy-1.json",
+            "seed": 1,
+            "passed": true,
+            "features": {
+                "levels": 2,
+                "constructionLevels": 2,
+                "overhangCount": 0,
+                "exposedTopEdges": 5,
+                "coarseMinimumTransitions": 1,
+                "maxRise": 0.5,
+                "maxVerticalFace": 0.5000045895576477,
+                "maxUntoppedRise": 0.5000002384185791,
+                "maxOverhang": 0.0,
+                "maxGap": 0.0,
+                "totalHeight": 1.0
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "4559161d92f2e146f50732fbb85007c285443ae74900ee409ced6db93f6f9cb0",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 2,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.000004112720489501953,
+                "boxes": [
+                    {
+                        "id": "base",
+                        "displacement": 3.833173707334936e-7,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 1.739510366860486e-7,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "step",
+                        "displacement": 0.000003082692728639813,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0000010515136636968237,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Easy",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/easy-2.json",
+            "seed": 2,
+            "passed": true,
+            "features": {
+                "levels": 1,
+                "constructionLevels": 1,
+                "overhangCount": 0,
+                "exposedTopEdges": 4,
+                "coarseMinimumTransitions": 1,
+                "maxRise": 1.0499999523162842,
+                "maxVerticalFace": 1.0500000715255738,
+                "maxUntoppedRise": 1.0500000715255738,
+                "maxOverhang": 0.0,
+                "maxGap": 0.0,
+                "totalHeight": 1.0499999523162842
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "c04073ed052e2550cb5115a97764a5029ed451bc63345cf989e37e6de959dcaf",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 1,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0,
+                "boxes": [
+                    {
+                        "id": "base",
+                        "displacement": 1.8921704203478386e-9,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 1.9139132501067026e-9,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Easy",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/easy-3.json",
+            "seed": 3,
+            "passed": true,
+            "features": {
+                "levels": 2,
+                "constructionLevels": 2,
+                "overhangCount": 0,
+                "exposedTopEdges": 5,
+                "coarseMinimumTransitions": 1,
+                "maxRise": 0.5,
+                "maxVerticalFace": 0.5000045895576477,
+                "maxUntoppedRise": 0.5000002384185791,
+                "maxOverhang": 0.0,
+                "maxGap": 0.0,
+                "totalHeight": 1.0
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "01566916cfa6a2f716aa6c3647d1477b2691fb2d4867d5b633f67700fb119589",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 2,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.000004112720489501953,
+                "boxes": [
+                    {
+                        "id": "base",
+                        "displacement": 3.833173707334936e-7,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 1.739510366860486e-7,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "step",
+                        "displacement": 0.000003082692728639813,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0000010515136636968237,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Easy",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/easy-4.json",
+            "seed": 4,
+            "passed": true,
+            "features": {
+                "levels": 1,
+                "constructionLevels": 1,
+                "overhangCount": 0,
+                "exposedTopEdges": 4,
+                "coarseMinimumTransitions": 1,
+                "maxRise": 1.0499999523162842,
+                "maxVerticalFace": 1.0500000715255738,
+                "maxUntoppedRise": 1.0500000715255738,
+                "maxOverhang": 0.0,
+                "maxGap": 0.0,
+                "totalHeight": 1.0499999523162842
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "e56dea7fb09cbfb2f437ccd51e81d859da496dd1f8a3f2baf8c86cedefdc3515",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 1,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0,
+                "boxes": [
+                    {
+                        "id": "base",
+                        "displacement": 1.8921704203478386e-9,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 1.9139132501067026e-9,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Easy",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/easy-5.json",
+            "seed": 5,
+            "passed": true,
+            "features": {
+                "levels": 2,
+                "constructionLevels": 2,
+                "overhangCount": 0,
+                "exposedTopEdges": 5,
+                "coarseMinimumTransitions": 1,
+                "maxRise": 0.5,
+                "maxVerticalFace": 0.5000045895576477,
+                "maxUntoppedRise": 0.5000002384185791,
+                "maxOverhang": 0.0,
+                "maxGap": 0.0,
+                "totalHeight": 1.0
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "d44fb875939f1d811bdc779c066301749f9ee251c5a774f9845cc3c1bea6a822",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 2,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.000004112720489501953,
+                "boxes": [
+                    {
+                        "id": "base",
+                        "displacement": 3.833173707334936e-7,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 1.739510366860486e-7,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "step",
+                        "displacement": 0.000003082692728639813,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0000010515136636968237,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Easy",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/easy-6.json",
+            "seed": 6,
+            "passed": true,
+            "features": {
+                "levels": 1,
+                "constructionLevels": 1,
+                "overhangCount": 0,
+                "exposedTopEdges": 4,
+                "coarseMinimumTransitions": 1,
+                "maxRise": 1.0499999523162842,
+                "maxVerticalFace": 1.0500000715255738,
+                "maxUntoppedRise": 1.0500000715255738,
+                "maxOverhang": 0.0,
+                "maxGap": 0.0,
+                "totalHeight": 1.0499999523162842
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "f23a05476dd1499814c6778cdb27154ffd441902057c3dfdca1776cea5681516",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 1,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0,
+                "boxes": [
+                    {
+                        "id": "base",
+                        "displacement": 1.8921704203478386e-9,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 1.9139132501067026e-9,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Easy",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/easy-7.json",
+            "seed": 7,
+            "passed": true,
+            "features": {
+                "levels": 2,
+                "constructionLevels": 2,
+                "overhangCount": 0,
+                "exposedTopEdges": 5,
+                "coarseMinimumTransitions": 1,
+                "maxRise": 0.5,
+                "maxVerticalFace": 0.5000045895576477,
+                "maxUntoppedRise": 0.5000002384185791,
+                "maxOverhang": 0.0,
+                "maxGap": 0.0,
+                "totalHeight": 1.0
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "5a79d73144939cbc6b506ce00e2efda77489381c22b388c81bfcb72695e8ac6e",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 2,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.000004112720489501953,
+                "boxes": [
+                    {
+                        "id": "base",
+                        "displacement": 3.833173707334936e-7,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 1.739510366860486e-7,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "step",
+                        "displacement": 0.000003082692728639813,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0000010515136636968237,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Easy",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/easy-8.json",
+            "seed": 8,
+            "passed": true,
+            "features": {
+                "levels": 1,
+                "constructionLevels": 1,
+                "overhangCount": 0,
+                "exposedTopEdges": 4,
+                "coarseMinimumTransitions": 1,
+                "maxRise": 1.0499999523162842,
+                "maxVerticalFace": 1.0500000715255738,
+                "maxUntoppedRise": 1.0500000715255738,
+                "maxOverhang": 0.0,
+                "maxGap": 0.0,
+                "totalHeight": 1.0499999523162842
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "1eded44cddec820ec055601b4ac38ebaffbf13cf8509fb1d5d891de290244ab2",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 1,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0,
+                "boxes": [
+                    {
+                        "id": "base",
+                        "displacement": 1.8921704203478386e-9,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 1.9139132501067026e-9,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Easy",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/easy-9.json",
+            "seed": 9,
+            "passed": true,
+            "features": {
+                "levels": 2,
+                "constructionLevels": 2,
+                "overhangCount": 0,
+                "exposedTopEdges": 5,
+                "coarseMinimumTransitions": 1,
+                "maxRise": 0.5,
+                "maxVerticalFace": 0.5000045895576477,
+                "maxUntoppedRise": 0.5000002384185791,
+                "maxOverhang": 0.0,
+                "maxGap": 0.0,
+                "totalHeight": 1.0
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "e1f42a1a28abe6f1c5a9402efb18f6bd31371c1f3b078b0accd11cd8f4a395da",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 2,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.000004112720489501953,
+                "boxes": [
+                    {
+                        "id": "base",
+                        "displacement": 3.833173707334936e-7,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 1.739510366860486e-7,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "step",
+                        "displacement": 0.000003082692728639813,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0000010515136636968237,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Easy",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/easy-10.json",
+            "seed": 10,
+            "passed": true,
+            "features": {
+                "levels": 1,
+                "constructionLevels": 1,
+                "overhangCount": 0,
+                "exposedTopEdges": 4,
+                "coarseMinimumTransitions": 1,
+                "maxRise": 1.0499999523162842,
+                "maxVerticalFace": 1.0500000715255738,
+                "maxUntoppedRise": 1.0500000715255738,
+                "maxOverhang": 0.0,
+                "maxGap": 0.0,
+                "totalHeight": 1.0499999523162842
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "4c6d8edcda7d5e90f5a67d7cca785925b7dfa713120cd01e46653092517fe943",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 1,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0,
+                "boxes": [
+                    {
+                        "id": "base",
+                        "displacement": 1.8921704203478386e-9,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 1.9139132501067026e-9,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Easy",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/easy-11.json",
+            "seed": 11,
+            "passed": true,
+            "features": {
+                "levels": 2,
+                "constructionLevels": 2,
+                "overhangCount": 0,
+                "exposedTopEdges": 5,
+                "coarseMinimumTransitions": 1,
+                "maxRise": 0.5,
+                "maxVerticalFace": 0.5000045895576477,
+                "maxUntoppedRise": 0.5000002384185791,
+                "maxOverhang": 0.0,
+                "maxGap": 0.0,
+                "totalHeight": 1.0
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "1704fcb2c9fb2d162451bbe4b899e0e688e21744f4ce0a47e7cb24986e38a32a",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 2,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.000004112720489501953,
+                "boxes": [
+                    {
+                        "id": "base",
+                        "displacement": 3.833173707334936e-7,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 1.739510366860486e-7,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "step",
+                        "displacement": 0.000003082692728639813,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0000010515136636968237,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Easy",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/easy-12.json",
+            "seed": 12,
+            "passed": true,
+            "features": {
+                "levels": 1,
+                "constructionLevels": 1,
+                "overhangCount": 0,
+                "exposedTopEdges": 4,
+                "coarseMinimumTransitions": 1,
+                "maxRise": 1.0499999523162842,
+                "maxVerticalFace": 1.0500000715255738,
+                "maxUntoppedRise": 1.0500000715255738,
+                "maxOverhang": 0.0,
+                "maxGap": 0.0,
+                "totalHeight": 1.0499999523162842
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "6791d422448c1ee544096aeaf5962acc1e53cd85ecfb9b106984cd07aa898c1e",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 1,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0,
+                "boxes": [
+                    {
+                        "id": "base",
+                        "displacement": 1.8921704203478386e-9,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 1.9139132501067026e-9,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Easy",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/easy-13.json",
+            "seed": 13,
+            "passed": true,
+            "features": {
+                "levels": 2,
+                "constructionLevels": 2,
+                "overhangCount": 0,
+                "exposedTopEdges": 5,
+                "coarseMinimumTransitions": 1,
+                "maxRise": 0.5,
+                "maxVerticalFace": 0.5000045895576477,
+                "maxUntoppedRise": 0.5000002384185791,
+                "maxOverhang": 0.0,
+                "maxGap": 0.0,
+                "totalHeight": 1.0
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "4413f17cc092bf41b44f4546f0d0557ad29aef73b96f8ea2ff69bd944304d80f",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 2,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.000004112720489501953,
+                "boxes": [
+                    {
+                        "id": "base",
+                        "displacement": 3.833173707334936e-7,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 1.739510366860486e-7,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "step",
+                        "displacement": 0.000003082692728639813,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0000010515136636968237,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Easy",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/easy-14.json",
+            "seed": 14,
+            "passed": true,
+            "features": {
+                "levels": 1,
+                "constructionLevels": 1,
+                "overhangCount": 0,
+                "exposedTopEdges": 4,
+                "coarseMinimumTransitions": 1,
+                "maxRise": 0.949999988079071,
+                "maxVerticalFace": 0.949999988079071,
+                "maxUntoppedRise": 0.949999988079071,
+                "maxOverhang": 0.0,
+                "maxGap": 0.0,
+                "totalHeight": 0.949999988079071
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "bad461b858441e91ccbb02bf4ec5c48451e83019d505c4af2888bbd634defa8b",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 1,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0,
+                "boxes": [
+                    {
+                        "id": "base",
+                        "displacement": 1.0085576818141818e-9,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 1.0265575056678245e-9,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Easy",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/easy-15.json",
+            "seed": 15,
+            "passed": true,
+            "features": {
+                "levels": 2,
+                "constructionLevels": 2,
+                "overhangCount": 0,
+                "exposedTopEdges": 5,
+                "coarseMinimumTransitions": 1,
+                "maxRise": 0.5,
+                "maxVerticalFace": 0.5000045895576477,
+                "maxUntoppedRise": 0.5000002384185791,
+                "maxOverhang": 0.0,
+                "maxGap": 0.0,
+                "totalHeight": 1.0
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "9fe7ebd1700de04563dadfb889d01aeee5555165b16b36d2e19b8bb20dafdc2e",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 2,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.000004112720489501953,
+                "boxes": [
+                    {
+                        "id": "base",
+                        "displacement": 3.833173707334936e-7,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 1.739510366860486e-7,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "step",
+                        "displacement": 0.000003082692728639813,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0000010515136636968237,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Easy",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/easy-16.json",
+            "seed": 16,
+            "passed": true,
+            "features": {
+                "levels": 1,
+                "constructionLevels": 1,
+                "overhangCount": 0,
+                "exposedTopEdges": 4,
+                "coarseMinimumTransitions": 1,
+                "maxRise": 0.949999988079071,
+                "maxVerticalFace": 0.949999988079071,
+                "maxUntoppedRise": 0.949999988079071,
+                "maxOverhang": 0.0,
+                "maxGap": 0.0,
+                "totalHeight": 0.949999988079071
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "1915656a104ac83c4ba8fe4bdc46fe2076841e8c18d8d70ac232fe185a3d4db2",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 1,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0,
+                "boxes": [
+                    {
+                        "id": "base",
+                        "displacement": 1.0085576818141818e-9,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 1.0265575056678245e-9,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Easy",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/easy-17.json",
+            "seed": 17,
+            "passed": true,
+            "features": {
+                "levels": 2,
+                "constructionLevels": 2,
+                "overhangCount": 0,
+                "exposedTopEdges": 5,
+                "coarseMinimumTransitions": 1,
+                "maxRise": 0.5,
+                "maxVerticalFace": 0.5000045895576477,
+                "maxUntoppedRise": 0.5000002384185791,
+                "maxOverhang": 0.0,
+                "maxGap": 0.0,
+                "totalHeight": 1.0
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "7bf1b6cafe47d143504ab175036c41873c142f7727fa406f76d9334fb97d89a6",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 2,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.000004112720489501953,
+                "boxes": [
+                    {
+                        "id": "base",
+                        "displacement": 3.833173707334936e-7,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 1.739510366860486e-7,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "step",
+                        "displacement": 0.000003082692728639813,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0000010515136636968237,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Easy",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/easy-18.json",
+            "seed": 18,
+            "passed": true,
+            "features": {
+                "levels": 1,
+                "constructionLevels": 1,
+                "overhangCount": 0,
+                "exposedTopEdges": 4,
+                "coarseMinimumTransitions": 1,
+                "maxRise": 0.949999988079071,
+                "maxVerticalFace": 0.949999988079071,
+                "maxUntoppedRise": 0.949999988079071,
+                "maxOverhang": 0.0,
+                "maxGap": 0.0,
+                "totalHeight": 0.949999988079071
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "7a4e6fd92d501c4739f90bc1b4416bd85523e0e821790e0389486703091b415a",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 1,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0,
+                "boxes": [
+                    {
+                        "id": "base",
+                        "displacement": 1.0085576818141818e-9,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 1.0265575056678245e-9,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Easy",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/easy-19.json",
+            "seed": 19,
+            "passed": true,
+            "features": {
+                "levels": 2,
+                "constructionLevels": 2,
+                "overhangCount": 0,
+                "exposedTopEdges": 5,
+                "coarseMinimumTransitions": 1,
+                "maxRise": 0.5,
+                "maxVerticalFace": 0.5000045895576477,
+                "maxUntoppedRise": 0.5000002384185791,
+                "maxOverhang": 0.0,
+                "maxGap": 0.0,
+                "totalHeight": 1.0
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "caf85ab32d7cbd94448b6ce3bf370772d645485bc99a8e77c6e7fa6918f20140",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 2,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.000004112720489501953,
+                "boxes": [
+                    {
+                        "id": "base",
+                        "displacement": 3.833173707334936e-7,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 1.739510366860486e-7,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "step",
+                        "displacement": 0.000003082692728639813,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0000010515136636968237,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Standard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/standard-0.json",
+            "seed": 0,
+            "passed": true,
+            "features": {
+                "levels": 3,
+                "constructionLevels": 2,
+                "overhangCount": 1,
+                "exposedTopEdges": 7,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 0.5499999523162842,
+                "maxVerticalFace": 1.0502291917800904,
+                "maxUntoppedRise": 1.0,
+                "maxOverhang": 0.05009293556213379,
+                "maxGap": 0.09999406337738037,
+                "totalHeight": 1.5499999523162842
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "4d95a266d836a94e709e37ccbc16159866328e6487be9078f1d25ed9360c4503",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 3,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.00014281272888183594,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.0000037105323826835958,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.000009135983418673277,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.00011029250163119286,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00007136484782677144,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "island",
+                        "displacement": 0.0,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Standard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/standard-1.json",
+            "seed": 1,
+            "passed": true,
+            "features": {
+                "levels": 3,
+                "constructionLevels": 3,
+                "overhangCount": 2,
+                "exposedTopEdges": 6,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 0.9500000476837158,
+                "maxVerticalFace": 0.9515995979309082,
+                "maxUntoppedRise": 0.950320839881897,
+                "maxOverhang": 0.15057170391082765,
+                "maxGap": 0.0,
+                "totalHeight": 1.9500000476837159
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "0c69bc5efb101c3ac6ccf90885c3b6260f9cb0580836d8883b02a32bf3660701",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 3,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0010403990745544434,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.00006379607657436281,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00006757256051059812,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.0008000776288099587,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0006650174618698657,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier2",
+                        "displacement": 0.001717284438200295,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.001284375204704702,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Standard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/standard-2.json",
+            "seed": 2,
+            "passed": true,
+            "features": {
+                "levels": 2,
+                "constructionLevels": 2,
+                "overhangCount": 1,
+                "exposedTopEdges": 5,
+                "coarseMinimumTransitions": 1,
+                "maxRise": 1.0,
+                "maxVerticalFace": 1.000082015991211,
+                "maxUntoppedRise": 0.9999721050262451,
+                "maxOverhang": 0.10003340244293213,
+                "maxGap": 0.0,
+                "totalHeight": 1.5
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "a0b3452cde1977b672546f8bd7acb47d2b1f23cbedd7a76f9190836f0e709afd",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 2,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.00007450580596923828,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.000011009955414920114,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.000005618277555186069,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.00008012866601347923,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.000040278941014548764,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Standard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/standard-3.json",
+            "seed": 3,
+            "passed": true,
+            "features": {
+                "levels": 4,
+                "constructionLevels": 3,
+                "overhangCount": 2,
+                "exposedTopEdges": 7,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 0.5499999523162842,
+                "maxVerticalFace": 1.0510826110839844,
+                "maxUntoppedRise": 1.0500421524047852,
+                "maxOverhang": 0.1507629156112671,
+                "maxGap": 0.09993064403533936,
+                "totalHeight": 2.049999952316284
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "beeca413b596612e23baab7d801ae371d57d5d51842dae0f72584ed2f2915c62",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 4,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0006098151206970215,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.00006894850957905874,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00005488440001499839,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.0006113160634413362,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0004982574610039592,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier2",
+                        "displacement": 0.0012353331549093128,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0009317469084635377,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "island",
+                        "displacement": 0.0,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Standard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/standard-4.json",
+            "seed": 4,
+            "passed": true,
+            "features": {
+                "levels": 2,
+                "constructionLevels": 2,
+                "overhangCount": 1,
+                "exposedTopEdges": 5,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 1.0499999523162842,
+                "maxVerticalFace": 1.050297498703003,
+                "maxUntoppedRise": 1.0500843524932862,
+                "maxOverhang": 0.10014498233795166,
+                "maxGap": 0.0,
+                "totalHeight": 1.5499999523162842
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "94627b578dff53766d16da8d3e3ec53dfd605cc58615f3100a0130870f4f9a7c",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 2,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.00018417835235595703,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.000006615629445150262,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.000011433853615017142,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.0001437548635294661,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0000908581423573196,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Standard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/standard-5.json",
+            "seed": 5,
+            "passed": true,
+            "features": {
+                "levels": 3,
+                "constructionLevels": 3,
+                "overhangCount": 2,
+                "exposedTopEdges": 6,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 0.9500000476837158,
+                "maxVerticalFace": 0.9505429863929749,
+                "maxUntoppedRise": 0.9497758150100708,
+                "maxOverhang": 0.15009582042694093,
+                "maxGap": 0.0,
+                "totalHeight": 1.9500000476837159
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "addf16e8760597367780730fad46e48ffcd443f4fb9cd6101c17866ff0b0e893",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 3,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0005158483982086182,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.00007800947059877217,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00003411226498428732,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.000532503763679415,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0002839764638338238,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier2",
+                        "displacement": 0.0007400959148071706,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0004747537022922188,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Standard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/standard-6.json",
+            "seed": 6,
+            "passed": true,
+            "features": {
+                "levels": 3,
+                "constructionLevels": 2,
+                "overhangCount": 0,
+                "exposedTopEdges": 8,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 0.5,
+                "maxVerticalFace": 1.0000909566879273,
+                "maxUntoppedRise": 1.0,
+                "maxOverhang": 0.0,
+                "maxGap": 0.0999910831451416,
+                "totalHeight": 1.5
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "5b253a70320bb229cfe159aeb5a6a4b15e4f17f114940e378f0227464f3f683f",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 3,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0000743865966796875,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.000006900826065248111,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.000004284403530618874,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.00006175982707645744,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.000034068230888806283,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "island",
+                        "displacement": 0.0,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Standard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/standard-7.json",
+            "seed": 7,
+            "passed": true,
+            "features": {
+                "levels": 3,
+                "constructionLevels": 3,
+                "overhangCount": 2,
+                "exposedTopEdges": 6,
+                "coarseMinimumTransitions": 3,
+                "maxRise": 1.0499999523162842,
+                "maxVerticalFace": 1.0511105060577393,
+                "maxUntoppedRise": 1.0501528978347779,
+                "maxOverhang": 0.15079498291015626,
+                "maxGap": 0.0,
+                "totalHeight": 2.049999952316284
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "5c71d77f075dcb2d669db8657b656e015a6beba53007a802f843182595af0553",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 3,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0006399154663085938,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.00007451614510500804,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00005652049367199652,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.0006424753810279071,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0005160412983968854,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier2",
+                        "displacement": 0.0012881169095635415,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0009720429079607129,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Standard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/standard-8.json",
+            "seed": 8,
+            "passed": true,
+            "features": {
+                "levels": 2,
+                "constructionLevels": 2,
+                "overhangCount": 1,
+                "exposedTopEdges": 5,
+                "coarseMinimumTransitions": 1,
+                "maxRise": 0.9500000476837158,
+                "maxVerticalFace": 0.9500468373298645,
+                "maxUntoppedRise": 0.949965238571167,
+                "maxOverhang": 0.050011396408081058,
+                "maxGap": 0.0,
+                "totalHeight": 1.4500000476837159
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "09f5e0931a17d2a11298ca0156fa3ee65434af038444420697c63754f81bbf5d",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 2,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.00005283951759338379,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.000009909816981235053,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.000004185013949609129,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.00006360149563988671,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.000029234131943667307,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Standard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/standard-9.json",
+            "seed": 9,
+            "passed": true,
+            "features": {
+                "levels": 4,
+                "constructionLevels": 3,
+                "overhangCount": 1,
+                "exposedTopEdges": 7,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 0.5,
+                "maxVerticalFace": 1.001266360282898,
+                "maxUntoppedRise": 1.0002365112304688,
+                "maxOverhang": 0.050436973571777347,
+                "maxGap": 0.09994339942932129,
+                "totalHeight": 2.0
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "7a856e21fff761c64bd19aa53c20f487c59362a5ac998d981c39d9112cee9859",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 4,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0008963346481323242,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.00004885772796114907,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0000494861051265616,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.0006450462969951332,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0005004237173125148,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier2",
+                        "displacement": 0.0012024847092106939,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0009291702299378812,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "island",
+                        "displacement": 0.0,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Standard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/standard-10.json",
+            "seed": 10,
+            "passed": true,
+            "features": {
+                "levels": 2,
+                "constructionLevels": 2,
+                "overhangCount": 1,
+                "exposedTopEdges": 5,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 1.0499999523162842,
+                "maxVerticalFace": 1.050297498703003,
+                "maxUntoppedRise": 1.0500843524932862,
+                "maxOverhang": 0.10014498233795166,
+                "maxGap": 0.0,
+                "totalHeight": 1.5499999523162842
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "882010c8170b9f92df69fd63c7d24d5be517b671d38f137c38fec2f08722f465",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 2,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.00018417835235595703,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.000006615629445150262,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.000011433853615017142,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.0001437548635294661,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0000908581423573196,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Standard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/standard-11.json",
+            "seed": 11,
+            "passed": true,
+            "features": {
+                "levels": 3,
+                "constructionLevels": 3,
+                "overhangCount": 2,
+                "exposedTopEdges": 6,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 0.9500000476837158,
+                "maxVerticalFace": 0.9505464434623718,
+                "maxUntoppedRise": 0.9498180150985718,
+                "maxOverhang": 0.20029115676879884,
+                "maxGap": 0.0,
+                "totalHeight": 1.9500000476837159
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "ac390837b2339749d2c47129d46a6affa812e06f7bf8a1ad212b1c4da0b13258",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 3,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.00047585368156433105,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.00007742649904685095,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.000039121943700592965,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.0005202500615268946,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00032730234670452774,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier2",
+                        "displacement": 0.0009156583109870553,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0005948332254774869,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Standard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/standard-12.json",
+            "seed": 12,
+            "passed": true,
+            "features": {
+                "levels": 3,
+                "constructionLevels": 2,
+                "overhangCount": 0,
+                "exposedTopEdges": 8,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 0.5,
+                "maxVerticalFace": 1.0000909566879273,
+                "maxUntoppedRise": 1.0,
+                "maxOverhang": 0.0,
+                "maxGap": 0.0999910831451416,
+                "totalHeight": 1.5
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "76ee43e99ee8ec155311d84b28460c2c812240faf45adc7904772ff1bd1991a4",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 3,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0000743865966796875,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.000006900826065248111,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.000004284403530618874,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.00006175982707645744,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.000034068230888806283,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "island",
+                        "displacement": 0.0,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Standard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/standard-13.json",
+            "seed": 13,
+            "passed": true,
+            "features": {
+                "levels": 3,
+                "constructionLevels": 3,
+                "overhangCount": 2,
+                "exposedTopEdges": 6,
+                "coarseMinimumTransitions": 3,
+                "maxRise": 1.0,
+                "maxVerticalFace": 1.0016026496887208,
+                "maxUntoppedRise": 1.0003256797790528,
+                "maxOverhang": 0.1505436897277832,
+                "maxGap": 0.0,
+                "totalHeight": 2.0
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "e92a51eece5e25a5e613acfa8010f72a49acb765d4cdd60b6766f59139c257e8",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 3,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.001043081283569336,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.00006372905772877857,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00006616511382162571,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.0007959317299537361,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0006596298771910369,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier2",
+                        "displacement": 0.001703243120573461,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0012714237673208118,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Standard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/standard-14.json",
+            "seed": 14,
+            "passed": true,
+            "features": {
+                "levels": 2,
+                "constructionLevels": 2,
+                "overhangCount": 1,
+                "exposedTopEdges": 5,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 1.0499999523162842,
+                "maxVerticalFace": 1.050403118133545,
+                "maxUntoppedRise": 1.050086259841919,
+                "maxOverhang": 0.25029098987579348,
+                "maxGap": 0.0,
+                "totalHeight": 1.5499999523162842
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "4bd93153d83c7e9f68c417418569821fe83d46cefafd217e1511e8850aab7232",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 2,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0002047419548034668,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.00001694549064268358,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.000018003247532760724,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.00022194140183273703,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00014026154531165957,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Standard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/standard-15.json",
+            "seed": 15,
+            "passed": true,
+            "features": {
+                "levels": 4,
+                "constructionLevels": 3,
+                "overhangCount": 1,
+                "exposedTopEdges": 8,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 0.5,
+                "maxVerticalFace": 1.0,
+                "maxUntoppedRise": 1.0,
+                "maxOverhang": 0.05009269714355469,
+                "maxGap": 0.09994924068450928,
+                "totalHeight": 1.9500000476837159
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "6aab434f707b45fac5de50ca6214062a2fa705d5c2aa66c3884ea78cf16574ad",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 4,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0006380677223205566,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.00004365409040474333,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.000037238500226521865,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.0004722015291918069,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0003551484551280737,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier2",
+                        "displacement": 0.0008518347749486566,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0006430943612940609,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "island",
+                        "displacement": 0.0,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Standard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/standard-16.json",
+            "seed": 16,
+            "passed": true,
+            "features": {
+                "levels": 2,
+                "constructionLevels": 2,
+                "overhangCount": 1,
+                "exposedTopEdges": 5,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 1.0,
+                "maxVerticalFace": 1.0002647638320923,
+                "maxUntoppedRise": 1.0000611543655396,
+                "maxOverhang": 0.15018141269683839,
+                "maxGap": 0.0,
+                "totalHeight": 1.5
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "4ff3c656a480bd4ef02f0d795c220e021207174a1a9a94a117b4316697722cc8",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 2,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0001442432403564453,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.00001132434408646077,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00001192884155898355,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.00014302962517831475,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00009031474473886192,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Standard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/standard-17.json",
+            "seed": 17,
+            "passed": true,
+            "features": {
+                "levels": 3,
+                "constructionLevels": 3,
+                "overhangCount": 2,
+                "exposedTopEdges": 6,
+                "coarseMinimumTransitions": 3,
+                "maxRise": 1.0499999523162842,
+                "maxVerticalFace": 1.0513583421707154,
+                "maxUntoppedRise": 1.0501937866210938,
+                "maxOverhang": 0.20100486278533936,
+                "maxGap": 0.0,
+                "totalHeight": 2.049999952316284
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "c3c7be44c6af99dbe51af157f65733d922055ca24a85dcf3f3faace4a2b2420c",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 3,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0007544755935668945,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.000085562038293574,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00006844617746537551,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.0007910466520115733,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0006407510372810066,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier2",
+                        "displacement": 0.001605328405275941,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0012171939015388489,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Standard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/standard-18.json",
+            "seed": 18,
+            "passed": true,
+            "features": {
+                "levels": 3,
+                "constructionLevels": 2,
+                "overhangCount": 1,
+                "exposedTopEdges": 7,
+                "coarseMinimumTransitions": 1,
+                "maxRise": 0.5,
+                "maxVerticalFace": 1.0,
+                "maxUntoppedRise": 1.0,
+                "maxOverhang": 0.05009102821350098,
+                "maxGap": 0.09999370574951172,
+                "totalHeight": 1.4500000476837159
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "5b3c7ad7a200cf49e85a01edefa875a3a216053b84638d4bb7a19b33d915c580",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 3,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.00013458728790283203,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.000003707021733134752,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.000008945753506850451,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.00010525453399168327,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00006840550486231223,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "island",
+                        "displacement": 0.0,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Standard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/standard-19.json",
+            "seed": 19,
+            "passed": true,
+            "features": {
+                "levels": 3,
+                "constructionLevels": 3,
+                "overhangCount": 2,
+                "exposedTopEdges": 6,
+                "coarseMinimumTransitions": 3,
+                "maxRise": 1.0,
+                "maxVerticalFace": 1.0015016794204713,
+                "maxUntoppedRise": 1.0002379417419434,
+                "maxOverhang": 0.10068285465240479,
+                "maxGap": 0.0,
+                "totalHeight": 2.0
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "ab666174f82bc1403cee974e46b79bc8e726a8516c4ee77e5530d49ce313c6b0",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 3,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0010243058204650879,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.00006472467794083059,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00005593158130068332,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.0007604903075844049,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0005731925484724343,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier2",
+                        "displacement": 0.0013713965890929103,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.001053973799571395,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Hard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/hard-0.json",
+            "seed": 0,
+            "passed": true,
+            "features": {
+                "levels": 4,
+                "constructionLevels": 3,
+                "overhangCount": 2,
+                "exposedTopEdges": 11,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 0.5499999523162842,
+                "maxVerticalFace": 1.0520551204681397,
+                "maxUntoppedRise": 0.5504409074783325,
+                "maxOverhang": 0.15096890926361085,
+                "maxGap": 0.19993430376052857,
+                "totalHeight": 2.049999952316284
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "61871db5b407c9443eebde59780d1b52110e830685b9906a3e4cdd14fabd7657",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 4,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0013480186462402344,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.00006731270696036518,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0000682226091157645,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.000959262193646282,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0007392456755042076,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier2",
+                        "displacement": 0.0018536194693297148,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0013877134770154954,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "island",
+                        "displacement": 0.0,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Hard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/hard-1.json",
+            "seed": 1,
+            "passed": true,
+            "features": {
+                "levels": 5,
+                "constructionLevels": 4,
+                "overhangCount": 3,
+                "exposedTopEdges": 12,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 0.5,
+                "maxVerticalFace": 1.0,
+                "maxUntoppedRise": 0.5000444650650024,
+                "maxOverhang": 0.2520139217376709,
+                "maxGap": 0.2498597502708435,
+                "totalHeight": 2.450000047683716
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "f09069bd0fbfa4eac076bfd92ccf01989fc12318e28a54337989903aadfa3d4f",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 5,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0031224489212036134,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.00022973040177021176,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.000050040107453241944,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.0023425414692610504,
+                        "angle": 0.2130623608827591,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00044258622801862657,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier2",
+                        "displacement": 0.005120232701301575,
+                        "angle": 0.18130818009376527,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0008189444779418409,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier3",
+                        "displacement": 0.0074635837227106098,
+                        "angle": 0.2272818237543106,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0010513825109228492,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "island",
+                        "displacement": 0.0,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Hard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/hard-2.json",
+            "seed": 2,
+            "passed": true,
+            "features": {
+                "levels": 4,
+                "constructionLevels": 3,
+                "overhangCount": 2,
+                "exposedTopEdges": 11,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 0.5,
+                "maxVerticalFace": 1.0014441013336182,
+                "maxUntoppedRise": 0.5000936985015869,
+                "maxOverhang": 0.2009267807006836,
+                "maxGap": 0.2999141216278076,
+                "totalHeight": 2.0
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "938b84bf406522b6d37d72df84b7c8027be0251ee8e02e01339291c47ea99f5e",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 4,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0009941458702087403,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.0000866088448674418,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00006424688763218,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.0009002158767543733,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0006321508553810418,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier2",
+                        "displacement": 0.00156476313713938,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0011600395664572716,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "island",
+                        "displacement": 0.0,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Hard",
+            "reason": "CollapsedOrRearranged",
+            "path": "",
+            "seed": 3,
+            "passed": false,
+            "features": {
+                "levels": 5,
+                "constructionLevels": 4,
+                "overhangCount": 3,
+                "exposedTopEdges": 12,
+                "coarseMinimumTransitions": 3,
+                "maxRise": 0.5499999523162842,
+                "maxVerticalFace": 1.0500000715255738,
+                "maxUntoppedRise": 0.5500001907348633,
+                "maxOverhang": 0.3999999761581421,
+                "maxGap": 0.34999996423721316,
+                "totalHeight": 2.549999952316284
+            },
+            "settlement": {
+                "passed": false,
+                "reason": "CollapsedOrRearranged",
+                "inputHash": "cde1fa3c1060dbe39f5100904ce57c38d0e7e0eed9a6ee7b601a055384fb984e",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 5,
+                "simulationSteps": 206,
+                "simulatedSeconds": 4.119998455047607,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.0017301603220403195,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 1.29381263256073,
+                        "angle": 90.00000762939453,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 1.0710209608078003e-8,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier2",
+                        "displacement": 2.5275518894195558,
+                        "angle": 149.82139587402345,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0011922902194783092,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier3",
+                        "displacement": 3.5977025032043459,
+                        "angle": 179.99522399902345,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0000978328607743606,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "island",
+                        "displacement": 0.0,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Hard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/hard-4.json",
+            "seed": 4,
+            "passed": true,
+            "features": {
+                "levels": 4,
+                "constructionLevels": 3,
+                "overhangCount": 2,
+                "exposedTopEdges": 11,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 0.5499999523162842,
+                "maxVerticalFace": 1.0519646406173707,
+                "maxUntoppedRise": 0.5504121780395508,
+                "maxOverhang": 0.1509106159210205,
+                "maxGap": 0.3999347686767578,
+                "totalHeight": 2.049999952316284
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "4cb504c356bb8709fa3b258e07becaa9a64def8d7d38dd2ba4f6470b1267f307",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 4,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0012965202331542969,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.0000656945921946317,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0000661236626910977,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.0009292842587456107,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0007118352805264294,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier2",
+                        "displacement": 0.0017764981603249908,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0013345220359042287,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "island",
+                        "displacement": 0.0,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Hard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/hard-5.json",
+            "seed": 5,
+            "passed": true,
+            "features": {
+                "levels": 5,
+                "constructionLevels": 4,
+                "overhangCount": 3,
+                "exposedTopEdges": 12,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 0.5,
+                "maxVerticalFace": 1.0,
+                "maxUntoppedRise": 0.5000373125076294,
+                "maxOverhang": 0.25105535984039309,
+                "maxGap": 0.1998266577720642,
+                "totalHeight": 2.450000047683716
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "ef908d5ee871721ff3737a042bfbca73a6716d9efeb43fcb640758f781ed8953",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 5,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0022430717945098879,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.00017895606288220733,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00009729234443511814,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.0017240921733900905,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0007265362655743957,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier2",
+                        "displacement": 0.0030174083076417448,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0012940438464283944,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier3",
+                        "displacement": 0.004293893463909626,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0017119274707511068,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "island",
+                        "displacement": 0.0,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 2.9802322387695315e-8,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Hard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/hard-6.json",
+            "seed": 6,
+            "passed": true,
+            "features": {
+                "levels": 4,
+                "constructionLevels": 3,
+                "overhangCount": 2,
+                "exposedTopEdges": 11,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 0.5,
+                "maxVerticalFace": 1.0015913248062134,
+                "maxUntoppedRise": 0.500129222869873,
+                "maxOverhang": 0.30040955543518069,
+                "maxGap": 0.24991095066070558,
+                "totalHeight": 2.0
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "44ac606b59c7b7a3af67f00942a09a5b1252e900e0d3143357955d9763430cf8",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 4,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0010774731636047364,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.00009026757470564917,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00006978915916988626,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.0009662127122282982,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0006925531197339296,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier2",
+                        "displacement": 0.0017328017856925727,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0012786007719114423,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "island",
+                        "displacement": 0.0,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Hard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/hard-7.json",
+            "seed": 7,
+            "passed": true,
+            "features": {
+                "levels": 5,
+                "constructionLevels": 4,
+                "overhangCount": 3,
+                "exposedTopEdges": 12,
+                "coarseMinimumTransitions": 3,
+                "maxRise": 0.5499999523162842,
+                "maxVerticalFace": 1.0558195114135743,
+                "maxUntoppedRise": 0.5512609481811523,
+                "maxOverhang": 0.3549013137817383,
+                "maxGap": 0.29998940229415896,
+                "totalHeight": 2.549999952316284
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "5caab796818f98cc06b3e713a586f8e5f5e3fa11dbe9a5c6f320ee88d8642e0b",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 5,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.003694474697113037,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.00048280926421284676,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.003194262972101569,
+                        "angle": 0.2438931167125702,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier2",
+                        "displacement": 0.006654504220932722,
+                        "angle": 0.2130623608827591,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier3",
+                        "displacement": 0.009413117542862893,
+                        "angle": 0.2406626045703888,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "island",
+                        "displacement": 0.0,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Hard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/hard-8.json",
+            "seed": 8,
+            "passed": true,
+            "features": {
+                "levels": 4,
+                "constructionLevels": 3,
+                "overhangCount": 2,
+                "exposedTopEdges": 11,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 0.5,
+                "maxVerticalFace": 1.0,
+                "maxUntoppedRise": 0.5000368356704712,
+                "maxOverhang": 0.20006895065307618,
+                "maxGap": 0.34993821382522585,
+                "totalHeight": 1.9500000476837159
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "dbca6565e24c962f65bbddf42b49e7292ad727a724dd66f132e69289145f69a3",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 4,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0005777180194854736,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.000059126839914824814,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.000031175084586720914,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.0005056624650023878,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0002845603448804468,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier2",
+                        "displacement": 0.0007544938125647605,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0005007341387681663,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "island",
+                        "displacement": 0.0,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Hard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/hard-9.json",
+            "seed": 9,
+            "passed": true,
+            "features": {
+                "levels": 5,
+                "constructionLevels": 4,
+                "overhangCount": 3,
+                "exposedTopEdges": 12,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 0.5,
+                "maxVerticalFace": 1.0057873725891114,
+                "maxUntoppedRise": 0.5013471841812134,
+                "maxOverhang": 0.25167763233184817,
+                "maxGap": 0.3998258113861084,
+                "totalHeight": 2.5
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "925c8ba4f2e6e8531ab6e0142b919d0869f280561ffef29ae98925028a3a9f6d",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 5,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0034540891647338869,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.0001845099322963506,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00011248619557591155,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.002563105896115303,
+                        "angle": 0.20174111425876618,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0007692521321587265,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier2",
+                        "displacement": 0.005171529483050108,
+                        "angle": 0.16785874962806703,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0013660469558089972,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier3",
+                        "displacement": 0.007292318157851696,
+                        "angle": 0.2093566507101059,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0018149970564991236,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "island",
+                        "displacement": 0.0,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Hard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/hard-10.json",
+            "seed": 10,
+            "passed": true,
+            "features": {
+                "levels": 4,
+                "constructionLevels": 3,
+                "overhangCount": 2,
+                "exposedTopEdges": 11,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 0.5499999523162842,
+                "maxVerticalFace": 1.0530611276626588,
+                "maxUntoppedRise": 0.5506341457366943,
+                "maxOverhang": 0.2517479658126831,
+                "maxGap": 0.19989335536956788,
+                "totalHeight": 2.049999952316284
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "36b45cd58122aeb6f2b394c6cc8bf76b9c781fa9bf87230ba933dbf53f3aa050",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 4,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0018120408058166504,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.00011397890193620697,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00003840212957584299,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.0014459999511018396,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00025766564067453146,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier2",
+                        "displacement": 0.0028709720354527237,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00043520727194845676,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "island",
+                        "displacement": 0.0,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Hard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/hard-11.json",
+            "seed": 11,
+            "passed": true,
+            "features": {
+                "levels": 5,
+                "constructionLevels": 4,
+                "overhangCount": 3,
+                "exposedTopEdges": 12,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 0.5,
+                "maxVerticalFace": 1.0,
+                "maxUntoppedRise": 0.5005155205726624,
+                "maxOverhang": 0.3523859977722168,
+                "maxGap": 0.24994564056396485,
+                "totalHeight": 2.450000047683716
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "99154fab3b26da5fd937f04434bea827a8c47da6896191cc0d4a03bcf8d083f2",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 5,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.003489553928375244,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.0003216070181224495,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.000051318951591383666,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.00247369846329093,
+                        "angle": 0.21670472621917725,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00021614128490909934,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier2",
+                        "displacement": 0.0054284678772091869,
+                        "angle": 0.20174111425876618,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0004273829981684685,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier3",
+                        "displacement": 0.00834749173372984,
+                        "angle": 0.2594430446624756,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0005903133423998952,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "island",
+                        "displacement": 0.0,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Hard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/hard-12.json",
+            "seed": 12,
+            "passed": true,
+            "features": {
+                "levels": 4,
+                "constructionLevels": 3,
+                "overhangCount": 2,
+                "exposedTopEdges": 11,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 0.5,
+                "maxVerticalFace": 1.000691533088684,
+                "maxUntoppedRise": 0.500037670135498,
+                "maxOverhang": 0.125166654586792,
+                "maxGap": 0.29993730783462527,
+                "totalHeight": 2.0
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "44bccc21286068bf73dac086c5a94887c5bdd8d8740bf5cb51a7f12101de9f9a",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 4,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0006169676780700684,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.00005938391404924914,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00003381086571607739,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.0005395275657065213,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0003187329857610166,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier2",
+                        "displacement": 0.0008211013046093285,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0005655373679473996,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "island",
+                        "displacement": 0.0,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Hard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/hard-13.json",
+            "seed": 13,
+            "passed": true,
+            "features": {
+                "levels": 5,
+                "constructionLevels": 4,
+                "overhangCount": 3,
+                "exposedTopEdges": 12,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 0.5,
+                "maxVerticalFace": 1.0058283805847169,
+                "maxUntoppedRise": 0.50139319896698,
+                "maxOverhang": 0.2512930631637573,
+                "maxGap": 0.34982341527938845,
+                "totalHeight": 2.5
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "14edf1410490b730ccd12dc6cf3388299990e630114f454ef940a2a4cecc47d2",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 5,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0034348368644714357,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.0001854432630352676,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00011695572902681306,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.002565783215686679,
+                        "angle": 0.20174111425876618,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0007864830549806356,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier2",
+                        "displacement": 0.005285009276121855,
+                        "angle": 0.16785874962806703,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0014052186161279679,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier3",
+                        "displacement": 0.007225880399346352,
+                        "angle": 0.17693865299224854,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0018575764261186123,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "island",
+                        "displacement": 0.0,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Hard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/hard-14.json",
+            "seed": 14,
+            "passed": true,
+            "features": {
+                "levels": 4,
+                "constructionLevels": 3,
+                "overhangCount": 2,
+                "exposedTopEdges": 11,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 0.5499999523162842,
+                "maxVerticalFace": 1.0527124404907227,
+                "maxUntoppedRise": 0.5504578351974487,
+                "maxOverhang": 0.35189056396484377,
+                "maxGap": 0.3998972177505493,
+                "totalHeight": 2.049999952316284
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "cfbe101c27c1df9d27e8c12b17b3f3ea24176f10f5cebabb4922a0ea2ff73ccf",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 4,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.001432180404663086,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.00010947314149234444,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00002884119749069214,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.0014801244251430035,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00016890255210455507,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier2",
+                        "displacement": 0.0028037941083312036,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0003012792149093002,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "island",
+                        "displacement": 0.0,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Hard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/hard-15.json",
+            "seed": 15,
+            "passed": true,
+            "features": {
+                "levels": 5,
+                "constructionLevels": 4,
+                "overhangCount": 3,
+                "exposedTopEdges": 12,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 0.5,
+                "maxVerticalFace": 1.0,
+                "maxUntoppedRise": 0.5005323886871338,
+                "maxOverhang": 0.40243101119995119,
+                "maxGap": 0.199948251247406,
+                "totalHeight": 2.450000047683716
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "ede17fea3a002496d047f0ff6bd25bfa4e60d150aa4b23011cf8ca780e925148",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 5,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0034146904945373537,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.00032098934752866626,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.000030488323318422772,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.0024459336418658497,
+                        "angle": 0.21670472621917725,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00011463897681096569,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier2",
+                        "displacement": 0.005290010944008827,
+                        "angle": 0.18974557518959046,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00022489258844871074,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier3",
+                        "displacement": 0.008217417635023594,
+                        "angle": 0.2533376216888428,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00031182970269583166,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "island",
+                        "displacement": 0.0,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Hard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/hard-16.json",
+            "seed": 16,
+            "passed": true,
+            "features": {
+                "levels": 4,
+                "constructionLevels": 3,
+                "overhangCount": 2,
+                "exposedTopEdges": 11,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 0.5,
+                "maxVerticalFace": 1.001815915107727,
+                "maxUntoppedRise": 0.5003707408905029,
+                "maxOverhang": 0.20116329193115235,
+                "maxGap": 0.2499316930770874,
+                "totalHeight": 2.0
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "f9e14d435948fc215d4123e34c5134a2686df4ea537b80de97a9bdcdbd4f9345",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 4,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0010613203048706055,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.00007609804742969573,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00007212766649900004,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.0009202282526530325,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.000717421411536634,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier2",
+                        "displacement": 0.001769867492839694,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0013502832734957338,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "island",
+                        "displacement": 0.0,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Hard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/hard-17.json",
+            "seed": 17,
+            "passed": true,
+            "features": {
+                "levels": 5,
+                "constructionLevels": 4,
+                "overhangCount": 3,
+                "exposedTopEdges": 12,
+                "coarseMinimumTransitions": 3,
+                "maxRise": 0.5499999523162842,
+                "maxVerticalFace": 1.0544676780700684,
+                "maxUntoppedRise": 0.5507956743240356,
+                "maxOverhang": 0.25301408767700198,
+                "maxGap": 0.2998408079147339,
+                "totalHeight": 2.549999952316284
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "9cf4fc607f97e5e7ec4ce871cff85c85807d27277b0e53df17994274756462d9",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 5,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0025793910026550295,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.00019501849601510912,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00007288617780432105,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.002282158238813281,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0005181519081816077,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier2",
+                        "displacement": 0.004371199756860733,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0009372337372042239,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier3",
+                        "displacement": 0.0059542544186115269,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0012285186676308513,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "island",
+                        "displacement": 0.0,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Hard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/hard-18.json",
+            "seed": 18,
+            "passed": true,
+            "features": {
+                "levels": 4,
+                "constructionLevels": 3,
+                "overhangCount": 2,
+                "exposedTopEdges": 11,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 0.5,
+                "maxVerticalFace": 1.0,
+                "maxUntoppedRise": 0.5000256896018982,
+                "maxOverhang": 0.30094361305236819,
+                "maxGap": 0.34988778829574587,
+                "totalHeight": 1.9500000476837159
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "3423654c03991b59a2606f356901a3f5b51421be4af308c486fbcdb8159384b5",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 4,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0017181634902954102,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.00011539424303919077,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.000037863650504732504,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.0014976371312513948,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00023135995434131473,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier2",
+                        "displacement": 0.0031746220774948599,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.00038246597978286445,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "island",
+                        "displacement": 0.0,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 2.9802322387695315e-8,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        },
+        {
+            "difficulty": "Hard",
+            "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+            "path": "structures/box-stacks/hard-19.json",
+            "seed": 19,
+            "passed": true,
+            "features": {
+                "levels": 5,
+                "constructionLevels": 4,
+                "overhangCount": 3,
+                "exposedTopEdges": 12,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 0.5,
+                "maxVerticalFace": 1.0068503618240357,
+                "maxUntoppedRise": 0.5022017955780029,
+                "maxOverhang": 0.3530399799346924,
+                "maxGap": 0.4000060558319092,
+                "totalHeight": 2.5
+            },
+            "settlement": {
+                "passed": true,
+                "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+                "inputHash": "0b0f9d84c6d5747c6e989a44fb42651e95be6a4aebbc02c4fd0fa04ff1897624",
+                "unityVersion": "6000.3.24f1",
+                "scope": "dynamic-settle-then-static",
+                "staticObjects": 1,
+                "dynamicObjects": 5,
+                "simulationSteps": 151,
+                "simulatedSeconds": 3.019998788833618,
+                "fixedDeltaTime": 0.019999992102384568,
+                "maxPenetration": 0.0035286545753479006,
+                "boxes": [
+                    {
+                        "id": "tier0",
+                        "displacement": 0.0003789143229369074,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier1",
+                        "displacement": 0.003289235522970557,
+                        "angle": 0.314035028219223,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier2",
+                        "displacement": 0.0075068967416882519,
+                        "angle": 0.2741122245788574,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "tier3",
+                        "displacement": 0.01111991424113512,
+                        "angle": 0.3333780765533447,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    },
+                    {
+                        "id": "island",
+                        "displacement": 0.0,
+                        "angle": 0.0,
+                        "speed": 0.0,
+                        "angularSpeed": 0.0,
+                        "windowDrift": 0.0,
+                        "windowAngle": 0.0,
+                        "sleeping": true
+                    }
+                ]
+            }
+        }
+    ]
+}

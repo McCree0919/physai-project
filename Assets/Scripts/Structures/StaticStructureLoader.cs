@@ -13,7 +13,9 @@ namespace PhysicalAI.Structures
         public static ClimberBody Load(StructureDocument doc,Vector3 position,Quaternion rotation,bool scripted=false)
         {
             // Never trust a validation stamp from an imported document.
-            var report=StaticStabilityValidator.Check(doc);
+            StabilityReport report;
+            if(Array.Exists(doc.objects,o=>o.settleAsDynamic)){report=BoxStackSettlement.Settle(doc,out var settled);if(report.passed)doc=settled;}
+            else report=StaticStabilityValidator.Check(doc);
             if(!report.passed)throw new InvalidDataException("Structure rejected: "+report.reason);
             var material=CreateMaterial(doc.materials[0]);
             ClimberBody body=null;

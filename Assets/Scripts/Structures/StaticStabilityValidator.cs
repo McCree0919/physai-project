@@ -11,13 +11,15 @@ namespace PhysicalAI.Structures
         public string reason,inputHash,unityVersion,scope="static-world-anchors";
         public int staticObjects,dynamicObjects,simulationSteps;
         public float simulatedSeconds,fixedDeltaTime,maxPenetration;
+        [Newtonsoft.Json.JsonProperty(NullValueHandling=Newtonsoft.Json.NullValueHandling.Ignore)] public BoxSettleMetrics[] boxes;
     }
     public static class StaticStabilityValidator
     {
         // Static supports are world anchors by definition. This does not certify free boxes.
-        public static StabilityReport Check(StructureDocument doc)
+        public static StabilityReport Check(StructureDocument doc,float penetrationTolerance=.002f)
         {
             StructureJson.Validate(doc);
+            if(Array.Exists(doc.objects,o=>o.settleAsDynamic))return BoxStackSettlement.Check(doc);
             var report=new StabilityReport {inputHash=StructureJson.Hash(doc),unityVersion=Application.unityVersion,staticObjects=doc.objects.Length,fixedDeltaTime=Time.fixedDeltaTime};
             Scene scene;
 #if UNITY_EDITOR
@@ -37,7 +39,7 @@ namespace PhysicalAI.Structures
                     if(Penetration(boxes[i],boxes[j],out float depth))
                     {
                         report.maxPenetration=Mathf.Max(report.maxPenetration,depth);
-                        if(depth>.002f){report.reason="overlap: "+doc.objects[i].id+" / "+doc.objects[j].id;return report;}
+                        if(depth>penetrationTolerance){report.reason="overlap: "+doc.objects[i].id+" / "+doc.objects[j].id;return report;}
                     }
                 }
                 // Check the three spawn bodies and goal torso clearances, not only supports.
@@ -49,9 +51,9 @@ namespace PhysicalAI.Structures
                 };
                 Physics.SyncTransforms();
                 foreach(var probe in probes)foreach(var box in boxes)
-                    if(Penetration(probe,box,out float depth)&&depth>.002f){report.reason="clearance: "+probe.name+" / "+box.name;return report;}
+                    if(Penetration(probe,box,out float depth)&&depth>penetrationTolerance){report.reason="clearance: "+probe.name+" / "+box.name;return report;}
                 for(int i=0;i<3;i++)for(int j=i+1;j<3;j++)
-                    if(Penetration(probes[i],probes[j],out float depth)&&depth>.002f){report.reason="spawn bodies overlap";return report;}
+                    if(Penetration(probes[i],probes[j],out float depth)&&depth>penetrationTolerance){report.reason="spawn bodies overlap";return report;}
                 foreach(var probe in probes)probe.gameObject.SetActive(false);
                 var positions=new Vector3[boxes.Count];var rotations=new Quaternion[boxes.Count];
                 for(int i=0;i<boxes.Count;i++){positions[i]=boxes[i].transform.position;rotations[i]=boxes[i].transform.rotation;}
@@ -93,7 +95,14 @@ namespace PhysicalAI.Structures
         static bool Penetration(Collider a,Collider b,out float depth) => Physics.ComputePenetration(a,a.transform.position,a.transform.rotation,b,b.transform.position,b.transform.rotation,out _,out depth);
         public static StabilityReport SaveVerified(string path,StructureDocument doc)
         {
-            var report=Check(doc);if(!report.passed)throw new InvalidDataException("Save rejected: "+report.reason);
+            StabilityReport report;
+            if(Array.Exists(doc.objects,o=>o.settleAsDynamic))
+            {
+                report=BoxStackSettlement.Settle(doc,out var settled);
+                if(report.passed){doc.objects=settled.objects;doc.goal=settled.goal;doc.generator.features=settled.generator.features;report.inputHash=StructureJson.Hash(doc);}
+            }
+            else report=Check(doc);
+            if(!report.passed)throw new InvalidDataException("Save rejected: "+report.reason);
             doc.validation=report;
             string text=StructureJson.Serialize(doc);StructureJson.Parse(text);
             string absolute=Path.GetFullPath(path);Directory.CreateDirectory(Path.GetDirectoryName(absolute));

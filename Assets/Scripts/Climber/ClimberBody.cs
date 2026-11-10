@@ -152,6 +152,7 @@ namespace PhysicalAI.Climber
             float above=Vector3.Dot(hands[i].position-point,normal);
             if(Vector3.Dot(normal,transform.up)<.7071067f || above<-.005f) {result.Reason="NotTop";return result;}
             if(Vector3.Distance(hands[i].position,point)>.111f) {result.Reason="NoContact";return result;}
+            if(!GripClearance.IsClear(box,point,transform,torso,hands[0],hands[1])) {result.Reason="TopOccluded";return result;}
             if(hands[i].linearVelocity.magnitude>1f) {result.Reason="TooFast";return result;}
             int other=1-i;
             if(captured[other]==box && Vector3.Distance(hands[i].position,hands[other].position)<.22f)

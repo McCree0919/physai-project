@@ -225,6 +225,8 @@ python scripts/reach_debug.py evaluate --model results/reach_v1/Reach.onnx --epi
 
 补充决定及对应调整见 [LAYER2_DESIGN_UPDATE.md](docs/LAYER2_DESIGN_UPDATE.md)：生成器不按脚本成功率过滤，脚本只做简单冒烟；物体上限32，动态箱子首轮质量10–30 kg（尚未实现动态箱子）。
 
+箱子堆叠管线已新增，横档墙保留为回归基准。详见 [BOX_STACK_ACCEPTANCE.md](docs/BOX_STACK_ACCEPTANCE.md)：箱子先真实动态落定，通过后冻结为静态；运行时动态抓握仍未实现。运行 `.\scripts\generate_box_stacks.ps1` 生成每档20候选与固定冒烟场景，`.\scripts\test_layer2.ps1` 验证全部测试。编辑器可打开 `Assets/Scenes/BoxSingleSmoke.unity` 或 `Assets/Scenes/BoxStepsSmoke.unity`，Play观看脚本翻上单箱或两级台阶；菜单位于 **Tools → Structures → Build Box Smoke Scenes**。
+
 编辑器菜单 **Tools → Structures → Generate Static Examples** 将四份已验证结构保存到 `structures/`；**Tools → Structures → Build Static JSON Demo** 从JSON生成并打开 `Assets/Scenes/StaticStructureDemo.unity`。点击 Play 可看简单关卡由原第1层脚本完成三次换手与翻上平台。这个场景默认脚本演示，原手动控制场景保持不变。
 
 关闭 Unity 编辑器后运行：

@@ -24,7 +24,11 @@ namespace PhysicalAI.Structures
         public StabilityReport validation;
     }
     [Serializable] public sealed class Units { public string length,mass,time; }
-    [Serializable] public sealed class GeneratorInfo { public string name,difficulty; public int version,seed; public WallParameters parameters; }
+    [Serializable] public sealed class GeneratorInfo
+    {
+        public string name,difficulty; public int version,seed; public WallParameters parameters;
+        [JsonProperty(NullValueHandling=NullValueHandling.Ignore)] public BoxStackFeatures features;
+    }
     [Serializable] public sealed class WallParameters { public float heightGap,lateralGap; }
     [Serializable] public sealed class MaterialSpec
     {
@@ -45,6 +49,9 @@ namespace PhysicalAI.Structures
         [JsonProperty(Required=Required.Always)] public PoseSpec pose;
         [JsonProperty(Required=Required.AllowNull)] public float? massKg;
         public bool graspable;
+        [JsonProperty(DefaultValueHandling=DefaultValueHandling.Ignore)] public bool settleAsDynamic;
+        public bool movable;
+        [JsonProperty(NullValueHandling=NullValueHandling.Ignore)] public string presetId;
     }
     [Serializable] public sealed class StartSpec { public PoseSpec torso,leftHand,rightHand; }
     [Serializable] public sealed class GoalSpec
@@ -118,8 +125,10 @@ namespace PhysicalAI.Structures
             {
                 Need(o!=null&&!string.IsNullOrWhiteSpace(o.id)&&ids.Add(o.id),"objects: null/duplicate ID");
                 string p="objects."+o.id;Need(o.type=="box",p+".type: only box supported");
-                Need(o.motion=="static"&&o.massKg==null,p+": only static objects with massKg=null supported; dynamic/kinematic deferred");
+                Need(o.motion=="static"&&!o.movable,p+": runtime dynamic/kinematic deferred");
+                Need(o.settleAsDynamic ? o.massKg.HasValue&&Finite(o.massKg.Value)&&o.massKg>=10&&o.massKg<=30 : o.massKg==null,p+": settlement boxes require mass 10..30 kg; legacy static anchors require null");
                 Vec(o.size,p+".size",true);Pose(o.pose,p+".pose");Need(mats.Contains(o.materialId??""),p+".materialId: missing reference");
+                if(o.settleAsDynamic)Need(BoxPresets.Matches(o.presetId,o.size)&&o.massKg==BoxPresets.Mass(o.presetId),p+": unknown preset, scale or mass");
                 Need(!o.graspable||o.surfacePolicy=="autoBoxTop",p+".surfacePolicy: autoBoxTop required");
             }
             Need(doc.start!=null,"start required");Pose(doc.start.torso,"start.torso");Pose(doc.start.leftHand,"start.leftHand");Pose(doc.start.rightHand,"start.rightHand");
@@ -132,8 +141,11 @@ namespace PhysicalAI.Structures
             Need(doc.goal.dwellSeconds==.3f&&doc.goal.maxTorsoSpeed==.5f,"goal: existing 0.30 s / 0.50 m/s contract required");
             if(doc.generator!=null)
             {
-                Need(doc.generator.name=="rungWall"&&doc.generator.version==1,"generator: unsupported name/version");
-                var p=doc.generator.parameters;Need(p!=null&&Finite(p.heightGap)&&p.heightGap>=.15f&&p.heightGap<=1.0001f&&Finite(p.lateralGap)&&p.lateralGap>=.2f&&p.lateralGap<=.8001f,"generator.parameters: outside scanned range");
+                Need((doc.generator.name=="rungWall"||doc.generator.name=="boxStack")&&doc.generator.version==1,"generator: unsupported name/version");
+                if(doc.generator.name=="rungWall")
+                {
+                    var p=doc.generator.parameters;Need(p!=null&&Finite(p.heightGap)&&p.heightGap>=.15f&&p.heightGap<=1.0001f&&Finite(p.lateralGap)&&p.lateralGap>=.2f&&p.lateralGap<=.8001f,"generator.parameters: outside scanned range");
+                }
             }
         }
     }

@@ -1,0 +1,25 @@
+{
+  "branch": "layer2",
+  "main": "8b968ae2bcd0485e379002a0bb1aa327e38ce1c2",
+  "testsPassed": 42,
+  "testsFailed": 0,
+  "playerBuild": "PASS",
+  "singleBoxArenas": 16,
+  "twoStepArenas": 16,
+  "protectedFilesUnchanged": [
+    "ProjectSettings",
+    "Assets/Scripts/Climber/ClimberArenaFactory.cs",
+    "Assets/Scripts/Climber/ClimberScriptController.cs",
+    "Assets/Scripts/Climber/ClimberManualController.cs",
+    "Assets/Scripts/Structures/StaticWallGenerator.cs",
+    "Assets/Tests/PlayMode",
+    "Assets/Tests/Structures/StaticStructureTests.cs"
+  ],
+  "bodyChange": "one clearance admission call; parameter defaults unchanged",
+  "sourceHashes": {
+    "Assets/Scripts/Structures/BoxStackGenerator.cs": "78ce0fc289c24695b0bfc131217f182cab060e5cdb5b8fd1f16d2f5371260681",
+    "Assets/Scripts/Structures/BoxStackSettlement.cs": "ae2b34227d2a4a7b09fbf845f34a81fc118666f944bb1a12f988d86714116411",
+    "Assets/Scripts/Structures/BoxClimbSmokeController.cs": "db1087b4a4a7651973cb363756a4c6a170ee5f536a0c591387e11870d67f5c32",
+    "Assets/Scripts/Climber/ClimberBody.cs": "58dbcf65ad7c0dcb64369c97c46c1eb092f3617f2af20132ed0ce57d3a46d740"
+  }
+}
