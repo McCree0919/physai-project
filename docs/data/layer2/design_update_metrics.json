@@ -1,0 +1,12 @@
+{
+  "passed": 32,
+  "failed": 0,
+  "existingLayer1Unchanged": 15,
+  "scriptFilteringRegression": [
+    "STRUCTURE_NO_SCRIPT_FILTER height=0.25 spacing=0.2 accepted=True",
+    "STRUCTURE_NO_SCRIPT_FILTER height=0.2 spacing=0.2 accepted=True",
+    "STRUCTURE_NO_SCRIPT_FILTER height=0.237 spacing=0.413 accepted=True"
+  ],
+  "objectLimit": 32,
+  "dynamicImplementationAdded": false
+}

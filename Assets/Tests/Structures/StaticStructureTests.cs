@@ -48,7 +48,7 @@ public sealed class StaticStructureTests
             case "rotation":d.objects[1].pose.rotation=new[] {0f,0f,0f,0f};break;
             case "start":d.start.leftHand.position[0]=10;break;
             case "nan":d.objects[1].size[0]=float.NaN;break;
-            case "count":d.objects=new ObjectSpec[21];break;
+            case "count":d.objects=new ObjectSpec[33];break;
         }
         Assert.Throws<InvalidDataException>(()=>StructureJson.Validate(d));
     }
@@ -78,16 +78,19 @@ public sealed class StaticStructureTests
         d=Baseline();d.start.torso.position[2]=.45f;d.start.leftHand.position[2]=.45f;d.start.rightHand.position[2]=.45f;
         Assert.IsFalse(StaticStabilityValidator.Check(d).passed);
     }
-    [Test] public void DifficultyPoolsAreSeededAndLimitedToWitnessedCells()
+    [Test] public void DifficultyBandsAreSeededWithoutScriptSuccessFiltering()
     {
         foreach(StaticDifficulty level in Enum.GetValues(typeof(StaticDifficulty)))for(int seed=0;seed<30;seed++)
         {
             var d=StaticWallGenerator.Generate(level,seed);var other=StaticWallGenerator.Generate(level,seed);
             Assert.AreEqual(StructureJson.Hash(d),StructureJson.Hash(other));
+            Assert.AreEqual(StructureJson.Hash(d),d.validation.inputHash);
             Assert.IsTrue(StaticStabilityValidator.Check(d).passed,level+" seed="+seed);
-            Assert.LessOrEqual(d.objects.Length,20);
+            Assert.LessOrEqual(d.objects.Length,32);
         }
-        Assert.Throws<InvalidDataException>(()=>StaticWallGenerator.GenerateAt(.25f,.20f));
+        Assert.IsTrue(StaticWallGenerator.GenerateAt(.25f,.20f).validation.passed);
+        Assert.IsTrue(StaticWallGenerator.GenerateAt(.237f,.413f).validation.passed);
+        StringAssert.Contains("overlap",Assert.Throws<InvalidDataException>(()=>StaticWallGenerator.GenerateAt(.15f,.60f)).Message);
         Assert.Throws<InvalidDataException>(()=>StaticWallGenerator.GenerateAt(1.05f,.40f));
     }
     [UnityTest] public IEnumerator SavedJsonClimbsIn16ArenasWithUnchangedLayer1Controller()
@@ -116,28 +119,27 @@ public sealed class StaticStructureTests
             Assert.IsTrue(c.Completed,c.name);Assert.GreaterOrEqual(c.Handovers,3);Assert.IsTrue(b.GetComponent<ClimberGoal>().Contains(b.GetBodyState()));
         }
     }
-    [UnityTest] public IEnumerator ParameterizedGeneratedJsonUsesUnchangedPrepPolicy()
+    [UnityTest] public IEnumerator GeneratorRetainsScriptFailureCellsAndDoesNotAttachControllers()
     {
-        Physics.simulationMode=SimulationMode.FixedUpdate;Time.timeScale=25;
-        var drivers=new List<StructureScriptDriver>();
-        for(int i=0;i<8;i++)
+        var parameters=new[] {new Vector2(.25f,.20f),new Vector2(.20f,.20f),new Vector2(.237f,.413f)};
+        for(int i=0;i<parameters.Length;i++)
         {
-            var doc=i<4?StaticWallGenerator.Generate(StaticDifficulty.Easy,i+1):StaticWallGenerator.GenerateAt(i<6?.60f:1f,i%2==0?.20f:.80f,i);
-            doc=StructureJson.Parse(StructureJson.Serialize(doc));
-            var b=StaticStructureLoader.Load(doc,new Vector3(100+(i%4)*7,0,200+(i/4)*7),Quaternion.Euler(0,i%2==0?-15:15,0),true);
-            roots.Add(b.gameObject);drivers.Add(b.GetComponent<StructureScriptDriver>());Assert.IsNotNull(drivers[i]);
+            var doc=StaticWallGenerator.GenerateAt(parameters[i].x,parameters[i].y,i);
+            var b=StaticStructureLoader.Load(StructureJson.Parse(StructureJson.Serialize(doc)),new Vector3(100+i*7,0,200),Quaternion.identity);
+            roots.Add(b.gameObject);
+            Assert.IsNull(b.GetComponent<ClimberScriptController>());Assert.IsNull(b.GetComponent<StructureScriptDriver>());
+            Debug.Log($"STRUCTURE_NO_SCRIPT_FILTER height={parameters[i].x} spacing={parameters[i].y} accepted=True");
         }
-        float deadline=Time.realtimeSinceStartup+25;
-        while(Time.realtimeSinceStartup<deadline)
-        {
-            bool all=true;foreach(var driver in drivers)all&=driver.Policy.Done;if(all)break;
-            yield return new WaitForFixedUpdate();
-        }
-        foreach(var driver in drivers)
-        {
-            var p=driver.Policy;Debug.Log($"STRUCTURE_PARAMETER_CLIMB arena={driver.name} success={p.Success} reason={p.Reason} handovers={p.Handovers} seconds={p.Elapsed:F3}");
-            Assert.IsTrue(p.Success,p.Reason+" "+p.Detail);Assert.GreaterOrEqual(p.Handovers,3);
-        }
+        yield return null;
+    }
+    [Test] public void ObjectLimitAccepts32AndRejects33()
+    {
+        var doc=Baseline();var objects=new List<ObjectSpec>(doc.objects);
+        for(int i=0;i<25;i++)objects.Add(StaticWallGenerator.Box("extra"+i,new Vector3(3+i%5*.3f,.2f,2+i/5*.3f),Vector3.one*.1f,false));
+        doc.objects=objects.ToArray();Assert.IsTrue(StaticStabilityValidator.Check(doc).passed);
+        Assert.AreEqual(32,StructureJson.Parse(StructureJson.Serialize(doc)).objects.Length);
+        objects.Add(StaticWallGenerator.Box("extra25",new Vector3(5,.2f,5),Vector3.one*.1f,false));doc.objects=objects.ToArray();
+        Assert.Throws<InvalidDataException>(()=>StructureJson.Validate(doc));
     }
 #if UNITY_EDITOR
     [UnityTest] public IEnumerator GeneratedDemoReloadsWithPersistentMaterialsAndClimbs()

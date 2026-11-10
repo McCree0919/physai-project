@@ -223,6 +223,8 @@ python scripts/reach_debug.py evaluate --model results/reach_v1/Reach.onnx --epi
 
 确认的范围与数据格式见 [LAYER2_DESIGN.md](docs/LAYER2_DESIGN.md)，扩展扫描见 [LAYER2_SOLVABILITY.md](docs/LAYER2_SOLVABILITY.md)，本轮验收见 [LAYER2_STATIC_ACCEPTANCE.md](docs/LAYER2_STATIC_ACCEPTANCE.md)。本轮没有搭建UI或动态箱子。
 
+补充决定及对应调整见 [LAYER2_DESIGN_UPDATE.md](docs/LAYER2_DESIGN_UPDATE.md)：生成器不按脚本成功率过滤，脚本只做简单冒烟；物体上限32，动态箱子首轮质量10–30 kg（尚未实现动态箱子）。
+
 编辑器菜单 **Tools → Structures → Generate Static Examples** 将四份已验证结构保存到 `structures/`；**Tools → Structures → Build Static JSON Demo** 从JSON生成并打开 `Assets/Scenes/StaticStructureDemo.unity`。点击 Play 可看简单关卡由原第1层脚本完成三次换手与翻上平台。这个场景默认脚本演示，原手动控制场景保持不变。
 
 关闭 Unity 编辑器后运行：

@@ -14,7 +14,7 @@
     "seed": 42,
     "parameters": {
       "heightGap": 0.3,
-      "lateralGap": 0.35
+      "lateralGap": 0.25
     }
   },
   "materials": [
@@ -68,7 +68,7 @@
       ],
       "pose": {
         "position": [
-          -0.175,
+          -0.125,
           0.95,
           -0.075
         ],
@@ -95,7 +95,7 @@
       ],
       "pose": {
         "position": [
-          0.175,
+          0.125,
           1.25,
           -0.075
         ],
@@ -122,7 +122,7 @@
       ],
       "pose": {
         "position": [
-          -0.175,
+          -0.125,
           1.55,
           -0.075
         ],
@@ -149,7 +149,7 @@
       ],
       "pose": {
         "position": [
-          0.175,
+          0.125,
           1.85,
           -0.075
         ],
@@ -277,7 +277,7 @@
   "validation": {
     "passed": true,
     "reason": "static anchors unchanged; geometry and spawn/goal center clearances passed; no dynamic stability claim",
-    "inputHash": "4d59cbf884723f3cef9cfdb33a61ba237a5db74940c9f8e887f7de34a3995ccf",
+    "inputHash": "4125150c5592eb728e0cde49ffa20840003460186ade45ca432541d06bb02f14",
     "unityVersion": "6000.3.24f1",
     "scope": "static-world-anchors",
     "staticObjects": 7,

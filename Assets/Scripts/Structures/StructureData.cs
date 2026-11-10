@@ -112,7 +112,7 @@ namespace PhysicalAI.Structures
                 Need(m!=null&&!string.IsNullOrWhiteSpace(m.id)&&mats.Add(m.id),"materials: null/duplicate ID");
                 Need(Finite(m.staticFriction)&&Finite(m.dynamicFriction)&&m.staticFriction==.15f&&m.dynamicFriction==.15f&&m.bounciness==0&&m.frictionCombine=="Average"&&m.bounceCombine=="Average","materials."+m.id+": validated 0.15/Average/zero bounce profile required");
             }
-            Need(doc.objects!=null&&doc.objects.Length>0&&doc.objects.Length<=20,"objects: expected 1..20");
+            Need(doc.objects!=null&&doc.objects.Length>0&&doc.objects.Length<=32,"objects: expected 1..32");
             var ids=new HashSet<string>();
             foreach(var o in doc.objects)
             {

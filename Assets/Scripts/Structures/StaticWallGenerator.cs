@@ -8,27 +8,32 @@ namespace PhysicalAI.Structures
     public enum StaticDifficulty { Easy, Standard, Extended }
     public static class StaticWallGenerator
     {
-        // Discrete, witnessed cells only. These labels do not imply monotonically harder physics.
+        // Parameter bands describe geometry, never a scripted-controller success whitelist.
         public static StructureDocument Generate(StaticDifficulty difficulty,int seed)
         {
-            if(difficulty==StaticDifficulty.Easy&&seed==0){var baseline=GenerateAt(.25f,.4f);baseline.generator.difficulty="Easy";return baseline;}
+            if(difficulty==StaticDifficulty.Easy&&seed==0){var baseline=GenerateAt(.25f,.4f);baseline.generator.difficulty="Easy";baseline.validation.inputHash=StructureJson.Hash(baseline);return baseline;}
             var random=new System.Random(seed);
             float height,spacing;
             switch(difficulty)
             {
-                case StaticDifficulty.Easy:height=.20f+.05f*random.Next(3);spacing=.35f+.05f*random.Next(6);break;
+                // Platform underside is top-0.20 m; lower gaps intersect the last rung.
+                case StaticDifficulty.Easy:height=.20f+.05f*random.Next(3);spacing=.20f+.05f*random.Next(13);break;
                 case StaticDifficulty.Standard:height=.35f+.05f*random.Next(6);spacing=.20f+.05f*random.Next(13);break;
                 case StaticDifficulty.Extended:height=.65f+.05f*random.Next(8);spacing=.20f+.05f*random.Next(13);break;
                 default:throw new ArgumentOutOfRangeException(nameof(difficulty));
             }
-            var doc=GenerateAt(height,spacing,seed);doc.generator.difficulty=difficulty.ToString();return doc;
+            var doc=GenerateAt(height,spacing,seed);doc.generator.difficulty=difficulty.ToString();doc.validation.inputHash=StructureJson.Hash(doc);return doc;
         }
         public static StructureDocument GenerateAt(float height,float spacing,int seed=0)
         {
-            height=(float)Math.Round(height,2);spacing=(float)Math.Round(spacing,2);
-            bool grid=Mathf.Abs(height*20-Mathf.Round(height*20))<.001f&&Mathf.Abs(spacing*20-Mathf.Round(spacing*20))<.001f;
-            bool known=(height>=.2f&&height<=.3f&&spacing>=.35f&&spacing<=.6f)||(height>=.35f&&height<=1f&&spacing>=.2f&&spacing<=.8f);
-            if(!grid||!known)throw new InvalidDataException("Requested wall is outside conservative witnessed difficulty pools");
+            if(float.IsNaN(height)||float.IsInfinity(height)||float.IsNaN(spacing)||float.IsInfinity(spacing)
+                ||height<.15f||height>1f||spacing<.2f||spacing>.8f)
+                throw new InvalidDataException("Wall parameters must be finite: height 0.15..1.00 m, spacing 0.20..0.80 m");
+            // Necessary, deliberately coarse two-arm reach bound between adjacent top faces.
+            // It is not a trajectory, IK, collision-free path, or scripted-success proof.
+            float lateralClearance=Mathf.Max(0,spacing-.5f);
+            if(Mathf.Sqrt(height*height+lateralClearance*lateralClearance)>2*.9f)
+                throw new InvalidDataException("Adjacent top faces exceed the coarse two-arm span");
             var objects=new List<ObjectSpec>();
             objects.Add(Box("ground",new Vector3(0,-.1f,0),new Vector3(3,.2f,3),false));
             for(int i=0;i<4;i++)objects.Add(Box("rung"+i,new Vector3(i%2==0?-spacing*.5f:spacing*.5f,.95f+i*height,-.075f),new Vector3(.5f,.1f,.25f),true));
@@ -37,12 +42,15 @@ namespace PhysicalAI.Structures
             objects.Add(Box("wall",new Vector3(0,(top-.2f)*.5f,.45f),new Vector3(2,top-.2f,.15f),false));
             var doc=new StructureDocument {
                 schemaVersion=1,id="wall-"+seed,bodyProfile="layer1-validated",units=new Units {length="m",mass="kg",time="s"},
-                generator=new GeneratorInfo {name="rungWall",version=1,seed=seed,difficulty="CustomWitnessed",parameters=new WallParameters {heightGap=height,lateralGap=spacing}},
+                generator=new GeneratorInfo {name="rungWall",version=1,seed=seed,difficulty="CustomGeometry",parameters=new WallParameters {heightGap=height,lateralGap=spacing}},
                 materials=new[] {new MaterialSpec {id="lowFriction",staticFriction=.15f,dynamicFriction=.15f,frictionCombine="Average",bounciness=0,bounceCombine="Average"}},
                 objects=objects.ToArray(),start=new StartSpec {torso=Pose(new Vector3(0,.4f,-.4f)),leftHand=Pose(new Vector3(-.3f,1.15f,-.05f)),rightHand=Pose(new Vector3(.3f,.95f,-.05f))},
                 goal=new GoalSpec {frame="structure",center=new[] {0,top+.6f,.6f},size=new[] {.8f,.4f,.6f},dwellSeconds=.3f,maxTorsoSpeed=.5f}
             };
-            StructureJson.Validate(doc);return doc;
+            StructureJson.Validate(doc);
+            var stability=StaticStabilityValidator.Check(doc);
+            if(!stability.passed)throw new InvalidDataException("Generated structure rejected: "+stability.reason);
+            doc.validation=stability;return doc;
         }
         public static PoseSpec Pose(Vector3 p) => new PoseSpec {position=new[] {p.x,p.y,p.z},rotation=new[] {0f,0f,0f,1f}};
         public static ObjectSpec Box(string id,Vector3 p,Vector3 size,bool grab) => new ObjectSpec {
