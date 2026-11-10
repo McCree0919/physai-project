@@ -1,0 +1,23 @@
+[
+  "C:\\Users\\17645\\miniforge3\\envs\\mlagents\\python.exe",
+  "C:\\dev\\physai-project\\scripts\\climb_train_worker.py",
+  "--train-device",
+  "cpu",
+  "--train-record",
+  "C:\\dev\\physai-project\\results\\climb-demo-init\\climb_demo_init_s2027\\device.jsonl",
+  "config/climb_demo_init.yaml",
+  "--env",
+  "Builds/Climb/Climb.exe",
+  "--run-id",
+  "climb_demo_init_s2027",
+  "--seed",
+  "2027",
+  "--num-envs",
+  "4",
+  "--base-port",
+  "7110",
+  "--no-graphics",
+  "--env-args",
+  "--climb-snapshot-library=C:\\dev\\physai-project\\results\\climb-snapshots-v2\\library.jsonl",
+  "--climb-output=C:\\dev\\physai-project\\results\\climb-demo-init\\climb_demo_init_s2027\\runtime"
+]
