@@ -140,3 +140,7 @@ crashlytics-build.properties
 # Training outputs
 /results/
 /Builds/
+
+# Local ML-Agents generated assets
+/Assets/ML-Agents/
+/Assets/ML-Agents.meta
