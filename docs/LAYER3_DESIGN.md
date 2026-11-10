@@ -259,3 +259,44 @@ Agent仅通过公开身体命令/快照操作；SDK自动MaxStep设0，由环境
 - PlayMode 50/50通过：原47项，加上新增的`TargetModeDefaultsToIncremental`、`AbsoluteTargetsMapActionWithoutAccumulation`和`SmallAbsoluteActionMovesFreeHandAgainstGravity`。
 - 用新构建、显式设置`target_mode=0`重跑试跑checkpoint 50回合，与开关加入前的诊断记录（`docs/data/climb-grip-diagnostics/checkpoint`）逐回合比较：回报、抓握次数、最高躯干高度、抓握期间受力和命令目标分布全部一致。
 - `ClimbTraining.unity`保持已提交版本：重新生成只会改变fileID，缺失的`TargetMode`字段按默认值0反序列化。
+
+## 14. 躯干高度新高奖励（单变量消融，默认关闭）
+
+背景：§4.2规定首版不加高度shaping，若稀疏学习失败，另做单变量消融。示范状态初始化之后，S1b→一级、S3→二级仍学不会（[LAYER3_DEMO_INIT.md](LAYER3_DEMO_INIT.md)），因此在`climb_demo_init.yaml`的基础上只加这一项。结果见[LAYER3_HEIGHT_SHAPING.md](LAYER3_HEIGHT_SHAPING.md)。
+
+### 14.1 公式
+
+设y_t为第t个物理步的躯干高度（场地局部坐标），y*为本回合的最高值，R为本回合已发放的高度奖励：
+
+- 初始化：y*_0 = 回合开始后的躯干高度。地面出生时取ResetBody之后的值；快照出生时取RestoreState恢复后的值。快照中记录的历史最高值`maximumHeight`只作为指标，不用于计算这项奖励。
+- 每个物理步（`BeforePhysics`，与进展判定在同一处）：
+  - 若y_t > y*：r_t = min(k·(y_t − y*), C − R)，然后y* ← y_t，R ← R + r_t；
+  - 否则r_t = 0。
+- 参数：`height_reward_scale`=k（每米），`height_reward_cap`=C。
+  - 代码默认k=0、C=0，即关闭，此时不调用AddReward，也不输出`Climb/RewardHeight`。
+  - 本轮配置`config/climb_height_shaping.yaml`：k=0.2/m，C=0.2。
+  - Agent强制C < 0.3（现有进展奖励的总上限），否则在回合开始时抛异常。
+- 量级（【推断】，按出生躯干0.4m、两级台阶顶面0.5/1.0m估算）：
+  - 站上一级时躯干约0.9–0.95m，地面→一级约+0.1；
+  - 二级约1.45m，一级→二级再约+0.1，达到上限。
+  - 与每级的+0.1进展奖励同量级，远小于终点+1。
+
+### 14.2 为什么来回晃动刷不了分
+
+- 整个回合的高度奖励总和可以逐项相消，结果是Σr_t = min(k·(y*_T − y*_0), C)。它只取决于本回合达到过的最高点，与路径无关。
+- 回落后再升回原高度，在超过y*之前r=0。原地上下晃动、反复抓放、跌落重爬都不会再拿到奖励。
+- 每个回合最多拿到C=0.2，与持续时间和动作次数无关。
+- 快照出生时y*_0取恢复后的高度，所以快照本身的高度不发放。快照的进展账本沿用§8，已付过的支撑不重复支付。
+- 已知的剩余风险（【推断】，训练时监控）：
+  - **瞬时峰值**：躯干被甩高后掉落，也会按峰值付一次。不能重复，总额也受C限制。但"甩高后坠落"比"停住超时"少付时间成本（≤0.12）。监控`Climb/End/Fall`，并与示范初始化对照比较。
+  - **非势函数**：y*依赖历史，这项奖励不是基于势函数的shaping，不保证最优策略不变。因为C + 0.3 < 1，成功仍然严格优于任何不成功的回合。
+  - **零动作也能拿到**：【数据】零动作策略（hold）从S1b出发平均能拿到约0.073（32回合，最大0.118，均未到一级），因为抓住后手臂弹簧会把躯干往上拉。地面出生的hold为0，说明落定不产生奖励。从S2出发平均约0.001（最大0.008）。这部分是起点状态自带的，与S2的进展奖励类似，评估时用hold基线对照。
+
+### 14.3 验证
+
+- PlayMode 64/64。新增4项：
+  - `HeightShapingIsOffByDefault`；
+  - `HeightShapingPaysOnlyNewEpisodeHighsUpToCap`：5次往返只付一次，总额到0.2截止；
+  - `HeightShapingStartsFromRestoredSnapshotHeight`；
+  - `HeightShapingCapMustStayBelowProgressCap`。
+- 关闭时可复现：用新构建、`target_mode=0`重跑试跑checkpoint 50回合，与`docs/data/climb-grip-diagnostics/checkpoint`逐回合比较：50/50回合、64/64运行时行一致。

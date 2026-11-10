@@ -1,0 +1,6822 @@
+{
+  "summary": {
+    "mode": "hold",
+    "episodes": 32,
+    "seed": 2026,
+    "model": null,
+    "targetMode": 0,
+    "spawnStage": "S2",
+    "envParams": {
+      "height_reward_scale": 0.2,
+      "height_reward_cap": 0.2
+    },
+    "snapshotLibrary": "results/climb-snapshots-v2/library.jsonl",
+    "modelSha256": null,
+    "commandTargets": {
+      "samples": 37350,
+      "normMin": 0.7545573725963343,
+      "normMean": 0.7556156151579364,
+      "normQuantiles": [
+        0.7549343890579603,
+        0.7558432080514135,
+        0.7559971447737719
+      ],
+      "outerFraction": 0.0,
+      "innerFraction": 0.0,
+      "axisMean": [
+        -6.907493706880528e-06,
+        -0.7004466144467294,
+        -0.2834241808298601
+      ],
+      "axisMin": [
+        -0.00010964274406433105,
+        -0.7009990215301514,
+        -0.2840183973312378
+      ],
+      "axisMax": [
+        0.00010418891906738281,
+        -0.6992230415344238,
+        -0.28305700421333313
+      ],
+      "normHistogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        37350,
+        0,
+        0
+      ]
+    },
+    "episodesWithGrip": 32,
+    "episodesAboveFirstTorsoHeight": 32,
+    "gripSuccessTotal": 64,
+    "requestOutputsTotal": 37350,
+    "rejectionReasons": {}
+  },
+  "episodes": [
+    {
+      "return": -1.0159981605684152,
+      "requestOutputs": 1160,
+      "continuousClipped": 0,
+      "continuousCount": 3480,
+      "agentId": 3,
+      "episode": 0,
+      "gripCommandTargets": {
+        "samples": 1160,
+        "normMin": 0.7555677424677127,
+        "normMean": 0.755737054194515,
+        "normQuantiles": [
+          0.7555677424677127,
+          0.755737054194515,
+          0.7559063659213172
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -2.6702880859375e-05,
+          -0.7005654573440552,
+          -0.2834542989730835
+        ],
+        "axisMin": [
+          -3.0517578125e-05,
+          -0.70088791847229,
+          -0.2837998569011688
+        ],
+        "axisMax": [
+          -2.288818359375e-05,
+          -0.7002429962158203,
+          -0.28310874104499817
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1160,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1160,
+        "normMin": 0.7555677424677127,
+        "normMean": 0.755737054194515,
+        "normQuantiles": [
+          0.7555677424677127,
+          0.755737054194515,
+          0.7559063659213172
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -2.6702880859375e-05,
+          -0.7005654573440552,
+          -0.2834542989730835
+        ],
+        "axisMin": [
+          -3.0517578125e-05,
+          -0.70088791847229,
+          -0.2837998569011688
+        ],
+        "axisMax": [
+          -2.288818359375e-05,
+          -0.7002429962158203,
+          -0.28310874104499817
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1160,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_3",
+        "agentId": 3,
+        "episode": 0,
+        "physicsSamples": 2895,
+        "requestDecisionSamples": 1158,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5790,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 2.0399982929229736,
+        "maximumTorsoY": 0.9755066633224487,
+        "maximumGripTorsoY": 0.9755066633224487,
+        "grippedSeconds": 57.9011344909668,
+        "actualTargetSamples": 5790,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5790,
+          0
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5790,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5790,
+        "gripCommandRadiusSum": 4375.673828125,
+        "gripPdRadiusSum": 4375.673828125,
+        "gripArmSum": 4084.7109375,
+        "gripOvershootSum": 290.8086242675781,
+        "gripForceSum": 283997.4375,
+        "gripPullSum": -260087.015625,
+        "gripTorsoUpForceSum": 283994.21875,
+        "gripForceTorsoSum": [
+          0.40504178404808044,
+          -283994.21875,
+          -55.494258880615234
+        ],
+        "gripHandOffsetTorsoSum": [
+          -0.1763642132282257,
+          -3740.839111328125,
+          -1641.1480712890625
+        ],
+        "gripHandBelowShoulderTicks": 5790,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5790,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5790,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -260087.015625,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          283994.21875,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          -0.004610095173120499,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          290.8086242675781,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.0162000321579399,
+      "requestOutputs": 1162,
+      "continuousClipped": 0,
+      "continuousCount": 3486,
+      "agentId": 0,
+      "episode": 0,
+      "gripCommandTargets": {
+        "samples": 1162,
+        "normMin": 0.7549088353996796,
+        "normMean": 0.7553878064083057,
+        "normQuantiles": [
+          0.7549088353996796,
+          0.7553878064083059,
+          0.7558667774169322
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -4.6253204345703125e-05,
+          -0.7002379894256592,
+          -0.2833324521780014
+        ],
+        "axisMin": [
+          -0.00010964274406433105,
+          -0.7008545398712158,
+          -0.2835792303085327
+        ],
+        "axisMax": [
+          1.7136335372924805e-05,
+          -0.6996214389801025,
+          -0.2830856740474701
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1162,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1162,
+        "normMin": 0.7549088353996796,
+        "normMean": 0.7553878064083057,
+        "normQuantiles": [
+          0.7549088353996796,
+          0.7553878064083059,
+          0.7558667774169322
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -4.6253204345703125e-05,
+          -0.7002379894256592,
+          -0.2833324521780014
+        ],
+        "axisMin": [
+          -0.00010964274406433105,
+          -0.7008545398712158,
+          -0.2835792303085327
+        ],
+        "axisMax": [
+          1.7136335372924805e-05,
+          -0.6996214389801025,
+          -0.2830856740474701
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1162,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_2",
+        "agentId": 0,
+        "episode": 0,
+        "physicsSamples": 2900,
+        "requestDecisionSamples": 1160,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5800,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 1.899998426437378,
+        "maximumTorsoY": 0.97578364610672,
+        "maximumGripTorsoY": 0.97578364610672,
+        "grippedSeconds": 58.001136779785156,
+        "actualTargetSamples": 5800,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5800,
+          0
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5800,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5800,
+        "gripCommandRadiusSum": 4381.1630859375,
+        "gripPdRadiusSum": 4381.1630859375,
+        "gripArmSum": 4089.7890625,
+        "gripOvershootSum": 291.2684631347656,
+        "gripForceSum": 284490.75,
+        "gripPullSum": -260563.328125,
+        "gripTorsoUpForceSum": 284485.75,
+        "gripForceTorsoSum": [
+          0.03657418489456177,
+          -284485.75,
+          -76.15531921386719
+        ],
+        "gripHandOffsetTorsoSum": [
+          -0.27531081438064575,
+          -3745.029296875,
+          -1643.3602294921875
+        ],
+        "gripHandBelowShoulderTicks": 5800,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5800,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5800,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -260563.328125,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          284485.75,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          -0.04130403697490692,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          291.2684631347656,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.0162000321579399,
+      "requestOutputs": 1162,
+      "continuousClipped": 0,
+      "continuousCount": 3486,
+      "agentId": 6,
+      "episode": 0,
+      "gripCommandTargets": {
+        "samples": 1162,
+        "normMin": 0.7549365614288772,
+        "normMean": 0.7554623446739747,
+        "normQuantiles": [
+          0.7549365614288772,
+          0.7554623446739748,
+          0.7559881279190723
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          9.5367431640625e-06,
+          -0.7003125250339508,
+          -0.283346951007843
+        ],
+        "axisMin": [
+          3.814697265625e-06,
+          -0.7009785175323486,
+          -0.2835911512374878
+        ],
+        "axisMax": [
+          1.52587890625e-05,
+          -0.699646532535553,
+          -0.28310275077819824
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1162,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1162,
+        "normMin": 0.7549365614288772,
+        "normMean": 0.7554623446739747,
+        "normQuantiles": [
+          0.7549365614288772,
+          0.7554623446739748,
+          0.7559881279190723
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          9.5367431640625e-06,
+          -0.7003125250339508,
+          -0.283346951007843
+        ],
+        "axisMin": [
+          3.814697265625e-06,
+          -0.7009785175323486,
+          -0.2835911512374878
+        ],
+        "axisMax": [
+          1.52587890625e-05,
+          -0.699646532535553,
+          -0.28310275077819824
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1162,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_0",
+        "agentId": 6,
+        "episode": 0,
+        "physicsSamples": 2900,
+        "requestDecisionSamples": 1160,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5800,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 1.959998369216919,
+        "maximumTorsoY": 0.9756434559822083,
+        "maximumGripTorsoY": 0.9756434559822083,
+        "grippedSeconds": 58.001136779785156,
+        "actualTargetSamples": 5800,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5800,
+          0
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5800,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5800,
+        "gripCommandRadiusSum": 4381.68994140625,
+        "gripPdRadiusSum": 4381.68994140625,
+        "gripArmSum": 4090.564697265625,
+        "gripOvershootSum": 291.2940979003906,
+        "gripForceSum": 284490.28125,
+        "gripPullSum": -260568.25,
+        "gripTorsoUpForceSum": 284485.625,
+        "gripForceTorsoSum": [
+          0.3981083929538727,
+          -284485.625,
+          -83.8975601196289
+        ],
+        "gripHandOffsetTorsoSum": [
+          0.05566420406103134,
+          -3745.875244140625,
+          -1643.339111328125
+        ],
+        "gripHandBelowShoulderTicks": 5800,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5800,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5800,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -260568.25,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          284485.625,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          -0.022301774471998215,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          291.2940979003906,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.0163545895629795,
+      "requestOutputs": 1164,
+      "continuousClipped": 0,
+      "continuousCount": 3492,
+      "agentId": 1,
+      "episode": 0,
+      "gripCommandTargets": {
+        "samples": 1164,
+        "normMin": 0.7554051021529641,
+        "normMean": 0.7556888941559148,
+        "normQuantiles": [
+          0.7554051021529641,
+          0.7556888941559147,
+          0.7559726861588653
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          5.9604644775390625e-06,
+          -0.7005339860916138,
+          -0.2834036946296692
+        ],
+        "axisMin": [
+          -1.2040138244628906e-05,
+          -0.7009581923484802,
+          -0.2836955487728119
+        ],
+        "axisMax": [
+          2.396106719970703e-05,
+          -0.7001097798347473,
+          -0.2831118404865265
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1164,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1164,
+        "normMin": 0.7554051021529641,
+        "normMean": 0.7556888941559148,
+        "normQuantiles": [
+          0.7554051021529641,
+          0.7556888941559147,
+          0.7559726861588653
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          5.9604644775390625e-06,
+          -0.7005339860916138,
+          -0.2834036946296692
+        ],
+        "axisMin": [
+          -1.2040138244628906e-05,
+          -0.7009581923484802,
+          -0.2836955487728119
+        ],
+        "axisMax": [
+          2.396106719970703e-05,
+          -0.7001097798347473,
+          -0.2831118404865265
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1164,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_14",
+        "agentId": 1,
+        "episode": 0,
+        "physicsSamples": 2905,
+        "requestDecisionSamples": 1162,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5810,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 1.8199985027313232,
+        "maximumTorsoY": 0.9760061502456665,
+        "maximumGripTorsoY": 0.9760061502456665,
+        "grippedSeconds": 58.101139068603516,
+        "actualTargetSamples": 5810,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5810,
+          0
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5810,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5810,
+        "gripCommandRadiusSum": 4390.3193359375,
+        "gripPdRadiusSum": 4390.3193359375,
+        "gripArmSum": 4098.80419921875,
+        "gripOvershootSum": 291.666015625,
+        "gripForceSum": 285123.4375,
+        "gripPullSum": -260818.359375,
+        "gripTorsoUpForceSum": 284968.9375,
+        "gripForceTorsoSum": [
+          1.3008195161819458,
+          -284968.9375,
+          363.3962097167969
+        ],
+        "gripHandOffsetTorsoSum": [
+          0.042752061039209366,
+          -3753.416259765625,
+          -1646.864990234375
+        ],
+        "gripHandBelowShoulderTicks": 5810,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5810,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5810,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -260818.359375,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          284968.9375,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          -0.006609123200178146,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          291.666015625,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.0161386206600582,
+      "requestOutputs": 1166,
+      "continuousClipped": 0,
+      "continuousCount": 3498,
+      "agentId": 9,
+      "episode": 0,
+      "gripCommandTargets": {
+        "samples": 1166,
+        "normMin": 0.7555991414669228,
+        "normMean": 0.7558057618988318,
+        "normQuantiles": [
+          0.7555991414669228,
+          0.7558057618988319,
+          0.7560123823307409
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -1.1444091796875e-05,
+          -0.7006249129772186,
+          -0.28349047899246216
+        ],
+        "axisMin": [
+          -3.841519355773926e-05,
+          -0.7009957432746887,
+          -0.2838560938835144
+        ],
+        "axisMax": [
+          1.5527009963989258e-05,
+          -0.7002540826797485,
+          -0.2831248641014099
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1166,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1166,
+        "normMin": 0.7555991414669228,
+        "normMean": 0.7558057618988318,
+        "normQuantiles": [
+          0.7555991414669228,
+          0.7558057618988319,
+          0.7560123823307409
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -1.1444091796875e-05,
+          -0.7006249129772186,
+          -0.28349047899246216
+        ],
+        "axisMin": [
+          -3.841519355773926e-05,
+          -0.7009957432746887,
+          -0.2838560938835144
+        ],
+        "axisMax": [
+          1.5527009963989258e-05,
+          -0.7002540826797485,
+          -0.2831248641014099
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1166,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_9",
+        "agentId": 9,
+        "episode": 0,
+        "physicsSamples": 2910,
+        "requestDecisionSamples": 1164,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5820,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 1.6999986171722412,
+        "maximumTorsoY": 0.9760076999664307,
+        "maximumGripTorsoY": 0.9760076999664307,
+        "grippedSeconds": 58.201141357421875,
+        "actualTargetSamples": 5820,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5820,
+          0
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5820,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5820,
+        "gripCommandRadiusSum": 4398.86181640625,
+        "gripPdRadiusSum": 4398.86181640625,
+        "gripArmSum": 4106.41552734375,
+        "gripOvershootSum": 292.3793029785156,
+        "gripForceSum": 285752.125,
+        "gripPullSum": -261135.9375,
+        "gripTorsoUpForceSum": 285449.09375,
+        "gripForceTorsoSum": [
+          -0.2756393253803253,
+          -285449.09375,
+          733.6559448242188
+        ],
+        "gripHandOffsetTorsoSum": [
+          -0.06133813410997391,
+          -3760.409423828125,
+          -1649.5802001953125
+        ],
+        "gripHandBelowShoulderTicks": 5820,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5820,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5820,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -261135.9375,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          285449.09375,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          0.23912888765335083,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          292.3793029785156,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.0162044148310088,
+      "requestOutputs": 1168,
+      "continuousClipped": 0,
+      "continuousCount": 3504,
+      "agentId": 4,
+      "episode": 0,
+      "gripCommandTargets": {
+        "samples": 1168,
+        "normMin": 0.7556480267745361,
+        "normMean": 0.7557764802167805,
+        "normQuantiles": [
+          0.7556480267745361,
+          0.7557764802167803,
+          0.7559049336590247
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          1.9073486328125e-05,
+          -0.7005940973758698,
+          -0.28348857164382935
+        ],
+        "axisMin": [
+          -1.150369644165039e-05,
+          -0.7008919715881348,
+          -0.2838822603225708
+        ],
+        "axisMax": [
+          4.965066909790039e-05,
+          -0.7002962231636047,
+          -0.2830948829650879
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1168,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1168,
+        "normMin": 0.7556480267745361,
+        "normMean": 0.7557764802167805,
+        "normQuantiles": [
+          0.7556480267745361,
+          0.7557764802167803,
+          0.7559049336590247
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          1.9073486328125e-05,
+          -0.7005940973758698,
+          -0.28348857164382935
+        ],
+        "axisMin": [
+          -1.150369644165039e-05,
+          -0.7008919715881348,
+          -0.2838822603225708
+        ],
+        "axisMax": [
+          4.965066909790039e-05,
+          -0.7002962231636047,
+          -0.2830948829650879
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1168,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_11",
+        "agentId": 4,
+        "episode": 0,
+        "physicsSamples": 2915,
+        "requestDecisionSamples": 1166,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5830,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 1.6799986362457275,
+        "maximumTorsoY": 0.9760079383850098,
+        "maximumGripTorsoY": 0.9760079383850098,
+        "grippedSeconds": 58.301143646240234,
+        "actualTargetSamples": 5830,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          5828,
+          0
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5830,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5830,
+        "gripCommandRadiusSum": 4406.0634765625,
+        "gripPdRadiusSum": 4406.044921875,
+        "gripArmSum": 4112.9150390625,
+        "gripOvershootSum": 292.9745178222656,
+        "gripForceSum": 286241.8125,
+        "gripPullSum": -261592.84375,
+        "gripTorsoUpForceSum": 285938.9375,
+        "gripForceTorsoSum": [
+          0.14919482171535492,
+          -285938.9375,
+          732.9580688476562
+        ],
+        "gripHandOffsetTorsoSum": [
+          0.09192880243062973,
+          -3766.720458984375,
+          -1652.1978759765625
+        ],
+        "gripHandBelowShoulderTicks": 5830,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5830,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5830,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -261592.84375,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          285938.9375,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          0.3132542669773102,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          292.9745178222656,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.015935087838443,
+      "requestOutputs": 1170,
+      "continuousClipped": 0,
+      "continuousCount": 3510,
+      "agentId": 10,
+      "episode": 0,
+      "gripCommandTargets": {
+        "samples": 1170,
+        "normMin": 0.7553334855027688,
+        "normMean": 0.7556264462718443,
+        "normQuantiles": [
+          0.7553334855027688,
+          0.7556264462718443,
+          0.7559194070409199
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -7.763504981994629e-06,
+          -0.7004590332508087,
+          -0.2834223359823227
+        ],
+        "axisMin": [
+          -4.190206527709961e-05,
+          -0.70091712474823,
+          -0.28377342224121094
+        ],
+        "axisMax": [
+          2.637505531311035e-05,
+          -0.7000009417533875,
+          -0.28307124972343445
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1170,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1170,
+        "normMin": 0.7553334855027688,
+        "normMean": 0.7556264462718443,
+        "normQuantiles": [
+          0.7553334855027688,
+          0.7556264462718443,
+          0.7559194070409199
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -7.763504981994629e-06,
+          -0.7004590332508087,
+          -0.2834223359823227
+        ],
+        "axisMin": [
+          -4.190206527709961e-05,
+          -0.70091712474823,
+          -0.28377342224121094
+        ],
+        "axisMax": [
+          2.637505531311035e-05,
+          -0.7000009417533875,
+          -0.28307124972343445
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1170,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_13",
+        "agentId": 10,
+        "episode": 0,
+        "physicsSamples": 2920,
+        "requestDecisionSamples": 1168,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5840,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 1.5199987888336182,
+        "maximumTorsoY": 0.9760059118270874,
+        "maximumGripTorsoY": 0.9760059118270874,
+        "grippedSeconds": 58.401145935058594,
+        "actualTargetSamples": 5840,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          15,
+          5822,
+          0
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5840,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5840,
+        "gripCommandRadiusSum": 4412.80224609375,
+        "gripPdRadiusSum": 4412.1025390625,
+        "gripArmSum": 4118.162109375,
+        "gripOvershootSum": 294.44134521484375,
+        "gripForceSum": 286777.4375,
+        "gripPullSum": -262139.46875,
+        "gripTorsoUpForceSum": 286471.625,
+        "gripForceTorsoSum": [
+          -9.345389366149902,
+          -286471.625,
+          794.715087890625
+        ],
+        "gripHandOffsetTorsoSum": [
+          -0.041943877935409546,
+          -3772.38916015625,
+          -1650.2730712890625
+        ],
+        "gripHandBelowShoulderTicks": 5840,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5840,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5840,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -262139.46875,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          286471.625,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          0.38044947385787964,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          294.44134521484375,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.0157728320918977,
+      "requestOutputs": 1170,
+      "continuousClipped": 0,
+      "continuousCount": 3510,
+      "agentId": 12,
+      "episode": 0,
+      "gripCommandTargets": {
+        "samples": 1170,
+        "normMin": 0.7556543145110161,
+        "normMean": 0.7557603034971425,
+        "normQuantiles": [
+          0.7556543145110161,
+          0.7557603034971425,
+          0.7558662924832691
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -4.819035530090332e-05,
+          -0.700587660074234,
+          -0.28346139192581177
+        ],
+        "axisMin": [
+          -5.054473876953125e-05,
+          -0.7008552551269531,
+          -0.2838401794433594
+        ],
+        "axisMax": [
+          -4.583597183227539e-05,
+          -0.7003200650215149,
+          -0.28308260440826416
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1170,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1170,
+        "normMin": 0.7556543145110161,
+        "normMean": 0.7557603034971425,
+        "normQuantiles": [
+          0.7556543145110161,
+          0.7557603034971425,
+          0.7558662924832691
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -4.819035530090332e-05,
+          -0.700587660074234,
+          -0.28346139192581177
+        ],
+        "axisMin": [
+          -5.054473876953125e-05,
+          -0.7008552551269531,
+          -0.2838401794433594
+        ],
+        "axisMax": [
+          -4.583597183227539e-05,
+          -0.7003200650215149,
+          -0.28308260440826416
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1170,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_7",
+        "agentId": 12,
+        "episode": 0,
+        "physicsSamples": 2920,
+        "requestDecisionSamples": 1168,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5840,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 1.5799987316131592,
+        "maximumTorsoY": 0.9760064482688904,
+        "maximumGripTorsoY": 0.9760064482688904,
+        "grippedSeconds": 58.401145935058594,
+        "actualTargetSamples": 5840,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          14,
+          5826,
+          0
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5840,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5840,
+        "gripCommandRadiusSum": 4413.5908203125,
+        "gripPdRadiusSum": 4413.1162109375,
+        "gripArmSum": 4119.20703125,
+        "gripOvershootSum": 294.2076416015625,
+        "gripForceSum": 286753.40625,
+        "gripPullSum": -262109.125,
+        "gripTorsoUpForceSum": 286448.90625,
+        "gripForceTorsoSum": [
+          -3.897883892059326,
+          -286448.90625,
+          767.7071533203125
+        ],
+        "gripHandOffsetTorsoSum": [
+          -0.26029515266418457,
+          -3772.89501953125,
+          -1651.86181640625
+        ],
+        "gripHandBelowShoulderTicks": 5840,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5840,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5840,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -262109.125,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          286448.90625,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          0.5530681610107422,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          294.2076416015625,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.0160652047779877,
+      "requestOutputs": 1170,
+      "continuousClipped": 0,
+      "continuousCount": 3510,
+      "agentId": 14,
+      "episode": 0,
+      "gripCommandTargets": {
+        "samples": 1170,
+        "normMin": 0.755405235741303,
+        "normMean": 0.7556889495202102,
+        "normQuantiles": [
+          0.755405235741303,
+          0.7556889495202102,
+          0.7559726632991173
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          5.9604644775390625e-06,
+          -0.7005340456962585,
+          -0.2834036946296692
+        ],
+        "axisMin": [
+          -1.2040138244628906e-05,
+          -0.700958251953125,
+          -0.2836957573890686
+        ],
+        "axisMax": [
+          2.396106719970703e-05,
+          -0.7001098394393921,
+          -0.2831116318702698
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1170,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1170,
+        "normMin": 0.755405235741303,
+        "normMean": 0.7556889495202102,
+        "normQuantiles": [
+          0.755405235741303,
+          0.7556889495202102,
+          0.7559726632991173
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          5.9604644775390625e-06,
+          -0.7005340456962585,
+          -0.2834036946296692
+        ],
+        "axisMin": [
+          -1.2040138244628906e-05,
+          -0.700958251953125,
+          -0.2836957573890686
+        ],
+        "axisMax": [
+          2.396106719970703e-05,
+          -0.7001098394393921,
+          -0.2831116318702698
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1170,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_12",
+        "agentId": 14,
+        "episode": 0,
+        "physicsSamples": 2920,
+        "requestDecisionSamples": 1168,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5840,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 1.5199987888336182,
+        "maximumTorsoY": 0.976006269454956,
+        "maximumGripTorsoY": 0.976006269454956,
+        "grippedSeconds": 58.401145935058594,
+        "actualTargetSamples": 5840,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          15,
+          5820,
+          0
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5840,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5840,
+        "gripCommandRadiusSum": 4412.98779296875,
+        "gripPdRadiusSum": 4412.17236328125,
+        "gripArmSum": 4118.59423828125,
+        "gripOvershootSum": 294.5421142578125,
+        "gripForceSum": 286788.40625,
+        "gripPullSum": -262169.4375,
+        "gripTorsoUpForceSum": 286481.90625,
+        "gripForceTorsoSum": [
+          -9.993173599243164,
+          -286481.90625,
+          803.3325805664062
+        ],
+        "gripHandOffsetTorsoSum": [
+          0.03566240891814232,
+          -3772.699462890625,
+          -1649.255859375
+        ],
+        "gripHandBelowShoulderTicks": 5840,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5840,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5840,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -262169.4375,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          286481.90625,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          0.2703236937522888,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          294.5421142578125,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.0158019906866684,
+      "requestOutputs": 1170,
+      "continuousClipped": 0,
+      "continuousCount": 3510,
+      "agentId": 15,
+      "episode": 0,
+      "gripCommandTargets": {
+        "samples": 1170,
+        "normMin": 0.7550985631355516,
+        "normMean": 0.7554996196391203,
+        "normQuantiles": [
+          0.7550985631355516,
+          0.7554996196391203,
+          0.755900676142689
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          3.2201409339904785e-05,
+          -0.7003326416015625,
+          -0.28339654207229614
+        ],
+        "axisMin": [
+          1.5348196029663086e-05,
+          -0.7008975148200989,
+          -0.28372329473495483
+        ],
+        "axisMax": [
+          4.9054622650146484e-05,
+          -0.6997677683830261,
+          -0.28306978940963745
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1170,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1170,
+        "normMin": 0.7550985631355516,
+        "normMean": 0.7554996196391203,
+        "normQuantiles": [
+          0.7550985631355516,
+          0.7554996196391203,
+          0.755900676142689
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          3.2201409339904785e-05,
+          -0.7003326416015625,
+          -0.28339654207229614
+        ],
+        "axisMin": [
+          1.5348196029663086e-05,
+          -0.7008975148200989,
+          -0.28372329473495483
+        ],
+        "axisMax": [
+          4.9054622650146484e-05,
+          -0.6997677683830261,
+          -0.28306978940963745
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1170,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_1",
+        "agentId": 15,
+        "episode": 0,
+        "physicsSamples": 2920,
+        "requestDecisionSamples": 1168,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5840,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 1.5399987697601318,
+        "maximumTorsoY": 0.9760022163391113,
+        "maximumGripTorsoY": 0.9760022163391113,
+        "grippedSeconds": 58.401145935058594,
+        "actualTargetSamples": 5840,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          15,
+          5824,
+          0
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5840,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5840,
+        "gripCommandRadiusSum": 4412.05224609375,
+        "gripPdRadiusSum": 4411.46630859375,
+        "gripArmSum": 4117.55908203125,
+        "gripOvershootSum": 294.3088073730469,
+        "gripForceSum": 286763.4375,
+        "gripPullSum": -262119.734375,
+        "gripTorsoUpForceSum": 286458.21875,
+        "gripForceTorsoSum": [
+          3.520277500152588,
+          -286458.21875,
+          779.322265625
+        ],
+        "gripHandOffsetTorsoSum": [
+          0.19957494735717773,
+          -3771.67724609375,
+          -1650.84765625
+        ],
+        "gripHandBelowShoulderTicks": 5840,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5840,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5840,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -262119.734375,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          286458.21875,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          0.5009092688560486,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          294.3088073730469,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.0169964703418373,
+      "requestOutputs": 1172,
+      "continuousClipped": 0,
+      "continuousCount": 3516,
+      "agentId": 8,
+      "episode": 0,
+      "gripCommandTargets": {
+        "samples": 1172,
+        "normMin": 0.755798677750964,
+        "normMean": 0.7558250593873814,
+        "normQuantiles": [
+          0.755798677750964,
+          0.7558250593873813,
+          0.7558514410237986
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -1.3351440202313825e-05,
+          -0.7006405293941498,
+          -0.28350335359573364
+        ],
+        "axisMin": [
+          -1.9222497940063477e-05,
+          -0.7008398175239563,
+          -0.28392553329467773
+        ],
+        "axisMax": [
+          -7.4803824645641726e-06,
+          -0.7004412412643433,
+          -0.28308117389678955
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1172,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1172,
+        "normMin": 0.755798677750964,
+        "normMean": 0.7558250593873814,
+        "normQuantiles": [
+          0.755798677750964,
+          0.7558250593873813,
+          0.7558514410237986
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -1.3351440202313825e-05,
+          -0.7006405293941498,
+          -0.28350335359573364
+        ],
+        "axisMin": [
+          -1.9222497940063477e-05,
+          -0.7008398175239563,
+          -0.28392553329467773
+        ],
+        "axisMax": [
+          -7.4803824645641726e-06,
+          -0.7004412412643433,
+          -0.28308117389678955
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1172,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_15",
+        "agentId": 8,
+        "episode": 0,
+        "physicsSamples": 2925,
+        "requestDecisionSamples": 1170,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5850,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 1.4599988460540771,
+        "maximumTorsoY": 0.9760086536407471,
+        "maximumGripTorsoY": 0.9760086536407471,
+        "grippedSeconds": 58.50114822387695,
+        "actualTargetSamples": 5850,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          18,
+          5826,
+          0
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5850,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5850,
+        "gripCommandRadiusSum": 4421.73388671875,
+        "gripPdRadiusSum": 4420.6943359375,
+        "gripArmSum": 4126.2353515625,
+        "gripOvershootSum": 295.1835632324219,
+        "gripForceSum": 287307.15625,
+        "gripPullSum": -262633.65625,
+        "gripTorsoUpForceSum": 286999.8125,
+        "gripForceTorsoSum": [
+          13.842151641845703,
+          -286999.8125,
+          821.4464721679688
+        ],
+        "gripHandOffsetTorsoSum": [
+          -0.07981787621974945,
+          -3779.8310546875,
+          -1650.85302734375
+        ],
+        "gripHandBelowShoulderTicks": 5850,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5850,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5850,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -262633.65625,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          286999.8125,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          -0.20550966262817383,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          295.1835632324219,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.0174000321276253,
+      "requestOutputs": 1174,
+      "continuousClipped": 0,
+      "continuousCount": 3522,
+      "agentId": 7,
+      "episode": 0,
+      "gripCommandTargets": {
+        "samples": 1174,
+        "normMin": 0.7545573725963343,
+        "normMean": 0.7552469978913119,
+        "normQuantiles": [
+          0.7545573725963343,
+          0.7552469978913119,
+          0.7559366231862896
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          3.4332275390625e-05,
+          -0.7000783979892731,
+          -0.28335124254226685
+        ],
+        "axisMin": [
+          -3.552436828613281e-05,
+          -0.7009337544441223,
+          -0.2836264371871948
+        ],
+        "axisMax": [
+          0.00010418891906738281,
+          -0.6992230415344238,
+          -0.28307604789733887
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1174,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1174,
+        "normMin": 0.7545573725963343,
+        "normMean": 0.7552469978913119,
+        "normQuantiles": [
+          0.7545573725963343,
+          0.7552469978913119,
+          0.7559366231862896
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          3.4332275390625e-05,
+          -0.7000783979892731,
+          -0.28335124254226685
+        ],
+        "axisMin": [
+          -3.552436828613281e-05,
+          -0.7009337544441223,
+          -0.2836264371871948
+        ],
+        "axisMax": [
+          0.00010418891906738281,
+          -0.6992230415344238,
+          -0.28307604789733887
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1174,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_5",
+        "agentId": 7,
+        "episode": 0,
+        "physicsSamples": 2930,
+        "requestDecisionSamples": 1172,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5860,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 1.3399989604949951,
+        "maximumTorsoY": 0.9900989532470703,
+        "maximumGripTorsoY": 0.9900989532470703,
+        "grippedSeconds": 58.60115051269531,
+        "actualTargetSamples": 5860,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          27,
+          5826,
+          0
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5860,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5860,
+        "gripCommandRadiusSum": 4425.70556640625,
+        "gripPdRadiusSum": 4424.2744140625,
+        "gripArmSum": 4130.3662109375,
+        "gripOvershootSum": 295.4985656738281,
+        "gripForceSum": 287817.46875,
+        "gripPullSum": -263007.25,
+        "gripTorsoUpForceSum": 287482.34375,
+        "gripForceTorsoSum": [
+          7.382913589477539,
+          -287482.34375,
+          696.5887451171875
+        ],
+        "gripHandOffsetTorsoSum": [
+          0.1887073665857315,
+          -3783.289794921875,
+          -1646.880615234375
+        ],
+        "gripHandBelowShoulderTicks": 5860,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5860,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5860,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -263007.25,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          287482.34375,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          -1.6828842163085938,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          295.4985656738281,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.01724846943398,
+      "requestOutputs": 1174,
+      "continuousClipped": 0,
+      "continuousCount": 3522,
+      "agentId": 11,
+      "episode": 0,
+      "gripCommandTargets": {
+        "samples": 1174,
+        "normMin": 0.7552009127253294,
+        "normMean": 0.7555990287495506,
+        "normQuantiles": [
+          0.7552009127253294,
+          0.7555990287495506,
+          0.7559971447737719
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -1.9073486328125e-05,
+          -0.7004383504390717,
+          -0.28340035676956177
+        ],
+        "axisMin": [
+          -3.6388635635375977e-05,
+          -0.7009936571121216,
+          -0.28371137380599976
+        ],
+        "axisMax": [
+          -1.7583370208740234e-06,
+          -0.6998830437660217,
+          -0.2830893397331238
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1174,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1174,
+        "normMin": 0.7552009127253294,
+        "normMean": 0.7555990287495506,
+        "normQuantiles": [
+          0.7552009127253294,
+          0.7555990287495506,
+          0.7559971447737719
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -1.9073486328125e-05,
+          -0.7004383504390717,
+          -0.28340035676956177
+        ],
+        "axisMin": [
+          -3.6388635635375977e-05,
+          -0.7009936571121216,
+          -0.28371137380599976
+        ],
+        "axisMax": [
+          -1.7583370208740234e-06,
+          -0.6998830437660217,
+          -0.2830893397331238
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1174,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_10",
+        "agentId": 11,
+        "episode": 0,
+        "physicsSamples": 2930,
+        "requestDecisionSamples": 1172,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5860,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 1.2999989986419678,
+        "maximumTorsoY": 0.9930903911590576,
+        "maximumGripTorsoY": 0.9930903911590576,
+        "grippedSeconds": 58.60115051269531,
+        "actualTargetSamples": 5860,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          29,
+          5824,
+          0
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5860,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5857,
+        "gripCommandRadiusSum": 4427.8740234375,
+        "gripPdRadiusSum": 4426.41015625,
+        "gripArmSum": 4132.9560546875,
+        "gripOvershootSum": 295.064453125,
+        "gripForceSum": 287837.40625,
+        "gripPullSum": -262760.0,
+        "gripTorsoUpForceSum": 287344.84375,
+        "gripForceTorsoSum": [
+          -20.334192276000977,
+          -287344.84375,
+          428.4930114746094
+        ],
+        "gripHandOffsetTorsoSum": [
+          -0.11009033024311066,
+          -3785.1025390625,
+          -1642.95654296875
+        ],
+        "gripHandBelowShoulderTicks": 5860,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5860,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5860,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -262760.0,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          287344.84375,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          -1.3568165302276611,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          295.064453125,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.0132165516115492,
+      "requestOutputs": 1176,
+      "continuousClipped": 0,
+      "continuousCount": 3528,
+      "agentId": 2,
+      "episode": 0,
+      "gripCommandTargets": {
+        "samples": 1176,
+        "normMin": 0.7559078064991297,
+        "normMean": 0.7559440625847916,
+        "normQuantiles": [
+          0.7559078064991297,
+          0.7559440625847916,
+          0.7559803186704536
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -1.716613815005985e-05,
+          -0.7007441818714142,
+          -0.28356438875198364
+        ],
+        "axisMin": [
+          -1.9222497940063477e-05,
+          -0.700967013835907,
+          -0.2840183973312378
+        ],
+        "axisMax": [
+          -1.5109778360056225e-05,
+          -0.7005213499069214,
+          -0.2831103801727295
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1176,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1176,
+        "normMin": 0.7559078064991297,
+        "normMean": 0.7559440625847916,
+        "normQuantiles": [
+          0.7559078064991297,
+          0.7559440625847916,
+          0.7559803186704536
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -1.716613815005985e-05,
+          -0.7007441818714142,
+          -0.28356438875198364
+        ],
+        "axisMin": [
+          -1.9222497940063477e-05,
+          -0.700967013835907,
+          -0.2840183973312378
+        ],
+        "axisMax": [
+          -1.5109778360056225e-05,
+          -0.7005213499069214,
+          -0.2831103801727295
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1176,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_6",
+        "agentId": 2,
+        "episode": 0,
+        "physicsSamples": 2935,
+        "requestDecisionSamples": 1174,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5870,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 1.2599990367889404,
+        "maximumTorsoY": 0.9929431080818176,
+        "maximumGripTorsoY": 0.9929431080818176,
+        "grippedSeconds": 58.70115280151367,
+        "actualTargetSamples": 5870,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          30,
+          5832,
+          2
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5870,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5860,
+        "gripCommandRadiusSum": 4437.0986328125,
+        "gripPdRadiusSum": 4435.8232421875,
+        "gripArmSum": 4142.6279296875,
+        "gripOvershootSum": 294.96514892578125,
+        "gripForceSum": 288410.46875,
+        "gripPullSum": -262711.59375,
+        "gripTorsoUpForceSum": 287542.9375,
+        "gripForceTorsoSum": [
+          -12.231863021850586,
+          -287542.9375,
+          50.99043273925781
+        ],
+        "gripHandOffsetTorsoSum": [
+          -0.11352561414241791,
+          -3793.547119140625,
+          -1642.28125
+        ],
+        "gripHandBelowShoulderTicks": 5870,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5870,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5870,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -262711.59375,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          287542.9375,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          1.9479963779449463,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          294.96514892578125,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.0174181425827555,
+      "requestOutputs": 1176,
+      "continuousClipped": 0,
+      "continuousCount": 3528,
+      "agentId": 5,
+      "episode": 0,
+      "gripCommandTargets": {
+        "samples": 1176,
+        "normMin": 0.7550580303588517,
+        "normMean": 0.7554921020810065,
+        "normQuantiles": [
+          0.7550580303588517,
+          0.7554921020810066,
+          0.7559261738031614
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -2.6702880859375e-05,
+          -0.700320690870285,
+          -0.2834060788154602
+        ],
+        "axisMin": [
+          -4.234910011291504e-05,
+          -0.7009067535400391,
+          -0.2836971580982208
+        ],
+        "axisMax": [
+          -1.1056661605834961e-05,
+          -0.699734628200531,
+          -0.2831149995326996
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1176,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1176,
+        "normMin": 0.7550580303588517,
+        "normMean": 0.7554921020810065,
+        "normQuantiles": [
+          0.7550580303588517,
+          0.7554921020810066,
+          0.7559261738031614
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -2.6702880859375e-05,
+          -0.700320690870285,
+          -0.2834060788154602
+        ],
+        "axisMin": [
+          -4.234910011291504e-05,
+          -0.7009067535400391,
+          -0.2836971580982208
+        ],
+        "axisMax": [
+          -1.1056661605834961e-05,
+          -0.699734628200531,
+          -0.2831149995326996
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1176,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_8",
+        "agentId": 5,
+        "episode": 0,
+        "physicsSamples": 2935,
+        "requestDecisionSamples": 1174,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5870,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 1.279999017715454,
+        "maximumTorsoY": 0.9931454658508301,
+        "maximumGripTorsoY": 0.9931454658508301,
+        "grippedSeconds": 58.70115280151367,
+        "actualTargetSamples": 5870,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          30,
+          5833,
+          0
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5870,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5866,
+        "gripCommandRadiusSum": 4434.68896484375,
+        "gripPdRadiusSum": 4433.22607421875,
+        "gripArmSum": 4139.32568359375,
+        "gripOvershootSum": 295.5359191894531,
+        "gripForceSum": 288330.03125,
+        "gripPullSum": -263182.71875,
+        "gripTorsoUpForceSum": 287830.59375,
+        "gripForceTorsoSum": [
+          -23.163875579833984,
+          -287830.59375,
+          425.382080078125
+        ],
+        "gripHandOffsetTorsoSum": [
+          -0.14691947400569916,
+          -3791.20361328125,
+          -1645.84033203125
+        ],
+        "gripHandBelowShoulderTicks": 5870,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5870,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5870,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -263182.71875,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          287830.59375,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          -1.3317525386810303,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          295.5359191894531,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.0101759541721549,
+      "requestOutputs": 1178,
+      "continuousClipped": 0,
+      "continuousCount": 3534,
+      "agentId": 13,
+      "episode": 0,
+      "gripCommandTargets": {
+        "samples": 1178,
+        "normMin": 0.7549343890579603,
+        "normMean": 0.755420138851072,
+        "normQuantiles": [
+          0.7549343890579603,
+          0.7554201388510718,
+          0.7559058886441834
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -3.0517578125e-05,
+          -0.7002598643302917,
+          -0.28336459398269653
+        ],
+        "axisMin": [
+          -8.386373519897461e-05,
+          -0.7008827328681946,
+          -0.28360888361930847
+        ],
+        "axisMax": [
+          2.282857894897461e-05,
+          -0.6996369957923889,
+          -0.2831203043460846
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1178,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1178,
+        "normMin": 0.7549343890579603,
+        "normMean": 0.755420138851072,
+        "normQuantiles": [
+          0.7549343890579603,
+          0.7554201388510718,
+          0.7559058886441834
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -3.0517578125e-05,
+          -0.7002598643302917,
+          -0.28336459398269653
+        ],
+        "axisMin": [
+          -8.386373519897461e-05,
+          -0.7008827328681946,
+          -0.28360888361930847
+        ],
+        "axisMax": [
+          2.282857894897461e-05,
+          -0.6996369957923889,
+          -0.2831203043460846
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1178,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_4",
+        "agentId": 13,
+        "episode": 0,
+        "physicsSamples": 2940,
+        "requestDecisionSamples": 1176,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5880,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 1.1799991130828857,
+        "maximumTorsoY": 0.9930341839790344,
+        "maximumGripTorsoY": 0.9930341839790344,
+        "grippedSeconds": 58.80115509033203,
+        "actualTargetSamples": 5880,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          30,
+          5839,
+          4
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5880,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5868,
+        "gripCommandRadiusSum": 4441.66015625,
+        "gripPdRadiusSum": 4440.51708984375,
+        "gripArmSum": 4146.5966796875,
+        "gripOvershootSum": 295.2769775390625,
+        "gripForceSum": 288918.09375,
+        "gripPullSum": -262962.21875,
+        "gripTorsoUpForceSum": 287913.125,
+        "gripForceTorsoSum": [
+          -4.155273914337158,
+          -287913.125,
+          -65.88304138183594
+        ],
+        "gripHandOffsetTorsoSum": [
+          -0.17802782356739044,
+          -3797.10791015625,
+          -1642.30810546875
+        ],
+        "gripHandBelowShoulderTicks": 5880,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5880,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5880,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -262962.21875,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          287913.125,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          4.042675018310547,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          295.2769775390625,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.0160000321629923,
+      "requestOutputs": 1160,
+      "continuousClipped": 0,
+      "continuousCount": 3480,
+      "agentId": 3,
+      "episode": 1,
+      "gripCommandTargets": {
+        "samples": 1160,
+        "normMin": 0.7555030687860637,
+        "normMean": 0.7557110390749542,
+        "normQuantiles": [
+          0.7555030687860637,
+          0.7557110390749541,
+          0.7559190093638445
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -2.86102294921875e-06,
+          -0.7005391418933868,
+          -0.2834499478340149
+        ],
+        "axisMin": [
+          -3.814697265625e-05,
+          -0.7009042501449585,
+          -0.28379783034324646
+        ],
+        "axisMax": [
+          3.24249267578125e-05,
+          -0.7001740336418152,
+          -0.2831020653247833
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1160,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1160,
+        "normMin": 0.7555030687860637,
+        "normMean": 0.7557110390749542,
+        "normQuantiles": [
+          0.7555030687860637,
+          0.7557110390749541,
+          0.7559190093638445
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -2.86102294921875e-06,
+          -0.7005391418933868,
+          -0.2834499478340149
+        ],
+        "axisMin": [
+          -3.814697265625e-05,
+          -0.7009042501449585,
+          -0.28379783034324646
+        ],
+        "axisMax": [
+          3.24249267578125e-05,
+          -0.7001740336418152,
+          -0.2831020653247833
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1160,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_3",
+        "agentId": 3,
+        "episode": 1,
+        "physicsSamples": 2903,
+        "requestDecisionSamples": 1162,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5806,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 1.9399983882904053,
+        "maximumTorsoY": 0.9757854342460632,
+        "maximumGripTorsoY": 0.9757854342460632,
+        "grippedSeconds": 58.06113815307617,
+        "actualTargetSamples": 5806,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5806,
+          0
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5806,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5806,
+        "gripCommandRadiusSum": 4387.6416015625,
+        "gripPdRadiusSum": 4387.6416015625,
+        "gripArmSum": 4095.97998046875,
+        "gripOvershootSum": 291.57000732421875,
+        "gripForceSum": 284785.15625,
+        "gripPullSum": -260833.40625,
+        "gripTorsoUpForceSum": 284780.15625,
+        "gripForceTorsoSum": [
+          0.8722312450408936,
+          -284780.15625,
+          -76.19365692138672
+        ],
+        "gripHandOffsetTorsoSum": [
+          0.004160289186984301,
+          -3751.05419921875,
+          -1645.763427734375
+        ],
+        "gripHandBelowShoulderTicks": 5806,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5806,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5806,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -260833.40625,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          284780.15625,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          -0.04155125841498375,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          291.57000732421875,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.0157984228426358,
+      "requestOutputs": 1158,
+      "continuousClipped": 0,
+      "continuousCount": 3474,
+      "agentId": 0,
+      "episode": 1,
+      "gripCommandTargets": {
+        "samples": 1158,
+        "normMin": 0.7557064183581029,
+        "normMean": 0.7558457275268039,
+        "normQuantiles": [
+          0.7557064183581029,
+          0.7558457275268038,
+          0.7559850366955048
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -1.9073486328125e-05,
+          -0.7006627917289734,
+          -0.2835034281015396
+        ],
+        "axisMin": [
+          -3.4332275390625e-05,
+          -0.7009685635566711,
+          -0.28388771414756775
+        ],
+        "axisMax": [
+          -3.814697265625e-06,
+          -0.7003570199012756,
+          -0.2831191420555115
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1158,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1158,
+        "normMin": 0.7557064183581029,
+        "normMean": 0.7558457275268039,
+        "normQuantiles": [
+          0.7557064183581029,
+          0.7558457275268038,
+          0.7559850366955048
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -1.9073486328125e-05,
+          -0.7006627917289734,
+          -0.2835034281015396
+        ],
+        "axisMin": [
+          -3.4332275390625e-05,
+          -0.7009685635566711,
+          -0.28388771414756775
+        ],
+        "axisMax": [
+          -3.814697265625e-06,
+          -0.7003570199012756,
+          -0.2831191420555115
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1158,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_2",
+        "agentId": 0,
+        "episode": 1,
+        "physicsSamples": 2899,
+        "requestDecisionSamples": 1160,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5798,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 2.01999831199646,
+        "maximumTorsoY": 0.9755067229270935,
+        "maximumGripTorsoY": 0.9755067229270935,
+        "grippedSeconds": 57.981136322021484,
+        "actualTargetSamples": 5798,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5798,
+          0
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5798,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5798,
+        "gripCommandRadiusSum": 4382.44189453125,
+        "gripPdRadiusSum": 4382.44189453125,
+        "gripArmSum": 4091.30029296875,
+        "gripOvershootSum": 291.21002197265625,
+        "gripForceSum": 284389.96875,
+        "gripPullSum": -260467.296875,
+        "gripTorsoUpForceSum": 284386.75,
+        "gripForceTorsoSum": [
+          0.22408083081245422,
+          -284386.75,
+          -55.476436614990234
+        ],
+        "gripHandOffsetTorsoSum": [
+          -0.12074542790651321,
+          -3746.367431640625,
+          -1643.72998046875
+        ],
+        "gripHandBelowShoulderTicks": 5798,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5798,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5798,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -260467.296875,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          284386.75,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          -0.009209752082824707,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          291.21002197265625,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.0163089920170023,
+      "requestOutputs": 1164,
+      "continuousClipped": 0,
+      "continuousCount": 3492,
+      "agentId": 6,
+      "episode": 1,
+      "gripCommandTargets": {
+        "samples": 1164,
+        "normMin": 0.7550812450823352,
+        "normMean": 0.7554803821633822,
+        "normQuantiles": [
+          0.7550812450823352,
+          0.7554803821633822,
+          0.7558795192444293
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -4.380941390991211e-05,
+          -0.7003088295459747,
+          -0.2834041714668274
+        ],
+        "axisMin": [
+          -5.97536563873291e-05,
+          -0.7008565664291382,
+          -0.28369367122650146
+        ],
+        "axisMax": [
+          -2.7865171432495117e-05,
+          -0.6997610926628113,
+          -0.2831146717071533
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1164,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1164,
+        "normMin": 0.7550812450823352,
+        "normMean": 0.7554803821633822,
+        "normQuantiles": [
+          0.7550812450823352,
+          0.7554803821633822,
+          0.7558795192444293
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -4.380941390991211e-05,
+          -0.7003088295459747,
+          -0.2834041714668274
+        ],
+        "axisMin": [
+          -5.97536563873291e-05,
+          -0.7008565664291382,
+          -0.28369367122650146
+        ],
+        "axisMax": [
+          -2.7865171432495117e-05,
+          -0.6997610926628113,
+          -0.2831146717071533
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1164,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_0",
+        "agentId": 6,
+        "episode": 1,
+        "physicsSamples": 2914,
+        "requestDecisionSamples": 1166,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5828,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 1.7199985980987549,
+        "maximumTorsoY": 0.9760029315948486,
+        "maximumGripTorsoY": 0.9760029315948486,
+        "grippedSeconds": 58.28114318847656,
+        "actualTargetSamples": 5828,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5828,
+          0
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5828,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5828,
+        "gripCommandRadiusSum": 4402.939453125,
+        "gripPdRadiusSum": 4402.939453125,
+        "gripArmSum": 4110.201171875,
+        "gripOvershootSum": 292.5773620605469,
+        "gripForceSum": 286054.46875,
+        "gripPullSum": -261551.328125,
+        "gripTorsoUpForceSum": 285849.71875,
+        "gripForceTorsoSum": [
+          1.2909021377563477,
+          -285849.71875,
+          473.56927490234375
+        ],
+        "gripHandOffsetTorsoSum": [
+          -0.2514953911304474,
+          -3763.641845703125,
+          -1651.93896484375
+        ],
+        "gripHandBelowShoulderTicks": 5828,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5828,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5828,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -261551.328125,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          285849.71875,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          0.02144785411655903,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          292.5773620605469,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.015797934072907,
+      "requestOutputs": 1158,
+      "continuousClipped": 0,
+      "continuousCount": 3474,
+      "agentId": 10,
+      "episode": 1,
+      "gripCommandTargets": {
+        "samples": 1158,
+        "normMin": 0.7557060899704471,
+        "normMean": 0.7557943017817661,
+        "normQuantiles": [
+          0.7557060899704471,
+          0.7557943017817661,
+          0.7558825135930852
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          1.6689300537109375e-05,
+          -0.7006138861179352,
+          -0.28348714113235474
+        ],
+        "axisMin": [
+          1.33514404296875e-05,
+          -0.7008830904960632,
+          -0.28391727805137634
+        ],
+        "axisMax": [
+          2.002716064453125e-05,
+          -0.7003446817398071,
+          -0.28305700421333313
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1158,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1158,
+        "normMin": 0.7557060899704471,
+        "normMean": 0.7557943017817661,
+        "normQuantiles": [
+          0.7557060899704471,
+          0.7557943017817661,
+          0.7558825135930852
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          1.6689300537109375e-05,
+          -0.7006138861179352,
+          -0.28348714113235474
+        ],
+        "axisMin": [
+          1.33514404296875e-05,
+          -0.7008830904960632,
+          -0.28391727805137634
+        ],
+        "axisMax": [
+          2.002716064453125e-05,
+          -0.7003446817398071,
+          -0.28305700421333313
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1158,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_13",
+        "agentId": 10,
+        "episode": 1,
+        "physicsSamples": 2898,
+        "requestDecisionSamples": 1160,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5796,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 2.0399982929229736,
+        "maximumTorsoY": 0.9755067229270935,
+        "maximumGripTorsoY": 0.9755067229270935,
+        "grippedSeconds": 57.96113586425781,
+        "actualTargetSamples": 5796,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5796,
+          0
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5796,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5796,
+        "gripCommandRadiusSum": 4380.443359375,
+        "gripPdRadiusSum": 4380.443359375,
+        "gripArmSum": 4089.45556640625,
+        "gripOvershootSum": 291.0979309082031,
+        "gripForceSum": 284291.8125,
+        "gripPullSum": -260369.28125,
+        "gripTorsoUpForceSum": 284288.59375,
+        "gripForceTorsoSum": [
+          0.16253399848937988,
+          -284288.59375,
+          -55.431060791015625
+        ],
+        "gripHandOffsetTorsoSum": [
+          0.0981515496969223,
+          -3744.897705078125,
+          -1643.13916015625
+        ],
+        "gripHandBelowShoulderTicks": 5796,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5796,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5796,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -260369.28125,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          284288.59375,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          -0.008858042769134045,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          291.0979309082031,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.0161961220933335,
+      "requestOutputs": 1162,
+      "continuousClipped": 0,
+      "continuousCount": 3486,
+      "agentId": 4,
+      "episode": 1,
+      "gripCommandTargets": {
+        "samples": 1162,
+        "normMin": 0.7557230007797195,
+        "normMean": 0.7558480712372886,
+        "normQuantiles": [
+          0.7557230007797195,
+          0.7558480712372886,
+          0.7559731416948576
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -2.612173557281494e-05,
+          -0.7006769180297852,
+          -0.28347474336624146
+        ],
+        "axisMin": [
+          -4.857778549194336e-05,
+          -0.7009735107421875,
+          -0.28387436270713806
+        ],
+        "axisMax": [
+          -3.6656856536865234e-06,
+          -0.7003803253173828,
+          -0.28307512402534485
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1162,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1162,
+        "normMin": 0.7557230007797195,
+        "normMean": 0.7558480712372886,
+        "normQuantiles": [
+          0.7557230007797195,
+          0.7558480712372886,
+          0.7559731416948576
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -2.612173557281494e-05,
+          -0.7006769180297852,
+          -0.28347474336624146
+        ],
+        "axisMin": [
+          -4.857778549194336e-05,
+          -0.7009735107421875,
+          -0.28387436270713806
+        ],
+        "axisMax": [
+          -3.6656856536865234e-06,
+          -0.7003803253173828,
+          -0.28307512402534485
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1162,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_11",
+        "agentId": 4,
+        "episode": 1,
+        "physicsSamples": 2909,
+        "requestDecisionSamples": 1164,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5818,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 1.8199985027313232,
+        "maximumTorsoY": 0.976009726524353,
+        "maximumGripTorsoY": 0.976009726524353,
+        "grippedSeconds": 58.1811408996582,
+        "actualTargetSamples": 5818,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5818,
+          0
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5818,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5818,
+        "gripCommandRadiusSum": 4397.25439453125,
+        "gripPdRadiusSum": 4397.25439453125,
+        "gripArmSum": 4105.63134765625,
+        "gripOvershootSum": 292.080322265625,
+        "gripForceSum": 285434.71875,
+        "gripPullSum": -261263.09375,
+        "gripTorsoUpForceSum": 285365.09375,
+        "gripForceTorsoSum": [
+          0.7089810967445374,
+          -285365.09375,
+          163.8251495361328
+        ],
+        "gripHandOffsetTorsoSum": [
+          -0.13763584196567535,
+          -3759.6357421875,
+          -1649.617919921875
+        ],
+        "gripHandBelowShoulderTicks": 5818,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5818,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5818,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -261263.09375,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          285365.09375,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          -0.04249780997633934,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          292.080322265625,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.016165869354154,
+      "requestOutputs": 1164,
+      "continuousClipped": 0,
+      "continuousCount": 3492,
+      "agentId": 9,
+      "episode": 1,
+      "gripCommandTargets": {
+        "samples": 1164,
+        "normMin": 0.7551706991814722,
+        "normMean": 0.7555891316374085,
+        "normQuantiles": [
+          0.7551706991814722,
+          0.7555891316374084,
+          0.7560075640933447
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -1.1444091342127649e-05,
+          -0.7004269063472748,
+          -0.2834022641181946
+        ],
+        "axisMin": [
+          -1.5169381185842212e-05,
+          -0.7009990215301514,
+          -0.2837006449699402
+        ],
+        "axisMax": [
+          -7.718801498413086e-06,
+          -0.6998547911643982,
+          -0.283103883266449
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1164,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1164,
+        "normMin": 0.7551706991814722,
+        "normMean": 0.7555891316374085,
+        "normQuantiles": [
+          0.7551706991814722,
+          0.7555891316374084,
+          0.7560075640933447
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -1.1444091342127649e-05,
+          -0.7004269063472748,
+          -0.2834022641181946
+        ],
+        "axisMin": [
+          -1.5169381185842212e-05,
+          -0.7009990215301514,
+          -0.2837006449699402
+        ],
+        "axisMax": [
+          -7.718801498413086e-06,
+          -0.6998547911643982,
+          -0.283103883266449
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1164,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_9",
+        "agentId": 9,
+        "episode": 1,
+        "physicsSamples": 2915,
+        "requestDecisionSamples": 1166,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5830,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 1.6999986171722412,
+        "maximumTorsoY": 0.976003885269165,
+        "maximumGripTorsoY": 0.976003885269165,
+        "grippedSeconds": 58.301143646240234,
+        "actualTargetSamples": 5830,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5830,
+          0
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5830,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5830,
+        "gripCommandRadiusSum": 4405.11474609375,
+        "gripPdRadiusSum": 4405.11474609375,
+        "gripArmSum": 4112.58154296875,
+        "gripOvershootSum": 292.7357177734375,
+        "gripForceSum": 286230.25,
+        "gripPullSum": -261599.5625,
+        "gripTorsoUpForceSum": 285943.15625,
+        "gripForceTorsoSum": [
+          -0.7971771359443665,
+          -285943.15625,
+          668.9965209960938
+        ],
+        "gripHandOffsetTorsoSum": [
+          -0.05954112485051155,
+          -3765.610595703125,
+          -1652.282470703125
+        ],
+        "gripHandBelowShoulderTicks": 5830,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5830,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5830,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -261599.5625,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          285943.15625,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          0.1117979884147644,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          292.7357177734375,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.015704129167716,
+      "requestOutputs": 1168,
+      "continuousClipped": 0,
+      "continuousCount": 3504,
+      "agentId": 1,
+      "episode": 1,
+      "gripCommandTargets": {
+        "samples": 1168,
+        "normMin": 0.7552001648087934,
+        "normMean": 0.7555472028462439,
+        "normQuantiles": [
+          0.7552001648087934,
+          0.7555472028462438,
+          0.7558942408836943
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -3.814697265625e-06,
+          -0.7003797590732574,
+          -0.2834070324897766
+        ],
+        "axisMin": [
+          -1.4215707778930664e-05,
+          -0.7008784413337708,
+          -0.283714234828949
+        ],
+        "axisMax": [
+          6.586313247680664e-06,
+          -0.6998810768127441,
+          -0.28309983015060425
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1168,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1168,
+        "normMin": 0.7552001648087934,
+        "normMean": 0.7555472028462439,
+        "normQuantiles": [
+          0.7552001648087934,
+          0.7555472028462438,
+          0.7558942408836943
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -3.814697265625e-06,
+          -0.7003797590732574,
+          -0.2834070324897766
+        ],
+        "axisMin": [
+          -1.4215707778930664e-05,
+          -0.7008784413337708,
+          -0.283714234828949
+        ],
+        "axisMax": [
+          6.586313247680664e-06,
+          -0.6998810768127441,
+          -0.28309983015060425
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1168,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_14",
+        "agentId": 1,
+        "episode": 1,
+        "physicsSamples": 2920,
+        "requestDecisionSamples": 1168,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5840,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 1.5799987316131592,
+        "maximumTorsoY": 0.9760043621063232,
+        "maximumGripTorsoY": 0.9760043621063232,
+        "grippedSeconds": 58.401145935058594,
+        "actualTargetSamples": 5840,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          5830,
+          0
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5840,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5840,
+        "gripCommandRadiusSum": 4412.2890625,
+        "gripPdRadiusSum": 4412.01708984375,
+        "gripArmSum": 4118.4375,
+        "gripOvershootSum": 293.9275207519531,
+        "gripForceSum": 286740.1875,
+        "gripPullSum": -262055.53125,
+        "gripTorsoUpForceSum": 286436.59375,
+        "gripForceTorsoSum": [
+          -9.914849281311035,
+          -286436.59375,
+          748.44140625
+        ],
+        "gripHandOffsetTorsoSum": [
+          -0.00857461430132389,
+          -3771.874267578125,
+          -1652.7508544921875
+        ],
+        "gripHandBelowShoulderTicks": 5840,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5840,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5840,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -262055.53125,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          286436.59375,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          0.5323227047920227,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          293.9275207519531,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.0161964320373045,
+      "requestOutputs": 1162,
+      "continuousClipped": 0,
+      "continuousCount": 3486,
+      "agentId": 14,
+      "episode": 1,
+      "gripCommandTargets": {
+        "samples": 1162,
+        "normMin": 0.755456647126468,
+        "normMean": 0.7556627681683177,
+        "normQuantiles": [
+          0.755456647126468,
+          0.7556627681683177,
+          0.7558688892101675
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -1.71661376953125e-05,
+          -0.7004849314689636,
+          -0.2834551930427551
+        ],
+        "axisMin": [
+          -4.9591064453125e-05,
+          -0.7008567452430725,
+          -0.28382453322410583
+        ],
+        "axisMax": [
+          1.52587890625e-05,
+          -0.7001131176948547,
+          -0.2830858528614044
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1162,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1162,
+        "normMin": 0.755456647126468,
+        "normMean": 0.7556627681683177,
+        "normQuantiles": [
+          0.755456647126468,
+          0.7556627681683177,
+          0.7558688892101675
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -1.71661376953125e-05,
+          -0.7004849314689636,
+          -0.2834551930427551
+        ],
+        "axisMin": [
+          -4.9591064453125e-05,
+          -0.7008567452430725,
+          -0.28382453322410583
+        ],
+        "axisMax": [
+          1.52587890625e-05,
+          -0.7001131176948547,
+          -0.2830858528614044
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1162,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_12",
+        "agentId": 14,
+        "episode": 1,
+        "physicsSamples": 2910,
+        "requestDecisionSamples": 1164,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5820,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 1.7999985218048096,
+        "maximumTorsoY": 0.9760060906410217,
+        "maximumGripTorsoY": 0.9760060906410217,
+        "grippedSeconds": 58.201141357421875,
+        "actualTargetSamples": 5820,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5820,
+          0
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5820,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5820,
+        "gripCommandRadiusSum": 4397.81640625,
+        "gripPdRadiusSum": 4397.81640625,
+        "gripArmSum": 4105.8017578125,
+        "gripOvershootSum": 292.1590881347656,
+        "gripForceSum": 285533.0,
+        "gripPullSum": -261327.796875,
+        "gripTorsoUpForceSum": 285463.28125,
+        "gripForceTorsoSum": [
+          -0.815274715423584,
+          -285463.28125,
+          164.13902282714844
+        ],
+        "gripHandOffsetTorsoSum": [
+          -0.0990934818983078,
+          -3759.369384765625,
+          -1649.951904296875
+        ],
+        "gripHandBelowShoulderTicks": 5820,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5820,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5820,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -261327.796875,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          285463.28125,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          -0.04251616820693016,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          292.1590881347656,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.015798708947841,
+      "requestOutputs": 1158,
+      "continuousClipped": 0,
+      "continuousCount": 3474,
+      "agentId": 5,
+      "episode": 1,
+      "gripCommandTargets": {
+        "samples": 1158,
+        "normMin": 0.7550933677225948,
+        "normMean": 0.7554640790882162,
+        "normQuantiles": [
+          0.7550933677225948,
+          0.7554640790882161,
+          0.7558347904538374
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          4.00543212890625e-05,
+          -0.700295090675354,
+          -0.28339463472366333
+        ],
+        "axisMin": [
+          1.6182661056518555e-05,
+          -0.7008223533630371,
+          -0.283709317445755
+        ],
+        "axisMax": [
+          6.392598152160645e-05,
+          -0.6997678279876709,
+          -0.28307995200157166
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1158,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1158,
+        "normMin": 0.7550933677225948,
+        "normMean": 0.7554640790882162,
+        "normQuantiles": [
+          0.7550933677225948,
+          0.7554640790882161,
+          0.7558347904538374
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          4.00543212890625e-05,
+          -0.700295090675354,
+          -0.28339463472366333
+        ],
+        "axisMin": [
+          1.6182661056518555e-05,
+          -0.7008223533630371,
+          -0.283709317445755
+        ],
+        "axisMax": [
+          6.392598152160645e-05,
+          -0.6997678279876709,
+          -0.28307995200157166
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1158,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_8",
+        "agentId": 5,
+        "episode": 1,
+        "physicsSamples": 2900,
+        "requestDecisionSamples": 1160,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5800,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 1.9999983310699463,
+        "maximumTorsoY": 0.975506603717804,
+        "maximumGripTorsoY": 0.975506603717804,
+        "grippedSeconds": 58.001136779785156,
+        "actualTargetSamples": 5800,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5800,
+          0
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5800,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5800,
+        "gripCommandRadiusSum": 4381.77294921875,
+        "gripPdRadiusSum": 4381.77294921875,
+        "gripArmSum": 4090.222900390625,
+        "gripOvershootSum": 291.2878112792969,
+        "gripForceSum": 284488.09375,
+        "gripPullSum": -260528.140625,
+        "gripTorsoUpForceSum": 284484.875,
+        "gripForceTorsoSum": [
+          0.5572519302368164,
+          -284484.875,
+          -55.44343185424805
+        ],
+        "gripHandOffsetTorsoSum": [
+          0.23083849251270294,
+          -3745.51611328125,
+          -1643.6292724609375
+        ],
+        "gripHandBelowShoulderTicks": 5800,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5800,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5800,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -260528.140625,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          284484.875,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          -0.004950201138854027,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          291.2878112792969,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.0157510951303266,
+      "requestOutputs": 1166,
+      "continuousClipped": 0,
+      "continuousCount": 3498,
+      "agentId": 12,
+      "episode": 1,
+      "gripCommandTargets": {
+        "samples": 1166,
+        "normMin": 0.7550981816503903,
+        "normMean": 0.7554996741580293,
+        "normQuantiles": [
+          0.7550981816503903,
+          0.7554996741580295,
+          0.7559011666656688
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          3.2201409339904785e-05,
+          -0.7003327012062073,
+          -0.28339654207229614
+        ],
+        "axisMin": [
+          1.5348196029663086e-05,
+          -0.7008975744247437,
+          -0.2837221324443817
+        ],
+        "axisMax": [
+          4.9054622650146484e-05,
+          -0.6997678279876709,
+          -0.28307095170021057
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1166,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1166,
+        "normMin": 0.7550981816503903,
+        "normMean": 0.7554996741580293,
+        "normQuantiles": [
+          0.7550981816503903,
+          0.7554996741580295,
+          0.7559011666656688
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          3.2201409339904785e-05,
+          -0.7003327012062073,
+          -0.28339654207229614
+        ],
+        "axisMin": [
+          1.5348196029663086e-05,
+          -0.7008975744247437,
+          -0.2837221324443817
+        ],
+        "axisMax": [
+          4.9054622650146484e-05,
+          -0.6997678279876709,
+          -0.28307095170021057
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1166,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_7",
+        "agentId": 12,
+        "episode": 1,
+        "physicsSamples": 2919,
+        "requestDecisionSamples": 1168,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5838,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 1.6199986934661865,
+        "maximumTorsoY": 0.9760022163391113,
+        "maximumGripTorsoY": 0.9760022163391113,
+        "grippedSeconds": 58.38114547729492,
+        "actualTargetSamples": 5838,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          5832,
+          0
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5838,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5838,
+        "gripCommandRadiusSum": 4410.541015625,
+        "gripPdRadiusSum": 4410.42724609375,
+        "gripArmSum": 4116.779296875,
+        "gripOvershootSum": 293.5775146484375,
+        "gripForceSum": 286635.65625,
+        "gripPullSum": -261960.9375,
+        "gripTorsoUpForceSum": 286332.3125,
+        "gripForceTorsoSum": [
+          0.7731339335441589,
+          -286332.3125,
+          737.26318359375
+        ],
+        "gripHandOffsetTorsoSum": [
+          0.1655256152153015,
+          -3770.43701171875,
+          -1653.1732177734375
+        ],
+        "gripHandBelowShoulderTicks": 5838,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5838,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5838,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -261960.9375,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          286332.3125,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          0.4334399104118347,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          293.5775146484375,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.0162413884390844,
+      "requestOutputs": 1164,
+      "continuousClipped": 0,
+      "continuousCount": 3492,
+      "agentId": 8,
+      "episode": 1,
+      "gripCommandTargets": {
+        "samples": 1164,
+        "normMin": 0.7549650965796795,
+        "normMean": 0.7554452759313715,
+        "normQuantiles": [
+          0.7549650965796795,
+          0.7554452759313715,
+          0.7559254552830635
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -1.1444091796875e-05,
+          -0.7002953290939331,
+          -0.28334395587444305
+        ],
+        "axisMin": [
+          -3.641843795776367e-05,
+          -0.7009159326553345,
+          -0.28359755873680115
+        ],
+        "axisMax": [
+          1.3530254364013672e-05,
+          -0.6996747255325317,
+          -0.28309035301208496
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1164,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1164,
+        "normMin": 0.7549650965796795,
+        "normMean": 0.7554452759313715,
+        "normQuantiles": [
+          0.7549650965796795,
+          0.7554452759313715,
+          0.7559254552830635
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -1.1444091796875e-05,
+          -0.7002953290939331,
+          -0.28334395587444305
+        ],
+        "axisMin": [
+          -3.641843795776367e-05,
+          -0.7009159326553345,
+          -0.28359755873680115
+        ],
+        "axisMax": [
+          1.3530254364013672e-05,
+          -0.6996747255325317,
+          -0.28309035301208496
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1164,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_15",
+        "agentId": 8,
+        "episode": 1,
+        "physicsSamples": 2915,
+        "requestDecisionSamples": 1166,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5830,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 1.6999986171722412,
+        "maximumTorsoY": 0.9760040640830994,
+        "maximumGripTorsoY": 0.9760040640830994,
+        "grippedSeconds": 58.301143646240234,
+        "actualTargetSamples": 5830,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5830,
+          0
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5830,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5830,
+        "gripCommandRadiusSum": 4404.07080078125,
+        "gripPdRadiusSum": 4404.07080078125,
+        "gripArmSum": 4111.451171875,
+        "gripOvershootSum": 292.7044982910156,
+        "gripForceSum": 286196.8125,
+        "gripPullSum": -261630.78125,
+        "gripTorsoUpForceSum": 285945.28125,
+        "gripForceTorsoSum": [
+          0.05630037561058998,
+          -285945.28125,
+          579.28271484375
+        ],
+        "gripHandOffsetTorsoSum": [
+          -0.02728998474776745,
+          -3765.148681640625,
+          -1652.03662109375
+        ],
+        "gripHandBelowShoulderTicks": 5830,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5830,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5830,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -261630.78125,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          285945.28125,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          0.06540721654891968,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          292.7044982910156,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.0160000321629923,
+      "requestOutputs": 1160,
+      "continuousClipped": 0,
+      "continuousCount": 3480,
+      "agentId": 13,
+      "episode": 1,
+      "gripCommandTargets": {
+        "samples": 1160,
+        "normMin": 0.7555989742642439,
+        "normMean": 0.7558057064616867,
+        "normQuantiles": [
+          0.7555989742642439,
+          0.7558057064616868,
+          0.7560124386591295
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -1.1444091796875e-05,
+          -0.7006248533725739,
+          -0.28349047899246216
+        ],
+        "axisMin": [
+          -3.814697265625e-05,
+          -0.700995683670044,
+          -0.2838557958602905
+        ],
+        "axisMax": [
+          1.52587890625e-05,
+          -0.7002540230751038,
+          -0.2831251621246338
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1160,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1160,
+        "normMin": 0.7555989742642439,
+        "normMean": 0.7558057064616867,
+        "normQuantiles": [
+          0.7555989742642439,
+          0.7558057064616868,
+          0.7560124386591295
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -1.1444091796875e-05,
+          -0.7006248533725739,
+          -0.28349047899246216
+        ],
+        "axisMin": [
+          -3.814697265625e-05,
+          -0.700995683670044,
+          -0.2838557958602905
+        ],
+        "axisMax": [
+          1.52587890625e-05,
+          -0.7002540230751038,
+          -0.2831251621246338
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1160,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_4",
+        "agentId": 13,
+        "episode": 1,
+        "physicsSamples": 2900,
+        "requestDecisionSamples": 1160,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5800,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 1.9799983501434326,
+        "maximumTorsoY": 0.9755840301513672,
+        "maximumGripTorsoY": 0.9755840301513672,
+        "grippedSeconds": 58.001136779785156,
+        "actualTargetSamples": 5800,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5800,
+          0
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5800,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5800,
+        "gripCommandRadiusSum": 4383.74951171875,
+        "gripPdRadiusSum": 4383.74951171875,
+        "gripArmSum": 4092.3798828125,
+        "gripOvershootSum": 291.3013916015625,
+        "gripForceSum": 284489.875,
+        "gripPullSum": -260565.984375,
+        "gripTorsoUpForceSum": 284485.40625,
+        "gripForceTorsoSum": [
+          0.6643558740615845,
+          -284485.40625,
+          -77.6297607421875
+        ],
+        "gripHandOffsetTorsoSum": [
+          -0.06711065769195557,
+          -3747.487548828125,
+          -1644.16162109375
+        ],
+        "gripHandBelowShoulderTicks": 5800,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5800,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5800,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -260565.984375,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          284485.40625,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          -0.015498937107622623,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          291.3013916015625,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.0174000321276253,
+      "requestOutputs": 1174,
+      "continuousClipped": 0,
+      "continuousCount": 3522,
+      "agentId": 15,
+      "episode": 1,
+      "gripCommandTargets": {
+        "samples": 1174,
+        "normMin": 0.7548339761163142,
+        "normMean": 0.7553941283323985,
+        "normQuantiles": [
+          0.7548339761163142,
+          0.7553941283323984,
+          0.7559542805484827
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -1.33514404296875e-05,
+          -0.7002234756946564,
+          -0.28338509798049927
+        ],
+        "axisMin": [
+          -3.4302473068237305e-05,
+          -0.700933575630188,
+          -0.2836465537548065
+        ],
+        "axisMax": [
+          7.599592208862305e-06,
+          -0.6995133757591248,
+          -0.283123642206192
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1174,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1174,
+        "normMin": 0.7548339761163142,
+        "normMean": 0.7553941283323985,
+        "normQuantiles": [
+          0.7548339761163142,
+          0.7553941283323984,
+          0.7559542805484827
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -1.33514404296875e-05,
+          -0.7002234756946564,
+          -0.28338509798049927
+        ],
+        "axisMin": [
+          -3.4302473068237305e-05,
+          -0.700933575630188,
+          -0.2836465537548065
+        ],
+        "axisMax": [
+          7.599592208862305e-06,
+          -0.6995133757591248,
+          -0.283123642206192
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1174,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_1",
+        "agentId": 15,
+        "episode": 1,
+        "physicsSamples": 2937,
+        "requestDecisionSamples": 1176,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5874,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 1.2599990367889404,
+        "maximumTorsoY": 0.9932317137718201,
+        "maximumGripTorsoY": 0.9932317137718201,
+        "grippedSeconds": 58.741153717041016,
+        "actualTargetSamples": 5874,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          30,
+          5837,
+          0
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5874,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5872,
+        "gripCommandRadiusSum": 4437.166015625,
+        "gripPdRadiusSum": 4435.69140625,
+        "gripArmSum": 4141.26708984375,
+        "gripOvershootSum": 295.9292907714844,
+        "gripForceSum": 288510.65625,
+        "gripPullSum": -263479.46875,
+        "gripTorsoUpForceSum": 288097.09375,
+        "gripForceTorsoSum": [
+          -1.3783131837844849,
+          -288097.09375,
+          534.3265991210938
+        ],
+        "gripHandOffsetTorsoSum": [
+          -0.06753696501255035,
+          -3793.152587890625,
+          -1648.3450927734375
+        ],
+        "gripHandBelowShoulderTicks": 5874,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5874,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5874,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -263479.46875,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          288097.09375,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          -1.7083864212036133,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          295.9292907714844,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.0161013490287587,
+      "requestOutputs": 1170,
+      "continuousClipped": 0,
+      "continuousCount": 3510,
+      "agentId": 2,
+      "episode": 1,
+      "gripCommandTargets": {
+        "samples": 1170,
+        "normMin": 0.7552001431440162,
+        "normMean": 0.7555471476348412,
+        "normQuantiles": [
+          0.7552001431440162,
+          0.7555471476348414,
+          0.7558941521256666
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -3.814697265625e-06,
+          -0.7003796994686127,
+          -0.2834070324897766
+        ],
+        "axisMin": [
+          -1.341104507446289e-05,
+          -0.700878381729126,
+          -0.28371432423591614
+        ],
+        "axisMax": [
+          5.781650543212891e-06,
+          -0.6998810172080994,
+          -0.2830997407436371
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1170,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1170,
+        "normMin": 0.7552001431440162,
+        "normMean": 0.7555471476348412,
+        "normQuantiles": [
+          0.7552001431440162,
+          0.7555471476348414,
+          0.7558941521256666
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -3.814697265625e-06,
+          -0.7003796994686127,
+          -0.2834070324897766
+        ],
+        "axisMin": [
+          -1.341104507446289e-05,
+          -0.700878381729126,
+          -0.28371432423591614
+        ],
+        "axisMax": [
+          5.781650543212891e-06,
+          -0.6998810172080994,
+          -0.2830997407436371
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1170,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_6",
+        "agentId": 2,
+        "episode": 1,
+        "physicsSamples": 2925,
+        "requestDecisionSamples": 1170,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5850,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 1.4799988269805908,
+        "maximumTorsoY": 0.9760043025016785,
+        "maximumGripTorsoY": 0.9760043025016785,
+        "grippedSeconds": 58.50114822387695,
+        "actualTargetSamples": 5850,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          15,
+          5830,
+          0
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5850,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5850,
+        "gripCommandRadiusSum": 4419.84521484375,
+        "gripPdRadiusSum": 4419.02978515625,
+        "gripArmSum": 4124.8984375,
+        "gripOvershootSum": 295.0418395996094,
+        "gripForceSum": 287280.28125,
+        "gripPullSum": -262594.78125,
+        "gripTorsoUpForceSum": 286973.59375,
+        "gripForceTorsoSum": [
+          -16.385339736938477,
+          -286973.59375,
+          804.6788330078125
+        ],
+        "gripHandOffsetTorsoSum": [
+          -0.016914408653974533,
+          -3778.282470703125,
+          -1652.0516357421875
+        ],
+        "gripHandBelowShoulderTicks": 5850,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5850,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5850,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -262594.78125,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          286973.59375,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          0.2524980306625366,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          295.0418395996094,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.0171889839984942,
+      "requestOutputs": 1174,
+      "continuousClipped": 0,
+      "continuousCount": 3522,
+      "agentId": 11,
+      "episode": 1,
+      "gripCommandTargets": {
+        "samples": 1174,
+        "normMin": 0.7551058963392658,
+        "normMean": 0.7554745521953397,
+        "normQuantiles": [
+          0.7551058963392658,
+          0.7554745521953397,
+          0.7558432080514135
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          6.67572021484375e-06,
+          -0.7003133594989777,
+          -0.283377468585968
+        ],
+        "axisMin": [
+          -4.8995018005371094e-05,
+          -0.7008247971534729,
+          -0.28365856409072876
+        ],
+        "axisMax": [
+          6.23464584350586e-05,
+          -0.6998019218444824,
+          -0.2830963730812073
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1174,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1174,
+        "normMin": 0.7551058963392658,
+        "normMean": 0.7554745521953397,
+        "normQuantiles": [
+          0.7551058963392658,
+          0.7554745521953397,
+          0.7558432080514135
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          6.67572021484375e-06,
+          -0.7003133594989777,
+          -0.283377468585968
+        ],
+        "axisMin": [
+          -4.8995018005371094e-05,
+          -0.7008247971534729,
+          -0.28365856409072876
+        ],
+        "axisMax": [
+          6.23464584350586e-05,
+          -0.6998019218444824,
+          -0.2830963730812073
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1174,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_10",
+        "agentId": 11,
+        "episode": 1,
+        "physicsSamples": 2935,
+        "requestDecisionSamples": 1174,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5870,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 1.279999017715454,
+        "maximumTorsoY": 0.9930674433708191,
+        "maximumGripTorsoY": 0.9930674433708191,
+        "grippedSeconds": 58.70115280151367,
+        "actualTargetSamples": 5870,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          29,
+          5834,
+          0
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5870,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5866,
+        "gripCommandRadiusSum": 4434.673828125,
+        "gripPdRadiusSum": 4433.21142578125,
+        "gripArmSum": 4138.95947265625,
+        "gripOvershootSum": 295.5503234863281,
+        "gripForceSum": 288330.90625,
+        "gripPullSum": -263172.65625,
+        "gripTorsoUpForceSum": 287826.09375,
+        "gripForceTorsoSum": [
+          25.551366806030273,
+          -287826.09375,
+          422.7601318359375
+        ],
+        "gripHandOffsetTorsoSum": [
+          0.041371021419763565,
+          -3790.85009765625,
+          -1645.73876953125
+        ],
+        "gripHandBelowShoulderTicks": 5870,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5870,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5870,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -263172.65625,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          287826.09375,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          -1.2912651300430298,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          295.5503234863281,
+          0.0
+        ]
+      }
+    },
+    {
+      "return": -1.0106257522420492,
+      "requestOutputs": 1176,
+      "continuousClipped": 0,
+      "continuousCount": 3528,
+      "agentId": 7,
+      "episode": 1,
+      "gripCommandTargets": {
+        "samples": 1176,
+        "normMin": 0.7553129027475666,
+        "normMean": 0.7556363322911245,
+        "normQuantiles": [
+          0.7553129027475666,
+          0.7556363322911246,
+          0.7559597618346825
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -1.1920928955078125e-05,
+          -0.7004764676094055,
+          -0.28340567648410797
+        ],
+        "axisMin": [
+          -2.2411346435546875e-05,
+          -0.7009470462799072,
+          -0.2837064266204834
+        ],
+        "axisMax": [
+          -1.430511474609375e-06,
+          -0.7000058889389038,
+          -0.28310492634773254
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1176,
+          0,
+          0
+        ]
+      },
+      "commandTargets": {
+        "samples": 1176,
+        "normMin": 0.7553129027475666,
+        "normMean": 0.7556363322911245,
+        "normQuantiles": [
+          0.7553129027475666,
+          0.7556363322911246,
+          0.7559597618346825
+        ],
+        "outerFraction": 0.0,
+        "innerFraction": 0.0,
+        "axisMean": [
+          -1.1920928955078125e-05,
+          -0.7004764676094055,
+          -0.28340567648410797
+        ],
+        "axisMin": [
+          -2.2411346435546875e-05,
+          -0.7009470462799072,
+          -0.2837064266204834
+        ],
+        "axisMax": [
+          -1.430511474609375e-06,
+          -0.7000058889389038,
+          -0.28310492634773254
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1176,
+          0,
+          0
+        ]
+      },
+      "physics": {
+        "arena": "ClimbArena_5",
+        "agentId": 7,
+        "episode": 1,
+        "physicsSamples": 2940,
+        "requestDecisionSamples": 1176,
+        "requestRisingEdges": 2,
+        "requestedHandTicks": 5880,
+        "gripSuccesses": 2,
+        "rejectedHandTicks": 0,
+        "cooldownBlockedTicks": 0,
+        "rearmBlockedTicks": 0,
+        "firstGripSeconds": 1.1799991130828857,
+        "maximumTorsoY": 0.993080735206604,
+        "maximumGripTorsoY": 0.993080735206604,
+        "grippedSeconds": 58.80115509033203,
+        "actualTargetSamples": 5880,
+        "actualOuterBoundary": 0,
+        "actualInnerBoundary": 0,
+        "actualNormHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          29,
+          5840,
+          4
+        ],
+        "rejectionReasons": [],
+        "rejectionCounts": [],
+        "freeHandTicks": 0,
+        "legalContactTicks": 0,
+        "gripHandTicks": 5880,
+        "gripCommandOuter": 0,
+        "gripPushTicks": 5868,
+        "gripCommandRadiusSum": 4443.13330078125,
+        "gripPdRadiusSum": 4441.98583984375,
+        "gripArmSum": 4147.89453125,
+        "gripOvershootSum": 295.2901306152344,
+        "gripForceSum": 288879.0,
+        "gripPullSum": -263033.65625,
+        "gripTorsoUpForceSum": 287931.96875,
+        "gripForceTorsoSum": [
+          22.413818359375,
+          -287931.96875,
+          -20.691743850708008
+        ],
+        "gripHandOffsetTorsoSum": [
+          -0.04935035854578018,
+          -3798.5048828125,
+          -1642.5653076171875
+        ],
+        "gripHandBelowShoulderTicks": 5880,
+        "gripCommandHistogram": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5880,
+          0,
+          0
+        ],
+        "binTicks": [
+          0,
+          5880,
+          0
+        ],
+        "binPullSum": [
+          0.0,
+          -263033.65625,
+          0.0
+        ],
+        "binTorsoUpForceSum": [
+          0.0,
+          287931.96875,
+          0.0
+        ],
+        "binTorsoVyStepSum": [
+          0.0,
+          3.6343579292297363,
+          0.0
+        ],
+        "binOvershootSum": [
+          0.0,
+          295.2901306152344,
+          0.0
+        ]
+      }
+    }
+  ]
+}
