@@ -19,7 +19,8 @@ namespace PhysicalAI.Climber.Layer2Prep
         long physicsCount,decisionCount,startPhysics,startDecisions;
         double measureStart;
         bool measuring,finished;
-        float warmup,seconds;
+        float warmup,seconds,scanMinHeight=.15f;
+        int scanHeightCount=10;
         StreamWriter csv;
         readonly CultureInfo ci=CultureInfo.InvariantCulture;
         [Serializable] public sealed class Metadata
@@ -38,6 +39,8 @@ namespace PhysicalAI.Climber.Layer2Prep
             mode=Arg("--prep-mode","validate");output=Path.GetFullPath(Arg("--prep-output","results/layer2/validate"));Directory.CreateDirectory(output);
             count=int.Parse(Arg("--prep-count",mode=="scan"?"8":"16"),ci);
             warmup=float.Parse(Arg("--prep-warmup","3"),ci);seconds=float.Parse(Arg("--prep-seconds","12"),ci);
+            scanMinHeight=float.Parse(Arg("--prep-min-height",".15"),ci);
+            scanHeightCount=int.Parse(Arg("--prep-height-count","10"),ci);
             Application.targetFrameRate=-1;QualitySettings.vSyncCount=0;Time.timeScale=100;
             for(int i=0;i<count;i++)walls.Add(new PrepWall(i,Material,mode=="throughput"?0:new[]{0,15,-15,30,-30,0,15,-15}[i%8]));
             if(mode!="throughput")
@@ -50,7 +53,7 @@ namespace PhysicalAI.Climber.Layer2Prep
         }
         void BeginCase()
         {
-            float height=mode=="scan"?.15f+(caseIndex/13)*.05f:float.Parse(Arg("--prep-height",".25"),ci);
+            float height=mode=="scan"?scanMinHeight+(caseIndex/13)*.05f:float.Parse(Arg("--prep-height",".25"),ci);
             float spacing=mode=="scan"?.20f+(caseIndex%13)*.05f:float.Parse(Arg("--prep-spacing",".40"),ci);
             policies.Clear();
             for(int i=0;i<count;i++){walls[i].Configure(height,spacing);walls[i].Reset(mode=="throughput"?0:(i%2==0?-.01f:.01f));policies.Add(new PrepClimbController(walls[i]));}
@@ -88,7 +91,7 @@ namespace PhysicalAI.Climber.Layer2Prep
             }
             csv.Flush();caseIndex++;
             UnityEngine.Debug.Log("PREP_CASE "+caseIndex+" episodes="+episodes+" successes="+successes);
-            if(mode!="scan"||caseIndex>=130)Complete();else BeginCase();
+            if(mode!="scan"||caseIndex>=13*scanHeightCount)Complete();else BeginCase();
         }
         void Complete()
         {
