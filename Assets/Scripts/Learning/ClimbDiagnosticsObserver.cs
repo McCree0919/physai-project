@@ -18,7 +18,18 @@ namespace PhysicalAI.Learning
             public int actualTargetSamples,actualOuterBoundary,actualInnerBoundary;
             public int[] actualNormHistogram=new int[17];
             public string[] rejectionReasons;public int[] rejectionCounts;
+            // Free-hand legal contact: any non-gripped hand whose public candidate query is Allowed, requested or not.
+            public int freeHandTicks,legalContactTicks;
+            // Per gripping hand per physics sample. q=Agent command target, pd=body-filtered target, arm=|hand-shoulder|.
+            // Force F acts on the hand, -F on the torso at the shoulder; pull=-F along shoulder->hand (positive pulls torso toward hold).
+            public int gripHandTicks,gripCommandOuter,gripPushTicks;
+            public float gripCommandRadiusSum,gripPdRadiusSum,gripArmSum,gripOvershootSum,gripForceSum,gripPullSum,gripTorsoUpForceSum;
+            public float[] gripForceTorsoSum=new float[3],gripHandOffsetTorsoSum=new float[3];public int gripHandBelowShoulderTicks;
+            public int[] gripCommandHistogram=new int[18];
+            // Bins by command radius: [<0.6, 0.6-0.84, >=0.84].
+            public int[] binTicks=new int[3];public float[] binPullSum=new float[3],binTorsoUpForceSum=new float[3],binTorsoVyStepSum=new float[3],binOvershootSum=new float[3];
         }
+        static readonly System.Reflection.FieldInfo commandTargets=typeof(ClimberAgent).GetField("targets",System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic);
         ClimberAgent agent;ClimberBody body;Episode current;
         readonly bool[] held=new bool[2],requested=new bool[2];
         readonly Dictionary<string,int> rejected=new Dictionary<string,int>();
@@ -63,6 +74,23 @@ namespace PhysicalAI.Learning
                         if(!candidate.Allowed){current.rejectedHandTicks++;if(!rejected.ContainsKey(candidate.Reason))rejected[candidate.Reason]=0;rejected[candidate.Reason]++;}
                     }
                 }
+                if(h.Grabbed)
+                {
+                    // Read-only copy of the Agent's private command buffer; never written.
+                    float q=((Vector3[])commandTargets.GetValue(agent))[i].magnitude;
+                    var inv=Quaternion.Inverse(b.Rotation);Vector3 r=h.Position-h.ShoulderPosition;
+                    float pull=-Vector3.Dot(h.CommandForce,r.normalized),up=-h.CommandForce.y,overshoot=q-h.ArmLength;
+                    var local=inv*h.CommandForce;
+                    current.gripHandTicks++;current.gripCommandRadiusSum+=q;current.gripPdRadiusSum+=h.TargetOffset.magnitude;current.gripArmSum+=h.ArmLength;current.gripOvershootSum+=overshoot;
+                    current.gripForceSum+=h.CommandForce.magnitude;current.gripPullSum+=pull;current.gripTorsoUpForceSum+=up;
+                    current.gripForceTorsoSum[0]+=local.x;current.gripForceTorsoSum[1]+=local.y;current.gripForceTorsoSum[2]+=local.z;
+                    var offset=inv*r;current.gripHandOffsetTorsoSum[0]+=offset.x;current.gripHandOffsetTorsoSum[1]+=offset.y;current.gripHandOffsetTorsoSum[2]+=offset.z;if(offset.y<0)current.gripHandBelowShoulderTicks++;
+                    if(q>=.84f)current.gripCommandOuter++;if(pull<0)current.gripPushTicks++;
+                    current.gripCommandHistogram[Mathf.Clamp(Mathf.FloorToInt(q/.05f),0,17)]++;
+                    int bin=q<.6f?0:q<.84f?1:2;
+                    current.binTicks[bin]++;current.binPullSum[bin]+=pull;current.binTorsoUpForceSum[bin]+=up;current.binTorsoVyStepSum[bin]+=b.Velocity.y;current.binOvershootSum[bin]+=overshoot;
+                }
+                else {current.freeHandTicks++;if(body.GetGripCandidate((HandId)i).Allowed)current.legalContactTicks++;}
                 float radius=h.TargetOffset.magnitude;current.actualTargetSamples++;
                 if(radius>=.84f)current.actualOuterBoundary++;if(radius<=.16f)current.actualInnerBoundary++;
                 current.actualNormHistogram[Mathf.Clamp(Mathf.FloorToInt(radius/.05f),0,16)]++;
