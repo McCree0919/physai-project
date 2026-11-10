@@ -1,0 +1,35 @@
+{
+  "reproduction": {
+    "baseline": "docs/data/climb-grip-diagnostics/checkpoint",
+    "targetMode": 0,
+    "episodes": 50,
+    "episodeRecordsIdentical": 50,
+    "runtimeRows": 64,
+    "runtimeRowsIdentical": 64,
+    "note": "terminal block is merged from runtime.csv at archive time; new CSV adds spawn column (all ground)"
+  },
+  "library": {
+    "trajectories": 128,
+    "reasons": {
+      "Success": 128
+    },
+    "level1": 128,
+    "level2": 0,
+    "simSecondsMin": 5.04,
+    "simSecondsMax": 5.12,
+    "stages": {
+      "S1a": 186,
+      "S1b": 522,
+      "S2": 1286
+    }
+  },
+  "tests": {
+    "total": 60,
+    "passed": 57,
+    "failed": [
+      "ClimbSnapshotTests.CrossArenaStateRoundTrip (free obs 302: 1.0 > 0.002)",
+      "ClimbSnapshotTests.NormalResetAfterSnapshotIsUnchanged (obs 302: 1.0 > 1e-4)",
+      "ClimbSnapshotTests.StageSnapshotsContinueConsistently (labeled S1a 8 < 10; 4x BOX_SMOKE_FAILURE stage=Press tier=1)"
+    ]
+  }
+}
