@@ -138,7 +138,8 @@ namespace PhysicalAI.Learning
             supportId=string.IsNullOrEmpty(t.supportKey)?0:Resolve(t.supportKey).GetInstanceID();
             paidSupports.Clear();foreach(var key in t.paidSupportKeys)paidSupports.Add(Resolve(key).GetInstanceID());
             // This episode's return starts at zero: earlier progress stays in the ledger (never repaid) but is not re-credited.
-            progressReward=rewardTime=rewardTerminal=0;active=true;
+            // Height shaping starts from the restored torso height, so the snapshot's own height is never paid.
+            progressReward=rewardTime=rewardTerminal=heightReward=0;heightBest=body.GetBodyState().Position.y;active=true;
             Physics.SyncTransforms();
         }
 

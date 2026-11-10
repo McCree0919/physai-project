@@ -1,6 +1,7 @@
 """Summarize and archive the demonstration-initialisation runs: deterministic ground-spawn evaluations (same metrics as
 analyze_target_representation, with the incremental s2026/s2027 runs of that experiment as baseline), the training-time
 RewardProgress / Level timeline from TensorBoard, and training episodes split by spawn source from the runtime CSVs."""
+import argparse
 import collections
 import csv
 import glob
@@ -16,7 +17,8 @@ BASELINE = ROOT/'docs/data/climb-target-representation/per_seed.csv'
 OUT = ROOT/'docs/data/climb-demo-init'
 SEEDS = [2026, 2027]
 LABELS = ['1M', '2.5M', '5M']
-TAGS = ['Climb/RewardProgress', 'Climb/Level1Rate', 'Climb/Level2Rate', 'Climb/Success', 'Climb/MaximumTorsoHeight', 'Environment/Cumulative Reward',
+PREFIX = 'climb_demo_init'
+TAGS = ['Climb/RewardProgress', 'Climb/RewardHeight', 'Climb/Level1Rate', 'Climb/Level2Rate', 'Climb/Success', 'Climb/MaximumTorsoHeight', 'Environment/Cumulative Reward',
         'Climb/Spawn/DemoFraction', 'Climb/Spawn/ActualDemoFraction', 'Climb/Spawn/Rejected', 'Climb/Spawn/Missing', 'Climb/Spawn/ObservationMismatch']
 
 
@@ -130,10 +132,13 @@ def training_by_source(run_id, series, starts):
 
 
 def main():
+    global SOURCE, OUT, PREFIX
+    p = argparse.ArgumentParser();p.add_argument('--source', default=str(SOURCE));p.add_argument('--out', default=str(OUT));p.add_argument('--run-prefix', default=PREFIX)
+    args = p.parse_args();SOURCE, OUT, PREFIX = Path(args.source), Path(args.out), args.run_prefix
     rows, report = [], {}
     starts = snapshot_starts()
     for seed in SEEDS:
-        run_id = f'climb_demo_init_s{seed}'
+        run_id = f'{PREFIX}_s{seed}'
         summary, series = timeline(run_id)
         summary['trainingEpisodes'] = training_episodes(run_id)
         summary['trainingBySource'] = training_by_source(run_id, series, starts)
@@ -153,7 +158,7 @@ def main():
             metrics = summarize(evaluation['episodes'])
             ups = [e['physics']['gripTorsoUpForceSum']/e['physics']['gripHandTicks'] for e in evaluation['episodes'] if e['physics']['gripHandTicks']]
             metrics['grip']['torsoUpForceEpisodes'] = dict(n=len(ups), p50=sorted(ups)[len(ups)//2], positiveFraction=sum(u > 0 for u in ups)/len(ups)) if ups else None
-            rows.append(dict(mode='demo_init', seed=seed, label=label, steps=info['steps'], modelSha256=info['sha256'], **{k: f(metrics) for k, f in KEYS.items()}))
+            rows.append(dict(mode=PREFIX.removeprefix('climb_'), seed=seed, label=label, steps=info['steps'], modelSha256=info['sha256'], **{k: f(metrics) for k, f in KEYS.items()}))
             destination = OUT/'eval'/run_id/label;destination.mkdir(parents=True, exist_ok=True)
             (destination/'metrics.json').write_text(json.dumps(dict(checkpoint=info, metrics=metrics), indent=2)+'\n', encoding='utf-8')
             shutil.copy2(runtime, destination/'runtime.csv')

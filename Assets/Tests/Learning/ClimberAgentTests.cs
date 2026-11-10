@@ -55,6 +55,30 @@ public sealed class ClimberAgentTests
         Pose(body,1.45f,1.60f,1.10f,1.40f);for(int i=0;i<60;i++)a.BeforePhysics(i);Assert.AreEqual(2,a.ProgressEvents);
         Pose(body,.95f,.30f,.60f,.02f);for(int i=0;i<60;i++)a.BeforePhysics(i);Assert.AreEqual(2,a.ProgressEvents);Assert.AreEqual(.2f,a.GetCumulativeReward(),.00001f);
     }
+    [Test] public void HeightShapingIsOffByDefault()
+    {
+        var a=Create(new Vector3(100,0,100),Quaternion.identity);var body=a.GetComponent<ClimberBody>();
+        Pose(body,1.2f,.3f,.9f,.02f);a.BeforePhysics(0);Assert.AreEqual(0,a.HeightReward);Assert.AreEqual(0,a.GetCumulativeReward());
+    }
+    [Test] public void HeightShapingPaysOnlyNewEpisodeHighsUpToCap()
+    {
+        var a=Create(new Vector3(100,0,100),Quaternion.identity);a.HeightRewardScale=.2f;a.HeightRewardCap=.2f;a.OnEpisodeBegin();var body=a.GetComponent<ClimberBody>();
+        // Spawn torso 0.4m: +0.5m pays 0.1; oscillating back down and up to the same best pays nothing; the total stops at the cap.
+        Pose(body,.9f,.3f,.6f,.02f);a.BeforePhysics(0);Assert.AreEqual(.1f,a.HeightReward,1e-5f);
+        for(int k=0;k<5;k++){Pose(body,.5f,.3f,.6f,.02f);a.BeforePhysics(0);Pose(body,.9f,.3f,.6f,.02f);a.BeforePhysics(0);}
+        Assert.AreEqual(.1f,a.HeightReward,1e-5f);
+        Pose(body,1.2f,.3f,.9f,.02f);a.BeforePhysics(0);Assert.AreEqual(.16f,a.HeightReward,1e-5f);
+        Pose(body,1.9f,.3f,1.6f,.02f);a.BeforePhysics(0);Assert.AreEqual(.2f,a.HeightReward,1e-5f);Assert.AreEqual(.2f,a.GetCumulativeReward(),1e-5f);
+    }
+    [Test] public void HeightShapingStartsFromRestoredSnapshotHeight()
+    {
+        var a=Create(new Vector3(100,0,100),Quaternion.identity);a.HeightRewardScale=.2f;a.HeightRewardCap=.2f;var body=a.GetComponent<ClimberBody>();
+        Pose(body,1.2f,.3f,.9f,.02f);var s=a.CaptureState();a.OnEpisodeBegin();a.RestoreState(s);
+        a.BeforePhysics(0);Assert.AreEqual(0,a.HeightReward);
+        Pose(body,1.3f,.3f,1f,.02f);a.BeforePhysics(0);Assert.AreEqual(.02f,a.HeightReward,1e-5f);
+    }
+    [Test] public void HeightShapingCapMustStayBelowProgressCap()
+    {var a=Create(new Vector3(100,0,100),Quaternion.identity);a.HeightRewardScale=.2f;a.HeightRewardCap=.3f;Assert.Throws<System.InvalidOperationException>(()=>a.OnEpisodeBegin());}
     [Test] public void TargetModeDefaultsToIncremental()
     {var a=Create(new Vector3(100,0,100),Quaternion.identity);Assert.AreEqual(ClimbTargetMode.Incremental,a.TargetMode);Assert.AreEqual(ClimbTargetMode.Incremental,a.ActiveTargetMode);}
     [Test] public void AbsoluteTargetsMapActionWithoutAccumulation()

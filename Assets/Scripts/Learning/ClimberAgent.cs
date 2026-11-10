@@ -16,6 +16,10 @@ namespace PhysicalAI.Learning
         // Default stays Incremental so pilot results reproduce; trainer YAML overrides via environment parameter "target_mode".
         public ClimbTargetMode TargetMode=ClimbTargetMode.Incremental;
         public ClimbTargetMode ActiveTargetMode {get;private set;}
+        // Height shaping (LAYER3_HEIGHT_SHAPING): scale per metre of new episode-best torso height, total capped below the progress cap.
+        // Default off so earlier results reproduce; trainer YAML overrides via "height_reward_scale" / "height_reward_cap".
+        public const float ProgressRewardCap=.3f;
+        public float HeightRewardScale,HeightRewardCap;
         // Snapshot recording only: an external expert drives the body; the Agent tracks task state but never writes commands.
         public bool ExternalCommand;
         ClimberBody body;ClimberGoal goal;BodyReset spawn;
@@ -25,12 +29,13 @@ namespace PhysicalAI.Learning
         readonly HashSet<int> paidSupports=new HashSet<int>();
         readonly bool[] previousGrip=new bool[2];
         float elapsed,goalStable,supportStable,groundStable,brokenTime=-1,highestSupport,progressReward;
-        float rewardTime,rewardTerminal,maximumHeight;
+        float rewardTime,rewardTerminal,maximumHeight,heightScale,heightCap,heightBest,heightReward;
         int supportId,decisions,progressEvents;
         bool active,level1,level2,subscribed;
         public int Decisions => decisions;
         public float Elapsed => elapsed;
         public int ProgressEvents => progressEvents;
+        public float HeightReward => heightReward;
         public override void Initialize()
         {
             body=GetComponent<ClimberBody>();goal=GetComponent<ClimberGoal>();
@@ -49,8 +54,11 @@ namespace PhysicalAI.Learning
             float mode=Academy.Instance.EnvironmentParameters.GetWithDefault("target_mode",(float)TargetMode);
             if(mode!=0&&mode!=1)throw new InvalidOperationException("target_mode must be 0 (incremental) or 1 (absolute): "+mode);
             ActiveTargetMode=(ClimbTargetMode)(int)mode;
+            heightScale=Academy.Instance.EnvironmentParameters.GetWithDefault("height_reward_scale",HeightRewardScale);
+            heightCap=Academy.Instance.EnvironmentParameters.GetWithDefault("height_reward_cap",HeightRewardCap);
+            if(heightScale<0||heightCap<0||heightCap>=ProgressRewardCap)throw new InvalidOperationException($"height_reward_scale must be >=0 and height_reward_cap in [0,{ProgressRewardCap}): {heightScale} {heightCap}");
             body.ResetBody(spawn);Physics.SyncTransforms();
-            elapsed=goalStable=supportStable=groundStable=highestSupport=progressReward=rewardTime=rewardTerminal=0;
+            elapsed=goalStable=supportStable=groundStable=highestSupport=progressReward=rewardTime=rewardTerminal=heightReward=0;
             maximumHeight=spawn.Torso.y;brokenTime=-1;supportId=0;decisions=progressEvents=0;active=true;level1=level2=false;paidSupports.Clear();
             var b=body.GetBodyState();
             for(int i=0;i<2;i++)
@@ -59,6 +67,7 @@ namespace PhysicalAI.Learning
                 body.SetHandTarget((HandId)i,targets[i],FreeEffort);body.SetGrab((HandId)i,false);
             }
             SnapshotSpawn();
+            heightBest=body.GetBodyState().Position.y; // Ground spawn or restored snapshot: only height gained in this episode pays.
         }
         public static Vector3 Project(Vector3 q)
         {float length=q.magnitude;return length<.0001f?Vector3.up*.15f:q*(Mathf.Clamp(length,.15f,.85f)/length);}
@@ -90,6 +99,12 @@ namespace PhysicalAI.Learning
         {
             if(!active)return;
             float dt=Time.fixedDeltaTime;elapsed+=dt;var b=body.GetBodyState();maximumHeight=Mathf.Max(maximumHeight,b.Position.y);
+            if(heightScale>0&&b.Position.y>heightBest)
+            {
+                // Running maximum: each metre is paid once per episode, so oscillating below the best height earns nothing.
+                float r=Mathf.Min(heightScale*(b.Position.y-heightBest),heightCap-heightReward);heightBest=b.Position.y;
+                if(r>0){heightReward+=r;AddReward(r);}
+            }
             for(int i=0;i<2;i++)
             {
                 var h=body.GetHandState((HandId)i);
@@ -144,10 +159,11 @@ namespace PhysicalAI.Learning
             recorder.Add("Climb/Success",success?1:0);recorder.Add("Climb/Level1Rate",level1?1:0);recorder.Add("Climb/Level2Rate",level2?1:0);
             recorder.Add("Climb/Decisions",decisions);recorder.Add("Climb/SimSeconds",elapsed);recorder.Add("Climb/MaximumTorsoHeight",maximumHeight);
             recorder.Add("Climb/RewardProgress",progressReward);recorder.Add("Climb/RewardTime",rewardTime);recorder.Add("Climb/RewardTerminal",rewardTerminal);
+            if(heightScale>0)recorder.Add("Climb/RewardHeight",heightReward);
             foreach(string label in new[] {"Success","Fall","OutOfBounds","UnrecoverableGrip","Timeout"})recorder.Add("Climb/End/"+label,reason==label?1:0);
             if(spawnStage!=null)recorder.Add("Climb/Spawn/"+spawnStage+"/Success",success?1:0);
             SpawnSchedule?.Report(spawnStage??"ground",success,level1,level2);
-            ClimbEpisodeLog.Write(name,success,level1,level2,decisions,elapsed,progressReward+rewardTime+rewardTerminal,reason,SpawnSource);
+            ClimbEpisodeLog.Write(name,success,level1,level2,decisions,elapsed,progressReward+rewardTime+rewardTerminal+heightReward,reason,SpawnSource);
             EndEpisode();
         }
         void Add(Vector3 value,float scale=1)

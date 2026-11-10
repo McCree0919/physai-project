@@ -3,6 +3,7 @@
 200 ground-spawn episodes at the ~1M/2.5M/5M checkpoints). While each run trains, a monitor polls TensorBoard and
 logs when Climb/RewardProgress first becomes non-zero, an ALERT if it is still zero after 1M steps, the spawn mix and
 quarantine shares, and the first Level 1 reached from a ground spawn. Re-running resumes like run_target_representation."""
+import argparse
 import csv
 import datetime
 import glob
@@ -20,6 +21,22 @@ SEEDS = [2026, 2027]
 TARGETS = {'1M': 1_000_000, '2.5M': 2_500_000, '5M': 5_000_000}
 MAX_STEPS = 5_000_000
 POLL_SECONDS = 120
+PREFIX, ENV_PARAMS, CONFIG, BASE_PORT = 'climb_demo_init', [], 'config/climb_demo_init.yaml', 7100
+
+
+def configure():
+    """Defaults reproduce the demo-init experiment; LAYER3_HEIGHT_SHAPING reuses the protocol with its own config/output/run prefix."""
+    global OUT, PREFIX, ENV_PARAMS, CONFIG, BASE_PORT
+    p = argparse.ArgumentParser()
+    p.add_argument('--out', default=str(OUT));p.add_argument('--run-prefix', default=PREFIX);p.add_argument('--config', default=CONFIG)
+    p.add_argument('--base-port', type=int, default=BASE_PORT)
+    p.add_argument('--env-param', action='append', default=[], metavar='NAME=VALUE', help='also set for every evaluation (must match the training YAML)')
+    args = p.parse_args()
+    OUT, PREFIX, ENV_PARAMS, CONFIG, BASE_PORT = Path(args.out), args.run_prefix, args.env_param, args.config, args.base_port
+
+
+def env_args():
+    return [x for e in ENV_PARAMS for x in ('--env-param', e)]
 
 
 def log(message):
@@ -86,12 +103,12 @@ class Monitor:
 
 
 def train(seed, index):
-    run_id = f'climb_demo_init_s{seed}';folder = OUT/run_id;folder.mkdir(parents=True, exist_ok=True)
+    run_id = f'{PREFIX}_s{seed}';folder = OUT/run_id;folder.mkdir(parents=True, exist_ok=True)
     if trained(run_id):log(f'SKIP train {run_id} (complete)');return run_id
     resume = (ROOT/'results'/run_id).exists()
     command = [sys.executable, str(ROOT/'scripts/climb_train_worker.py'), '--train-device', 'cpu', '--train-record', str(folder/'device.jsonl'),
-               'config/climb_demo_init.yaml', '--env', 'Builds/Climb/Climb.exe', '--run-id', run_id, '--seed', str(seed), '--num-envs', '4',
-               '--base-port', str(7100+index*10), '--no-graphics', '--env-args', '--climb-snapshot-library='+str(LIBRARY), '--climb-output='+str(folder/'runtime')]
+               CONFIG, '--env', 'Builds/Climb/Climb.exe', '--run-id', run_id, '--seed', str(seed), '--num-envs', '4',
+               '--base-port', str(BASE_PORT+index*10), '--no-graphics', '--env-args', '--climb-snapshot-library='+str(LIBRARY), '--climb-output='+str(folder/'runtime')]
     if resume:command.append('--resume')
     (folder/'command.json').write_text(json.dumps(command, indent=2)+'\n', encoding='utf-8')
     log(f'START train {run_id} resume={resume}')
@@ -120,7 +137,7 @@ def evaluate(run_id):
         (folder/'checkpoint.json').write_text(json.dumps(dict(label=label, target=target, steps=chosen['steps'], model=str(model), sha256=hashlib.sha256(model.read_bytes()).hexdigest(), targetMode=0), indent=2)+'\n', encoding='utf-8')
         # Diagnostics player has no snapshot library: all evaluation episodes are normal ground spawns.
         command = [sys.executable, str(ROOT/'scripts/climb_behavior_diagnostics.py'), '--episodes', '200', '--modes', 'checkpoint', '--model', str(model),
-                   '--target-mode', '0', '--output', str(folder), '--worker-id', '41']
+                   '--target-mode', '0', '--output', str(folder), '--worker-id', '41']+env_args()
         log(f'START eval {run_id} {label} steps={chosen["steps"]}')
         with (folder/'console.txt').open('w', encoding='utf-8') as stream:result = subprocess.run(command, cwd=ROOT, stdout=stream, stderr=subprocess.STDOUT)
         if result.returncode != 0:raise RuntimeError(f'eval {run_id} {label} failed; see {folder}/console.txt')
@@ -128,9 +145,9 @@ def evaluate(run_id):
 
 
 def main():
-    OUT.mkdir(parents=True, exist_ok=True)
+    configure();OUT.mkdir(parents=True, exist_ok=True)
     if not LIBRARY.exists():raise FileNotFoundError(LIBRARY)
-    log('RUNNER start pid=%d library=%s sha256=%s' % (__import__('os').getpid(), LIBRARY, hashlib.sha256(LIBRARY.read_bytes()).hexdigest()))
+    log('RUNNER start pid=%d config=%s prefix=%s evalEnvParams=%s library=%s sha256=%s' % (__import__('os').getpid(), CONFIG, PREFIX, ENV_PARAMS, LIBRARY, hashlib.sha256(LIBRARY.read_bytes()).hexdigest()))
     for index, seed in enumerate(SEEDS):
         run_id = train(seed, index);evaluate(run_id)
     log('ALL_COMPLETE')
