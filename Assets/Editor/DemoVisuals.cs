@@ -102,6 +102,9 @@ public static class DemoVisuals
     public static void Overlay()
     {
         if(Object.FindFirstObjectByType<DemoHud>()==null)new GameObject("DemoHud").AddComponent<DemoHud>();
+        var cam=Camera.main!=null?Camera.main:Object.FindFirstObjectByType<Camera>();
+        if(cam==null){cam=new GameObject("Camera").AddComponent<Camera>();cam.tag="MainCamera";}
+        if(cam.GetComponent<DemoCamera>()==null)cam.gameObject.AddComponent<DemoCamera>();
     }
 
     [MenuItem("Tools/Demo/Apply Palette To Existing Scenes")]
