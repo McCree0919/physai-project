@@ -211,3 +211,51 @@ Agent仅通过公开身体命令/快照操作；SDK自动MaxStep设0，由环境
 试跑不启用示范状态、BC或循环记忆。新run-id、正常底部出生、16个相同两级结构副本，不能把它们当独立评估结构。计划总墙钟约11分钟，前60秒预热，后600秒测端到端训练率；优化更新以CUDA同步包围计时，另外记录PyTorch分配/保留显存及整卡占用，注明口径。
 
 本轮登层率采用固定两级的累计稳定支撑高度阈值（≥0.45m、≥0.95m），不是直接输入策略的层号，也不证明逐一踩过每个中间面。正式多级评估应另列按真实支撑面和访问顺序定义的条件转换率。
+
+## 13. 手目标表示开关（incremental / absolute）
+
+依据见[LAYER3_PILOT_DIAGNOSIS.md](LAYER3_PILOT_DIAGNOSIS.md)第2.5节和第5节。这是单变量对照，动作维度、观察、抓握请求、努力值、奖励、身体和PPO超参都不变。
+
+### 13.1 选择方式
+
+- `ClimberAgent.TargetMode`默认值为`Incremental`，因此不设置参数时与试跑完全一致，旧结果可以复现。
+- 训练YAML通过`environment_parameters.target_mode`设置：0为incremental，1为absolute。Agent在每回合开始时用`Academy.Instance.EnvironmentParameters.GetWithDefault("target_mode", TargetMode)`读取（本机包`Runtime/EnvironmentParameters.cs`）。其他值直接抛异常，不做静默回退。
+- 两份对照配置是`config/climb_target_incremental.yaml`和`config/climb_target_absolute.yaml`，两者唯一的差别是`target_mode`。`climb_pilot.yaml`不修改。
+- 相对试跑配置，这两份配置还有以下非学习参数不同，两组相同：`max_steps`=5,000,000；`checkpoint_interval`=500,000；`keep_checkpoints`=20；`torch_settings.device`=cpu。
+
+### 13.2 映射
+
+每只手的连续动作a∈[−1,1]³（Agent先逐分量裁剪），在躯干坐标、肩部为原点下：
+
+| 模式 | 每次决策更新 |
+| --- | --- |
+| incremental | q ← Project(q + 0.08·ClampMagnitude(a,1))，最大0.08m/决策 |
+| absolute | q = Project(0.85·ClampMagnitude(a,1))，与上一次的q无关 |
+
+- Project把半径夹到[0.15, 0.85]m（零向量映射为向上0.15m），与身体`SetHandTarget`使用同一个目标球壳。
+- absolute的取值范围：单位动作球线性映射到半径0.85m的球，再把半径小于0.15m的点径向推到0.15m球面上。动作球中|a|<0.176的小球全部落在内壳上，|a|=1落在外壳上。
+- 动作立方体的角（|a|>1）被ClampMagnitude压到外壳。因此均匀随机动作约有1−π/6≈48%的时间位于外壳上。absolute下的“贴边比例”表示策略选择伸直手臂，含义与incremental下的“积分漂移贴边”不同，两组报告时不能直接按同一含义比较。
+- 回合开始时，在第一个动作到来之前，q仍取ResetBody后手相对肩部的实际位置，两种模式相同。观察中的“当前命令目标”字段始终是q，维度和缩放（÷0.9）不变。
+
+### 13.3 与身体目标限速的配合
+
+身体每个物理步执行`targets ← MoveTowards(targets, requested, 1.5m/s·0.02s)`，即每步最多0.03m，每次决策（5个物理步）最多0.15m，然后用这个滤波后的目标做PD控制。
+
+- absolute命令可以在两次决策之间跳变，最大为外壳直径1.7m。身体会把这次跳变摊开到最多约1.7/0.15≈12次决策（1.13秒）内完成，所以不会出现瞬时的大PD误差或力突变。PD的力预算（自由手40N，抓握手315N）也不变。
+- MoveTowards沿直线移动，跨越肩部附近时滤波目标可能暂时进入半径小于0.15m的区域，这与incremental下的抓握重置行为相同，PD仍有限幅。
+- incremental的0.08m/决策小于身体的0.15m/决策，所以滤波目标几乎总能跟上q。absolute下，较大的跳变会使滤波目标落后q最多约1秒。这是该表示的固有代价，不额外加平滑。
+- 抓握瞬间，身体把requested和targets重置为当前手的位置。Agent在下一个物理步重新提交q，两种模式都从这个位置以1.5m/s移向q。
+
+### 13.4 最小有效动作（经验规则）
+
+- **自由手**：重力9.81N，弹簧900N/m，稳态下垂约1.1cm，力预算40N约为重力的4.1倍。absolute下动作变化Δa使目标移动0.85·Δa；Δa=0.05对应4.25cm，大于下垂量。PlayMode测试`SmallAbsoluteActionMovesFreeHandAgainstGravity`验证：Δa_y=0.05使自由手稳态升高3–6cm。
+- **抓握手撑起**：要单手把整个身体（117.72N）向上推，PD误差需要≥117.72/900≈0.13m，目标需位于手下方约0.13m处，对应Δa≈0.15；力预算315N足够。incremental下q每次决策最多移动0.08m，从外壳上的位置（试跑策略抓握时96.8%在外壳上）移到握点下方，需要多次连续同向的决策；具体次数取决于抓握时q的方向，而这个方向没有逐向量记录。
+
+### 13.5 本轮实现边界
+
+只实现开关和测试。不改观察、奖励、努力值和身体。对照实验的协议与结果见`LAYER3_TARGET_REPRESENTATION.md`。
+
+**验证**：
+- PlayMode 50/50通过：原47项，加上新增的`TargetModeDefaultsToIncremental`、`AbsoluteTargetsMapActionWithoutAccumulation`和`SmallAbsoluteActionMovesFreeHandAgainstGravity`。
+- 用新构建、显式设置`target_mode=0`重跑试跑checkpoint 50回合，与开关加入前的诊断记录（`docs/data/climb-grip-diagnostics/checkpoint`）逐回合比较：回报、抓握次数、最高躯干高度、抓握期间受力和命令目标分布全部一致。
+- `ClimbTraining.unity`保持已提交版本：重新生成只会改变fileID，缺失的`TargetMode`字段按默认值0反序列化。

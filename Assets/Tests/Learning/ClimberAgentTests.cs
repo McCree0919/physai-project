@@ -55,6 +55,40 @@ public sealed class ClimberAgentTests
         Pose(body,1.45f,1.60f,1.10f,1.40f);for(int i=0;i<60;i++)a.BeforePhysics(i);Assert.AreEqual(2,a.ProgressEvents);
         Pose(body,.95f,.30f,.60f,.02f);for(int i=0;i<60;i++)a.BeforePhysics(i);Assert.AreEqual(2,a.ProgressEvents);Assert.AreEqual(.2f,a.GetCumulativeReward(),.00001f);
     }
+    [Test] public void TargetModeDefaultsToIncremental()
+    {var a=Create(new Vector3(100,0,100),Quaternion.identity);Assert.AreEqual(ClimbTargetMode.Incremental,a.TargetMode);Assert.AreEqual(ClimbTargetMode.Incremental,a.ActiveTargetMode);}
+    [Test] public void AbsoluteTargetsMapActionWithoutAccumulation()
+    {
+        Assert.AreEqual(.15f,ClimberAgent.AbsoluteTarget(Vector3.zero).magnitude,.0001f);Assert.AreEqual(.85f,ClimberAgent.AbsoluteTarget(Vector3.one).magnitude,.0001f);
+        Assert.AreEqual(new Vector3(.425f,0,0),ClimberAgent.AbsoluteTarget(new Vector3(.5f,0,0)));
+        var a=Create(new Vector3(100,0,100),Quaternion.identity);a.TargetMode=ClimbTargetMode.Absolute;a.OnEpisodeBegin();Assert.AreEqual(ClimbTargetMode.Absolute,a.ActiveTargetMode);
+        var command=new Vector3(-.5f,.3f,.2f);
+        for(int k=0;k<3;k++)
+        {
+            a.ApplyCommand(command,Vector3.zero,0,0);var obs=a.BuildObservations();var expected=ClimberAgent.AbsoluteTarget(command);
+            Assert.AreEqual(expected.x/.9f,obs[19],.0001f);Assert.AreEqual(expected.y/.9f,obs[20],.0001f);Assert.AreEqual(expected.z/.9f,obs[21],.0001f);
+        }
+    }
+    [Test] public void SmallAbsoluteActionMovesFreeHandAgainstGravity()
+    {
+        // Minimum effective action: delta a=0.05 shifts the target 4.25cm; steady gravity sag is 9.81N/900N/m~1.1cm.
+        var a=Create(new Vector3(100,0,100),Quaternion.identity);a.TargetMode=ClimbTargetMode.Absolute;a.OnEpisodeBegin();var body=a.GetComponent<ClimberBody>();
+        // Body physics step is internal to the Climber assembly; invoke it as its own PlayMode tests do, without widening access.
+        var step=typeof(ClimberBody).GetMethod("PhysicsStep",System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic);var dt=new object[] {.02f};
+        var previous=Physics.simulationMode;Physics.simulationMode=SimulationMode.Script;
+        try
+        {
+            var left=new Vector3(-.6f,.3f,0);var right=new Vector3(.6f,.3f,0);
+            float Settle(Vector3 command)
+            {
+                for(int i=0;i<100;i++){if(i%5==0)a.ApplyCommand(command,right,0,0);a.BeforePhysics(i);step.Invoke(body,dt);Physics.Simulate(.02f);Physics.SyncTransforms();}
+                return body.GetHandState(HandId.Left).Position.y;
+            }
+            float before=Settle(left),after=Settle(left+new Vector3(0,.05f,0));
+            Assert.That(after-before,Is.InRange(.03f,.06f));
+        }
+        finally{Physics.simulationMode=previous;}
+    }
     static void Pose(ClimberBody body,float torsoY,float torsoZ,float handY,float handZ)
     {body.ResetBody(new BodyReset {Torso=new Vector3(0,torsoY,torsoZ),LeftHand=new Vector3(-.3f,handY,handZ),RightHand=new Vector3(.3f,handY,handZ),Rotation=Quaternion.identity});Physics.SyncTransforms();}
 }

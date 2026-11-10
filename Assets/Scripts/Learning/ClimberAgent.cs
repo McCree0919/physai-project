@@ -8,10 +8,14 @@ using UnityEngine;
 
 namespace PhysicalAI.Learning
 {
+    public enum ClimbTargetMode {Incremental=0,Absolute=1}
     public sealed class ClimberAgent : Agent
     {
         public const int ObservationCount=327;
-        public const float FreeEffort=1f,GripEffort=.7f;
+        public const float FreeEffort=1f,GripEffort=.7f,AbsoluteReach=.85f;
+        // Default stays Incremental so pilot results reproduce; trainer YAML overrides via environment parameter "target_mode".
+        public ClimbTargetMode TargetMode=ClimbTargetMode.Incremental;
+        public ClimbTargetMode ActiveTargetMode {get;private set;}
         ClimberBody body;ClimberGoal goal;BodyReset spawn;
         readonly Vector3[] targets=new Vector3[2];
         readonly RaycastHit[] hits=new RaycastHit[64];
@@ -40,6 +44,9 @@ namespace PhysicalAI.Learning
         }
         public override void OnEpisodeBegin()
         {
+            float mode=Academy.Instance.EnvironmentParameters.GetWithDefault("target_mode",(float)TargetMode);
+            if(mode!=0&&mode!=1)throw new InvalidOperationException("target_mode must be 0 (incremental) or 1 (absolute): "+mode);
+            ActiveTargetMode=(ClimbTargetMode)(int)mode;
             body.ResetBody(spawn);Physics.SyncTransforms();
             elapsed=goalStable=supportStable=groundStable=highestSupport=progressReward=rewardTime=rewardTerminal=0;
             maximumHeight=spawn.Torso.y;brokenTime=-1;supportId=0;decisions=progressEvents=0;active=true;level1=level2=false;paidSupports.Clear();
@@ -52,13 +59,15 @@ namespace PhysicalAI.Learning
         }
         public static Vector3 Project(Vector3 q)
         {float length=q.magnitude;return length<.0001f?Vector3.up*.15f:q*(Mathf.Clamp(length,.15f,.85f)/length);}
+        // Absolute: the unit action ball maps linearly onto the 0.85m reach ball, no accumulated state.
+        public static Vector3 AbsoluteTarget(Vector3 action) => Project(Vector3.ClampMagnitude(action,1)*AbsoluteReach);
         public void ApplyCommand(Vector3 left,Vector3 right,int grabLeft,int grabRight)
         {
             if(!active)return;
             var commands=new[] {left,right};var grabs=new[] {grabLeft,grabRight};decisions++;
             for(int i=0;i<2;i++)
             {
-                targets[i]=Project(targets[i]+Vector3.ClampMagnitude(commands[i],1)*.08f);
+                targets[i]=ActiveTargetMode==ClimbTargetMode.Absolute?AbsoluteTarget(commands[i]):Project(targets[i]+Vector3.ClampMagnitude(commands[i],1)*.08f);
                 var h=body.GetHandState((HandId)i);
                 body.SetHandTarget((HandId)i,targets[i],h.Grabbed?GripEffort:FreeEffort);
                 body.SetGrab((HandId)i,grabs[i]==1); // State intent, no toggle or automatic rearming.
