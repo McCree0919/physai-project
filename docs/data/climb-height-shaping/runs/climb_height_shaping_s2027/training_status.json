@@ -1,0 +1,131 @@
+{
+    "target_mode": {
+        "lesson_num": 0
+    },
+    "spawn_demo_fraction": {
+        "lesson_num": 0
+    },
+    "height_reward_scale": {
+        "lesson_num": 0
+    },
+    "height_reward_cap": {
+        "lesson_num": 0
+    },
+    "Climb": {
+        "checkpoints": [
+            {
+                "steps": 499996,
+                "file_path": "results\\climb_height_shaping_s2027\\Climb\\Climb-499996.onnx",
+                "reward": -1.0711183015789305,
+                "creation_time": 1794347963.346142,
+                "auxillary_file_paths": [
+                    "results\\climb_height_shaping_s2027\\Climb\\Climb-499996.pt"
+                ]
+            },
+            {
+                "steps": 999927,
+                "file_path": "results\\climb_height_shaping_s2027\\Climb\\Climb-999927.onnx",
+                "reward": -1.1022747148974583,
+                "creation_time": 1794348149.2808247,
+                "auxillary_file_paths": [
+                    "results\\climb_height_shaping_s2027\\Climb\\Climb-999927.pt"
+                ]
+            },
+            {
+                "steps": 1499996,
+                "file_path": "results\\climb_height_shaping_s2027\\Climb\\Climb-1499996.onnx",
+                "reward": -1.0455089536291071,
+                "creation_time": 1794348337.3906724,
+                "auxillary_file_paths": [
+                    "results\\climb_height_shaping_s2027\\Climb\\Climb-1499996.pt"
+                ]
+            },
+            {
+                "steps": 1999915,
+                "file_path": "results\\climb_height_shaping_s2027\\Climb\\Climb-1999915.onnx",
+                "reward": -1.0400366627357223,
+                "creation_time": 1794348528.101364,
+                "auxillary_file_paths": [
+                    "results\\climb_height_shaping_s2027\\Climb\\Climb-1999915.pt"
+                ]
+            },
+            {
+                "steps": 2499974,
+                "file_path": "results\\climb_height_shaping_s2027\\Climb\\Climb-2499974.onnx",
+                "reward": -0.8754781977837219,
+                "creation_time": 1794348713.9174347,
+                "auxillary_file_paths": [
+                    "results\\climb_height_shaping_s2027\\Climb\\Climb-2499974.pt"
+                ]
+            },
+            {
+                "steps": 2999883,
+                "file_path": "results\\climb_height_shaping_s2027\\Climb\\Climb-2999883.onnx",
+                "reward": 1.2114000245928764,
+                "creation_time": 1794348906.5672834,
+                "auxillary_file_paths": [
+                    "results\\climb_height_shaping_s2027\\Climb\\Climb-2999883.pt"
+                ]
+            },
+            {
+                "steps": 3499926,
+                "file_path": "results\\climb_height_shaping_s2027\\Climb\\Climb-3499926.onnx",
+                "reward": 1.1483545104471538,
+                "creation_time": 1794349097.3716085,
+                "auxillary_file_paths": [
+                    "results\\climb_height_shaping_s2027\\Climb\\Climb-3499926.pt"
+                ]
+            },
+            {
+                "steps": 3999966,
+                "file_path": "results\\climb_height_shaping_s2027\\Climb\\Climb-3999966.onnx",
+                "reward": 1.2869285085146223,
+                "creation_time": 1794349289.2788708,
+                "auxillary_file_paths": [
+                    "results\\climb_height_shaping_s2027\\Climb\\Climb-3999966.pt"
+                ]
+            },
+            {
+                "steps": 4499935,
+                "file_path": "results\\climb_height_shaping_s2027\\Climb\\Climb-4499935.onnx",
+                "reward": 1.2763746851280835,
+                "creation_time": 1794349488.375156,
+                "auxillary_file_paths": [
+                    "results\\climb_height_shaping_s2027\\Climb\\Climb-4499935.pt"
+                ]
+            },
+            {
+                "steps": 4999949,
+                "file_path": "results\\climb_height_shaping_s2027\\Climb\\Climb-4999949.onnx",
+                "reward": 1.3157465752229651,
+                "creation_time": 1794349682.8975756,
+                "auxillary_file_paths": [
+                    "results\\climb_height_shaping_s2027\\Climb\\Climb-4999949.pt"
+                ]
+            },
+            {
+                "steps": 5000007,
+                "file_path": "results\\climb_height_shaping_s2027\\Climb\\Climb-5000007.onnx",
+                "reward": 1.3160467958154758,
+                "creation_time": 1794349682.952526,
+                "auxillary_file_paths": [
+                    "results\\climb_height_shaping_s2027\\Climb\\Climb-5000007.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 5000007,
+            "file_path": "results\\climb_height_shaping_s2027\\Climb.onnx",
+            "reward": 1.3160467958154758,
+            "creation_time": 1794349682.952526,
+            "auxillary_file_paths": [
+                "results\\climb_height_shaping_s2027\\Climb\\Climb-5000007.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.7.1+cu128"
+    }
+}

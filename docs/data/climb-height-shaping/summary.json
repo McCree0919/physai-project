@@ -1,0 +1,1595 @@
+{
+  "runs": {
+    "climb_height_shaping_s2026": {
+      "firstNonzeroRewardProgress": {
+        "step": 40000,
+        "value": 0.009677419438958168
+      },
+      "zeroAfter1M": false,
+      "windows": {
+        "0-1M": {
+          "Spawn/DemoFraction": 0.5145660218867388,
+          "Spawn/ActualDemoFraction": 0.5145660218867388,
+          "Spawn/QuarantineFraction/S1a": 0.0,
+          "Spawn/QuarantineFraction/S1b": 0.0,
+          "Spawn/QuarantineFraction/S2": 0.0,
+          "Spawn/QuarantineFraction/S3": 0.0,
+          "Success": 0.0,
+          "Level1Rate": 0.3117148178268452,
+          "Level2Rate": 0.0,
+          "MaximumTorsoHeight": 0.8432106436515341,
+          "RewardProgress": 0.013853435718207335,
+          "RewardHeight": 0.04229411262120809,
+          "Spawn/S3/Success": 0.0,
+          "Cumulative Reward": -1.0593375204777231,
+          "Spawn/S2/Success": 0.0,
+          "Spawn/S1b/Success": 0.0,
+          "Spawn/S1a/Success": 0.0
+        },
+        "1-2.5M": {
+          "Spawn/DemoFraction": 0.5047260826826095,
+          "Spawn/ActualDemoFraction": 0.5047260826826095,
+          "Spawn/QuarantineFraction/S1a": 0.0,
+          "Spawn/QuarantineFraction/S1b": 0.0,
+          "Spawn/QuarantineFraction/S2": 0.0,
+          "Spawn/QuarantineFraction/S3": 0.0,
+          "Success": 0.0,
+          "Level1Rate": 0.6129632508258025,
+          "Level2Rate": 0.0,
+          "MaximumTorsoHeight": 1.0586505897839864,
+          "RewardProgress": 0.04755602326088895,
+          "RewardHeight": 0.09282804779708385,
+          "Spawn/S3/Success": 0.0,
+          "Cumulative Reward": -0.9796409444014231,
+          "Spawn/S2/Success": 0.0,
+          "Spawn/S1b/Success": 0.0,
+          "Spawn/S1a/Success": 0.0
+        },
+        "2.5-4M": {
+          "Spawn/DemoFraction": 0.48844840029875436,
+          "Spawn/ActualDemoFraction": 0.48844840029875436,
+          "Spawn/QuarantineFraction/S1a": 0.0,
+          "Spawn/QuarantineFraction/S1b": 0.0,
+          "Spawn/QuarantineFraction/S2": 0.0,
+          "Spawn/QuarantineFraction/S3": 0.0,
+          "Success": 0.0004761904974778493,
+          "Level1Rate": 0.9599725377559661,
+          "Level2Rate": 0.000714285746216774,
+          "MaximumTorsoHeight": 1.250408345858256,
+          "RewardProgress": 0.08210274308919907,
+          "RewardHeight": 0.12952049945791563,
+          "Spawn/S3/Success": 0.0,
+          "Cumulative Reward": -0.9072817619641622,
+          "Spawn/S2/Success": 0.0023310024004716138,
+          "Spawn/S1b/Success": 0.0,
+          "Spawn/S1a/Success": 0.0
+        },
+        "4-5.1M": {
+          "Spawn/DemoFraction": 0.5025034408168038,
+          "Spawn/ActualDemoFraction": 0.5025034408168038,
+          "Spawn/QuarantineFraction/S1a": 0.0,
+          "Spawn/QuarantineFraction/S1b": 0.0,
+          "Spawn/QuarantineFraction/S2": 0.0,
+          "Spawn/QuarantineFraction/S3": 0.0,
+          "Success": 0.09519507946206791,
+          "Level1Rate": 0.9806713432368666,
+          "Level2Rate": 0.0978523153110896,
+          "MaximumTorsoHeight": 1.4413681809264836,
+          "RewardProgress": 0.08720352865829326,
+          "RewardHeight": 0.1592163047430539,
+          "Spawn/S3/Success": 0.10554683486838917,
+          "Cumulative Reward": -0.6772326159632147,
+          "Spawn/S2/Success": 0.0998797503986744,
+          "Spawn/S1b/Success": 0.13296041359384375,
+          "Spawn/S1a/Success": 0.0969667328547125
+        }
+      },
+      "trainingEpisodes": {
+        "total": 8641,
+        "demoShare": 0.5027195926397408,
+        "bySpawn": {
+          "S1a": {
+            "episodes": 739,
+            "level1": 0.6156968876860622,
+            "level2": 0.03247631935047361,
+            "success": 0.028416779431664412,
+            "reasons": {
+              "Timeout": 717,
+              "Success": 21,
+              "Fall": 1
+            }
+          },
+          "S1b": {
+            "episodes": 762,
+            "level1": 0.6089238845144357,
+            "level2": 0.03543307086614173,
+            "success": 0.03543307086614173,
+            "reasons": {
+              "Timeout": 734,
+              "Success": 27,
+              "Fall": 1
+            }
+          },
+          "S2": {
+            "episodes": 1571,
+            "level1": 0.8726925525143221,
+            "level2": 0.025461489497135583,
+            "success": 0.025461489497135583,
+            "reasons": {
+              "Timeout": 1498,
+              "Fall": 33,
+              "Success": 40
+            }
+          },
+          "S3": {
+            "episodes": 1272,
+            "level1": 1.0,
+            "level2": 0.03459119496855346,
+            "success": 0.0330188679245283,
+            "reasons": {
+              "Timeout": 1183,
+              "Fall": 47,
+              "Success": 42
+            }
+          },
+          "ground": {
+            "episodes": 4297,
+            "level1": 0.6399813823597859,
+            "level2": 0.028391901326506864,
+            "success": 0.027926460321154294,
+            "reasons": {
+              "Timeout": 4169,
+              "Fall": 7,
+              "Success": 120,
+              "OutOfBounds": 1
+            }
+          }
+        },
+        "groundByFifth": [
+          {
+            "episodes": 859,
+            "level1": 0.0011641443538998836,
+            "level2": 0.0,
+            "success": 0.0,
+            "reasons": {
+              "Timeout": 859
+            }
+          },
+          {
+            "episodes": 859,
+            "level1": 0.33061699650756693,
+            "level2": 0.0,
+            "success": 0.0,
+            "reasons": {
+              "Timeout": 858,
+              "OutOfBounds": 1
+            }
+          },
+          {
+            "episodes": 860,
+            "level1": 0.936046511627907,
+            "level2": 0.0,
+            "success": 0.0,
+            "reasons": {
+              "Timeout": 859,
+              "Fall": 1
+            }
+          },
+          {
+            "episodes": 859,
+            "level1": 0.9511059371362048,
+            "level2": 0.0,
+            "success": 0.0,
+            "reasons": {
+              "Timeout": 857,
+              "Fall": 2
+            }
+          },
+          {
+            "episodes": 860,
+            "level1": 0.9802325581395349,
+            "level2": 0.14186046511627906,
+            "success": 0.13953488372093023,
+            "reasons": {
+              "Timeout": 736,
+              "Fall": 4,
+              "Success": 120
+            }
+          }
+        ]
+      },
+      "trainingBySource": {
+        "0-1M": {
+          "ground": {
+            "episodes": 849,
+            "level1": 0.0,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0
+          },
+          "S1a": {
+            "episodes": 133,
+            "level1": 0.0,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0
+          },
+          "S1b": {
+            "episodes": 132,
+            "level1": 0.0,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0
+          },
+          "S2": {
+            "episodes": 317,
+            "level1": 0.637223974763407,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0
+          },
+          "S3": {
+            "episodes": 268,
+            "level1": 1.0,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 1.0
+          }
+        },
+        "1-2.5M": {
+          "ground": {
+            "episodes": 1245,
+            "level1": 0.5028112449799197,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0
+          },
+          "S1a": {
+            "episodes": 229,
+            "level1": 0.4148471615720524,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0
+          },
+          "S1b": {
+            "episodes": 239,
+            "level1": 0.39330543933054396,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0
+          },
+          "S2": {
+            "episodes": 464,
+            "level1": 0.8642241379310345,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0
+          },
+          "S3": {
+            "episodes": 363,
+            "level1": 1.0,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 1.0
+          }
+        },
+        "2.5-4M": {
+          "ground": {
+            "episodes": 1291,
+            "level1": 0.9519752130131681,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0
+          },
+          "S1a": {
+            "episodes": 231,
+            "level1": 0.948051948051948,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0
+          },
+          "S1b": {
+            "episodes": 226,
+            "level1": 0.9247787610619469,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0
+          },
+          "S2": {
+            "episodes": 446,
+            "level1": 0.968609865470852,
+            "level2": 0.002242152466367713,
+            "success": 0.002242152466367713,
+            "level1AtStart": 0.0
+          },
+          "S3": {
+            "episodes": 355,
+            "level1": 1.0,
+            "level2": 0.0028169014084507044,
+            "success": 0.0,
+            "level1AtStart": 1.0
+          }
+        },
+        "4-5M": {
+          "ground": {
+            "episodes": 912,
+            "level1": 0.981359649122807,
+            "level2": 0.1337719298245614,
+            "success": 0.13157894736842105,
+            "level1AtStart": 0.0
+          },
+          "S1a": {
+            "episodes": 146,
+            "level1": 0.9657534246575342,
+            "level2": 0.1643835616438356,
+            "success": 0.14383561643835616,
+            "level1AtStart": 0.0
+          },
+          "S1b": {
+            "episodes": 165,
+            "level1": 0.9757575757575757,
+            "level2": 0.16363636363636364,
+            "success": 0.16363636363636364,
+            "level1AtStart": 0.0
+          },
+          "S2": {
+            "episodes": 344,
+            "level1": 0.9767441860465116,
+            "level2": 0.11337209302325581,
+            "success": 0.11337209302325581,
+            "level1AtStart": 0.0
+          },
+          "S3": {
+            "episodes": 286,
+            "level1": 1.0,
+            "level2": 0.15034965034965034,
+            "success": 0.14685314685314685,
+            "level1AtStart": 1.0
+          }
+        }
+      },
+      "evaluationBySource": {
+        "1M": {
+          "ground": {
+            "episodes": 200,
+            "newGrip": 0.995,
+            "heldGrip": 0.995,
+            "level1": 0.005,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0,
+            "level2AtStart": 0.0,
+            "maximumTorsoYMean": 1.0784906974434854,
+            "reasons": {
+              "Timeout": 200
+            },
+            "mismatchedSpawn": 0
+          },
+          "S1a": {
+            "episodes": 200,
+            "newGrip": 1.0,
+            "heldGrip": 1.0,
+            "level1": 0.035,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0,
+            "level2AtStart": 0.0,
+            "maximumTorsoYMean": 1.0810708919167518,
+            "reasons": {
+              "Timeout": 200
+            },
+            "mismatchedSpawn": 0
+          },
+          "S1b": {
+            "episodes": 200,
+            "newGrip": 0.965,
+            "heldGrip": 1.0,
+            "level1": 0.035,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0,
+            "level2AtStart": 0.0,
+            "maximumTorsoYMean": 0.9837559393048286,
+            "reasons": {
+              "Timeout": 200
+            },
+            "mismatchedSpawn": 0
+          },
+          "S2": {
+            "episodes": 200,
+            "newGrip": 0.62,
+            "heldGrip": 0.98,
+            "level1": 0.86,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0,
+            "level2AtStart": 0.0,
+            "maximumTorsoYMean": 0.9787762945890427,
+            "reasons": {
+              "Timeout": 200
+            },
+            "mismatchedSpawn": 0
+          },
+          "S3": {
+            "episodes": 200,
+            "newGrip": 1.0,
+            "heldGrip": 1.0,
+            "level1": 1.0,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 1.0,
+            "level2AtStart": 0.0,
+            "maximumTorsoYMean": 1.0062446305155754,
+            "reasons": {
+              "Timeout": 200
+            },
+            "mismatchedSpawn": 0
+          }
+        },
+        "2.5M": {
+          "ground": {
+            "episodes": 200,
+            "newGrip": 1.0,
+            "heldGrip": 1.0,
+            "level1": 1.0,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0,
+            "level2AtStart": 0.0,
+            "maximumTorsoYMean": 1.0102118968963623,
+            "reasons": {
+              "Timeout": 200
+            },
+            "mismatchedSpawn": 0
+          },
+          "S1a": {
+            "episodes": 200,
+            "newGrip": 1.0,
+            "heldGrip": 1.0,
+            "level1": 1.0,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0,
+            "level2AtStart": 0.0,
+            "maximumTorsoYMean": 1.0280501341819763,
+            "reasons": {
+              "Timeout": 200
+            },
+            "mismatchedSpawn": 0
+          },
+          "S1b": {
+            "episodes": 200,
+            "newGrip": 0.925,
+            "heldGrip": 1.0,
+            "level1": 1.0,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0,
+            "level2AtStart": 0.0,
+            "maximumTorsoYMean": 1.0363005927205087,
+            "reasons": {
+              "Timeout": 200
+            },
+            "mismatchedSpawn": 0
+          },
+          "S2": {
+            "episodes": 200,
+            "newGrip": 0.875,
+            "heldGrip": 1.0,
+            "level1": 0.995,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0,
+            "level2AtStart": 0.0,
+            "maximumTorsoYMean": 1.0287429052591324,
+            "reasons": {
+              "Timeout": 200
+            },
+            "mismatchedSpawn": 0
+          },
+          "S3": {
+            "episodes": 200,
+            "newGrip": 0.68,
+            "heldGrip": 0.68,
+            "level1": 1.0,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 1.0,
+            "level2AtStart": 0.0,
+            "maximumTorsoYMean": 1.0246201473474503,
+            "reasons": {
+              "Timeout": 200
+            },
+            "mismatchedSpawn": 0
+          }
+        },
+        "5M": {
+          "ground": {
+            "episodes": 200,
+            "newGrip": 0.995,
+            "heldGrip": 0.995,
+            "level1": 0.95,
+            "level2": 0.88,
+            "success": 0.875,
+            "level1AtStart": 0.0,
+            "level2AtStart": 0.0,
+            "maximumTorsoYMean": 1.5242188447713851,
+            "reasons": {
+              "Success": 175,
+              "OutOfBounds": 1,
+              "Timeout": 24
+            },
+            "mismatchedSpawn": 0
+          },
+          "S1a": {
+            "episodes": 200,
+            "newGrip": 1.0,
+            "heldGrip": 1.0,
+            "level1": 0.98,
+            "level2": 0.485,
+            "success": 0.48,
+            "level1AtStart": 0.0,
+            "level2AtStart": 0.0,
+            "maximumTorsoYMean": 1.3784004612267018,
+            "reasons": {
+              "Success": 96,
+              "Timeout": 104
+            },
+            "mismatchedSpawn": 0
+          },
+          "S1b": {
+            "episodes": 200,
+            "newGrip": 0.94,
+            "heldGrip": 1.0,
+            "level1": 0.96,
+            "level2": 0.21,
+            "success": 0.2,
+            "level1AtStart": 0.0,
+            "level2AtStart": 0.0,
+            "maximumTorsoYMean": 1.2105984047055245,
+            "reasons": {
+              "Success": 40,
+              "Timeout": 160
+            },
+            "mismatchedSpawn": 0
+          },
+          "S2": {
+            "episodes": 200,
+            "newGrip": 0.81,
+            "heldGrip": 1.0,
+            "level1": 0.975,
+            "level2": 0.37,
+            "success": 0.36,
+            "level1AtStart": 0.0,
+            "level2AtStart": 0.0,
+            "maximumTorsoYMean": 1.284109071791172,
+            "reasons": {
+              "Success": 72,
+              "Timeout": 126,
+              "Fall": 2
+            },
+            "mismatchedSpawn": 0
+          },
+          "S3": {
+            "episodes": 200,
+            "newGrip": 1.0,
+            "heldGrip": 1.0,
+            "level1": 1.0,
+            "level2": 0.845,
+            "success": 0.815,
+            "level1AtStart": 1.0,
+            "level2AtStart": 0.0,
+            "maximumTorsoYMean": 1.5132977440953255,
+            "reasons": {
+              "Success": 163,
+              "Timeout": 37
+            },
+            "mismatchedSpawn": 0
+          }
+        }
+      }
+    },
+    "climb_height_shaping_s2027": {
+      "firstNonzeroRewardProgress": {
+        "step": 20000,
+        "value": 0.10000000149011612
+      },
+      "zeroAfter1M": false,
+      "windows": {
+        "0-1M": {
+          "Spawn/DemoFraction": 0.5212055509027682,
+          "Spawn/ActualDemoFraction": 0.5212055509027682,
+          "Spawn/QuarantineFraction/S3": 0.0,
+          "Spawn/QuarantineFraction/S2": 0.0,
+          "Spawn/QuarantineFraction/S1b": 0.0,
+          "Spawn/QuarantineFraction/S1a": 0.0,
+          "Success": 0.0,
+          "Level1Rate": 0.33807222236027107,
+          "Level2Rate": 0.0,
+          "MaximumTorsoHeight": 0.661105770062893,
+          "RewardProgress": 0.01902255597970191,
+          "RewardHeight": 0.007605547255156797,
+          "Spawn/S2/Success": 0.0,
+          "Cumulative Reward": -1.092668777450602,
+          "Spawn/S3/Success": 0.0,
+          "Spawn/S1b/Success": 0.0,
+          "Spawn/S1a/Success": 0.0
+        },
+        "1-2.5M": {
+          "Spawn/DemoFraction": 0.4915397724509239,
+          "Spawn/ActualDemoFraction": 0.4915397724509239,
+          "Spawn/QuarantineFraction/S3": 0.0,
+          "Spawn/QuarantineFraction/S2": 0.0,
+          "Spawn/QuarantineFraction/S1b": 0.0,
+          "Spawn/QuarantineFraction/S1a": 0.0,
+          "Success": 0.005718546335895856,
+          "Level1Rate": 0.31383229449391364,
+          "Level2Rate": 0.005718546335895856,
+          "MaximumTorsoHeight": 0.8886307632923126,
+          "RewardProgress": 0.017023884481750427,
+          "RewardHeight": 0.05813029083359288,
+          "Spawn/S2/Success": 0.0,
+          "Cumulative Reward": -1.0329050779342652,
+          "Spawn/S3/Success": 0.026902887412882225,
+          "Spawn/S1b/Success": 0.0,
+          "Spawn/S1a/Success": 0.0
+        },
+        "2.5-4M": {
+          "Spawn/DemoFraction": 0.49030894964933397,
+          "Spawn/ActualDemoFraction": 0.49030894964933397,
+          "Spawn/QuarantineFraction/S3": 0.0,
+          "Spawn/QuarantineFraction/S2": 0.0,
+          "Spawn/QuarantineFraction/S1b": 0.0,
+          "Spawn/QuarantineFraction/S1a": 0.0,
+          "Success": 0.6886124603201945,
+          "Level1Rate": 0.8307224080959956,
+          "Level2Rate": 0.6903510880718629,
+          "MaximumTorsoHeight": 1.397234541575114,
+          "RewardProgress": 0.09225186347961425,
+          "RewardHeight": 0.14926095637182393,
+          "Spawn/S2/Success": 0.7067311685157303,
+          "Cumulative Reward": 0.5645964893698693,
+          "Spawn/S3/Success": 0.7825740550448295,
+          "Spawn/S1b/Success": 0.688989248528755,
+          "Spawn/S1a/Success": 0.7310691344259429
+        },
+        "4-5.1M": {
+          "Spawn/DemoFraction": 0.5026801322946454,
+          "Spawn/ActualDemoFraction": 0.5026801322946454,
+          "Spawn/QuarantineFraction/S3": 0.0,
+          "Spawn/QuarantineFraction/S2": 0.0,
+          "Spawn/QuarantineFraction/S1b": 0.0,
+          "Spawn/QuarantineFraction/S1a": 0.0,
+          "Success": 0.9955153199705747,
+          "Level1Rate": 0.9895244583044902,
+          "Level2Rate": 0.9958300525599187,
+          "MaximumTorsoHeight": 1.5474887956487071,
+          "RewardProgress": 0.15153825238789662,
+          "RewardHeight": 0.17244733176609078,
+          "Spawn/S2/Success": 0.9995695222722422,
+          "Cumulative Reward": 1.3024161251464692,
+          "Spawn/S3/Success": 0.9996585863651616,
+          "Spawn/S1b/Success": 0.9987623762376238,
+          "Spawn/S1a/Success": 0.9980355176595178
+        }
+      },
+      "trainingEpisodes": {
+        "total": 32568,
+        "demoShare": 0.5009211495946941,
+        "bySpawn": {
+          "S1a": {
+            "episodes": 2880,
+            "level1": 0.8090277777777778,
+            "level2": 0.8256944444444444,
+            "success": 0.8246527777777778,
+            "reasons": {
+              "Timeout": 502,
+              "Success": 2375,
+              "Fall": 3
+            }
+          },
+          "S1b": {
+            "episodes": 2926,
+            "level1": 0.7987012987012987,
+            "level2": 0.8417634996582365,
+            "success": 0.84107997265892,
+            "reasons": {
+              "Timeout": 463,
+              "Success": 2461,
+              "Fall": 2
+            }
+          },
+          "S2": {
+            "episodes": 5592,
+            "level1": 0.9794349070100143,
+            "level2": 0.8410228898426323,
+            "success": 0.8401287553648069,
+            "reasons": {
+              "Fall": 2,
+              "Timeout": 892,
+              "Success": 4698
+            }
+          },
+          "S3": {
+            "episodes": 4916,
+            "level1": 1.0,
+            "level2": 0.8567941415785191,
+            "success": 0.8565907241659886,
+            "reasons": {
+              "Timeout": 691,
+              "Fall": 14,
+              "Success": 4211
+            }
+          },
+          "ground": {
+            "episodes": 16254,
+            "level1": 0.8197366802017965,
+            "level2": 0.8283499446290143,
+            "success": 0.8276731881383044,
+            "reasons": {
+              "Timeout": 2780,
+              "Success": 13453,
+              "Fall": 16,
+              "OutOfBounds": 5
+            }
+          }
+        },
+        "groundByFifth": [
+          {
+            "episodes": 3250,
+            "level1": 0.256,
+            "level2": 0.20184615384615384,
+            "success": 0.20123076923076924,
+            "reasons": {
+              "Timeout": 2582,
+              "Success": 654,
+              "Fall": 14
+            }
+          },
+          {
+            "episodes": 3251,
+            "level1": 0.8883420486004306,
+            "level2": 0.9652414641648723,
+            "success": 0.9633958781913258,
+            "reasons": {
+              "Success": 3132,
+              "Timeout": 113,
+              "Fall": 1,
+              "OutOfBounds": 5
+            }
+          },
+          {
+            "episodes": 3251,
+            "level1": 0.9750845893571208,
+            "level2": 0.9870808981851737,
+            "success": 0.9861581051984005,
+            "reasons": {
+              "Success": 3206,
+              "Timeout": 44,
+              "Fall": 1
+            }
+          },
+          {
+            "episodes": 3251,
+            "level1": 0.9864657028606583,
+            "level2": 0.9920024607812981,
+            "success": 0.9920024607812981,
+            "reasons": {
+              "Success": 3225,
+              "Timeout": 26
+            }
+          },
+          {
+            "episodes": 3251,
+            "level1": 0.9926176561058137,
+            "level2": 0.9953860350661335,
+            "success": 0.9953860350661335,
+            "reasons": {
+              "Success": 3236,
+              "Timeout": 15
+            }
+          }
+        ]
+      },
+      "trainingBySource": {
+        "0-1M": {
+          "ground": {
+            "episodes": 803,
+            "level1": 0.0,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0
+          },
+          "S1a": {
+            "episodes": 166,
+            "level1": 0.0,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0
+          },
+          "S1b": {
+            "episodes": 158,
+            "level1": 0.0,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0
+          },
+          "S2": {
+            "episodes": 291,
+            "level1": 0.8969072164948454,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0
+          },
+          "S3": {
+            "episodes": 246,
+            "level1": 1.0,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 1.0
+          }
+        },
+        "1-2.5M": {
+          "ground": {
+            "episodes": 1288,
+            "level1": 0.017857142857142856,
+            "level2": 0.003105590062111801,
+            "success": 0.003105590062111801,
+            "level1AtStart": 0.0
+          },
+          "S1a": {
+            "episodes": 231,
+            "level1": 0.017316017316017316,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0
+          },
+          "S1b": {
+            "episodes": 216,
+            "level1": 0.023148148148148147,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0
+          },
+          "S2": {
+            "episodes": 448,
+            "level1": 0.9017857142857143,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0
+          },
+          "S3": {
+            "episodes": 370,
+            "level1": 1.0,
+            "level2": 0.024324324324324326,
+            "success": 0.024324324324324326,
+            "level1AtStart": 1.0
+          }
+        },
+        "2.5-4M": {
+          "ground": {
+            "episodes": 5383,
+            "level1": 0.861972877577559,
+            "level2": 0.8818502693665242,
+            "success": 0.8803641092327699,
+            "level1AtStart": 0.0
+          },
+          "S1a": {
+            "episodes": 962,
+            "level1": 0.8555093555093555,
+            "level2": 0.8908523908523909,
+            "success": 0.8898128898128899,
+            "level1AtStart": 0.0
+          },
+          "S1b": {
+            "episodes": 919,
+            "level1": 0.7921653971708379,
+            "level2": 0.9053318824809575,
+            "success": 0.9031556039173014,
+            "level1AtStart": 0.0
+          },
+          "S2": {
+            "episodes": 1824,
+            "level1": 0.9830043859649122,
+            "level2": 0.9183114035087719,
+            "success": 0.9155701754385965,
+            "level1AtStart": 0.0
+          },
+          "S3": {
+            "episodes": 1608,
+            "level1": 1.0,
+            "level2": 0.9402985074626866,
+            "success": 0.9396766169154229,
+            "level1AtStart": 1.0
+          }
+        },
+        "4-5M": {
+          "ground": {
+            "episodes": 8780,
+            "level1": 0.9864464692482916,
+            "level2": 0.992369020501139,
+            "success": 0.9920273348519362,
+            "level1AtStart": 0.0
+          },
+          "S1a": {
+            "episodes": 1521,
+            "level1": 0.9881656804733728,
+            "level2": 1.0,
+            "success": 0.9986850756081526,
+            "level1AtStart": 0.0
+          },
+          "S1b": {
+            "episodes": 1633,
+            "level1": 0.9822412737293326,
+            "level2": 0.9987752602571953,
+            "success": 0.9987752602571953,
+            "level1AtStart": 0.0
+          },
+          "S2": {
+            "episodes": 3029,
+            "level1": 0.9966985803895675,
+            "level2": 0.9996698580389568,
+            "success": 0.9996698580389568,
+            "level1AtStart": 0.0
+          },
+          "S3": {
+            "episodes": 2692,
+            "level1": 1.0,
+            "level2": 0.99962852897474,
+            "success": 0.99962852897474,
+            "level1AtStart": 1.0
+          }
+        }
+      },
+      "evaluationBySource": {
+        "1M": {
+          "ground": {
+            "episodes": 200,
+            "newGrip": 0.0,
+            "heldGrip": 0.0,
+            "level1": 0.0,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0,
+            "level2AtStart": 0.0,
+            "maximumTorsoYMean": 0.4000001300871372,
+            "reasons": {
+              "Timeout": 200
+            },
+            "mismatchedSpawn": 0
+          },
+          "S1a": {
+            "episodes": 200,
+            "newGrip": 0.835,
+            "heldGrip": 0.835,
+            "level1": 0.0,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0,
+            "level2AtStart": 0.0,
+            "maximumTorsoYMean": 0.40010914966464045,
+            "reasons": {
+              "Timeout": 200
+            },
+            "mismatchedSpawn": 0
+          },
+          "S1b": {
+            "episodes": 200,
+            "newGrip": 0.015,
+            "heldGrip": 1.0,
+            "level1": 0.0,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0,
+            "level2AtStart": 0.0,
+            "maximumTorsoYMean": 0.9743548250198364,
+            "reasons": {
+              "Timeout": 200
+            },
+            "mismatchedSpawn": 0
+          },
+          "S2": {
+            "episodes": 200,
+            "newGrip": 0.88,
+            "heldGrip": 0.995,
+            "level1": 0.965,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0,
+            "level2AtStart": 0.0,
+            "maximumTorsoYMean": 0.9786298274993896,
+            "reasons": {
+              "Timeout": 200
+            },
+            "mismatchedSpawn": 0
+          },
+          "S3": {
+            "episodes": 200,
+            "newGrip": 0.625,
+            "heldGrip": 0.625,
+            "level1": 1.0,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 1.0,
+            "level2AtStart": 0.0,
+            "maximumTorsoYMean": 0.9119881427288056,
+            "reasons": {
+              "Timeout": 200
+            },
+            "mismatchedSpawn": 0
+          }
+        },
+        "2.5M": {
+          "ground": {
+            "episodes": 200,
+            "newGrip": 0.985,
+            "heldGrip": 0.985,
+            "level1": 0.03,
+            "level2": 0.005,
+            "success": 0.005,
+            "level1AtStart": 0.0,
+            "level2AtStart": 0.0,
+            "maximumTorsoYMean": 0.9419201707839966,
+            "reasons": {
+              "Timeout": 197,
+              "OutOfBounds": 2,
+              "Success": 1
+            },
+            "mismatchedSpawn": 0
+          },
+          "S1a": {
+            "episodes": 200,
+            "newGrip": 1.0,
+            "heldGrip": 1.0,
+            "level1": 0.37,
+            "level2": 0.0,
+            "success": 0.0,
+            "level1AtStart": 0.0,
+            "level2AtStart": 0.0,
+            "maximumTorsoYMean": 1.1077705761790275,
+            "reasons": {
+              "Timeout": 200
+            },
+            "mismatchedSpawn": 0
+          },
+          "S1b": {
+            "episodes": 200,
+            "newGrip": 1.0,
+            "heldGrip": 1.0,
+            "level1": 0.615,
+            "level2": 0.01,
+            "success": 0.01,
+            "level1AtStart": 0.0,
+            "level2AtStart": 0.0,
+            "maximumTorsoYMean": 1.0738595288991928,
+            "reasons": {
+              "Timeout": 197,
+              "Success": 2,
+              "Fall": 1
+            },
+            "mismatchedSpawn": 0
+          },
+          "S2": {
+            "episodes": 200,
+            "newGrip": 0.955,
+            "heldGrip": 1.0,
+            "level1": 0.995,
+            "level2": 0.005,
+            "success": 0.005,
+            "level1AtStart": 0.0,
+            "level2AtStart": 0.0,
+            "maximumTorsoYMean": 1.047330953478813,
+            "reasons": {
+              "Timeout": 195,
+              "Fall": 4,
+              "Success": 1
+            },
+            "mismatchedSpawn": 0
+          },
+          "S3": {
+            "episodes": 200,
+            "newGrip": 1.0,
+            "heldGrip": 1.0,
+            "level1": 1.0,
+            "level2": 0.315,
+            "success": 0.31,
+            "level1AtStart": 1.0,
+            "level2AtStart": 0.0,
+            "maximumTorsoYMean": 1.3039342504739762,
+            "reasons": {
+              "Success": 62,
+              "Fall": 15,
+              "Timeout": 123
+            },
+            "mismatchedSpawn": 0
+          }
+        },
+        "5M": {
+          "ground": {
+            "episodes": 200,
+            "newGrip": 1.0,
+            "heldGrip": 1.0,
+            "level1": 1.0,
+            "level2": 1.0,
+            "success": 1.0,
+            "level1AtStart": 0.0,
+            "level2AtStart": 0.0,
+            "maximumTorsoYMean": 1.559493979215622,
+            "reasons": {
+              "Success": 200
+            },
+            "mismatchedSpawn": 0
+          },
+          "S1a": {
+            "episodes": 200,
+            "newGrip": 1.0,
+            "heldGrip": 1.0,
+            "level1": 1.0,
+            "level2": 1.0,
+            "success": 1.0,
+            "level1AtStart": 0.0,
+            "level2AtStart": 0.0,
+            "maximumTorsoYMean": 1.5574275863170624,
+            "reasons": {
+              "Success": 200
+            },
+            "mismatchedSpawn": 0
+          },
+          "S1b": {
+            "episodes": 200,
+            "newGrip": 1.0,
+            "heldGrip": 1.0,
+            "level1": 1.0,
+            "level2": 1.0,
+            "success": 1.0,
+            "level1AtStart": 0.0,
+            "level2AtStart": 0.0,
+            "maximumTorsoYMean": 1.5586509394645691,
+            "reasons": {
+              "Success": 200
+            },
+            "mismatchedSpawn": 0
+          },
+          "S2": {
+            "episodes": 200,
+            "newGrip": 1.0,
+            "heldGrip": 1.0,
+            "level1": 1.0,
+            "level2": 1.0,
+            "success": 1.0,
+            "level1AtStart": 0.0,
+            "level2AtStart": 0.0,
+            "maximumTorsoYMean": 1.5626596546173095,
+            "reasons": {
+              "Success": 200
+            },
+            "mismatchedSpawn": 0
+          },
+          "S3": {
+            "episodes": 200,
+            "newGrip": 1.0,
+            "heldGrip": 1.0,
+            "level1": 1.0,
+            "level2": 1.0,
+            "success": 1.0,
+            "level1AtStart": 1.0,
+            "level2AtStart": 0.0,
+            "maximumTorsoYMean": 1.5624024736881257,
+            "reasons": {
+              "Success": 200
+            },
+            "mismatchedSpawn": 0
+          }
+        }
+      }
+    }
+  },
+  "evaluations": [
+    {
+      "mode": "height_shaping",
+      "seed": 2026,
+      "label": "1M",
+      "steps": 999887,
+      "modelSha256": "43b77224223f1f330f9728881cb0f26947722023e4743dfe8714cb11a888c22f",
+      "gripEpisodeFraction": 0.995,
+      "legalContactRate": 0.3775393162156933,
+      "legalContactEpisodeFraction": 0.995,
+      "level1Rate": 0.005,
+      "level2Rate": 0.0,
+      "successRate": 0.0,
+      "maximumTorsoYMean": 1.0784906974434854,
+      "maximumTorsoYP95": 1.0892693877220154,
+      "commandOuterFraction": 0.901579597010942,
+      "gripCommandRadiusMean": 0.8343006603800863,
+      "gripCommandOuterFraction": 0.9089632689949003,
+      "gripTorsoUpForceMeanN": 79.02008020786263,
+      "gripTorsoUpForceEpisodeP50N": 121.77219276230569,
+      "gripTorsoUpForcePositiveEpisodeFraction": 0.914572864321608,
+      "gripHandBelowShoulderFraction": 1.0,
+      "grippedSecondsMean": 18.562135746479033
+    },
+    {
+      "mode": "height_shaping",
+      "seed": 2026,
+      "label": "2.5M",
+      "steps": 2499901,
+      "modelSha256": "601a92c655f57c2afc8c354932d8218fdd934f1995e31300d6d57c0a5a1b13cf",
+      "gripEpisodeFraction": 1.0,
+      "legalContactRate": 0.017556322831247303,
+      "legalContactEpisodeFraction": 1.0,
+      "level1Rate": 1.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0,
+      "maximumTorsoYMean": 1.0102118968963623,
+      "maximumTorsoYP95": 1.0142043948173523,
+      "commandOuterFraction": 0.853570356285028,
+      "gripCommandRadiusMean": 0.814510894941329,
+      "gripCommandOuterFraction": 0.7412259021255561,
+      "gripTorsoUpForceMeanN": 93.49448922836598,
+      "gripTorsoUpForceEpisodeP50N": 104.51900040064102,
+      "gripTorsoUpForcePositiveEpisodeFraction": 1.0,
+      "gripHandBelowShoulderFraction": 1.0,
+      "grippedSecondsMean": 4.045996434688568
+    },
+    {
+      "mode": "height_shaping",
+      "seed": 2026,
+      "label": "5M",
+      "steps": 5000009,
+      "modelSha256": "6c4a8801c25b8a7134c37a2a905d4a53a4a8160241e9f505deeeae564325f1e2",
+      "gripEpisodeFraction": 0.995,
+      "legalContactRate": 0.18363356567393863,
+      "legalContactEpisodeFraction": 0.975,
+      "level1Rate": 0.95,
+      "level2Rate": 0.88,
+      "successRate": 0.875,
+      "maximumTorsoYMean": 1.5242188447713851,
+      "maximumTorsoYP95": 1.5501566052436828,
+      "commandOuterFraction": 0.5308964689749743,
+      "gripCommandRadiusMean": 0.7894718053566323,
+      "gripCommandOuterFraction": 0.7549034225686208,
+      "gripTorsoUpForceMeanN": 91.74086727089335,
+      "gripTorsoUpForceEpisodeP50N": 105.8150863647461,
+      "gripTorsoUpForcePositiveEpisodeFraction": 0.9899497487437185,
+      "gripHandBelowShoulderFraction": 0.9921789223991867,
+      "grippedSecondsMean": 7.370646061897278
+    },
+    {
+      "mode": "height_shaping",
+      "seed": 2027,
+      "label": "1M",
+      "steps": 999927,
+      "modelSha256": "64f3dfbc00c2db2f05961608b886335c25e4df7293b45fc047e39158ace300e5",
+      "gripEpisodeFraction": 0.0,
+      "legalContactRate": 0.0,
+      "legalContactEpisodeFraction": 0.0,
+      "level1Rate": 0.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0,
+      "maximumTorsoYMean": 0.4000001300871372,
+      "maximumTorsoYP95": 0.4000001549720764,
+      "commandOuterFraction": 0.8986939551641313,
+      "gripCommandRadiusMean": null,
+      "gripCommandOuterFraction": null,
+      "gripTorsoUpForceMeanN": null,
+      "gripTorsoUpForceEpisodeP50N": null,
+      "gripTorsoUpForcePositiveEpisodeFraction": null,
+      "gripHandBelowShoulderFraction": null,
+      "grippedSecondsMean": 0.0
+    },
+    {
+      "mode": "height_shaping",
+      "seed": 2027,
+      "label": "2.5M",
+      "steps": 2499974,
+      "modelSha256": "b9fd7d7f5fd23dbe0e92cddf02ae07615bb60296af02e35dd04cc27d3e9129d4",
+      "gripEpisodeFraction": 0.985,
+      "legalContactRate": 0.07970604402299442,
+      "legalContactEpisodeFraction": 0.985,
+      "level1Rate": 0.03,
+      "level2Rate": 0.005,
+      "successRate": 0.005,
+      "maximumTorsoYMean": 0.9419201707839966,
+      "maximumTorsoYP95": 1.060787099599838,
+      "commandOuterFraction": 0.8793206247900571,
+      "gripCommandRadiusMean": 0.8319487885883432,
+      "gripCommandOuterFraction": 0.8477444290114138,
+      "gripTorsoUpForceMeanN": 32.364998910663076,
+      "gripTorsoUpForceEpisodeP50N": 72.34317848899148,
+      "gripTorsoUpForcePositiveEpisodeFraction": 0.9593908629441624,
+      "gripHandBelowShoulderFraction": 0.7506250377438252,
+      "grippedSecondsMean": 8.181201130151749
+    },
+    {
+      "mode": "height_shaping",
+      "seed": 2027,
+      "label": "5M",
+      "steps": 5000007,
+      "modelSha256": "fb14299f72e05f3c1d7225b53003077701d9c0dec8e300a118532dbd572ec3ef",
+      "gripEpisodeFraction": 1.0,
+      "legalContactRate": 0.33564028776978416,
+      "legalContactEpisodeFraction": 1.0,
+      "level1Rate": 1.0,
+      "level2Rate": 1.0,
+      "successRate": 1.0,
+      "maximumTorsoYMean": 1.559493979215622,
+      "maximumTorsoYP95": 1.5610880851745605,
+      "commandOuterFraction": 0.31372641509433963,
+      "gripCommandRadiusMean": 0.7272082410838506,
+      "gripCommandOuterFraction": 0.3080821917808219,
+      "gripTorsoUpForceMeanN": 78.08890475171233,
+      "gripTorsoUpForceEpisodeP50N": 78.11807183159722,
+      "gripTorsoUpForcePositiveEpisodeFraction": 1.0,
+      "gripHandBelowShoulderFraction": 1.0,
+      "grippedSecondsMean": 2.6499977111816406
+    }
+  ],
+  "baseline": [
+    {
+      "mode": "incremental_baseline",
+      "seed": "2026",
+      "label": "1M",
+      "steps": "999904",
+      "modelSha256": "9dae2c058b762f194a1af595b488b01aded58cf663643325dcc5d82720bdda67",
+      "gripEpisodeFraction": "0.0",
+      "legalContactRate": "0.0",
+      "legalContactEpisodeFraction": "0.0",
+      "level1Rate": "0.0",
+      "level2Rate": "0.0",
+      "successRate": "0.0",
+      "maximumTorsoYMean": "0.40000018283724786",
+      "maximumTorsoYP95": "0.4000001847743988",
+      "commandOuterFraction": "0.8557554376834802",
+      "gripCommandRadiusMean": "",
+      "gripCommandOuterFraction": "",
+      "gripTorsoUpForceMeanN": "",
+      "gripTorsoUpForceEpisodeP50N": "",
+      "gripTorsoUpForcePositiveEpisodeFraction": "",
+      "gripHandBelowShoulderFraction": "",
+      "grippedSecondsMean": "0.0"
+    },
+    {
+      "mode": "incremental_baseline",
+      "seed": "2026",
+      "label": "2.5M",
+      "steps": "2499937",
+      "modelSha256": "b43f435c7d655d0a5229dcc625e5579af462362a788871af166bde291fe9dd0f",
+      "gripEpisodeFraction": "0.055",
+      "legalContactRate": "4.773989296213473e-05",
+      "legalContactEpisodeFraction": "0.055",
+      "level1Rate": "0.0",
+      "level2Rate": "0.0",
+      "successRate": "0.0",
+      "maximumTorsoYMean": "0.40000017747282984",
+      "maximumTorsoYP95": "0.4000001847743988",
+      "commandOuterFraction": "0.9059622698158527",
+      "gripCommandRadiusMean": "0.8287785676772704",
+      "gripCommandOuterFraction": "0.8777555110220441",
+      "gripTorsoUpForceMeanN": "-279.72365552332695",
+      "gripTorsoUpForceEpisodeP50N": "-280.271140813253",
+      "gripTorsoUpForcePositiveEpisodeFraction": "0.0",
+      "gripHandBelowShoulderFraction": "1.0",
+      "grippedSecondsMean": "0.4990056758746505"
+    },
+    {
+      "mode": "incremental_baseline",
+      "seed": "2026",
+      "label": "5M",
+      "steps": "4999973",
+      "modelSha256": "bd648181806aee3702bfb0716ba5d750b7184734179880e24ba8e242dbd738f6",
+      "gripEpisodeFraction": "0.53",
+      "legalContactRate": "0.0035625770503399825",
+      "legalContactEpisodeFraction": "1.0",
+      "level1Rate": "0.0",
+      "level2Rate": "0.0",
+      "successRate": "0.0",
+      "maximumTorsoYMean": "0.40066944926977155",
+      "maximumTorsoYP95": "0.4000001847743988",
+      "commandOuterFraction": "0.6867368895116093",
+      "gripCommandRadiusMean": "0.6408178868131739",
+      "gripCommandOuterFraction": "0.3011349660915703",
+      "gripTorsoUpForceMeanN": "-102.41565812624717",
+      "gripTorsoUpForceEpisodeP50N": "-65.94032353940217",
+      "gripTorsoUpForcePositiveEpisodeFraction": "0.018867924528301886",
+      "gripHandBelowShoulderFraction": "1.0",
+      "grippedSecondsMean": "2.845922992527485"
+    },
+    {
+      "mode": "incremental_baseline",
+      "seed": "2027",
+      "label": "1M",
+      "steps": "999904",
+      "modelSha256": "0d18cebc484a678067fb700963833fe86d4fde07d1139ba7f84d2abec60daaab",
+      "gripEpisodeFraction": "1.0",
+      "legalContactRate": "0.11010839666092108",
+      "legalContactEpisodeFraction": "1.0",
+      "level1Rate": "0.0",
+      "level2Rate": "0.0",
+      "successRate": "0.0",
+      "maximumTorsoYMean": "0.4137675042450428",
+      "maximumTorsoYP95": "0.5284642100334167",
+      "commandOuterFraction": "0.8971760741926875",
+      "gripCommandRadiusMean": "0.8464500302743581",
+      "gripCommandOuterFraction": "0.9536140358106855",
+      "gripTorsoUpForceMeanN": "-16.006103082067007",
+      "gripTorsoUpForceEpisodeP50N": "26.220303163770296",
+      "gripTorsoUpForcePositiveEpisodeFraction": "0.68",
+      "gripHandBelowShoulderFraction": "0.9267251148702944",
+      "grippedSecondsMean": "19.33895861506462"
+    },
+    {
+      "mode": "incremental_baseline",
+      "seed": "2027",
+      "label": "2.5M",
+      "steps": "2499938",
+      "modelSha256": "3ba0e408b5ed9dcd3dde4e9cbb7328bfa9f56965f24fa6ca0ee3111bd052089c",
+      "gripEpisodeFraction": "1.0",
+      "legalContactRate": "0.015749063355790394",
+      "legalContactEpisodeFraction": "1.0",
+      "level1Rate": "0.0",
+      "level2Rate": "0.0",
+      "successRate": "0.0",
+      "maximumTorsoYMean": "0.40000016808509825",
+      "maximumTorsoYP95": "0.4000001847743988",
+      "commandOuterFraction": "0.8804126634641046",
+      "gripCommandRadiusMean": "0.8017600077376712",
+      "gripCommandOuterFraction": "0.33887587822014054",
+      "gripTorsoUpForceMeanN": "10.911823918612836",
+      "gripTorsoUpForceEpisodeP50N": "10.184240569108688",
+      "gripTorsoUpForcePositiveEpisodeFraction": "0.76",
+      "gripHandBelowShoulderFraction": "1.0",
+      "grippedSecondsMean": "0.8539993645250797"
+    },
+    {
+      "mode": "incremental_baseline",
+      "seed": "2027",
+      "label": "5M",
+      "steps": "4999905",
+      "modelSha256": "17e72944b7dae18273190868031fda73148f4df6fe2b9c85f0831933e3425056",
+      "gripEpisodeFraction": "0.0",
+      "legalContactRate": "0.00576332821778875",
+      "legalContactEpisodeFraction": "1.0",
+      "level1Rate": "0.0",
+      "level2Rate": "0.0",
+      "successRate": "0.0",
+      "maximumTorsoYMean": "0.4000001636147499",
+      "maximumTorsoYP95": "0.4000001847743988",
+      "commandOuterFraction": "0.5608528489458233",
+      "gripCommandRadiusMean": "",
+      "gripCommandOuterFraction": "",
+      "gripTorsoUpForceMeanN": "",
+      "gripTorsoUpForceEpisodeP50N": "",
+      "gripTorsoUpForcePositiveEpisodeFraction": "",
+      "gripHandBelowShoulderFraction": "",
+      "grippedSecondsMean": "0.0"
+    }
+  ],
+  "stageBaselines": {
+    "hold": {
+      "S1a": {
+        "episodes": 200,
+        "newGrip": 0.26,
+        "heldGrip": 0.26,
+        "level1": 0.0,
+        "level2": 0.0,
+        "success": 0.0,
+        "level1AtStart": 0.0,
+        "level2AtStart": 0.0,
+        "maximumTorsoYMean": 0.4000000822544098,
+        "reasons": {
+          "Timeout": 200
+        },
+        "mismatchedSpawn": 0
+      },
+      "S1b": {
+        "episodes": 200,
+        "newGrip": 0.015,
+        "heldGrip": 1.0,
+        "level1": 0.0,
+        "level2": 0.0,
+        "success": 0.0,
+        "level1AtStart": 0.0,
+        "level2AtStart": 0.0,
+        "maximumTorsoYMean": 0.9834595529735088,
+        "reasons": {
+          "Timeout": 200
+        },
+        "mismatchedSpawn": 0
+      },
+      "S2": {
+        "episodes": 200,
+        "newGrip": 0.0,
+        "heldGrip": 1.0,
+        "level1": 0.975,
+        "level2": 0.0,
+        "success": 0.0,
+        "level1AtStart": 0.0,
+        "level2AtStart": 0.0,
+        "maximumTorsoYMean": 0.9791520169377327,
+        "reasons": {
+          "Timeout": 200
+        },
+        "mismatchedSpawn": 0
+      },
+      "S3": {
+        "episodes": 200,
+        "newGrip": 0.025,
+        "heldGrip": 0.025,
+        "level1": 1.0,
+        "level2": 0.0,
+        "success": 0.0,
+        "level1AtStart": 1.0,
+        "level2AtStart": 0.0,
+        "maximumTorsoYMean": 0.9085478669404984,
+        "reasons": {
+          "Timeout": 200
+        },
+        "mismatchedSpawn": 0
+      }
+    },
+    "random": {
+      "S1a": {
+        "episodes": 200,
+        "newGrip": 0.995,
+        "heldGrip": 0.995,
+        "level1": 0.0,
+        "level2": 0.0,
+        "success": 0.0,
+        "level1AtStart": 0.0,
+        "level2AtStart": 0.0,
+        "maximumTorsoYMean": 0.5048019249737262,
+        "reasons": {
+          "Timeout": 200
+        },
+        "mismatchedSpawn": 0
+      },
+      "S1b": {
+        "episodes": 200,
+        "newGrip": 0.92,
+        "heldGrip": 1.0,
+        "level1": 0.0,
+        "level2": 0.0,
+        "success": 0.0,
+        "level1AtStart": 0.0,
+        "level2AtStart": 0.0,
+        "maximumTorsoYMean": 0.944474072009325,
+        "reasons": {
+          "Timeout": 200
+        },
+        "mismatchedSpawn": 0
+      },
+      "S2": {
+        "episodes": 200,
+        "newGrip": 0.985,
+        "heldGrip": 0.995,
+        "level1": 0.71,
+        "level2": 0.0,
+        "success": 0.0,
+        "level1AtStart": 0.0,
+        "level2AtStart": 0.0,
+        "maximumTorsoYMean": 1.0026728585362434,
+        "reasons": {
+          "Fall": 18,
+          "Timeout": 182
+        },
+        "mismatchedSpawn": 0
+      },
+      "S3": {
+        "episodes": 200,
+        "newGrip": 0.98,
+        "heldGrip": 0.98,
+        "level1": 1.0,
+        "level2": 0.0,
+        "success": 0.0,
+        "level1AtStart": 1.0,
+        "level2AtStart": 0.0,
+        "maximumTorsoYMean": 0.9887908998131753,
+        "reasons": {
+          "Fall": 28,
+          "Timeout": 172
+        },
+        "mismatchedSpawn": 0
+      }
+    }
+  }
+}

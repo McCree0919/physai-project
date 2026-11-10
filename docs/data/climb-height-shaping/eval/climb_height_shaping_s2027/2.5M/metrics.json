@@ -1,0 +1,144 @@
+{
+  "checkpoint": {
+    "label": "2.5M",
+    "target": 2500000,
+    "steps": 2499974,
+    "model": "C:\\dev\\physai-exp\\results\\climb_height_shaping_s2027\\Climb\\Climb-2499974.onnx",
+    "sha256": "b9fd7d7f5fd23dbe0e92cddf02ae07615bb60296af02e35dd04cc27d3e9129d4",
+    "targetMode": 0
+  },
+  "metrics": {
+    "episodes": 200,
+    "gripEpisodeFraction": 0.985,
+    "legalContactRate": 0.07970604402299442,
+    "legalContactEpisodeFraction": 0.985,
+    "level1Rate": 0.03,
+    "level2Rate": 0.005,
+    "successRate": 0.005,
+    "terminalReasons": {
+      "Timeout": 197,
+      "OutOfBounds": 2,
+      "Success": 1
+    },
+    "maximumTorsoY": {
+      "mean": 0.9419201707839966,
+      "min": 0.4009263515472412,
+      "p50": 0.9334362745285034,
+      "p95": 1.060787099599838,
+      "max": 1.5686267614364624
+    },
+    "maximumTorsoYHistogram": {
+      "edges": [
+        0.4,
+        0.5,
+        0.6000000000000001,
+        0.7000000000000001,
+        0.8,
+        0.9,
+        1.0,
+        1.1,
+        1.2000000000000002,
+        1.3,
+        1.4,
+        1.5
+      ],
+      "counts": [
+        4,
+        0,
+        1,
+        1,
+        1,
+        178,
+        7,
+        2,
+        1,
+        0,
+        4
+      ]
+    },
+    "commandOuterFraction": 0.8793206247900571,
+    "pdTargetOuterFraction": 0.8752061784674096,
+    "grippedSecondsMean": 8.181201130151749,
+    "grip": {
+      "handTicks": 82795,
+      "commandRadiusMean": 0.8319487885883432,
+      "commandOuterFraction": 0.8477444290114138,
+      "pdRadiusMean": 0.8234570317844585,
+      "armLengthMean": 0.776318727967042,
+      "overshootMean": 0.05563887478728046,
+      "forceMagnitudeMeanN": 148.09187999987734,
+      "pullMeanN": 23.904507555346232,
+      "pushFraction": 0.4933148136964793,
+      "torsoUpForceMeanN": 32.364998910663076,
+      "handBelowShoulderFraction": 0.7506250377438252,
+      "handOffsetTorsoFrameMeanM": [
+        -0.3517965371587929,
+        -0.2151180921354489,
+        0.2926888479300402
+      ],
+      "forceTorsoFrameMeanN": [
+        9.617595001602886,
+        -32.364998910663076,
+        -73.58074889064116
+      ],
+      "commandRadiusHistogram": {
+        "binWidthM": 0.05,
+        "counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          125,
+          89,
+          99,
+          137,
+          499,
+          424,
+          1002,
+          1104,
+          2046,
+          3212,
+          16442,
+          57616
+        ]
+      },
+      "byCommandRadius": [
+        {
+          "range": "<0.60",
+          "ticks": 1373,
+          "fraction": 0.01658312700042273,
+          "pullMeanN": 128.49937636437247,
+          "torsoUpForceMeanN": 13.45167254186076,
+          "torsoVyMean": -0.004172973999535178,
+          "overshootMeanM": -0.10755289525596747
+        },
+        {
+          "range": "0.60-0.84",
+          "ticks": 11233,
+          "fraction": 0.13567244398816353,
+          "pullMeanN": 15.58274543693948,
+          "torsoUpForceMeanN": 3.5554275482131548,
+          "torsoVyMean": 0.10805417923907594,
+          "overshootMeanM": 0.01752797830649245
+        },
+        {
+          "range": ">=0.84",
+          "ticks": 70189,
+          "fraction": 0.8477444290114138,
+          "pullMeanN": 23.19029196387953,
+          "torsoUpForceMeanN": 37.34563072178611,
+          "torsoVyMean": 0.10905118020745709,
+          "overshootMeanM": 0.06493038422947
+        }
+      ],
+      "episodesWithMaxGripTorsoAbove06": 196,
+      "torsoUpForceEpisodes": {
+        "n": 197,
+        "p50": 72.34317848899148,
+        "positiveFraction": 0.9593908629441624
+      }
+    }
+  }
+}
