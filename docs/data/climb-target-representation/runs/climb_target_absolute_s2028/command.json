@@ -1,0 +1,22 @@
+[
+  "C:\\Users\\17645\\miniforge3\\envs\\mlagents\\python.exe",
+  "C:\\dev\\physai-project\\scripts\\climb_train_worker.py",
+  "--train-device",
+  "cpu",
+  "--train-record",
+  "C:\\dev\\physai-project\\results\\climb-target-representation\\climb_target_absolute_s2028\\device.jsonl",
+  "config/climb_target_absolute.yaml",
+  "--env",
+  "Builds/Climb/Climb.exe",
+  "--run-id",
+  "climb_target_absolute_s2028",
+  "--seed",
+  "2028",
+  "--num-envs",
+  "4",
+  "--base-port",
+  "7050",
+  "--no-graphics",
+  "--env-args",
+  "--climb-output=C:\\dev\\physai-project\\results\\climb-target-representation\\climb_target_absolute_s2028\\runtime"
+]

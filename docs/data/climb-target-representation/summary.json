@@ -1,0 +1,1110 @@
+{
+  "perSeed": [
+    {
+      "mode": "incremental",
+      "seed": 2026,
+      "label": "1M",
+      "steps": 999904,
+      "modelSha256": "9dae2c058b762f194a1af595b488b01aded58cf663643325dcc5d82720bdda67",
+      "gripEpisodeFraction": 0.0,
+      "legalContactRate": 0.0,
+      "legalContactEpisodeFraction": 0.0,
+      "level1Rate": 0.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0,
+      "maximumTorsoYMean": 0.40000018283724786,
+      "maximumTorsoYP95": 0.4000001847743988,
+      "commandOuterFraction": 0.8557554376834802,
+      "gripCommandRadiusMean": null,
+      "gripCommandOuterFraction": null,
+      "gripTorsoUpForceMeanN": null,
+      "gripTorsoUpForceEpisodeP50N": null,
+      "gripTorsoUpForcePositiveEpisodeFraction": null,
+      "gripHandBelowShoulderFraction": null,
+      "grippedSecondsMean": 0.0
+    },
+    {
+      "mode": "incremental",
+      "seed": 2026,
+      "label": "2.5M",
+      "steps": 2499937,
+      "modelSha256": "b43f435c7d655d0a5229dcc625e5579af462362a788871af166bde291fe9dd0f",
+      "gripEpisodeFraction": 0.055,
+      "legalContactRate": 4.773989296213473e-05,
+      "legalContactEpisodeFraction": 0.055,
+      "level1Rate": 0.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0,
+      "maximumTorsoYMean": 0.40000017747282984,
+      "maximumTorsoYP95": 0.4000001847743988,
+      "commandOuterFraction": 0.9059622698158527,
+      "gripCommandRadiusMean": 0.8287785676772704,
+      "gripCommandOuterFraction": 0.8777555110220441,
+      "gripTorsoUpForceMeanN": -279.72365552332695,
+      "gripTorsoUpForceEpisodeP50N": -280.271140813253,
+      "gripTorsoUpForcePositiveEpisodeFraction": 0.0,
+      "gripHandBelowShoulderFraction": 1.0,
+      "grippedSecondsMean": 0.4990056758746505
+    },
+    {
+      "mode": "incremental",
+      "seed": 2026,
+      "label": "5M",
+      "steps": 4999973,
+      "modelSha256": "bd648181806aee3702bfb0716ba5d750b7184734179880e24ba8e242dbd738f6",
+      "gripEpisodeFraction": 0.53,
+      "legalContactRate": 0.0035625770503399825,
+      "legalContactEpisodeFraction": 1.0,
+      "level1Rate": 0.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0,
+      "maximumTorsoYMean": 0.40066944926977155,
+      "maximumTorsoYP95": 0.4000001847743988,
+      "commandOuterFraction": 0.6867368895116093,
+      "gripCommandRadiusMean": 0.6408178868131739,
+      "gripCommandOuterFraction": 0.3011349660915703,
+      "gripTorsoUpForceMeanN": -102.41565812624717,
+      "gripTorsoUpForceEpisodeP50N": -65.94032353940217,
+      "gripTorsoUpForcePositiveEpisodeFraction": 0.018867924528301886,
+      "gripHandBelowShoulderFraction": 1.0,
+      "grippedSecondsMean": 2.845922992527485
+    },
+    {
+      "mode": "incremental",
+      "seed": 2027,
+      "label": "1M",
+      "steps": 999904,
+      "modelSha256": "0d18cebc484a678067fb700963833fe86d4fde07d1139ba7f84d2abec60daaab",
+      "gripEpisodeFraction": 1.0,
+      "legalContactRate": 0.11010839666092108,
+      "legalContactEpisodeFraction": 1.0,
+      "level1Rate": 0.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0,
+      "maximumTorsoYMean": 0.4137675042450428,
+      "maximumTorsoYP95": 0.5284642100334167,
+      "commandOuterFraction": 0.8971760741926875,
+      "gripCommandRadiusMean": 0.8464500302743581,
+      "gripCommandOuterFraction": 0.9536140358106855,
+      "gripTorsoUpForceMeanN": -16.006103082067007,
+      "gripTorsoUpForceEpisodeP50N": 26.220303163770296,
+      "gripTorsoUpForcePositiveEpisodeFraction": 0.68,
+      "gripHandBelowShoulderFraction": 0.9267251148702944,
+      "grippedSecondsMean": 19.33895861506462
+    },
+    {
+      "mode": "incremental",
+      "seed": 2027,
+      "label": "2.5M",
+      "steps": 2499938,
+      "modelSha256": "3ba0e408b5ed9dcd3dde4e9cbb7328bfa9f56965f24fa6ca0ee3111bd052089c",
+      "gripEpisodeFraction": 1.0,
+      "legalContactRate": 0.015749063355790394,
+      "legalContactEpisodeFraction": 1.0,
+      "level1Rate": 0.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0,
+      "maximumTorsoYMean": 0.40000016808509825,
+      "maximumTorsoYP95": 0.4000001847743988,
+      "commandOuterFraction": 0.8804126634641046,
+      "gripCommandRadiusMean": 0.8017600077376712,
+      "gripCommandOuterFraction": 0.33887587822014054,
+      "gripTorsoUpForceMeanN": 10.911823918612836,
+      "gripTorsoUpForceEpisodeP50N": 10.184240569108688,
+      "gripTorsoUpForcePositiveEpisodeFraction": 0.76,
+      "gripHandBelowShoulderFraction": 1.0,
+      "grippedSecondsMean": 0.8539993645250797
+    },
+    {
+      "mode": "incremental",
+      "seed": 2027,
+      "label": "5M",
+      "steps": 4999905,
+      "modelSha256": "17e72944b7dae18273190868031fda73148f4df6fe2b9c85f0831933e3425056",
+      "gripEpisodeFraction": 0.0,
+      "legalContactRate": 0.00576332821778875,
+      "legalContactEpisodeFraction": 1.0,
+      "level1Rate": 0.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0,
+      "maximumTorsoYMean": 0.4000001636147499,
+      "maximumTorsoYP95": 0.4000001847743988,
+      "commandOuterFraction": 0.5608528489458233,
+      "gripCommandRadiusMean": null,
+      "gripCommandOuterFraction": null,
+      "gripTorsoUpForceMeanN": null,
+      "gripTorsoUpForceEpisodeP50N": null,
+      "gripTorsoUpForcePositiveEpisodeFraction": null,
+      "gripHandBelowShoulderFraction": null,
+      "grippedSecondsMean": 0.0
+    },
+    {
+      "mode": "incremental",
+      "seed": 2028,
+      "label": "1M",
+      "steps": 999904,
+      "modelSha256": "be2a55177750656250c96667c946789d133c8f5f1baba8b2f368d8953b76915a",
+      "gripEpisodeFraction": 0.0,
+      "legalContactRate": 0.0,
+      "legalContactEpisodeFraction": 0.0,
+      "level1Rate": 0.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0,
+      "maximumTorsoYMean": 0.4000001549720764,
+      "maximumTorsoYP95": 0.4000001549720764,
+      "commandOuterFraction": 0.9536962903656259,
+      "gripCommandRadiusMean": null,
+      "gripCommandOuterFraction": null,
+      "gripTorsoUpForceMeanN": null,
+      "gripTorsoUpForceEpisodeP50N": null,
+      "gripTorsoUpForcePositiveEpisodeFraction": null,
+      "gripHandBelowShoulderFraction": null,
+      "grippedSecondsMean": 0.0
+    },
+    {
+      "mode": "incremental",
+      "seed": 2028,
+      "label": "2.5M",
+      "steps": 2499968,
+      "modelSha256": "21d86e062eb859710e88222f7d5f51a0d3c16ee10ffc54be56a215d2e464abdd",
+      "gripEpisodeFraction": 0.0,
+      "legalContactRate": 0.0,
+      "legalContactEpisodeFraction": 0.0,
+      "level1Rate": 0.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0,
+      "maximumTorsoYMean": 0.4000001084804535,
+      "maximumTorsoYP95": 0.4000001549720764,
+      "commandOuterFraction": 0.9680744595676541,
+      "gripCommandRadiusMean": null,
+      "gripCommandOuterFraction": null,
+      "gripTorsoUpForceMeanN": null,
+      "gripTorsoUpForceEpisodeP50N": null,
+      "gripTorsoUpForcePositiveEpisodeFraction": null,
+      "gripHandBelowShoulderFraction": null,
+      "grippedSecondsMean": 0.0
+    },
+    {
+      "mode": "incremental",
+      "seed": 2028,
+      "label": "5M",
+      "steps": 4999970,
+      "modelSha256": "a0c1637eb63a9d4f604677f67e2d86b15861f108ca1770206c81381214407a56",
+      "gripEpisodeFraction": 0.995,
+      "legalContactRate": 0.05040305597054055,
+      "legalContactEpisodeFraction": 0.995,
+      "level1Rate": 0.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0,
+      "maximumTorsoYMean": 0.43862125724554063,
+      "maximumTorsoYP95": 0.45505739450454713,
+      "commandOuterFraction": 0.687458299973312,
+      "gripCommandRadiusMean": 0.7981489793113312,
+      "gripCommandOuterFraction": 0.373363672116411,
+      "gripTorsoUpForceMeanN": 45.64369413902119,
+      "gripTorsoUpForceEpisodeP50N": 52.57421875,
+      "gripTorsoUpForcePositiveEpisodeFraction": 0.9849246231155779,
+      "gripHandBelowShoulderFraction": 1.0,
+      "grippedSecondsMean": 3.559798658005893
+    },
+    {
+      "mode": "absolute",
+      "seed": 2026,
+      "label": "1M",
+      "steps": 999904,
+      "modelSha256": "9e4c42e9324a8efa3a0a943c0bfa98a707b5acce99bed2b02bb805392e72cbc2",
+      "gripEpisodeFraction": 0.74,
+      "legalContactRate": 0.0018290004392795816,
+      "legalContactEpisodeFraction": 0.74,
+      "level1Rate": 0.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0,
+      "maximumTorsoYMean": 0.4000001847743988,
+      "maximumTorsoYP95": 0.4000001847743988,
+      "commandOuterFraction": 0.017664131305044035,
+      "gripCommandRadiusMean": 0.6037723487039912,
+      "gripCommandOuterFraction": 0.02561186992997296,
+      "gripTorsoUpForceMeanN": -155.1752097615354,
+      "gripTorsoUpForceEpisodeP50N": -139.5271030805687,
+      "gripTorsoUpForcePositiveEpisodeFraction": 0.0,
+      "gripHandBelowShoulderFraction": 1.0,
+      "grippedSecondsMean": 7.211580551862717
+    },
+    {
+      "mode": "absolute",
+      "seed": 2026,
+      "label": "2.5M",
+      "steps": 2499952,
+      "modelSha256": "1e1b91a5e649f388988585661f71ed087c198ddc43b6c9786e14891eafd2d3fa",
+      "gripEpisodeFraction": 0.0,
+      "legalContactRate": 0.0,
+      "legalContactEpisodeFraction": 0.0,
+      "level1Rate": 0.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0,
+      "maximumTorsoYMean": 0.40000016301870345,
+      "maximumTorsoYP95": 0.4000001847743988,
+      "commandOuterFraction": 0.020278722978382707,
+      "gripCommandRadiusMean": null,
+      "gripCommandOuterFraction": null,
+      "gripTorsoUpForceMeanN": null,
+      "gripTorsoUpForceEpisodeP50N": null,
+      "gripTorsoUpForcePositiveEpisodeFraction": null,
+      "gripHandBelowShoulderFraction": null,
+      "grippedSecondsMean": 0.0
+    },
+    {
+      "mode": "absolute",
+      "seed": 2026,
+      "label": "5M",
+      "steps": 4999888,
+      "modelSha256": "fd260be3f8ace0aa3d75ed6be130aa8bfdf4b301ff3b0f07d1f93a1ef7af42ab",
+      "gripEpisodeFraction": 0.23,
+      "legalContactRate": 0.0036998692740664607,
+      "legalContactEpisodeFraction": 0.385,
+      "level1Rate": 0.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0,
+      "maximumTorsoYMean": 0.4000001847743988,
+      "maximumTorsoYP95": 0.4000001847743988,
+      "commandOuterFraction": 0.17754203362690152,
+      "gripCommandRadiusMean": 0.75668925645183,
+      "gripCommandOuterFraction": 0.7100371747211895,
+      "gripTorsoUpForceMeanN": 7.937224561840185,
+      "gripTorsoUpForceEpisodeP50N": 16.801478068033855,
+      "gripTorsoUpForcePositiveEpisodeFraction": 0.5652173913043478,
+      "gripHandBelowShoulderFraction": 1.0,
+      "grippedSecondsMean": 0.02689999034628272
+    },
+    {
+      "mode": "absolute",
+      "seed": 2027,
+      "label": "1M",
+      "steps": 999904,
+      "modelSha256": "9b9b5d13079b24e1aa3c5deb58a25b34cc9e5a08813e5fdbb36cc548c93c9d1d",
+      "gripEpisodeFraction": 0.0,
+      "legalContactRate": 0.0,
+      "legalContactEpisodeFraction": 0.0,
+      "level1Rate": 0.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0,
+      "maximumTorsoYMean": 0.4000001101195812,
+      "maximumTorsoYP95": 0.4000001847743988,
+      "commandOuterFraction": 0.0,
+      "gripCommandRadiusMean": null,
+      "gripCommandOuterFraction": null,
+      "gripTorsoUpForceMeanN": null,
+      "gripTorsoUpForceEpisodeP50N": null,
+      "gripTorsoUpForcePositiveEpisodeFraction": null,
+      "gripHandBelowShoulderFraction": null,
+      "grippedSecondsMean": 0.0
+    },
+    {
+      "mode": "absolute",
+      "seed": 2027,
+      "label": "2.5M",
+      "steps": 2499952,
+      "modelSha256": "f8ca3b2b12a141d6a2b3563dca794c2997140344414846f7bf7c63a04bbe68f3",
+      "gripEpisodeFraction": 1.0,
+      "legalContactRate": 0.0005236134165049531,
+      "legalContactEpisodeFraction": 0.63,
+      "level1Rate": 0.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0,
+      "maximumTorsoYMean": 0.402448178678751,
+      "maximumTorsoYP95": 0.41158501505851747,
+      "commandOuterFraction": 0.0007547704830531091,
+      "gripCommandRadiusMean": 0.3520501297676906,
+      "gripCommandOuterFraction": 0.0004947060420500136,
+      "gripTorsoUpForceMeanN": -185.1490327558051,
+      "gripTorsoUpForceEpisodeP50N": -182.0460116621377,
+      "gripTorsoUpForcePositiveEpisodeFraction": 0.0,
+      "gripHandBelowShoulderFraction": 1.0,
+      "grippedSecondsMean": 16.557032986134292
+    },
+    {
+      "mode": "absolute",
+      "seed": 2027,
+      "label": "5M",
+      "steps": 4999888,
+      "modelSha256": "e4ab3641328ee9033e25c608dade7d79e1e07947792994b195278c4154f8e2b0",
+      "gripEpisodeFraction": 0.0,
+      "legalContactRate": 0.0012243944752118503,
+      "legalContactEpisodeFraction": 0.79,
+      "level1Rate": 0.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0,
+      "maximumTorsoYMean": 0.40000018090009687,
+      "maximumTorsoYP95": 0.4000001847743988,
+      "commandOuterFraction": 0.0063509140645850014,
+      "gripCommandRadiusMean": null,
+      "gripCommandOuterFraction": null,
+      "gripTorsoUpForceMeanN": null,
+      "gripTorsoUpForceEpisodeP50N": null,
+      "gripTorsoUpForcePositiveEpisodeFraction": null,
+      "gripHandBelowShoulderFraction": null,
+      "grippedSecondsMean": 0.0
+    },
+    {
+      "mode": "absolute",
+      "seed": 2028,
+      "label": "1M",
+      "steps": 999904,
+      "modelSha256": "76447f687ba5a2d08b0e7d25f0814c5b29ec7aa1a90e1697f6f1c6e433a8099e",
+      "gripEpisodeFraction": 1.0,
+      "legalContactRate": 0.0006864145439128657,
+      "legalContactEpisodeFraction": 1.0,
+      "level1Rate": 0.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0,
+      "maximumTorsoYMean": 0.4001177403330803,
+      "maximumTorsoYP95": 0.4001905620098114,
+      "commandOuterFraction": 0.0,
+      "gripCommandRadiusMean": 0.3554729551094465,
+      "gripCommandOuterFraction": 0.0,
+      "gripTorsoUpForceMeanN": -48.23177279304938,
+      "gripTorsoUpForceEpisodeP50N": -48.8425439453125,
+      "gripTorsoUpForcePositiveEpisodeFraction": 0.0,
+      "gripHandBelowShoulderFraction": 1.0,
+      "grippedSecondsMean": 1.017399210333824
+    },
+    {
+      "mode": "absolute",
+      "seed": 2028,
+      "label": "2.5M",
+      "steps": 2499952,
+      "modelSha256": "7c4c877299ad8358ba8de9680eaed21bb073e807953d7e02abfa5c2b5f824c01",
+      "gripEpisodeFraction": 0.0,
+      "legalContactRate": 0.0,
+      "legalContactEpisodeFraction": 0.0,
+      "level1Rate": 0.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0,
+      "maximumTorsoYMean": 0.40000015318393706,
+      "maximumTorsoYP95": 0.4000001549720764,
+      "commandOuterFraction": 0.0,
+      "gripCommandRadiusMean": null,
+      "gripCommandOuterFraction": null,
+      "gripTorsoUpForceMeanN": null,
+      "gripTorsoUpForceEpisodeP50N": null,
+      "gripTorsoUpForcePositiveEpisodeFraction": null,
+      "gripHandBelowShoulderFraction": null,
+      "grippedSecondsMean": 0.0
+    },
+    {
+      "mode": "absolute",
+      "seed": 2028,
+      "label": "5M",
+      "steps": 4999888,
+      "modelSha256": "31db7f19307a2fc124d572979bf414e3c8f19415569b3a0cfc851f310873117e",
+      "gripEpisodeFraction": 0.0,
+      "legalContactRate": 0.0,
+      "legalContactEpisodeFraction": 0.0,
+      "level1Rate": 0.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0,
+      "maximumTorsoYMean": 0.40005440697073935,
+      "maximumTorsoYP95": 0.4000948369503021,
+      "commandOuterFraction": 0.15526587937016278,
+      "gripCommandRadiusMean": null,
+      "gripCommandOuterFraction": null,
+      "gripTorsoUpForceMeanN": null,
+      "gripTorsoUpForceEpisodeP50N": null,
+      "gripTorsoUpForcePositiveEpisodeFraction": null,
+      "gripHandBelowShoulderFraction": null,
+      "grippedSecondsMean": 0.0
+    }
+  ],
+  "aggregate": {
+    "incremental/1M": {
+      "seeds": 3,
+      "gripEpisodeFraction": {
+        "mean": 0.3333333333333333,
+        "sd": 0.5773502691896257,
+        "min": 0.0,
+        "max": 1.0,
+        "n": 3
+      },
+      "legalContactRate": {
+        "mean": 0.03670279888697369,
+        "sd": 0.06357111245222087,
+        "min": 0.0,
+        "max": 0.11010839666092108,
+        "n": 3
+      },
+      "legalContactEpisodeFraction": {
+        "mean": 0.3333333333333333,
+        "sd": 0.5773502691896257,
+        "min": 0.0,
+        "max": 1.0,
+        "n": 3
+      },
+      "level1Rate": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 3
+      },
+      "level2Rate": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 3
+      },
+      "successRate": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 3
+      },
+      "maximumTorsoYMean": {
+        "mean": 0.40458928068478905,
+        "sd": 0.007948574764804848,
+        "min": 0.4000001549720764,
+        "max": 0.4137675042450428,
+        "n": 3
+      },
+      "maximumTorsoYP95": {
+        "mean": 0.4428215165932973,
+        "sd": 0.07416874816766779,
+        "min": 0.4000001549720764,
+        "max": 0.5284642100334167,
+        "n": 3
+      },
+      "commandOuterFraction": {
+        "mean": 0.9022092674139311,
+        "sd": 0.049164035956461315,
+        "min": 0.8557554376834802,
+        "max": 0.9536962903656259,
+        "n": 3
+      },
+      "gripCommandRadiusMean": {
+        "mean": 0.8464500302743581,
+        "sd": null,
+        "min": 0.8464500302743581,
+        "max": 0.8464500302743581,
+        "n": 1
+      },
+      "gripCommandOuterFraction": {
+        "mean": 0.9536140358106855,
+        "sd": null,
+        "min": 0.9536140358106855,
+        "max": 0.9536140358106855,
+        "n": 1
+      },
+      "gripTorsoUpForceMeanN": {
+        "mean": -16.006103082067007,
+        "sd": null,
+        "min": -16.006103082067007,
+        "max": -16.006103082067007,
+        "n": 1
+      },
+      "gripTorsoUpForceEpisodeP50N": {
+        "mean": 26.220303163770296,
+        "sd": null,
+        "min": 26.220303163770296,
+        "max": 26.220303163770296,
+        "n": 1
+      },
+      "gripTorsoUpForcePositiveEpisodeFraction": {
+        "mean": 0.68,
+        "sd": null,
+        "min": 0.68,
+        "max": 0.68,
+        "n": 1
+      },
+      "gripHandBelowShoulderFraction": {
+        "mean": 0.9267251148702944,
+        "sd": null,
+        "min": 0.9267251148702944,
+        "max": 0.9267251148702944,
+        "n": 1
+      },
+      "grippedSecondsMean": {
+        "mean": 6.4463195383548735,
+        "sd": 11.165352962254591,
+        "min": 0.0,
+        "max": 19.33895861506462,
+        "n": 3
+      }
+    },
+    "incremental/2.5M": {
+      "seeds": 3,
+      "gripEpisodeFraction": {
+        "mean": 0.3516666666666667,
+        "sd": 0.5621461850207056,
+        "min": 0.0,
+        "max": 1.0,
+        "n": 3
+      },
+      "legalContactRate": {
+        "mean": 0.00526560108291751,
+        "sd": 0.009078976026755817,
+        "min": 0.0,
+        "max": 0.015749063355790394,
+        "n": 3
+      },
+      "legalContactEpisodeFraction": {
+        "mean": 0.3516666666666667,
+        "sd": 0.5621461850207056,
+        "min": 0.0,
+        "max": 1.0,
+        "n": 3
+      },
+      "level1Rate": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 3
+      },
+      "level2Rate": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 3
+      },
+      "successRate": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 3
+      },
+      "maximumTorsoYMean": {
+        "mean": 0.4000001513461272,
+        "sd": 3.741833592433449e-08,
+        "min": 0.4000001084804535,
+        "max": 0.40000017747282984,
+        "n": 3
+      },
+      "maximumTorsoYP95": {
+        "mean": 0.4000001748402913,
+        "sd": 1.7206378853011898e-08,
+        "min": 0.4000001549720764,
+        "max": 0.4000001847743988,
+        "n": 3
+      },
+      "commandOuterFraction": {
+        "mean": 0.9181497976158705,
+        "sd": 0.045083805290062055,
+        "min": 0.8804126634641046,
+        "max": 0.9680744595676541,
+        "n": 3
+      },
+      "gripCommandRadiusMean": {
+        "mean": 0.8152692877074708,
+        "sd": 0.01910500695118581,
+        "min": 0.8017600077376712,
+        "max": 0.8287785676772704,
+        "n": 2
+      },
+      "gripCommandOuterFraction": {
+        "mean": 0.6083156946210924,
+        "sd": 0.3810454425975427,
+        "min": 0.33887587822014054,
+        "max": 0.8777555110220441,
+        "n": 2
+      },
+      "gripTorsoUpForceMeanN": {
+        "mean": -134.40591580235707,
+        "sd": 205.51031836679905,
+        "min": -279.72365552332695,
+        "max": 10.911823918612836,
+        "n": 2
+      },
+      "gripTorsoUpForceEpisodeP50N": {
+        "mean": -135.04345012207216,
+        "sd": 205.38296980759284,
+        "min": -280.271140813253,
+        "max": 10.184240569108688,
+        "n": 2
+      },
+      "gripTorsoUpForcePositiveEpisodeFraction": {
+        "mean": 0.38,
+        "sd": 0.5374011537017761,
+        "min": 0.0,
+        "max": 0.76,
+        "n": 2
+      },
+      "gripHandBelowShoulderFraction": {
+        "mean": 1.0,
+        "sd": 0.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 2
+      },
+      "grippedSecondsMean": {
+        "mean": 0.45100168013324343,
+        "sd": 0.4290186666774137,
+        "min": 0.0,
+        "max": 0.8539993645250797,
+        "n": 3
+      }
+    },
+    "incremental/5M": {
+      "seeds": 3,
+      "gripEpisodeFraction": {
+        "mean": 0.5083333333333333,
+        "sd": 0.49785372684487694,
+        "min": 0.0,
+        "max": 0.995,
+        "n": 3
+      },
+      "legalContactRate": {
+        "mean": 0.019909653746223097,
+        "sd": 0.0264309763504068,
+        "min": 0.0035625770503399825,
+        "max": 0.05040305597054055,
+        "n": 3
+      },
+      "legalContactEpisodeFraction": {
+        "mean": 0.9983333333333333,
+        "sd": 0.0028867513459481316,
+        "min": 0.995,
+        "max": 1.0,
+        "n": 3
+      },
+      "level1Rate": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 3
+      },
+      "level2Rate": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 3
+      },
+      "successRate": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 3
+      },
+      "maximumTorsoYMean": {
+        "mean": 0.41309695671002067,
+        "sd": 0.022107225610479984,
+        "min": 0.4000001636147499,
+        "max": 0.43862125724554063,
+        "n": 3
+      },
+      "maximumTorsoYP95": {
+        "mean": 0.4183525880177816,
+        "sd": 0.03178729485853082,
+        "min": 0.4000001847743988,
+        "max": 0.45505739450454713,
+        "n": 3
+      },
+      "commandOuterFraction": {
+        "mean": 0.6450160128102482,
+        "sd": 0.07288833049272077,
+        "min": 0.5608528489458233,
+        "max": 0.687458299973312,
+        "n": 3
+      },
+      "gripCommandRadiusMean": {
+        "mean": 0.7194834330622526,
+        "sd": 0.11124988239693502,
+        "min": 0.6408178868131739,
+        "max": 0.7981489793113312,
+        "n": 2
+      },
+      "gripCommandOuterFraction": {
+        "mean": 0.3372493191039907,
+        "sd": 0.05107340782649451,
+        "min": 0.3011349660915703,
+        "max": 0.373363672116411,
+        "n": 2
+      },
+      "gripTorsoUpForceMeanN": {
+        "mean": -28.385981993612987,
+        "sd": 104.69377200485907,
+        "min": -102.41565812624717,
+        "max": 45.64369413902119,
+        "n": 2
+      },
+      "gripTorsoUpForceEpisodeP50N": {
+        "mean": -6.683052394701086,
+        "sd": 83.80243652205614,
+        "min": -65.94032353940217,
+        "max": 52.57421875,
+        "n": 2
+      },
+      "gripTorsoUpForcePositiveEpisodeFraction": {
+        "mean": 0.5018962738219399,
+        "sd": 0.6831052425817515,
+        "min": 0.018867924528301886,
+        "max": 0.9849246231155779,
+        "n": 2
+      },
+      "gripHandBelowShoulderFraction": {
+        "mean": 1.0,
+        "sd": 0.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 2
+      },
+      "grippedSecondsMean": {
+        "mean": 2.1352405501777927,
+        "sd": 1.883306605888492,
+        "min": 0.0,
+        "max": 3.559798658005893,
+        "n": 3
+      }
+    },
+    "absolute/1M": {
+      "seeds": 3,
+      "gripEpisodeFraction": {
+        "mean": 0.58,
+        "sd": 0.5188448708429139,
+        "min": 0.0,
+        "max": 1.0,
+        "n": 3
+      },
+      "legalContactRate": {
+        "mean": 0.0008384716610641491,
+        "sd": 0.0009239327231343714,
+        "min": 0.0,
+        "max": 0.0018290004392795816,
+        "n": 3
+      },
+      "legalContactEpisodeFraction": {
+        "mean": 0.58,
+        "sd": 0.5188448708429139,
+        "min": 0.0,
+        "max": 1.0,
+        "n": 3
+      },
+      "level1Rate": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 3
+      },
+      "level2Rate": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 3
+      },
+      "successRate": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 3
+      },
+      "maximumTorsoYMean": {
+        "mean": 0.4000393450756868,
+        "sd": 6.789229470037793e-05,
+        "min": 0.4000001101195812,
+        "max": 0.4001177403330803,
+        "n": 3
+      },
+      "maximumTorsoYP95": {
+        "mean": 0.4000636438528697,
+        "sd": 0.00010991434811304001,
+        "min": 0.4000001847743988,
+        "max": 0.4001905620098114,
+        "n": 3
+      },
+      "commandOuterFraction": {
+        "mean": 0.005888043768348012,
+        "sd": 0.010198390963968068,
+        "min": 0.0,
+        "max": 0.017664131305044035,
+        "n": 3
+      },
+      "gripCommandRadiusMean": {
+        "mean": 0.4796226519067188,
+        "sd": 0.17557418497521018,
+        "min": 0.3554729551094465,
+        "max": 0.6037723487039912,
+        "n": 2
+      },
+      "gripCommandOuterFraction": {
+        "mean": 0.01280593496498648,
+        "sd": 0.018110326906351705,
+        "min": 0.0,
+        "max": 0.02561186992997296,
+        "n": 2
+      },
+      "gripTorsoUpForceMeanN": {
+        "mean": -101.70349127729239,
+        "sd": 75.62042948381259,
+        "min": -155.1752097615354,
+        "max": -48.23177279304938,
+        "n": 2
+      },
+      "gripTorsoUpForceEpisodeP50N": {
+        "mean": -94.1848235129406,
+        "sd": 64.12366671345214,
+        "min": -139.5271030805687,
+        "max": -48.8425439453125,
+        "n": 2
+      },
+      "gripTorsoUpForcePositiveEpisodeFraction": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 2
+      },
+      "gripHandBelowShoulderFraction": {
+        "mean": 1.0,
+        "sd": 0.0,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 2
+      },
+      "grippedSecondsMean": {
+        "mean": 2.7429932540655138,
+        "sd": 3.903201201171015,
+        "min": 0.0,
+        "max": 7.211580551862717,
+        "n": 3
+      }
+    },
+    "absolute/2.5M": {
+      "seeds": 3,
+      "gripEpisodeFraction": {
+        "mean": 0.3333333333333333,
+        "sd": 0.5773502691896257,
+        "min": 0.0,
+        "max": 1.0,
+        "n": 3
+      },
+      "legalContactRate": {
+        "mean": 0.00017453780550165103,
+        "sd": 0.0003023083469704343,
+        "min": 0.0,
+        "max": 0.0005236134165049531,
+        "n": 3
+      },
+      "legalContactEpisodeFraction": {
+        "mean": 0.21,
+        "sd": 0.3637306695894642,
+        "min": 0.0,
+        "max": 0.63,
+        "n": 3
+      },
+      "level1Rate": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 3
+      },
+      "level2Rate": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 3
+      },
+      "successRate": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 3
+      },
+      "maximumTorsoYMean": {
+        "mean": 0.40081616496046385,
+        "sd": 0.0014133653393699336,
+        "min": 0.40000015318393706,
+        "max": 0.402448178678751,
+        "n": 3
+      },
+      "maximumTorsoYP95": {
+        "mean": 0.4038617849349976,
+        "sd": 0.006688513486258064,
+        "min": 0.4000001549720764,
+        "max": 0.41158501505851747,
+        "n": 3
+      },
+      "commandOuterFraction": {
+        "mean": 0.007011164487145272,
+        "sd": 0.011496238552645251,
+        "min": 0.0,
+        "max": 0.020278722978382707,
+        "n": 3
+      },
+      "gripCommandRadiusMean": {
+        "mean": 0.3520501297676906,
+        "sd": null,
+        "min": 0.3520501297676906,
+        "max": 0.3520501297676906,
+        "n": 1
+      },
+      "gripCommandOuterFraction": {
+        "mean": 0.0004947060420500136,
+        "sd": null,
+        "min": 0.0004947060420500136,
+        "max": 0.0004947060420500136,
+        "n": 1
+      },
+      "gripTorsoUpForceMeanN": {
+        "mean": -185.1490327558051,
+        "sd": null,
+        "min": -185.1490327558051,
+        "max": -185.1490327558051,
+        "n": 1
+      },
+      "gripTorsoUpForceEpisodeP50N": {
+        "mean": -182.0460116621377,
+        "sd": null,
+        "min": -182.0460116621377,
+        "max": -182.0460116621377,
+        "n": 1
+      },
+      "gripTorsoUpForcePositiveEpisodeFraction": {
+        "mean": 0.0,
+        "sd": null,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 1
+      },
+      "gripHandBelowShoulderFraction": {
+        "mean": 1.0,
+        "sd": null,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 1
+      },
+      "grippedSecondsMean": {
+        "mean": 5.519010995378097,
+        "sd": 9.559207451526147,
+        "min": 0.0,
+        "max": 16.557032986134292,
+        "n": 3
+      }
+    },
+    "absolute/5M": {
+      "seeds": 3,
+      "gripEpisodeFraction": {
+        "mean": 0.07666666666666667,
+        "sd": 0.13279056191361394,
+        "min": 0.0,
+        "max": 0.23,
+        "n": 3
+      },
+      "legalContactRate": {
+        "mean": 0.001641421249759437,
+        "sd": 0.0018848585250125385,
+        "min": 0.0,
+        "max": 0.0036998692740664607,
+        "n": 3
+      },
+      "legalContactEpisodeFraction": {
+        "mean": 0.39166666666666666,
+        "sd": 0.3950421918394709,
+        "min": 0.0,
+        "max": 0.79,
+        "n": 3
+      },
+      "level1Rate": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 3
+      },
+      "level2Rate": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 3
+      },
+      "successRate": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "n": 3
+      },
+      "maximumTorsoYMean": {
+        "mean": 0.4000182575484117,
+        "sd": 3.130631812783324e-05,
+        "min": 0.40000018090009687,
+        "max": 0.40005440697073935,
+        "n": 3
+      },
+      "maximumTorsoYP95": {
+        "mean": 0.4000317354996999,
+        "sd": 5.464745923716579e-05,
+        "min": 0.4000001847743988,
+        "max": 0.4000948369503021,
+        "n": 3
+      },
+      "commandOuterFraction": {
+        "mean": 0.1130529423538831,
+        "sd": 0.09307550103494008,
+        "min": 0.0063509140645850014,
+        "max": 0.17754203362690152,
+        "n": 3
+      },
+      "gripCommandRadiusMean": {
+        "mean": 0.75668925645183,
+        "sd": null,
+        "min": 0.75668925645183,
+        "max": 0.75668925645183,
+        "n": 1
+      },
+      "gripCommandOuterFraction": {
+        "mean": 0.7100371747211895,
+        "sd": null,
+        "min": 0.7100371747211895,
+        "max": 0.7100371747211895,
+        "n": 1
+      },
+      "gripTorsoUpForceMeanN": {
+        "mean": 7.937224561840185,
+        "sd": null,
+        "min": 7.937224561840185,
+        "max": 7.937224561840185,
+        "n": 1
+      },
+      "gripTorsoUpForceEpisodeP50N": {
+        "mean": 16.801478068033855,
+        "sd": null,
+        "min": 16.801478068033855,
+        "max": 16.801478068033855,
+        "n": 1
+      },
+      "gripTorsoUpForcePositiveEpisodeFraction": {
+        "mean": 0.5652173913043478,
+        "sd": null,
+        "min": 0.5652173913043478,
+        "max": 0.5652173913043478,
+        "n": 1
+      },
+      "gripHandBelowShoulderFraction": {
+        "mean": 1.0,
+        "sd": null,
+        "min": 1.0,
+        "max": 1.0,
+        "n": 1
+      },
+      "grippedSecondsMean": {
+        "mean": 0.008966663448760907,
+        "sd": 0.015530716667624662,
+        "min": 0.0,
+        "max": 0.02689999034628272,
+        "n": 3
+      }
+    }
+  }
+}

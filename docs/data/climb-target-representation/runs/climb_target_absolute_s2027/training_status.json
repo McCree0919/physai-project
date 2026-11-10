@@ -1,0 +1,122 @@
+{
+    "target_mode": {
+        "lesson_num": 0
+    },
+    "Climb": {
+        "checkpoints": [
+            {
+                "steps": 499968,
+                "file_path": "results\\climb_target_absolute_s2027\\Climb\\Climb-499968.onnx",
+                "reward": null,
+                "creation_time": 1794289975.7307723,
+                "auxillary_file_paths": [
+                    "results\\climb_target_absolute_s2027\\Climb\\Climb-499968.pt"
+                ]
+            },
+            {
+                "steps": 999904,
+                "file_path": "results\\climb_target_absolute_s2027\\Climb\\Climb-999904.onnx",
+                "reward": -1.120000034570694,
+                "creation_time": 1794290165.4643042,
+                "auxillary_file_paths": [
+                    "results\\climb_target_absolute_s2027\\Climb\\Climb-999904.pt"
+                ]
+            },
+            {
+                "steps": 1499968,
+                "file_path": "results\\climb_target_absolute_s2027\\Climb\\Climb-1499968.onnx",
+                "reward": null,
+                "creation_time": 1794290354.9314733,
+                "auxillary_file_paths": [
+                    "results\\climb_target_absolute_s2027\\Climb\\Climb-1499968.pt"
+                ]
+            },
+            {
+                "steps": 1999888,
+                "file_path": "results\\climb_target_absolute_s2027\\Climb\\Climb-1999888.onnx",
+                "reward": -1.1198000013828278,
+                "creation_time": 1794290545.6324904,
+                "auxillary_file_paths": [
+                    "results\\climb_target_absolute_s2027\\Climb\\Climb-1999888.pt"
+                ]
+            },
+            {
+                "steps": 2499952,
+                "file_path": "results\\climb_target_absolute_s2027\\Climb\\Climb-2499952.onnx",
+                "reward": null,
+                "creation_time": 1794290734.2157128,
+                "auxillary_file_paths": [
+                    "results\\climb_target_absolute_s2027\\Climb\\Climb-2499952.pt"
+                ]
+            },
+            {
+                "steps": 2999904,
+                "file_path": "results\\climb_target_absolute_s2027\\Climb\\Climb-2999904.onnx",
+                "reward": -1.120000034570694,
+                "creation_time": 1794290920.5196989,
+                "auxillary_file_paths": [
+                    "results\\climb_target_absolute_s2027\\Climb\\Climb-2999904.pt"
+                ]
+            },
+            {
+                "steps": 3499968,
+                "file_path": "results\\climb_target_absolute_s2027\\Climb\\Climb-3499968.onnx",
+                "reward": -1.120000034570694,
+                "creation_time": 1794291107.2098038,
+                "auxillary_file_paths": [
+                    "results\\climb_target_absolute_s2027\\Climb\\Climb-3499968.pt"
+                ]
+            },
+            {
+                "steps": 3999888,
+                "file_path": "results\\climb_target_absolute_s2027\\Climb\\Climb-3999888.onnx",
+                "reward": -1.1198000013828278,
+                "creation_time": 1794291294.542444,
+                "auxillary_file_paths": [
+                    "results\\climb_target_absolute_s2027\\Climb\\Climb-3999888.pt"
+                ]
+            },
+            {
+                "steps": 4499952,
+                "file_path": "results\\climb_target_absolute_s2027\\Climb\\Climb-4499952.onnx",
+                "reward": -1.1198000013828278,
+                "creation_time": 1794291477.960298,
+                "auxillary_file_paths": [
+                    "results\\climb_target_absolute_s2027\\Climb\\Climb-4499952.pt"
+                ]
+            },
+            {
+                "steps": 4999888,
+                "file_path": "results\\climb_target_absolute_s2027\\Climb\\Climb-4999888.onnx",
+                "reward": null,
+                "creation_time": 1794291661.774425,
+                "auxillary_file_paths": [
+                    "results\\climb_target_absolute_s2027\\Climb\\Climb-4999888.pt"
+                ]
+            },
+            {
+                "steps": 5000784,
+                "file_path": "results\\climb_target_absolute_s2027\\Climb\\Climb-5000784.onnx",
+                "reward": null,
+                "creation_time": 1794291661.8822982,
+                "auxillary_file_paths": [
+                    "results\\climb_target_absolute_s2027\\Climb\\Climb-5000784.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 5000784,
+            "file_path": "results\\climb_target_absolute_s2027\\Climb.onnx",
+            "reward": null,
+            "creation_time": 1794291661.8822982,
+            "auxillary_file_paths": [
+                "results\\climb_target_absolute_s2027\\Climb\\Climb-5000784.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.7.1+cu128"
+    }
+}

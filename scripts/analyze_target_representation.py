@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 import shutil
 import statistics
-from climb_eval_metrics import load, summarize
+from climb_eval_metrics import load, quantile, summarize
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT/'results/climb-target-representation'
@@ -25,6 +25,9 @@ KEYS = {
     'gripCommandRadiusMean': lambda m: m['grip']['commandRadiusMean'],
     'gripCommandOuterFraction': lambda m: m['grip']['commandOuterFraction'],
     'gripTorsoUpForceMeanN': lambda m: m['grip']['torsoUpForceMeanN'],
+    'gripTorsoUpForceEpisodeP50N': lambda m: (m['grip']['torsoUpForceEpisodes'] or {}).get('p50'),
+    'gripTorsoUpForcePositiveEpisodeFraction': lambda m: (m['grip']['torsoUpForceEpisodes'] or {}).get('positiveFraction'),
+    'gripHandBelowShoulderFraction': lambda m: m['grip']['handBelowShoulderFraction'],
     'grippedSecondsMean': lambda m: m['grippedSecondsMean'],
 }
 
@@ -40,6 +43,9 @@ def main():
                 report, runtime = load(folder/'checkpoint')
                 info = json.loads((folder/'checkpoint.json').read_text())
                 metrics = summarize(report['episodes'])
+                # Grip-period vertical force on the torso (-F_y; positive lifts): per-episode tick-weighted means, gripping episodes only.
+                ups = [e['physics']['gripTorsoUpForceSum']/e['physics']['gripHandTicks'] for e in report['episodes'] if e['physics']['gripHandTicks']]
+                metrics['grip']['torsoUpForceEpisodes'] = dict(n=len(ups), p05=quantile(ups, .05), p50=quantile(ups, .5), p95=quantile(ups, .95), positiveFraction=sum(u > 0 for u in ups)/len(ups)) if ups else None
                 row = dict(mode=mode, seed=seed, label=label, steps=info['steps'], modelSha256=info['sha256'], **{k: f(metrics) for k, f in KEYS.items()})
                 rows.append(row)
                 destination = OUT/'eval'/run_id/label;destination.mkdir(parents=True, exist_ok=True)
