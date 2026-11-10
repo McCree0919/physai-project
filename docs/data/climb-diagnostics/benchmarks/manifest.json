@@ -1,0 +1,66 @@
+{
+  "startedUtc": "2026-11-10T03:03:48.588645+00:00",
+  "configSha256": "0b0fe1464c8ecc0be40eeb9e27d58d6d73fb4d700e3f84d2f0bf52791f087a81",
+  "runs": [
+    {
+      "name": "cpu_e2",
+      "device": "cpu",
+      "environments": 2,
+      "agents": 32,
+      "runId": "climb_bench_cpu_e2_s2026",
+      "exitCode": 0,
+      "seconds": 300.00065829977393,
+      "steps": 660448
+    },
+    {
+      "name": "cuda_e2",
+      "device": "cuda:0",
+      "environments": 2,
+      "agents": 32,
+      "runId": "climb_bench_cuda_e2_s2026",
+      "exitCode": 0,
+      "seconds": 300.71275459975004,
+      "steps": 587808
+    },
+    {
+      "name": "cpu_e4",
+      "device": "cpu",
+      "environments": 4,
+      "agents": 64,
+      "runId": "climb_bench_cpu_e4_s2026",
+      "exitCode": 0,
+      "seconds": 300.00267269974574,
+      "steps": 1052336
+    },
+    {
+      "name": "cuda_e4",
+      "device": "cuda:0",
+      "environments": 4,
+      "agents": 64,
+      "runId": "climb_bench_cuda_e4_s2026",
+      "exitCode": 0,
+      "seconds": 300.0477737002075,
+      "steps": 678256
+    },
+    {
+      "name": "cpu_e8",
+      "device": "cpu",
+      "environments": 8,
+      "agents": 128,
+      "runId": "climb_bench_cpu_e8_s2026",
+      "exitCode": 0,
+      "seconds": 300.0023260000162,
+      "steps": 887152
+    },
+    {
+      "name": "cuda_e8",
+      "device": "cuda:0",
+      "environments": 8,
+      "agents": 128,
+      "runId": "climb_bench_cuda_e8_s2026",
+      "exitCode": 0,
+      "seconds": 300.0010484997183,
+      "steps": 692576
+    }
+  ]
+}

@@ -1,0 +1,1203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="47" result="Passed" total="47" passed="47" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-10 03:45:24Z" end-time="2026-11-10 03:45:32Z" duration="8.1800739">
+  <test-suite type="TestSuite" id="1062" name="physai-project" fullname="physai-project" runstate="Runnable" testcasecount="47" result="Passed" start-time="2026-11-10 03:45:24Z" end-time="2026-11-10 03:45:32Z" duration="8.180074" total="47" passed="47" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1019" name="Climber.PlayModeTests.dll" fullname="C:/dev/physai-project/Library/ScriptAssemblies/Climber.PlayModeTests.dll" runstate="Runnable" testcasecount="15" result="Passed" start-time="2026-11-10 03:45:24Z" end-time="2026-11-10 03:45:26Z" duration="2.004031" total="15" passed="15" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="167280" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestFixture" id="1001" name="ClimberTests" fullname="ClimberTests" classname="ClimberTests" runstate="Runnable" testcasecount="15" result="Passed" start-time="2026-11-10 03:45:24Z" end-time="2026-11-10 03:45:26Z" duration="2.002892" total="15" passed="15" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1010" name="BothHandsPressOverTopEdge" fullname="ClimberTests.BothHandsPressOverTopEdge" methodname="BothHandsPressOverTopEdge" classname="ClimberTests" runstate="Runnable" seed="1987285275" result="Passed" start-time="2026-11-10 03:45:24Z" end-time="2026-11-10 03:45:24Z" duration="0.094179" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[LAYER1_PRESS_REGION center=(0.0000, 2.6000, 0.6000) size=(0.8000, 0.4000, 0.6000) topSurfaceY=2.0000 frontEdgeZ=0.0000
+LAYER1_PRESS_SAMPLE t=0.02 torso=(0.0000, 1.4918, -0.4001) speed=0.2150 effortL=0.1333 effortR=0.1333 forceL_N=(0.0000, -44.1681, 1.8402) forceR_N=(0.0000, -44.1681, 1.8402) normL_N=44.2064 normR_N=44.2064 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.04 torso=(0.0000, 1.4897, -0.4005) speed=0.1074 effortL=0.2667 effortR=0.2667 forceL_N=(0.0000, -76.3104, 3.0426) forceR_N=(0.0000, -76.3104, 3.0426) normL_N=76.3710 normR_N=76.3710 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.06 torso=(0.0000, 1.4914, -0.4012) speed=0.0944 effortL=0.4000 effortR=0.4000 forceL_N=(0.0000, -97.5013, 3.6834) forceR_N=(0.0000, -97.5013, 3.6834) normL_N=97.5709 normR_N=97.5709 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.08 torso=(0.0000, 1.4980, -0.4022) speed=0.3320 effortL=0.5333 effortR=0.5333 forceL_N=(0.0000, -109.3008, 3.8791) forceR_N=(0.0000, -109.3008, 3.8791) normL_N=109.3696 normR_N=109.3696 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.10 torso=(0.0000, 1.5097, -0.4035) speed=0.5885 effortL=0.6667 effortR=0.6667 forceL_N=(0.0000, -113.5040, 3.7475) forceR_N=(0.0000, -113.5040, 3.7475) normL_N=113.5658 normR_N=113.5658 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.12 torso=(0.0000, 1.5264, -0.4051) speed=0.8385 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -111.9466, 3.3939) forceR_N=(0.0000, -111.9466, 3.3939) normL_N=111.9981 normR_N=111.9981 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.14 torso=(0.0000, 1.5476, -0.4068) speed=1.0657 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -106.3618, 2.8939) forceR_N=(0.0000, -106.3618, 2.8939) normL_N=106.4012 normR_N=106.4012 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.16 torso=(0.0000, 1.5728, -0.4088) speed=1.2603 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -98.2846, 2.3296) forceR_N=(0.0000, -98.2846, 2.3296) normL_N=98.3122 normR_N=98.3122 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.18 torso=(0.0000, 1.6010, -0.4109) speed=1.4173 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -88.9967, 1.7667) forceR_N=(0.0000, -88.9967, 1.7667) normL_N=89.0143 normR_N=89.0143 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.20 torso=(0.0000, 1.6317, -0.4131) speed=1.5361 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -79.5063, 1.2318) forceR_N=(0.0000, -79.5063, 1.2318) normL_N=79.5158 normR_N=79.5158 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.22 torso=(0.0000, 1.6640, -0.4154) speed=1.6188 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -70.5523, 0.7650) forceR_N=(0.0000, -70.5523, 0.7650) normL_N=70.5564 normR_N=70.5564 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.24 torso=(0.0000, 1.6973, -0.4177) speed=1.6698 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -62.6270, 0.3744) forceR_N=(0.0000, -62.6270, 0.3744) normL_N=62.6281 normR_N=62.6281 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.26 torso=(0.0000, 1.7311, -0.4199) speed=1.6942 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -56.0105, 0.0795) forceR_N=(0.0000, -56.0105, 0.0795) normL_N=56.0106 normR_N=56.0106 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.28 torso=(0.0000, 1.7650, -0.4222) speed=1.6978 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -50.8099, -0.1396) forceR_N=(0.0000, -50.8099, -0.1396) normL_N=50.8101 normR_N=50.8101 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.30 torso=(0.0000, 1.7986, -0.4244) speed=1.6861 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -47.0003, -0.2837) forceR_N=(0.0000, -47.0003, -0.2837) normL_N=47.0011 normR_N=47.0011 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.32 torso=(0.0000, 1.8318, -0.4267) speed=1.6644 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -44.4640, -0.3602) forceR_N=(0.0000, -44.4640, -0.3602) normL_N=44.4655 normR_N=44.4655 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.34 torso=(0.0000, 1.8645, -0.4288) speed=1.6370 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -43.0250, -0.3881) forceR_N=(0.0000, -43.0250, -0.3881) normL_N=43.0268 normR_N=43.0268 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.36 torso=(0.0000, 1.8966, -0.4310) speed=1.6074 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -42.4780, -0.3809) forceR_N=(0.0000, -42.4780, -0.3809) normL_N=42.4797 normR_N=42.4797 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.38 torso=(0.0000, 1.9281, -0.4331) speed=1.5785 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -42.6109, -0.3417) forceR_N=(0.0000, -42.6109, -0.3417) normL_N=42.6123 normR_N=42.6123 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.40 torso=(0.0000, 1.9591, -0.4351) speed=1.5520 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -43.2229, -0.2793) forceR_N=(0.0000, -43.2229, -0.2793) normL_N=43.2238 normR_N=43.2238 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.42 torso=(0.0000, 1.9896, -0.4372) speed=1.5293 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -44.1352, -0.2140) forceR_N=(0.0000, -44.1352, -0.2140) normL_N=44.1357 normR_N=44.1357 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.44 torso=(0.0000, 2.0197, -0.4392) speed=1.5108 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -45.1979, -0.1534) forceR_N=(0.0000, -45.1979, -0.1534) normL_N=45.1982 normR_N=45.1982 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.46 torso=(0.0000, 2.0496, -0.4413) speed=1.4968 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -46.2923, -0.0824) forceR_N=(0.0000, -46.2923, -0.0824) normL_N=46.2924 normR_N=46.2924 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.48 torso=(0.0000, 2.0793, -0.4433) speed=1.4870 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -47.3305, -0.0314) forceR_N=(0.0000, -47.3305, -0.0314) normL_N=47.3305 normR_N=47.3305 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.50 torso=(0.0000, 2.1088, -0.4453) speed=1.4808 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -48.2539, 0.0122) forceR_N=(0.0000, -48.2539, 0.0122) normL_N=48.2539 normR_N=48.2539 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.52 torso=(0.0000, 2.1383, -0.4473) speed=1.4778 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -49.0287, 0.0436) forceR_N=(0.0000, -49.0287, 0.0436) normL_N=49.0287 normR_N=49.0287 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.54 torso=(0.0000, 2.1678, -0.4494) speed=1.4772 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -49.6408, 0.0730) forceR_N=(0.0000, -49.6408, 0.0730) normL_N=49.6409 normR_N=49.6409 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.56 torso=(0.0000, 2.1973, -0.4514) speed=1.4784 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -50.0919, 0.0873) forceR_N=(0.0000, -50.0919, 0.0873) normL_N=50.0920 normR_N=50.0920 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.58 torso=(0.0000, 2.2268, -0.4534) speed=1.4808 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -50.3953, 0.0977) forceR_N=(0.0000, -50.3953, 0.0977) normL_N=50.3954 normR_N=50.3954 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.60 torso=(0.0000, 2.2564, -0.4554) speed=1.4840 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -50.5705, 0.1052) forceR_N=(0.0000, -50.5705, 0.1052) normL_N=50.5706 normR_N=50.5706 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.62 torso=(0.0000, 2.2861, -0.4575) speed=1.4874 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -50.6408, 0.1037) forceR_N=(0.0000, -50.6408, 0.1037) normL_N=50.6409 normR_N=50.6409 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.64 torso=(0.0000, 2.3158, -0.4595) speed=1.4907 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -50.6310, 0.0958) forceR_N=(0.0000, -50.6310, 0.0958) normL_N=50.6311 normR_N=50.6311 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.66 torso=(0.0000, 2.3456, -0.4616) speed=1.4938 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -50.5641, 0.0902) forceR_N=(0.0000, -50.5641, 0.0902) normL_N=50.5642 normR_N=50.5642 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.68 torso=(0.0000, 2.3753, -0.4636) speed=1.4869 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -48.0700, -0.0787) forceR_N=(0.0000, -48.0700, -0.0787) normL_N=48.0700 normR_N=48.0700 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.70 torso=(0.0000, 2.4027, -0.4655) speed=1.3751 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -21.8514, -1.8689) forceR_N=(0.0000, -21.8514, -1.8689) normL_N=21.9312 normR_N=21.9312 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.72 torso=(0.0000, 2.4266, -0.4671) speed=1.1959 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -4.9662, -3.0216) forceR_N=(0.0000, -4.9662, -3.0216) normL_N=5.8132 normR_N=5.8132 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.74 torso=(0.0000, 2.4462, -0.4684) speed=0.9813 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, 3.9991, -3.6335) forceR_N=(0.0000, 3.9991, -3.6335) normL_N=5.4032 normR_N=5.4032 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.76 torso=(0.0000, 2.4613, -0.4673) speed=0.7553 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, 7.0031, -30.8141) forceR_N=(0.0000, 7.0031, -30.8141) normL_N=31.5999 normR_N=31.5999 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.78 torso=(0.0000, 2.4720, -0.4623) speed=0.5902 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, 5.1346, -48.1836) forceR_N=(0.0000, 5.1346, -48.1836) normL_N=48.4564 normR_N=48.4564 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.80 torso=(0.0000, 2.4787, -0.4528) speed=0.5846 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -0.1005, -57.2490) forceR_N=(0.0000, -0.1005, -57.2490) normL_N=57.2491 normR_N=57.2491 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.82 torso=(0.0000, 2.4822, -0.4385) speed=0.7342 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -7.3790, -59.7088) forceR_N=(0.0000, -7.3790, -59.7088) normL_N=60.1630 normR_N=60.1630 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.84 torso=(0.0000, 2.4829, -0.4197) speed=0.9416 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -15.6026, -57.2422) forceR_N=(0.0000, -15.6026, -57.2422) normL_N=59.3305 normR_N=59.3305 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.86 torso=(0.0000, 2.4817, -0.3969) speed=1.1459 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -23.9143, -51.4126) forceR_N=(0.0000, -23.9143, -51.4126) normL_N=56.7023 normR_N=56.7023 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.88 torso=(0.0000, 2.4791, -0.3705) speed=1.3225 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -31.6920, -43.5840) forceR_N=(0.0000, -31.6920, -43.5840) normL_N=53.8883 normR_N=53.8883 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.90 torso=(0.0000, 2.4756, -0.3415) speed=1.4628 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -38.5274, -34.8678) forceR_N=(0.0000, -38.5274, -34.8678) normL_N=51.9627 normR_N=51.9627 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.92 torso=(0.0000, 2.4718, -0.3104) speed=1.5658 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -44.1945, -26.1600) forceR_N=(0.0000, -44.1945, -26.1600) normL_N=51.3566 normR_N=51.3566 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.94 torso=(0.0000, 2.4679, -0.2779) speed=1.6346 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -48.6148, -18.0782) forceR_N=(0.0000, -48.6148, -18.0782) normL_N=51.8674 normR_N=51.8674 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.96 torso=(0.0000, 2.4642, -0.2447) speed=1.6738 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -51.8213, -11.0261) forceR_N=(0.0000, -51.8213, -11.0261) normL_N=52.9813 normR_N=52.9813 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=0.98 torso=(0.0000, 2.4610, -0.2110) speed=1.6891 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -53.9258, -5.2127) forceR_N=(0.0000, -53.9258, -5.2127) normL_N=54.1772 normR_N=54.1772 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=1.00 torso=(0.0000, 2.4582, -0.1774) speed=1.6865 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -55.0870, -0.7275) forceR_N=(0.0000, -55.0870, -0.7275) normL_N=55.0918 normR_N=55.0918 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=1.02 torso=(0.0000, 2.4560, -0.1441) speed=1.6713 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -55.4868, 2.4951) forceR_N=(0.0000, -55.4868, 2.4951) normL_N=55.5428 normR_N=55.5428 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=1.04 torso=(0.0000, 2.4543, -0.1111) speed=1.6482 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -55.3107, 4.5770) forceR_N=(0.0000, -55.3107, 4.5770) normL_N=55.4998 normR_N=55.4998 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=1.06 torso=(0.0000, 2.4530, -0.0788) speed=1.6212 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -54.7334, 5.6944) forceR_N=(0.0000, -54.7334, 5.6944) normL_N=55.0289 normR_N=55.0289 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=1.08 torso=(0.0000, 2.4521, -0.0469) speed=1.5932 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -53.9097, 6.0357) forceR_N=(0.0000, -53.9097, 6.0357) normL_N=54.2465 normR_N=54.2465 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=1.10 torso=(0.0000, 2.4515, -0.0156) speed=1.5665 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -52.9678, 5.7908) forceR_N=(0.0000, -52.9678, 5.7908) normL_N=53.2834 normR_N=53.2834 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=1.12 torso=(0.0000, 2.4512, 0.0153) speed=1.5427 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -52.0084, 5.1444) forceR_N=(0.0000, -52.0084, 5.1444) normL_N=52.2622 normR_N=52.2622 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=1.14 torso=(0.0000, 2.4510, 0.0457) speed=1.5225 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -51.1060, 4.2566) forceR_N=(0.0000, -51.1060, 4.2566) normL_N=51.2830 normR_N=51.2830 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=1.16 torso=(0.0000, 2.4509, 0.0759) speed=1.5065 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -50.3092, 3.2563) forceR_N=(0.0000, -50.3092, 3.2563) normL_N=50.4145 normR_N=50.4145 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=1.18 torso=(0.0000, 2.4509, 0.1058) speed=1.4944 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -49.6454, 2.2568) forceR_N=(0.0000, -49.6454, 2.2568) normL_N=49.6967 normR_N=49.6967 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=1.20 torso=(0.0000, 2.4509, 0.1355) speed=1.4862 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -49.1247, 1.3191) forceR_N=(0.0000, -49.1247, 1.3191) normL_N=49.1424 normR_N=49.1424 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=1.22 torso=(0.0000, 2.4509, 0.1651) speed=1.4812 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -48.7445, 0.4941) forceR_N=(0.0000, -48.7445, 0.4941) normL_N=48.7470 normR_N=48.7470 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=1.24 torso=(0.0000, 2.4508, 0.1947) speed=1.4790 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -48.4926, -0.1885) forceR_N=(0.0000, -48.4926, -0.1885) normL_N=48.4930 normR_N=48.4930 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=1.26 torso=(0.0000, 2.4506, 0.2243) speed=1.4789 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -48.3507, -0.7140) forceR_N=(0.0000, -48.3507, -0.7140) normL_N=48.3560 normR_N=48.3560 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=1.28 torso=(0.0000, 2.4504, 0.2539) speed=1.4804 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -48.2983, -1.0992) forceR_N=(0.0000, -48.2983, -1.0992) normL_N=48.3108 normR_N=48.3108 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=1.30 torso=(0.0000, 2.4502, 0.2835) speed=1.4828 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -48.3141, -1.3493) forceR_N=(0.0000, -48.3141, -1.3493) normL_N=48.3329 normR_N=48.3329 geometricInside=False validGoal=False
+LAYER1_PRESS_SAMPLE t=1.32 torso=(0.0000, 2.4499, 0.3132) speed=1.4858 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -48.3773, -1.4885) forceR_N=(0.0000, -48.3773, -1.4885) normL_N=48.4002 normR_N=48.4002 geometricInside=True validGoal=False
+LAYER1_PRESS_FIRST_ENTRY t=1.32 torso=(0.000000, 2.449862, 0.313240) minTorsoY=2.049862 minTorsoZ=0.138237 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -48.3773, -1.4885) forceR_N=(0.0000, -48.3773, -1.4885)
+LAYER1_PRESS_SAMPLE t=1.34 torso=(0.0000, 2.4495, 0.3430) speed=1.4890 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -48.4706, -1.5342) forceR_N=(0.0000, -48.4706, -1.5342) normL_N=48.4949 normR_N=48.4949 geometricInside=True validGoal=False
+LAYER1_PRESS_SAMPLE t=1.36 torso=(0.0000, 2.4491, 0.3729) speed=1.4921 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -48.5784, -1.5057) forceR_N=(0.0000, -48.5784, -1.5057) normL_N=48.6017 normR_N=48.6017 geometricInside=True validGoal=False
+LAYER1_PRESS_SAMPLE t=1.38 torso=(0.0000, 2.4487, 0.4027) speed=1.4949 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -48.6888, -1.4376) forceR_N=(0.0000, -48.6888, -1.4376) normL_N=48.7100 normR_N=48.7100 geometricInside=True validGoal=False
+LAYER1_PRESS_SAMPLE t=1.40 torso=(0.0000, 2.4482, 0.4327) speed=1.4972 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -48.7936, -1.3409) forceR_N=(0.0000, -48.7936, -1.3409) normL_N=48.8120 normR_N=48.8120 geometricInside=True validGoal=False
+LAYER1_PRESS_SAMPLE t=1.42 torso=(0.0000, 2.4478, 0.4611) speed=1.4200 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -49.1610, 18.5931) forceR_N=(0.0000, -49.1610, 18.5931) normL_N=52.5595 normR_N=52.5595 geometricInside=True validGoal=False
+LAYER1_PRESS_SAMPLE t=1.44 torso=(0.0000, 2.4474, 0.4863) speed=1.2625 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -49.5161, 38.7448) forceR_N=(0.0000, -49.5161, 38.7448) normL_N=62.8729 normR_N=62.8729 geometricInside=True validGoal=False
+LAYER1_PRESS_SAMPLE t=1.46 torso=(0.0000, 2.4471, 0.5075) speed=1.0586 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -49.7378, 50.4403) forceR_N=(0.0000, -49.7378, 50.4403) normL_N=70.8383 normR_N=70.8383 geometricInside=True validGoal=False
+LAYER1_PRESS_SAMPLE t=1.48 torso=(0.0000, 2.4468, 0.5242) speed=0.8360 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -49.8477, 55.2229) forceR_N=(0.0000, -49.8477, 55.2229) normL_N=74.3933 normR_N=74.3933 geometricInside=True validGoal=False
+LAYER1_PRESS_SAMPLE t=1.50 torso=(0.0000, 2.4466, 0.5365) speed=0.6160 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -49.8694, 54.6877) forceR_N=(0.0000, -49.8694, 54.6877) normL_N=74.0115 normR_N=74.0115 geometricInside=True validGoal=False
+LAYER1_PRESS_SAMPLE t=1.52 torso=(0.0000, 2.4465, 0.5448) speed=0.4136 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -49.8261, 50.3780) forceR_N=(0.0000, -49.8261, 50.3780) normL_N=70.8561 normR_N=70.8561 geometricInside=True validGoal=True
+LAYER1_PRESS_SAMPLE t=1.54 torso=(0.0000, 2.4464, 0.5496) speed=0.2385 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -49.7391, 43.6574) forceR_N=(0.0000, -49.7391, 43.6574) normL_N=66.1811 normR_N=66.1811 geometricInside=True validGoal=True
+LAYER1_PRESS_SAMPLE t=1.56 torso=(0.0000, 2.4463, 0.5515) speed=0.0955 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -49.6270, 35.6914) forceR_N=(0.0000, -49.6270, 35.6914) normL_N=61.1287 normR_N=61.1287 geometricInside=True validGoal=True
+LAYER1_PRESS_SAMPLE t=1.58 torso=(0.0000, 2.4463, 0.5512) speed=0.0141 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -49.5053, 27.4010) forceR_N=(0.0000, -49.5053, 27.4010) normL_N=56.5826 normR_N=56.5826 geometricInside=True validGoal=True
+LAYER1_PRESS_SAMPLE t=1.60 torso=(0.0000, 2.4463, 0.5494) speed=0.0918 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -49.3850, 19.4767) forceR_N=(0.0000, -49.3850, 19.4767) normL_N=53.0869 normR_N=53.0869 geometricInside=True validGoal=True
+LAYER1_PRESS_SAMPLE t=1.62 torso=(0.0000, 2.4464, 0.5465) speed=0.1411 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -49.2744, 12.3813) forceR_N=(0.0000, -49.2744, 12.3813) normL_N=50.8061 normR_N=50.8061 geometricInside=True validGoal=True
+LAYER1_PRESS_SAMPLE t=1.64 torso=(0.0000, 2.4464, 0.5432) speed=0.1663 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -49.1788, 6.3937) forceR_N=(0.0000, -49.1788, 6.3937) normL_N=49.5927 normR_N=49.5927 geometricInside=True validGoal=True
+LAYER1_PRESS_SAMPLE t=1.66 torso=(0.0000, 2.4465, 0.5398) speed=0.1725 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -49.1010, 1.6330) forceR_N=(0.0000, -49.1010, 1.6330) normL_N=49.1281 normR_N=49.1281 geometricInside=True validGoal=True
+LAYER1_PRESS_SAMPLE t=1.68 torso=(0.0000, 2.4465, 0.5365) speed=0.1645 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -49.0414, -1.9037) forceR_N=(0.0000, -49.0414, -1.9037) normL_N=49.0783 normR_N=49.0783 geometricInside=True validGoal=True
+LAYER1_PRESS_SAMPLE t=1.70 torso=(0.0000, 2.4466, 0.5335) speed=0.1470 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -48.9991, -4.3070) forceR_N=(0.0000, -48.9991, -4.3070) normL_N=49.1880 normR_N=49.1880 geometricInside=True validGoal=True
+LAYER1_PRESS_SAMPLE t=1.72 torso=(0.0000, 2.4466, 0.5311) speed=0.1239 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -48.9725, -5.7240) forceR_N=(0.0000, -48.9725, -5.7240) normL_N=49.3058 normR_N=49.3058 geometricInside=True validGoal=True
+LAYER1_PRESS_SAMPLE t=1.74 torso=(0.0000, 2.4466, 0.5291) speed=0.0983 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -48.9588, -6.3355) forceR_N=(0.0000, -48.9588, -6.3355) normL_N=49.3671 normR_N=49.3671 geometricInside=True validGoal=True
+LAYER1_PRESS_SAMPLE t=1.76 torso=(0.0000, 2.4467, 0.5276) speed=0.0729 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -48.9556, -6.3193) forceR_N=(0.0000, -48.9556, -6.3193) normL_N=49.3618 normR_N=49.3618 geometricInside=True validGoal=True
+LAYER1_PRESS_SAMPLE t=1.78 torso=(0.0000, 2.4467, 0.5266) speed=0.0494 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -48.9601, -5.8512) forceR_N=(0.0000, -48.9601, -5.8512) normL_N=49.3085 normR_N=49.3085 geometricInside=True validGoal=True
+LAYER1_PRESS_SAMPLE t=1.80 torso=(0.0000, 2.4467, 0.5261) speed=0.0290 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -48.9697, -5.0917) forceR_N=(0.0000, -48.9697, -5.0917) normL_N=49.2337 normR_N=49.2337 geometricInside=True validGoal=True
+LAYER1_PRESS_SAMPLE t=1.82 torso=(0.0000, 2.4467, 0.5258) speed=0.0122 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -48.9824, -4.1838) forceR_N=(0.0000, -48.9824, -4.1838) normL_N=49.1608 normR_N=49.1608 geometricInside=True validGoal=True
+LAYER1_ARENA_PASS TestArena_0 handovers=0 seconds=1.84 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_PRESS_SAMPLE t=1.84 torso=(0.0000, 2.4467, 0.5258) speed=0.0007 effortL=0.7000 effortR=0.7000 forceL_N=(0.0000, -48.9965, -3.2304) forceR_N=(0.0000, -48.9965, -3.2304) normL_N=49.1028 normR_N=49.1028 geometricInside=True validGoal=True
+LAYER1_PRESS_SUMMARY firstEntryY=2.449862 finalPosition=(0.000000, 2.446687, 0.525841) finalSpeed=0.000715 effortL_range=0.1333,0.7000 effortR_range=0.1333,0.7000 forceL_norm_range_N=5.4032,113.5658 forceR_norm_range_N=5.4032,113.5658 finalEffortL=0.7000 finalEffortR=0.7000 finalForceL_N=(0.0000, -48.9965, -3.2304) finalForceR_N=(0.0000, -48.9965, -3.2304)
+LAYER1_PRESS pos=(0.00, 2.45, 0.53) stage=Arrived
+]]></output>
+        </test-case>
+        <test-case id="1013" name="FollowCameraFramesBodyHandsAndPlatform" fullname="ClimberTests.FollowCameraFramesBodyHandsAndPlatform" methodname="FollowCameraFramesBodyHandsAndPlatform" classname="ClimberTests" runstate="Runnable" seed="650979893" result="Passed" start-time="2026-11-10 03:45:24Z" end-time="2026-11-10 03:45:24Z" duration="0.008721" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1018" name="GeneratedSceneLoadsAndRunsWithNormalFixedUpdate" fullname="ClimberTests.GeneratedSceneLoadsAndRunsWithNormalFixedUpdate" methodname="GeneratedSceneLoadsAndRunsWithNormalFixedUpdate" classname="ClimberTests" runstate="Runnable" seed="908957245" result="Passed" start-time="2026-11-10 03:45:24Z" end-time="2026-11-10 03:45:26Z" duration="1.476078" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[AudioListener component deleted: Component belongs to a disabled built-in package.
+LAYER1_GRIP ClimberArena_0 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP ClimberArena_1 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP ClimberArena_2 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP ClimberArena_3 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP ClimberArena_4 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP ClimberArena_5 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP ClimberArena_6 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP ClimberArena_7 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP ClimberArena_8 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP ClimberArena_9 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP ClimberArena_10 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP ClimberArena_11 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP ClimberArena_12 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP ClimberArena_13 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP ClimberArena_14 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP ClimberArena_15 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP ClimberArena_0 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP ClimberArena_1 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP ClimberArena_2 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP ClimberArena_3 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP ClimberArena_4 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP ClimberArena_5 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP ClimberArena_6 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP ClimberArena_7 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP ClimberArena_8 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP ClimberArena_9 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP ClimberArena_10 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP ClimberArena_11 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP ClimberArena_12 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP ClimberArena_13 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP ClimberArena_14 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP ClimberArena_15 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP ClimberArena_0 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP ClimberArena_1 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP ClimberArena_2 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP ClimberArena_3 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP ClimberArena_4 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP ClimberArena_5 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP ClimberArena_6 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP ClimberArena_7 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP ClimberArena_8 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP ClimberArena_9 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP ClimberArena_10 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP ClimberArena_11 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP ClimberArena_12 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP ClimberArena_13 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP ClimberArena_14 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP ClimberArena_15 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP ClimberArena_0 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP ClimberArena_1 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP ClimberArena_2 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP ClimberArena_3 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP ClimberArena_4 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP ClimberArena_5 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP ClimberArena_6 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP ClimberArena_7 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP ClimberArena_8 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP ClimberArena_9 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP ClimberArena_10 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP ClimberArena_11 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP ClimberArena_12 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP ClimberArena_13 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP ClimberArena_14 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP ClimberArena_15 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_ARENA_PASS ClimberArena_0 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS ClimberArena_1 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS ClimberArena_2 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS ClimberArena_3 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS ClimberArena_4 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS ClimberArena_5 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS ClimberArena_6 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS ClimberArena_7 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS ClimberArena_8 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS ClimberArena_9 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS ClimberArena_10 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS ClimberArena_11 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS ClimberArena_12 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS ClimberArena_13 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS ClimberArena_14 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS ClimberArena_15 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_SAVED_SCENE arena=ClimberArena_0 pass=True handovers=3 seconds=7.32
+LAYER1_SAVED_SCENE arena=ClimberArena_1 pass=True handovers=3 seconds=7.32
+LAYER1_SAVED_SCENE arena=ClimberArena_2 pass=True handovers=3 seconds=7.32
+LAYER1_SAVED_SCENE arena=ClimberArena_3 pass=True handovers=3 seconds=7.32
+LAYER1_SAVED_SCENE arena=ClimberArena_4 pass=True handovers=3 seconds=7.32
+LAYER1_SAVED_SCENE arena=ClimberArena_5 pass=True handovers=3 seconds=7.32
+LAYER1_SAVED_SCENE arena=ClimberArena_6 pass=True handovers=3 seconds=7.32
+LAYER1_SAVED_SCENE arena=ClimberArena_7 pass=True handovers=3 seconds=7.32
+LAYER1_SAVED_SCENE arena=ClimberArena_8 pass=True handovers=3 seconds=7.32
+LAYER1_SAVED_SCENE arena=ClimberArena_9 pass=True handovers=3 seconds=7.32
+LAYER1_SAVED_SCENE arena=ClimberArena_10 pass=True handovers=3 seconds=7.32
+LAYER1_SAVED_SCENE arena=ClimberArena_11 pass=True handovers=3 seconds=7.32
+LAYER1_SAVED_SCENE arena=ClimberArena_12 pass=True handovers=3 seconds=7.32
+LAYER1_SAVED_SCENE arena=ClimberArena_13 pass=True handovers=3 seconds=7.32
+LAYER1_SAVED_SCENE arena=ClimberArena_14 pass=True handovers=3 seconds=7.32
+LAYER1_SAVED_SCENE arena=ClimberArena_15 pass=True handovers=3 seconds=7.32
+]]></output>
+        </test-case>
+        <test-case id="1002" name="GeometryMaterialsAndRadialLimit" fullname="ClimberTests.GeometryMaterialsAndRadialLimit" methodname="GeometryMaterialsAndRadialLimit" classname="ClimberTests" runstate="Runnable" seed="1494195983" result="Passed" start-time="2026-11-10 03:45:26Z" end-time="2026-11-10 03:45:26Z" duration="0.020431" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[LAYER1_LIMIT direction=(1.00, 0.00, 0.00) measured=0.90000
+LAYER1_LIMIT direction=(0.00, 1.00, 0.00) measured=0.90000
+LAYER1_LIMIT direction=(0.58, 0.58, 0.58) measured=0.90000
+Setting angular velocity of a kinematic body is not supported.
+Setting linear velocity of a kinematic body is not supported.
+]]></output>
+        </test-case>
+        <test-case id="1008" name="GrabCooldownAndFiniteGripStrength" fullname="ClimberTests.GrabCooldownAndFiniteGripStrength" methodname="GrabCooldownAndFiniteGripStrength" classname="ClimberTests" runstate="Runnable" seed="985344413" result="Passed" start-time="2026-11-10 03:45:26Z" end-time="2026-11-10 03:45:26Z" duration="0.002039" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1009" name="GripBreaksButShoulderDoesNot" fullname="ClimberTests.GripBreaksButShoulderDoesNot" methodname="GripBreaksButShoulderDoesNot" classname="ClimberTests" runstate="Runnable" seed="973407015" result="Passed" start-time="2026-11-10 03:45:26Z" end-time="2026-11-10 03:45:26Z" duration="0.002917" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[LAYER1_BREAK gripBroken=True shoulderIntact=True regrab=False
+]]></output>
+        </test-case>
+        <test-suite type="ParameterizedMethod" id="1005" name="LiftThresholdSweep" fullname="ClimberTests.LiftThresholdSweep" classname="ClimberTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-11-10 03:45:26Z" end-time="2026-11-10 03:45:26Z" duration="0.028650" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1003" name="LiftThresholdSweep(0.0f)" fullname="ClimberTests.LiftThresholdSweep(0.0f)" methodname="LiftThresholdSweep" classname="ClimberTests" runstate="Runnable" seed="392930977" result="Passed" start-time="2026-11-10 03:45:26Z" end-time="2026-11-10 03:45:26Z" duration="0.013711" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[LAYER1_LIFT angle=0 u=0.10 rise=-0.2269 maxForceN=45.00 arm=0.9070
+LAYER1_LIFT angle=0 u=0.25 rise=-0.1257 maxForceN=112.50 arm=0.7996
+LAYER1_LIFT angle=0 u=0.35 rise=0.2811 maxForceN=157.50 arm=0.7024
+LAYER1_LIFT angle=0 u=0.50 rise=0.3539 maxForceN=225.00 arm=0.7003
+LAYER1_LIFT angle=0 u=0.70 rise=0.3539 maxForceN=226.78 arm=0.7003
+]]></output>
+          </test-case>
+          <test-case id="1004" name="LiftThresholdSweep(45.0f)" fullname="ClimberTests.LiftThresholdSweep(45.0f)" methodname="LiftThresholdSweep" classname="ClimberTests" runstate="Runnable" seed="583770023" result="Passed" start-time="2026-11-10 03:45:26Z" end-time="2026-11-10 03:45:26Z" duration="0.013205" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[LAYER1_LIFT angle=45 u=0.10 rise=-0.4366 maxForceN=45.00 arm=0.9112
+LAYER1_LIFT angle=45 u=0.25 rise=-0.1747 maxForceN=112.50 arm=0.6823
+LAYER1_LIFT angle=45 u=0.35 rise=0.1572 maxForceN=157.50 arm=0.6820
+LAYER1_LIFT angle=45 u=0.50 rise=0.1577 maxForceN=206.15 arm=0.6820
+LAYER1_LIFT angle=45 u=0.70 rise=0.1577 maxForceN=206.15 arm=0.6820
+]]></output>
+          </test-case>
+        </test-suite>
+        <test-case id="1012" name="ManualGrabRequiresReleaseBeforeRearmAndResetClearsGrip" fullname="ClimberTests.ManualGrabRequiresReleaseBeforeRearmAndResetClearsGrip" methodname="ManualGrabRequiresReleaseBeforeRearmAndResetClearsGrip" classname="ClimberTests" runstate="Runnable" seed="405905340" result="Passed" start-time="2026-11-10 03:45:26Z" end-time="2026-11-10 03:45:26Z" duration="0.003133" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1011" name="ManualSelectionTargetsEffortAndModeOwnership" fullname="ClimberTests.ManualSelectionTargetsEffortAndModeOwnership" methodname="ManualSelectionTargetsEffortAndModeOwnership" classname="ClimberTests" runstate="Runnable" seed="1123750734" result="Passed" start-time="2026-11-10 03:45:26Z" end-time="2026-11-10 03:45:26Z" duration="0.003339" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-suite type="ParameterizedMethod" id="1017" name="ScriptedHandoversAndArrival" fullname="ClimberTests.ScriptedHandoversAndArrival" classname="ClimberTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-11-10 03:45:26Z" end-time="2026-11-10 03:45:26Z" duration="0.247273" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1014" name="ScriptedHandoversAndArrival(1,False)" fullname="ClimberTests.ScriptedHandoversAndArrival(1,False)" methodname="ScriptedHandoversAndArrival" classname="ClimberTests" runstate="Runnable" seed="568671411" result="Passed" start-time="2026-11-10 03:45:26Z" end-time="2026-11-10 03:45:26Z" duration="0.032265" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[LAYER1_GRIP TestArena_0 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_0 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_0 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_0 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_ARENA_PASS TestArena_0 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_RESULT arena=TestArena_0 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.8217 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.08, -49.98, -3.26)
+]]></output>
+          </test-case>
+          <test-case id="1015" name="ScriptedHandoversAndArrival(16,False)" fullname="ClimberTests.ScriptedHandoversAndArrival(16,False)" methodname="ScriptedHandoversAndArrival" classname="ClimberTests" runstate="Runnable" seed="1139199633" result="Passed" start-time="2026-11-10 03:45:26Z" end-time="2026-11-10 03:45:26Z" duration="0.106202" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[LAYER1_GRIP TestArena_0 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_1 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_2 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_3 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_4 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_5 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_6 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_7 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_8 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_9 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_10 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_11 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_12 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_13 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_14 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_15 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_0 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_1 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_2 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_3 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_4 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_5 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_6 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_7 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_8 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_9 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_10 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_11 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_12 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_13 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_14 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_15 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_0 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_1 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_2 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_3 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_4 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_5 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_6 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_7 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_8 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_9 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_10 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_11 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_12 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_13 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_14 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_15 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_0 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP TestArena_1 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP TestArena_2 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP TestArena_3 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP TestArena_4 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP TestArena_5 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP TestArena_6 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP TestArena_7 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP TestArena_8 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP TestArena_9 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP TestArena_10 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP TestArena_11 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP TestArena_12 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP TestArena_13 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP TestArena_14 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP TestArena_15 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_ARENA_PASS TestArena_0 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS TestArena_1 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS TestArena_2 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS TestArena_3 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS TestArena_4 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS TestArena_5 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS TestArena_6 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS TestArena_7 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS TestArena_8 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS TestArena_9 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS TestArena_10 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS TestArena_11 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS TestArena_12 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS TestArena_13 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS TestArena_14 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS TestArena_15 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_RESULT arena=TestArena_0 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.8199 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.08, -49.99, -3.27)
+LAYER1_RESULT arena=TestArena_1 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.8208 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.08, -49.99, -3.27)
+LAYER1_RESULT arena=TestArena_2 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.821 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.07, -49.98, -3.26)
+LAYER1_RESULT arena=TestArena_3 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.821 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.07, -49.98, -3.26)
+LAYER1_RESULT arena=TestArena_4 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.821 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.07, -49.98, -3.26)
+LAYER1_RESULT arena=TestArena_5 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.821 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.07, -49.98, -3.26)
+LAYER1_RESULT arena=TestArena_6 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.821 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.07, -49.98, -3.26)
+LAYER1_RESULT arena=TestArena_7 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.8208 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.08, -49.99, -3.26)
+LAYER1_RESULT arena=TestArena_8 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.821 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.07, -49.98, -3.26)
+LAYER1_RESULT arena=TestArena_9 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.8208 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.08, -49.99, -3.27)
+LAYER1_RESULT arena=TestArena_10 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.8229 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.07, -49.98, -3.27)
+LAYER1_RESULT arena=TestArena_11 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.8208 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.08, -49.99, -3.27)
+LAYER1_RESULT arena=TestArena_12 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.8229 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.07, -49.98, -3.27)
+LAYER1_RESULT arena=TestArena_13 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.8208 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.08, -49.99, -3.26)
+LAYER1_RESULT arena=TestArena_14 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.8194 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.07, -49.99, -3.27)
+LAYER1_RESULT arena=TestArena_15 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.8208 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.08, -49.99, -3.26)
+]]></output>
+          </test-case>
+          <test-case id="1016" name="ScriptedHandoversAndArrival(16,True)" fullname="ClimberTests.ScriptedHandoversAndArrival(16,True)" methodname="ScriptedHandoversAndArrival" classname="ClimberTests" runstate="Runnable" seed="510945789" result="Passed" start-time="2026-11-10 03:45:26Z" end-time="2026-11-10 03:45:26Z" duration="0.107937" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <output><![CDATA[LAYER1_GRIP TestArena_0 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_1 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_2 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_3 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_4 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_5 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_6 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_7 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_8 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_9 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_10 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_11 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_12 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_13 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_14 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_15 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP TestArena_0 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_1 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_2 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_3 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_4 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_5 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_6 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_7 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_8 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_9 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_10 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_11 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_12 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_13 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_14 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_15 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP TestArena_0 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_1 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_2 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_3 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_4 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_5 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_6 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_7 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_8 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_9 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_10 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_11 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_12 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_13 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_14 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_15 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP TestArena_0 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP TestArena_1 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP TestArena_2 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP TestArena_3 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP TestArena_4 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP TestArena_5 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP TestArena_6 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP TestArena_7 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP TestArena_8 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP TestArena_9 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP TestArena_10 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP TestArena_11 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP TestArena_12 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP TestArena_13 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP TestArena_14 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP TestArena_15 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_ARENA_PASS TestArena_0 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS TestArena_1 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS TestArena_2 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS TestArena_3 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS TestArena_4 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS TestArena_5 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS TestArena_6 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS TestArena_7 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS TestArena_8 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS TestArena_9 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS TestArena_10 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS TestArena_11 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS TestArena_12 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS TestArena_13 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS TestArena_14 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS TestArena_15 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_RESULT arena=TestArena_0 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.8188 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.07, -50.00, -3.26)
+LAYER1_RESULT arena=TestArena_1 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.8232 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.07, -49.98, -3.27)
+LAYER1_RESULT arena=TestArena_2 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.8188 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.07, -50.00, -3.26)
+LAYER1_RESULT arena=TestArena_3 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.8232 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.07, -49.98, -3.27)
+LAYER1_RESULT arena=TestArena_4 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.8188 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.07, -50.00, -3.26)
+LAYER1_RESULT arena=TestArena_5 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.8232 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.07, -49.98, -3.27)
+LAYER1_RESULT arena=TestArena_6 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.8188 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.07, -50.00, -3.26)
+LAYER1_RESULT arena=TestArena_7 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.8232 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.07, -49.98, -3.27)
+LAYER1_RESULT arena=TestArena_8 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.8188 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.07, -50.00, -3.26)
+LAYER1_RESULT arena=TestArena_9 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.8232 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.07, -49.98, -3.27)
+LAYER1_RESULT arena=TestArena_10 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.8188 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.07, -50.00, -3.26)
+LAYER1_RESULT arena=TestArena_11 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.8232 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.07, -49.98, -3.27)
+LAYER1_RESULT arena=TestArena_12 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.8188 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.07, -50.00, -3.26)
+LAYER1_RESULT arena=TestArena_13 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.8232 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.07, -49.98, -3.27)
+LAYER1_RESULT arena=TestArena_14 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.8188 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.07, -50.00, -3.26)
+LAYER1_RESULT arena=TestArena_15 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.8232 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.07, -49.98, -3.27)
+]]></output>
+          </test-case>
+        </test-suite>
+        <test-case id="1006" name="SingleHandHoldAndFiveSecondFreeHandJitter" fullname="ClimberTests.SingleHandHoldAndFiveSecondFreeHandJitter" methodname="SingleHandHoldAndFiveSecondFreeHandJitter" classname="ClimberTests" runstate="Runnable" seed="1918224148" result="Passed" start-time="2026-11-10 03:45:26Z" end-time="2026-11-10 03:45:26Z" duration="0.102965" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[LAYER1_JITTER_SAMPLE phase=natural t=0.02 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.04 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.06 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810008, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.08 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809994, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.10 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.12 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.14 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.16 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.18 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810002, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.20 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.22 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809995, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.24 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.26 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.28 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809997, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.30 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.32 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810006, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.34 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.36 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.38 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810008, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.40 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809994, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.42 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.44 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.46 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.48 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.50 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810002, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.52 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.54 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809995, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.56 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.58 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.60 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809997, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.62 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.64 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810006, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.66 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.68 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.70 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810008, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.72 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809994, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.74 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.76 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.78 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.80 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.82 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810002, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.84 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.86 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809995, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.88 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.90 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.92 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809997, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.94 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.96 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810006, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=0.98 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.00 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.02 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810008, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.04 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809994, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.06 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.08 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.10 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.12 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.14 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810002, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.16 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.18 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809995, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.20 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.22 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.24 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809997, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.26 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.28 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810006, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.30 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.32 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.34 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810008, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.36 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809994, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.38 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.40 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.42 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.44 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.46 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810002, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.48 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.50 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809995, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.52 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.54 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.56 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809997, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.58 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.60 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810006, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.62 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.64 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.66 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810008, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.68 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809994, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.70 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.72 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.74 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.76 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.78 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810002, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.80 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.82 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809995, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.84 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.86 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.88 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809997, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.90 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.92 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810006, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.94 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.96 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=1.98 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810008, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.00 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809994, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.02 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.04 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.06 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.08 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.10 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810002, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.12 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.14 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809995, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.16 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.18 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.20 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809997, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.22 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.24 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810006, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.26 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.28 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.30 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810008, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.32 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809994, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.34 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.36 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.38 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.40 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.42 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810002, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.44 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.46 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809995, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.48 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.50 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.52 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809997, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.54 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.56 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810006, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.58 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.60 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.62 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810008, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.64 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809994, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.66 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.68 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.70 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.72 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.74 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810002, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.76 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.78 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809995, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.80 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.82 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.84 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809997, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.86 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.88 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810006, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.90 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.92 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.94 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810008, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.96 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809994, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=2.98 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.00 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.02 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.04 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.06 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810002, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.08 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.10 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809995, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.12 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.14 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.16 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809997, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.18 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.20 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810006, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.22 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.24 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.26 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810008, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.28 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809994, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.30 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.32 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.34 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.36 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.38 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810002, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.40 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.42 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809995, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.44 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.46 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.48 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809997, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.50 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.52 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810006, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.54 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.56 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.58 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810008, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.60 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809994, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.62 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.64 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.66 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.68 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.70 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810002, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.72 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.74 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809995, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.76 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.78 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.80 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809997, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.82 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.84 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810006, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.86 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.88 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.90 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810008, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.92 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809994, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.94 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.96 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=3.98 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.00 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.02 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810002, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.04 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.06 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809995, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.08 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.10 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.12 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809997, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.14 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.16 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810006, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.18 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.20 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.22 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810008, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.24 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809994, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.26 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.28 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.30 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.32 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.34 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810002, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.36 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.38 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809995, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.40 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.42 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.44 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809997, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.46 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.48 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810006, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.50 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.52 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.54 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810008, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.56 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809994, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.58 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.60 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.62 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.64 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.66 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810002, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.68 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.70 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809995, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.72 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.74 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.76 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809997, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.78 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.80 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810006, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.82 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.84 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.86 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810008, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.88 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809994, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.90 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810003, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.92 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.94 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809999, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.96 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.809998, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=4.98 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810002, 0.000000)
+LAYER1_JITTER_SAMPLE phase=natural t=5.00 sleepL=False sleepR=False sleepT=False L_delta_mm=(0.0000, 0.0000, 0.0000) R_delta_mm=(0.0000, 0.0000, 0.0000) T_delta_mm=(0.0000, 0.0000, 0.0000) R_relative_delta_mm=(0.0000, 0.0000, 0.0000) R_PD_N=(0.000000, 9.810004, 0.000000)
+LAYER1_JITTER_SUMMARY phase=natural seconds=5 samples=250 sleepingSamples=0 valid=True relativeP2P_mm=(0.0000, 0.0000, 0.0000) arenaP2P_mm=(0.0000, 0.0000, 0.0000) relativeEnvelope_mm=0.0000 PD_vectorP2P_N=(0.000000, 0.000014, 0.000000) PD_magnitude_min_N=9.809994 PD_magnitude_max_N=9.810008 PD_magnitudeP2P_N=0.000014 peakConstraint_N=237.4279
+]]></output>
+        </test-case>
+        <test-case id="1007" name="StaticTopEdgeSideLayerArenaAndRotatedBox" fullname="ClimberTests.StaticTopEdgeSideLayerArenaAndRotatedBox" methodname="StaticTopEdgeSideLayerArenaAndRotatedBox" classname="ClimberTests" runstate="Runnable" seed="1286504664" result="Passed" start-time="2026-11-10 03:45:26Z" end-time="2026-11-10 03:45:26Z" duration="0.002903" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+      </test-suite>
+    </test-suite>
+    <test-suite type="Assembly" id="1026" name="ClimbLearning.Tests.dll" fullname="C:/dev/physai-project/Library/ScriptAssemblies/ClimbLearning.Tests.dll" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-11-10 03:45:26Z" end-time="2026-11-10 03:45:31Z" duration="4.302392" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="167280" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestFixture" id="1020" name="ClimberAgentTests" fullname="ClimberAgentTests" classname="ClimberAgentTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-11-10 03:45:26Z" end-time="2026-11-10 03:45:31Z" duration="4.301678" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1024" name="GrabCommandsAreStateIntentAndDeltaIntegratedOnlyOnce" fullname="ClimberAgentTests.GrabCommandsAreStateIntentAndDeltaIntegratedOnlyOnce" methodname="GrabCommandsAreStateIntentAndDeltaIntegratedOnlyOnce" classname="ClimberAgentTests" runstate="Runnable" seed="1675330317" result="Passed" start-time="2026-11-10 03:45:26Z" end-time="2026-11-10 03:45:31Z" duration="4.268126" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[Registered Communicator in Academy.
+Couldn't connect to trainer on port 5004 using API version 1.5.0. Will perform inference instead.
+]]></output>
+        </test-case>
+        <test-case id="1023" name="LocalObservationsDoNotLeakTranslationOrYaw" fullname="ClimberAgentTests.LocalObservationsDoNotLeakTranslationOrYaw" methodname="LocalObservationsDoNotLeakTranslationOrYaw" classname="ClimberAgentTests" runstate="Runnable" seed="107597303" result="Passed" start-time="2026-11-10 03:45:31Z" end-time="2026-11-10 03:45:31Z" duration="0.014664" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1022" name="ObservationCountAndFiniteBounds" fullname="ClimberAgentTests.ObservationCountAndFiniteBounds" methodname="ObservationCountAndFiniteBounds" classname="ClimberAgentTests" runstate="Runnable" seed="562890464" result="Passed" start-time="2026-11-10 03:45:31Z" end-time="2026-11-10 03:45:31Z" duration="0.007829" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1021" name="ProjectionKeepsExistingTargetShell" fullname="ClimberAgentTests.ProjectionKeepsExistingTargetShell" methodname="ProjectionKeepsExistingTargetShell" classname="ClimberAgentTests" runstate="Runnable" seed="1609158865" result="Passed" start-time="2026-11-10 03:45:31Z" end-time="2026-11-10 03:45:31Z" duration="0.000343" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1025" name="StableProgressCannotBeFarmedByStayingOrReturning" fullname="ClimberAgentTests.StableProgressCannotBeFarmedByStayingOrReturning" methodname="StableProgressCannotBeFarmedByStayingOrReturning" classname="ClimberAgentTests" runstate="Runnable" seed="877487650" result="Passed" start-time="2026-11-10 03:45:31Z" end-time="2026-11-10 03:45:31Z" duration="0.009738" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+      </test-suite>
+    </test-suite>
+    <test-suite type="Assembly" id="1059" name="Structures.PlayModeTests.dll" fullname="C:/dev/physai-project/Library/ScriptAssemblies/Structures.PlayModeTests.dll" runstate="Runnable" testcasecount="27" result="Passed" start-time="2026-11-10 03:45:31Z" end-time="2026-11-10 03:45:32Z" duration="1.866224" total="27" passed="27" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="167280" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestFixture" id="1027" name="BoxStackTests" fullname="BoxStackTests" classname="BoxStackTests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-11-10 03:45:31Z" end-time="2026-11-10 03:45:31Z" duration="0.727111" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="ParameterizedMethod" id="1037" name="ClearanceRequiresWholeHandWidth" fullname="BoxStackTests.ClearanceRequiresWholeHandWidth" classname="BoxStackTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-11-10 03:45:31Z" end-time="2026-11-10 03:45:31Z" duration="0.002086" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1034" name="ClearanceRequiresWholeHandWidth(0.0f,False)" fullname="BoxStackTests.ClearanceRequiresWholeHandWidth(0.0f,False)" methodname="ClearanceRequiresWholeHandWidth" classname="BoxStackTests" runstate="Runnable" seed="258321569" result="Passed" start-time="2026-11-10 03:45:31Z" end-time="2026-11-10 03:45:31Z" duration="0.001212" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1035" name="ClearanceRequiresWholeHandWidth(0.12f,False)" fullname="BoxStackTests.ClearanceRequiresWholeHandWidth(0.12f,False)" methodname="ClearanceRequiresWholeHandWidth" classname="BoxStackTests" runstate="Runnable" seed="568436116" result="Passed" start-time="2026-11-10 03:45:31Z" end-time="2026-11-10 03:45:31Z" duration="0.000253" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1036" name="ClearanceRequiresWholeHandWidth(0.3f,True)" fullname="BoxStackTests.ClearanceRequiresWholeHandWidth(0.3f,True)" methodname="ClearanceRequiresWholeHandWidth" classname="BoxStackTests" runstate="Runnable" seed="1470732416" result="Passed" start-time="2026-11-10 03:45:31Z" end-time="2026-11-10 03:45:31Z" duration="0.000197" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+        </test-suite>
+        <test-case id="1030" name="CoarseReachRejectsTwoMetreVerticalFaceWithoutScript" fullname="BoxStackTests.CoarseReachRejectsTwoMetreVerticalFaceWithoutScript" methodname="CoarseReachRejectsTwoMetreVerticalFaceWithoutScript" classname="BoxStackTests" runstate="Runnable" seed="1520858869" result="Passed" start-time="2026-11-10 03:45:31Z" end-time="2026-11-10 03:45:31Z" duration="0.000192" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1031" name="CoveredContactRejectedButExposedPartAccepted" fullname="BoxStackTests.CoveredContactRejectedButExposedPartAccepted" methodname="CoveredContactRejectedButExposedPartAccepted" classname="BoxStackTests" runstate="Runnable" seed="955328184" result="Passed" start-time="2026-11-10 03:45:31Z" end-time="2026-11-10 03:45:31Z" duration="0.000944" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1028" name="DynamicSettlementRoundTripAndStaticRuntimeLoad" fullname="BoxStackTests.DynamicSettlementRoundTripAndStaticRuntimeLoad" methodname="DynamicSettlementRoundTripAndStaticRuntimeLoad" classname="BoxStackTests" runstate="Runnable" seed="340677691" result="Passed" start-time="2026-11-10 03:45:31Z" end-time="2026-11-10 03:45:31Z" duration="0.032045" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1038" name="SavedBoxSmokeScenesReloadAndFinish" fullname="BoxStackTests.SavedBoxSmokeScenesReloadAndFinish" methodname="SavedBoxSmokeScenesReloadAndFinish" classname="BoxStackTests" runstate="Runnable" seed="1399897087" result="Passed" start-time="2026-11-10 03:45:31Z" end-time="2026-11-10 03:45:31Z" duration="0.315815" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[BOX_SMOKE_PASS arena=smoke-single stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00003, 1.45083, 0.52863) velocity=(0.00027, 0.00040, -0.01643) L=(-0.30002, 1.10865, 0.01688) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00003, -0.67669, -0.51438) Lgrip=True Lreject=TopOrEdge R=(0.30002, 1.10858, 0.01675) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00003, -0.67666, -0.51442) Rgrip=True Rreject=TopOrEdge
+BOX_SAVED_SCENE Single arena=smoke-single stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00003, 1.45084, 0.52856) velocity=(0.00019, 0.00013, -0.00254) L=(-0.30002, 1.10865, 0.01688) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00003, -0.67669, -0.51438) Lgrip=True Lreject=TopOrEdge R=(0.30002, 1.10858, 0.01675) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00003, -0.67666, -0.51442) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=smoke-stairs stairs=True stage=Arrived tier=1 seconds=5.060 torso=(0.00000, 1.45054, 1.12839) velocity=(-0.00001, 0.00041, -0.01637) L=(-0.30002, 1.10854, 0.61627) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00003, -0.67645, -0.51470) Lgrip=True Lreject=TopOrEdge R=(0.29996, 1.10854, 0.61627) Rv=(0.00000, 0.00000, 0.00000) Rt=(-0.00003, -0.67645, -0.51470) Rgrip=True Rreject=TopOrEdge
+BOX_SAVED_SCENE Steps arena=smoke-stairs stairs=True stage=Arrived tier=1 seconds=5.060 torso=(0.00000, 1.45054, 1.12833) velocity=(-0.00001, 0.00013, -0.00244) L=(-0.30002, 1.10854, 0.61627) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00003, -0.67645, -0.51471) Lgrip=True Lreject=TopOrEdge R=(0.29996, 1.10854, 0.61627) Rv=(0.00000, 0.00000, 0.00000) Rt=(-0.00003, -0.67645, -0.51469) Rgrip=True Rreject=TopOrEdge
+]]></output>
+        </test-case>
+        <test-case id="1032" name="SingleBoxSmoke16Arenas" fullname="BoxStackTests.SingleBoxSmoke16Arenas" methodname="SingleBoxSmoke16Arenas" classname="BoxStackTests" runstate="Runnable" seed="1709236595" result="Passed" start-time="2026-11-10 03:45:31Z" end-time="2026-11-10 03:45:31Z" duration="0.161213" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[BOX_SMOKE_PASS arena=BoxArena_0 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00005, 1.45080, 0.52859) velocity=(0.00009, 0.00040, -0.01633) L=(-0.30001, 1.10863, 0.01682) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67667, -0.51441) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10857, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67665, -0.51444) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=BoxArena_1 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00001, 1.45080, 0.52858) velocity=(0.00017, 0.00040, -0.01622) L=(-0.30000, 1.10860, 0.01678) Lv=(0.00000, 0.00000, 0.00000) Lt=(0.00000, -0.67666, -0.51442) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10859, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(-0.00001, -0.67664, -0.51444) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=BoxArena_2 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00005, 1.45081, 0.52860) velocity=(0.00013, 0.00040, -0.01645) L=(-0.30001, 1.10863, 0.01683) Lv=(0.00000, 0.00000, 0.00000) Lt=(0.00000, -0.67668, -0.51440) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10857, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67665, -0.51444) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=BoxArena_3 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00005, 1.45080, 0.52859) velocity=(0.00009, 0.00040, -0.01633) L=(-0.30001, 1.10863, 0.01682) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67667, -0.51441) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10857, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67665, -0.51444) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=BoxArena_4 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00001, 1.45080, 0.52858) velocity=(0.00017, 0.00040, -0.01622) L=(-0.30000, 1.10860, 0.01678) Lv=(0.00000, 0.00000, 0.00000) Lt=(0.00000, -0.67667, -0.51442) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10859, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(-0.00001, -0.67664, -0.51445) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=BoxArena_5 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00006, 1.45081, 0.52860) velocity=(0.00008, 0.00040, -0.01647) L=(-0.30001, 1.10863, 0.01683) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67668, -0.51440) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10857, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67665, -0.51444) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=BoxArena_6 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00005, 1.45080, 0.52859) velocity=(0.00010, 0.00040, -0.01634) L=(-0.30001, 1.10863, 0.01682) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67667, -0.51441) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10857, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67665, -0.51444) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=BoxArena_7 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00001, 1.45080, 0.52858) velocity=(0.00017, 0.00040, -0.01622) L=(-0.30000, 1.10860, 0.01678) Lv=(0.00000, 0.00000, 0.00000) Lt=(0.00000, -0.67667, -0.51442) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10859, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(-0.00001, -0.67664, -0.51445) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=BoxArena_8 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00006, 1.45081, 0.52860) velocity=(0.00008, 0.00040, -0.01647) L=(-0.30001, 1.10863, 0.01683) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67668, -0.51440) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10857, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67665, -0.51444) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=BoxArena_9 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00005, 1.45080, 0.52859) velocity=(0.00010, 0.00040, -0.01634) L=(-0.30001, 1.10863, 0.01682) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67667, -0.51441) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10857, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67665, -0.51444) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=BoxArena_10 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00001, 1.45080, 0.52858) velocity=(0.00017, 0.00040, -0.01622) L=(-0.30000, 1.10860, 0.01678) Lv=(0.00000, 0.00000, 0.00000) Lt=(0.00000, -0.67667, -0.51442) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10859, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(-0.00001, -0.67664, -0.51445) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=BoxArena_11 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00006, 1.45081, 0.52860) velocity=(0.00008, 0.00040, -0.01647) L=(-0.30001, 1.10863, 0.01683) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67668, -0.51440) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10857, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67665, -0.51444) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=BoxArena_12 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00005, 1.45080, 0.52859) velocity=(0.00010, 0.00040, -0.01634) L=(-0.30001, 1.10863, 0.01682) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67667, -0.51441) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10857, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67665, -0.51444) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=BoxArena_13 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00001, 1.45080, 0.52858) velocity=(0.00017, 0.00040, -0.01622) L=(-0.30000, 1.10860, 0.01678) Lv=(0.00000, 0.00000, 0.00000) Lt=(0.00000, -0.67667, -0.51442) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10859, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(-0.00001, -0.67664, -0.51445) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=BoxArena_14 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00006, 1.45081, 0.52860) velocity=(0.00008, 0.00040, -0.01647) L=(-0.30001, 1.10863, 0.01683) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67668, -0.51440) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10857, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67665, -0.51444) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=BoxArena_15 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00005, 1.45080, 0.52859) velocity=(0.00010, 0.00040, -0.01634) L=(-0.30001, 1.10863, 0.01682) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67667, -0.51441) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10857, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67665, -0.51444) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_0 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00006, 1.45081, 0.52854) velocity=(0.00010, 0.00013, -0.00238) L=(-0.30001, 1.10863, 0.01682) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67667, -0.51441) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10857, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67665, -0.51444) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_1 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00001, 1.45080, 0.52853) velocity=(0.00017, 0.00013, -0.00228) L=(-0.30000, 1.10860, 0.01678) Lv=(0.00000, 0.00000, 0.00000) Lt=(0.00000, -0.67667, -0.51442) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10859, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(-0.00001, -0.67664, -0.51444) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_2 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00006, 1.45081, 0.52855) velocity=(0.00013, 0.00013, -0.00251) L=(-0.30001, 1.10863, 0.01683) Lv=(0.00000, 0.00000, 0.00000) Lt=(0.00000, -0.67668, -0.51440) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10857, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67665, -0.51444) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_3 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00006, 1.45081, 0.52854) velocity=(0.00010, 0.00013, -0.00238) L=(-0.30001, 1.10863, 0.01682) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67667, -0.51441) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10857, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67665, -0.51444) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_4 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00001, 1.45080, 0.52853) velocity=(0.00017, 0.00013, -0.00228) L=(-0.30000, 1.10860, 0.01678) Lv=(0.00000, 0.00000, 0.00000) Lt=(0.00000, -0.67666, -0.51442) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10859, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(-0.00001, -0.67664, -0.51444) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_5 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00006, 1.45081, 0.52855) velocity=(0.00008, 0.00013, -0.00252) L=(-0.30001, 1.10863, 0.01683) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67668, -0.51440) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10857, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67665, -0.51444) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_6 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00006, 1.45081, 0.52854) velocity=(0.00011, 0.00013, -0.00238) L=(-0.30001, 1.10863, 0.01682) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67667, -0.51441) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10857, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67665, -0.51444) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_7 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00001, 1.45080, 0.52853) velocity=(0.00017, 0.00013, -0.00228) L=(-0.30000, 1.10860, 0.01678) Lv=(0.00000, 0.00000, 0.00000) Lt=(0.00000, -0.67666, -0.51442) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10859, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(-0.00001, -0.67664, -0.51444) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_8 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00006, 1.45081, 0.52855) velocity=(0.00008, 0.00013, -0.00252) L=(-0.30001, 1.10863, 0.01683) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67668, -0.51440) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10857, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67665, -0.51444) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_9 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00006, 1.45081, 0.52854) velocity=(0.00011, 0.00013, -0.00238) L=(-0.30001, 1.10863, 0.01682) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67667, -0.51441) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10857, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67665, -0.51444) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_10 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00001, 1.45080, 0.52853) velocity=(0.00017, 0.00013, -0.00228) L=(-0.30000, 1.10860, 0.01678) Lv=(0.00000, 0.00000, 0.00000) Lt=(0.00000, -0.67666, -0.51442) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10859, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(-0.00001, -0.67664, -0.51444) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_11 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00006, 1.45081, 0.52855) velocity=(0.00008, 0.00013, -0.00252) L=(-0.30001, 1.10863, 0.01683) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67668, -0.51440) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10857, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67665, -0.51444) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_12 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00006, 1.45081, 0.52854) velocity=(0.00011, 0.00013, -0.00238) L=(-0.30001, 1.10863, 0.01682) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67667, -0.51441) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10857, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67665, -0.51444) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_13 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00001, 1.45080, 0.52853) velocity=(0.00017, 0.00013, -0.00228) L=(-0.30000, 1.10860, 0.01678) Lv=(0.00000, 0.00000, 0.00000) Lt=(0.00000, -0.67666, -0.51442) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10859, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(-0.00001, -0.67664, -0.51444) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_14 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00006, 1.45081, 0.52855) velocity=(0.00008, 0.00013, -0.00252) L=(-0.30001, 1.10863, 0.01683) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67668, -0.51440) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10857, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67665, -0.51444) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_15 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00006, 1.45081, 0.52854) velocity=(0.00011, 0.00013, -0.00238) L=(-0.30001, 1.10863, 0.01682) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67667, -0.51441) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10857, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67665, -0.51444) Rgrip=True Rreject=TopOrEdge
+]]></output>
+        </test-case>
+        <test-case id="1033" name="TwoStepSmoke16Arenas" fullname="BoxStackTests.TwoStepSmoke16Arenas" methodname="TwoStepSmoke16Arenas" classname="BoxStackTests" runstate="Runnable" seed="1032290963" result="Passed" start-time="2026-11-10 03:45:31Z" end-time="2026-11-10 03:45:31Z" duration="0.205997" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[BOX_SMOKE_PASS arena=BoxArena_1 stairs=True stage=Arrived tier=1 seconds=4.940 torso=(-0.00004, 1.45057, 1.12840) velocity=(-0.00019, 0.00041, -0.01622) L=(-0.30001, 1.10855, 0.61626) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67644, -0.51471) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10863, 0.61629) Rv=(0.00000, 0.00000, 0.00000) Rt=(-0.00001, -0.67642, -0.51473) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=BoxArena_4 stairs=True stage=Arrived tier=1 seconds=4.940 torso=(-0.00003, 1.45057, 1.12839) velocity=(-0.00019, 0.00041, -0.01618) L=(-0.30001, 1.10855, 0.61626) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67644, -0.51471) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10863, 0.61629) Rv=(0.00000, 0.00000, 0.00000) Rt=(-0.00001, -0.67642, -0.51473) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=BoxArena_7 stairs=True stage=Arrived tier=1 seconds=4.940 torso=(-0.00003, 1.45057, 1.12839) velocity=(-0.00019, 0.00041, -0.01618) L=(-0.30001, 1.10855, 0.61626) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67644, -0.51471) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10863, 0.61629) Rv=(0.00000, 0.00000, 0.00000) Rt=(-0.00001, -0.67642, -0.51473) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=BoxArena_10 stairs=True stage=Arrived tier=1 seconds=4.940 torso=(-0.00003, 1.45057, 1.12839) velocity=(-0.00019, 0.00041, -0.01618) L=(-0.30001, 1.10855, 0.61626) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67644, -0.51471) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10863, 0.61629) Rv=(0.00000, 0.00000, 0.00000) Rt=(-0.00001, -0.67642, -0.51473) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=BoxArena_13 stairs=True stage=Arrived tier=1 seconds=4.940 torso=(-0.00003, 1.45057, 1.12839) velocity=(-0.00019, 0.00041, -0.01618) L=(-0.30001, 1.10855, 0.61626) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67644, -0.51471) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10863, 0.61629) Rv=(0.00000, 0.00000, 0.00000) Rt=(-0.00001, -0.67642, -0.51473) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=BoxArena_0 stairs=True stage=Arrived tier=1 seconds=5.020 torso=(0.00005, 1.45056, 1.12839) velocity=(0.00016, 0.00041, -0.01617) L=(-0.30001, 1.10862, 0.61629) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67643, -0.51472) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10854, 0.61624) Rv=(0.00000, 0.00000, 0.00000) Rt=(-0.00001, -0.67643, -0.51473) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=BoxArena_2 stairs=True stage=Arrived tier=1 seconds=5.020 torso=(0.00005, 1.45056, 1.12840) velocity=(0.00022, 0.00041, -0.01647) L=(-0.30000, 1.10862, 0.61630) Lv=(0.00000, 0.00000, 0.00000) Lt=(0.00000, -0.67643, -0.51472) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10854, 0.61624) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67643, -0.51472) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=BoxArena_3 stairs=True stage=Arrived tier=1 seconds=5.020 torso=(0.00005, 1.45056, 1.12839) velocity=(0.00016, 0.00041, -0.01617) L=(-0.30001, 1.10862, 0.61629) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67643, -0.51472) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10854, 0.61624) Rv=(0.00000, 0.00000, 0.00000) Rt=(-0.00001, -0.67643, -0.51473) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=BoxArena_5 stairs=True stage=Arrived tier=1 seconds=5.020 torso=(0.00005, 1.45056, 1.12840) velocity=(0.00018, 0.00041, -0.01647) L=(-0.30000, 1.10863, 0.61630) Lv=(0.00000, 0.00000, 0.00000) Lt=(0.00001, -0.67643, -0.51472) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10854, 0.61624) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67643, -0.51472) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=BoxArena_6 stairs=True stage=Arrived tier=1 seconds=5.020 torso=(0.00005, 1.45056, 1.12839) velocity=(0.00016, 0.00041, -0.01617) L=(-0.30001, 1.10862, 0.61629) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67643, -0.51472) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10854, 0.61624) Rv=(0.00000, 0.00000, 0.00000) Rt=(-0.00001, -0.67643, -0.51473) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=BoxArena_8 stairs=True stage=Arrived tier=1 seconds=5.020 torso=(0.00005, 1.45056, 1.12840) velocity=(0.00018, 0.00040, -0.01647) L=(-0.30000, 1.10862, 0.61630) Lv=(0.00000, 0.00000, 0.00000) Lt=(0.00001, -0.67643, -0.51472) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10854, 0.61624) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67643, -0.51472) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=BoxArena_9 stairs=True stage=Arrived tier=1 seconds=5.020 torso=(0.00005, 1.45056, 1.12839) velocity=(0.00016, 0.00041, -0.01617) L=(-0.30001, 1.10862, 0.61629) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67643, -0.51472) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10854, 0.61624) Rv=(0.00000, 0.00000, 0.00000) Rt=(-0.00001, -0.67643, -0.51473) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=BoxArena_11 stairs=True stage=Arrived tier=1 seconds=5.020 torso=(0.00005, 1.45056, 1.12840) velocity=(0.00018, 0.00040, -0.01647) L=(-0.30000, 1.10862, 0.61630) Lv=(0.00000, 0.00000, 0.00000) Lt=(0.00001, -0.67643, -0.51472) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10854, 0.61624) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67643, -0.51472) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=BoxArena_12 stairs=True stage=Arrived tier=1 seconds=5.020 torso=(0.00005, 1.45056, 1.12839) velocity=(0.00016, 0.00041, -0.01617) L=(-0.30001, 1.10862, 0.61629) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67643, -0.51472) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10854, 0.61624) Rv=(0.00000, 0.00000, 0.00000) Rt=(-0.00001, -0.67643, -0.51473) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=BoxArena_14 stairs=True stage=Arrived tier=1 seconds=5.020 torso=(0.00005, 1.45056, 1.12840) velocity=(0.00018, 0.00040, -0.01647) L=(-0.30000, 1.10862, 0.61630) Lv=(0.00000, 0.00000, 0.00000) Lt=(0.00001, -0.67643, -0.51472) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10854, 0.61624) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67643, -0.51472) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_PASS arena=BoxArena_15 stairs=True stage=Arrived tier=1 seconds=5.020 torso=(0.00005, 1.45056, 1.12839) velocity=(0.00016, 0.00041, -0.01617) L=(-0.30001, 1.10862, 0.61629) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67643, -0.51472) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10854, 0.61624) Rv=(0.00000, 0.00000, 0.00000) Rt=(-0.00001, -0.67643, -0.51473) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_0 stairs=True stage=Arrived tier=1 seconds=5.020 torso=(0.00005, 1.45056, 1.12834) velocity=(0.00015, 0.00013, -0.00229) L=(-0.30001, 1.10862, 0.61629) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67642, -0.51473) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10854, 0.61624) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67644, -0.51472) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_1 stairs=True stage=Arrived tier=1 seconds=4.940 torso=(-0.00004, 1.45055, 1.12956) velocity=(-0.00016, -0.00035, 0.01976) L=(-0.30001, 1.10855, 0.61626) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67644, -0.51471) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10863, 0.61629) Rv=(0.00000, 0.00000, 0.00000) Rt=(-0.00001, -0.67642, -0.51473) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_2 stairs=True stage=Arrived tier=1 seconds=5.020 torso=(0.00005, 1.45057, 1.12835) velocity=(0.00021, 0.00013, -0.00254) L=(-0.30000, 1.10862, 0.61630) Lv=(0.00000, 0.00000, 0.00000) Lt=(0.00001, -0.67643, -0.51472) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10854, 0.61624) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67643, -0.51472) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_3 stairs=True stage=Arrived tier=1 seconds=5.020 torso=(0.00005, 1.45056, 1.12834) velocity=(0.00015, 0.00013, -0.00229) L=(-0.30001, 1.10862, 0.61629) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67642, -0.51473) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10854, 0.61624) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67644, -0.51472) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_4 stairs=True stage=Arrived tier=1 seconds=4.940 torso=(-0.00003, 1.45055, 1.12955) velocity=(-0.00019, -0.00035, 0.01993) L=(-0.30001, 1.10855, 0.61626) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67644, -0.51471) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10863, 0.61629) Rv=(0.00000, 0.00000, 0.00000) Rt=(-0.00001, -0.67642, -0.51473) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_5 stairs=True stage=Arrived tier=1 seconds=5.020 torso=(0.00005, 1.45057, 1.12835) velocity=(0.00017, 0.00013, -0.00252) L=(-0.30000, 1.10863, 0.61630) Lv=(0.00000, 0.00000, 0.00000) Lt=(0.00001, -0.67643, -0.51472) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10854, 0.61624) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67643, -0.51472) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_6 stairs=True stage=Arrived tier=1 seconds=5.020 torso=(0.00005, 1.45056, 1.12834) velocity=(0.00015, 0.00013, -0.00229) L=(-0.30001, 1.10862, 0.61629) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67642, -0.51473) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10854, 0.61624) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67644, -0.51472) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_7 stairs=True stage=Arrived tier=1 seconds=4.940 torso=(-0.00003, 1.45055, 1.12955) velocity=(-0.00019, -0.00035, 0.01993) L=(-0.30001, 1.10855, 0.61626) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67644, -0.51471) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10863, 0.61629) Rv=(0.00000, 0.00000, 0.00000) Rt=(-0.00001, -0.67642, -0.51473) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_8 stairs=True stage=Arrived tier=1 seconds=5.020 torso=(0.00005, 1.45057, 1.12835) velocity=(0.00017, 0.00013, -0.00252) L=(-0.30000, 1.10862, 0.61630) Lv=(0.00000, 0.00000, 0.00000) Lt=(0.00001, -0.67643, -0.51472) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10854, 0.61624) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67643, -0.51472) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_9 stairs=True stage=Arrived tier=1 seconds=5.020 torso=(0.00005, 1.45056, 1.12834) velocity=(0.00015, 0.00013, -0.00229) L=(-0.30001, 1.10862, 0.61629) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67642, -0.51473) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10854, 0.61624) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67644, -0.51472) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_10 stairs=True stage=Arrived tier=1 seconds=4.940 torso=(-0.00003, 1.45055, 1.12955) velocity=(-0.00019, -0.00035, 0.01993) L=(-0.30001, 1.10855, 0.61626) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67644, -0.51471) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10863, 0.61629) Rv=(0.00000, 0.00000, 0.00000) Rt=(-0.00001, -0.67642, -0.51473) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_11 stairs=True stage=Arrived tier=1 seconds=5.020 torso=(0.00005, 1.45057, 1.12835) velocity=(0.00017, 0.00013, -0.00252) L=(-0.30000, 1.10862, 0.61630) Lv=(0.00000, 0.00000, 0.00000) Lt=(0.00001, -0.67643, -0.51472) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10854, 0.61624) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67643, -0.51472) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_12 stairs=True stage=Arrived tier=1 seconds=5.020 torso=(0.00005, 1.45056, 1.12834) velocity=(0.00015, 0.00013, -0.00229) L=(-0.30001, 1.10862, 0.61629) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67642, -0.51473) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10854, 0.61624) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67644, -0.51472) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_13 stairs=True stage=Arrived tier=1 seconds=4.940 torso=(-0.00003, 1.45055, 1.12955) velocity=(-0.00019, -0.00035, 0.01993) L=(-0.30001, 1.10855, 0.61626) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67644, -0.51471) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10863, 0.61629) Rv=(0.00000, 0.00000, 0.00000) Rt=(-0.00001, -0.67642, -0.51473) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_14 stairs=True stage=Arrived tier=1 seconds=5.020 torso=(0.00005, 1.45057, 1.12835) velocity=(0.00017, 0.00013, -0.00252) L=(-0.30000, 1.10862, 0.61630) Lv=(0.00000, 0.00000, 0.00000) Lt=(0.00001, -0.67643, -0.51472) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10854, 0.61624) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67643, -0.51472) Rgrip=True Rreject=TopOrEdge
+BOX_SMOKE_RESULT arena=BoxArena_15 stairs=True stage=Arrived tier=1 seconds=5.020 torso=(0.00005, 1.45056, 1.12834) velocity=(0.00015, 0.00013, -0.00229) L=(-0.30001, 1.10862, 0.61629) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67642, -0.51473) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10854, 0.61624) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67644, -0.51472) Rgrip=True Rreject=TopOrEdge
+]]></output>
+        </test-case>
+        <test-case id="1029" name="UnsupportedBoxCollapsesAndCannotSave" fullname="BoxStackTests.UnsupportedBoxCollapsesAndCannotSave" methodname="UnsupportedBoxCollapsesAndCannotSave" classname="BoxStackTests" runstate="Runnable" seed="780813684" result="Passed" start-time="2026-11-10 03:45:31Z" end-time="2026-11-10 03:45:31Z" duration="0.006458" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1039" name="StaticStructureTests" fullname="StaticStructureTests" classname="StaticStructureTests" runstate="Runnable" testcasecount="17" result="Passed" start-time="2026-11-10 03:45:31Z" end-time="2026-11-10 03:45:32Z" duration="1.132489" total="17" passed="17" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="ParameterizedMethod" id="1043" name="DeferredMotionIsRejected" fullname="StaticStructureTests.DeferredMotionIsRejected" classname="StaticStructureTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-11-10 03:45:31Z" end-time="2026-11-10 03:45:31Z" duration="0.006542" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1041" name="DeferredMotionIsRejected(&quot;dynamic&quot;)" fullname="StaticStructureTests.DeferredMotionIsRejected(&quot;dynamic&quot;)" methodname="DeferredMotionIsRejected" classname="StaticStructureTests" runstate="Runnable" seed="48510249" result="Passed" start-time="2026-11-10 03:45:31Z" end-time="2026-11-10 03:45:31Z" duration="0.004460" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1042" name="DeferredMotionIsRejected(&quot;kinematic&quot;)" fullname="StaticStructureTests.DeferredMotionIsRejected(&quot;kinematic&quot;)" methodname="DeferredMotionIsRejected" classname="StaticStructureTests" runstate="Runnable" seed="1733880369" result="Passed" start-time="2026-11-10 03:45:31Z" end-time="2026-11-10 03:45:31Z" duration="0.001792" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+        </test-suite>
+        <test-case id="1054" name="DifficultyBandsAreSeededWithoutScriptSuccessFiltering" fullname="StaticStructureTests.DifficultyBandsAreSeededWithoutScriptSuccessFiltering" methodname="DifficultyBandsAreSeededWithoutScriptSuccessFiltering" classname="StaticStructureTests" runstate="Runnable" seed="1946487614" result="Passed" start-time="2026-11-10 03:45:31Z" end-time="2026-11-10 03:45:32Z" duration="0.463130" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1058" name="GeneratedDemoReloadsWithPersistentMaterialsAndClimbs" fullname="StaticStructureTests.GeneratedDemoReloadsWithPersistentMaterialsAndClimbs" methodname="GeneratedDemoReloadsWithPersistentMaterialsAndClimbs" classname="StaticStructureTests" runstate="Runnable" seed="729726674" result="Passed" start-time="2026-11-10 03:45:32Z" end-time="2026-11-10 03:45:32Z" duration="0.297987" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[LAYER1_GRIP wall-0 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP wall-0 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP wall-0 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP wall-0 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_ARENA_PASS wall-0 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+STRUCTURE_SAVED_DEMO_PASS seconds=7.320
+]]></output>
+        </test-case>
+        <test-case id="1056" name="GeneratorRetainsScriptFailureCellsAndDoesNotAttachControllers" fullname="StaticStructureTests.GeneratorRetainsScriptFailureCellsAndDoesNotAttachControllers" methodname="GeneratorRetainsScriptFailureCellsAndDoesNotAttachControllers" classname="StaticStructureTests" runstate="Runnable" seed="949368775" result="Passed" start-time="2026-11-10 03:45:32Z" end-time="2026-11-10 03:45:32Z" duration="0.014037" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[STRUCTURE_NO_SCRIPT_FILTER height=0.25 spacing=0.2 accepted=True
+STRUCTURE_NO_SCRIPT_FILTER height=0.2 spacing=0.2 accepted=True
+STRUCTURE_NO_SCRIPT_FILTER height=0.237 spacing=0.413 accepted=True
+]]></output>
+        </test-case>
+        <test-suite type="ParameterizedMethod" id="1051" name="InvalidInputsAreRejected" fullname="StaticStructureTests.InvalidInputsAreRejected" classname="StaticStructureTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-11-10 03:45:32Z" end-time="2026-11-10 03:45:32Z" duration="0.012780" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1044" name="InvalidInputsAreRejected(&quot;duplicate&quot;)" fullname="StaticStructureTests.InvalidInputsAreRejected(&quot;duplicate&quot;)" methodname="InvalidInputsAreRejected" classname="StaticStructureTests" runstate="Runnable" seed="727846601" result="Passed" start-time="2026-11-10 03:45:32Z" end-time="2026-11-10 03:45:32Z" duration="0.001875" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1045" name="InvalidInputsAreRejected(&quot;size&quot;)" fullname="StaticStructureTests.InvalidInputsAreRejected(&quot;size&quot;)" methodname="InvalidInputsAreRejected" classname="StaticStructureTests" runstate="Runnable" seed="931958068" result="Passed" start-time="2026-11-10 03:45:32Z" end-time="2026-11-10 03:45:32Z" duration="0.001524" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1046" name="InvalidInputsAreRejected(&quot;material&quot;)" fullname="StaticStructureTests.InvalidInputsAreRejected(&quot;material&quot;)" methodname="InvalidInputsAreRejected" classname="StaticStructureTests" runstate="Runnable" seed="1484952716" result="Passed" start-time="2026-11-10 03:45:32Z" end-time="2026-11-10 03:45:32Z" duration="0.001703" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1047" name="InvalidInputsAreRejected(&quot;rotation&quot;)" fullname="StaticStructureTests.InvalidInputsAreRejected(&quot;rotation&quot;)" methodname="InvalidInputsAreRejected" classname="StaticStructureTests" runstate="Runnable" seed="1032705755" result="Passed" start-time="2026-11-10 03:45:32Z" end-time="2026-11-10 03:45:32Z" duration="0.001698" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1048" name="InvalidInputsAreRejected(&quot;start&quot;)" fullname="StaticStructureTests.InvalidInputsAreRejected(&quot;start&quot;)" methodname="InvalidInputsAreRejected" classname="StaticStructureTests" runstate="Runnable" seed="338046989" result="Passed" start-time="2026-11-10 03:45:32Z" end-time="2026-11-10 03:45:32Z" duration="0.001883" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1049" name="InvalidInputsAreRejected(&quot;nan&quot;)" fullname="StaticStructureTests.InvalidInputsAreRejected(&quot;nan&quot;)" methodname="InvalidInputsAreRejected" classname="StaticStructureTests" runstate="Runnable" seed="2140153284" result="Passed" start-time="2026-11-10 03:45:32Z" end-time="2026-11-10 03:45:32Z" duration="0.001467" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1050" name="InvalidInputsAreRejected(&quot;count&quot;)" fullname="StaticStructureTests.InvalidInputsAreRejected(&quot;count&quot;)" methodname="InvalidInputsAreRejected" classname="StaticStructureTests" runstate="Runnable" seed="867572599" result="Passed" start-time="2026-11-10 03:45:32Z" end-time="2026-11-10 03:45:32Z" duration="0.001958" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+        </test-suite>
+        <test-case id="1040" name="JsonRoundTripPreservesGeometryAndRejectsUnknownVersionAndFields" fullname="StaticStructureTests.JsonRoundTripPreservesGeometryAndRejectsUnknownVersionAndFields" methodname="JsonRoundTripPreservesGeometryAndRejectsUnknownVersionAndFields" classname="StaticStructureTests" runstate="Runnable" seed="1750264501" result="Passed" start-time="2026-11-10 03:45:32Z" end-time="2026-11-10 03:45:32Z" duration="0.005745" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1057" name="ObjectLimitAccepts32AndRejects33" fullname="StaticStructureTests.ObjectLimitAccepts32AndRejects33" methodname="ObjectLimitAccepts32AndRejects33" classname="StaticStructureTests" runstate="Runnable" seed="332964399" result="Passed" start-time="2026-11-10 03:45:32Z" end-time="2026-11-10 03:45:32Z" duration="0.006525" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1055" name="SavedJsonClimbsIn16ArenasWithUnchangedLayer1Controller" fullname="StaticStructureTests.SavedJsonClimbsIn16ArenasWithUnchangedLayer1Controller" methodname="SavedJsonClimbsIn16ArenasWithUnchangedLayer1Controller" classname="StaticStructureTests" runstate="Runnable" seed="66851512" result="Passed" start-time="2026-11-10 03:45:32Z" end-time="2026-11-10 03:45:32Z" duration="0.297969" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[LAYER1_GRIP wall-0 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP wall-0 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP wall-0 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP wall-0 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP wall-0 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP wall-0 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP wall-0 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP wall-0 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP wall-0 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP wall-0 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP wall-0 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP wall-0 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP wall-0 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP wall-0 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP wall-0 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP wall-0 rung=0 hand=Left position=(-0.20, 1.11, -0.18)
+LAYER1_GRIP wall-0 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP wall-0 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP wall-0 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP wall-0 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP wall-0 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP wall-0 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP wall-0 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP wall-0 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP wall-0 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP wall-0 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP wall-0 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP wall-0 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP wall-0 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP wall-0 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP wall-0 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP wall-0 rung=1 hand=Right position=(0.19, 1.36, -0.18)
+LAYER1_GRIP wall-0 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP wall-0 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP wall-0 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP wall-0 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP wall-0 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP wall-0 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP wall-0 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP wall-0 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP wall-0 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP wall-0 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP wall-0 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP wall-0 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP wall-0 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP wall-0 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP wall-0 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP wall-0 rung=2 hand=Left position=(-0.20, 1.61, -0.18)
+LAYER1_GRIP wall-0 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP wall-0 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP wall-0 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP wall-0 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP wall-0 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP wall-0 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP wall-0 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP wall-0 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP wall-0 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP wall-0 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP wall-0 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP wall-0 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP wall-0 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP wall-0 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP wall-0 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_GRIP wall-0 rung=3 hand=Right position=(0.20, 1.86, -0.18)
+LAYER1_ARENA_PASS wall-0 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS wall-0 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS wall-0 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS wall-0 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS wall-0 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS wall-0 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS wall-0 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS wall-0 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS wall-0 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS wall-0 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS wall-0 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS wall-0 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS wall-0 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS wall-0 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS wall-0 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+LAYER1_ARENA_PASS wall-0 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN=0.00,0.00
+STRUCTURE_CLIMB arena=wall-0 complete=True handovers=3 seconds=7.320 torso=(0.00, 2.45, 0.53) peakN=0.000000
+STRUCTURE_CLIMB arena=wall-0 complete=True handovers=3 seconds=7.320 torso=(0.00, 2.45, 0.53) peakN=0.000000
+STRUCTURE_CLIMB arena=wall-0 complete=True handovers=3 seconds=7.320 torso=(0.00, 2.45, 0.53) peakN=0.000000
+STRUCTURE_CLIMB arena=wall-0 complete=True handovers=3 seconds=7.320 torso=(0.00, 2.45, 0.53) peakN=0.000000
+STRUCTURE_CLIMB arena=wall-0 complete=True handovers=3 seconds=7.320 torso=(0.00, 2.45, 0.53) peakN=0.000000
+STRUCTURE_CLIMB arena=wall-0 complete=True handovers=3 seconds=7.320 torso=(0.00, 2.45, 0.53) peakN=0.000000
+STRUCTURE_CLIMB arena=wall-0 complete=True handovers=3 seconds=7.320 torso=(0.00, 2.45, 0.53) peakN=0.000000
+STRUCTURE_CLIMB arena=wall-0 complete=True handovers=3 seconds=7.320 torso=(0.00, 2.45, 0.53) peakN=0.000000
+STRUCTURE_CLIMB arena=wall-0 complete=True handovers=3 seconds=7.320 torso=(0.00, 2.45, 0.53) peakN=0.000000
+STRUCTURE_CLIMB arena=wall-0 complete=True handovers=3 seconds=7.320 torso=(0.00, 2.45, 0.53) peakN=0.000000
+STRUCTURE_CLIMB arena=wall-0 complete=True handovers=3 seconds=7.320 torso=(0.00, 2.45, 0.53) peakN=0.000000
+STRUCTURE_CLIMB arena=wall-0 complete=True handovers=3 seconds=7.320 torso=(0.00, 2.45, 0.53) peakN=0.000000
+STRUCTURE_CLIMB arena=wall-0 complete=True handovers=3 seconds=7.320 torso=(0.00, 2.45, 0.53) peakN=0.000000
+STRUCTURE_CLIMB arena=wall-0 complete=True handovers=3 seconds=7.320 torso=(0.00, 2.45, 0.53) peakN=0.000000
+STRUCTURE_CLIMB arena=wall-0 complete=True handovers=3 seconds=7.320 torso=(0.00, 2.45, 0.53) peakN=0.000000
+STRUCTURE_CLIMB arena=wall-0 complete=True handovers=3 seconds=7.320 torso=(0.00, 2.45, 0.53) peakN=0.000000
+]]></output>
+        </test-case>
+        <test-case id="1052" name="SettlingGateRejectsOverlapAndForgedStampBeforeOverwriting" fullname="StaticStructureTests.SettlingGateRejectsOverlapAndForgedStampBeforeOverwriting" methodname="SettlingGateRejectsOverlapAndForgedStampBeforeOverwriting" classname="StaticStructureTests" runstate="Runnable" seed="1308118267" result="Passed" start-time="2026-11-10 03:45:32Z" end-time="2026-11-10 03:45:32Z" duration="0.019729" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[STRUCTURE_SAVE_GATE passed: 3s local simulation, overlap rejected, old file preserved, forged receipt rejected
+]]></output>
+        </test-case>
+        <test-case id="1053" name="SpawnAndGoalPenetrationAreRejected" fullname="StaticStructureTests.SpawnAndGoalPenetrationAreRejected" methodname="SpawnAndGoalPenetrationAreRejected" classname="StaticStructureTests" runstate="Runnable" seed="1588779068" result="Passed" start-time="2026-11-10 03:45:32Z" end-time="2026-11-10 03:45:32Z" duration="0.006257" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[Saving results to: C:/Users/17645/AppData/LocalLow/DefaultCompany/physai-project\TestResults.xml
+]]></output>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

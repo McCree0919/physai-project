@@ -1,0 +1,551 @@
+{
+  "behavior": {
+    "checkpoint": {
+      "mode": "checkpoint",
+      "episodes": 200,
+      "seed": 2026,
+      "modelSha256": "65c8762f249db1a39459e0a0240f1f20a47cd9c51a0aad3e711816722ac7adab",
+      "commandTargets": {
+        "samples": 239808,
+        "normMin": 0.2089845016806362,
+        "normMean": 0.8281919257526945,
+        "normQuantiles": [
+          0.6562214929850091,
+          0.85000001572598,
+          0.8500000673172948
+        ],
+        "outerFraction": 0.8597461302375233,
+        "innerFraction": 0.0,
+        "axisMean": [
+          0.08351938378128974,
+          0.0835503613633939,
+          -0.09602703603064741
+        ],
+        "axisMin": [
+          -0.8498678207397461,
+          -0.8354930281639099,
+          -0.8499917387962341
+        ],
+        "axisMax": [
+          0.8499893546104431,
+          0.8393219709396362,
+          0.8497723937034607
+        ],
+        "normHistogram": [
+          0,
+          0,
+          0,
+          0,
+          22,
+          16,
+          508,
+          601,
+          737,
+          489,
+          677,
+          3158,
+          5177,
+          3808,
+          4135,
+          7184,
+          56044,
+          157252
+        ]
+      },
+      "episodesWithGrip": 76,
+      "episodesAboveFirstTorsoHeight": 0,
+      "gripSuccessTotal": 162,
+      "requestOutputsTotal": 138508,
+      "rejectionReasons": {
+        "NoContact": 597940,
+        "NotTop": 10383,
+        "Occupied": 13,
+        "TooFast": 29
+      },
+      "perEpisode": {
+        "requestRisingEdges": {
+          "mean": 62.475,
+          "min": 2,
+          "p50": 49.5,
+          "p95": 121.04999999999998,
+          "max": 234
+        },
+        "gripSuccesses": {
+          "mean": 0.81,
+          "min": 0,
+          "p50": 0.0,
+          "p95": 4.0,
+          "max": 6
+        },
+        "rejectedHandTicks": {
+          "mean": 3041.825,
+          "min": 1316,
+          "p50": 3040.0,
+          "p95": 4245.0,
+          "max": 5115
+        },
+        "cooldownBlockedTicks": {
+          "mean": 2.005,
+          "min": 0,
+          "p50": 0.0,
+          "p95": 10.249999999999915,
+          "max": 25
+        },
+        "rearmBlockedTicks": {
+          "mean": 0.03,
+          "min": 0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "max": 3
+        },
+        "maximumTorsoY": {
+          "mean": 0.4097983963787556,
+          "min": 0.4000001549720764,
+          "p50": 0.4000001847743988,
+          "p95": 0.4838644564151764,
+          "max": 0.5128124952316284
+        },
+        "maximumGripTorsoY": {
+          "mean": -0.45845273181796076,
+          "min": -1.0,
+          "p50": -1.0,
+          "p95": 0.4838644564151764,
+          "max": 0.5128124952316284
+        },
+        "grippedSeconds": {
+          "mean": 8.201424049735069,
+          "min": 0.0,
+          "p50": 0.0,
+          "p95": 34.4885986328125,
+          "max": 59.88117980957031
+        },
+        "requestOutputs": {
+          "mean": 692.54,
+          "min": 302,
+          "p50": 619.5,
+          "p95": 972.8999999999996,
+          "max": 1197
+        }
+      },
+      "firstGripSecondsAmongGrippingEpisodes": {
+        "mean": 26.830694029646878,
+        "min": 0.019999992102384567,
+        "p50": 25.72039794921875,
+        "p95": 37.230661392211914,
+        "max": 43.8208122253418
+      },
+      "actualTargetOuterFraction": 0.8601129312070461,
+      "continuousOutputClippedFraction": 0.001865381193843964,
+      "terminalReasons": {
+        "Timeout": 200
+      },
+      "level1Episodes": 0,
+      "level2Episodes": 0,
+      "successEpisodes": 0,
+      "gripButNoStableLevel1": 76,
+      "stableLevelThenFall": 0,
+      "rejectionTotal": 608365,
+      "rejectionFractions": {
+        "NoContact": 0.982863905714497,
+        "NotTop": 0.017067056783345524,
+        "Occupied": 2.1368750667773458e-05,
+        "TooFast": 4.766875148964848e-05
+      }
+    },
+    "random": {
+      "mode": "random",
+      "episodes": 200,
+      "seed": 2026,
+      "modelSha256": null,
+      "commandTargets": {
+        "samples": 239808,
+        "normMin": 0.1499999848183419,
+        "normMean": 0.6438413751774525,
+        "normQuantiles": [
+          0.31774987407211996,
+          0.6779986845097992,
+          0.85000001905941
+        ],
+        "outerFraction": 0.11042584067253804,
+        "innerFraction": 0.0036070523085134773,
+        "axisMean": [
+          3.180498370554631e-05,
+          0.1305009914214852,
+          0.10996284603850048
+        ],
+        "axisMin": [
+          -0.8499061465263367,
+          -0.8497695922851562,
+          -0.8499477505683899
+        ],
+        "axisMax": [
+          0.8497019410133362,
+          0.8499242663383484,
+          0.8499574065208435
+        ],
+        "normHistogram": [
+          0,
+          0,
+          127,
+          2162,
+          3139,
+          4519,
+          6232,
+          8438,
+          11290,
+          13605,
+          16481,
+          19156,
+          21466,
+          24334,
+          27767,
+          31155,
+          32839,
+          17098
+        ]
+      },
+      "episodesWithGrip": 158,
+      "episodesAboveFirstTorsoHeight": 1,
+      "gripSuccessTotal": 1891,
+      "requestOutputsTotal": 119970,
+      "rejectionReasons": {
+        "NoContact": 569684,
+        "NotTop": 6767,
+        "TooFast": 31,
+        "TopOccluded": 5,
+        "Occupied": 40
+      },
+      "perEpisode": {
+        "requestRisingEdges": {
+          "mean": 299.79,
+          "min": 280,
+          "p50": 299.0,
+          "p95": 313.0,
+          "max": 323
+        },
+        "gripSuccesses": {
+          "mean": 9.455,
+          "min": 0,
+          "p50": 5.0,
+          "p95": 34.14999999999995,
+          "max": 60
+        },
+        "rejectedHandTicks": {
+          "mean": 2882.635,
+          "min": 2312,
+          "p50": 2910.0,
+          "p95": 3100.05,
+          "max": 3201
+        },
+        "cooldownBlockedTicks": {
+          "mean": 23.7,
+          "min": 0,
+          "p50": 10.0,
+          "p95": 90.74999999999974,
+          "max": 135
+        },
+        "rearmBlockedTicks": {
+          "mean": 0,
+          "min": 0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "max": 0
+        },
+        "maximumTorsoY": {
+          "mean": 0.45078901797533033,
+          "min": 0.4000001549720764,
+          "p50": 0.4000001847743988,
+          "p95": 0.7067949354648589,
+          "max": 1.0070651769638062
+        },
+        "maximumGripTorsoY": {
+          "mean": 0.15331674709916115,
+          "min": -1.0,
+          "p50": 0.4000001549720764,
+          "p95": 0.7049043029546738,
+          "max": 0.9653103351593018
+        },
+        "grippedSeconds": {
+          "mean": 1.7951997878029942,
+          "min": 0.0,
+          "p50": 1.0599992275238037,
+          "p95": 6.904993891716002,
+          "max": 11.260066986083984
+        },
+        "requestOutputs": {
+          "mean": 599.85,
+          "min": 559,
+          "p50": 599.0,
+          "p95": 632.05,
+          "max": 655
+        }
+      },
+      "firstGripSecondsAmongGrippingEpisodes": {
+        "mean": 19.03064758717259,
+        "min": 1.0199992656707764,
+        "p50": 14.15013313293457,
+        "p95": 51.69099235534668,
+        "max": 59.40116882324219
+      },
+      "actualTargetOuterFraction": 0.10283662507506505,
+      "continuousOutputClippedFraction": 0.0,
+      "terminalReasons": {
+        "Timeout": 200
+      },
+      "level1Episodes": 0,
+      "level2Episodes": 0,
+      "successEpisodes": 0,
+      "gripButNoStableLevel1": 158,
+      "stableLevelThenFall": 0,
+      "rejectionTotal": 576527,
+      "rejectionFractions": {
+        "NoContact": 0.98813065129647,
+        "NotTop": 0.011737524868739885,
+        "TooFast": 5.3770248401202373e-05,
+        "TopOccluded": 8.67262070987135e-06,
+        "Occupied": 6.93809656789708e-05
+      }
+    }
+  },
+  "benchmarks": [
+    {
+      "name": "cpu_e2",
+      "device": "cpu",
+      "environments": 2,
+      "agents": 32,
+      "runId": "climb_bench_cpu_e2_s2026",
+      "exitCode": 0,
+      "seconds": 300.00065829977393,
+      "steps": 660448,
+      "parameterDevices": [
+        "cpu"
+      ],
+      "torchThreads": 4,
+      "warmupSeconds": 30,
+      "decisionStepsPerSecond": 2190.913193690051,
+      "updateSeconds": {
+        "mean": 2.774212897143194,
+        "min": 2.5921632000245154,
+        "p50": 2.7452149000018835,
+        "p95": 2.93108566980809,
+        "max": 3.145915700122714
+      },
+      "updatesMeasured": 35,
+      "updateBuffer": {
+        "mean": 17247.085714285713,
+        "min": 17120,
+        "p50": 17152.0,
+        "p95": 17792.0,
+        "max": 17792
+      },
+      "allWindowStepsPerSecond": 2201.4885025353883,
+      "rss_MiB": 650.27734375
+    },
+    {
+      "name": "cuda_e2",
+      "device": "cuda:0",
+      "environments": 2,
+      "agents": 32,
+      "runId": "climb_bench_cuda_e2_s2026",
+      "exitCode": 0,
+      "seconds": 300.71275459975004,
+      "steps": 587808,
+      "parameterDevices": [
+        "cuda:0"
+      ],
+      "torchThreads": 4,
+      "warmupSeconds": 30,
+      "decisionStepsPerSecond": 1955.0458385634554,
+      "updateSeconds": {
+        "mean": 2.1023012451497056,
+        "min": 1.5576348998583853,
+        "p50": 2.119270300026983,
+        "p95": 2.475629550172016,
+        "max": 2.4874533996917307
+      },
+      "updatesMeasured": 31,
+      "updateBuffer": {
+        "mean": 17261.41935483871,
+        "min": 17120,
+        "p50": 17152.0,
+        "p95": 17784.0,
+        "max": 17792
+      },
+      "allWindowStepsPerSecond": 1954.71589085862,
+      "cuda_allocated_MiB": 45.1435546875,
+      "cuda_reserved_MiB": 60.0,
+      "cuda_peak_allocated_MiB": 46.05859375,
+      "rss_MiB": 1871.91796875
+    },
+    {
+      "name": "cpu_e4",
+      "device": "cpu",
+      "environments": 4,
+      "agents": 64,
+      "runId": "climb_bench_cpu_e4_s2026",
+      "exitCode": 0,
+      "seconds": 300.00267269974574,
+      "steps": 1052336,
+      "parameterDevices": [
+        "cpu"
+      ],
+      "torchThreads": 4,
+      "warmupSeconds": 30,
+      "decisionStepsPerSecond": 3508.886509160753,
+      "updateSeconds": {
+        "mean": 2.1324818254617806,
+        "min": 1.9594751000404358,
+        "p50": 2.1009722999297082,
+        "p95": 2.293586979806423,
+        "max": 2.3109182002954185
+      },
+      "updatesMeasured": 55,
+      "updateBuffer": {
+        "mean": 17414.98181818182,
+        "min": 16464,
+        "p50": 17152.0,
+        "p95": 18432.0,
+        "max": 18432
+      },
+      "allWindowStepsPerSecond": 3507.7554160766376,
+      "rss_MiB": 664.640625
+    },
+    {
+      "name": "cuda_e4",
+      "device": "cuda:0",
+      "environments": 4,
+      "agents": 64,
+      "runId": "climb_bench_cuda_e4_s2026",
+      "exitCode": 0,
+      "seconds": 300.0477737002075,
+      "steps": 678256,
+      "parameterDevices": [
+        "cuda:0"
+      ],
+      "torchThreads": 4,
+      "warmupSeconds": 30,
+      "decisionStepsPerSecond": 2257.491851038199,
+      "updateSeconds": {
+        "mean": 2.0811710055891632,
+        "min": 1.8427678002044559,
+        "p50": 2.0798300500027835,
+        "p95": 2.2244765252107754,
+        "max": 2.463019600138068
+      },
+      "updatesMeasured": 36,
+      "updateBuffer": {
+        "mean": 17375.555555555555,
+        "min": 16464,
+        "p50": 17152.0,
+        "p95": 18048.0,
+        "max": 19824
+      },
+      "allWindowStepsPerSecond": 2260.4933595597313,
+      "cuda_allocated_MiB": 45.2998046875,
+      "cuda_reserved_MiB": 60.0,
+      "cuda_peak_allocated_MiB": 46.05859375,
+      "rss_MiB": 1891.625
+    },
+    {
+      "name": "cpu_e8",
+      "device": "cpu",
+      "environments": 8,
+      "agents": 128,
+      "runId": "climb_bench_cpu_e8_s2026",
+      "exitCode": 0,
+      "seconds": 300.0023260000162,
+      "steps": 887152,
+      "parameterDevices": [
+        "cpu"
+      ],
+      "torchThreads": 4,
+      "warmupSeconds": 30,
+      "decisionStepsPerSecond": 2963.882743258752,
+      "updateSeconds": {
+        "mean": 2.636308853328228,
+        "min": 2.3919226001016796,
+        "p50": 2.639480199664831,
+        "p95": 2.8892162402160464,
+        "max": 2.905124200042337
+      },
+      "updatesMeasured": 45,
+      "updateBuffer": {
+        "mean": 17755.022222222222,
+        "min": 16464,
+        "p50": 17776.0,
+        "p95": 18636.8,
+        "max": 19840
+      },
+      "allWindowStepsPerSecond": 2957.1504055603627,
+      "rss_MiB": 684.70703125
+    },
+    {
+      "name": "cuda_e8",
+      "device": "cuda:0",
+      "environments": 8,
+      "agents": 128,
+      "runId": "climb_bench_cuda_e8_s2026",
+      "exitCode": 0,
+      "seconds": 300.0010484997183,
+      "steps": 692576,
+      "parameterDevices": [
+        "cuda:0"
+      ],
+      "torchThreads": 4,
+      "warmupSeconds": 30,
+      "decisionStepsPerSecond": 2309.1675722622376,
+      "updateSeconds": {
+        "mean": 2.128562713856809,
+        "min": 1.9158331998623908,
+        "p50": 2.1019000499509275,
+        "p95": 2.3492956499103457,
+        "max": 2.394166000187397
+      },
+      "updatesMeasured": 36,
+      "updateBuffer": {
+        "mean": 17755.555555555555,
+        "min": 16464,
+        "p50": 17792.0,
+        "p95": 19824.0,
+        "max": 19824
+      },
+      "allWindowStepsPerSecond": 2308.578598186634,
+      "cuda_allocated_MiB": 45.1357421875,
+      "cuda_reserved_MiB": 60.0,
+      "cuda_peak_allocated_MiB": 46.05859375,
+      "rss_MiB": 1940.34375
+    }
+  ],
+  "protectedHashes": {
+    "Assets\\Scripts\\Climber\\AssemblyInfo.cs": "f41b15e81675660ae378f53e4f5b2e9b1650eb491609b43a5ee85e82ab92f49b",
+    "Assets\\Scripts\\Climber\\ClimberArenaFactory.cs": "592e9943c66e1455868da30138de7461d93f45424357ac777317902b309a47fd",
+    "Assets\\Scripts\\Climber\\ClimberBody.cs": "58dbcf65ad7c0dcb64369c97c46c1eb092f3617f2af20132ed0ce57d3a46d740",
+    "Assets\\Scripts\\Climber\\ClimberFollowCamera.cs": "8b25f9edb3c66648fc54947ddf9cd7a207e4131b313a8c2bf3697d06e647b101",
+    "Assets\\Scripts\\Climber\\ClimberGoal.cs": "e6cbc35f6f1b0590e59c09ee1e56dbe008b4047868a63ab0ddf870c00a3f4946",
+    "Assets\\Scripts\\Climber\\ClimberManualController.cs": "32378403e7ccaed7dfc60121ef920f8e528285609c42ec73685da6d273b20977",
+    "Assets\\Scripts\\Climber\\ClimberScriptController.cs": "29fe63631f251b425da011b1bec8e0a5ca9cb10507598f817ac1bf7ed8069a08",
+    "Assets\\Scripts\\Climber\\ClimberSurface.cs": "e6fc29fcadbc62578b81c8e232e35644c4c4da448f922c2de7a2097fa6c0ee53",
+    "Assets\\Scripts\\Climber\\GripClearance.cs": "5bb8873411dbe952a8061185a3ce769043d249cf55d9bcb21d106a22d8fa8cb6",
+    "Assets\\Scripts\\Learning\\ClimberAgent.cs": "8e85417397458d3f3873f8d4a41c2e4909c4bf063c618f012362deb004ce661c",
+    "config\\climb_pilot.yaml": "0b0fe1464c8ecc0be40eeb9e27d58d6d73fb4d700e3f84d2f0bf52791f087a81",
+    "ProjectSettings\\AudioManager.asset": "9543c41dbfc7d3951217c4dd9481ed026eb8e529b85ecf4463969a0fea747729",
+    "ProjectSettings\\ClusterInputManager.asset": "40e65dd214bf254955d2c8829ca8ce2130fd3510485560ce012e9a1ddd93e623",
+    "ProjectSettings\\DynamicsManager.asset": "d102dd312ef330f5e5ca255c070fb34f68f59ec633d1e9fd67e2f2f6f88f66c8",
+    "ProjectSettings\\EditorBuildSettings.asset": "41bc588f6ecc03944687d496f024917cabb061e21c148a6471b74581df14f908",
+    "ProjectSettings\\EditorSettings.asset": "4a87c54b3541c7bd242aad68c3fc28661083db1117ec56149694ee592156415e",
+    "ProjectSettings\\GraphicsSettings.asset": "40de98f4d46d02fb08e268ad3a722a00eed7289f4ef6d2e759984b1b4a85d2af",
+    "ProjectSettings\\InputManager.asset": "d0f454ddb880912abcae92e3e12957a7446786ba89e24937e019ff3bbc0d4300",
+    "ProjectSettings\\MemorySettings.asset": "2c9e2339b4fa50f4782840d37dde021508d411b99278614cba335d206edb1738",
+    "ProjectSettings\\MultiplayerManager.asset": "ce4075d7a7dd8ac7ffe55de2427692c63f90dae398208bd80cec0f27cbe09f4b",
+    "ProjectSettings\\NavMeshAreas.asset": "7ebbf8f53b8033104e1878b95ca07a28d0954092d81c220f14196a42f651e658",
+    "ProjectSettings\\Physics2DSettings.asset": "1cfc0c8fbceec604fd7cd2a06c04ff05dddee6335b75c92b0f5715ad80ba9490",
+    "ProjectSettings\\PresetManager.asset": "29c125923fe6e29f90190d4fce1c82d660e7051546e2c9d02908d18c9cf2436c",
+    "ProjectSettings\\ProjectSettings.asset": "7c9f7f02f6a45fbeb47ebfcb8b49b0fd52417e556c74974d1e183a95f27a09d4",
+    "ProjectSettings\\QualitySettings.asset": "f1f893b1be47ad2442f58338dd7c860dc1986bb317e2f5bb31084454ffabbf4c",
+    "ProjectSettings\\TagManager.asset": "da4b5eefc927f8b91bcf9e56a186d2b852f49d9cbe91d466638d26c79d6a83ce",
+    "ProjectSettings\\TimeManager.asset": "3396f52fdc16d445024e01d7a2d99db6f0a37569d1d73c0302e9ffb857d90287",
+    "ProjectSettings\\UnityConnectSettings.asset": "11251dae0356b6f43dd2c67bb511f6b7ecda4e5de425186bba3297e6f3dc1c6f",
+    "ProjectSettings\\VersionControlSettings.asset": "e199cdfa6a8f2bf33cfd47e549198f13e3eb2a5099e908fdb4e0f14d939ccc6b",
+    "ProjectSettings\\VFXManager.asset": "2973a6af930e142f62cde00076beda8a3cc3a66d9bfcde7a58ba7d4be2251c26"
+  }
+}
