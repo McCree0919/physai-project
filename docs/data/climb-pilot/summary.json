@@ -1,0 +1,128 @@
+{
+  "runId": "climb_pilot_s2026",
+  "seed": 2026,
+  "arenas": 16,
+  "structures": 1,
+  "normalBottomStarts": true,
+  "memory": false,
+  "behavioralCloning": false,
+  "demonstrationStateInitialization": false,
+  "trainingSeconds": 661.5953307002783,
+  "warmupSeconds": 60,
+  "measurementSeconds": 601.5953307002783,
+  "totalTrainerSteps": 949616,
+  "warmupTrainerStepInterpolated": 70623.82499039885,
+  "measuredDecisionsPerSecond": 1461.1020567370813,
+  "measuredUpdates": 51,
+  "updateSecondsP50": 1.6304683000780642,
+  "updateSecondsP95": 2.1979013001546264,
+  "nonUpdateWallSecondsP50": 9.61530700000003,
+  "updateWallTotal": 87.6463800012134,
+  "cudaAllocatedPeakMiB": 46.05859375,
+  "cudaReservedPeakMiB": 60.0,
+  "deviceTotalUsedFirstMiB": 3691.0,
+  "deviceTotalUsedPeakMiB": 3829.0,
+  "rssPeakMiB": 1873.58984375,
+  "outcomes": {
+    "episodes": 1584,
+    "meanReward": -1.1199020101010102,
+    "level1Rate": 0.0,
+    "level2Rate": 0.0,
+    "successRate": 0.0
+  },
+  "endReasons": {
+    "Timeout": 1584
+  },
+  "minuteOutcomes": [
+    {
+      "startSeconds": 0,
+      "episodes": 112,
+      "meanReward": -1.119915285714286,
+      "level1Rate": 0.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0
+    },
+    {
+      "startSeconds": 60,
+      "episodes": 128,
+      "meanReward": -1.119901,
+      "level1Rate": 0.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0
+    },
+    {
+      "startSeconds": 120,
+      "episodes": 128,
+      "meanReward": -1.119901,
+      "level1Rate": 0.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0
+    },
+    {
+      "startSeconds": 180,
+      "episodes": 128,
+      "meanReward": -1.119901,
+      "level1Rate": 0.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0
+    },
+    {
+      "startSeconds": 240,
+      "episodes": 144,
+      "meanReward": -1.119889888888889,
+      "level1Rate": 0.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0
+    },
+    {
+      "startSeconds": 300,
+      "episodes": 160,
+      "meanReward": -1.119901,
+      "level1Rate": 0.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0
+    },
+    {
+      "startSeconds": 360,
+      "episodes": 160,
+      "meanReward": -1.119901,
+      "level1Rate": 0.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0
+    },
+    {
+      "startSeconds": 420,
+      "episodes": 144,
+      "meanReward": -1.1199121111111112,
+      "level1Rate": 0.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0
+    },
+    {
+      "startSeconds": 480,
+      "episodes": 160,
+      "meanReward": -1.119901,
+      "level1Rate": 0.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0
+    },
+    {
+      "startSeconds": 540,
+      "episodes": 160,
+      "meanReward": -1.119901,
+      "level1Rate": 0.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0
+    },
+    {
+      "startSeconds": 600,
+      "episodes": 160,
+      "meanReward": -1.119901,
+      "level1Rate": 0.0,
+      "level2Rate": 0.0,
+      "successRate": 0.0
+    }
+  ],
+  "estimate5MMinutes": 57.03457397044017,
+  "estimate20MMinutes": 228.13829588176068
+}

@@ -1,0 +1,32 @@
+{
+  "main": "7d0e14964320989385235ab76677805c4941f76c",
+  "branch": "layer3",
+  "protectedFilesUnchanged": [
+    "ProjectSettings",
+    "Packages",
+    "Assets/Scripts/Climber",
+    "Assets/Scripts/Structures",
+    "Assets/Tests/PlayMode",
+    "Assets/Tests/Structures"
+  ],
+  "modelSha256": "65c8762f249db1a39459e0a0240f1f20a47cd9c51a0aad3e711816722ac7adab",
+  "executableSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+  "sourceHashes": {
+    "Assets/Scripts/Learning/AssemblyInfo.cs": "1fbb38aa16a56eb6a1a049e800f1217823b62d66b48b24aaf140b3acc4dba388",
+    "Assets/Scripts/Learning/ClimbAcademyClock.cs": "f0473100102272cb5ccfcc00590d3b241ddd6aee82dc7e94b652108c8c5d781b",
+    "Assets/Scripts/Learning/ClimbEpisodeLog.cs": "e49331e4ed9afd4775aefbd8144a2797a0cf30b7f24db83e41816e38ecf01938",
+    "Assets/Scripts/Learning/ClimberAgent.cs": "8e85417397458d3f3873f8d4a41c2e4909c4bf063c618f012362deb004ce661c",
+    "Assets/Scripts/Learning/ClimbLocalGeometry.cs": "acce78fa130a0245536a49a8232ebf30a2c8d60e02fd0555c5acfbb38439f082",
+    "Assets/Editor/ClimbTrainingBuilder.cs": "2a68b12415769b4a3efe17a45f64eb8a00238bd00e6724ced110222eb21b8757",
+    "config/climb_pilot.yaml": "0b0fe1464c8ecc0be40eeb9e27d58d6d73fb4d700e3f84d2f0bf52791f087a81",
+    "scripts/climb_pilot.py": "74b983243f12b1fed43598df92eb3eb4acee670988ff7af29ec4351b316b7f3e"
+  },
+  "checkpoints": [
+    "Climb-249904.onnx",
+    "Climb-499936.onnx",
+    "Climb-749968.onnx",
+    "Climb-949616.onnx"
+  ],
+  "taskBudgetStop": true,
+  "shellExitZeroClaimed": false
+}

@@ -1,0 +1,169 @@
+python.exe : C:\Users\17645\miniforge3\envs\mlagents\lib\site-packages\mlagents\torch_utils\torch.py:4: UserWarning: 
+pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources 
+package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+At line:2 char:1
++ & C:/Users/17645/miniforge3/envs/mlagents/python.exe scripts/climb_pi ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\17645\... Setuptools<81.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  import pkg_resources
+C:\Users\17645\miniforge3\envs\mlagents\lib\site-packages\mlagents\torch_utils\torch.py:4: UserWarning: pkg_resources 
+is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is 
+slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+[INFO] Connected to Unity environment with package version 4.0.0 and communication version 1.5.0
+[INFO] Connected new brain: Climb?team=0
+
+
+	Unity Technologies
+
+ Version information:
+  ml-agents: 1.1.0,
+  ml-agents-envs: 1.1.0,
+  Communicator API: 1.5.0,
+  PyTorch: 2.7.1+cu128
+[INFO] Hyperparameters for behavior name Climb: 
+	trainer_type:	ppo
+	hyperparameters:	
+	  batch_size:	1024
+	  buffer_size:	16384
+	  learning_rate:	0.0003
+	  beta:	0.005
+	  epsilon:	0.2
+	  lambd:	0.95
+	  num_epoch:	3
+	  shared_critic:	False
+	  learning_rate_schedule:	constant
+	  beta_schedule:	constant
+	  epsilon_schedule:	constant
+	checkpoint_interval:	250000
+	network_settings:	
+	  normalize:	True
+	  hidden_units:	256
+	  num_layers:	2
+	  vis_encode_type:	simple
+	  memory:	None
+	  goal_conditioning_type:	hyper
+	  deterministic:	False
+	reward_signals:	
+	  extrinsic:	
+	    gamma:	0.995
+	    strength:	1.0
+	    network_settings:	
+	      normalize:	False
+	      hidden_units:	128
+	      num_layers:	2
+	      vis_encode_type:	simple
+	      memory:	None
+	      goal_conditioning_type:	hyper
+	      deterministic:	False
+	init_path:	None
+	keep_checkpoints:	8
+	even_checkpoints:	False
+	max_steps:	100000000
+	time_horizon:	128
+	summary_freq:	10000
+	threaded:	False
+	self_play:	None
+	behavioral_cloning:	None
+[INFO] Climb. Step: 10000. Time Elapsed: 13.733 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 20000. Time Elapsed: 23.051 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 30000. Time Elapsed: 30.031 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 40000. Time Elapsed: 39.039 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 50000. Time Elapsed: 46.095 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 60000. Time Elapsed: 56.520 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 70000. Time Elapsed: 65.524 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 80000. Time Elapsed: 72.325 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 90000. Time Elapsed: 81.525 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 100000. Time Elapsed: 88.197 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 110000. Time Elapsed: 96.168 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 120000. Time Elapsed: 101.786 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 130000. Time Elapsed: 109.409 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 140000. Time Elapsed: 118.310 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 150000. Time Elapsed: 125.390 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 160000. Time Elapsed: 135.592 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 170000. Time Elapsed: 142.824 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 180000. Time Elapsed: 151.883 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 190000. Time Elapsed: 159.052 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 200000. Time Elapsed: 168.040 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 210000. Time Elapsed: 177.814 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 220000. Time Elapsed: 184.736 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 230000. Time Elapsed: 193.588 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 240000. Time Elapsed: 201.818 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 250000. Time Elapsed: 210.618 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Exported results\climb_pilot_s2026\Climb\Climb-249904.onnx
+[INFO] Climb. Step: 260000. Time Elapsed: 219.680 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 270000. Time Elapsed: 226.559 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 280000. Time Elapsed: 233.577 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 290000. Time Elapsed: 240.077 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 300000. Time Elapsed: 246.969 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 310000. Time Elapsed: 252.360 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 320000. Time Elapsed: 259.215 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 330000. Time Elapsed: 266.236 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 340000. Time Elapsed: 272.614 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 350000. Time Elapsed: 279.547 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 360000. Time Elapsed: 284.894 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 370000. Time Elapsed: 292.044 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 380000. Time Elapsed: 297.477 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 390000. Time Elapsed: 305.289 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 400000. Time Elapsed: 312.342 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 410000. Time Elapsed: 317.777 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 420000. Time Elapsed: 324.724 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 430000. Time Elapsed: 330.288 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 440000. Time Elapsed: 337.759 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 450000. Time Elapsed: 344.864 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 460000. Time Elapsed: 350.283 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 470000. Time Elapsed: 357.186 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 480000. Time Elapsed: 363.230 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 490000. Time Elapsed: 370.179 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 500000. Time Elapsed: 375.610 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Exported results\climb_pilot_s2026\Climb\Climb-499936.onnx
+[INFO] Climb. Step: 510000. Time Elapsed: 382.608 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 520000. Time Elapsed: 389.562 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 530000. Time Elapsed: 395.994 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 540000. Time Elapsed: 403.163 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 550000. Time Elapsed: 408.413 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 560000. Time Elapsed: 415.256 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 570000. Time Elapsed: 420.870 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 580000. Time Elapsed: 428.677 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 590000. Time Elapsed: 435.245 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 600000. Time Elapsed: 440.738 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 610000. Time Elapsed: 447.494 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 620000. Time Elapsed: 453.127 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 630000. Time Elapsed: 461.434 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 640000. Time Elapsed: 468.211 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 650000. Time Elapsed: 473.591 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 660000. Time Elapsed: 480.368 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 670000. Time Elapsed: 485.948 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 680000. Time Elapsed: 493.642 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 690000. Time Elapsed: 499.047 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 700000. Time Elapsed: 505.723 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 710000. Time Elapsed: 513.903 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 720000. Time Elapsed: 519.119 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 730000. Time Elapsed: 526.134 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 740000. Time Elapsed: 531.719 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 750000. Time Elapsed: 538.444 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Exported results\climb_pilot_s2026\Climb\Climb-749968.onnx
+[INFO] Climb. Step: 760000. Time Elapsed: 546.626 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 770000. Time Elapsed: 551.588 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 780000. Time Elapsed: 558.460 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 790000. Time Elapsed: 563.781 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 800000. Time Elapsed: 570.693 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 810000. Time Elapsed: 576.854 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 820000. Time Elapsed: 583.595 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 830000. Time Elapsed: 590.476 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 840000. Time Elapsed: 595.459 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 850000. Time Elapsed: 602.534 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 860000. Time Elapsed: 608.914 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 870000. Time Elapsed: 615.580 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 880000. Time Elapsed: 621.045 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 890000. Time Elapsed: 627.593 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 900000. Time Elapsed: 634.669 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 910000. Time Elapsed: 640.982 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 920000. Time Elapsed: 647.799 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 930000. Time Elapsed: 653.071 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Climb. Step: 940000. Time Elapsed: 659.947 s. Mean Reward: -1.120. Std of Reward: 0.000. Training.
+[INFO] Learning was interrupted. Please wait while the graph is generated.
+[INFO] Exported results\climb_pilot_s2026\Climb\Climb-949616.onnx
+[INFO] Copied results\climb_pilot_s2026\Climb\Climb-949616.onnx to results\climb_pilot_s2026\Climb.onnx.

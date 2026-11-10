@@ -227,6 +227,25 @@ python scripts/reach_debug.py evaluate --model results/reach_v1/Reach.onnx --epi
 
 箱子堆叠管线已新增，横档墙保留为回归基准。详见 [BOX_STACK_ACCEPTANCE.md](docs/BOX_STACK_ACCEPTANCE.md)：箱子先真实动态落定，通过后冻结为静态；运行时动态抓握仍未实现。运行 `.\scripts\generate_box_stacks.ps1` 生成每档20候选与固定冒烟场景，`.\scripts\test_layer2.ps1` 验证全部测试。编辑器可打开 `Assets/Scenes/BoxSingleSmoke.unity` 或 `Assets/Scenes/BoxStepsSmoke.unity`，Play观看脚本翻上单箱或两级台阶；菜单位于 **Tools → Structures → Build Box Smoke Scenes**。
 
+## 第3层：Climb Agent与PPO校准
+
+设计见 [LAYER3_DESIGN.md](docs/LAYER3_DESIGN.md)，实测见 [LAYER3_PILOT.md](docs/LAYER3_PILOT.md)。Agent为327维局部观察、6维手目标增量、两个二元抓握状态请求；自由手努力1.0、已抓手0.7，无循环记忆。原身体和第0/1/2层场景保持不变。
+
+先关闭Unity编辑器，再运行：
+
+```powershell
+.\scripts\build_climb.ps1
+.\scripts\test_climb.ps1
+conda activate mlagents
+python scripts/climb_preflight.py
+$runId = 'climb_pilot_repeat_s2026'
+python scripts/climb_pilot.py --pilot-seconds 660 --pilot-profile "results/$runId-profile" config/climb_pilot.yaml --env Builds/Climb/Climb.exe --run-id $runId --seed 2026 --num-envs 1 --no-graphics --torch-device cuda:0 --env-args "--climb-output=results/$runId-runtime"
+```
+
+每次使用新run-id。配置max_steps是避免提前停止的上限，校准用wrapper的660秒预算停止并保存模型；前60秒预热，随后约600秒测端到端率。wrapper只对安装的trainer作内存内计时包装，不改包文件或优化规则。JSONL分别记录完整PPO更新耗时、trainer步数、PyTorch显存与整卡占用；CSV记录完整回合的登层与终止。TensorBoard运行 `tensorboard --logdir results`。
+
+菜单 **Tools → Climb → Build Two-Step Training Scene** 生成 `Assets/Scenes/ClimbTraining.unity`，包含16个正常底部出生的两级场地。连接trainer后Play可在编辑器训练；未连接时Heuristic输出零动作。本轮未实现示范状态初始化、BC或冻结的每难度50结构正式评估集，校准结果不能当泛化结论。
+
 编辑器菜单 **Tools → Structures → Generate Static Examples** 将四份已验证结构保存到 `structures/`；**Tools → Structures → Build Static JSON Demo** 从JSON生成并打开 `Assets/Scenes/StaticStructureDemo.unity`。点击 Play 可看简单关卡由原第1层脚本完成三次换手与翻上平台。这个场景默认脚本演示，原手动控制场景保持不变。
 
 关闭 Unity 编辑器后运行：
