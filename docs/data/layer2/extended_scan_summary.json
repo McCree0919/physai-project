@@ -1,0 +1,66 @@
+{
+  "trials": 936,
+  "successes": 936,
+  "cells": 117,
+  "medianSeconds": 11.5,
+  "minSeconds": 11.0,
+  "maxSeconds": 12.4,
+  "peakConstraint": 0.0,
+  "peakActive": 221.2586,
+  "perHeight": [
+    {
+      "height": 0.6,
+      "successes": 104,
+      "trials": 104,
+      "medianSeconds": 11.1
+    },
+    {
+      "height": 0.65,
+      "successes": 104,
+      "trials": 104,
+      "medianSeconds": 11.5
+    },
+    {
+      "height": 0.7,
+      "successes": 104,
+      "trials": 104,
+      "medianSeconds": 11.4
+    },
+    {
+      "height": 0.75,
+      "successes": 104,
+      "trials": 104,
+      "medianSeconds": 11.5
+    },
+    {
+      "height": 0.8,
+      "successes": 104,
+      "trials": 104,
+      "medianSeconds": 11.4
+    },
+    {
+      "height": 0.85,
+      "successes": 104,
+      "trials": 104,
+      "medianSeconds": 11.6
+    },
+    {
+      "height": 0.9,
+      "successes": 104,
+      "trials": 104,
+      "medianSeconds": 11.8
+    },
+    {
+      "height": 0.95,
+      "successes": 104,
+      "trials": 104,
+      "medianSeconds": 11.9
+    },
+    {
+      "height": 1.0,
+      "successes": 104,
+      "trials": 104,
+      "medianSeconds": 12.0
+    }
+  ]
+}

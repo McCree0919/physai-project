@@ -1,5 +1,7 @@
 # 第 2 层准备交付总结
 
+后续更新：本页为准备阶段历史记录。原待决项已由用户确认并写入[LAYER2_DESIGN.md](LAYER2_DESIGN.md)；准备分支已合并main。静态结构实现与0.60–1.00 m扩展扫描见[LAYER2_STATIC_ACCEPTANCE.md](LAYER2_STATIC_ACCEPTANCE.md)，开发继续在layer2分支。
+
 2026-11-09。三项工作已完成，全部在 `layer2-prep` 分支；未合并、未推送、未打标签。`main` 保持 `8f1f3e24ba8eba0e55d54199b23aed4aa9f5c395`。
 
 ## 完成情况与关键数据

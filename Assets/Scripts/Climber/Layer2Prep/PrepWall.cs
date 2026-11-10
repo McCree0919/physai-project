@@ -12,6 +12,11 @@ namespace PhysicalAI.Climber.Layer2Prep
         public float Top => 1f+4*HeightGap;
         readonly PhysicsMaterial material;
         readonly System.Collections.Generic.List<GameObject> geometry=new System.Collections.Generic.List<GameObject>();
+        // Adapter for JSON-loaded geometry; no changes to the climbing policy or body.
+        public PrepWall(ClimberBody body,float heightGap,float lateralGap)
+        {
+            Body=body;Goal=body.GetComponent<ClimberGoal>();HeightGap=heightGap;LateralGap=lateralGap;
+        }
         public PrepWall(int index,PhysicsMaterial value,float yaw)
         {
             material=value;

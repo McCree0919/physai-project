@@ -46,7 +46,7 @@ UTF-8 JSON，长度 m、质量 kg、时间 s、角速度 rad/s、力 N。所有�
   },
   "goal": {"frame": "structure", "center": [0,2.6,0.6],
     "size": [0.8,0.4,0.6], "dwellSeconds": 0.3, "maxTorsoSpeed": 0.5},
-  "validation": {"status": "unvalidated"}
+  "validation": null
 }
 ```
 
@@ -69,6 +69,8 @@ validation 记录 schema/generator/body/controller 版本、输入内容 hash、
 [扫描报告](LAYER2_SOLVABILITY.md)覆盖 h=0.15–0.60、s=0.20–0.80、步长 0.05，共 1040 次尝试。h≥0.35 的所有已测横距均 8/8；h=0.20–0.25 时 s≤0.30 全失败，较宽横距反而成功。因此难度不能只用“越小越容易”的单标量映射。
 
 首批静态生成从 (0.25,0.40) 基准开始，候选池为已测成功的 h=0.20–0.40、s=0.35–0.60 离散组合。连续抖动、非交替路线、不同横档尺寸或动态箱子均需重新验证，不能继承这张热力图的成功标签。当前扫描每关四横档，平台高度随 h 变化；尚未隔离路程长度与单步难度。
+
+扩展扫描0.60–1.00 m的117格/936次全部成功，未找到低于50%的边界。当前实现的离散难度池：Easy h=0.20–0.30、s=0.35–0.60；Standard h=0.35–0.60、s=0.20–0.80；Extended h=0.65–1.00、s=0.20–0.80，步长均0.05 m。Easy seed=0为原基准。范围来自实测成功格，不宣称难度单调或范围以外不可解。
 
 难度参数显式分开：高差、横距、横档宽/厚/深、路线长度、绕行障碍、初始位姿扰动、可动物体比例/质量/支撑面。初期锁定后四类，只对一种参数做实验。保持最薄实体 0.10 m，先做几何净空过滤：不仅判断肩到目标距离，还验证撤离、抬高、插入路径中半径 0.10 m 手球及躯干包围体的碰撞。路径图可用抓点顶面/边缘候选作为节点，可达边作为启发式，身体公开接口脚本试爬作为成功见证。
 
@@ -124,3 +126,15 @@ Box 转动后新抓握候选按当前姿态重新识别顶部；已成立的关�
 以上替代准备总结中的旧待决项。本轮先将扫描扩展至高差0.60–1.00 m，再据实测成功网格设置生成器难度，不实现搭建UI或动态箱子。
 
 API 依据：动态连接与 null 世界固定语义见 [Unity 6000.3 Joint.connectedBody](https://docs.unity.com/en-us/engine/6000.3/script-reference/unityengine/joint/connectedbody)；关节断裂属性见 [Fixed Joint 参考](https://docs.unity.com/en-us/engine/6000.3/manual/physics-section/physics-overview/joints-section/class-fixed-joint)。数值阈值和流程是本项目设计建议，不是 Unity 文档保证。
+
+## 7. 本轮静态实现合同
+
+`Assets/Scripts/Structures/` 提供 DTO/严格JSON解析、静态加载器、参数生成器、落定验证器和原参数脚本的调度适配器。首批只支持motion=static的Box，massKg必须显式null；dynamic/kinematic明确拒绝，不静默世界固定。玩家固定箱子预设在搭建UI任务落地，本轮不添加选择界面。
+
+JSON中的position/size是三元素数组，rotation是归一化[x,y,z,w]。单位m/kg/s；未知字段、版本、重复属性/ID、非法值、材质缺失及超过20物体均拒绝。起点三刚体使用同一旋转，这是现有公开ResetBody接口的限制，不走额外Transform修改路径。目标沿用躯干中心0.30 s、速度<0.50 m/s合同。Box顶面判断复用已验收身体几何。
+
+静态物体是明确的固定支点；保存前在隔离PhysicsScene执行至少3秒模拟，检查无重叠、出生点及目标中心的躯干净空，并确认固定物体未移动。验证报告注明staticObjects和dynamicObjects=0，不能证明自由堆叠箱子稳定。当前出现动态物体会直接拒绝，动态落定阈值留待动态箱子任务。Editor验证使用独立preview scene，运行时使用LocalPhysicsMode.Physics3D；禁止推进默认物理场景。相关API见[Unity PhysicsScene.Simulate](https://docs.unity.com/en-us/engine/6000.5/script-reference/unityengine/physicsscene/simulate)与[EditorSceneManager.NewPreviewScene](https://docs.unity.com/en-us/engine/6000.0/script-reference/unityeditor/scenemanagement/editorscenemanager/newpreviewscene)。
+
+保存必需重新验证，旧validation不作为授权；成功后存入输入SHA-256、Unity版本、固定步长、模拟步数与结果。临时文件在目标同目录，校验后原子替换；拒绝时不覆盖原文件。加载也重新验证，防伪造/过期验证标记。结构验证不等于脚本可解：只有canonical四横档可选自动脚本，任意玩家结构不伪装成可用原硬编码路线。
+
+简单基准使用完全未改的ClimberScriptController；其他生成参数由调度适配器运行完全未改的PrepClimbController。适配器只提交身体公开命令，无新施力路径，无恢复策略改进。具体用法与验收见[LAYER2_STATIC_ACCEPTANCE.md](LAYER2_STATIC_ACCEPTANCE.md)。

@@ -1,0 +1,20 @@
+{
+  "main": "8b968ae2bcd0485e379002a0bb1aa327e38ce1c2",
+  "branch": "layer2",
+  "policySha256": "31f10b662eab80b510c033ba7bc9157d38b448a685d4a6e4f7daadf2bb849edd",
+  "protectedPathsUnchanged": [
+    "ProjectSettings",
+    "Assets/Scripts/Climber/ClimberBody.cs",
+    "Assets/Scripts/Climber/ClimberScriptController.cs",
+    "Assets/Scripts/Climber/ClimberManualController.cs",
+    "Assets/Scripts/Climber/ClimberFollowCamera.cs",
+    "Assets/Scripts/Climber/Layer2Prep/PrepClimbController.cs",
+    "Assets/Tests/PlayMode",
+    "Assets/Scenes/ClimberTraining.unity"
+  ],
+  "playerBuild": "PASS",
+  "playModePassed": 31,
+  "playModeFailed": 0,
+  "scanSuccesses": 936,
+  "scanTrials": 936
+}

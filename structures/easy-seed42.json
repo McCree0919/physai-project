@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "id": "wall-42",
+  "units": {
+    "length": "m",
+    "mass": "kg",
+    "time": "s"
+  },
+  "bodyProfile": "layer1-validated",
+  "generator": {
+    "name": "rungWall",
+    "difficulty": "Easy",
+    "version": 1,
+    "seed": 42,
+    "parameters": {
+      "heightGap": 0.3,
+      "lateralGap": 0.35
+    }
+  },
+  "materials": [
+    {
+      "id": "lowFriction",
+      "frictionCombine": "Average",
+      "bounceCombine": "Average",
+      "staticFriction": 0.15,
+      "dynamicFriction": 0.15,
+      "bounciness": 0.0
+    }
+  ],
+  "objects": [
+    {
+      "id": "ground",
+      "type": "box",
+      "motion": "static",
+      "materialId": "lowFriction",
+      "surfacePolicy": null,
+      "size": [
+        3.0,
+        0.2,
+        3.0
+      ],
+      "pose": {
+        "position": [
+          0.0,
+          -0.1,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "massKg": null,
+      "graspable": false
+    },
+    {
+      "id": "rung0",
+      "type": "box",
+      "motion": "static",
+      "materialId": "lowFriction",
+      "surfacePolicy": "autoBoxTop",
+      "size": [
+        0.5,
+        0.1,
+        0.25
+      ],
+      "pose": {
+        "position": [
+          -0.175,
+          0.95,
+          -0.075
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "massKg": null,
+      "graspable": true
+    },
+    {
+      "id": "rung1",
+      "type": "box",
+      "motion": "static",
+      "materialId": "lowFriction",
+      "surfacePolicy": "autoBoxTop",
+      "size": [
+        0.5,
+        0.1,
+        0.25
+      ],
+      "pose": {
+        "position": [
+          0.175,
+          1.25,
+          -0.075
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "massKg": null,
+      "graspable": true
+    },
+    {
+      "id": "rung2",
+      "type": "box",
+      "motion": "static",
+      "materialId": "lowFriction",
+      "surfacePolicy": "autoBoxTop",
+      "size": [
+        0.5,
+        0.1,
+        0.25
+      ],
+      "pose": {
+        "position": [
+          -0.175,
+          1.55,
+          -0.075
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "massKg": null,
+      "graspable": true
+    },
+    {
+      "id": "rung3",
+      "type": "box",
+      "motion": "static",
+      "materialId": "lowFriction",
+      "surfacePolicy": "autoBoxTop",
+      "size": [
+        0.5,
+        0.1,
+        0.25
+      ],
+      "pose": {
+        "position": [
+          0.175,
+          1.85,
+          -0.075
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "massKg": null,
+      "graspable": true
+    },
+    {
+      "id": "platform",
+      "type": "box",
+      "motion": "static",
+      "materialId": "lowFriction",
+      "surfacePolicy": "autoBoxTop",
+      "size": [
+        2.0,
+        0.2,
+        1.5
+      ],
+      "pose": {
+        "position": [
+          0.0,
+          2.10000014,
+          0.75
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "massKg": null,
+      "graspable": true
+    },
+    {
+      "id": "wall",
+      "type": "box",
+      "motion": "static",
+      "materialId": "lowFriction",
+      "surfacePolicy": null,
+      "size": [
+        2.0,
+        2.0,
+        0.15
+      ],
+      "pose": {
+        "position": [
+          0.0,
+          1.0,
+          0.45
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "massKg": null,
+      "graspable": false
+    }
+  ],
+  "start": {
+    "torso": {
+      "position": [
+        0.0,
+        0.4,
+        -0.4
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "leftHand": {
+      "position": [
+        -0.3,
+        1.15,
+        -0.05
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "rightHand": {
+      "position": [
+        0.3,
+        0.95,
+        -0.05
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "goal": {
+    "frame": "structure",
+    "center": [
+      0.0,
+      2.80000019,
+      0.6
+    ],
+    "size": [
+      0.8,
+      0.4,
+      0.6
+    ],
+    "dwellSeconds": 0.3,
+    "maxTorsoSpeed": 0.5
+  },
+  "validation": {
+    "passed": true,
+    "reason": "static anchors unchanged; geometry and spawn/goal center clearances passed; no dynamic stability claim",
+    "inputHash": "4d59cbf884723f3cef9cfdb33a61ba237a5db74940c9f8e887f7de34a3995ccf",
+    "unityVersion": "6000.3.24f1",
+    "scope": "static-world-anchors",
+    "staticObjects": 7,
+    "dynamicObjects": 0,
+    "simulationSteps": 151,
+    "simulatedSeconds": 3.01999879,
+    "fixedDeltaTime": 0.0199999921,
+    "maxPenetration": 0.0
+  }
+}

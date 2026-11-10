@@ -218,3 +218,17 @@ python scripts/reach_debug.py evaluate --model results/reach_v1/Reach.onnx --epi
 ```
 
 脚本重建场景，随后运行 Test Runner 并检查退出码、编译日志和 NUnit XML；测试命令不带 `-quit`，由 Test Runner 完成后退出。Unity 依赖与测试工具自动改写的编辑器设置会按运行前原始内容恢复。结果为 `results/layer1-tests.xml`，完整日志为 `results/layer1-tests.log`，生成/编译日志为 `results/layer1-generate.log`。
+
+## 第 2 层：静态结构 JSON 与生成器
+
+确认的范围与数据格式见 [LAYER2_DESIGN.md](docs/LAYER2_DESIGN.md)，扩展扫描见 [LAYER2_SOLVABILITY.md](docs/LAYER2_SOLVABILITY.md)，本轮验收见 [LAYER2_STATIC_ACCEPTANCE.md](docs/LAYER2_STATIC_ACCEPTANCE.md)。本轮没有搭建UI或动态箱子。
+
+编辑器菜单 **Tools → Structures → Generate Static Examples** 将四份已验证结构保存到 `structures/`；**Tools → Structures → Build Static JSON Demo** 从JSON生成并打开 `Assets/Scenes/StaticStructureDemo.unity`。点击 Play 可看简单关卡由原第1层脚本完成三次换手与翻上平台。这个场景默认脚本演示，原手动控制场景保持不变。
+
+关闭 Unity 编辑器后运行：
+
+```powershell
+.\scripts\test_layer2.ps1
+```
+
+该脚本生成示例/场景，运行现有第1层与新增静态结构PlayMode测试，检查编译日志和结果XML，并恢复编辑器自动改写的设置。结果在 `results/layer2-static-tests.xml`。运行时API为 `StaticWallGenerator.Generate(difficulty, seed)`、`StaticStabilityValidator.SaveVerified(path, document)`、`StaticStructureLoader.LoadFile(path, position, rotation, scripted)`；命名空间 `PhysicalAI.Structures`。保存和加载均重新验证，静态Box仅表示固定支点；任意玩家结构可加载，但自动脚本只支持规范四横档路线。
