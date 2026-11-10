@@ -210,3 +210,115 @@ Unity不暴露PhysX的内部求解缓存：接触对的持久化信息与warm-st
   - 求解缓存丢失可能使S2下压阶段这类高负载状态的长时一致性较差；
   - 专家轨迹多样性低（固定路线、单一关卡），状态库可能过窄，需要出生扰动或专家动作噪声来扩充，并报告实际轨迹数。
 - 本文不涉及BC、GAIL、课程日程或奖励修改。
+
+## 8. 用户决定与实现说明（已批准实施）
+
+### 8.1 出生分布（第一版固定比例，均为可配置参数）
+
+| 参数（YAML `environment_parameters`） | 默认值 | 含义 |
+| --- | ---: | --- |
+| `spawn_demo_fraction` | 0.5 | 每个训练回合从示范状态出生的概率；其余从地面正常起点出生 |
+| `spawn_weight_s1a` | 0.175 | S1a 抓握前：手已位于合法顶面上方，即将下落接触 |
+| `spawn_weight_s1b` | 0.175 | S1b 抓握刚建立 |
+| `spawn_weight_s2` | 0.35 | S2 第一级拉升 |
+| `spawn_weight_s3` | 0.30 | S3 第一级到第二级 |
+| `spawn_seed` | 0 | 与场地名一起生成每个Agent的稳定随机流（FNV-1a，不依赖`string.GetHashCode`） |
+
+- 示范状态内部按S1 35%（S1a与S1b各占一半）/ S2 35% / S3 30%采样，权重会被归一化。
+- 状态库由命令行参数`--climb-snapshot-library=<jsonl>`指定，每个进程只加载一次。**不提供这个参数时完全不启用示范出生**，所有回合都是正常出生，与当前行为一致。
+- 比例由接口`IClimbSpawnSchedule`决定：`SampleStage`抽取阶段；`Report(stage, success, level1, level2)`在每个回合结束时调用，正常出生的stage为`ground`。
+- 第一版`FixedSpawnSchedule`忽略`Report`。按各阶段成功率自动调整比例时，只需实现新的schedule，Agent和状态库不用改。
+
+### 8.2 S1的拆分（第6.2节的细化）
+
+| 子阶段 | 时间窗 | 额外条件 |
+| --- | --- | --- |
+| S1a 抓握前 | 首次抓握前0.5秒内 | 没有手处于抓握状态；至少一只自由手正下方0.3m内有可抓顶面（向上法线点积≥0.7071，仅本场地，层8/9） |
+| S1b 抓握刚建立 | 首次抓握后0.04–0.5秒 | 至少一只手抓住；尚未登上第一级 |
+
+- 抓握建立后的0.04秒内（即两个物理步）不采样，这是第4.3节规定的高接触冲量帧。
+- S2为首次抓握后0.5秒到第一级稳定之前；S3为第一级稳定到第二级稳定之前。
+- 静止帧（躯干速度<0.05m/s且0.5秒内没有抓握变化）的抽样权重为0.2。
+- 抽样时先在仍有可用快照的轨迹中均匀选一条，再在这条轨迹内按权重选一个快照，避免长轨迹主导抽样。
+
+### 8.3 实现
+
+| 文件 | 内容 |
+| --- | --- |
+| `Assets/Scripts/Climber/ClimberBodySnapshot.cs` | 新增`BodySnapshot`/`HandSnapshot`，以及`CaptureSnapshot`、`ValidateSnapshot`、`RestoreSnapshot`、`ConfigurationHash`四个新方法 |
+| `Assets/Scripts/Climber/ClimberBody.cs` | 类改为`partial`；抓握建立时额外记录一次手的朝向（`gripRotations`），只供快照读取 |
+| `Assets/Scripts/Learning/ClimberAgentSnapshot.cs` | `ClimbStateSnapshot`/`ClimbTaskSnapshot`；`CaptureState`、`ValidateState`、`RestoreState`、`GeometryHash`、`ObservationError`；出生选择 |
+| `Assets/Scripts/Learning/ClimberAgent.cs` | 类改为`partial`；新增`ExternalCommand`开关（默认false，只供录制使用）；`OnEpisodeBegin`末尾调用出生选择；`Finish`记录出生来源并调用`Report` |
+| `Assets/Scripts/Learning/ClimbSnapshotLibrary.cs` | 状态库（JSONL）、schedule、阶段标注、轨迹事件跟踪 |
+| `Assets/Scripts/Learning/ClimbSnapshotRecorder.cs` 与 `Assets/Editor/ClimbSnapshotLibraryBuild.cs` | 录制用的播放器：与训练场景相同的16个场地，由两级专家驱动身体，`ExternalCommand`模式的Agent只跟踪任务状态和奖励账本 |
+| `scripts/build_climb_snapshots.ps1`、`scripts/record_climb_snapshots.ps1` | 构建并运行录制播放器，输出`library.jsonl`和`manifest.json` |
+| `Assets/Tests/Learning/ClimbSnapshotTests.cs` | 第5节的往返一致性测试 |
+| `Assets/Scripts/Learning/ClimbEpisodeLog.cs` | 回合CSV末尾新增`spawn`列，正常出生记为`ground` |
+
+身体接口的约束：
+- 只新增方法，已有方法的行为不变。`ResetBody`、`SetHandTarget`、`SetGrab`、`PhysicsStep`的逻辑都没有改；`PhysicsStep`中只多了一行赋值，记录抓握时手的朝向，供快照读取，不被任何物理代码使用。
+- 支撑ID：Agent运行时仍使用instance id，判定逻辑一行未改。只在捕获和恢复的边界上与结构object id互相映射，这是第7节允许的“内部映射”方案。
+- 记录手朝向：FixedJoint锁定的是关节创建那一刻的朝向，Unity不提供读取接口，因此只能在创建时记录。
+
+### 8.4 与第2–5节相比的调整
+
+- **旧抓握关节**：`ResetBody`和`Release`使用延迟的`Destroy`并设`breakForce=0`，关节组件会留到帧末，仍可能参与下一次求解。`RestoreSnapshot`立即删除手上**所有**FixedJoint，包括这些等待销毁的关节，再重建快照中的关节。这同时意味着，现有的正常`ResetBody`在带抓握重置时，旧关节可能还会参与一次求解。这是已有行为，本次不修改，只作记录。
+- **拒绝快照时的处理**：训练中示范出生遇到校验失败的快照时，把它隔离（以后不再抽取），记录`Climb/Spawn/Rejected`统计和警告日志，该回合保持正常出生，不让环境进程崩溃。直接调用`RestoreState`仍然会抛异常。观察误差超过1e-4时记录`Climb/Spawn/ObservationMismatch`和警告。
+- **容差按实现细化**：
+  - 序列化往返逐位相等；
+  - 同场地状态往返≤1e-6（刚体朝向经过PhysX可能被重新归一化）；
+  - 跨场地（训练场地坐标最大约42m，该处float分辨率约4e-6m）≤2e-5；主动力（最大约300N）单独比较，容差≤1e-3N；跨场地观察≤0.002，沿用现有平移/旋转观察测试的口径。
+- **决策边界**：录制时以`Academy.StepCount % 5 == 0`作为决策边界，与训练中的DecisionRequester一致。快照在物理步开始、Academy时钟之前采集（录制器的执行顺序为−300）。
+- **专家状态**：轨迹一致性测试通过反射复制专家控制器的内部字段，实现第5.4节的“闭环”继续。参考轨迹和恢复轨迹由同一个专家从同一内部状态继续运行。
+
+### 8.5 验证顺序（目标表示实验结束后执行）
+
+1. 编译检查，零编译错误。
+2. PlayMode：原有50项加上新增测试全部通过。
+3. 显式设置`target_mode=0`，用试跑checkpoint重跑50回合，与`docs/data/climb-grip-diagnostics/checkpoint`逐回合比对，必须一致。
+4. 构建录制播放器，录制状态库，报告各阶段数量、拒绝原因和轨迹结局。
+5. 受保护文件的哈希清单逐个说明变更原因。
+
+### 8.6 隔离统计（用户补充要求）
+
+- 每次示范抽取都记录两项TensorBoard统计：`Climb/Spawn/QuarantineFraction/<stage>`（该阶段被隔离快照数占该阶段快照总数的比例）；`Climb/Spawn/DemoFraction`（抽中示范出生的比例）。
+- 每个回合开始时记录`Climb/Spawn/ActualDemoFraction`（实际成功恢复为示范出生的比例），它与设定的0.5的差值就是隔离和缺失造成的偏离。
+- 状态库每1000次示范抽取（同一进程内所有Agent合计）输出一行`CLIMB_SNAPSHOT_QUARANTINE`日志，列出各阶段“隔离数/总数（比例）”。任一阶段超过1%时这一行改为警告级别并带`ALERT>1%`标记。训练报告中必须把这类阶段显著标出。
+- `ResetBody`遗留抓握关节的问题本轮不修改。快照实现完成后单独诊断：在多个场地上重置200次，测量重置后第一步躯干和双手的位移与速度。是否修复由用户决定；若修复，作为独立提交，并重新验证target_mode=0的逐回合复现。
+
+### 8.7 首轮验证的三处失败与处理（用户决定）
+
+首轮验证：PlayMode 57/60，状态库S3为0。处理如下，证据见[climb-snapshot-verification](data/climb-snapshot-verification/)。
+
+1. **观察的几何边缘跳变（观察固有特性，不改观察代码）**
+   - 高度图每格的"可抓"标志是离散值。采样射线恰好落在台面边缘时，浮点级的位置差（不同场地平移/旋转后约1e-6m）就会决定射线命中顶面还是地面，标志在0/1之间跳变。
+   - 本例：文档出生点躯干z=−0.4，高度图格(+0.4,+0.4)的射线正好落在下层箱前沿z=0上，即观察第302维。
+   - 这是观察本身在几何边缘处的不连续，不是快照恢复错误。训练中，身体经过边缘时同样会出现。
+   - 处理：两个往返测试（`CrossArenaStateRoundTrip`、`NormalResetAfterSnapshotIsUnchanged`）的出生点和摆放躯干沿z平移−5mm（`EdgeShift`），避开边缘。只改测试。
+2. **S3缺失：Level-2指标漏计（真实问题，已修复指标）**
+   - 现象：终点判定是躯干在终点区停留0.3s。它先于第二级的"稳定支撑0.3s"判定满足，回合以Success结束，level2却从未置位。128条专家轨迹全部Success、level2=0，S3窗口（一级→二级）无法闭合。
+   - 修复（`ClimberAgent`）：成功结束时，若第二级尚未记为达到，则记为达到。只改指标，奖励逻辑不变。
+   - S3窗口改为：从稳定站上第一级开始，到首次接触第二级或成功为止（`ClimbTrajectoryTracker.Level1To2End`），取以下三者中最早的一个：
+     - 第一级之后首次在顶面比第一级支撑高≥0.2m的表面上建立抓握（"接触第二级"）；
+     - Level-2置位；
+     - 第一级之后躯干首次进入终点区。成功会在同一步内重置Agent，录制器观察不到成功本身，因此以进入终点区代替。
+   - 为此新增两个只读访问器：`ClimberBody.GetCapturedSurface`、`ClimberAgent.CurrentSupport`。
+   - 已发布报告的影响：试跑、试跑诊断和目标表示实验中成功回合都为0，不可能发生漏计，所引用的第二级登层率不受影响；三份报告已加注。
+3. **阶段一致性测试S1a不足：测试步进方式与运行时不一致（身体与专家无问题）**
+   - 诊断（逐步时间线，临时测试，未提交）：
+     - 刚体从未休眠，也不是kinematic。
+     - 第1条轨迹成功后，测试循环直接调用`BeforePhysics`，没有调用`Academy.EnvironmentStep`。ML-Agents的`m_Info.done`只在向Brain发送信息时清除（`Agent.SendInfoToBrain`），所以之后每次回合结束，`NotifyAgentDone`都提前返回，`CompletedEpisodes`不再增加。
+     - 结果：测试没察觉回合已经结束、身体已被重置；旧专家停留在"第二层Press、无抓握"状态，直到60s超时（`BOX_SMOKE_FAILURE`）。运行时由`ClimbAcademyClock`每个物理步调用`EnvironmentStep`，不受影响（录制器128/128成功）。
+   - 修正（只改测试）：
+     - 专家驱动的Agent与录制器一致，配置DecisionRequester（周期5，step 0，决策之间不执行动作）。
+     - 专家步进改为调用完整的`Academy.Instance.EnvironmentStep()`。
+   - 专家失败消失后S1a仍不足：每条专家轨迹只产生约1.5个S1a（录制器为186/128），5条轨迹达不到每阶段≥10。测试轨迹数改为10，判据不变。
+4. **修复后验证**：
+   - batchmode编译零错误；PlayMode **60/60**。
+   - 阶段一致性：40个快照（4阶段×10），长时域判据全部通过，0次专家失败。
+   - target_mode=0逐回合复现：50/50回合、64/64运行时行一致。
+   - 重新录制状态库（128条轨迹）：S1a 180 / S1b 521 / S2 1282 / **S3 1687**，无拒绝。S3窗口均为第一级之后1.32s，由"接触第二级"闭合。
+   - 与首轮相比，S1a/S1b/S2数量略有变化，原因是：
+     - 轨迹编号按16个场地开始的先后分配，两次录制的分配顺序不同（128个编号中只有8个相同）；
+     - 起点扰动的种子取自轨迹编号。
+     - 阶段规则本身没有变化。

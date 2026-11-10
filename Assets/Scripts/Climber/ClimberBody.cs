@@ -31,7 +31,7 @@ namespace PhysicalAI.Climber
     }
 
     [DefaultExecutionOrder(0)]
-    public sealed class ClimberBody : MonoBehaviour
+    public sealed partial class ClimberBody : MonoBehaviour
     {
         [SerializeField] Rigidbody torso;
         [SerializeField] Rigidbody[] hands = new Rigidbody[2];
@@ -182,6 +182,7 @@ namespace PhysicalAI.Climber
                         grip.connectedAnchor=point;
                         grip.breakForce=900;grip.breakTorque=90;grip.enableCollision=false;
                         grips[i]=grip;held[i]=true;captured[i]=candidate.Collider;armed[i]=false;
+                        gripRotations[i]=hands[i].rotation; // Snapshot bookkeeping only; read by CaptureSnapshot.
                         requested[i]=targets[i]=Quaternion.Inverse(torso.rotation)*(hands[i].position-Shoulder(i));
                     }
                 }

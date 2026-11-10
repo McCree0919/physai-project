@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-10 08:04:18Z" end-time="2026-11-10 08:04:24Z" duration="5.4668">
+  <test-suite type="TestSuite" id="1078" name="physai-project" fullname="physai-project" runstate="Runnable" testcasecount="61" result="Passed" start-time="2026-11-10 08:04:18Z" end-time="2026-11-10 08:04:24Z" duration="5.466800" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1042" name="ClimbLearning.Tests.dll" fullname="C:/dev/physai-project/Library/ScriptAssemblies/ClimbLearning.Tests.dll" runstate="Runnable" testcasecount="19" result="Passed" start-time="2026-11-10 08:04:18Z" end-time="2026-11-10 08:04:24Z" duration="5.457832" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="41664" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestFixture" id="1040" name="ZzExpertFreezeDiagnostic" fullname="ZzExpertFreezeDiagnostic" classname="ZzExpertFreezeDiagnostic" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-11-10 08:04:18Z" end-time="2026-11-10 08:04:24Z" duration="5.456303" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1041" name="Timeline" fullname="ZzExpertFreezeDiagnostic.Timeline" methodname="Timeline" classname="ZzExpertFreezeDiagnostic" runstate="Runnable" seed="936299520" result="Passed" start-time="2026-11-10 08:04:18Z" end-time="2026-11-10 08:04:24Z" duration="5.445215" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[Registered Communicator in Academy.
+Couldn't connect to trainer on port 5004 using API version 1.5.0. Will perform inference instead.
+TRAJ t=0
+k=0 t=0.00 Seek/0 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.000, 0.400, -0.400) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.30, 1.15, -0.15) Lrej=NoContact joints=0
+k=20 t=0.40 Seek/0 g=FalseFalse req=FalseTrue rearm=FalseFalse L1=False L2=False act=True torso=(0.000, 0.400, -0.400) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.04, 0.42) Lpos=(-0.30, 0.69, 0.01) Lrej=NoContact joints=0
+k=23 t=0.46 Seek/0 g=FalseTrue req=FalseTrue rearm=FalseFalse L1=False L2=False act=True torso=(0.000, 0.400, -0.400) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.08, 0.42) Lpos=(-0.30, 0.64, 0.01) Lrej=NoContact joints=1
+k=24 t=0.48 Seek/0 g=FalseTrue req=TrueTrue rearm=FalseFalse L1=False L2=False act=True torso=(0.000, 0.400, -0.400) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.08, 0.42) Lpos=(-0.30, 0.62, 0.02) Lrej=NoContact joints=1
+k=27 t=0.54 Seek/0 g=TrueTrue req=TrueTrue rearm=FalseFalse L1=False L2=False act=True torso=(0.000, 0.400, -0.400) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.07, 0.42) Lpos=(-0.30, 0.61, 0.02) Lrej=TopOrEdge joints=2
+k=28 t=0.56 Press/0 g=TrueTrue req=TrueTrue rearm=FalseFalse L1=False L2=False act=True torso=(0.000, 0.400, -0.400) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.07, 0.42) Lpos=(-0.30, 0.61, 0.02) Lrej=TopOrEdge joints=2
+k=99 t=1.98 Release/0 g=TrueTrue req=TrueTrue rearm=FalseFalse L1=False L2=False act=True torso=(0.000, 0.975, 0.297) v=0.006 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.70, -0.28) Lpos=(-0.30, 0.61, 0.02) Lrej=TopOrEdge joints=2
+k=100 t=2.00 Release/0 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.974, 0.298) v=0.084 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.70, -0.28) Lpos=(-0.30, 0.61, 0.02) Lrej=TopOrEdge joints=0
+k=117 t=2.34 Seek/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.900, 0.299) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.70, -0.28) Lpos=(-0.30, 0.60, 0.02) Lrej=TopOrEdge joints=0
+k=163 t=3.26 Seek/1 g=FalseFalse req=TrueFalse rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.900, 0.296) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.08, 0.32) Lpos=(-0.30, 1.12, 0.61) Lrej=NoContact joints=0
+k=164 t=3.28 Seek/1 g=FalseFalse req=TrueTrue rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.900, 0.296) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.08, 0.32) Lpos=(-0.30, 1.11, 0.62) Lrej=NoContact joints=0
+k=166 t=3.32 Seek/1 g=TrueFalse req=TrueTrue rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.900, 0.296) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.07, 0.32) Lpos=(-0.30, 1.11, 0.62) Lrej=TopOrEdge joints=1
+k=167 t=3.34 Seek/1 g=TrueTrue req=TrueTrue rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.900, 0.296) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.07, 0.32) Lpos=(-0.30, 1.11, 0.62) Lrej=TopOrEdge joints=2
+k=168 t=3.36 Press/1 g=TrueTrue req=TrueTrue rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.900, 0.296) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.07, 0.32) Lpos=(-0.30, 1.11, 0.62) Lrej=TopOrEdge joints=2
+END episodes=1 expertCompleted=False failed=False
+
+BOX_SMOKE_FAILURE arena=smoke-stairs stairs=True stage=Press tier=1 seconds=60.001 torso=(0.00444, 0.40000, -0.24630) velocity=(0.00000, 0.00000, 0.00000) L=(-0.24116, 1.13910, 0.05731) Lv=(0.00000, 0.00000, 0.00000) Lt=(0.00000, 0.47000, 0.25000) Lgrip=False Lreject=NoContact R=(0.34737, 0.93910, -0.05948) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, 0.27000, 0.25000) Rgrip=False Rreject=NoContact
+TRAJ t=1
+k=0 t=0.00 Seek/0 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.007, 0.400, -0.397) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.46, 0.24) Lpos=(-0.30, 1.14, -0.16) Lrej=NoContact joints=0
+k=19 t=0.38 Seek/0 g=FalseFalse req=FalseTrue rearm=FalseFalse L1=False L2=False act=True torso=(0.007, 0.400, -0.397) v=0.000 sleep=FalseFalseFalse kin=False Lt=(-0.01, -0.04, 0.42) Lpos=(-0.30, 0.70, 0.01) Lrej=NoContact joints=0
+k=22 t=0.44 Seek/0 g=FalseTrue req=FalseTrue rearm=FalseFalse L1=False L2=False act=True torso=(0.007, 0.400, -0.397) v=0.000 sleep=FalseFalseFalse kin=False Lt=(-0.01, -0.08, 0.42) Lpos=(-0.30, 0.64, 0.01) Lrej=NoContact joints=1
+k=23 t=0.46 Seek/0 g=FalseTrue req=TrueTrue rearm=FalseFalse L1=False L2=False act=True torso=(0.007, 0.400, -0.397) v=0.000 sleep=FalseFalseFalse kin=False Lt=(-0.01, -0.08, 0.42) Lpos=(-0.30, 0.63, 0.01) Lrej=NoContact joints=1
+k=26 t=0.52 Seek/0 g=TrueTrue req=TrueTrue rearm=FalseFalse L1=False L2=False act=True torso=(0.007, 0.400, -0.397) v=0.000 sleep=FalseFalseFalse kin=False Lt=(-0.01, -0.07, 0.41) Lpos=(-0.30, 0.61, 0.02) Lrej=TopOrEdge joints=2
+k=27 t=0.54 Press/0 g=TrueTrue req=TrueTrue rearm=FalseFalse L1=False L2=False act=True torso=(0.007, 0.400, -0.397) v=0.000 sleep=FalseFalseFalse kin=False Lt=(-0.01, -0.07, 0.41) Lpos=(-0.30, 0.61, 0.02) Lrej=TopOrEdge joints=2
+k=98 t=1.96 Release/0 g=TrueTrue req=TrueTrue rearm=FalseFalse L1=False L2=False act=True torso=(0.000, 0.975, 0.297) v=0.005 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.70, -0.28) Lpos=(-0.30, 0.61, 0.02) Lrej=TopOrEdge joints=2
+k=99 t=1.98 Release/0 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.974, 0.298) v=0.084 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.70, -0.28) Lpos=(-0.30, 0.61, 0.02) Lrej=TopOrEdge joints=0
+k=116 t=2.32 Seek/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.900, 0.299) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.70, -0.28) Lpos=(-0.30, 0.60, 0.02) Lrej=TopOrEdge joints=0
+k=162 t=3.24 Seek/1 g=FalseFalse req=TrueFalse rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.900, 0.296) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.08, 0.32) Lpos=(-0.30, 1.12, 0.61) Lrej=NoContact joints=0
+k=163 t=3.26 Seek/1 g=FalseFalse req=TrueTrue rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.900, 0.296) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.08, 0.32) Lpos=(-0.30, 1.11, 0.62) Lrej=NoContact joints=0
+k=165 t=3.30 Seek/1 g=TrueFalse req=TrueTrue rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.900, 0.296) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.07, 0.32) Lpos=(-0.30, 1.11, 0.62) Lrej=TopOrEdge joints=1
+k=166 t=3.32 Seek/1 g=TrueTrue req=TrueTrue rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.900, 0.296) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.07, 0.32) Lpos=(-0.30, 1.11, 0.62) Lrej=TopOrEdge joints=2
+k=167 t=3.34 Press/1 g=TrueTrue req=TrueTrue rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.900, 0.296) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.07, 0.32) Lpos=(-0.30, 1.11, 0.62) Lrej=TopOrEdge joints=2
+k=246 t=0.00 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.000, 0.400, -0.400) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.30, 1.31, 1.41) Lrej=NoContact joints=0
+k=250 t=0.08 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.000, 0.429, -0.242) v=0.611 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.29, 1.10, 0.61) Lrej=TooFast joints=0
+k=500 t=5.08 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.004, 0.400, -0.246) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.24, 1.14, 0.06) Lrej=NoContact joints=0
+k=750 t=10.08 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.004, 0.400, -0.246) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.24, 1.14, 0.06) Lrej=NoContact joints=0
+k=1000 t=15.08 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.004, 0.400, -0.246) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.24, 1.14, 0.06) Lrej=NoContact joints=0
+k=1250 t=20.08 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.004, 0.400, -0.246) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.24, 1.14, 0.06) Lrej=NoContact joints=0
+k=1500 t=25.08 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.004, 0.400, -0.246) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.24, 1.14, 0.06) Lrej=NoContact joints=0
+k=1750 t=30.08 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.004, 0.400, -0.246) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.24, 1.14, 0.06) Lrej=NoContact joints=0
+k=2000 t=35.08 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.004, 0.400, -0.246) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.24, 1.14, 0.06) Lrej=NoContact joints=0
+k=2250 t=40.08 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.004, 0.400, -0.246) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.24, 1.14, 0.06) Lrej=NoContact joints=0
+k=2500 t=45.08 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.004, 0.400, -0.246) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.24, 1.14, 0.06) Lrej=NoContact joints=0
+k=2750 t=50.08 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.004, 0.400, -0.246) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.24, 1.14, 0.06) Lrej=NoContact joints=0
+END episodes=0 expertCompleted=False failed=True
+
+BOX_SMOKE_FAILURE arena=smoke-stairs stairs=True stage=Press tier=1 seconds=60.001 torso=(-0.00248, 0.40000, -0.24954) velocity=(0.00000, 0.00000, 0.00000) L=(-0.34290, 1.13910, -0.05820) Lv=(0.00000, 0.00000, 0.00000) Lt=(0.00000, 0.47000, 0.25000) Lgrip=False Lreject=NoContact R=(0.24711, 0.93910, 0.05080) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, 0.27000, 0.25000) Rgrip=False Rreject=NoContact
+TRAJ t=2
+k=0 t=0.00 Seek/0 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(-0.012, 0.400, -0.385) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.31, 1.15, -0.14) Lrej=NoContact joints=0
+k=22 t=0.44 Seek/0 g=FalseFalse req=FalseTrue rearm=FalseFalse L1=False L2=False act=True torso=(-0.012, 0.400, -0.386) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.01, -0.04, 0.41) Lpos=(-0.30, 0.68, 0.01) Lrej=NoContact joints=0
+k=25 t=0.50 Seek/0 g=FalseTrue req=FalseTrue rearm=FalseFalse L1=False L2=False act=True torso=(-0.012, 0.400, -0.385) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.01, -0.08, 0.41) Lpos=(-0.30, 0.63, 0.01) Lrej=NoContact joints=1
+k=26 t=0.52 Seek/0 g=FalseTrue req=TrueTrue rearm=FalseFalse L1=False L2=False act=True torso=(-0.012, 0.400, -0.385) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.01, -0.08, 0.41) Lpos=(-0.30, 0.62, 0.02) Lrej=NoContact joints=1
+k=29 t=0.58 Seek/0 g=TrueTrue req=TrueTrue rearm=FalseFalse L1=False L2=False act=True torso=(-0.012, 0.400, -0.385) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.01, -0.07, 0.40) Lpos=(-0.30, 0.61, 0.02) Lrej=TopOrEdge joints=2
+k=30 t=0.60 Press/0 g=TrueTrue req=TrueTrue rearm=FalseFalse L1=False L2=False act=True torso=(-0.012, 0.400, -0.385) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.01, -0.07, 0.40) Lpos=(-0.30, 0.61, 0.02) Lrej=TopOrEdge joints=2
+k=101 t=2.02 Release/0 g=TrueTrue req=TrueTrue rearm=FalseFalse L1=False L2=False act=True torso=(0.000, 0.975, 0.297) v=0.005 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.70, -0.28) Lpos=(-0.30, 0.61, 0.02) Lrej=TopOrEdge joints=2
+k=102 t=2.04 Release/0 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.974, 0.298) v=0.084 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.70, -0.28) Lpos=(-0.30, 0.61, 0.02) Lrej=TopOrEdge joints=0
+k=119 t=2.38 Seek/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.900, 0.299) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.70, -0.28) Lpos=(-0.30, 0.60, 0.02) Lrej=TopOrEdge joints=0
+k=165 t=3.30 Seek/1 g=FalseFalse req=FalseTrue rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.900, 0.296) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.08, 0.32) Lpos=(-0.30, 1.13, 0.61) Lrej=NoContact joints=0
+k=166 t=3.32 Seek/1 g=FalseFalse req=TrueTrue rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.900, 0.296) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.08, 0.32) Lpos=(-0.30, 1.12, 0.61) Lrej=NoContact joints=0
+k=168 t=3.36 Seek/1 g=FalseTrue req=TrueTrue rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.900, 0.296) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.08, 0.32) Lpos=(-0.30, 1.11, 0.62) Lrej=TopOrEdge joints=1
+k=169 t=3.38 Seek/1 g=TrueTrue req=TrueTrue rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.900, 0.296) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.07, 0.32) Lpos=(-0.30, 1.11, 0.62) Lrej=TopOrEdge joints=2
+k=170 t=3.40 Press/1 g=TrueTrue req=TrueTrue rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.900, 0.296) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.07, 0.32) Lpos=(-0.30, 1.11, 0.62) Lrej=TopOrEdge joints=2
+k=249 t=0.00 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.000, 0.400, -0.400) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.30, 1.30, 1.12) Lrej=NoContact joints=0
+k=250 t=0.02 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.000, 0.447, -0.264) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.30, 1.06, 0.53) Lrej=TopOrEdge joints=0
+k=500 t=5.02 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(-0.002, 0.400, -0.250) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.34, 1.14, -0.06) Lrej=NoContact joints=0
+k=750 t=10.02 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(-0.002, 0.400, -0.250) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.34, 1.14, -0.06) Lrej=NoContact joints=0
+k=1000 t=15.02 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(-0.002, 0.400, -0.250) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.34, 1.14, -0.06) Lrej=NoContact joints=0
+k=1250 t=20.02 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(-0.002, 0.400, -0.250) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.34, 1.14, -0.06) Lrej=NoContact joints=0
+k=1500 t=25.02 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(-0.002, 0.400, -0.250) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.34, 1.14, -0.06) Lrej=NoContact joints=0
+k=1750 t=30.02 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(-0.002, 0.400, -0.250) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.34, 1.14, -0.06) Lrej=NoContact joints=0
+k=2000 t=35.02 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(-0.002, 0.400, -0.250) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.34, 1.14, -0.06) Lrej=NoContact joints=0
+k=2250 t=40.02 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(-0.002, 0.400, -0.250) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.34, 1.14, -0.06) Lrej=NoContact joints=0
+k=2500 t=45.02 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(-0.002, 0.400, -0.250) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.34, 1.14, -0.06) Lrej=NoContact joints=0
+k=2750 t=50.02 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(-0.002, 0.400, -0.250) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.34, 1.14, -0.06) Lrej=NoContact joints=0
+END episodes=0 expertCompleted=False failed=True
+
+BOX_SMOKE_FAILURE arena=smoke-stairs stairs=True stage=Press tier=1 seconds=60.001 torso=(-0.00027, 0.40000, -0.23961) velocity=(0.00000, 0.00000, 0.00000) L=(-0.25299, 1.13910, 0.05810) Lv=(0.00000, 0.00000, 0.00000) Lt=(0.00000, 0.47000, 0.25000) Lgrip=False Lreject=NoContact R=(0.33813, 0.93910, -0.04471) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, 0.27000, 0.25000) Rgrip=False Rreject=NoContact
+TRAJ t=3
+k=0 t=0.00 Seek/0 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.009, 0.400, -0.413) v=0.000 sleep=FalseFalseFalse kin=False Lt=(-0.03, 0.48, 0.25) Lpos=(-0.32, 1.16, -0.16) Lrej=NoContact joints=0
+k=19 t=0.38 Seek/0 g=FalseFalse req=FalseTrue rearm=FalseFalse L1=False L2=False act=True torso=(0.009, 0.400, -0.414) v=0.000 sleep=FalseFalseFalse kin=False Lt=(-0.01, -0.01, 0.43) Lpos=(-0.30, 0.72, 0.00) Lrej=NoContact joints=0
+k=22 t=0.44 Seek/0 g=FalseTrue req=FalseTrue rearm=FalseFalse L1=False L2=False act=True torso=(0.009, 0.400, -0.414) v=0.000 sleep=FalseFalseFalse kin=False Lt=(-0.01, -0.08, 0.43) Lpos=(-0.30, 0.65, 0.01) Lrej=NoContact joints=1
+k=24 t=0.48 Seek/0 g=FalseTrue req=TrueTrue rearm=FalseFalse L1=False L2=False act=True torso=(0.009, 0.400, -0.414) v=0.000 sleep=FalseFalseFalse kin=False Lt=(-0.01, -0.08, 0.43) Lpos=(-0.30, 0.63, 0.02) Lrej=NoContact joints=1
+k=27 t=0.54 Seek/0 g=TrueTrue req=TrueTrue rearm=FalseFalse L1=False L2=False act=True torso=(0.009, 0.400, -0.414) v=0.000 sleep=FalseFalseFalse kin=False Lt=(-0.01, -0.07, 0.43) Lpos=(-0.30, 0.61, 0.02) Lrej=TopOrEdge joints=2
+k=28 t=0.56 Press/0 g=TrueTrue req=TrueTrue rearm=FalseFalse L1=False L2=False act=True torso=(0.009, 0.400, -0.414) v=0.000 sleep=FalseFalseFalse kin=False Lt=(-0.01, -0.07, 0.43) Lpos=(-0.30, 0.61, 0.02) Lrej=TopOrEdge joints=2
+k=99 t=1.98 Release/0 g=TrueTrue req=TrueTrue rearm=FalseFalse L1=False L2=False act=True torso=(0.000, 0.975, 0.297) v=0.006 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.70, -0.28) Lpos=(-0.30, 0.61, 0.02) Lrej=TopOrEdge joints=2
+k=100 t=2.00 Release/0 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.974, 0.298) v=0.084 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.70, -0.28) Lpos=(-0.30, 0.61, 0.02) Lrej=TopOrEdge joints=0
+k=117 t=2.34 Seek/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.900, 0.299) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.70, -0.28) Lpos=(-0.30, 0.60, 0.02) Lrej=TopOrEdge joints=0
+k=163 t=3.26 Seek/1 g=FalseFalse req=TrueFalse rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.900, 0.296) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.08, 0.32) Lpos=(-0.30, 1.12, 0.61) Lrej=NoContact joints=0
+k=164 t=3.28 Seek/1 g=FalseFalse req=TrueTrue rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.900, 0.296) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.08, 0.32) Lpos=(-0.30, 1.11, 0.62) Lrej=NoContact joints=0
+k=166 t=3.32 Seek/1 g=TrueFalse req=TrueTrue rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.900, 0.296) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.07, 0.32) Lpos=(-0.30, 1.11, 0.62) Lrej=TopOrEdge joints=1
+k=167 t=3.34 Seek/1 g=TrueTrue req=TrueTrue rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.900, 0.296) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.07, 0.32) Lpos=(-0.30, 1.11, 0.62) Lrej=TopOrEdge joints=2
+k=168 t=3.36 Press/1 g=TrueTrue req=TrueTrue rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.900, 0.296) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.07, 0.32) Lpos=(-0.30, 1.11, 0.62) Lrej=TopOrEdge joints=2
+k=247 t=0.00 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.000, 0.400, -0.400) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.30, 1.31, 1.36) Lrej=NoContact joints=0
+k=250 t=0.06 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.000, 0.439, -0.251) v=0.423 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.30, 1.10, 0.62) Lrej=TopOrEdge joints=0
+k=500 t=5.06 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.000, 0.400, -0.239) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.25, 1.14, 0.06) Lrej=NoContact joints=0
+k=750 t=10.06 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.000, 0.400, -0.240) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.25, 1.14, 0.06) Lrej=NoContact joints=0
+k=1000 t=15.06 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.000, 0.400, -0.240) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.25, 1.14, 0.06) Lrej=NoContact joints=0
+k=1250 t=20.06 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.000, 0.400, -0.240) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.25, 1.14, 0.06) Lrej=NoContact joints=0
+k=1500 t=25.06 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.000, 0.400, -0.240) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.25, 1.14, 0.06) Lrej=NoContact joints=0
+k=1750 t=30.06 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.000, 0.400, -0.240) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.25, 1.14, 0.06) Lrej=NoContact joints=0
+k=2000 t=35.06 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.000, 0.400, -0.240) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.25, 1.14, 0.06) Lrej=NoContact joints=0
+k=2250 t=40.06 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.000, 0.400, -0.240) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.25, 1.14, 0.06) Lrej=NoContact joints=0
+k=2500 t=45.06 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.000, 0.400, -0.240) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.25, 1.14, 0.06) Lrej=NoContact joints=0
+k=2750 t=50.06 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.000, 0.400, -0.240) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.25, 1.14, 0.06) Lrej=NoContact joints=0
+END episodes=0 expertCompleted=False failed=True
+
+BOX_SMOKE_FAILURE arena=smoke-stairs stairs=True stage=Press tier=1 seconds=60.001 torso=(-0.00214, 0.40000, -0.23790) velocity=(0.00000, 0.00000, 0.00000) L=(-0.33537, 1.13910, -0.03428) Lv=(0.00000, 0.00000, 0.00000) Lt=(0.00000, 0.47000, 0.25000) Lgrip=False Lreject=NoContact R=(0.25823, 0.93910, 0.05315) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, 0.27000, 0.25000) Rgrip=False Rreject=NoContact
+TRAJ t=4
+k=0 t=0.00 Seek/0 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(-0.010, 0.400, -0.402) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.02, 0.48, 0.26) Lpos=(-0.29, 1.16, -0.14) Lrej=NoContact joints=0
+k=22 t=0.44 Seek/0 g=FalseFalse req=FalseTrue rearm=FalseFalse L1=False L2=False act=True torso=(-0.010, 0.400, -0.402) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.01, -0.04, 0.42) Lpos=(-0.30, 0.69, 0.01) Lrej=NoContact joints=0
+k=25 t=0.50 Seek/0 g=FalseTrue req=FalseTrue rearm=FalseFalse L1=False L2=False act=True torso=(-0.010, 0.400, -0.402) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.01, -0.08, 0.42) Lpos=(-0.30, 0.63, 0.01) Lrej=NoContact joints=1
+k=26 t=0.52 Seek/0 g=FalseTrue req=TrueTrue rearm=FalseFalse L1=False L2=False act=True torso=(-0.010, 0.400, -0.402) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.01, -0.08, 0.42) Lpos=(-0.30, 0.62, 0.02) Lrej=NoContact joints=1
+k=29 t=0.58 Seek/0 g=TrueTrue req=TrueTrue rearm=FalseFalse L1=False L2=False act=True torso=(-0.010, 0.400, -0.402) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.01, -0.07, 0.42) Lpos=(-0.30, 0.61, 0.02) Lrej=TopOrEdge joints=2
+k=30 t=0.60 Press/0 g=TrueTrue req=TrueTrue rearm=FalseFalse L1=False L2=False act=True torso=(-0.010, 0.400, -0.402) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.01, -0.07, 0.42) Lpos=(-0.30, 0.61, 0.02) Lrej=TopOrEdge joints=2
+k=101 t=2.02 Release/0 g=TrueTrue req=TrueTrue rearm=FalseFalse L1=False L2=False act=True torso=(0.000, 0.975, 0.297) v=0.005 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.70, -0.28) Lpos=(-0.30, 0.61, 0.02) Lrej=TopOrEdge joints=2
+k=102 t=2.04 Release/0 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.974, 0.298) v=0.084 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.70, -0.28) Lpos=(-0.30, 0.61, 0.02) Lrej=TopOrEdge joints=0
+k=119 t=2.38 Seek/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.900, 0.299) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.70, -0.28) Lpos=(-0.30, 0.60, 0.02) Lrej=TopOrEdge joints=0
+k=165 t=3.30 Seek/1 g=FalseFalse req=TrueTrue rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.900, 0.296) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.08, 0.32) Lpos=(-0.30, 1.12, 0.61) Lrej=NoContact joints=0
+k=168 t=3.36 Seek/1 g=TrueTrue req=TrueTrue rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.900, 0.296) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.07, 0.32) Lpos=(-0.30, 1.11, 0.62) Lrej=TopOrEdge joints=2
+k=169 t=3.38 Press/1 g=TrueTrue req=TrueTrue rearm=FalseFalse L1=True L2=False act=True torso=(0.000, 0.900, 0.296) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, -0.07, 0.32) Lpos=(-0.30, 1.11, 0.62) Lrej=TopOrEdge joints=2
+k=248 t=0.00 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.000, 0.400, -0.400) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.30, 1.30, 1.21) Lrej=NoContact joints=0
+k=250 t=0.04 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(0.000, 0.450, -0.240) v=0.210 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.30, 1.06, 0.53) Lrej=TopOrEdge joints=0
+k=500 t=5.04 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(-0.002, 0.400, -0.238) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.34, 1.14, -0.03) Lrej=NoContact joints=0
+k=750 t=10.04 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(-0.002, 0.400, -0.238) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.34, 1.14, -0.03) Lrej=NoContact joints=0
+k=1000 t=15.04 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(-0.002, 0.400, -0.238) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.34, 1.14, -0.03) Lrej=NoContact joints=0
+k=1250 t=20.04 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(-0.002, 0.400, -0.238) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.34, 1.14, -0.03) Lrej=NoContact joints=0
+k=1500 t=25.04 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(-0.002, 0.400, -0.238) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.34, 1.14, -0.03) Lrej=NoContact joints=0
+k=1750 t=30.04 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(-0.002, 0.400, -0.238) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.34, 1.14, -0.03) Lrej=NoContact joints=0
+k=2000 t=35.04 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(-0.002, 0.400, -0.238) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.34, 1.14, -0.03) Lrej=NoContact joints=0
+k=2250 t=40.04 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(-0.002, 0.400, -0.238) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.34, 1.14, -0.03) Lrej=NoContact joints=0
+k=2500 t=45.04 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(-0.002, 0.400, -0.238) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.34, 1.14, -0.03) Lrej=NoContact joints=0
+k=2750 t=50.04 Press/1 g=FalseFalse req=FalseFalse rearm=FalseFalse L1=False L2=False act=True torso=(-0.002, 0.400, -0.238) v=0.000 sleep=FalseFalseFalse kin=False Lt=(0.00, 0.47, 0.25) Lpos=(-0.34, 1.14, -0.03) Lrej=NoContact joints=0
+END episodes=0 expertCompleted=False failed=True
+
+Saving results to: C:/Users/17645/AppData/LocalLow/DefaultCompany/physai-project\TestResults.xml
+]]></output>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

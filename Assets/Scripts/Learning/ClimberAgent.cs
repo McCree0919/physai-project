@@ -9,13 +9,15 @@ using UnityEngine;
 namespace PhysicalAI.Learning
 {
     public enum ClimbTargetMode {Incremental=0,Absolute=1}
-    public sealed class ClimberAgent : Agent
+    public sealed partial class ClimberAgent : Agent
     {
         public const int ObservationCount=327;
         public const float FreeEffort=1f,GripEffort=.7f,AbsoluteReach=.85f;
         // Default stays Incremental so pilot results reproduce; trainer YAML overrides via environment parameter "target_mode".
         public ClimbTargetMode TargetMode=ClimbTargetMode.Incremental;
         public ClimbTargetMode ActiveTargetMode {get;private set;}
+        // Snapshot recording only: an external expert drives the body; the Agent tracks task state but never writes commands.
+        public bool ExternalCommand;
         ClimberBody body;ClimberGoal goal;BodyReset spawn;
         readonly Vector3[] targets=new Vector3[2];
         readonly RaycastHit[] hits=new RaycastHit[64];
@@ -56,6 +58,7 @@ namespace PhysicalAI.Learning
                 var h=body.GetHandState((HandId)i);targets[i]=Project(Quaternion.Inverse(b.Rotation)*(h.Position-h.ShoulderPosition));previousGrip[i]=false;
                 body.SetHandTarget((HandId)i,targets[i],FreeEffort);body.SetGrab((HandId)i,false);
             }
+            SnapshotSpawn();
         }
         public static Vector3 Project(Vector3 q)
         {float length=q.magnitude;return length<.0001f?Vector3.up*.15f:q*(Mathf.Clamp(length,.15f,.85f)/length);}
@@ -67,6 +70,7 @@ namespace PhysicalAI.Learning
             var commands=new[] {left,right};var grabs=new[] {grabLeft,grabRight};decisions++;
             for(int i=0;i<2;i++)
             {
+                if(ExternalCommand)break;
                 targets[i]=ActiveTargetMode==ClimbTargetMode.Absolute?AbsoluteTarget(commands[i]):Project(targets[i]+Vector3.ClampMagnitude(commands[i],1)*.08f);
                 var h=body.GetHandState((HandId)i);
                 body.SetHandTarget((HandId)i,targets[i],h.Grabbed?GripEffort:FreeEffort);
@@ -91,7 +95,7 @@ namespace PhysicalAI.Learning
                 var h=body.GetHandState((HandId)i);
                 if(previousGrip[i]&&!h.Grabbed&&h.GrabRequested&&h.NeedsRearm)brokenTime=0;
                 previousGrip[i]=h.Grabbed;
-                body.SetHandTarget((HandId)i,targets[i],h.Grabbed?GripEffort:FreeEffort);
+                if(!ExternalCommand)body.SetHandTarget((HandId)i,targets[i],h.Grabbed?GripEffort:FreeEffort);
             }
             bool supported=TrySupport(out int id,out float height)&&b.Velocity.magnitude<.25f;
             if(supported)
@@ -113,7 +117,8 @@ namespace PhysicalAI.Learning
             groundStable=level1&&onGround?groundStable+dt:0;
             if(b.GrabbedHands>0||supported)brokenTime=-1;else if(brokenTime>=0)brokenTime+=dt;
             goalStable=goal.Contains(b)?goalStable+dt:0;
-            if(goalStable>=.3f){Finish(true,"Success");return;}
+            // Metric only: reaching the goal counts as level 2 even when the episode ends before the 0.3s stable-support check; rewards unchanged.
+            if(goalStable>=.3f){level2=true;Finish(true,"Success");return;}
             if(b.Position.y<-.3f||groundStable>=.3f){Finish(false,"Fall");return;}
             if(Mathf.Abs(b.Position.x)>6||b.Position.z < -4||b.Position.z>8){Finish(false,"OutOfBounds");return;}
             if(brokenTime>=2){Finish(false,"UnrecoverableGrip");return;}
@@ -140,7 +145,9 @@ namespace PhysicalAI.Learning
             recorder.Add("Climb/Decisions",decisions);recorder.Add("Climb/SimSeconds",elapsed);recorder.Add("Climb/MaximumTorsoHeight",maximumHeight);
             recorder.Add("Climb/RewardProgress",progressReward);recorder.Add("Climb/RewardTime",rewardTime);recorder.Add("Climb/RewardTerminal",rewardTerminal);
             foreach(string label in new[] {"Success","Fall","OutOfBounds","UnrecoverableGrip","Timeout"})recorder.Add("Climb/End/"+label,reason==label?1:0);
-            ClimbEpisodeLog.Write(name,success,level1,level2,decisions,elapsed,progressReward+rewardTime+rewardTerminal,reason);
+            if(spawnStage!=null)recorder.Add("Climb/Spawn/"+spawnStage+"/Success",success?1:0);
+            SpawnSchedule?.Report(spawnStage??"ground",success,level1,level2);
+            ClimbEpisodeLog.Write(name,success,level1,level2,decisions,elapsed,progressReward+rewardTime+rewardTerminal,reason,SpawnSource);
             EndEpisode();
         }
         void Add(Vector3 value,float scale=1)

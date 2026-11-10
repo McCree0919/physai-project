@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<test-run id="2" testcasecount="60" result="Failed(Child)" total="60" passed="57" failed="3" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-10 07:40:41Z" end-time="2026-11-10 07:40:51Z" duration="10.1185061">
-  <test-suite type="TestSuite" id="1076" name="physai-project" fullname="physai-project" runstate="Runnable" testcasecount="60" result="Failed" site="Child" start-time="2026-11-10 07:40:41Z" end-time="2026-11-10 07:40:51Z" duration="10.118506" total="60" passed="57" failed="3" inconclusive="0" skipped="0" asserts="0">
+<test-run id="2" testcasecount="60" result="Passed" total="60" passed="60" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-10 08:09:34Z" end-time="2026-11-10 08:09:45Z" duration="11.518227">
+  <test-suite type="TestSuite" id="1076" name="physai-project" fullname="physai-project" runstate="Runnable" testcasecount="60" result="Passed" start-time="2026-11-10 08:09:34Z" end-time="2026-11-10 08:09:45Z" duration="11.518227" total="60" passed="60" failed="0" inconclusive="0" skipped="0" asserts="0">
     <properties>
       <property name="platform" value="PlayMode" />
     </properties>
-    <failure>
-      <message><![CDATA[One or more child tests had errors]]></message>
-    </failure>
-    <test-suite type="Assembly" id="1019" name="Climber.PlayModeTests.dll" fullname="C:/dev/physai-project/Library/ScriptAssemblies/Climber.PlayModeTests.dll" runstate="Runnable" testcasecount="15" result="Passed" start-time="2026-11-10 07:40:41Z" end-time="2026-11-10 07:40:43Z" duration="2.020679" total="15" passed="15" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <test-suite type="Assembly" id="1019" name="Climber.PlayModeTests.dll" fullname="C:/dev/physai-project/Library/ScriptAssemblies/Climber.PlayModeTests.dll" runstate="Runnable" testcasecount="15" result="Passed" start-time="2026-11-10 08:09:34Z" end-time="2026-11-10 08:09:36Z" duration="2.008856" total="15" passed="15" failed="0" inconclusive="0" skipped="0" asserts="0">
       <properties>
-        <property name="_PID" value="190936" />
+        <property name="_PID" value="14676" />
         <property name="_APPDOMAIN" value="Unity Child Domain" />
         <property name="platform" value="PlayMode" />
         <property name="EditorOnly" value="False" />
       </properties>
-      <test-suite type="TestFixture" id="1001" name="ClimberTests" fullname="ClimberTests" classname="ClimberTests" runstate="Runnable" testcasecount="15" result="Passed" start-time="2026-11-10 07:40:41Z" end-time="2026-11-10 07:40:43Z" duration="2.019163" total="15" passed="15" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <test-suite type="TestFixture" id="1001" name="ClimberTests" fullname="ClimberTests" classname="ClimberTests" runstate="Runnable" testcasecount="15" result="Passed" start-time="2026-11-10 08:09:34Z" end-time="2026-11-10 08:09:36Z" duration="2.007882" total="15" passed="15" failed="0" inconclusive="0" skipped="0" asserts="0">
         <properties />
-        <test-case id="1010" name="BothHandsPressOverTopEdge" fullname="ClimberTests.BothHandsPressOverTopEdge" methodname="BothHandsPressOverTopEdge" classname="ClimberTests" runstate="Runnable" seed="1471303533" result="Passed" start-time="2026-11-10 07:40:41Z" end-time="2026-11-10 07:40:41Z" duration="0.092135" asserts="0">
+        <test-case id="1010" name="BothHandsPressOverTopEdge" fullname="ClimberTests.BothHandsPressOverTopEdge" methodname="BothHandsPressOverTopEdge" classname="ClimberTests" runstate="Runnable" seed="540949873" result="Passed" start-time="2026-11-10 08:09:34Z" end-time="2026-11-10 08:09:34Z" duration="0.080348" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
@@ -120,13 +117,13 @@ LAYER1_PRESS_SUMMARY firstEntryY=2.449862 finalPosition=(0.000000, 2.446687, 0.5
 LAYER1_PRESS pos=(0.00, 2.45, 0.53) stage=Arrived
 ]]></output>
         </test-case>
-        <test-case id="1013" name="FollowCameraFramesBodyHandsAndPlatform" fullname="ClimberTests.FollowCameraFramesBodyHandsAndPlatform" methodname="FollowCameraFramesBodyHandsAndPlatform" classname="ClimberTests" runstate="Runnable" seed="422532910" result="Passed" start-time="2026-11-10 07:40:41Z" end-time="2026-11-10 07:40:41Z" duration="0.008654" asserts="0">
+        <test-case id="1013" name="FollowCameraFramesBodyHandsAndPlatform" fullname="ClimberTests.FollowCameraFramesBodyHandsAndPlatform" methodname="FollowCameraFramesBodyHandsAndPlatform" classname="ClimberTests" runstate="Runnable" seed="1480934053" result="Passed" start-time="2026-11-10 08:09:34Z" end-time="2026-11-10 08:09:34Z" duration="0.007433" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
-        <test-case id="1018" name="GeneratedSceneLoadsAndRunsWithNormalFixedUpdate" fullname="ClimberTests.GeneratedSceneLoadsAndRunsWithNormalFixedUpdate" methodname="GeneratedSceneLoadsAndRunsWithNormalFixedUpdate" classname="ClimberTests" runstate="Runnable" seed="2035236925" result="Passed" start-time="2026-11-10 07:40:41Z" end-time="2026-11-10 07:40:42Z" duration="1.474906" asserts="0">
+        <test-case id="1018" name="GeneratedSceneLoadsAndRunsWithNormalFixedUpdate" fullname="ClimberTests.GeneratedSceneLoadsAndRunsWithNormalFixedUpdate" methodname="GeneratedSceneLoadsAndRunsWithNormalFixedUpdate" classname="ClimberTests" runstate="Runnable" seed="300766363" result="Passed" start-time="2026-11-10 08:09:34Z" end-time="2026-11-10 08:09:35Z" duration="1.474036" asserts="0">
           <properties>
             <property name="_JOINTYPE" value="UnityCombinatorial" />
             <property name="retryIteration" value="0" />
@@ -231,7 +228,7 @@ LAYER1_SAVED_SCENE arena=ClimberArena_14 pass=True handovers=3 seconds=7.32
 LAYER1_SAVED_SCENE arena=ClimberArena_15 pass=True handovers=3 seconds=7.32
 ]]></output>
         </test-case>
-        <test-case id="1002" name="GeometryMaterialsAndRadialLimit" fullname="ClimberTests.GeometryMaterialsAndRadialLimit" methodname="GeometryMaterialsAndRadialLimit" classname="ClimberTests" runstate="Runnable" seed="1142069524" result="Passed" start-time="2026-11-10 07:40:42Z" end-time="2026-11-10 07:40:42Z" duration="0.022290" asserts="0">
+        <test-case id="1002" name="GeometryMaterialsAndRadialLimit" fullname="ClimberTests.GeometryMaterialsAndRadialLimit" methodname="GeometryMaterialsAndRadialLimit" classname="ClimberTests" runstate="Runnable" seed="45829994" result="Passed" start-time="2026-11-10 08:09:35Z" end-time="2026-11-10 08:09:35Z" duration="0.024149" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
@@ -243,13 +240,13 @@ Setting angular velocity of a kinematic body is not supported.
 Setting linear velocity of a kinematic body is not supported.
 ]]></output>
         </test-case>
-        <test-case id="1008" name="GrabCooldownAndFiniteGripStrength" fullname="ClimberTests.GrabCooldownAndFiniteGripStrength" methodname="GrabCooldownAndFiniteGripStrength" classname="ClimberTests" runstate="Runnable" seed="575547101" result="Passed" start-time="2026-11-10 07:40:42Z" end-time="2026-11-10 07:40:42Z" duration="0.001911" asserts="0">
+        <test-case id="1008" name="GrabCooldownAndFiniteGripStrength" fullname="ClimberTests.GrabCooldownAndFiniteGripStrength" methodname="GrabCooldownAndFiniteGripStrength" classname="ClimberTests" runstate="Runnable" seed="775650558" result="Passed" start-time="2026-11-10 08:09:35Z" end-time="2026-11-10 08:09:35Z" duration="0.001992" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
-        <test-case id="1009" name="GripBreaksButShoulderDoesNot" fullname="ClimberTests.GripBreaksButShoulderDoesNot" methodname="GripBreaksButShoulderDoesNot" classname="ClimberTests" runstate="Runnable" seed="140013544" result="Passed" start-time="2026-11-10 07:40:42Z" end-time="2026-11-10 07:40:42Z" duration="0.002744" asserts="0">
+        <test-case id="1009" name="GripBreaksButShoulderDoesNot" fullname="ClimberTests.GripBreaksButShoulderDoesNot" methodname="GripBreaksButShoulderDoesNot" classname="ClimberTests" runstate="Runnable" seed="879406068" result="Passed" start-time="2026-11-10 08:09:35Z" end-time="2026-11-10 08:09:35Z" duration="0.003247" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
@@ -257,9 +254,9 @@ Setting linear velocity of a kinematic body is not supported.
           <output><![CDATA[LAYER1_BREAK gripBroken=True shoulderIntact=True regrab=False
 ]]></output>
         </test-case>
-        <test-suite type="ParameterizedMethod" id="1005" name="LiftThresholdSweep" fullname="ClimberTests.LiftThresholdSweep" classname="ClimberTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-11-10 07:40:42Z" end-time="2026-11-10 07:40:43Z" duration="0.030804" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <test-suite type="ParameterizedMethod" id="1005" name="LiftThresholdSweep" fullname="ClimberTests.LiftThresholdSweep" classname="ClimberTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-11-10 08:09:35Z" end-time="2026-11-10 08:09:35Z" duration="0.029128" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
           <properties />
-          <test-case id="1003" name="LiftThresholdSweep(0.0f)" fullname="ClimberTests.LiftThresholdSweep(0.0f)" methodname="LiftThresholdSweep" classname="ClimberTests" runstate="Runnable" seed="806627532" result="Passed" start-time="2026-11-10 07:40:42Z" end-time="2026-11-10 07:40:43Z" duration="0.015127" asserts="0">
+          <test-case id="1003" name="LiftThresholdSweep(0.0f)" fullname="ClimberTests.LiftThresholdSweep(0.0f)" methodname="LiftThresholdSweep" classname="ClimberTests" runstate="Runnable" seed="1010924162" result="Passed" start-time="2026-11-10 08:09:35Z" end-time="2026-11-10 08:09:35Z" duration="0.013535" asserts="0">
             <properties>
               <property name="retryIteration" value="0" />
               <property name="repeatIteration" value="0" />
@@ -271,7 +268,7 @@ LAYER1_LIFT angle=0 u=0.50 rise=0.3539 maxForceN=225.00 arm=0.7003
 LAYER1_LIFT angle=0 u=0.70 rise=0.3539 maxForceN=226.78 arm=0.7003
 ]]></output>
           </test-case>
-          <test-case id="1004" name="LiftThresholdSweep(45.0f)" fullname="ClimberTests.LiftThresholdSweep(45.0f)" methodname="LiftThresholdSweep" classname="ClimberTests" runstate="Runnable" seed="532660226" result="Passed" start-time="2026-11-10 07:40:43Z" end-time="2026-11-10 07:40:43Z" duration="0.013868" asserts="0">
+          <test-case id="1004" name="LiftThresholdSweep(45.0f)" fullname="ClimberTests.LiftThresholdSweep(45.0f)" methodname="LiftThresholdSweep" classname="ClimberTests" runstate="Runnable" seed="960620062" result="Passed" start-time="2026-11-10 08:09:35Z" end-time="2026-11-10 08:09:35Z" duration="0.013779" asserts="0">
             <properties>
               <property name="retryIteration" value="0" />
               <property name="repeatIteration" value="0" />
@@ -284,21 +281,21 @@ LAYER1_LIFT angle=45 u=0.70 rise=0.1577 maxForceN=206.15 arm=0.6820
 ]]></output>
           </test-case>
         </test-suite>
-        <test-case id="1012" name="ManualGrabRequiresReleaseBeforeRearmAndResetClearsGrip" fullname="ClimberTests.ManualGrabRequiresReleaseBeforeRearmAndResetClearsGrip" methodname="ManualGrabRequiresReleaseBeforeRearmAndResetClearsGrip" classname="ClimberTests" runstate="Runnable" seed="1787774630" result="Passed" start-time="2026-11-10 07:40:43Z" end-time="2026-11-10 07:40:43Z" duration="0.003137" asserts="0">
+        <test-case id="1012" name="ManualGrabRequiresReleaseBeforeRearmAndResetClearsGrip" fullname="ClimberTests.ManualGrabRequiresReleaseBeforeRearmAndResetClearsGrip" methodname="ManualGrabRequiresReleaseBeforeRearmAndResetClearsGrip" classname="ClimberTests" runstate="Runnable" seed="2086947678" result="Passed" start-time="2026-11-10 08:09:35Z" end-time="2026-11-10 08:09:36Z" duration="0.003986" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
-        <test-case id="1011" name="ManualSelectionTargetsEffortAndModeOwnership" fullname="ClimberTests.ManualSelectionTargetsEffortAndModeOwnership" methodname="ManualSelectionTargetsEffortAndModeOwnership" classname="ClimberTests" runstate="Runnable" seed="965261808" result="Passed" start-time="2026-11-10 07:40:43Z" end-time="2026-11-10 07:40:43Z" duration="0.003945" asserts="0">
+        <test-case id="1011" name="ManualSelectionTargetsEffortAndModeOwnership" fullname="ClimberTests.ManualSelectionTargetsEffortAndModeOwnership" methodname="ManualSelectionTargetsEffortAndModeOwnership" classname="ClimberTests" runstate="Runnable" seed="1670357614" result="Passed" start-time="2026-11-10 08:09:36Z" end-time="2026-11-10 08:09:36Z" duration="0.002360" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
-        <test-suite type="ParameterizedMethod" id="1017" name="ScriptedHandoversAndArrival" fullname="ClimberTests.ScriptedHandoversAndArrival" classname="ClimberTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-11-10 07:40:43Z" end-time="2026-11-10 07:40:43Z" duration="0.258435" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <test-suite type="ParameterizedMethod" id="1017" name="ScriptedHandoversAndArrival" fullname="ClimberTests.ScriptedHandoversAndArrival" classname="ClimberTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-11-10 08:09:36Z" end-time="2026-11-10 08:09:36Z" duration="0.260913" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
           <properties />
-          <test-case id="1014" name="ScriptedHandoversAndArrival(1,False)" fullname="ClimberTests.ScriptedHandoversAndArrival(1,False)" methodname="ScriptedHandoversAndArrival" classname="ClimberTests" runstate="Runnable" seed="492438493" result="Passed" start-time="2026-11-10 07:40:43Z" end-time="2026-11-10 07:40:43Z" duration="0.032896" asserts="0">
+          <test-case id="1014" name="ScriptedHandoversAndArrival(1,False)" fullname="ClimberTests.ScriptedHandoversAndArrival(1,False)" methodname="ScriptedHandoversAndArrival" classname="ClimberTests" runstate="Runnable" seed="1609019670" result="Passed" start-time="2026-11-10 08:09:36Z" end-time="2026-11-10 08:09:36Z" duration="0.034056" asserts="0">
             <properties>
               <property name="retryIteration" value="0" />
               <property name="repeatIteration" value="0" />
@@ -311,7 +308,7 @@ LAYER1_ARENA_PASS TestArena_0 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) 
 LAYER1_RESULT arena=TestArena_0 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.8217 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.08, -49.98, -3.26)
 ]]></output>
           </test-case>
-          <test-case id="1015" name="ScriptedHandoversAndArrival(16,False)" fullname="ClimberTests.ScriptedHandoversAndArrival(16,False)" methodname="ScriptedHandoversAndArrival" classname="ClimberTests" runstate="Runnable" seed="1888992003" result="Passed" start-time="2026-11-10 07:40:43Z" end-time="2026-11-10 07:40:43Z" duration="0.114793" asserts="0">
+          <test-case id="1015" name="ScriptedHandoversAndArrival(16,False)" fullname="ClimberTests.ScriptedHandoversAndArrival(16,False)" methodname="ScriptedHandoversAndArrival" classname="ClimberTests" runstate="Runnable" seed="320117170" result="Passed" start-time="2026-11-10 08:09:36Z" end-time="2026-11-10 08:09:36Z" duration="0.113549" asserts="0">
             <properties>
               <property name="retryIteration" value="0" />
               <property name="repeatIteration" value="0" />
@@ -414,7 +411,7 @@ LAYER1_RESULT arena=TestArena_14 pass=True handovers=3 stage=Arrived position=(0
 LAYER1_RESULT arena=TestArena_15 pass=True handovers=3 stage=Arrived position=(0.00, 2.45, 0.53) yaw=359.8208 seconds=7.32 left=(-0.30, 2.10, 0.02) right=(0.30, 2.10, 0.02) reasonL=TopOrEdge reasonR=TopOrEdge next=4 phases=3,3 Rshoulder=(0.30, 2.73, 0.53) Rtarget=(0.00, -0.68, -0.51) Rforce=(0.08, -49.99, -3.26)
 ]]></output>
           </test-case>
-          <test-case id="1016" name="ScriptedHandoversAndArrival(16,True)" fullname="ClimberTests.ScriptedHandoversAndArrival(16,True)" methodname="ScriptedHandoversAndArrival" classname="ClimberTests" runstate="Runnable" seed="1962823495" result="Passed" start-time="2026-11-10 07:40:43Z" end-time="2026-11-10 07:40:43Z" duration="0.109925" asserts="0">
+          <test-case id="1016" name="ScriptedHandoversAndArrival(16,True)" fullname="ClimberTests.ScriptedHandoversAndArrival(16,True)" methodname="ScriptedHandoversAndArrival" classname="ClimberTests" runstate="Runnable" seed="1295074445" result="Passed" start-time="2026-11-10 08:09:36Z" end-time="2026-11-10 08:09:36Z" duration="0.112355" asserts="0">
             <properties>
               <property name="retryIteration" value="0" />
               <property name="repeatIteration" value="0" />
@@ -518,7 +515,7 @@ LAYER1_RESULT arena=TestArena_15 pass=True handovers=3 stage=Arrived position=(0
 ]]></output>
           </test-case>
         </test-suite>
-        <test-case id="1006" name="SingleHandHoldAndFiveSecondFreeHandJitter" fullname="ClimberTests.SingleHandHoldAndFiveSecondFreeHandJitter" methodname="SingleHandHoldAndFiveSecondFreeHandJitter" classname="ClimberTests" runstate="Runnable" seed="26408713" result="Passed" start-time="2026-11-10 07:40:43Z" end-time="2026-11-10 07:40:43Z" duration="0.105738" asserts="0">
+        <test-case id="1006" name="SingleHandHoldAndFiveSecondFreeHandJitter" fullname="ClimberTests.SingleHandHoldAndFiveSecondFreeHandJitter" methodname="SingleHandHoldAndFiveSecondFreeHandJitter" classname="ClimberTests" runstate="Runnable" seed="542161737" result="Passed" start-time="2026-11-10 08:09:36Z" end-time="2026-11-10 08:09:36Z" duration="0.104773" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
@@ -776,7 +773,7 @@ LAYER1_JITTER_SAMPLE phase=natural t=5.00 sleepL=False sleepR=False sleepT=False
 LAYER1_JITTER_SUMMARY phase=natural seconds=5 samples=250 sleepingSamples=0 valid=True relativeP2P_mm=(0.0000, 0.0000, 0.0000) arenaP2P_mm=(0.0000, 0.0000, 0.0000) relativeEnvelope_mm=0.0000 PD_vectorP2P_N=(0.000000, 0.000014, 0.000000) PD_magnitude_min_N=9.809994 PD_magnitude_max_N=9.810008 PD_magnitudeP2P_N=0.000014 peakConstraint_N=237.4279
 ]]></output>
         </test-case>
-        <test-case id="1007" name="StaticTopEdgeSideLayerArenaAndRotatedBox" fullname="ClimberTests.StaticTopEdgeSideLayerArenaAndRotatedBox" methodname="StaticTopEdgeSideLayerArenaAndRotatedBox" classname="ClimberTests" runstate="Runnable" seed="2042488796" result="Passed" start-time="2026-11-10 07:40:43Z" end-time="2026-11-10 07:40:43Z" duration="0.002485" asserts="0">
+        <test-case id="1007" name="StaticTopEdgeSideLayerArenaAndRotatedBox" fullname="ClimberTests.StaticTopEdgeSideLayerArenaAndRotatedBox" methodname="StaticTopEdgeSideLayerArenaAndRotatedBox" classname="ClimberTests" runstate="Runnable" seed="1856736441" result="Passed" start-time="2026-11-10 08:09:36Z" end-time="2026-11-10 08:09:36Z" duration="0.002835" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
@@ -784,19 +781,16 @@ LAYER1_JITTER_SUMMARY phase=natural seconds=5 samples=250 sleepingSamples=0 vali
         </test-case>
       </test-suite>
     </test-suite>
-    <test-suite type="Assembly" id="1040" name="ClimbLearning.Tests.dll" fullname="C:/dev/physai-project/Library/ScriptAssemblies/ClimbLearning.Tests.dll" runstate="Runnable" testcasecount="18" result="Failed" site="Child" start-time="2026-11-10 07:40:43Z" end-time="2026-11-10 07:40:49Z" duration="6.218915" total="18" passed="15" failed="3" inconclusive="0" skipped="0" asserts="0">
+    <test-suite type="Assembly" id="1040" name="ClimbLearning.Tests.dll" fullname="C:/dev/physai-project/Library/ScriptAssemblies/ClimbLearning.Tests.dll" runstate="Runnable" testcasecount="18" result="Passed" start-time="2026-11-10 08:09:36Z" end-time="2026-11-10 08:09:43Z" duration="7.572864" total="18" passed="18" failed="0" inconclusive="0" skipped="0" asserts="0">
       <properties>
-        <property name="_PID" value="190936" />
+        <property name="_PID" value="14676" />
         <property name="_APPDOMAIN" value="Unity Child Domain" />
         <property name="platform" value="PlayMode" />
         <property name="EditorOnly" value="False" />
       </properties>
-      <failure>
-        <message><![CDATA[One or more child tests had errors]]></message>
-      </failure>
-      <test-suite type="TestFixture" id="1031" name="ClimberAgentTests" fullname="ClimberAgentTests" classname="ClimberAgentTests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-11-10 07:40:43Z" end-time="2026-11-10 07:40:47Z" duration="4.379495" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <test-suite type="TestFixture" id="1031" name="ClimberAgentTests" fullname="ClimberAgentTests" classname="ClimberAgentTests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-11-10 08:09:36Z" end-time="2026-11-10 08:09:40Z" duration="4.379402" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
         <properties />
-        <test-case id="1038" name="AbsoluteTargetsMapActionWithoutAccumulation" fullname="ClimberAgentTests.AbsoluteTargetsMapActionWithoutAccumulation" methodname="AbsoluteTargetsMapActionWithoutAccumulation" classname="ClimberAgentTests" runstate="Runnable" seed="635756804" result="Passed" start-time="2026-11-10 07:40:43Z" end-time="2026-11-10 07:40:47Z" duration="4.304734" asserts="0">
+        <test-case id="1038" name="AbsoluteTargetsMapActionWithoutAccumulation" fullname="ClimberAgentTests.AbsoluteTargetsMapActionWithoutAccumulation" methodname="AbsoluteTargetsMapActionWithoutAccumulation" classname="ClimberAgentTests" runstate="Runnable" seed="1062819246" result="Passed" start-time="2026-11-10 08:09:36Z" end-time="2026-11-10 08:09:40Z" duration="4.302675" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
@@ -805,194 +799,212 @@ LAYER1_JITTER_SUMMARY phase=natural seconds=5 samples=250 sleepingSamples=0 vali
 Couldn't connect to trainer on port 5004 using API version 1.5.0. Will perform inference instead.
 ]]></output>
         </test-case>
-        <test-case id="1035" name="GrabCommandsAreStateIntentAndDeltaIntegratedOnlyOnce" fullname="ClimberAgentTests.GrabCommandsAreStateIntentAndDeltaIntegratedOnlyOnce" methodname="GrabCommandsAreStateIntentAndDeltaIntegratedOnlyOnce" classname="ClimberAgentTests" runstate="Runnable" seed="2082735022" result="Passed" start-time="2026-11-10 07:40:47Z" end-time="2026-11-10 07:40:47Z" duration="0.009657" asserts="0">
+        <test-case id="1035" name="GrabCommandsAreStateIntentAndDeltaIntegratedOnlyOnce" fullname="ClimberAgentTests.GrabCommandsAreStateIntentAndDeltaIntegratedOnlyOnce" methodname="GrabCommandsAreStateIntentAndDeltaIntegratedOnlyOnce" classname="ClimberAgentTests" runstate="Runnable" seed="79376196" result="Passed" start-time="2026-11-10 08:09:40Z" end-time="2026-11-10 08:09:40Z" duration="0.009111" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
-        <test-case id="1034" name="LocalObservationsDoNotLeakTranslationOrYaw" fullname="ClimberAgentTests.LocalObservationsDoNotLeakTranslationOrYaw" methodname="LocalObservationsDoNotLeakTranslationOrYaw" classname="ClimberAgentTests" runstate="Runnable" seed="127955276" result="Passed" start-time="2026-11-10 07:40:47Z" end-time="2026-11-10 07:40:47Z" duration="0.015813" asserts="0">
+        <test-case id="1034" name="LocalObservationsDoNotLeakTranslationOrYaw" fullname="ClimberAgentTests.LocalObservationsDoNotLeakTranslationOrYaw" methodname="LocalObservationsDoNotLeakTranslationOrYaw" classname="ClimberAgentTests" runstate="Runnable" seed="1151831117" result="Passed" start-time="2026-11-10 08:09:40Z" end-time="2026-11-10 08:09:40Z" duration="0.015731" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
-        <test-case id="1033" name="ObservationCountAndFiniteBounds" fullname="ClimberAgentTests.ObservationCountAndFiniteBounds" methodname="ObservationCountAndFiniteBounds" classname="ClimberAgentTests" runstate="Runnable" seed="1601884508" result="Passed" start-time="2026-11-10 07:40:47Z" end-time="2026-11-10 07:40:47Z" duration="0.007999" asserts="0">
+        <test-case id="1033" name="ObservationCountAndFiniteBounds" fullname="ClimberAgentTests.ObservationCountAndFiniteBounds" methodname="ObservationCountAndFiniteBounds" classname="ClimberAgentTests" runstate="Runnable" seed="1533060327" result="Passed" start-time="2026-11-10 08:09:40Z" end-time="2026-11-10 08:09:40Z" duration="0.009080" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
-        <test-case id="1032" name="ProjectionKeepsExistingTargetShell" fullname="ClimberAgentTests.ProjectionKeepsExistingTargetShell" methodname="ProjectionKeepsExistingTargetShell" classname="ClimberAgentTests" runstate="Runnable" seed="1328571792" result="Passed" start-time="2026-11-10 07:40:47Z" end-time="2026-11-10 07:40:47Z" duration="0.000410" asserts="0">
+        <test-case id="1032" name="ProjectionKeepsExistingTargetShell" fullname="ClimberAgentTests.ProjectionKeepsExistingTargetShell" methodname="ProjectionKeepsExistingTargetShell" classname="ClimberAgentTests" runstate="Runnable" seed="1759209520" result="Passed" start-time="2026-11-10 08:09:40Z" end-time="2026-11-10 08:09:40Z" duration="0.000372" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
-        <test-case id="1039" name="SmallAbsoluteActionMovesFreeHandAgainstGravity" fullname="ClimberAgentTests.SmallAbsoluteActionMovesFreeHandAgainstGravity" methodname="SmallAbsoluteActionMovesFreeHandAgainstGravity" classname="ClimberAgentTests" runstate="Runnable" seed="327227821" result="Passed" start-time="2026-11-10 07:40:47Z" end-time="2026-11-10 07:40:47Z" duration="0.021426" asserts="0">
+        <test-case id="1039" name="SmallAbsoluteActionMovesFreeHandAgainstGravity" fullname="ClimberAgentTests.SmallAbsoluteActionMovesFreeHandAgainstGravity" methodname="SmallAbsoluteActionMovesFreeHandAgainstGravity" classname="ClimberAgentTests" runstate="Runnable" seed="1400901785" result="Passed" start-time="2026-11-10 08:09:40Z" end-time="2026-11-10 08:09:40Z" duration="0.021178" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
-        <test-case id="1036" name="StableProgressCannotBeFarmedByStayingOrReturning" fullname="ClimberAgentTests.StableProgressCannotBeFarmedByStayingOrReturning" methodname="StableProgressCannotBeFarmedByStayingOrReturning" classname="ClimberAgentTests" runstate="Runnable" seed="580138984" result="Passed" start-time="2026-11-10 07:40:47Z" end-time="2026-11-10 07:40:47Z" duration="0.009640" asserts="0">
+        <test-case id="1036" name="StableProgressCannotBeFarmedByStayingOrReturning" fullname="ClimberAgentTests.StableProgressCannotBeFarmedByStayingOrReturning" methodname="StableProgressCannotBeFarmedByStayingOrReturning" classname="ClimberAgentTests" runstate="Runnable" seed="2050152800" result="Passed" start-time="2026-11-10 08:09:40Z" end-time="2026-11-10 08:09:40Z" duration="0.010759" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
-        <test-case id="1037" name="TargetModeDefaultsToIncremental" fullname="ClimberAgentTests.TargetModeDefaultsToIncremental" methodname="TargetModeDefaultsToIncremental" classname="ClimberAgentTests" runstate="Runnable" seed="734256461" result="Passed" start-time="2026-11-10 07:40:47Z" end-time="2026-11-10 07:40:47Z" duration="0.008255" asserts="0">
+        <test-case id="1037" name="TargetModeDefaultsToIncremental" fullname="ClimberAgentTests.TargetModeDefaultsToIncremental" methodname="TargetModeDefaultsToIncremental" classname="ClimberAgentTests" runstate="Runnable" seed="1966904384" result="Passed" start-time="2026-11-10 08:09:40Z" end-time="2026-11-10 08:09:40Z" duration="0.008875" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
       </test-suite>
-      <test-suite type="TestFixture" id="1020" name="ClimbSnapshotTests" fullname="ClimbSnapshotTests" classname="ClimbSnapshotTests" runstate="Runnable" testcasecount="10" result="Failed" site="Child" start-time="2026-11-10 07:40:47Z" end-time="2026-11-10 07:40:49Z" duration="1.838496" total="10" passed="7" failed="3" inconclusive="0" skipped="0" asserts="0">
+      <test-suite type="TestFixture" id="1020" name="ClimbSnapshotTests" fullname="ClimbSnapshotTests" classname="ClimbSnapshotTests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-11-10 08:09:40Z" end-time="2026-11-10 08:09:43Z" duration="3.192592" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
         <properties />
-        <failure>
-          <message><![CDATA[One or more child tests had errors]]></message>
-        </failure>
-        <test-case id="1023" name="CrossArenaStateRoundTrip" fullname="ClimbSnapshotTests.CrossArenaStateRoundTrip" methodname="CrossArenaStateRoundTrip" classname="ClimbSnapshotTests" runstate="Runnable" seed="1773463779" result="Failed" start-time="2026-11-10 07:40:47Z" end-time="2026-11-10 07:40:47Z" duration="0.038395" asserts="0">
-          <properties>
-            <property name="retryIteration" value="0" />
-            <property name="repeatIteration" value="0" />
-          </properties>
-          <failure>
-            <message><![CDATA[  free obs 302
-  Expected: less than or equal to 0.00200000009f
-  But was:  1.0f
-]]></message>
-            <stack-trace><![CDATA[at ClimbSnapshotTests.CrossArenaStateRoundTrip () [0x0012a] in C:\dev\physai-project\Assets\Tests\Learning\ClimbSnapshotTests.cs:126
-]]></stack-trace>
-          </failure>
-        </test-case>
-        <test-case id="1026" name="GripSemanticsSurviveRestore" fullname="ClimbSnapshotTests.GripSemanticsSurviveRestore" methodname="GripSemanticsSurviveRestore" classname="ClimbSnapshotTests" runstate="Runnable" seed="918623847" result="Passed" start-time="2026-11-10 07:40:47Z" end-time="2026-11-10 07:40:47Z" duration="0.030643" asserts="0">
+        <test-case id="1023" name="CrossArenaStateRoundTrip" fullname="ClimbSnapshotTests.CrossArenaStateRoundTrip" methodname="CrossArenaStateRoundTrip" classname="ClimbSnapshotTests" runstate="Runnable" seed="2127163320" result="Passed" start-time="2026-11-10 08:09:40Z" end-time="2026-11-10 08:09:40Z" duration="0.035580" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
-        <test-case id="1024" name="InvalidSnapshotsAreRejectedWithoutSideEffects" fullname="ClimbSnapshotTests.InvalidSnapshotsAreRejectedWithoutSideEffects" methodname="InvalidSnapshotsAreRejectedWithoutSideEffects" classname="ClimbSnapshotTests" runstate="Runnable" seed="1205832752" result="Passed" start-time="2026-11-10 07:40:47Z" end-time="2026-11-10 07:40:47Z" duration="0.028000" asserts="0">
+        <test-case id="1026" name="GripSemanticsSurviveRestore" fullname="ClimbSnapshotTests.GripSemanticsSurviveRestore" methodname="GripSemanticsSurviveRestore" classname="ClimbSnapshotTests" runstate="Runnable" seed="1809530222" result="Passed" start-time="2026-11-10 08:09:40Z" end-time="2026-11-10 08:09:40Z" duration="0.025933" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
-        <test-case id="1028" name="NormalResetAfterSnapshotIsUnchanged" fullname="ClimbSnapshotTests.NormalResetAfterSnapshotIsUnchanged" methodname="NormalResetAfterSnapshotIsUnchanged" classname="ClimbSnapshotTests" runstate="Runnable" seed="448965587" result="Failed" start-time="2026-11-10 07:40:47Z" end-time="2026-11-10 07:40:47Z" duration="0.020518" asserts="0">
-          <properties>
-            <property name="retryIteration" value="0" />
-            <property name="repeatIteration" value="0" />
-          </properties>
-          <failure>
-            <message><![CDATA[  obs 302
-  Expected: less than or equal to 9.99999975E-05f
-  But was:  1.0f
-]]></message>
-            <stack-trace><![CDATA[at ClimbSnapshotTests.NormalResetAfterSnapshotIsUnchanged () [0x000c2] in C:\dev\physai-project\Assets\Tests\Learning\ClimbSnapshotTests.cs:200
-]]></stack-trace>
-          </failure>
-        </test-case>
-        <test-case id="1025" name="PdForceMatchesAfterRestore" fullname="ClimbSnapshotTests.PdForceMatchesAfterRestore" methodname="PdForceMatchesAfterRestore" classname="ClimbSnapshotTests" runstate="Runnable" seed="174024844" result="Passed" start-time="2026-11-10 07:40:47Z" end-time="2026-11-10 07:40:47Z" duration="0.014531" asserts="0">
+        <test-case id="1024" name="InvalidSnapshotsAreRejectedWithoutSideEffects" fullname="ClimbSnapshotTests.InvalidSnapshotsAreRejectedWithoutSideEffects" methodname="InvalidSnapshotsAreRejectedWithoutSideEffects" classname="ClimbSnapshotTests" runstate="Runnable" seed="313671764" result="Passed" start-time="2026-11-10 08:09:40Z" end-time="2026-11-10 08:09:40Z" duration="0.027370" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
-        <test-case id="1027" name="RewardLedgerIsRestored" fullname="ClimbSnapshotTests.RewardLedgerIsRestored" methodname="RewardLedgerIsRestored" classname="ClimbSnapshotTests" runstate="Runnable" seed="1740569165" result="Passed" start-time="2026-11-10 07:40:47Z" end-time="2026-11-10 07:40:47Z" duration="0.022062" asserts="0">
+        <test-case id="1028" name="NormalResetAfterSnapshotIsUnchanged" fullname="ClimbSnapshotTests.NormalResetAfterSnapshotIsUnchanged" methodname="NormalResetAfterSnapshotIsUnchanged" classname="ClimbSnapshotTests" runstate="Runnable" seed="925481055" result="Passed" start-time="2026-11-10 08:09:40Z" end-time="2026-11-10 08:09:40Z" duration="0.020843" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
-        <test-case id="1022" name="SameArenaStateRoundTrip" fullname="ClimbSnapshotTests.SameArenaStateRoundTrip" methodname="SameArenaStateRoundTrip" classname="ClimbSnapshotTests" runstate="Runnable" seed="579640422" result="Passed" start-time="2026-11-10 07:40:47Z" end-time="2026-11-10 07:40:47Z" duration="0.015273" asserts="0">
+        <test-case id="1025" name="PdForceMatchesAfterRestore" fullname="ClimbSnapshotTests.PdForceMatchesAfterRestore" methodname="PdForceMatchesAfterRestore" classname="ClimbSnapshotTests" runstate="Runnable" seed="1756667575" result="Passed" start-time="2026-11-10 08:09:40Z" end-time="2026-11-10 08:09:40Z" duration="0.013811" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
-        <test-case id="1021" name="SerializationRoundTripIsBitwise" fullname="ClimbSnapshotTests.SerializationRoundTripIsBitwise" methodname="SerializationRoundTripIsBitwise" classname="ClimbSnapshotTests" runstate="Runnable" seed="930567256" result="Passed" start-time="2026-11-10 07:40:47Z" end-time="2026-11-10 07:40:47Z" duration="0.013408" asserts="0">
+        <test-case id="1027" name="RewardLedgerIsRestored" fullname="ClimbSnapshotTests.RewardLedgerIsRestored" methodname="RewardLedgerIsRestored" classname="ClimbSnapshotTests" runstate="Runnable" seed="936487093" result="Passed" start-time="2026-11-10 08:09:40Z" end-time="2026-11-10 08:09:40Z" duration="0.020681" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
-        <test-case id="1029" name="SpawnScheduleAndLibrarySampling" fullname="ClimbSnapshotTests.SpawnScheduleAndLibrarySampling" methodname="SpawnScheduleAndLibrarySampling" classname="ClimbSnapshotTests" runstate="Runnable" seed="1052663742" result="Passed" start-time="2026-11-10 07:40:47Z" end-time="2026-11-10 07:40:47Z" duration="0.013702" asserts="0">
+        <test-case id="1022" name="SameArenaStateRoundTrip" fullname="ClimbSnapshotTests.SameArenaStateRoundTrip" methodname="SameArenaStateRoundTrip" classname="ClimbSnapshotTests" runstate="Runnable" seed="1886251635" result="Passed" start-time="2026-11-10 08:09:40Z" end-time="2026-11-10 08:09:40Z" duration="0.015169" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
-        <test-case id="1030" name="StageSnapshotsContinueConsistently" fullname="ClimbSnapshotTests.StageSnapshotsContinueConsistently" methodname="StageSnapshotsContinueConsistently" classname="ClimbSnapshotTests" runstate="Runnable" seed="2131262679" result="Failed" start-time="2026-11-10 07:40:47Z" end-time="2026-11-10 07:40:49Z" duration="1.637907" asserts="0">
+        <test-case id="1021" name="SerializationRoundTripIsBitwise" fullname="ClimbSnapshotTests.SerializationRoundTripIsBitwise" methodname="SerializationRoundTripIsBitwise" classname="ClimbSnapshotTests" runstate="Runnable" seed="808149677" result="Passed" start-time="2026-11-10 08:09:40Z" end-time="2026-11-10 08:09:40Z" duration="0.012978" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
-          <failure>
-            <message><![CDATA[  labeled snapshots for S1a
-  Expected: greater than or equal to 10
-  But was:  8
-]]></message>
-            <stack-trace><![CDATA[at ClimbSnapshotTests.StageSnapshotsContinueConsistently () [0x00321] in C:\dev\physai-project\Assets\Tests\Learning\ClimbSnapshotTests.cs:286
-]]></stack-trace>
-          </failure>
-          <output><![CDATA[BOX_SMOKE_FAILURE arena=smoke-stairs stairs=True stage=Press tier=1 seconds=60.001 torso=(0.00444, 0.40000, -0.24629) velocity=(0.00000, 0.00000, 0.00000) L=(-0.24117, 1.13910, 0.05731) Lv=(0.00000, 0.00000, 0.00000) Lt=(0.00000, 0.47000, 0.25000) Lgrip=False Lreject=NoContact R=(0.34736, 0.93910, -0.05945) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, 0.27000, 0.25000) Rgrip=False Rreject=NoContact
-BOX_SMOKE_FAILURE arena=smoke-stairs stairs=True stage=Press tier=1 seconds=60.001 torso=(-0.00248, 0.40000, -0.24955) velocity=(0.00000, 0.00000, 0.00000) L=(-0.34291, 1.13910, -0.05823) Lv=(0.00000, 0.00000, 0.00000) Lt=(0.00000, 0.47000, 0.25000) Lgrip=False Lreject=NoContact R=(0.24710, 0.93910, 0.05080) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, 0.27000, 0.25000) Rgrip=False Rreject=NoContact
-BOX_SMOKE_FAILURE arena=smoke-stairs stairs=True stage=Press tier=1 seconds=60.001 torso=(-0.00025, 0.40000, -0.23963) velocity=(0.00000, 0.00000, 0.00000) L=(-0.25297, 1.13910, 0.05808) Lv=(0.00000, 0.00000, 0.00000) Lt=(0.00000, 0.47000, 0.25000) Lgrip=False Lreject=NoContact R=(0.33816, 0.93910, -0.04473) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, 0.27000, 0.25000) Rgrip=False Rreject=NoContact
-BOX_SMOKE_FAILURE arena=smoke-stairs stairs=True stage=Press tier=1 seconds=60.001 torso=(-0.00209, 0.40000, -0.23789) velocity=(0.00000, 0.00000, 0.00000) L=(-0.33531, 1.13910, -0.03427) Lv=(0.00000, 0.00000, 0.00000) Lt=(0.00000, 0.47000, 0.25000) Lgrip=False Lreject=NoContact R=(0.25829, 0.93910, 0.05315) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, 0.27000, 0.25000) Rgrip=False Rreject=NoContact
+        </test-case>
+        <test-case id="1029" name="SpawnScheduleAndLibrarySampling" fullname="ClimbSnapshotTests.SpawnScheduleAndLibrarySampling" methodname="SpawnScheduleAndLibrarySampling" classname="ClimbSnapshotTests" runstate="Runnable" seed="238392554" result="Passed" start-time="2026-11-10 08:09:40Z" end-time="2026-11-10 08:09:40Z" duration="0.014310" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1030" name="StageSnapshotsContinueConsistently" fullname="ClimbSnapshotTests.StageSnapshotsContinueConsistently" methodname="StageSnapshotsContinueConsistently" classname="ClimbSnapshotTests" runstate="Runnable" seed="1429984193" result="Passed" start-time="2026-11-10 08:09:40Z" end-time="2026-11-10 08:09:43Z" duration="3.002066" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[CLIMB_SNAPSHOT_CONSISTENCY
+t0-15 S1a long=9.48E-005 eps=9.48E-005 event@-1 outcome=True
+t0-20 S1a long=7.08E-005 eps=7.26E-005 event@-1 outcome=True
+t1-20 S1a long=6.75E-005 eps=6.94E-005 event@-1 outcome=True
+t2-20 S1a long=5.83E-005 eps=6.02E-005 event@-1 outcome=True
+t3-20 S1a long=7.58E-005 eps=7.77E-005 event@-1 outcome=True
+t5-15 S1a long=8.63E-005 eps=8.63E-005 event@-1 outcome=True
+t5-20 S1a long=6.93E-005 eps=7.12E-005 event@-1 outcome=True
+t7-15 S1a long=9.79E-005 eps=9.98E-005 event@-1 outcome=True
+t7-20 S1a long=7.38E-005 eps=7.57E-005 event@-1 outcome=True
+t9-15 S1a long=8.54E-005 eps=8.54E-005 event@-1 outcome=True
+t0-30 S1b long=4.27E-005 eps=4.27E-005 event@-1 outcome=True
+t1-25 S1b long=4.72E-005 eps=4.72E-005 event@-1 outcome=True
+t1-45 S1b long=4.72E-005 eps=4.72E-005 event@-1 outcome=True
+t2-50 S1b long=4.50E-005 eps=4.78E-005 event@-1 outcome=True
+t3-40 S1b long=4.77E-005 eps=4.77E-005 event@-1 outcome=True
+t4-50 S1b long=4.54E-005 eps=4.67E-005 event@-1 outcome=True
+t5-45 S1b long=5.05E-005 eps=5.05E-005 event@-1 outcome=True
+t6-50 S1b long=4.47E-005 eps=4.33E-005 event@-1 outcome=True
+t7-45 S1b long=4.39E-005 eps=4.39E-005 event@-1 outcome=True
+t8-45 S1b long=3.53E-005 eps=3.59E-005 event@-1 outcome=True
+t0-50 S2 long=4.08E-005 eps=4.27E-005 event@-1 outcome=True
+t1-50 S2 long=4.72E-005 eps=4.72E-005 event@-1 outcome=True
+t2-55 S2 long=4.73E-005 eps=4.50E-005 event@-1 outcome=True
+t3-50 S2 long=4.77E-005 eps=4.77E-005 event@-1 outcome=True
+t4-55 S2 long=4.54E-005 eps=4.54E-005 event@-1 outcome=True
+t5-50 S2 long=4.92E-005 eps=4.92E-005 event@-1 outcome=True
+t6-55 S2 long=4.47E-005 eps=4.47E-005 event@-1 outcome=True
+t7-50 S2 long=4.39E-005 eps=4.39E-005 event@-1 outcome=True
+t8-55 S2 long=3.53E-005 eps=3.53E-005 event@-1 outcome=True
+t9-55 S2 long=5.04E-005 eps=5.04E-005 event@-1 outcome=True
+t0-100 S3 long=4.08E-005 eps=4.27E-005 event@-1 outcome=True
+t0-165 S3 long=2.51E-005 eps=2.70E-005 event@-1 outcome=True
+t1-160 S3 long=6.96E-005 eps=7.15E-005 event@-1 outcome=True
+t3-100 S3 long=4.77E-005 eps=4.77E-005 event@-1 outcome=True
+t3-165 S3 long=2.64E-005 eps=2.64E-005 event@-1 outcome=True
+t5-100 S3 long=2.24E-004 eps=2.24E-004 event@-1 outcome=True
+t6-105 S3 long=3.03E-004 eps=3.07E-004 event@-1 outcome=True
+t7-100 S3 long=4.47E-005 eps=4.66E-005 event@-1 outcome=True
+t8-100 S3 long=3.53E-005 eps=3.34E-005 event@-1 outcome=True
+t8-165 S3 long=5.12E-006 eps=5.62E-006 event@-1 outcome=True
+noop t0-15 rerun=0.00E+000 long=1.49E-007
+noop t0-20 rerun=0.00E+000 long=1.33E-007
+noop t0-30 rerun=9.09E-012 long=1.33E-007
+noop t0-35 rerun=1.82E-012 long=1.33E-007
+noop t0-50 rerun=0.00E+000 long=1.33E-007
+noop t0-55 rerun=1.11E-009 long=1.33E-007
+noop t0-100 rerun=1.12E-008 long=1.33E-007
+noop t0-105 rerun=3.18E-008 long=2.80E-004
 ]]></output>
         </test-case>
       </test-suite>
     </test-suite>
-    <test-suite type="Assembly" id="1073" name="Structures.PlayModeTests.dll" fullname="C:/dev/physai-project/Library/ScriptAssemblies/Structures.PlayModeTests.dll" runstate="Runnable" testcasecount="27" result="Passed" start-time="2026-11-10 07:40:49Z" end-time="2026-11-10 07:40:51Z" duration="1.869604" total="27" passed="27" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <test-suite type="Assembly" id="1073" name="Structures.PlayModeTests.dll" fullname="C:/dev/physai-project/Library/ScriptAssemblies/Structures.PlayModeTests.dll" runstate="Runnable" testcasecount="27" result="Passed" start-time="2026-11-10 08:09:43Z" end-time="2026-11-10 08:09:45Z" duration="1.929032" total="27" passed="27" failed="0" inconclusive="0" skipped="0" asserts="0">
       <properties>
-        <property name="_PID" value="190936" />
+        <property name="_PID" value="14676" />
         <property name="_APPDOMAIN" value="Unity Child Domain" />
         <property name="platform" value="PlayMode" />
         <property name="EditorOnly" value="False" />
       </properties>
-      <test-suite type="TestFixture" id="1041" name="BoxStackTests" fullname="BoxStackTests" classname="BoxStackTests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-11-10 07:40:49Z" end-time="2026-11-10 07:40:50Z" duration="0.708905" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <test-suite type="TestFixture" id="1041" name="BoxStackTests" fullname="BoxStackTests" classname="BoxStackTests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-11-10 08:09:43Z" end-time="2026-11-10 08:09:44Z" duration="0.712658" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
         <properties />
-        <test-suite type="ParameterizedMethod" id="1051" name="ClearanceRequiresWholeHandWidth" fullname="BoxStackTests.ClearanceRequiresWholeHandWidth" classname="BoxStackTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-11-10 07:40:49Z" end-time="2026-11-10 07:40:49Z" duration="0.002014" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <test-suite type="ParameterizedMethod" id="1051" name="ClearanceRequiresWholeHandWidth" fullname="BoxStackTests.ClearanceRequiresWholeHandWidth" classname="BoxStackTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-11-10 08:09:43Z" end-time="2026-11-10 08:09:43Z" duration="0.002116" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
           <properties />
-          <test-case id="1048" name="ClearanceRequiresWholeHandWidth(0.0f,False)" fullname="BoxStackTests.ClearanceRequiresWholeHandWidth(0.0f,False)" methodname="ClearanceRequiresWholeHandWidth" classname="BoxStackTests" runstate="Runnable" seed="1518863974" result="Passed" start-time="2026-11-10 07:40:49Z" end-time="2026-11-10 07:40:49Z" duration="0.001214" asserts="0">
+          <test-case id="1048" name="ClearanceRequiresWholeHandWidth(0.0f,False)" fullname="BoxStackTests.ClearanceRequiresWholeHandWidth(0.0f,False)" methodname="ClearanceRequiresWholeHandWidth" classname="BoxStackTests" runstate="Runnable" seed="1046348691" result="Passed" start-time="2026-11-10 08:09:43Z" end-time="2026-11-10 08:09:43Z" duration="0.001337" asserts="0">
             <properties>
               <property name="retryIteration" value="0" />
               <property name="repeatIteration" value="0" />
             </properties>
           </test-case>
-          <test-case id="1049" name="ClearanceRequiresWholeHandWidth(0.12f,False)" fullname="BoxStackTests.ClearanceRequiresWholeHandWidth(0.12f,False)" methodname="ClearanceRequiresWholeHandWidth" classname="BoxStackTests" runstate="Runnable" seed="1914139910" result="Passed" start-time="2026-11-10 07:40:49Z" end-time="2026-11-10 07:40:49Z" duration="0.000274" asserts="0">
+          <test-case id="1049" name="ClearanceRequiresWholeHandWidth(0.12f,False)" fullname="BoxStackTests.ClearanceRequiresWholeHandWidth(0.12f,False)" methodname="ClearanceRequiresWholeHandWidth" classname="BoxStackTests" runstate="Runnable" seed="1792685934" result="Passed" start-time="2026-11-10 08:09:43Z" end-time="2026-11-10 08:09:43Z" duration="0.000267" asserts="0">
             <properties>
               <property name="retryIteration" value="0" />
               <property name="repeatIteration" value="0" />
             </properties>
           </test-case>
-          <test-case id="1050" name="ClearanceRequiresWholeHandWidth(0.3f,True)" fullname="BoxStackTests.ClearanceRequiresWholeHandWidth(0.3f,True)" methodname="ClearanceRequiresWholeHandWidth" classname="BoxStackTests" runstate="Runnable" seed="1636716015" result="Passed" start-time="2026-11-10 07:40:49Z" end-time="2026-11-10 07:40:49Z" duration="0.000204" asserts="0">
+          <test-case id="1050" name="ClearanceRequiresWholeHandWidth(0.3f,True)" fullname="BoxStackTests.ClearanceRequiresWholeHandWidth(0.3f,True)" methodname="ClearanceRequiresWholeHandWidth" classname="BoxStackTests" runstate="Runnable" seed="23232821" result="Passed" start-time="2026-11-10 08:09:43Z" end-time="2026-11-10 08:09:43Z" duration="0.000203" asserts="0">
             <properties>
               <property name="retryIteration" value="0" />
               <property name="repeatIteration" value="0" />
             </properties>
           </test-case>
         </test-suite>
-        <test-case id="1044" name="CoarseReachRejectsTwoMetreVerticalFaceWithoutScript" fullname="BoxStackTests.CoarseReachRejectsTwoMetreVerticalFaceWithoutScript" methodname="CoarseReachRejectsTwoMetreVerticalFaceWithoutScript" classname="BoxStackTests" runstate="Runnable" seed="293961899" result="Passed" start-time="2026-11-10 07:40:49Z" end-time="2026-11-10 07:40:49Z" duration="0.000196" asserts="0">
+        <test-case id="1044" name="CoarseReachRejectsTwoMetreVerticalFaceWithoutScript" fullname="BoxStackTests.CoarseReachRejectsTwoMetreVerticalFaceWithoutScript" methodname="CoarseReachRejectsTwoMetreVerticalFaceWithoutScript" classname="BoxStackTests" runstate="Runnable" seed="413406578" result="Passed" start-time="2026-11-10 08:09:43Z" end-time="2026-11-10 08:09:43Z" duration="0.000216" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
-        <test-case id="1045" name="CoveredContactRejectedButExposedPartAccepted" fullname="BoxStackTests.CoveredContactRejectedButExposedPartAccepted" methodname="CoveredContactRejectedButExposedPartAccepted" classname="BoxStackTests" runstate="Runnable" seed="1472183492" result="Passed" start-time="2026-11-10 07:40:49Z" end-time="2026-11-10 07:40:49Z" duration="0.001059" asserts="0">
+        <test-case id="1045" name="CoveredContactRejectedButExposedPartAccepted" fullname="BoxStackTests.CoveredContactRejectedButExposedPartAccepted" methodname="CoveredContactRejectedButExposedPartAccepted" classname="BoxStackTests" runstate="Runnable" seed="661603109" result="Passed" start-time="2026-11-10 08:09:43Z" end-time="2026-11-10 08:09:43Z" duration="0.001261" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
-        <test-case id="1042" name="DynamicSettlementRoundTripAndStaticRuntimeLoad" fullname="BoxStackTests.DynamicSettlementRoundTripAndStaticRuntimeLoad" methodname="DynamicSettlementRoundTripAndStaticRuntimeLoad" classname="BoxStackTests" runstate="Runnable" seed="1147029076" result="Passed" start-time="2026-11-10 07:40:49Z" end-time="2026-11-10 07:40:49Z" duration="0.034963" asserts="0">
+        <test-case id="1042" name="DynamicSettlementRoundTripAndStaticRuntimeLoad" fullname="BoxStackTests.DynamicSettlementRoundTripAndStaticRuntimeLoad" methodname="DynamicSettlementRoundTripAndStaticRuntimeLoad" classname="BoxStackTests" runstate="Runnable" seed="285814998" result="Passed" start-time="2026-11-10 08:09:43Z" end-time="2026-11-10 08:09:43Z" duration="0.036652" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
-        <test-case id="1052" name="SavedBoxSmokeScenesReloadAndFinish" fullname="BoxStackTests.SavedBoxSmokeScenesReloadAndFinish" methodname="SavedBoxSmokeScenesReloadAndFinish" classname="BoxStackTests" runstate="Runnable" seed="1860486845" result="Passed" start-time="2026-11-10 07:40:49Z" end-time="2026-11-10 07:40:49Z" duration="0.311768" asserts="0">
+        <test-case id="1052" name="SavedBoxSmokeScenesReloadAndFinish" fullname="BoxStackTests.SavedBoxSmokeScenesReloadAndFinish" methodname="SavedBoxSmokeScenesReloadAndFinish" classname="BoxStackTests" runstate="Runnable" seed="1528942665" result="Passed" start-time="2026-11-10 08:09:43Z" end-time="2026-11-10 08:09:44Z" duration="0.312737" asserts="0">
           <properties>
             <property name="_JOINTYPE" value="UnityCombinatorial" />
             <property name="retryIteration" value="0" />
@@ -1004,7 +1016,7 @@ BOX_SMOKE_PASS arena=smoke-stairs stairs=True stage=Arrived tier=1 seconds=5.060
 BOX_SAVED_SCENE Steps arena=smoke-stairs stairs=True stage=Arrived tier=1 seconds=5.060 torso=(0.00000, 1.45054, 1.12833) velocity=(-0.00001, 0.00013, -0.00244) L=(-0.30002, 1.10854, 0.61627) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00003, -0.67645, -0.51471) Lgrip=True Lreject=TopOrEdge R=(0.29996, 1.10854, 0.61627) Rv=(0.00000, 0.00000, 0.00000) Rt=(-0.00003, -0.67645, -0.51469) Rgrip=True Rreject=TopOrEdge
 ]]></output>
         </test-case>
-        <test-case id="1046" name="SingleBoxSmoke16Arenas" fullname="BoxStackTests.SingleBoxSmoke16Arenas" methodname="SingleBoxSmoke16Arenas" classname="BoxStackTests" runstate="Runnable" seed="521514351" result="Passed" start-time="2026-11-10 07:40:49Z" end-time="2026-11-10 07:40:50Z" duration="0.146231" asserts="0">
+        <test-case id="1046" name="SingleBoxSmoke16Arenas" fullname="BoxStackTests.SingleBoxSmoke16Arenas" methodname="SingleBoxSmoke16Arenas" classname="BoxStackTests" runstate="Runnable" seed="1155559539" result="Passed" start-time="2026-11-10 08:09:44Z" end-time="2026-11-10 08:09:44Z" duration="0.147611" asserts="0">
           <properties>
             <property name="_JOINTYPE" value="UnityCombinatorial" />
             <property name="retryIteration" value="0" />
@@ -1044,7 +1056,7 @@ BOX_SMOKE_RESULT arena=BoxArena_14 stairs=False stage=Arrived tier=0 seconds=2.6
 BOX_SMOKE_RESULT arena=BoxArena_15 stairs=False stage=Arrived tier=0 seconds=2.600 torso=(0.00006, 1.45081, 0.52854) velocity=(0.00011, 0.00013, -0.00238) L=(-0.30001, 1.10863, 0.01682) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67667, -0.51441) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10857, 0.01672) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67665, -0.51444) Rgrip=True Rreject=TopOrEdge
 ]]></output>
         </test-case>
-        <test-case id="1047" name="TwoStepSmoke16Arenas" fullname="BoxStackTests.TwoStepSmoke16Arenas" methodname="TwoStepSmoke16Arenas" classname="BoxStackTests" runstate="Runnable" seed="1821793528" result="Passed" start-time="2026-11-10 07:40:50Z" end-time="2026-11-10 07:40:50Z" duration="0.204868" asserts="0">
+        <test-case id="1047" name="TwoStepSmoke16Arenas" fullname="BoxStackTests.TwoStepSmoke16Arenas" methodname="TwoStepSmoke16Arenas" classname="BoxStackTests" runstate="Runnable" seed="1595751474" result="Passed" start-time="2026-11-10 08:09:44Z" end-time="2026-11-10 08:09:44Z" duration="0.204874" asserts="0">
           <properties>
             <property name="_JOINTYPE" value="UnityCombinatorial" />
             <property name="retryIteration" value="0" />
@@ -1084,37 +1096,37 @@ BOX_SMOKE_RESULT arena=BoxArena_14 stairs=True stage=Arrived tier=1 seconds=5.02
 BOX_SMOKE_RESULT arena=BoxArena_15 stairs=True stage=Arrived tier=1 seconds=5.020 torso=(0.00005, 1.45056, 1.12834) velocity=(0.00015, 0.00013, -0.00229) L=(-0.30001, 1.10862, 0.61629) Lv=(0.00000, 0.00000, 0.00000) Lt=(-0.00001, -0.67642, -0.51473) Lgrip=True Lreject=TopOrEdge R=(0.30000, 1.10854, 0.61624) Rv=(0.00000, 0.00000, 0.00000) Rt=(0.00000, -0.67644, -0.51472) Rgrip=True Rreject=TopOrEdge
 ]]></output>
         </test-case>
-        <test-case id="1043" name="UnsupportedBoxCollapsesAndCannotSave" fullname="BoxStackTests.UnsupportedBoxCollapsesAndCannotSave" methodname="UnsupportedBoxCollapsesAndCannotSave" classname="BoxStackTests" runstate="Runnable" seed="1114300164" result="Passed" start-time="2026-11-10 07:40:50Z" end-time="2026-11-10 07:40:50Z" duration="0.006391" asserts="0">
+        <test-case id="1043" name="UnsupportedBoxCollapsesAndCannotSave" fullname="BoxStackTests.UnsupportedBoxCollapsesAndCannotSave" methodname="UnsupportedBoxCollapsesAndCannotSave" classname="BoxStackTests" runstate="Runnable" seed="1275417885" result="Passed" start-time="2026-11-10 08:09:44Z" end-time="2026-11-10 08:09:44Z" duration="0.005761" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
       </test-suite>
-      <test-suite type="TestFixture" id="1053" name="StaticStructureTests" fullname="StaticStructureTests" classname="StaticStructureTests" runstate="Runnable" testcasecount="17" result="Passed" start-time="2026-11-10 07:40:50Z" end-time="2026-11-10 07:40:51Z" duration="1.158889" total="17" passed="17" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <test-suite type="TestFixture" id="1053" name="StaticStructureTests" fullname="StaticStructureTests" classname="StaticStructureTests" runstate="Runnable" testcasecount="17" result="Passed" start-time="2026-11-10 08:09:44Z" end-time="2026-11-10 08:09:45Z" duration="1.215049" total="17" passed="17" failed="0" inconclusive="0" skipped="0" asserts="0">
         <properties />
-        <test-suite type="ParameterizedMethod" id="1057" name="DeferredMotionIsRejected" fullname="StaticStructureTests.DeferredMotionIsRejected" classname="StaticStructureTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-11-10 07:40:50Z" end-time="2026-11-10 07:40:50Z" duration="0.005732" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <test-suite type="ParameterizedMethod" id="1057" name="DeferredMotionIsRejected" fullname="StaticStructureTests.DeferredMotionIsRejected" classname="StaticStructureTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-11-10 08:09:44Z" end-time="2026-11-10 08:09:44Z" duration="0.006761" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
           <properties />
-          <test-case id="1055" name="DeferredMotionIsRejected(&quot;dynamic&quot;)" fullname="StaticStructureTests.DeferredMotionIsRejected(&quot;dynamic&quot;)" methodname="DeferredMotionIsRejected" classname="StaticStructureTests" runstate="Runnable" seed="1446131307" result="Passed" start-time="2026-11-10 07:40:50Z" end-time="2026-11-10 07:40:50Z" duration="0.003800" asserts="0">
+          <test-case id="1055" name="DeferredMotionIsRejected(&quot;dynamic&quot;)" fullname="StaticStructureTests.DeferredMotionIsRejected(&quot;dynamic&quot;)" methodname="DeferredMotionIsRejected" classname="StaticStructureTests" runstate="Runnable" seed="118563649" result="Passed" start-time="2026-11-10 08:09:44Z" end-time="2026-11-10 08:09:44Z" duration="0.004424" asserts="0">
             <properties>
               <property name="retryIteration" value="0" />
               <property name="repeatIteration" value="0" />
             </properties>
           </test-case>
-          <test-case id="1056" name="DeferredMotionIsRejected(&quot;kinematic&quot;)" fullname="StaticStructureTests.DeferredMotionIsRejected(&quot;kinematic&quot;)" methodname="DeferredMotionIsRejected" classname="StaticStructureTests" runstate="Runnable" seed="965026434" result="Passed" start-time="2026-11-10 07:40:50Z" end-time="2026-11-10 07:40:50Z" duration="0.001634" asserts="0">
+          <test-case id="1056" name="DeferredMotionIsRejected(&quot;kinematic&quot;)" fullname="StaticStructureTests.DeferredMotionIsRejected(&quot;kinematic&quot;)" methodname="DeferredMotionIsRejected" classname="StaticStructureTests" runstate="Runnable" seed="16771924" result="Passed" start-time="2026-11-10 08:09:44Z" end-time="2026-11-10 08:09:44Z" duration="0.001739" asserts="0">
             <properties>
               <property name="retryIteration" value="0" />
               <property name="repeatIteration" value="0" />
             </properties>
           </test-case>
         </test-suite>
-        <test-case id="1068" name="DifficultyBandsAreSeededWithoutScriptSuccessFiltering" fullname="StaticStructureTests.DifficultyBandsAreSeededWithoutScriptSuccessFiltering" methodname="DifficultyBandsAreSeededWithoutScriptSuccessFiltering" classname="StaticStructureTests" runstate="Runnable" seed="1117639128" result="Passed" start-time="2026-11-10 07:40:50Z" end-time="2026-11-10 07:40:50Z" duration="0.487386" asserts="0">
+        <test-case id="1068" name="DifficultyBandsAreSeededWithoutScriptSuccessFiltering" fullname="StaticStructureTests.DifficultyBandsAreSeededWithoutScriptSuccessFiltering" methodname="DifficultyBandsAreSeededWithoutScriptSuccessFiltering" classname="StaticStructureTests" runstate="Runnable" seed="428512721" result="Passed" start-time="2026-11-10 08:09:44Z" end-time="2026-11-10 08:09:45Z" duration="0.540905" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
-        <test-case id="1072" name="GeneratedDemoReloadsWithPersistentMaterialsAndClimbs" fullname="StaticStructureTests.GeneratedDemoReloadsWithPersistentMaterialsAndClimbs" methodname="GeneratedDemoReloadsWithPersistentMaterialsAndClimbs" classname="StaticStructureTests" runstate="Runnable" seed="936428046" result="Passed" start-time="2026-11-10 07:40:50Z" end-time="2026-11-10 07:40:51Z" duration="0.300629" asserts="0">
+        <test-case id="1072" name="GeneratedDemoReloadsWithPersistentMaterialsAndClimbs" fullname="StaticStructureTests.GeneratedDemoReloadsWithPersistentMaterialsAndClimbs" methodname="GeneratedDemoReloadsWithPersistentMaterialsAndClimbs" classname="StaticStructureTests" runstate="Runnable" seed="1457279453" result="Passed" start-time="2026-11-10 08:09:45Z" end-time="2026-11-10 08:09:45Z" duration="0.298150" asserts="0">
           <properties>
             <property name="_JOINTYPE" value="UnityCombinatorial" />
             <property name="retryIteration" value="0" />
@@ -1128,7 +1140,7 @@ LAYER1_ARENA_PASS wall-0 handovers=3 seconds=7.32 torso=(0.00, 2.45, 0.53) peakN
 STRUCTURE_SAVED_DEMO_PASS seconds=7.320
 ]]></output>
         </test-case>
-        <test-case id="1070" name="GeneratorRetainsScriptFailureCellsAndDoesNotAttachControllers" fullname="StaticStructureTests.GeneratorRetainsScriptFailureCellsAndDoesNotAttachControllers" methodname="GeneratorRetainsScriptFailureCellsAndDoesNotAttachControllers" classname="StaticStructureTests" runstate="Runnable" seed="612432618" result="Passed" start-time="2026-11-10 07:40:51Z" end-time="2026-11-10 07:40:51Z" duration="0.014565" asserts="0">
+        <test-case id="1070" name="GeneratorRetainsScriptFailureCellsAndDoesNotAttachControllers" fullname="StaticStructureTests.GeneratorRetainsScriptFailureCellsAndDoesNotAttachControllers" methodname="GeneratorRetainsScriptFailureCellsAndDoesNotAttachControllers" classname="StaticStructureTests" runstate="Runnable" seed="1172023098" result="Passed" start-time="2026-11-10 08:09:45Z" end-time="2026-11-10 08:09:45Z" duration="0.016674" asserts="0">
           <properties>
             <property name="_JOINTYPE" value="UnityCombinatorial" />
             <property name="retryIteration" value="0" />
@@ -1139,64 +1151,64 @@ STRUCTURE_NO_SCRIPT_FILTER height=0.2 spacing=0.2 accepted=True
 STRUCTURE_NO_SCRIPT_FILTER height=0.237 spacing=0.413 accepted=True
 ]]></output>
         </test-case>
-        <test-suite type="ParameterizedMethod" id="1065" name="InvalidInputsAreRejected" fullname="StaticStructureTests.InvalidInputsAreRejected" classname="StaticStructureTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-11-10 07:40:51Z" end-time="2026-11-10 07:40:51Z" duration="0.013306" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <test-suite type="ParameterizedMethod" id="1065" name="InvalidInputsAreRejected" fullname="StaticStructureTests.InvalidInputsAreRejected" classname="StaticStructureTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-11-10 08:09:45Z" end-time="2026-11-10 08:09:45Z" duration="0.014404" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
           <properties />
-          <test-case id="1058" name="InvalidInputsAreRejected(&quot;duplicate&quot;)" fullname="StaticStructureTests.InvalidInputsAreRejected(&quot;duplicate&quot;)" methodname="InvalidInputsAreRejected" classname="StaticStructureTests" runstate="Runnable" seed="1365309016" result="Passed" start-time="2026-11-10 07:40:51Z" end-time="2026-11-10 07:40:51Z" duration="0.002166" asserts="0">
+          <test-case id="1058" name="InvalidInputsAreRejected(&quot;duplicate&quot;)" fullname="StaticStructureTests.InvalidInputsAreRejected(&quot;duplicate&quot;)" methodname="InvalidInputsAreRejected" classname="StaticStructureTests" runstate="Runnable" seed="1804937792" result="Passed" start-time="2026-11-10 08:09:45Z" end-time="2026-11-10 08:09:45Z" duration="0.002328" asserts="0">
             <properties>
               <property name="retryIteration" value="0" />
               <property name="repeatIteration" value="0" />
             </properties>
           </test-case>
-          <test-case id="1059" name="InvalidInputsAreRejected(&quot;size&quot;)" fullname="StaticStructureTests.InvalidInputsAreRejected(&quot;size&quot;)" methodname="InvalidInputsAreRejected" classname="StaticStructureTests" runstate="Runnable" seed="1869994068" result="Passed" start-time="2026-11-10 07:40:51Z" end-time="2026-11-10 07:40:51Z" duration="0.001748" asserts="0">
+          <test-case id="1059" name="InvalidInputsAreRejected(&quot;size&quot;)" fullname="StaticStructureTests.InvalidInputsAreRejected(&quot;size&quot;)" methodname="InvalidInputsAreRejected" classname="StaticStructureTests" runstate="Runnable" seed="1043606808" result="Passed" start-time="2026-11-10 08:09:45Z" end-time="2026-11-10 08:09:45Z" duration="0.002354" asserts="0">
             <properties>
               <property name="retryIteration" value="0" />
               <property name="repeatIteration" value="0" />
             </properties>
           </test-case>
-          <test-case id="1060" name="InvalidInputsAreRejected(&quot;material&quot;)" fullname="StaticStructureTests.InvalidInputsAreRejected(&quot;material&quot;)" methodname="InvalidInputsAreRejected" classname="StaticStructureTests" runstate="Runnable" seed="2076465856" result="Passed" start-time="2026-11-10 07:40:51Z" end-time="2026-11-10 07:40:51Z" duration="0.001524" asserts="0">
+          <test-case id="1060" name="InvalidInputsAreRejected(&quot;material&quot;)" fullname="StaticStructureTests.InvalidInputsAreRejected(&quot;material&quot;)" methodname="InvalidInputsAreRejected" classname="StaticStructureTests" runstate="Runnable" seed="1686281602" result="Passed" start-time="2026-11-10 08:09:45Z" end-time="2026-11-10 08:09:45Z" duration="0.002006" asserts="0">
             <properties>
               <property name="retryIteration" value="0" />
               <property name="repeatIteration" value="0" />
             </properties>
           </test-case>
-          <test-case id="1061" name="InvalidInputsAreRejected(&quot;rotation&quot;)" fullname="StaticStructureTests.InvalidInputsAreRejected(&quot;rotation&quot;)" methodname="InvalidInputsAreRejected" classname="StaticStructureTests" runstate="Runnable" seed="89281427" result="Passed" start-time="2026-11-10 07:40:51Z" end-time="2026-11-10 07:40:51Z" duration="0.001528" asserts="0">
+          <test-case id="1061" name="InvalidInputsAreRejected(&quot;rotation&quot;)" fullname="StaticStructureTests.InvalidInputsAreRejected(&quot;rotation&quot;)" methodname="InvalidInputsAreRejected" classname="StaticStructureTests" runstate="Runnable" seed="1473573132" result="Passed" start-time="2026-11-10 08:09:45Z" end-time="2026-11-10 08:09:45Z" duration="0.001732" asserts="0">
             <properties>
               <property name="retryIteration" value="0" />
               <property name="repeatIteration" value="0" />
             </properties>
           </test-case>
-          <test-case id="1062" name="InvalidInputsAreRejected(&quot;start&quot;)" fullname="StaticStructureTests.InvalidInputsAreRejected(&quot;start&quot;)" methodname="InvalidInputsAreRejected" classname="StaticStructureTests" runstate="Runnable" seed="107413353" result="Passed" start-time="2026-11-10 07:40:51Z" end-time="2026-11-10 07:40:51Z" duration="0.002112" asserts="0">
+          <test-case id="1062" name="InvalidInputsAreRejected(&quot;start&quot;)" fullname="StaticStructureTests.InvalidInputsAreRejected(&quot;start&quot;)" methodname="InvalidInputsAreRejected" classname="StaticStructureTests" runstate="Runnable" seed="1537479483" result="Passed" start-time="2026-11-10 08:09:45Z" end-time="2026-11-10 08:09:45Z" duration="0.001645" asserts="0">
             <properties>
               <property name="retryIteration" value="0" />
               <property name="repeatIteration" value="0" />
             </properties>
           </test-case>
-          <test-case id="1063" name="InvalidInputsAreRejected(&quot;nan&quot;)" fullname="StaticStructureTests.InvalidInputsAreRejected(&quot;nan&quot;)" methodname="InvalidInputsAreRejected" classname="StaticStructureTests" runstate="Runnable" seed="499353765" result="Passed" start-time="2026-11-10 07:40:51Z" end-time="2026-11-10 07:40:51Z" duration="0.001734" asserts="0">
+          <test-case id="1063" name="InvalidInputsAreRejected(&quot;nan&quot;)" fullname="StaticStructureTests.InvalidInputsAreRejected(&quot;nan&quot;)" methodname="InvalidInputsAreRejected" classname="StaticStructureTests" runstate="Runnable" seed="1526726815" result="Passed" start-time="2026-11-10 08:09:45Z" end-time="2026-11-10 08:09:45Z" duration="0.001738" asserts="0">
             <properties>
               <property name="retryIteration" value="0" />
               <property name="repeatIteration" value="0" />
             </properties>
           </test-case>
-          <test-case id="1064" name="InvalidInputsAreRejected(&quot;count&quot;)" fullname="StaticStructureTests.InvalidInputsAreRejected(&quot;count&quot;)" methodname="InvalidInputsAreRejected" classname="StaticStructureTests" runstate="Runnable" seed="1832551755" result="Passed" start-time="2026-11-10 07:40:51Z" end-time="2026-11-10 07:40:51Z" duration="0.001775" asserts="0">
+          <test-case id="1064" name="InvalidInputsAreRejected(&quot;count&quot;)" fullname="StaticStructureTests.InvalidInputsAreRejected(&quot;count&quot;)" methodname="InvalidInputsAreRejected" classname="StaticStructureTests" runstate="Runnable" seed="2084108773" result="Passed" start-time="2026-11-10 08:09:45Z" end-time="2026-11-10 08:09:45Z" duration="0.001809" asserts="0">
             <properties>
               <property name="retryIteration" value="0" />
               <property name="repeatIteration" value="0" />
             </properties>
           </test-case>
         </test-suite>
-        <test-case id="1054" name="JsonRoundTripPreservesGeometryAndRejectsUnknownVersionAndFields" fullname="StaticStructureTests.JsonRoundTripPreservesGeometryAndRejectsUnknownVersionAndFields" methodname="JsonRoundTripPreservesGeometryAndRejectsUnknownVersionAndFields" classname="StaticStructureTests" runstate="Runnable" seed="2068103325" result="Passed" start-time="2026-11-10 07:40:51Z" end-time="2026-11-10 07:40:51Z" duration="0.005582" asserts="0">
+        <test-case id="1054" name="JsonRoundTripPreservesGeometryAndRejectsUnknownVersionAndFields" fullname="StaticStructureTests.JsonRoundTripPreservesGeometryAndRejectsUnknownVersionAndFields" methodname="JsonRoundTripPreservesGeometryAndRejectsUnknownVersionAndFields" classname="StaticStructureTests" runstate="Runnable" seed="1641357287" result="Passed" start-time="2026-11-10 08:09:45Z" end-time="2026-11-10 08:09:45Z" duration="0.005949" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
-        <test-case id="1071" name="ObjectLimitAccepts32AndRejects33" fullname="StaticStructureTests.ObjectLimitAccepts32AndRejects33" methodname="ObjectLimitAccepts32AndRejects33" classname="StaticStructureTests" runstate="Runnable" seed="1001993664" result="Passed" start-time="2026-11-10 07:40:51Z" end-time="2026-11-10 07:40:51Z" duration="0.006693" asserts="0">
+        <test-case id="1071" name="ObjectLimitAccepts32AndRejects33" fullname="StaticStructureTests.ObjectLimitAccepts32AndRejects33" methodname="ObjectLimitAccepts32AndRejects33" classname="StaticStructureTests" runstate="Runnable" seed="919662635" result="Passed" start-time="2026-11-10 08:09:45Z" end-time="2026-11-10 08:09:45Z" duration="0.007937" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
           </properties>
         </test-case>
-        <test-case id="1069" name="SavedJsonClimbsIn16ArenasWithUnchangedLayer1Controller" fullname="StaticStructureTests.SavedJsonClimbsIn16ArenasWithUnchangedLayer1Controller" methodname="SavedJsonClimbsIn16ArenasWithUnchangedLayer1Controller" classname="StaticStructureTests" runstate="Runnable" seed="1644098715" result="Passed" start-time="2026-11-10 07:40:51Z" end-time="2026-11-10 07:40:51Z" duration="0.298057" asserts="0">
+        <test-case id="1069" name="SavedJsonClimbsIn16ArenasWithUnchangedLayer1Controller" fullname="StaticStructureTests.SavedJsonClimbsIn16ArenasWithUnchangedLayer1Controller" methodname="SavedJsonClimbsIn16ArenasWithUnchangedLayer1Controller" classname="StaticStructureTests" runstate="Runnable" seed="900541953" result="Passed" start-time="2026-11-10 08:09:45Z" end-time="2026-11-10 08:09:45Z" duration="0.299275" asserts="0">
           <properties>
             <property name="_JOINTYPE" value="UnityCombinatorial" />
             <property name="retryIteration" value="0" />
@@ -1300,7 +1312,7 @@ STRUCTURE_CLIMB arena=wall-0 complete=True handovers=3 seconds=7.320 torso=(0.00
 STRUCTURE_CLIMB arena=wall-0 complete=True handovers=3 seconds=7.320 torso=(0.00, 2.45, 0.53) peakN=0.000000
 ]]></output>
         </test-case>
-        <test-case id="1066" name="SettlingGateRejectsOverlapAndForgedStampBeforeOverwriting" fullname="StaticStructureTests.SettlingGateRejectsOverlapAndForgedStampBeforeOverwriting" methodname="SettlingGateRejectsOverlapAndForgedStampBeforeOverwriting" classname="StaticStructureTests" runstate="Runnable" seed="852102182" result="Passed" start-time="2026-11-10 07:40:51Z" end-time="2026-11-10 07:40:51Z" duration="0.019530" asserts="0">
+        <test-case id="1066" name="SettlingGateRejectsOverlapAndForgedStampBeforeOverwriting" fullname="StaticStructureTests.SettlingGateRejectsOverlapAndForgedStampBeforeOverwriting" methodname="SettlingGateRejectsOverlapAndForgedStampBeforeOverwriting" classname="StaticStructureTests" runstate="Runnable" seed="1239261957" result="Passed" start-time="2026-11-10 08:09:45Z" end-time="2026-11-10 08:09:45Z" duration="0.017563" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
@@ -1308,7 +1320,7 @@ STRUCTURE_CLIMB arena=wall-0 complete=True handovers=3 seconds=7.320 torso=(0.00
           <output><![CDATA[STRUCTURE_SAVE_GATE passed: 3s local simulation, overlap rejected, old file preserved, forged receipt rejected
 ]]></output>
         </test-case>
-        <test-case id="1067" name="SpawnAndGoalPenetrationAreRejected" fullname="StaticStructureTests.SpawnAndGoalPenetrationAreRejected" methodname="SpawnAndGoalPenetrationAreRejected" classname="StaticStructureTests" runstate="Runnable" seed="2047244001" result="Passed" start-time="2026-11-10 07:40:51Z" end-time="2026-11-10 07:40:51Z" duration="0.005521" asserts="0">
+        <test-case id="1067" name="SpawnAndGoalPenetrationAreRejected" fullname="StaticStructureTests.SpawnAndGoalPenetrationAreRejected" methodname="SpawnAndGoalPenetrationAreRejected" classname="StaticStructureTests" runstate="Runnable" seed="1727499134" result="Passed" start-time="2026-11-10 08:09:45Z" end-time="2026-11-10 08:09:45Z" duration="0.005328" asserts="0">
           <properties>
             <property name="retryIteration" value="0" />
             <property name="repeatIteration" value="0" />
