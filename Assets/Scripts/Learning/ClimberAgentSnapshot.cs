@@ -151,6 +151,14 @@ namespace PhysicalAI.Learning
             return worst;
         }
 
+        // "--mlagents-port <n>" as passed by mlagents_envs (Academy.k_PortCommandLineFlag); "" in the editor and tests.
+        static string WorkerPort()
+        {
+            var args=Environment.GetCommandLineArgs();
+            for(int i=0;i+1<args.Length;i++)if(args[i]=="--mlagents-port")return args[i+1];
+            return "";
+        }
+
         void SnapshotSpawn()
         {
             SpawnSource="ground";spawnStage=null;
@@ -158,7 +166,8 @@ namespace PhysicalAI.Learning
             if(library==null)return;
             var parameters=Academy.Instance.EnvironmentParameters;var recorder=Academy.Instance.StatsRecorder;
             float fraction=parameters.GetWithDefault("spawn_demo_fraction",DefaultDemoFraction);
-            if(spawnRandom==null)spawnRandom=new System.Random(ClimbSnapshotLibrary.StableSeed(name,(int)parameters.GetWithDefault("spawn_seed",0)));
+            // Arena names repeat in every worker process: the worker's port (base port + worker id) keeps the draws independent.
+            if(spawnRandom==null)spawnRandom=new System.Random(ClimbSnapshotLibrary.StableSeed(name+"#"+WorkerPort(),(int)parameters.GetWithDefault("spawn_seed",0)));
             if(SpawnSchedule==null)SpawnSchedule=FixedSpawnSchedule.FromEnvironment(parameters);
             bool demo=spawnRandom.NextDouble()<fraction;
             recorder.Add("Climb/Spawn/DemoFraction",demo?1:0); // Drawn share; ActualDemoFraction below is the share that restored.
