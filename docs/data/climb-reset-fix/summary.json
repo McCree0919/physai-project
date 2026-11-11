@@ -1,0 +1,104 @@
+{
+  "before/s2026_5M": {
+    "label": "s2026_5M",
+    "model": "C:\\dev\\physai-exp\\results\\climb_height_shaping_s2026\\Climb\\Climb-5000009.onnx",
+    "modelSha256": "6c4a8801c25b8a7134c37a2a905d4a53a4a8160241e9f505deeeae564325f1e2",
+    "evalSet": "training16",
+    "arenas": 16,
+    "episodesPerArena": null,
+    "totalEpisodes": 200,
+    "envParams": {
+      "target_mode": 0.0,
+      "height_reward_scale": 0.2,
+      "height_reward_cap": 0.2
+    },
+    "manifestSha256": null,
+    "wallSeconds": 42.19244074821472,
+    "unityExit": 0,
+    "level1": 0.955,
+    "level2": 0.85,
+    "success": 0.845,
+    "reasons": {
+      "Success": 169,
+      "Timeout": 31
+    },
+    "firstEpisodeSuccess": 16,
+    "earlyGripLater": 17
+  },
+  "before/s2027_5M": {
+    "label": "s2027_5M",
+    "model": "C:\\dev\\physai-exp\\results\\climb_height_shaping_s2027\\Climb\\Climb-5000007.onnx",
+    "modelSha256": "fb14299f72e05f3c1d7225b53003077701d9c0dec8e300a118532dbd572ec3ef",
+    "evalSet": "training16",
+    "arenas": 16,
+    "episodesPerArena": null,
+    "totalEpisodes": 200,
+    "envParams": {
+      "target_mode": 0.0,
+      "height_reward_scale": 0.2,
+      "height_reward_cap": 0.2
+    },
+    "manifestSha256": null,
+    "wallSeconds": 22.388807773590088,
+    "unityExit": 0,
+    "level1": 1.0,
+    "level2": 1.0,
+    "success": 1.0,
+    "reasons": {
+      "Success": 200
+    },
+    "firstEpisodeSuccess": 16,
+    "earlyGripLater": 0
+  },
+  "after/s2026_5M": {
+    "label": "s2026_5M",
+    "model": "C:\\dev\\physai-exp\\results\\climb_height_shaping_s2026\\Climb\\Climb-5000009.onnx",
+    "modelSha256": "6c4a8801c25b8a7134c37a2a905d4a53a4a8160241e9f505deeeae564325f1e2",
+    "evalSet": "training16",
+    "arenas": 16,
+    "episodesPerArena": null,
+    "totalEpisodes": 200,
+    "envParams": {
+      "target_mode": 0.0,
+      "height_reward_scale": 0.2,
+      "height_reward_cap": 0.2
+    },
+    "manifestSha256": null,
+    "wallSeconds": 35.426695823669434,
+    "unityExit": 0,
+    "level1": 1.0,
+    "level2": 0.995,
+    "success": 0.995,
+    "reasons": {
+      "Success": 199,
+      "Timeout": 1
+    },
+    "firstEpisodeSuccess": 16,
+    "earlyGripLater": 0
+  },
+  "after/s2027_5M": {
+    "label": "s2027_5M",
+    "model": "C:\\dev\\physai-exp\\results\\climb_height_shaping_s2027\\Climb\\Climb-5000007.onnx",
+    "modelSha256": "fb14299f72e05f3c1d7225b53003077701d9c0dec8e300a118532dbd572ec3ef",
+    "evalSet": "training16",
+    "arenas": 16,
+    "episodesPerArena": null,
+    "totalEpisodes": 200,
+    "envParams": {
+      "target_mode": 0.0,
+      "height_reward_scale": 0.2,
+      "height_reward_cap": 0.2
+    },
+    "manifestSha256": null,
+    "wallSeconds": 23.258130311965942,
+    "unityExit": 0,
+    "level1": 1.0,
+    "level2": 1.0,
+    "success": 1.0,
+    "reasons": {
+      "Success": 200
+    },
+    "firstEpisodeSuccess": 16,
+    "earlyGripLater": 0
+  }
+}

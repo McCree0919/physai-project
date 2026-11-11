@@ -77,20 +77,33 @@ public static class ClimbZeroShot
         Debug.Log("ZERO_SHOT_FREEZE_COMPLETE structures="+entries.Count);
     }
 
-    // Arena 0 is the training two-step (generated exactly as ClimbTrainingBuilder does); then every frozen structure in manifest order.
+    // Evaluation sets: "zero-shot" (default) = arena 0 is the training two-step (generated exactly as ClimbTrainingBuilder does), then every
+    // frozen structure in manifest order; "training16" = the 16 identical training two-step arenas of ClimbTraining/ClimbDiagnostics.
+    public const string SetArgument="--climb-eval-set=";
+    static string EvalSet()
+    {
+        foreach(string arg in Environment.GetCommandLineArgs())if(arg.StartsWith(SetArgument))return arg.Substring(SetArgument.Length);
+        return "zero-shot";
+    }
     public static int BuildScene()
     {
-        var manifest=JsonUtility.FromJson<Manifest>(File.ReadAllText(Folder+"/manifest.json"));
         var scene=EditorSceneManager.NewScene(NewSceneSetup.EmptyScene,NewSceneMode.Single);
         new GameObject("ClimbAcademyClock").AddComponent<ClimbAcademyClock>();
         var material=AssetDatabase.LoadAssetAtPath<PhysicsMaterial>("Assets/Materials/StaticStructurePhysics.physicMaterial");
         if(material==null)throw new InvalidOperationException("Missing Assets/Materials/StaticStructurePhysics.physicMaterial");
-        var docs=new List<(string id,StructureDocument doc)> {(ControlId,BoxStackGenerator.Smoke(true))};
-        foreach(var e in manifest.structures)
+        string set=EvalSet();var docs=new List<(string id,StructureDocument doc)>();
+        if(set=="training16")for(int i=0;i<16;i++)docs.Add(("training-two-step",BoxStackGenerator.Smoke(true)));
+        else if(set=="zero-shot")
         {
-            string json=File.ReadAllText(e.path);if(Sha256(json)!=e.sha256)throw new InvalidDataException("Manifest hash mismatch: "+e.path);
-            docs.Add((e.id,StructureJson.Parse(json)));
+            var manifest=JsonUtility.FromJson<Manifest>(File.ReadAllText(Folder+"/manifest.json"));
+            docs.Add((ControlId,BoxStackGenerator.Smoke(true)));
+            foreach(var e in manifest.structures)
+            {
+                string json=File.ReadAllText(e.path);if(Sha256(json)!=e.sha256)throw new InvalidDataException("Manifest hash mismatch: "+e.path);
+                docs.Add((e.id,StructureJson.Parse(json)));
+            }
         }
+        else throw new ArgumentException("Unknown evaluation set "+set);
         for(int i=0;i<docs.Count;i++)
         {
             var body=StaticStructureLoader.Load(docs[i].doc,new Vector3((i%8)*Spacing,0,(i/8)*Spacing),Quaternion.identity);
@@ -102,7 +115,7 @@ public static class ClimbZeroShot
         var camera=new GameObject("Camera").AddComponent<Camera>();camera.tag="MainCamera";camera.transform.position=new Vector3(3,3,-4);camera.transform.LookAt(new Vector3(0,1,1));
         var light=new GameObject("Light").AddComponent<Light>();light.type=LightType.Directional;light.transform.rotation=Quaternion.Euler(40,-30,0);
         EditorSceneManager.SaveScene(scene,ScenePath);AssetDatabase.SaveAssets();
-        Debug.Log("ZERO_SHOT_SCENE_OK arenas="+docs.Count);return docs.Count;
+        Debug.Log("ZERO_SHOT_SCENE_OK set="+set+" arenas="+docs.Count);return docs.Count;
     }
 
     // Batchmode entry (no -quit): build the scene, enter play mode; the Python driver connects on the editor port and quits it when done.

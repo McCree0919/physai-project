@@ -61,10 +61,12 @@
 - 【推断】训练期也受影响：凡是以握着状态结束的回合，下一回合开始时手都在旧抓握点上，相当于混入了一部分非标准出生状态。影响多大未测。
 - 【推断】零样本评估（[LAYER3_ZERO_SHOT.md](LAYER3_ZERO_SHOT.md)）中每个场地连续运行20回合，同样受影响。因此该报告单列每个场地的第一回合（干净出生）。
 
-## 5. 是否修复（待用户决定，本轮不修复）
+## 5. 修复（2026-11-10，用户批准，独立提交）
 
-- 一种修复方式：在`ResetBody`中像`RestoreSnapshot`那样用`DestroyImmediate`立即删除抓握关节，见[LAYER3_SNAPSHOT_DESIGN.md](LAYER3_SNAPSHOT_DESIGN.md) §3第2步。
-- 若修复，应作为独立提交，并且：
-  - 重新验证target_mode=0的逐回合复现。修复会改变"握着结束"之后的回合，预计不再逐回合一致，需要说明；
-  - 重跑本诊断，确认gripped与releasedFirst一致；
-  - 注意已有的两个5M checkpoint都是在有此问题的环境中训练的。
+- **改动**：`ClimberBody.ResetBody`在原有的释放之后，立即`DestroyImmediate`双手上的全部FixedJoint，与`RestoreSnapshot`的做法相同。身体的其他参数、`Release`、`SetGrab`、`PhysicsStep`都没有改。
+- **验证**（【数据】）：
+  - PlayMode 64/64通过，本诊断在常规运行中按设计跳过；
+  - 设置开关后重跑本诊断600次（[trials-after-fix.csv](data/resetbody-joint-diagnostic/trials-after-fix.csv)）。gripped现在与releasedFirst、free完全一致：第1步手位移0.0039m（只有重力），第10步0.214m，躯干不动，非横档场地的合法候选为0/150。重置时仍有1–2个待销毁关节被计数，因为计数是在调用ResetBody之前做的。
+- **对已有结果的影响**：见[LAYER3_HEIGHT_SHAPING.md](LAYER3_HEIGHT_SHAPING.md) §6。s2026的地面成功率从84.5%变为99.5%。
+- **未做的验证**：§14.3的"target_mode=0逐回合复现"需要重新构建Player，这个worktree无法构建，所以没有做。【推断】修复只改变以握着状态结束之后的回合，不以握着结束的回合序列应保持不变；待能构建Player时补做。
+- 已有的两个5M checkpoint都是在修复前的环境中训练的。

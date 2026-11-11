@@ -128,6 +128,7 @@
   - 对照场地3个，Easy 28个，Standard 5个，Hard 52个；
   - s2027为0。
 - 【数据】所有成功或失败的结论与只看第一回合（干净出生）时相同：Standard/Hard第一回合为0/60，Easy为s2026 0/3、s2027 2/3。
+- 遗留关节已修复（[LAYER3_HEIGHT_SHAPING.md](LAYER3_HEIGHT_SHAPING.md) §6）。本节结果是修复前测得的；因为结论只依赖第一回合，没有重跑。
 
 ### 3.2 Editor运行路径
 
