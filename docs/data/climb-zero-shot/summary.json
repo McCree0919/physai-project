@@ -1,0 +1,912 @@
+{
+  "manifestSha256": "94f6f9719fa24d7a03d67ee65a49c28bc742dea9fa265da0c85e079647f4aed8",
+  "reports": {
+    "s2026_5M": {
+      "label": "s2026_5M",
+      "model": "C:\\dev\\physai-exp\\results\\climb_height_shaping_s2026\\Climb\\Climb-5000009.onnx",
+      "modelSha256": "6c4a8801c25b8a7134c37a2a905d4a53a4a8160241e9f505deeeae564325f1e2",
+      "arenas": 64,
+      "episodesPerArena": 20,
+      "envParams": {
+        "target_mode": 0.0,
+        "height_reward_scale": 0.2,
+        "height_reward_cap": 0.2
+      },
+      "manifestSha256": "94f6f9719fa24d7a03d67ee65a49c28bc742dea9fa265da0c85e079647f4aed8",
+      "wallSeconds": 234.04326033592224,
+      "unityExit": 0
+    },
+    "s2027_5M": {
+      "label": "s2027_5M",
+      "model": "C:\\dev\\physai-exp\\results\\climb_height_shaping_s2027\\Climb\\Climb-5000007.onnx",
+      "modelSha256": "fb14299f72e05f3c1d7225b53003077701d9c0dec8e300a118532dbd572ec3ef",
+      "arenas": 64,
+      "episodesPerArena": 20,
+      "envParams": {
+        "target_mode": 0.0,
+        "height_reward_scale": 0.2,
+        "height_reward_cap": 0.2
+      },
+      "manifestSha256": "94f6f9719fa24d7a03d67ee65a49c28bc742dea9fa265da0c85e079647f4aed8",
+      "wallSeconds": 238.88225555419922,
+      "unityExit": 0
+    }
+  },
+  "clusters": {
+    "Easy": 1,
+    "Standard": 7,
+    "Hard": 12
+  },
+  "byDifficulty": {
+    "s2026_5M/Control": {
+      "structures": 1,
+      "episodes": 20,
+      "level1": {
+        "byStructure": {
+          "mean": 0.85,
+          "lo": 0.85,
+          "hi": 0.85,
+          "units": 1
+        },
+        "byCluster": {
+          "mean": 0.85,
+          "lo": 0.85,
+          "hi": 0.85,
+          "units": 1
+        }
+      },
+      "level2": {
+        "byStructure": {
+          "mean": 0.75,
+          "lo": 0.75,
+          "hi": 0.75,
+          "units": 1
+        },
+        "byCluster": {
+          "mean": 0.75,
+          "lo": 0.75,
+          "hi": 0.75,
+          "units": 1
+        }
+      },
+      "success": {
+        "byStructure": {
+          "mean": 0.75,
+          "lo": 0.75,
+          "hi": 0.75,
+          "units": 1
+        },
+        "byCluster": {
+          "mean": 0.75,
+          "lo": 0.75,
+          "hi": 0.75,
+          "units": 1
+        }
+      },
+      "firstEpisodeSuccess": {
+        "k": 1,
+        "n": 1,
+        "rate": 1.0,
+        "lo": 0.20654329147389294,
+        "hi": 1.0
+      },
+      "structuresAnySuccess": {
+        "k": 1,
+        "n": 1,
+        "rate": 1.0,
+        "lo": 0.20654329147389294,
+        "hi": 1.0
+      },
+      "structuresMajoritySuccess": {
+        "k": 1,
+        "n": 1,
+        "rate": 1.0,
+        "lo": 0.20654329147389294,
+        "hi": 1.0
+      },
+      "earlyGripEpisodes": 3
+    },
+    "s2026_5M/Easy": {
+      "structures": 3,
+      "episodes": 60,
+      "level1": {
+        "byStructure": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "units": 3
+        },
+        "byCluster": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "units": 1
+        }
+      },
+      "level2": {
+        "byStructure": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "units": 3
+        },
+        "byCluster": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "units": 1
+        }
+      },
+      "success": {
+        "byStructure": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "units": 3
+        },
+        "byCluster": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "units": 1
+        }
+      },
+      "firstEpisodeSuccess": {
+        "k": 0,
+        "n": 3,
+        "rate": 0.0,
+        "lo": 0.0,
+        "hi": 0.5615060804490177
+      },
+      "structuresAnySuccess": {
+        "k": 0,
+        "n": 3,
+        "rate": 0.0,
+        "lo": 0.0,
+        "hi": 0.5615060804490177
+      },
+      "structuresMajoritySuccess": {
+        "k": 0,
+        "n": 3,
+        "rate": 0.0,
+        "lo": 0.0,
+        "hi": 0.5615060804490177
+      },
+      "earlyGripEpisodes": 28
+    },
+    "s2026_5M/Standard": {
+      "structures": 30,
+      "episodes": 600,
+      "level1": {
+        "byStructure": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "units": 30
+        },
+        "byCluster": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "units": 7
+        }
+      },
+      "level2": {
+        "byStructure": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "units": 30
+        },
+        "byCluster": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "units": 7
+        }
+      },
+      "success": {
+        "byStructure": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "units": 30
+        },
+        "byCluster": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "units": 7
+        }
+      },
+      "firstEpisodeSuccess": {
+        "k": 0,
+        "n": 30,
+        "rate": 0.0,
+        "lo": -1.2302421700937121e-17,
+        "hi": 0.11351709139047801
+      },
+      "structuresAnySuccess": {
+        "k": 0,
+        "n": 30,
+        "rate": 0.0,
+        "lo": -1.2302421700937121e-17,
+        "hi": 0.11351709139047801
+      },
+      "structuresMajoritySuccess": {
+        "k": 0,
+        "n": 30,
+        "rate": 0.0,
+        "lo": -1.2302421700937121e-17,
+        "hi": 0.11351709139047801
+      },
+      "earlyGripEpisodes": 5
+    },
+    "s2026_5M/Hard": {
+      "structures": 30,
+      "episodes": 600,
+      "level1": {
+        "byStructure": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "units": 30
+        },
+        "byCluster": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "units": 12
+        }
+      },
+      "level2": {
+        "byStructure": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "units": 30
+        },
+        "byCluster": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "units": 12
+        }
+      },
+      "success": {
+        "byStructure": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "units": 30
+        },
+        "byCluster": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "units": 12
+        }
+      },
+      "firstEpisodeSuccess": {
+        "k": 0,
+        "n": 30,
+        "rate": 0.0,
+        "lo": -1.2302421700937121e-17,
+        "hi": 0.11351709139047801
+      },
+      "structuresAnySuccess": {
+        "k": 0,
+        "n": 30,
+        "rate": 0.0,
+        "lo": -1.2302421700937121e-17,
+        "hi": 0.11351709139047801
+      },
+      "structuresMajoritySuccess": {
+        "k": 0,
+        "n": 30,
+        "rate": 0.0,
+        "lo": -1.2302421700937121e-17,
+        "hi": 0.11351709139047801
+      },
+      "earlyGripEpisodes": 52
+    },
+    "s2027_5M/Control": {
+      "structures": 1,
+      "episodes": 20,
+      "level1": {
+        "byStructure": {
+          "mean": 1.0,
+          "lo": 1.0,
+          "hi": 1.0,
+          "units": 1
+        },
+        "byCluster": {
+          "mean": 1.0,
+          "lo": 1.0,
+          "hi": 1.0,
+          "units": 1
+        }
+      },
+      "level2": {
+        "byStructure": {
+          "mean": 1.0,
+          "lo": 1.0,
+          "hi": 1.0,
+          "units": 1
+        },
+        "byCluster": {
+          "mean": 1.0,
+          "lo": 1.0,
+          "hi": 1.0,
+          "units": 1
+        }
+      },
+      "success": {
+        "byStructure": {
+          "mean": 1.0,
+          "lo": 1.0,
+          "hi": 1.0,
+          "units": 1
+        },
+        "byCluster": {
+          "mean": 1.0,
+          "lo": 1.0,
+          "hi": 1.0,
+          "units": 1
+        }
+      },
+      "firstEpisodeSuccess": {
+        "k": 1,
+        "n": 1,
+        "rate": 1.0,
+        "lo": 0.20654329147389294,
+        "hi": 1.0
+      },
+      "structuresAnySuccess": {
+        "k": 1,
+        "n": 1,
+        "rate": 1.0,
+        "lo": 0.20654329147389294,
+        "hi": 1.0
+      },
+      "structuresMajoritySuccess": {
+        "k": 1,
+        "n": 1,
+        "rate": 1.0,
+        "lo": 0.20654329147389294,
+        "hi": 1.0
+      },
+      "earlyGripEpisodes": 0
+    },
+    "s2027_5M/Easy": {
+      "structures": 3,
+      "episodes": 60,
+      "level1": {
+        "byStructure": {
+          "mean": 0.5499999999999999,
+          "lo": 0.0,
+          "hi": 1.0,
+          "units": 3
+        },
+        "byCluster": {
+          "mean": 0.5499999999999999,
+          "lo": 0.5499999999999999,
+          "hi": 0.5499999999999999,
+          "units": 1
+        }
+      },
+      "level2": {
+        "byStructure": {
+          "mean": 0.6666666666666666,
+          "lo": 0.0,
+          "hi": 1.0,
+          "units": 3
+        },
+        "byCluster": {
+          "mean": 0.6666666666666666,
+          "lo": 0.6666666666666666,
+          "hi": 0.6666666666666666,
+          "units": 1
+        }
+      },
+      "success": {
+        "byStructure": {
+          "mean": 0.6666666666666666,
+          "lo": 0.0,
+          "hi": 1.0,
+          "units": 3
+        },
+        "byCluster": {
+          "mean": 0.6666666666666666,
+          "lo": 0.6666666666666666,
+          "hi": 0.6666666666666666,
+          "units": 1
+        }
+      },
+      "firstEpisodeSuccess": {
+        "k": 2,
+        "n": 3,
+        "rate": 0.6666666666666666,
+        "lo": 0.20765495512648788,
+        "hi": 0.9385096847238393
+      },
+      "structuresAnySuccess": {
+        "k": 2,
+        "n": 3,
+        "rate": 0.6666666666666666,
+        "lo": 0.20765495512648788,
+        "hi": 0.9385096847238393
+      },
+      "structuresMajoritySuccess": {
+        "k": 2,
+        "n": 3,
+        "rate": 0.6666666666666666,
+        "lo": 0.20765495512648788,
+        "hi": 0.9385096847238393
+      },
+      "earlyGripEpisodes": 0
+    },
+    "s2027_5M/Standard": {
+      "structures": 30,
+      "episodes": 600,
+      "level1": {
+        "byStructure": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "units": 30
+        },
+        "byCluster": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "units": 7
+        }
+      },
+      "level2": {
+        "byStructure": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "units": 30
+        },
+        "byCluster": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "units": 7
+        }
+      },
+      "success": {
+        "byStructure": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "units": 30
+        },
+        "byCluster": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "units": 7
+        }
+      },
+      "firstEpisodeSuccess": {
+        "k": 0,
+        "n": 30,
+        "rate": 0.0,
+        "lo": -1.2302421700937121e-17,
+        "hi": 0.11351709139047801
+      },
+      "structuresAnySuccess": {
+        "k": 0,
+        "n": 30,
+        "rate": 0.0,
+        "lo": -1.2302421700937121e-17,
+        "hi": 0.11351709139047801
+      },
+      "structuresMajoritySuccess": {
+        "k": 0,
+        "n": 30,
+        "rate": 0.0,
+        "lo": -1.2302421700937121e-17,
+        "hi": 0.11351709139047801
+      },
+      "earlyGripEpisodes": 0
+    },
+    "s2027_5M/Hard": {
+      "structures": 30,
+      "episodes": 600,
+      "level1": {
+        "byStructure": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "units": 30
+        },
+        "byCluster": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "units": 12
+        }
+      },
+      "level2": {
+        "byStructure": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "units": 30
+        },
+        "byCluster": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "units": 12
+        }
+      },
+      "success": {
+        "byStructure": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "units": 30
+        },
+        "byCluster": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0,
+          "units": 12
+        }
+      },
+      "firstEpisodeSuccess": {
+        "k": 0,
+        "n": 30,
+        "rate": 0.0,
+        "lo": -1.2302421700937121e-17,
+        "hi": 0.11351709139047801
+      },
+      "structuresAnySuccess": {
+        "k": 0,
+        "n": 30,
+        "rate": 0.0,
+        "lo": -1.2302421700937121e-17,
+        "hi": 0.11351709139047801
+      },
+      "structuresMajoritySuccess": {
+        "k": 0,
+        "n": 30,
+        "rate": 0.0,
+        "lo": -1.2302421700937121e-17,
+        "hi": 0.11351709139047801
+      },
+      "earlyGripEpisodes": 0
+    }
+  },
+  "features": {
+    "s2026_5M/Standard": {
+      "solved": 0,
+      "failed": 30,
+      "levels": {
+        "solvedMean": null,
+        "failedMean": 2.8333333333333335,
+        "spearmanWithSuccess": null
+      },
+      "constructionLevels": {
+        "solvedMean": null,
+        "failedMean": 2.5,
+        "spearmanWithSuccess": null
+      },
+      "maxRise": {
+        "solvedMean": null,
+        "failedMean": 0.8416666587193807,
+        "spearmanWithSuccess": null
+      },
+      "maxVerticalFace": {
+        "solvedMean": null,
+        "failedMean": 1.0089625775814057,
+        "spearmanWithSuccess": null
+      },
+      "totalHeight": {
+        "solvedMean": null,
+        "failedMean": 1.7549999952316284,
+        "spearmanWithSuccess": null
+      },
+      "overhangCount": {
+        "solvedMean": null,
+        "failedMean": 1.3333333333333333,
+        "spearmanWithSuccess": null
+      },
+      "maxOverhang": {
+        "solvedMean": null,
+        "failedMean": 0.12369499603907268,
+        "spearmanWithSuccess": null
+      },
+      "maxGap": {
+        "solvedMean": null,
+        "failedMean": 0.03332244356473287,
+        "spearmanWithSuccess": null
+      },
+      "exposedTopEdges": {
+        "solvedMean": null,
+        "failedMean": 5.966666666666667,
+        "spearmanWithSuccess": null
+      },
+      "coarseMinimumTransitions": {
+        "solvedMean": null,
+        "failedMean": 1.9666666666666666,
+        "spearmanWithSuccess": null
+      }
+    },
+    "s2026_5M/Hard": {
+      "solved": 0,
+      "failed": 30,
+      "levels": {
+        "solvedMean": null,
+        "failedMean": 4.466666666666667,
+        "spearmanWithSuccess": null
+      },
+      "constructionLevels": {
+        "solvedMean": null,
+        "failedMean": 3.466666666666667,
+        "spearmanWithSuccess": null
+      },
+      "maxRise": {
+        "solvedMean": null,
+        "failedMean": 0.5149999856948853,
+        "spearmanWithSuccess": null
+      },
+      "maxVerticalFace": {
+        "solvedMean": null,
+        "failedMean": 1.0176178534825644,
+        "spearmanWithSuccess": null
+      },
+      "totalHeight": {
+        "solvedMean": null,
+        "failedMean": 2.231666668256124,
+        "spearmanWithSuccess": null
+      },
+      "overhangCount": {
+        "solvedMean": null,
+        "failedMean": 2.466666666666667,
+        "spearmanWithSuccess": null
+      },
+      "maxOverhang": {
+        "solvedMean": null,
+        "failedMean": 0.2593255837758382,
+        "spearmanWithSuccess": null
+      },
+      "maxGap": {
+        "solvedMean": null,
+        "failedMean": 0.296576714515686,
+        "spearmanWithSuccess": null
+      },
+      "exposedTopEdges": {
+        "solvedMean": null,
+        "failedMean": 11.466666666666667,
+        "spearmanWithSuccess": null
+      },
+      "coarseMinimumTransitions": {
+        "solvedMean": null,
+        "failedMean": 2.1333333333333333,
+        "spearmanWithSuccess": null
+      }
+    },
+    "s2026_5M/Generated": {
+      "solved": 0,
+      "failed": 63,
+      "levels": {
+        "solvedMean": null,
+        "failedMean": 3.5238095238095237,
+        "spearmanWithSuccess": null
+      },
+      "constructionLevels": {
+        "solvedMean": null,
+        "failedMean": 2.888888888888889,
+        "spearmanWithSuccess": null
+      },
+      "maxRise": {
+        "solvedMean": null,
+        "failedMean": 0.6936507821083069,
+        "spearmanWithSuccess": null
+      },
+      "maxVerticalFace": {
+        "solvedMean": null,
+        "failedMean": 1.0126573490718054,
+        "spearmanWithSuccess": null
+      },
+      "totalHeight": {
+        "solvedMean": null,
+        "failedMean": 1.9460317435718717,
+        "spearmanWithSuccess": null
+      },
+      "overhangCount": {
+        "solvedMean": null,
+        "failedMean": 1.8095238095238095,
+        "spearmanWithSuccess": null
+      },
+      "maxOverhang": {
+        "solvedMean": null,
+        "failedMean": 0.1823907522928147,
+        "spearmanWithSuccess": null
+      },
+      "maxGap": {
+        "solvedMean": null,
+        "failedMean": 0.15709483718115186,
+        "spearmanWithSuccess": null
+      },
+      "exposedTopEdges": {
+        "solvedMean": null,
+        "failedMean": 8.492063492063492,
+        "spearmanWithSuccess": null
+      },
+      "coarseMinimumTransitions": {
+        "solvedMean": null,
+        "failedMean": 2,
+        "spearmanWithSuccess": null
+      }
+    },
+    "s2027_5M/Standard": {
+      "solved": 0,
+      "failed": 30,
+      "levels": {
+        "solvedMean": null,
+        "failedMean": 2.8333333333333335,
+        "spearmanWithSuccess": null
+      },
+      "constructionLevels": {
+        "solvedMean": null,
+        "failedMean": 2.5,
+        "spearmanWithSuccess": null
+      },
+      "maxRise": {
+        "solvedMean": null,
+        "failedMean": 0.8416666587193807,
+        "spearmanWithSuccess": null
+      },
+      "maxVerticalFace": {
+        "solvedMean": null,
+        "failedMean": 1.0089625775814057,
+        "spearmanWithSuccess": null
+      },
+      "totalHeight": {
+        "solvedMean": null,
+        "failedMean": 1.7549999952316284,
+        "spearmanWithSuccess": null
+      },
+      "overhangCount": {
+        "solvedMean": null,
+        "failedMean": 1.3333333333333333,
+        "spearmanWithSuccess": null
+      },
+      "maxOverhang": {
+        "solvedMean": null,
+        "failedMean": 0.12369499603907268,
+        "spearmanWithSuccess": null
+      },
+      "maxGap": {
+        "solvedMean": null,
+        "failedMean": 0.03332244356473287,
+        "spearmanWithSuccess": null
+      },
+      "exposedTopEdges": {
+        "solvedMean": null,
+        "failedMean": 5.966666666666667,
+        "spearmanWithSuccess": null
+      },
+      "coarseMinimumTransitions": {
+        "solvedMean": null,
+        "failedMean": 1.9666666666666666,
+        "spearmanWithSuccess": null
+      }
+    },
+    "s2027_5M/Hard": {
+      "solved": 0,
+      "failed": 30,
+      "levels": {
+        "solvedMean": null,
+        "failedMean": 4.466666666666667,
+        "spearmanWithSuccess": null
+      },
+      "constructionLevels": {
+        "solvedMean": null,
+        "failedMean": 3.466666666666667,
+        "spearmanWithSuccess": null
+      },
+      "maxRise": {
+        "solvedMean": null,
+        "failedMean": 0.5149999856948853,
+        "spearmanWithSuccess": null
+      },
+      "maxVerticalFace": {
+        "solvedMean": null,
+        "failedMean": 1.0176178534825644,
+        "spearmanWithSuccess": null
+      },
+      "totalHeight": {
+        "solvedMean": null,
+        "failedMean": 2.231666668256124,
+        "spearmanWithSuccess": null
+      },
+      "overhangCount": {
+        "solvedMean": null,
+        "failedMean": 2.466666666666667,
+        "spearmanWithSuccess": null
+      },
+      "maxOverhang": {
+        "solvedMean": null,
+        "failedMean": 0.2593255837758382,
+        "spearmanWithSuccess": null
+      },
+      "maxGap": {
+        "solvedMean": null,
+        "failedMean": 0.296576714515686,
+        "spearmanWithSuccess": null
+      },
+      "exposedTopEdges": {
+        "solvedMean": null,
+        "failedMean": 11.466666666666667,
+        "spearmanWithSuccess": null
+      },
+      "coarseMinimumTransitions": {
+        "solvedMean": null,
+        "failedMean": 2.1333333333333333,
+        "spearmanWithSuccess": null
+      }
+    },
+    "s2027_5M/Generated": {
+      "solved": 2,
+      "failed": 61,
+      "levels": {
+        "solvedMean": 1,
+        "failedMean": 3.6065573770491803,
+        "spearmanWithSuccess": -0.30900010998934446
+      },
+      "constructionLevels": {
+        "solvedMean": 1,
+        "failedMean": 2.9508196721311477,
+        "spearmanWithSuccess": -0.3227853065478165
+      },
+      "maxRise": {
+        "solvedMean": 0.9749999940395355,
+        "failedMean": 0.6844262177826929,
+        "spearmanWithSuccess": 0.14691714831633823
+      },
+      "maxVerticalFace": {
+        "solvedMean": 0.9749999940395355,
+        "failedMean": 1.0138920164499126,
+        "spearmanWithSuccess": -0.24503403486853953
+      },
+      "totalHeight": {
+        "solvedMean": 0.9749999940395355,
+        "failedMean": 1.9778688501139157,
+        "spearmanWithSuccess": -0.3061974225838843
+      },
+      "overhangCount": {
+        "solvedMean": 0,
+        "failedMean": 1.8688524590163935,
+        "spearmanWithSuccess": -0.30703306145540393
+      },
+      "maxOverhang": {
+        "solvedMean": 0.0,
+        "failedMean": 0.1883707769581529,
+        "spearmanWithSuccess": -0.28883986403072914
+      },
+      "maxGap": {
+        "solvedMean": 0.0,
+        "failedMean": 0.1622454875805339,
+        "spearmanWithSuccess": -0.20417567672275994
+      },
+      "exposedTopEdges": {
+        "solvedMean": 4,
+        "failedMean": 8.639344262295081,
+        "spearmanWithSuccess": -0.29404023976526533
+      },
+      "coarseMinimumTransitions": {
+        "solvedMean": 1,
+        "failedMean": 2.0327868852459017,
+        "spearmanWithSuccess": -0.3593026031853063
+      }
+    }
+  }
+}

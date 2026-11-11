@@ -9,11 +9,12 @@ namespace PhysicalAI.Learning
         static StreamWriter writer;
         public static void Write(string arena,bool success,bool first,bool second,int decisions,float seconds,float reward,string reason,string spawn="ground")
         {
-            if(Application.isEditor)return;
             if(writer==null)
             {
-                string folder="results/climb-runtime";
+                string folder=null;
                 foreach(string arg in Environment.GetCommandLineArgs())if(arg.StartsWith("--climb-output="))folder=arg.Substring("--climb-output=".Length);
+                // Editor (tests, manual play) writes only when an output folder is passed explicitly, e.g. the zero-shot editor evaluation.
+                if(folder==null){if(Application.isEditor)return;folder="results/climb-runtime";}
                 Directory.CreateDirectory(folder);
                 writer=new StreamWriter(Path.Combine(folder,"episodes-"+System.Diagnostics.Process.GetCurrentProcess().Id+".csv")){AutoFlush=true};
                 writer.WriteLine("unix_ms,arena,success,level1,level2,decisions,sim_seconds,reward,reason,spawn");
