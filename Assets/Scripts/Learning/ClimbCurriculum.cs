@@ -64,7 +64,11 @@ namespace PhysicalAI.Learning
             var heldClusters=new HashSet<string>((file.validation??new ClimbCurriculumEntry[0]).Select(e=>e.cluster));
             foreach(var e in file.stages.SelectMany(s=>s.structures))
                 if(held.Contains(e.id)||(!string.IsNullOrEmpty(e.cluster)&&heldClusters.Contains(e.cluster)))throw new InvalidDataException($"Training structure {e.id} belongs to a held-out validation cluster");
-            return new ClimbCurriculum(Read(file.twoStep),file.twoStepShare,file.stages.Select(s=>(s.pool,s.structures.Select(Read).ToArray())));
+            var curriculum=new ClimbCurriculum(Read(file.twoStep),file.twoStepShare,file.stages.Select(s=>(s.pool,s.structures.Select(Read).ToArray())));
+            string Start(StructureDocument d) => string.Join("|",new[] {d.start.torso,d.start.leftHand,d.start.rightHand}.Select(p=>p.Position.ToString("R")+p.Rotation.ToString("R")));
+            foreach(var doc in curriculum.stages.SelectMany(s=>s.docs))
+                if(Start(doc)!=Start(curriculum.TwoStep))throw new InvalidDataException($"Curriculum structure {doc.id} has a different start than the training two-step");
+            return curriculum;
         }
 
         static bool commandLineChecked;static ClimbCurriculum commandLine;
@@ -102,9 +106,11 @@ namespace PhysicalAI.Learning
             var (pool,doc)=curriculum.Sample(stage,curriculumRandom);
             if(doc!=currentStructure)
             {
-                var start=doc.start;
-                if((start.torso.Position-spawn.Torso).sqrMagnitude>1e-8f||(start.leftHand.Position-spawn.LeftHand).sqrMagnitude>1e-8f||(start.rightHand.Position-spawn.RightHand).sqrMagnitude>1e-8f)
-                    throw new InvalidOperationException("Curriculum structure "+doc.id+" has a different start pose than the arena");
+                // Every episode keeps this arena's own ground start (spawn). Only the torso is compared: the scene's hands sit at the factory
+                // z=-0.05, not the documents' -0.15 (the loader's reset moves rigidbodies, which the saved scene does not keep), and all
+                // earlier runs started that way. Load() checks that all pool documents share one start, so the offset is the same everywhere.
+                if((doc.start.torso.Position-spawn.Torso).sqrMagnitude>1e-8f||Quaternion.Angle(doc.start.torso.Rotation,spawn.Rotation)>.01f)
+                    throw new InvalidOperationException("Curriculum structure "+doc.id+" has a different torso start than the arena");
                 if(structureMaterial==null)structureMaterial=Surfaces().Values.Select(c=>c.sharedMaterial).FirstOrDefault(m=>m!=null);
                 StructureSwap.Apply(body,doc,structureMaterial);surfaces=null;currentStructure=doc;
             }

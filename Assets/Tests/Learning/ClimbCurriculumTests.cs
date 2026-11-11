@@ -21,9 +21,12 @@ public sealed class ClimbCurriculumTests
 
     // Same arena as ClimbTrainingBuilder: training two-step at a scene arena position (the body configuration hash includes joint anchors,
     // whose last float bits depend on the arena position), layers 8/9, one shared physics material.
-    ClimberAgent Create(PhysicsMaterial material)
+    // sceneHands: the saved training scene keeps the factory hand positions (z=-0.05), not the document start (z=-0.15).
+    ClimberAgent Create(PhysicsMaterial material,bool sceneHands=false)
     {
-        var body=StaticStructureLoader.Load(BoxStackGenerator.Smoke(true),new Vector3((roots.Count%4)*14,0,(roots.Count/4)*14),Quaternion.identity);roots.Add(body.gameObject);
+        var doc=BoxStackGenerator.Smoke(true);
+        var body=StaticStructureLoader.Load(doc,new Vector3((roots.Count%4)*14,0,(roots.Count/4)*14),Quaternion.identity);roots.Add(body.gameObject);
+        if(sceneHands)body.ResetBody(new BodyReset {Torso=doc.start.torso.Position,LeftHand=new Vector3(-.3f,1.15f,-.05f),RightHand=new Vector3(.3f,.95f,-.05f),Rotation=Quaternion.identity});
         foreach(var c in body.GetComponentsInChildren<Collider>())if(c.attachedRigidbody==null){c.gameObject.layer=c.GetComponent<ClimberSurface>()!=null?8:9;c.sharedMaterial=material;}
         var behavior=body.gameObject.AddComponent<BehaviorParameters>();behavior.BrainParameters.VectorObservationSize=327;behavior.BrainParameters.ActionSpec=new ActionSpec(6,new[] {2,2});behavior.BehaviorType=BehaviorType.HeuristicOnly;
         var agent=body.gameObject.AddComponent<ClimberAgent>();Physics.SyncTransforms();return agent;
@@ -85,6 +88,20 @@ public sealed class ClimbCurriculumTests
         }
         Assert.That(twoStep,Is.InRange(70,130),"two-step share ~25%");Assert.That(demo,Is.InRange(twoStep/4,twoStep*3/4),"~50% demonstration starts on the two-step");
         Assert.Greater(seen.Count,100,"episodes draw many C1 structures");
+    }
+
+    // Regression for the player smoke run: swaps must keep the arena's own ground start, including the scene's hand positions.
+    [Test] public void SwapsKeepTheSceneGroundStart()
+    {
+        var agent=Create(Material(),true);agent.Curriculum=ClimbCurriculum.Load(Pools);agent.CurriculumStage=1;
+        var spawn=agent.Spawn;var body=agent.GetComponent<ClimberBody>();
+        for(int i=0;i<40;i++)
+        {
+            agent.OnEpisodeBegin();Physics.SyncTransforms();
+            Assert.Less(Vector3.Distance(body.GetHandState(HandId.Left).Position,spawn.LeftHand),1e-4f);
+            Assert.Less(Vector3.Distance(body.GetBodyState().Position,spawn.Torso),1e-4f);
+        }
+        Assert.AreEqual(-.05f,spawn.LeftHand.z,1e-4f);
     }
 
     [Test] public void WithoutACurriculumStageTheSceneStructureIsKept()
