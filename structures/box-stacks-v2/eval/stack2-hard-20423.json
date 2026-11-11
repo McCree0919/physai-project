@@ -19,12 +19,12 @@
       "overhangCount": 2,
       "exposedTopEdges": 12,
       "coarseMinimumTransitions": 2,
-      "maxRise": 1.0,
-      "maxVerticalFace": 1.00289953,
-      "maxUntoppedRise": 0.999325037,
-      "maxOverhang": 0.5014694,
-      "maxGap": 0.199991643,
-      "totalHeight": 2.0
+      "maxRise": 0.5,
+      "maxVerticalFace": 0.5013309,
+      "maxUntoppedRise": 0.5000149,
+      "maxOverhang": 0.500692964,
+      "maxGap": 0.3000002,
+      "totalHeight": 1.5
     }
   },
   "materials": [
@@ -79,14 +79,14 @@
       ],
       "pose": {
         "position": [
-          3.63702952E-06,
-          0.24995172,
-          0.949967444
+          2.1293401E-05,
+          0.2499587,
+          0.9500032
         ],
         "rotation": [
-          -1.56340666E-05,
-          1.905146E-06,
-          -1.66817717E-05,
+          6.03615035E-06,
+          4.9657455E-08,
+          -4.19877542E-05,
           1.0
         ]
       },
@@ -103,21 +103,21 @@
       "materialId": "lowFriction",
       "surfacePolicy": "autoBoxTop",
       "size": [
-        1.2,
+        1.25,
         0.5,
-        1.2
+        1.25
       ],
       "pose": {
         "position": [
-          -0.0498831719,
-          0.7494282,
-          1.00000525
+          0.250100851,
+          0.7498286,
+          0.7250825
         ],
         "rotation": [
-          0.000582151,
-          -2.6824544E-05,
-          -0.000557375664,
-          0.999999762
+          8.11067948E-05,
+          -9.048908E-08,
+          -8.605583E-05,
+          1.0
         ]
       },
       "massKg": 15.0,
@@ -133,28 +133,28 @@
       "materialId": "lowFriction",
       "surfacePolicy": "autoBoxTop",
       "size": [
-        1.2,
-        1.0,
+        1.80000007,
+        0.5,
         1.2
       ],
       "pose": {
         "position": [
-          0.200853676,
-          1.4986707,
-          1.501036
+          0.0500749275,
+          1.2490809,
+          1.25056672
         ],
         "rotation": [
-          0.0007250125,
-          -3.08287454E-05,
-          -0.00048375898,
-          0.9999997
+          0.000495346147,
+          -1.10290921E-06,
+          3.95306743E-05,
+          0.99999994
         ]
       },
       "massKg": 25.0,
       "graspable": true,
       "settleAsDynamic": true,
       "movable": false,
-      "presetId": "Tall"
+      "presetId": "Wide"
     },
     {
       "id": "island",
@@ -169,14 +169,14 @@
       ],
       "pose": {
         "position": [
-          -1.4,
+          -1.5,
           0.25,
-          1.0
+          0.75
         ],
         "rotation": [
-          8.03600964E-10,
-          3.90641269E-11,
-          4.9986415E-10,
+          -2.534257E-11,
+          2.50588456E-11,
+          6.445809E-10,
           1.0
         ]
       },
@@ -231,9 +231,9 @@
   "goal": {
     "frame": "structure",
     "center": [
-      0.200853676,
-      2.59867072,
-      1.501036
+      0.0500749275,
+      2.099081,
+      1.25056672
     ],
     "size": [
       0.6,
@@ -246,7 +246,7 @@
   "validation": {
     "passed": true,
     "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
-    "inputHash": "6fb7069d282bf1e51329a669b0828307f327f1e6da2a32e71747869d8bda8d16",
+    "inputHash": "08a6a0fc48831376fe6a40683d2f2958533712fb633804b990996cfd36afb632",
     "unityVersion": "6000.3.24f1",
     "scope": "dynamic-settle-then-static",
     "staticObjects": 1,
@@ -254,35 +254,35 @@
     "simulationSteps": 151,
     "simulatedSeconds": 3.01999879,
     "fixedDeltaTime": 0.0199999921,
-    "maxPenetration": 0.00189259648,
+    "maxPenetration": 0.000886201859,
     "boxes": [
       {
         "id": "level0",
-        "displacement": 5.8337675E-05,
+        "displacement": 4.65827834E-05,
         "angle": 0.0,
         "speed": 0.0,
         "angularSpeed": 0.0,
-        "windowDrift": 5.55821543E-06,
+        "windowDrift": 2.21719529E-05,
         "windowAngle": 0.0,
         "sleeping": true
       },
       {
         "id": "level1",
-        "displacement": 0.000583624234,
+        "displacement": 0.000215317981,
         "angle": 0.0,
         "speed": 0.0,
         "angularSpeed": 0.0,
-        "windowDrift": 6.781166E-05,
+        "windowDrift": 0.000152937326,
         "windowAngle": 0.0,
         "sleeping": true
       },
       {
         "id": "level2",
-        "displacement": 0.0018892322,
+        "displacement": 0.00108237646,
         "angle": 0.0,
         "speed": 0.0,
         "angularSpeed": 0.0,
-        "windowDrift": 0.000146083257,
+        "windowDrift": 0.00054123177,
         "windowAngle": 0.0,
         "sleeping": true
       },

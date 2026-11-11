@@ -50,9 +50,11 @@ namespace PhysicalAI.Structures
                     float tread=Uniform(r,lo,hi);
                     if(narrow)
                     {
-                        // Skippable only: from the stance at the back of the tread below the ledge (torso half-depth with tolerance from the
-                        // ledge riser), this box's front edge must be within arm reach of a shoulder (BoxStackFeasibility's test).
-                        float rise=below.Size.y+size.y-ClimberGeometry.StandingShoulderHeight,back=ClimberGeometry.MinTreadDepth*.5f+tread,side=ClimberGeometry.ShoulderHalfWidth;
+                        // Skippable only: from the stance below the ledge (the spawn point when the ledge is the first level, else the back of
+                        // the tread below, torso half-depth with tolerance from the ledge riser), this box's front edge must be within arm reach
+                        // of a shoulder (BoxStackFeasibility's test).
+                        float stance=i-1==0?belowMinZ-doc.start.torso.Position.z:ClimberGeometry.MinTreadDepth*.5f;
+                        float rise=below.Size.y+size.y-ClimberGeometry.StandingShoulderHeight,back=stance+tread,side=ClimberGeometry.ShoulderHalfWidth;
                         if(side*side+rise*rise+back*back>ClimberGeometry.MaxHandOffset*ClimberGeometry.MaxHandOffset)continue;
                     }
                     float dx=Mathf.Min(lateral,Mathf.Max(0,below.Size.x*.5f-.10f));float x=below.Center.x+(dx>0?Uniform(r,-dx,dx):0);

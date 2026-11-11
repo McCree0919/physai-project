@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "stack2-hard-100915",
+  "id": "stack2-hard-102821",
   "units": {
     "length": "m",
     "mass": "kg",
@@ -11,20 +11,20 @@
     "name": "boxStack",
     "difficulty": "Hard",
     "version": 2,
-    "seed": 100915,
+    "seed": 102821,
     "parameters": null,
     "features": {
-      "levels": 3,
+      "levels": 4,
       "constructionLevels": 3,
       "overhangCount": 2,
-      "exposedTopEdges": 7,
+      "exposedTopEdges": 12,
       "coarseMinimumTransitions": 2,
-      "maxRise": 0.950000048,
-      "maxVerticalFace": 0.956549346,
-      "maxUntoppedRise": 0.9488728,
-      "maxOverhang": 0.5051688,
-      "maxGap": 0.0,
-      "totalHeight": 1.95
+      "maxRise": 0.5,
+      "maxVerticalFace": 1.05000007,
+      "maxUntoppedRise": 0.5003292,
+      "maxOverhang": 0.550578356,
+      "maxGap": 0.400001,
+      "totalHeight": 1.5
     }
   },
   "materials": [
@@ -73,28 +73,28 @@
       "materialId": "lowFriction",
       "surfacePolicy": "autoBoxTop",
       "size": [
-        1.25,
+        1.80000007,
         0.5,
-        1.25
+        1.2
       ],
       "pose": {
         "position": [
-          -8.599896E-05,
-          0.2504442,
-          0.6250119
+          2.86794475E-05,
+          0.249938041,
+          0.5999892
         ],
         "rotation": [
-          7.945225E-05,
-          1.50122387E-05,
-          0.00022539786,
+          -6.38208348E-07,
+          3.55286784E-06,
+          -4.6870744E-05,
           1.0
         ]
       },
-      "massKg": 15.0,
+      "massKg": 25.0,
       "graspable": true,
       "settleAsDynamic": true,
       "movable": false,
-      "presetId": "Step"
+      "presetId": "Wide"
     },
     {
       "id": "level1",
@@ -109,15 +109,15 @@
       ],
       "pose": {
         "position": [
-          0.199789435,
-          0.748943269,
-          0.95136553
+          -0.249945268,
+          0.7497297,
+          0.7002273
         ],
         "rotation": [
-          0.00150228315,
-          -2.85970709E-05,
-          7.109021E-05,
-          0.999998868
+          0.00045628997,
+          1.719966E-06,
+          -4.18326272E-05,
+          0.99999994
         ]
       },
       "massKg": 25.0,
@@ -133,21 +133,51 @@
       "materialId": "lowFriction",
       "surfacePolicy": "autoBoxTop",
       "size": [
-        1.15,
-        0.95,
-        1.15
+        1.25,
+        0.5,
+        1.25
       ],
       "pose": {
         "position": [
-          -0.100571558,
-          1.47147083,
-          1.47979915
+          -0.0498980619,
+          1.24925447,
+          1.22574961
         ],
         "rotation": [
-          0.00260436418,
-          -5.924914E-05,
-          0.0002489814,
-          0.999996662
+          0.000572565,
+          9.911158E-07,
+          -5.03800438E-05,
+          0.9999999
+        ]
+      },
+      "massKg": 15.0,
+      "graspable": true,
+      "settleAsDynamic": true,
+      "movable": false,
+      "presetId": "Step"
+    },
+    {
+      "id": "island",
+      "type": "box",
+      "motion": "static",
+      "materialId": "lowFriction",
+      "surfacePolicy": "autoBoxTop",
+      "size": [
+        1.25,
+        1.05000007,
+        1.25
+      ],
+      "pose": {
+        "position": [
+          -1.92500007,
+          0.525000036,
+          0.400000036
+        ],
+        "rotation": [
+          4.14399959E-10,
+          -1.39052506E-12,
+          -1.0034209E-09,
+          1.0
         ]
       },
       "massKg": 25.0,
@@ -201,9 +231,9 @@
   "goal": {
     "frame": "structure",
     "center": [
-      -0.100571558,
-      2.54647088,
-      1.47979915
+      -0.0498980619,
+      2.09925461,
+      1.22574961
     ],
     "size": [
       0.6,
@@ -216,43 +246,53 @@
   "validation": {
     "passed": true,
     "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
-    "inputHash": "931f58e5e649e4c64ad306ed991372935697f42b9eb90ca12fb84e3c6bac16db",
+    "inputHash": "423934170f824f0e8f09119543909d03d42621cbd454d6c05bc742a00dec7d2d",
     "unityVersion": "6000.3.24f1",
     "scope": "dynamic-settle-then-static",
     "staticObjects": 1,
-    "dynamicObjects": 3,
+    "dynamicObjects": 4,
     "simulationSteps": 151,
     "simulatedSeconds": 3.01999879,
     "fixedDeltaTime": 0.0199999921,
-    "maxPenetration": 0.002521336,
+    "maxPenetration": 0.0006953478,
     "boxes": [
       {
         "id": "level0",
-        "displacement": 0.00045260886,
+        "displacement": 6.913112E-05,
         "angle": 0.0,
         "speed": 0.0,
         "angularSpeed": 0.0,
-        "windowDrift": 0.0001626976,
+        "windowDrift": 3.63119361E-05,
         "windowAngle": 0.0,
         "sleeping": true
       },
       {
         "id": "level1",
-        "displacement": 0.00173941429,
-        "angle": 0.17245847,
+        "displacement": 0.000357371377,
+        "angle": 0.0,
         "speed": 0.0,
         "angularSpeed": 0.0,
-        "windowDrift": 0.0004146652,
+        "windowDrift": 0.0002427297,
         "windowAngle": 0.0,
         "sleeping": true
       },
       {
         "id": "level2",
-        "displacement": 0.00598443672,
-        "angle": 0.296075046,
+        "displacement": 0.00106211833,
+        "angle": 0.0,
         "speed": 0.0,
         "angularSpeed": 0.0,
-        "windowDrift": 0.0008235233,
+        "windowDrift": 0.000549111,
+        "windowAngle": 0.0,
+        "sleeping": true
+      },
+      {
+        "id": "island",
+        "displacement": 0.0,
+        "angle": 0.0,
+        "speed": 0.0,
+        "angularSpeed": 0.0,
+        "windowDrift": 0.0,
         "windowAngle": 0.0,
         "sleeping": true
       }

@@ -20,10 +20,10 @@
       "exposedTopEdges": 12,
       "coarseMinimumTransitions": 2,
       "maxRise": 0.5,
-      "maxVerticalFace": 0.5007683,
-      "maxUntoppedRise": 0.5002185,
-      "maxOverhang": 0.5002384,
-      "maxGap": 0.250002265,
+      "maxVerticalFace": 0.5011042,
+      "maxUntoppedRise": 0.500102162,
+      "maxOverhang": 0.3002553,
+      "maxGap": 0.399965942,
       "totalHeight": 1.5
     }
   },
@@ -79,14 +79,14 @@
       ],
       "pose": {
         "position": [
-          1.2924449E-05,
-          0.249985635,
-          0.899992049
+          1.8325507E-05,
+          0.250010967,
+          0.900009155
         ],
         "rotation": [
-          -5.736018E-06,
-          2.49298546E-06,
-          -1.33769554E-05,
+          1.66945611E-05,
+          1.48591016E-06,
+          -2.61319256E-05,
           1.0
         ]
       },
@@ -103,20 +103,20 @@
       "materialId": "lowFriction",
       "surfacePolicy": "autoBoxTop",
       "size": [
-        1.9,
+        1.2,
         0.5,
-        1.25
+        1.80000007
       ],
       "pose": {
         "position": [
-          0.05008589,
-          0.74985373,
-          0.9750336
+          -0.300115317,
+          0.7496224,
+          1.200176
         ],
         "rotation": [
-          0.000162589626,
-          -9.794678E-06,
-          -9.133866E-05,
+          0.000195466826,
+          7.237702E-07,
+          0.000166892889,
           1.0
         ]
       },
@@ -133,20 +133,20 @@
       "materialId": "lowFriction",
       "surfacePolicy": "autoBoxTop",
       "size": [
-        1.15,
+        1.2,
         0.5,
-        1.15
+        1.2
       ],
       "pose": {
         "position": [
-          0.100168295,
-          1.24968243,
-          1.52524018
+          -0.400262833,
+          1.249183,
+          1.60043108
         ],
         "rotation": [
-          0.000238809283,
-          -1.07722235E-05,
-          -9.526392E-05,
+          0.000247316319,
+          -1.29801685E-06,
+          0.000117815616,
           1.0
         ]
       },
@@ -163,20 +163,20 @@
       "materialId": "lowFriction",
       "surfacePolicy": "autoBoxTop",
       "size": [
-        1.15,
+        1.2,
         0.5,
-        1.15
+        1.2
       ],
       "pose": {
         "position": [
-          -1.42500234,
-          0.249998331,
-          1.0000062
+          1.6,
+          0.25,
+          0.700000048
         ],
         "rotation": [
-          8.769646E-06,
-          -1.38174846E-06,
-          3.9220987E-07,
+          4.95912367E-10,
+          -1.062776E-10,
+          -2.73696443E-09,
           1.0
         ]
       },
@@ -231,9 +231,9 @@
   "goal": {
     "frame": "structure",
     "center": [
-      0.100168295,
-      2.09968233,
-      1.52524018
+      -0.400262833,
+      2.099183,
+      1.60043108
     ],
     "size": [
       0.6,
@@ -246,7 +246,7 @@
   "validation": {
     "passed": true,
     "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
-    "inputHash": "6ea25f4881ccd3a827d431d20b6815a20b8f6a079db26eff8cc1552362cceac2",
+    "inputHash": "5ef14295d0f903e8362ccbcc4cebe733f889e3d5aa5affeaee993120b44c70cc",
     "unityVersion": "6000.3.24f1",
     "scope": "dynamic-settle-then-static",
     "staticObjects": 1,
@@ -254,45 +254,45 @@
     "simulationSteps": 151,
     "simulatedSeconds": 3.01999879,
     "fixedDeltaTime": 0.0199999921,
-    "maxPenetration": 0.000427544117,
+    "maxPenetration": 0.000724494457,
     "boxes": [
       {
         "id": "level0",
-        "displacement": 2.09088284E-05,
+        "displacement": 2.32221955E-05,
         "angle": 0.0,
         "speed": 0.0,
         "angularSpeed": 0.0,
-        "windowDrift": 1.2868365E-05,
+        "windowDrift": 8.1168575E-05,
         "windowAngle": 0.0,
         "sleeping": true
       },
       {
         "id": "level1",
-        "displacement": 0.000172910659,
+        "displacement": 0.000432241854,
         "angle": 0.0,
         "speed": 0.0,
         "angularSpeed": 0.0,
-        "windowDrift": 7.812616E-05,
+        "windowDrift": 0.000190463878,
         "windowAngle": 0.0,
         "sleeping": true
       },
       {
         "id": "level2",
-        "displacement": 0.0004322242,
+        "displacement": 0.0009603563,
         "angle": 0.0,
         "speed": 0.0,
         "angularSpeed": 0.0,
-        "windowDrift": 0.000179281589,
+        "windowDrift": 0.0004311646,
         "windowAngle": 0.0,
         "sleeping": true
       },
       {
         "id": "island",
-        "displacement": 6.848052E-06,
+        "displacement": 0.0,
         "angle": 0.0,
         "speed": 0.0,
         "angularSpeed": 0.0,
-        "windowDrift": 9.84871E-06,
+        "windowDrift": 0.0,
         "windowAngle": 0.0,
         "sleeping": true
       }

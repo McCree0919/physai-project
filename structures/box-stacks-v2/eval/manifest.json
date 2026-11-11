@@ -95,6 +95,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -105,7 +106,7 @@
                         "freeWidth": 1.178221344947815,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -206,6 +207,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -216,7 +218,7 @@
                         "freeWidth": 1.178221344947815,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -429,6 +431,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -439,7 +442,7 @@
                         "freeWidth": 1.1282212734222413,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -484,6 +487,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -494,7 +498,7 @@
                         "freeWidth": 1.178221344947815,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -595,6 +599,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -605,7 +610,7 @@
                         "freeWidth": 1.1282212734222413,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -650,6 +655,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -660,7 +666,7 @@
                         "freeWidth": 1.8782215118408204,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -705,6 +711,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -715,7 +722,7 @@
                         "freeWidth": 1.7782213687896729,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -872,6 +879,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -882,7 +890,7 @@
                         "freeWidth": 1.7782213687896729,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -983,6 +991,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -993,7 +1002,7 @@
                         "freeWidth": 1.178221344947815,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -1038,6 +1047,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -1048,7 +1058,7 @@
                         "freeWidth": 1.7782213687896729,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -1093,6 +1103,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -1103,7 +1114,7 @@
                         "freeWidth": 1.2282212972640992,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -1260,6 +1271,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -1270,7 +1282,7 @@
                         "freeWidth": 1.1282212734222413,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -1371,6 +1383,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -1381,7 +1394,7 @@
                         "freeWidth": 1.2282212972640992,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -1538,6 +1551,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -1548,7 +1562,7 @@
                         "freeWidth": 1.6782214641571046,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -1593,6 +1607,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -1603,7 +1618,7 @@
                         "freeWidth": 1.6782214641571046,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -1648,6 +1663,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -1658,7 +1674,7 @@
                         "freeWidth": 1.178221344947815,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -1759,6 +1775,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -1769,7 +1786,7 @@
                         "freeWidth": 1.6782214641571046,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -1870,6 +1887,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -1880,7 +1898,7 @@
                         "freeWidth": 1.2282212972640992,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -1925,6 +1943,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -1935,7 +1954,7 @@
                         "freeWidth": 1.2282212972640992,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -2092,6 +2111,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -2102,7 +2122,7 @@
                         "freeWidth": 1.2282212972640992,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -2203,6 +2223,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -2213,7 +2234,7 @@
                         "freeWidth": 1.7782213687896729,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -2258,6 +2279,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -2268,7 +2290,7 @@
                         "freeWidth": 1.178221344947815,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -2593,6 +2615,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -2603,7 +2626,7 @@
                         "freeWidth": 1.7782213687896729,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -3040,6 +3063,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -3050,7 +3074,7 @@
                         "freeWidth": 1.7782213687896729,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -3263,6 +3287,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -3273,7 +3298,7 @@
                         "freeWidth": 1.2282212972640992,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -3318,6 +3343,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -3328,7 +3354,7 @@
                         "freeWidth": 1.8782215118408204,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -3438,6 +3464,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -3448,7 +3475,7 @@
                         "freeWidth": 1.8782215118408204,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -3634,7 +3661,7 @@
                         "freeWidth": 1.1282212734222413,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -3774,7 +3801,7 @@
                         "freeWidth": 1.178221344947815,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -3791,7 +3818,7 @@
                         "freeDepth": 1.2009618282318116,
                         "freeWidth": 1.228220820426941,
                         "standable": true,
-                        "reachable": true,
+                        "reachable": false,
                         "required": false
                     }
                 ]
@@ -3828,6 +3855,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -3838,7 +3866,7 @@
                         "freeWidth": 1.178221344947815,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -3939,6 +3967,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -3949,7 +3978,7 @@
                         "freeWidth": 1.178221344947815,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -4227,6 +4256,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -4237,7 +4267,7 @@
                         "freeWidth": 1.178221344947815,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -4282,6 +4312,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -4292,7 +4323,7 @@
                         "freeWidth": 1.8782215118408204,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -4337,6 +4368,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -4347,7 +4379,7 @@
                         "freeWidth": 1.1282212734222413,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -4515,7 +4547,7 @@
                         "freeWidth": 1.1282212734222413,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -4532,7 +4564,7 @@
                         "freeDepth": 1.100961685180664,
                         "freeWidth": 1.1282209157943726,
                         "standable": true,
-                        "reachable": true,
+                        "reachable": false,
                         "required": false
                     }
                 ]
@@ -4580,7 +4612,7 @@
                         "freeWidth": 1.7782213687896729,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -4662,7 +4694,7 @@
                         "freeDepth": 1.2009618282318116,
                         "freeWidth": 1.228220820426941,
                         "standable": true,
-                        "reachable": true,
+                        "reachable": false,
                         "required": false
                     }
                 ]
@@ -4699,6 +4731,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -4709,7 +4742,7 @@
                         "freeWidth": 1.1282212734222413,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -4839,7 +4872,7 @@
                         "freeWidth": 1.178221344947815,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -4893,6 +4926,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -4903,7 +4937,7 @@
                         "freeWidth": 1.1282212734222413,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -4920,7 +4954,7 @@
                         "freeDepth": 1.1509616374969483,
                         "freeWidth": 1.1782208681106568,
                         "standable": true,
-                        "reachable": true,
+                        "reachable": false,
                         "required": false
                     }
                 ]
@@ -5041,7 +5075,7 @@
                         "freeDepth": 1.1509617567062379,
                         "freeWidth": 1.1782208681106568,
                         "standable": true,
-                        "reachable": true,
+                        "reachable": false,
                         "required": false
                     }
                 ]
@@ -5089,7 +5123,7 @@
                         "freeWidth": 1.2282212972640992,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -5106,7 +5140,7 @@
                         "freeDepth": 1.200961709022522,
                         "freeWidth": 1.228220820426941,
                         "standable": true,
-                        "reachable": true,
+                        "reachable": false,
                         "required": false
                     }
                 ]
@@ -5460,6 +5494,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -5470,7 +5505,7 @@
                         "freeWidth": 1.7782213687896729,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -5646,6 +5681,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -5656,7 +5692,7 @@
                         "freeWidth": 1.1282212734222413,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -5673,7 +5709,7 @@
                         "freeDepth": 1.2009615898132325,
                         "freeWidth": 1.228220820426941,
                         "standable": true,
-                        "reachable": true,
+                        "reachable": false,
                         "required": false
                     }
                 ]
@@ -5778,7 +5814,7 @@
                         "freeWidth": 1.1282212734222413,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -5804,7 +5840,7 @@
                         "freeDepth": 1.100961446762085,
                         "freeWidth": 1.1282209157943726,
                         "standable": true,
-                        "reachable": true,
+                        "reachable": false,
                         "required": false
                     }
                 ]
@@ -5897,6 +5933,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -5907,7 +5944,7 @@
                         "freeWidth": 1.7782213687896729,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -6028,7 +6065,7 @@
                         "freeWidth": 1.2282212972640992,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -6045,7 +6082,7 @@
                         "freeDepth": 1.1509616374969483,
                         "freeWidth": 1.1782208681106568,
                         "standable": true,
-                        "reachable": true,
+                        "reachable": false,
                         "required": false
                     }
                 ]
@@ -6093,7 +6130,7 @@
                         "freeWidth": 1.1282212734222413,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -6110,7 +6147,7 @@
                         "freeDepth": 1.1509616374969483,
                         "freeWidth": 1.1782208681106568,
                         "standable": true,
-                        "reachable": true,
+                        "reachable": false,
                         "required": false
                     }
                 ]
@@ -6214,7 +6251,7 @@
                         "freeWidth": 1.178221344947815,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -6231,7 +6268,7 @@
                         "freeDepth": 1.1509617567062379,
                         "freeWidth": 1.1782208681106568,
                         "standable": true,
-                        "reachable": true,
+                        "reachable": false,
                         "required": false
                     }
                 ]
@@ -6557,6 +6594,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -6567,7 +6605,7 @@
                         "freeWidth": 1.8782215118408204,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -6854,6 +6892,7 @@
                 "reach": 1.4842853546142579,
                 "route": [
                     "ground",
+                    "level0",
                     "level1"
                 ],
                 "surfaces": [
@@ -6864,7 +6903,7 @@
                         "freeWidth": 1.2282212972640992,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -7069,7 +7108,7 @@
                         "freeWidth": 1.2282214164733887,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level2",
@@ -7086,7 +7125,7 @@
                         "freeDepth": 1.2009615898132325,
                         "freeWidth": 1.228220820426941,
                         "standable": true,
-                        "reachable": true,
+                        "reachable": false,
                         "required": false
                     }
                 ]
@@ -7134,7 +7173,7 @@
                         "freeWidth": 1.2282212972640992,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -7160,7 +7199,7 @@
                         "freeDepth": 1.1509616374969483,
                         "freeWidth": 1.1782208681106568,
                         "standable": true,
-                        "reachable": true,
+                        "reachable": false,
                         "required": false
                     }
                 ]
@@ -7530,6 +7569,71 @@
             "nearestEval": ""
         },
         {
+            "id": "stack2-hard-20088",
+            "difficulty": "Hard",
+            "path": "structures/box-stacks-v2/eval/stack2-hard-20088.json",
+            "sha256": "55eba53e8165aae5e5c461e9fe412691909bc4da0921de815552796053638bed",
+            "geometryKey": "-11,10,2,13,20,26;-12,0,0,12,10,24;-15,20,12,9,40,36",
+            "seed": 20088,
+            "features": {
+                "levels": 3,
+                "constructionLevels": 3,
+                "overhangCount": 2,
+                "exposedTopEdges": 7,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 1.0,
+                "maxVerticalFace": 1.0058982372283936,
+                "maxUntoppedRise": 0.9991782903671265,
+                "maxOverhang": 0.5051441192626953,
+                "maxGap": 0.0,
+                "totalHeight": 2.0
+            },
+            "feasibility": {
+                "passed": true,
+                "coarseReachable": true,
+                "reason": "StandingChainToGoal",
+                "minTreadDepth": 0.4509615898132324,
+                "minTreadWidth": 0.6782213449478149,
+                "reach": 1.4842853546142579,
+                "route": [
+                    "ground",
+                    "level1",
+                    "level2"
+                ],
+                "surfaces": [
+                    {
+                        "id": "level0",
+                        "top": 0.5001510381698608,
+                        "freeDepth": 0.0,
+                        "freeWidth": 0.0,
+                        "standable": false,
+                        "reachable": false,
+                        "required": false
+                    },
+                    {
+                        "id": "level1",
+                        "top": 1.0011650323867798,
+                        "freeDepth": 0.5009616017341614,
+                        "freeWidth": 1.178221344947815,
+                        "standable": true,
+                        "reachable": true,
+                        "required": true
+                    },
+                    {
+                        "id": "level2",
+                        "top": 2.0003433227539064,
+                        "freeDepth": 1.2009611129760743,
+                        "freeWidth": 1.178221344947815,
+                        "standable": true,
+                        "reachable": true,
+                        "required": false
+                    }
+                ]
+            },
+            "nearestEvalUnits": -1,
+            "nearestEval": ""
+        },
+        {
             "id": "stack2-hard-20105",
             "difficulty": "Hard",
             "path": "structures/box-stacks-v2/eval/stack2-hard-20105.json",
@@ -7643,7 +7747,7 @@
                         "freeWidth": 1.2282212972640992,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -7669,7 +7773,7 @@
                         "freeDepth": 1.1509617567062379,
                         "freeWidth": 1.1782208681106568,
                         "standable": true,
-                        "reachable": true,
+                        "reachable": false,
                         "required": false
                     }
                 ]
@@ -8218,7 +8322,7 @@
                         "freeWidth": 1.1282212734222413,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -8244,7 +8348,7 @@
                         "freeDepth": 1.100961685180664,
                         "freeWidth": 1.1282209157943726,
                         "standable": true,
-                        "reachable": true,
+                        "reachable": false,
                         "required": false
                     }
                 ]
@@ -8256,21 +8360,21 @@
             "id": "stack2-hard-20194",
             "difficulty": "Hard",
             "path": "structures/box-stacks-v2/eval/stack2-hard-20194.json",
-            "sha256": "ecf425f2fb5a2930233711da6079a7eb136e90f3edce61b775a62a8621f299e6",
-            "geometryKey": "-12,0,0,12,10,36;-12,20,20,12,30,43;-6,30,30,16,49,53;-8,10,7,16,20,43",
+            "sha256": "e5932d132ccadb8aca3f299f321cd7f415b38fb9a47d4c1c2e9bf9014cc96b86",
+            "geometryKey": "-12,0,0,12,10,36;-12,40,26,10,59,49;-15,10,5,8,20,39;-18,20,16,6,40,40",
             "seed": 20194,
             "features": {
                 "levels": 4,
                 "constructionLevels": 4,
                 "overhangCount": 3,
-                "exposedTopEdges": 10,
+                "exposedTopEdges": 9,
                 "coarseMinimumTransitions": 3,
-                "maxRise": 0.9500000476837158,
-                "maxVerticalFace": 0.9579353928565979,
-                "maxUntoppedRise": 0.948951005935669,
-                "maxOverhang": 0.5050051212310791,
+                "maxRise": 1.0,
+                "maxVerticalFace": 1.0032944679260255,
+                "maxUntoppedRise": 0.9996128082275391,
+                "maxOverhang": 0.4530503749847412,
                 "maxGap": 0.0,
-                "totalHeight": 2.450000047683716
+                "totalHeight": 2.950000047683716
             },
             "feasibility": {
                 "passed": true,
@@ -8288,7 +8392,7 @@
                 "surfaces": [
                     {
                         "id": "level0",
-                        "top": 0.5000267028808594,
+                        "top": 0.5001627206802368,
                         "freeDepth": 0.0,
                         "freeWidth": 0.0,
                         "standable": false,
@@ -8297,27 +8401,27 @@
                     },
                     {
                         "id": "level1",
-                        "top": 1.0014581680297852,
-                        "freeDepth": 0.6509616374969482,
-                        "freeWidth": 1.178221344947815,
+                        "top": 1.0006165504455567,
+                        "freeDepth": 0.5509616136550903,
+                        "freeWidth": 1.1282213926315308,
                         "standable": true,
                         "reachable": true,
                         "required": true
                     },
                     {
                         "id": "level2",
-                        "top": 1.4998669624328614,
+                        "top": 2.0002293586730959,
                         "freeDepth": 0.5009615421295166,
-                        "freeWidth": 1.1282212734222413,
+                        "freeWidth": 1.1782214641571046,
                         "standable": true,
                         "reachable": true,
                         "required": true
                     },
                     {
                         "id": "level3",
-                        "top": 2.4488179683685304,
-                        "freeDepth": 1.150960922241211,
-                        "freeWidth": 1.1282213926315308,
+                        "top": 2.9488253593444826,
+                        "freeDepth": 1.1509610414505005,
+                        "freeWidth": 1.1282212734222413,
                         "standable": true,
                         "reachable": true,
                         "required": false
@@ -8383,6 +8487,71 @@
                         "top": 1.5000102519989014,
                         "freeDepth": 1.2509609460830689,
                         "freeWidth": 1.2282214164733887,
+                        "standable": true,
+                        "reachable": true,
+                        "required": false
+                    }
+                ]
+            },
+            "nearestEvalUnits": -1,
+            "nearestEval": ""
+        },
+        {
+            "id": "stack2-hard-20201",
+            "difficulty": "Hard",
+            "path": "structures/box-stacks-v2/eval/stack2-hard-20201.json",
+            "sha256": "0811212d0c2f22b08a19783230827d2e38dfff19608be15a912a9e4144da2fe0",
+            "geometryKey": "-12,0,0,12,10,25;-6,10,2,18,20,40;-9,20,15,15,40,39",
+            "seed": 20201,
+            "features": {
+                "levels": 3,
+                "constructionLevels": 3,
+                "overhangCount": 2,
+                "exposedTopEdges": 8,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 1.0,
+                "maxVerticalFace": 1.0046796798706055,
+                "maxUntoppedRise": 0.9976522922515869,
+                "maxOverhang": 0.7523216009140015,
+                "maxGap": 0.0,
+                "totalHeight": 2.0
+            },
+            "feasibility": {
+                "passed": true,
+                "coarseReachable": true,
+                "reason": "StandingChainToGoal",
+                "minTreadDepth": 0.4509615898132324,
+                "minTreadWidth": 0.6782213449478149,
+                "reach": 1.4842853546142579,
+                "route": [
+                    "ground",
+                    "level1",
+                    "level2"
+                ],
+                "surfaces": [
+                    {
+                        "id": "level0",
+                        "top": 0.5004226565361023,
+                        "freeDepth": 0.0,
+                        "freeWidth": 0.0,
+                        "standable": false,
+                        "reachable": false,
+                        "required": false
+                    },
+                    {
+                        "id": "level1",
+                        "top": 1.0018178224563599,
+                        "freeDepth": 0.6509616374969482,
+                        "freeWidth": 1.2282214164733887,
+                        "standable": true,
+                        "reachable": true,
+                        "required": true
+                    },
+                    {
+                        "id": "level2",
+                        "top": 1.9994701147079468,
+                        "freeDepth": 1.2009608745574952,
+                        "freeWidth": 1.178221344947815,
                         "standable": true,
                         "reachable": true,
                         "required": false
@@ -8597,7 +8766,7 @@
                         "freeDepth": 1.2009615898132325,
                         "freeWidth": 1.228220820426941,
                         "standable": true,
-                        "reachable": true,
+                        "reachable": false,
                         "required": false
                     }
                 ]
@@ -8822,20 +8991,20 @@
             "id": "stack2-hard-20287",
             "difficulty": "Hard",
             "path": "structures/box-stacks-v2/eval/stack2-hard-20287.json",
-            "sha256": "d02b1407825ef857da042325911278b84e80bbf1aad219a0d7db224eb076caa8",
-            "geometryKey": "-12,0,0,12,10,36;-6,10,7,18,20,31;-6,20,18,28,30,41",
+            "sha256": "b8a55d4f7cee5780ea8446867cae100254f49b6a4528e3b53d09fe3483fa782a",
+            "geometryKey": "-10,10,6,14,20,44;-11,20,18,27,30,43;-12,0,0,12,10,36;35,0,8,60,21,32",
             "seed": 20287,
             "features": {
-                "levels": 3,
+                "levels": 4,
                 "constructionLevels": 3,
                 "overhangCount": 2,
-                "exposedTopEdges": 8,
+                "exposedTopEdges": 10,
                 "coarseMinimumTransitions": 2,
                 "maxRise": 0.5,
-                "maxVerticalFace": 0.5067638754844666,
-                "maxUntoppedRise": 0.502272367477417,
-                "maxOverhang": 0.5014492273330689,
-                "maxGap": 0.0,
+                "maxVerticalFace": 1.0500000715255738,
+                "maxUntoppedRise": 0.5008229613304138,
+                "maxOverhang": 0.6256853342056274,
+                "maxGap": 1.1500084400177003,
                 "totalHeight": 1.5
             },
             "feasibility": {
@@ -8853,7 +9022,7 @@
                 "surfaces": [
                     {
                         "id": "level0",
-                        "top": 0.5000602006912231,
+                        "top": 0.5000129342079163,
                         "freeDepth": 0.0,
                         "freeWidth": 0.0,
                         "standable": false,
@@ -8862,20 +9031,29 @@
                     },
                     {
                         "id": "level1",
-                        "top": 1.0023325681686402,
-                        "freeDepth": 0.5509616136550903,
-                        "freeWidth": 1.1782214641571046,
+                        "top": 1.00083589553833,
+                        "freeDepth": 0.6009616255760193,
+                        "freeWidth": 1.2282214164733887,
                         "standable": true,
                         "reachable": true,
                         "required": true
                     },
                     {
                         "id": "level2",
-                        "top": 1.501465082168579,
-                        "freeDepth": 1.1009609699249268,
-                        "freeWidth": 1.6782214641571046,
+                        "top": 1.5004397630691529,
+                        "freeDepth": 1.2009608745574952,
+                        "freeWidth": 1.8782215118408204,
                         "standable": true,
                         "reachable": true,
+                        "required": false
+                    },
+                    {
+                        "id": "island",
+                        "top": 1.0500000715255738,
+                        "freeDepth": 1.2009613513946534,
+                        "freeWidth": 1.228220820426941,
+                        "standable": true,
+                        "reachable": false,
                         "required": false
                     }
                 ]
@@ -9072,7 +9250,7 @@
                         "freeWidth": 1.178221344947815,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -9377,7 +9555,7 @@
                         "freeDepth": 1.1509616374969483,
                         "freeWidth": 1.1782208681106568,
                         "standable": true,
-                        "reachable": true,
+                        "reachable": false,
                         "required": false
                     }
                 ]
@@ -9506,6 +9684,80 @@
                         "top": 1.5012741088867188,
                         "freeDepth": 1.2509610652923585,
                         "freeWidth": 1.8782215118408204,
+                        "standable": true,
+                        "reachable": true,
+                        "required": false
+                    }
+                ]
+            },
+            "nearestEvalUnits": -1,
+            "nearestEval": ""
+        },
+        {
+            "id": "stack2-hard-20396",
+            "difficulty": "Hard",
+            "path": "structures/box-stacks-v2/eval/stack2-hard-20396.json",
+            "sha256": "b3460cb7314a01bdde43bcb05ef32aea6dcf58ae21a2e865c2de6cb8e87d302e",
+            "geometryKey": "-19,0,0,19,10,25;-20,20,12,5,41,37;-22,10,2,16,20,27;21,0,-2,46,21,23",
+            "seed": 20396,
+            "features": {
+                "levels": 4,
+                "constructionLevels": 3,
+                "overhangCount": 2,
+                "exposedTopEdges": 12,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 1.0,
+                "maxVerticalFace": 1.05332612991333,
+                "maxUntoppedRise": 1.0000611543655396,
+                "maxOverhang": 0.5026745796203613,
+                "maxGap": 0.0998917818069458,
+                "totalHeight": 2.049999952316284
+            },
+            "feasibility": {
+                "passed": true,
+                "coarseReachable": true,
+                "reason": "StandingChainToGoal",
+                "minTreadDepth": 0.4509615898132324,
+                "minTreadWidth": 0.6782213449478149,
+                "reach": 1.4842853546142579,
+                "route": [
+                    "ground",
+                    "level1",
+                    "level2"
+                ],
+                "surfaces": [
+                    {
+                        "id": "level0",
+                        "top": 0.5000855922698975,
+                        "freeDepth": 0.0,
+                        "freeWidth": 0.0,
+                        "standable": false,
+                        "reachable": false,
+                        "required": false
+                    },
+                    {
+                        "id": "level1",
+                        "top": 1.0003831386566163,
+                        "freeDepth": 0.5009616017341614,
+                        "freeWidth": 1.8782215118408204,
+                        "standable": true,
+                        "reachable": true,
+                        "required": true
+                    },
+                    {
+                        "id": "level2",
+                        "top": 2.0500612258911135,
+                        "freeDepth": 1.2509610652923585,
+                        "freeWidth": 1.2282214164733887,
+                        "standable": true,
+                        "reachable": true,
+                        "required": false
+                    },
+                    {
+                        "id": "island",
+                        "top": 1.0500000715255738,
+                        "freeDepth": 1.200961709022522,
+                        "freeWidth": 1.228220820426941,
                         "standable": true,
                         "reachable": true,
                         "required": false
@@ -9647,7 +9899,7 @@
                         "freeDepth": 1.200961709022522,
                         "freeWidth": 1.228220820426941,
                         "standable": true,
-                        "reachable": true,
+                        "reachable": false,
                         "required": false
                     }
                 ]
@@ -9659,8 +9911,8 @@
             "id": "stack2-hard-20423",
             "difficulty": "Hard",
             "path": "structures/box-stacks-v2/eval/stack2-hard-20423.json",
-            "sha256": "c46a71f072bb8bd04a80d6589f7220e2c1867a06af4bfc730b78c6c7c9ab0262",
-            "geometryKey": "-12,0,0,12,10,38;-13,10,8,11,20,32;-39,0,8,-16,10,32;-8,20,18,16,40,42",
+            "sha256": "ee03ac18b34764ba2a07f5692281758d7a07c7b6eb62d906733772db8ac5ad2e",
+            "geometryKey": "-12,0,0,12,10,38;-17,20,13,19,30,37;-42,0,4,-18,10,26;-8,10,2,18,20,27",
             "seed": 20423,
             "features": {
                 "levels": 3,
@@ -9668,12 +9920,12 @@
                 "overhangCount": 2,
                 "exposedTopEdges": 12,
                 "coarseMinimumTransitions": 2,
-                "maxRise": 1.0,
-                "maxVerticalFace": 1.0028995275497437,
-                "maxUntoppedRise": 0.9993250370025635,
-                "maxOverhang": 0.5014693737030029,
-                "maxGap": 0.1999916434288025,
-                "totalHeight": 2.0
+                "maxRise": 0.5,
+                "maxVerticalFace": 0.5013309121131897,
+                "maxUntoppedRise": 0.5000149011611939,
+                "maxOverhang": 0.5006929636001587,
+                "maxGap": 0.3000001907348633,
+                "totalHeight": 1.5
             },
             "feasibility": {
                 "passed": true,
@@ -9690,7 +9942,7 @@
                 "surfaces": [
                     {
                         "id": "level0",
-                        "top": 0.5000022649765015,
+                        "top": 0.5000226497650147,
                         "freeDepth": 0.0,
                         "freeWidth": 0.0,
                         "standable": false,
@@ -9699,18 +9951,18 @@
                     },
                     {
                         "id": "level1",
-                        "top": 1.0007953643798829,
-                        "freeDepth": 0.5009616017341614,
-                        "freeWidth": 1.178221344947815,
+                        "top": 1.0000375509262086,
+                        "freeDepth": 0.5509616136550903,
+                        "freeWidth": 1.2282214164733887,
                         "standable": true,
                         "reachable": true,
                         "required": true
                     },
                     {
                         "id": "level2",
-                        "top": 2.0001204013824465,
-                        "freeDepth": 1.2009608745574952,
-                        "freeWidth": 1.178221344947815,
+                        "top": 1.499746322631836,
+                        "freeDepth": 1.1509610414505005,
+                        "freeWidth": 1.7782213687896729,
                         "standable": true,
                         "reachable": true,
                         "required": false
@@ -9718,7 +9970,7 @@
                     {
                         "id": "island",
                         "top": 0.5,
-                        "freeDepth": 1.100961446762085,
+                        "freeDepth": 1.100961685180664,
                         "freeWidth": 1.1282209157943726,
                         "standable": true,
                         "reachable": false,
@@ -9804,6 +10056,71 @@
             "nearestEval": ""
         },
         {
+            "id": "stack2-hard-20440",
+            "difficulty": "Hard",
+            "path": "structures/box-stacks-v2/eval/stack2-hard-20440.json",
+            "sha256": "898a31f2631b380f2a5f4d6b237772724f379fea7c3e5e52267576b8d2947ef2",
+            "geometryKey": "-12,0,0,12,10,24;-17,10,2,7,20,38;-23,20,13,1,40,37",
+            "seed": 20440,
+            "features": {
+                "levels": 3,
+                "constructionLevels": 3,
+                "overhangCount": 2,
+                "exposedTopEdges": 8,
+                "coarseMinimumTransitions": 2,
+                "maxRise": 1.0,
+                "maxVerticalFace": 1.0080102682113648,
+                "maxUntoppedRise": 0.9972691535949707,
+                "maxOverhang": 0.7023980617523193,
+                "maxGap": 0.0,
+                "totalHeight": 2.0
+            },
+            "feasibility": {
+                "passed": true,
+                "coarseReachable": true,
+                "reason": "StandingChainToGoal",
+                "minTreadDepth": 0.4509615898132324,
+                "minTreadWidth": 0.6782213449478149,
+                "reach": 1.4842853546142579,
+                "route": [
+                    "ground",
+                    "level1",
+                    "level2"
+                ],
+                "surfaces": [
+                    {
+                        "id": "level0",
+                        "top": 0.5012502670288086,
+                        "freeDepth": 0.0,
+                        "freeWidth": 0.0,
+                        "standable": false,
+                        "reachable": false,
+                        "required": false
+                    },
+                    {
+                        "id": "level1",
+                        "top": 1.0028815269470215,
+                        "freeDepth": 0.5509616136550903,
+                        "freeWidth": 1.178221344947815,
+                        "standable": true,
+                        "reachable": true,
+                        "required": true
+                    },
+                    {
+                        "id": "level2",
+                        "top": 2.000150680541992,
+                        "freeDepth": 1.2009611129760743,
+                        "freeWidth": 1.1782214641571046,
+                        "standable": true,
+                        "reachable": true,
+                        "required": false
+                    }
+                ]
+            },
+            "nearestEvalUnits": -1,
+            "nearestEval": ""
+        },
+        {
             "id": "stack2-hard-20461",
             "difficulty": "Hard",
             "path": "structures/box-stacks-v2/eval/stack2-hard-20461.json",
@@ -9844,7 +10161,7 @@
                         "freeWidth": 1.1282212734222413,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -9927,7 +10244,7 @@
                         "freeWidth": 1.178221344947815,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level2",
@@ -9944,7 +10261,7 @@
                         "freeDepth": 1.1509616374969483,
                         "freeWidth": 1.1782208681106568,
                         "standable": true,
-                        "reachable": true,
+                        "reachable": false,
                         "required": false
                     }
                 ]
@@ -10140,7 +10457,7 @@
                         "freeWidth": 1.1282212734222413,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -10280,7 +10597,7 @@
                         "freeWidth": 1.2282212972640992,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -10306,7 +10623,7 @@
                         "freeDepth": 1.200961709022522,
                         "freeWidth": 1.228220820426941,
                         "standable": true,
-                        "reachable": true,
+                        "reachable": false,
                         "required": false
                     }
                 ]
@@ -10502,7 +10819,7 @@
                         "freeWidth": 1.178221344947815,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -10679,20 +10996,20 @@
             "id": "stack2-hard-20555",
             "difficulty": "Hard",
             "path": "structures/box-stacks-v2/eval/stack2-hard-20555.json",
-            "sha256": "5fbed6a573522192c7e50d2aea2c0336f9b71458dcb126f04dbb27fa65d66fa4",
-            "geometryKey": "-14,10,8,22,20,32;-18,0,0,18,10,24;-2,20,18,20,30,41;-45,0,5,-22,19,28",
+            "sha256": "3ecfdef65779311187693dffd32ac88a4fb28351868d571d684430dee6fcc9eb",
+            "geometryKey": "-12,20,13,12,30,37;-18,0,0,18,10,24;-6,10,3,16,20,37;25,0,-3,50,10,22",
             "seed": 20555,
             "features": {
-                "levels": 4,
+                "levels": 3,
                 "constructionLevels": 3,
                 "overhangCount": 2,
                 "exposedTopEdges": 12,
                 "coarseMinimumTransitions": 2,
                 "maxRise": 0.5,
-                "maxVerticalFace": 0.949999988079071,
-                "maxUntoppedRise": 0.5000222325325012,
-                "maxOverhang": 0.4512488842010498,
-                "maxGap": 0.19999724626541139,
+                "maxVerticalFace": 0.5014250874519348,
+                "maxUntoppedRise": 0.5000559687614441,
+                "maxOverhang": 0.6505376100540161,
+                "maxGap": 0.3499475121498108,
                 "totalHeight": 1.5
             },
             "feasibility": {
@@ -10710,7 +11027,7 @@
                 "surfaces": [
                     {
                         "id": "level0",
-                        "top": 0.5000222325325012,
+                        "top": 0.5000415444374085,
                         "freeDepth": 0.0,
                         "freeWidth": 0.0,
                         "standable": false,
@@ -10719,27 +11036,27 @@
                     },
                     {
                         "id": "level1",
-                        "top": 1.000929355621338,
+                        "top": 1.0000975131988526,
                         "freeDepth": 0.5009616017341614,
-                        "freeWidth": 1.7782213687896729,
+                        "freeWidth": 1.1282213926315308,
                         "standable": true,
                         "reachable": true,
                         "required": true
                     },
                     {
                         "id": "level2",
-                        "top": 1.4998390674591065,
-                        "freeDepth": 1.150960922241211,
-                        "freeWidth": 1.1282215118408204,
+                        "top": 1.4996559619903565,
+                        "freeDepth": 1.15096116065979,
+                        "freeWidth": 1.178221344947815,
                         "standable": true,
                         "reachable": true,
                         "required": false
                     },
                     {
                         "id": "island",
-                        "top": 0.949999988079071,
-                        "freeDepth": 1.1009615659713746,
-                        "freeWidth": 1.1282209157943726,
+                        "top": 0.5,
+                        "freeDepth": 1.200961709022522,
+                        "freeWidth": 1.228220820426941,
                         "standable": true,
                         "reachable": false,
                         "required": false
@@ -11011,7 +11328,7 @@
                         "freeWidth": 1.2282212972640992,
                         "standable": true,
                         "reachable": true,
-                        "required": false
+                        "required": true
                     },
                     {
                         "id": "level1",
@@ -11038,295 +11355,6 @@
                         "freeWidth": 1.1782208681106568,
                         "standable": true,
                         "reachable": false,
-                        "required": false
-                    }
-                ]
-            },
-            "nearestEvalUnits": -1,
-            "nearestEval": ""
-        },
-        {
-            "id": "stack2-hard-20597",
-            "difficulty": "Hard",
-            "path": "structures/box-stacks-v2/eval/stack2-hard-20597.json",
-            "sha256": "f664c59c938599e41f9032a0cc1345b5c7b7c740781781cf4c002b1129097967",
-            "geometryKey": "-12,0,0,12,10,36;-13,10,11,11,30,35;-14,30,21,10,40,46;-41,0,2,-16,21,28",
-            "seed": 20597,
-            "features": {
-                "levels": 4,
-                "constructionLevels": 3,
-                "overhangCount": 2,
-                "exposedTopEdges": 10,
-                "coarseMinimumTransitions": 2,
-                "maxRise": 0.5499999523162842,
-                "maxVerticalFace": 1.0500000715255738,
-                "maxUntoppedRise": 0.5499802231788635,
-                "maxOverhang": 0.5504305362701416,
-                "maxGap": 0.20000076293945313,
-                "totalHeight": 2.0
-            },
-            "feasibility": {
-                "passed": true,
-                "coarseReachable": true,
-                "reason": "StandingChainToGoal",
-                "minTreadDepth": 0.4509615898132324,
-                "minTreadWidth": 0.6782213449478149,
-                "reach": 1.4842853546142579,
-                "route": [
-                    "ground",
-                    "level0",
-                    "level1",
-                    "level2"
-                ],
-                "surfaces": [
-                    {
-                        "id": "level0",
-                        "top": 0.5000198483467102,
-                        "freeDepth": 0.5509616136550903,
-                        "freeWidth": 1.178221344947815,
-                        "standable": true,
-                        "reachable": true,
-                        "required": true
-                    },
-                    {
-                        "id": "level1",
-                        "top": 1.500035285949707,
-                        "freeDepth": 0.5009616017341614,
-                        "freeWidth": 1.178221344947815,
-                        "standable": true,
-                        "reachable": true,
-                        "required": false
-                    },
-                    {
-                        "id": "level2",
-                        "top": 2.000065803527832,
-                        "freeDepth": 1.2009608745574952,
-                        "freeWidth": 1.2282214164733887,
-                        "standable": true,
-                        "reachable": true,
-                        "required": false
-                    },
-                    {
-                        "id": "island",
-                        "top": 1.0500000715255738,
-                        "freeDepth": 1.2009615898132325,
-                        "freeWidth": 1.228220820426941,
-                        "standable": true,
-                        "reachable": true,
-                        "required": false
-                    }
-                ]
-            },
-            "nearestEvalUnits": -1,
-            "nearestEval": ""
-        },
-        {
-            "id": "stack2-hard-20603",
-            "difficulty": "Hard",
-            "path": "structures/box-stacks-v2/eval/stack2-hard-20603.json",
-            "sha256": "fd0d56450fe8d27822744fd277a4581dae3e5c206abf9c5a8202c53cae9347e0",
-            "geometryKey": "-12,0,0,12,10,23;-16,10,3,8,20,39;-16,20,13,8,30,37",
-            "seed": 20603,
-            "features": {
-                "levels": 3,
-                "constructionLevels": 3,
-                "overhangCount": 1,
-                "exposedTopEdges": 7,
-                "coarseMinimumTransitions": 2,
-                "maxRise": 0.5,
-                "maxVerticalFace": 0.5067381262779236,
-                "maxUntoppedRise": 0.5014346837997437,
-                "maxOverhang": 0.802116870880127,
-                "maxGap": 0.0,
-                "totalHeight": 1.5
-            },
-            "feasibility": {
-                "passed": true,
-                "coarseReachable": true,
-                "reason": "StandingChainToGoal",
-                "minTreadDepth": 0.4509615898132324,
-                "minTreadWidth": 0.6782213449478149,
-                "reach": 1.4842853546142579,
-                "route": [
-                    "ground",
-                    "level1",
-                    "level2"
-                ],
-                "surfaces": [
-                    {
-                        "id": "level0",
-                        "top": 0.500887393951416,
-                        "freeDepth": 0.0,
-                        "freeWidth": 0.0,
-                        "standable": false,
-                        "reachable": false,
-                        "required": false
-                    },
-                    {
-                        "id": "level1",
-                        "top": 1.0023220777511597,
-                        "freeDepth": 0.5009616017341614,
-                        "freeWidth": 1.178221344947815,
-                        "standable": true,
-                        "reachable": true,
-                        "required": true
-                    },
-                    {
-                        "id": "level2",
-                        "top": 1.5003149509429932,
-                        "freeDepth": 1.2009609937667847,
-                        "freeWidth": 1.178221344947815,
-                        "standable": true,
-                        "reachable": true,
-                        "required": false
-                    }
-                ]
-            },
-            "nearestEvalUnits": -1,
-            "nearestEval": ""
-        },
-        {
-            "id": "stack2-hard-20620",
-            "difficulty": "Hard",
-            "path": "structures/box-stacks-v2/eval/stack2-hard-20620.json",
-            "sha256": "d5b4b825d2a877bccf1b823cebf106777fd4ce22b3acccbc8dcdde5392ed5116",
-            "geometryKey": "-10,10,16,14,20,50;-12,0,0,12,10,38;-8,20,20,16,30,58",
-            "seed": 20620,
-            "features": {
-                "levels": 3,
-                "constructionLevels": 3,
-                "overhangCount": 2,
-                "exposedTopEdges": 7,
-                "coarseMinimumTransitions": 2,
-                "maxRise": 0.5,
-                "maxVerticalFace": 0.5033858418464661,
-                "maxUntoppedRise": 0.5002012848854065,
-                "maxOverhang": 0.6007474660873413,
-                "maxGap": 0.0,
-                "totalHeight": 1.5
-            },
-            "feasibility": {
-                "passed": true,
-                "coarseReachable": true,
-                "reason": "StandingChainToGoal",
-                "minTreadDepth": 0.4509615898132324,
-                "minTreadWidth": 0.6782213449478149,
-                "reach": 1.4842853546142579,
-                "route": [
-                    "ground",
-                    "level0",
-                    "level2"
-                ],
-                "surfaces": [
-                    {
-                        "id": "level0",
-                        "top": 0.5002012848854065,
-                        "freeDepth": 0.8009616732597351,
-                        "freeWidth": 1.2282212972640992,
-                        "standable": true,
-                        "reachable": true,
-                        "required": true
-                    },
-                    {
-                        "id": "level1",
-                        "top": 1.0002988576889039,
-                        "freeDepth": 0.0,
-                        "freeWidth": 0.0,
-                        "standable": false,
-                        "reachable": false,
-                        "required": false
-                    },
-                    {
-                        "id": "level2",
-                        "top": 1.5001252889633179,
-                        "freeDepth": 1.8509602546691895,
-                        "freeWidth": 1.2282214164733887,
-                        "standable": true,
-                        "reachable": true,
-                        "required": false
-                    }
-                ]
-            },
-            "nearestEvalUnits": -1,
-            "nearestEval": ""
-        },
-        {
-            "id": "stack2-hard-20621",
-            "difficulty": "Hard",
-            "path": "structures/box-stacks-v2/eval/stack2-hard-20621.json",
-            "sha256": "7dfb2911b6ed1b732fe3c46e480cf9205990ab7b701d974540f714ea81357ee7",
-            "geometryKey": "-10,20,18,13,30,41;-12,0,0,12,10,34;-15,10,10,10,20,35;-3,30,28,20,40,51;18,0,6,42,20,30",
-            "seed": 20621,
-            "features": {
-                "levels": 4,
-                "constructionLevels": 4,
-                "overhangCount": 3,
-                "exposedTopEdges": 13,
-                "coarseMinimumTransitions": 2,
-                "maxRise": 0.5,
-                "maxVerticalFace": 1.0,
-                "maxUntoppedRise": 0.5000074505805969,
-                "maxOverhang": 0.5020773410797119,
-                "maxGap": 0.3499484062194824,
-                "totalHeight": 2.0
-            },
-            "feasibility": {
-                "passed": true,
-                "coarseReachable": true,
-                "reason": "StandingChainToGoal",
-                "minTreadDepth": 0.4509615898132324,
-                "minTreadWidth": 0.6782213449478149,
-                "reach": 1.4842853546142579,
-                "route": [
-                    "ground",
-                    "level0",
-                    "level2",
-                    "level3"
-                ],
-                "surfaces": [
-                    {
-                        "id": "level0",
-                        "top": 0.5000074505805969,
-                        "freeDepth": 0.4509615898132324,
-                        "freeWidth": 1.1282212734222413,
-                        "standable": true,
-                        "reachable": true,
-                        "required": true
-                    },
-                    {
-                        "id": "level1",
-                        "top": 1.0035969018936158,
-                        "freeDepth": 0.0,
-                        "freeWidth": 0.0,
-                        "standable": false,
-                        "reachable": false,
-                        "required": false
-                    },
-                    {
-                        "id": "level2",
-                        "top": 1.5012205839157105,
-                        "freeDepth": 0.5009615421295166,
-                        "freeWidth": 1.1282213926315308,
-                        "standable": true,
-                        "reachable": true,
-                        "required": false
-                    },
-                    {
-                        "id": "level3",
-                        "top": 1.9991545677185059,
-                        "freeDepth": 1.150960922241211,
-                        "freeWidth": 1.1282213926315308,
-                        "standable": true,
-                        "reachable": true,
-                        "required": false
-                    },
-                    {
-                        "id": "island",
-                        "top": 1.0,
-                        "freeDepth": 1.1509613990783692,
-                        "freeWidth": 1.1782208681106568,
-                        "standable": true,
-                        "reachable": true,
                         "required": false
                     }
                 ]
@@ -13089,11 +13117,6 @@
         {
             "difficulty": "Hard",
             "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20088
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
             "seed": 20089
         },
         {
@@ -13590,11 +13613,6 @@
             "difficulty": "Hard",
             "reason": "Settlement:CollapsedOrRearranged",
             "seed": 20200
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20201
         },
         {
             "difficulty": "Hard",
@@ -14489,11 +14507,6 @@
         {
             "difficulty": "Hard",
             "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20396
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
             "seed": 20397
         },
         {
@@ -14685,11 +14698,6 @@
             "difficulty": "Hard",
             "reason": "Settlement:CollapsedOrRearranged",
             "seed": 20439
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20440
         },
         {
             "difficulty": "Hard",
@@ -15275,221 +15283,6 @@
             "difficulty": "Hard",
             "reason": "Settlement:CollapsedOrRearranged",
             "seed": 20572
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20575
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20576
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20577
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20578
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20579
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20580
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20581
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20582
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20583
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20584
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20585
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20586
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20587
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20588
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20589
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20590
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20591
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20592
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20593
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20594
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20595
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20596
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20598
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20599
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20600
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20601
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20602
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20604
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20605
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20606
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20607
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20608
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20609
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20610
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20611
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20612
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20613
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20614
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20615
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20616
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20617
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20618
-        },
-        {
-            "difficulty": "Hard",
-            "reason": "Settlement:CollapsedOrRearranged",
-            "seed": 20619
         }
     ]
 }

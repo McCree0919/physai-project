@@ -23,9 +23,10 @@ namespace PhysicalAI.Structures
         // edge is at least torso half-depth + hand radius in front of the shoulder.
         public static float Reach => TorsoHeight*.5f+ShoulderHeight+Mathf.Sqrt(MaxHandOffset*MaxHandOffset-Mathf.Pow(TorsoDepth*.5f+HandRadius,2)); // 1.484 m
         // Standing shoulder height above the surface; an edge point is graspable from a standing spot when it lies within MaxHandOffset of
-        // either shoulder (torso centre +/-0.30 m in x). The body cannot walk: on the ground it stands within GroundRadius of its start.
+        // either shoulder (torso centre +/-0.30 m in x). The body cannot walk: on the ground it stands only at its spawn position (the
+        // audit probe shows the torso does not leave the spawn point before the hands hold something).
         public static float StandingShoulderHeight => TorsoHeight*.5f+ShoulderHeight; // 0.68 m
-        public const float ShoulderHalfWidth=.30f,GroundRadius=.50f;
+        public const float ShoulderHalfWidth=.30f;
     }
 
     [Serializable] public sealed class SurfaceFeasibility
@@ -68,14 +69,8 @@ namespace PhysicalAI.Structures
                 faces.Add(f);
             }
             var edges=BoxStackGeometry.Edges(d);
-            // Ground: the body cannot walk, so it stands only near its start: footprint positions within GroundRadius that overlap no box.
-            var start=d.start.torso.Position;var ground=new Face {Id="ground",Top=0};
-            for(float x=-ClimberGeometry.GroundRadius;x<=ClimberGeometry.GroundRadius+1e-4f;x+=.05f)for(float z=-ClimberGeometry.GroundRadius;z<=ClimberGeometry.GroundRadius+1e-4f;z+=.05f)
-            {
-                if(x*x+z*z>ClimberGeometry.GroundRadius*ClimberGeometry.GroundRadius+1e-4f)continue;
-                var foot=new Bounds(new Vector3(start.x+x,head*.5f+.001f,start.z+z),new Vector3(width-.002f,head-.002f,depth-.002f));
-                if(!boxes.Any(o=>o.b.Intersects(foot)))ground.Spots.Add(new Vector2(start.x+x,start.z+z));
-            }
+            // Ground: the body cannot walk, so its only ground stance is the spawn position.
+            var start=d.start.torso.Position;var ground=new Face {Id="ground",Top=0};ground.Spots.Add(new Vector2(start.x,start.z));
             float shoulderY=ClimberGeometry.StandingShoulderHeight,arm=ClimberGeometry.MaxHandOffset,half=ClimberGeometry.ShoulderHalfWidth;
             bool Reaches(Face from,Face to)
             {
