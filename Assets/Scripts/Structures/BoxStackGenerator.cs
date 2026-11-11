@@ -86,14 +86,14 @@ namespace PhysicalAI.Structures
             doc.objects=list.ToArray();SetGoal(doc);doc.generator.features=BoxStackGeometry.Measure(doc);StructureJson.Validate(doc);return doc;
         }
         static float Scale(System.Random r) => new[] {.95f,1f,1.05f}[r.Next(3)];
-        static Vector3 Scaled(string id,float scale)
+        public static Vector3 Scaled(string id,float scale)
         {var s=BoxPresets.Size(id)*scale;return new Vector3(Grid(s.x),Grid(s.y),Grid(s.z));}
         public static ObjectSpec Box(string id,string preset,Vector3 center,float scale=1,bool rotate=false)
         {
             Vector3 s=Scaled(preset,scale);if(rotate)s=new Vector3(s.z,s.y,s.x);
             var result=StaticWallGenerator.Box(id,center,s,true);result.presetId=preset;result.settleAsDynamic=true;result.massKg=BoxPresets.Mass(preset);return result;
         }
-        static StructureDocument Empty(string id)
+        public static StructureDocument Empty(string id)
         {
             var doc=new StructureDocument {schemaVersion=1,id=id,bodyProfile="layer1-validated",units=new Units {length="m",mass="kg",time="s"},
                 generator=new GeneratorInfo {name="boxStack",version=1,difficulty="Smoke"},

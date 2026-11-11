@@ -141,7 +141,7 @@ namespace PhysicalAI.Structures
             Need(doc.goal.dwellSeconds==.3f&&doc.goal.maxTorsoSpeed==.5f,"goal: existing 0.30 s / 0.50 m/s contract required");
             if(doc.generator!=null)
             {
-                Need((doc.generator.name=="rungWall"||doc.generator.name=="boxStack")&&doc.generator.version==1,"generator: unsupported name/version");
+                Need((doc.generator.name=="rungWall"&&doc.generator.version==1)||(doc.generator.name=="boxStack"&&(doc.generator.version==1||doc.generator.version==BoxStackGeneratorV2.Version)),"generator: unsupported name/version");
                 if(doc.generator.name=="rungWall")
                 {
                     var p=doc.generator.parameters;Need(p!=null&&Finite(p.heightGap)&&p.heightGap>=.15f&&p.heightGap<=1.0001f&&Finite(p.lateralGap)&&p.lateralGap>=.2f&&p.lateralGap<=.8001f,"generator.parameters: outside scanned range");
