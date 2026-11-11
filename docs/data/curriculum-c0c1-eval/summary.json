@@ -1,0 +1,1287 @@
+{
+  "bootstrapResamples": 10000,
+  "sets": {
+    "c1-val": {
+      "c0c1_s2026": {
+        "structures": 27,
+        "feasible": 27,
+        "excludedByGeometry": 0,
+        "clusters": 17,
+        "episodes": 540,
+        "mean": 0.9981481481481481,
+        "ci95": [
+          0.993181818181818,
+          1.0
+        ],
+        "structuresAll20": 26,
+        "structuresZero": 0,
+        "level1": 1.0,
+        "fallOrOutOfBounds": 0.0,
+        "failureStages": {
+          "success": 539,
+          "level2-not-goal": 1
+        },
+        "failureReasons": {
+          "Timeout": 1
+        },
+        "scripted": {
+          "mean": 0.6666666666666666,
+          "ci95": [
+            0.3684210526315789,
+            0.8529411764705882
+          ],
+          "completed": 18
+        },
+        "modelSha256": "e4171e6ef151d22b0b4ca127fc5739af0a601c1b270f5a0b753820f01f2eb442",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "c664d69f4e5ac2164b1455ad4b11a3e1aed1b6df795c0a77c8ffa28600c4a6b1",
+        "droppedOutsideSet": {},
+        "byFeature": {
+          "constructionLevels": {
+            "2": {
+              "n": 27,
+              "mean": 0.9981481481481481
+            }
+          },
+          "overhangCount": {
+            "1": {
+              "n": 27,
+              "mean": 0.9981481481481481
+            }
+          },
+          "maxRise": {
+            "<0.6": {
+              "n": 27,
+              "mean": 0.9981481481481481
+            }
+          },
+          "totalHeight": {
+            "<1.5": {
+              "n": 27,
+              "mean": 0.9981481481481481
+            }
+          },
+          "maxOverhang": {
+            "0.01-0.3": {
+              "n": 3,
+              "mean": 1.0
+            },
+            "0.3-0.5": {
+              "n": 10,
+              "mean": 1.0
+            },
+            ">=0.5": {
+              "n": 14,
+              "mean": 0.9964285714285714
+            }
+          }
+        },
+        "vsScripted": {
+          "policy>=0.5/scripted1": 18,
+          "policy>=0.5/scripted0": 9
+        }
+      },
+      "c0c1_s2027": {
+        "structures": 27,
+        "feasible": 27,
+        "excludedByGeometry": 0,
+        "clusters": 17,
+        "episodes": 540,
+        "mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "structuresAll20": 27,
+        "structuresZero": 0,
+        "level1": 1.0,
+        "fallOrOutOfBounds": 0.0,
+        "failureStages": {
+          "success": 540
+        },
+        "failureReasons": {},
+        "scripted": {
+          "mean": 0.6666666666666666,
+          "ci95": [
+            0.3684210526315789,
+            0.8529411764705882
+          ],
+          "completed": 18
+        },
+        "modelSha256": "a96f1946e354ffd7f55907fc59de93615fab0f0d83c7b9cadf8b4030fff8d8c0",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "c664d69f4e5ac2164b1455ad4b11a3e1aed1b6df795c0a77c8ffa28600c4a6b1",
+        "droppedOutsideSet": {},
+        "byFeature": {
+          "constructionLevels": {
+            "2": {
+              "n": 27,
+              "mean": 1.0
+            }
+          },
+          "overhangCount": {
+            "1": {
+              "n": 27,
+              "mean": 1.0
+            }
+          },
+          "maxRise": {
+            "<0.6": {
+              "n": 27,
+              "mean": 1.0
+            }
+          },
+          "totalHeight": {
+            "<1.5": {
+              "n": 27,
+              "mean": 1.0
+            }
+          },
+          "maxOverhang": {
+            "0.01-0.3": {
+              "n": 3,
+              "mean": 1.0
+            },
+            "0.3-0.5": {
+              "n": 10,
+              "mean": 1.0
+            },
+            ">=0.5": {
+              "n": 14,
+              "mean": 1.0
+            }
+          }
+        },
+        "vsScripted": {
+          "policy>=0.5/scripted1": 18,
+          "policy>=0.5/scripted0": 9
+        }
+      },
+      "height_s2026_5M": {
+        "structures": 27,
+        "feasible": 27,
+        "excludedByGeometry": 0,
+        "clusters": 17,
+        "episodes": 540,
+        "mean": 0.05555555555555555,
+        "ci95": [
+          0.010869565217391304,
+          0.122
+        ],
+        "structuresAll20": 0,
+        "structuresZero": 19,
+        "level1": 1.0,
+        "fallOrOutOfBounds": 0.011111111111111112,
+        "failureStages": {
+          "level1-not-level2": 484,
+          "level2-not-goal": 26,
+          "success": 30
+        },
+        "failureReasons": {
+          "Timeout": 503,
+          "Fall": 6,
+          "UnrecoverableGrip": 1
+        },
+        "scripted": {
+          "mean": 0.6666666666666666,
+          "ci95": [
+            0.3684210526315789,
+            0.8529411764705882
+          ],
+          "completed": 18
+        },
+        "modelSha256": "6c4a8801c25b8a7134c37a2a905d4a53a4a8160241e9f505deeeae564325f1e2",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "c664d69f4e5ac2164b1455ad4b11a3e1aed1b6df795c0a77c8ffa28600c4a6b1",
+        "droppedOutsideSet": {},
+        "byFeature": {
+          "constructionLevels": {
+            "2": {
+              "n": 27,
+              "mean": 0.05555555555555555
+            }
+          },
+          "overhangCount": {
+            "1": {
+              "n": 27,
+              "mean": 0.05555555555555555
+            }
+          },
+          "maxRise": {
+            "<0.6": {
+              "n": 27,
+              "mean": 0.05555555555555555
+            }
+          },
+          "totalHeight": {
+            "<1.5": {
+              "n": 27,
+              "mean": 0.05555555555555555
+            }
+          },
+          "maxOverhang": {
+            "0.01-0.3": {
+              "n": 3,
+              "mean": 0.06666666666666667
+            },
+            "0.3-0.5": {
+              "n": 10,
+              "mean": 0.015000000000000001
+            },
+            ">=0.5": {
+              "n": 14,
+              "mean": 0.08214285714285714
+            }
+          }
+        },
+        "vsScripted": {
+          "policy<0.5/scripted1": 18,
+          "policy<0.5/scripted0": 9
+        }
+      },
+      "height_s2027_5M": {
+        "structures": 27,
+        "feasible": 27,
+        "excludedByGeometry": 0,
+        "clusters": 17,
+        "episodes": 540,
+        "mean": 0.6074074074074074,
+        "ci95": [
+          0.38846153846153836,
+          0.8055555555555556
+        ],
+        "structuresAll20": 10,
+        "structuresZero": 0,
+        "level1": 0.9925925925925926,
+        "fallOrOutOfBounds": 0.0,
+        "failureStages": {
+          "success": 328,
+          "level2-not-goal": 133,
+          "level1-not-level2": 76,
+          "below-level1": 3
+        },
+        "failureReasons": {
+          "Timeout": 212
+        },
+        "scripted": {
+          "mean": 0.6666666666666666,
+          "ci95": [
+            0.3684210526315789,
+            0.8529411764705882
+          ],
+          "completed": 18
+        },
+        "modelSha256": "fb14299f72e05f3c1d7225b53003077701d9c0dec8e300a118532dbd572ec3ef",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "c664d69f4e5ac2164b1455ad4b11a3e1aed1b6df795c0a77c8ffa28600c4a6b1",
+        "droppedOutsideSet": {},
+        "byFeature": {
+          "constructionLevels": {
+            "2": {
+              "n": 27,
+              "mean": 0.6074074074074074
+            }
+          },
+          "overhangCount": {
+            "1": {
+              "n": 27,
+              "mean": 0.6074074074074074
+            }
+          },
+          "maxRise": {
+            "<0.6": {
+              "n": 27,
+              "mean": 0.6074074074074074
+            }
+          },
+          "totalHeight": {
+            "<1.5": {
+              "n": 27,
+              "mean": 0.6074074074074074
+            }
+          },
+          "maxOverhang": {
+            "0.01-0.3": {
+              "n": 3,
+              "mean": 0.95
+            },
+            "0.3-0.5": {
+              "n": 10,
+              "mean": 0.54
+            },
+            ">=0.5": {
+              "n": 14,
+              "mean": 0.5821428571428572
+            }
+          }
+        },
+        "vsScripted": {
+          "policy>=0.5/scripted1": 13,
+          "policy>=0.5/scripted0": 4,
+          "policy<0.5/scripted0": 5,
+          "policy<0.5/scripted1": 5
+        }
+      }
+    },
+    "v2-easy": {
+      "c0c1_s2026": {
+        "structures": 60,
+        "feasible": 60,
+        "excludedByGeometry": 0,
+        "clusters": 60,
+        "episodes": 1200,
+        "mean": 0.7833333333333333,
+        "ci95": [
+          0.6666666666666666,
+          0.8833333333333333
+        ],
+        "structuresAll20": 47,
+        "structuresZero": 13,
+        "level1": 1.0,
+        "fallOrOutOfBounds": 0.0025,
+        "failureStages": {
+          "level1-not-level2": 86,
+          "success": 940,
+          "level2-not-goal": 174
+        },
+        "failureReasons": {
+          "Timeout": 257,
+          "Fall": 3
+        },
+        "scripted": {
+          "mean": 0.6833333333333333,
+          "ci95": [
+            0.5666666666666667,
+            0.8
+          ],
+          "completed": 41
+        },
+        "modelSha256": "e4171e6ef151d22b0b4ca127fc5739af0a601c1b270f5a0b753820f01f2eb442",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "419ffb7a656347270dc9c230067b2ea1f8d6da4d121f4ae2a2df755f7fef4062",
+        "droppedOutsideSet": {},
+        "byFeature": {
+          "constructionLevels": {
+            "2": {
+              "n": 60,
+              "mean": 0.7833333333333333
+            }
+          },
+          "overhangCount": {
+            "0": {
+              "n": 1,
+              "mean": 1.0
+            },
+            "1": {
+              "n": 59,
+              "mean": 0.7796610169491526
+            }
+          },
+          "maxRise": {
+            "<0.6": {
+              "n": 47,
+              "mean": 1.0
+            },
+            "0.8-1.0": {
+              "n": 5,
+              "mean": 0.0
+            },
+            ">=1.0": {
+              "n": 8,
+              "mean": 0.0
+            }
+          },
+          "totalHeight": {
+            "<1.5": {
+              "n": 52,
+              "mean": 0.9038461538461539
+            },
+            "1.5-2.0": {
+              "n": 8,
+              "mean": 0.0
+            }
+          },
+          "maxOverhang": {
+            "<0.01": {
+              "n": 1,
+              "mean": 1.0
+            },
+            "0.01-0.3": {
+              "n": 10,
+              "mean": 1.0
+            },
+            "0.3-0.5": {
+              "n": 15,
+              "mean": 0.8
+            },
+            ">=0.5": {
+              "n": 34,
+              "mean": 0.7058823529411765
+            }
+          }
+        },
+        "vsScripted": {
+          "policy<0.5/scripted0": 4,
+          "policy>=0.5/scripted0": 15,
+          "policy<0.5/scripted1": 9,
+          "policy>=0.5/scripted1": 32
+        }
+      },
+      "c0c1_s2027": {
+        "structures": 60,
+        "feasible": 60,
+        "excludedByGeometry": 0,
+        "clusters": 60,
+        "episodes": 1200,
+        "mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "structuresAll20": 60,
+        "structuresZero": 0,
+        "level1": 0.9983333333333333,
+        "fallOrOutOfBounds": 0.0,
+        "failureStages": {
+          "success": 1200
+        },
+        "failureReasons": {},
+        "scripted": {
+          "mean": 0.6833333333333333,
+          "ci95": [
+            0.5666666666666667,
+            0.8
+          ],
+          "completed": 41
+        },
+        "modelSha256": "a96f1946e354ffd7f55907fc59de93615fab0f0d83c7b9cadf8b4030fff8d8c0",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "419ffb7a656347270dc9c230067b2ea1f8d6da4d121f4ae2a2df755f7fef4062",
+        "droppedOutsideSet": {},
+        "byFeature": {
+          "constructionLevels": {
+            "2": {
+              "n": 60,
+              "mean": 1.0
+            }
+          },
+          "overhangCount": {
+            "0": {
+              "n": 1,
+              "mean": 1.0
+            },
+            "1": {
+              "n": 59,
+              "mean": 1.0
+            }
+          },
+          "maxRise": {
+            "<0.6": {
+              "n": 47,
+              "mean": 1.0
+            },
+            "0.8-1.0": {
+              "n": 5,
+              "mean": 1.0
+            },
+            ">=1.0": {
+              "n": 8,
+              "mean": 1.0
+            }
+          },
+          "totalHeight": {
+            "<1.5": {
+              "n": 52,
+              "mean": 1.0
+            },
+            "1.5-2.0": {
+              "n": 8,
+              "mean": 1.0
+            }
+          },
+          "maxOverhang": {
+            "<0.01": {
+              "n": 1,
+              "mean": 1.0
+            },
+            "0.01-0.3": {
+              "n": 10,
+              "mean": 1.0
+            },
+            "0.3-0.5": {
+              "n": 15,
+              "mean": 1.0
+            },
+            ">=0.5": {
+              "n": 34,
+              "mean": 1.0
+            }
+          }
+        },
+        "vsScripted": {
+          "policy>=0.5/scripted0": 19,
+          "policy>=0.5/scripted1": 41
+        }
+      },
+      "height_s2026_5M": {
+        "structures": 60,
+        "feasible": 60,
+        "excludedByGeometry": 0,
+        "clusters": 60,
+        "episodes": 1200,
+        "mean": 0.13083333333333333,
+        "ci95": [
+          0.08083333333333331,
+          0.18583333333333332
+        ],
+        "structuresAll20": 0,
+        "structuresZero": 30,
+        "level1": 0.7858333333333334,
+        "fallOrOutOfBounds": 0.004166666666666667,
+        "failureStages": {
+          "below-level1": 257,
+          "level1-not-level2": 734,
+          "success": 157,
+          "level2-not-goal": 52
+        },
+        "failureReasons": {
+          "Timeout": 1036,
+          "UnrecoverableGrip": 2,
+          "Fall": 5
+        },
+        "scripted": {
+          "mean": 0.6833333333333333,
+          "ci95": [
+            0.5666666666666667,
+            0.8
+          ],
+          "completed": 41
+        },
+        "modelSha256": "6c4a8801c25b8a7134c37a2a905d4a53a4a8160241e9f505deeeae564325f1e2",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "419ffb7a656347270dc9c230067b2ea1f8d6da4d121f4ae2a2df755f7fef4062",
+        "droppedOutsideSet": {},
+        "byFeature": {
+          "constructionLevels": {
+            "2": {
+              "n": 60,
+              "mean": 0.13083333333333333
+            }
+          },
+          "overhangCount": {
+            "0": {
+              "n": 1,
+              "mean": 0.2
+            },
+            "1": {
+              "n": 59,
+              "mean": 0.12966101694915255
+            }
+          },
+          "maxRise": {
+            "<0.6": {
+              "n": 47,
+              "mean": 0.16702127659574467
+            },
+            "0.8-1.0": {
+              "n": 5,
+              "mean": 0.0
+            },
+            ">=1.0": {
+              "n": 8,
+              "mean": 0.0
+            }
+          },
+          "totalHeight": {
+            "<1.5": {
+              "n": 52,
+              "mean": 0.15096153846153845
+            },
+            "1.5-2.0": {
+              "n": 8,
+              "mean": 0.0
+            }
+          },
+          "maxOverhang": {
+            "<0.01": {
+              "n": 1,
+              "mean": 0.2
+            },
+            "0.01-0.3": {
+              "n": 10,
+              "mean": 0.275
+            },
+            "0.3-0.5": {
+              "n": 15,
+              "mean": 0.08333333333333333
+            },
+            ">=0.5": {
+              "n": 34,
+              "mean": 0.10735294117647058
+            }
+          }
+        },
+        "vsScripted": {
+          "policy<0.5/scripted0": 18,
+          "policy>=0.5/scripted0": 1,
+          "policy<0.5/scripted1": 36,
+          "policy>=0.5/scripted1": 5
+        }
+      },
+      "height_s2027_5M": {
+        "structures": 60,
+        "feasible": 60,
+        "excludedByGeometry": 0,
+        "clusters": 60,
+        "episodes": 1200,
+        "mean": 0.665,
+        "ci95": [
+          0.5508333333333333,
+          0.7758333333333332
+        ],
+        "structuresAll20": 34,
+        "structuresZero": 12,
+        "level1": 0.8141666666666667,
+        "fallOrOutOfBounds": 0.0,
+        "failureStages": {
+          "below-level1": 221,
+          "level1-not-level2": 55,
+          "success": 798,
+          "level2-not-goal": 126
+        },
+        "failureReasons": {
+          "Timeout": 402
+        },
+        "scripted": {
+          "mean": 0.6833333333333333,
+          "ci95": [
+            0.5666666666666667,
+            0.8
+          ],
+          "completed": 41
+        },
+        "modelSha256": "fb14299f72e05f3c1d7225b53003077701d9c0dec8e300a118532dbd572ec3ef",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "419ffb7a656347270dc9c230067b2ea1f8d6da4d121f4ae2a2df755f7fef4062",
+        "droppedOutsideSet": {},
+        "byFeature": {
+          "constructionLevels": {
+            "2": {
+              "n": 60,
+              "mean": 0.665
+            }
+          },
+          "overhangCount": {
+            "0": {
+              "n": 1,
+              "mean": 1.0
+            },
+            "1": {
+              "n": 59,
+              "mean": 0.6593220338983051
+            }
+          },
+          "maxRise": {
+            "<0.6": {
+              "n": 47,
+              "mean": 0.8468085106382979
+            },
+            "0.8-1.0": {
+              "n": 5,
+              "mean": 0.02
+            },
+            ">=1.0": {
+              "n": 8,
+              "mean": 0.0
+            }
+          },
+          "totalHeight": {
+            "<1.5": {
+              "n": 52,
+              "mean": 0.7673076923076924
+            },
+            "1.5-2.0": {
+              "n": 8,
+              "mean": 0.0
+            }
+          },
+          "maxOverhang": {
+            "<0.01": {
+              "n": 1,
+              "mean": 1.0
+            },
+            "0.01-0.3": {
+              "n": 10,
+              "mean": 0.955
+            },
+            "0.3-0.5": {
+              "n": 15,
+              "mean": 0.7266666666666667
+            },
+            ">=0.5": {
+              "n": 34,
+              "mean": 0.5426470588235294
+            }
+          }
+        },
+        "vsScripted": {
+          "policy<0.5/scripted0": 10,
+          "policy>=0.5/scripted0": 9,
+          "policy<0.5/scripted1": 9,
+          "policy>=0.5/scripted1": 32
+        }
+      }
+    },
+    "v2-standard": {
+      "c0c1_s2026": {
+        "structures": 60,
+        "feasible": 60,
+        "excludedByGeometry": 0,
+        "clusters": 60,
+        "episodes": 1200,
+        "mean": 0.345,
+        "ci95": [
+          0.23083333333333333,
+          0.4666666666666667
+        ],
+        "structuresAll20": 20,
+        "structuresZero": 35,
+        "level1": 0.7883333333333333,
+        "fallOrOutOfBounds": 0.0016666666666666668,
+        "failureStages": {
+          "below-level1": 253,
+          "level1-not-level2": 311,
+          "success": 414,
+          "level2-not-goal": 222
+        },
+        "failureReasons": {
+          "Timeout": 784,
+          "Fall": 2
+        },
+        "scripted": {
+          "mean": 0.8166666666666667,
+          "ci95": [
+            0.7166666666666667,
+            0.9166666666666666
+          ],
+          "completed": 49
+        },
+        "modelSha256": "e4171e6ef151d22b0b4ca127fc5739af0a601c1b270f5a0b753820f01f2eb442",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "90399f17a45a5b08f513641880a1b05465c1015c0aa8367e4a189587894e82e2",
+        "droppedOutsideSet": {},
+        "byFeature": {
+          "constructionLevels": {
+            "1": {
+              "n": 2,
+              "mean": 0.0
+            },
+            "2": {
+              "n": 50,
+              "mean": 0.414
+            },
+            "3": {
+              "n": 8,
+              "mean": 0.0
+            }
+          },
+          "overhangCount": {
+            "0": {
+              "n": 1,
+              "mean": 0.0
+            },
+            "1": {
+              "n": 52,
+              "mean": 0.39807692307692305
+            },
+            "2": {
+              "n": 7,
+              "mean": 0.0
+            }
+          },
+          "maxRise": {
+            "<0.6": {
+              "n": 28,
+              "mean": 0.7303571428571428
+            },
+            "0.8-1.0": {
+              "n": 13,
+              "mean": 0.007692307692307693
+            },
+            ">=1.0": {
+              "n": 19,
+              "mean": 0.007894736842105263
+            }
+          },
+          "totalHeight": {
+            "<1.5": {
+              "n": 33,
+              "mean": 0.6227272727272727
+            },
+            "1.5-2.0": {
+              "n": 19,
+              "mean": 0.007894736842105263
+            },
+            "2.0-2.5": {
+              "n": 7,
+              "mean": 0.0
+            },
+            ">=2.5": {
+              "n": 1,
+              "mean": 0.0
+            }
+          },
+          "maxOverhang": {
+            "<0.01": {
+              "n": 1,
+              "mean": 0.0
+            },
+            "0.01-0.3": {
+              "n": 7,
+              "mean": 0.42857142857142855
+            },
+            "0.3-0.5": {
+              "n": 10,
+              "mean": 0.6
+            },
+            ">=0.5": {
+              "n": 42,
+              "mean": 0.2785714285714286
+            }
+          }
+        },
+        "vsScripted": {
+          "policy<0.5/scripted1": 32,
+          "policy>=0.5/scripted0": 3,
+          "policy>=0.5/scripted1": 17,
+          "policy<0.5/scripted0": 8
+        }
+      },
+      "c0c1_s2027": {
+        "structures": 60,
+        "feasible": 60,
+        "excludedByGeometry": 0,
+        "clusters": 60,
+        "episodes": 1200,
+        "mean": 0.6491666666666667,
+        "ci95": [
+          0.5474999999999999,
+          0.7508333333333334
+        ],
+        "structuresAll20": 29,
+        "structuresZero": 9,
+        "level1": 0.8158333333333333,
+        "fallOrOutOfBounds": 0.0025,
+        "failureStages": {
+          "below-level1": 145,
+          "level1-not-level2": 113,
+          "success": 779,
+          "level2-not-goal": 163
+        },
+        "failureReasons": {
+          "Timeout": 418,
+          "Fall": 3
+        },
+        "scripted": {
+          "mean": 0.8166666666666667,
+          "ci95": [
+            0.7166666666666667,
+            0.9166666666666666
+          ],
+          "completed": 49
+        },
+        "modelSha256": "a96f1946e354ffd7f55907fc59de93615fab0f0d83c7b9cadf8b4030fff8d8c0",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "90399f17a45a5b08f513641880a1b05465c1015c0aa8367e4a189587894e82e2",
+        "droppedOutsideSet": {},
+        "byFeature": {
+          "constructionLevels": {
+            "1": {
+              "n": 2,
+              "mean": 0.0
+            },
+            "2": {
+              "n": 50,
+              "mean": 0.736
+            },
+            "3": {
+              "n": 8,
+              "mean": 0.26875
+            }
+          },
+          "overhangCount": {
+            "0": {
+              "n": 1,
+              "mean": 1.0
+            },
+            "1": {
+              "n": 52,
+              "mean": 0.6961538461538461
+            },
+            "2": {
+              "n": 7,
+              "mean": 0.25
+            }
+          },
+          "maxRise": {
+            "<0.6": {
+              "n": 28,
+              "mean": 0.7839285714285714
+            },
+            "0.8-1.0": {
+              "n": 13,
+              "mean": 0.6346153846153846
+            },
+            ">=1.0": {
+              "n": 19,
+              "mean": 0.4605263157894737
+            }
+          },
+          "totalHeight": {
+            "<1.5": {
+              "n": 33,
+              "mean": 0.8272727272727273
+            },
+            "1.5-2.0": {
+              "n": 19,
+              "mean": 0.5473684210526316
+            },
+            "2.0-2.5": {
+              "n": 7,
+              "mean": 0.17857142857142858
+            },
+            ">=2.5": {
+              "n": 1,
+              "mean": 0.0
+            }
+          },
+          "maxOverhang": {
+            "<0.01": {
+              "n": 1,
+              "mean": 1.0
+            },
+            "0.01-0.3": {
+              "n": 7,
+              "mean": 0.7214285714285714
+            },
+            "0.3-0.5": {
+              "n": 10,
+              "mean": 0.76
+            },
+            ">=0.5": {
+              "n": 42,
+              "mean": 0.6023809523809524
+            }
+          }
+        },
+        "vsScripted": {
+          "policy<0.5/scripted1": 17,
+          "policy>=0.5/scripted0": 7,
+          "policy>=0.5/scripted1": 32,
+          "policy<0.5/scripted0": 4
+        }
+      }
+    },
+    "v2-hard": {
+      "c0c1_s2026": {
+        "structures": 60,
+        "feasible": 60,
+        "excludedByGeometry": 0,
+        "clusters": 60,
+        "episodes": 1200,
+        "mean": 0.0075,
+        "ci95": [
+          0.0016666666666666668,
+          0.015833333333333335
+        ],
+        "structuresAll20": 0,
+        "structuresZero": 55,
+        "level1": 0.44,
+        "fallOrOutOfBounds": 0.005,
+        "failureStages": {
+          "below-level1": 671,
+          "level1-not-level2": 375,
+          "level2-not-goal": 145,
+          "success": 9
+        },
+        "failureReasons": {
+          "Timeout": 1185,
+          "Fall": 6
+        },
+        "scripted": {
+          "mean": 0.6666666666666666,
+          "ci95": [
+            0.55,
+            0.7833333333333333
+          ],
+          "completed": 40
+        },
+        "modelSha256": "e4171e6ef151d22b0b4ca127fc5739af0a601c1b270f5a0b753820f01f2eb442",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "0d9871d3f26ecd20cadcdbdda477f33c75c2307787cbd7b8ab13fe4440fb7ce2",
+        "droppedOutsideSet": {},
+        "byFeature": {
+          "constructionLevels": {
+            "3": {
+              "n": 58,
+              "mean": 0.007758620689655172
+            },
+            "4": {
+              "n": 2,
+              "mean": 0.0
+            }
+          },
+          "overhangCount": {
+            "2": {
+              "n": 58,
+              "mean": 0.007758620689655172
+            },
+            "3": {
+              "n": 2,
+              "mean": 0.0
+            }
+          },
+          "maxRise": {
+            "<0.6": {
+              "n": 42,
+              "mean": 0.010714285714285714
+            },
+            "0.8-1.0": {
+              "n": 5,
+              "mean": 0.0
+            },
+            ">=1.0": {
+              "n": 13,
+              "mean": 0.0
+            }
+          },
+          "totalHeight": {
+            "1.5-2.0": {
+              "n": 43,
+              "mean": 0.010465116279069767
+            },
+            "2.0-2.5": {
+              "n": 14,
+              "mean": 0.0
+            },
+            ">=2.5": {
+              "n": 3,
+              "mean": 0.0
+            }
+          },
+          "maxOverhang": {
+            "0.3-0.5": {
+              "n": 15,
+              "mean": 0.0033333333333333335
+            },
+            ">=0.5": {
+              "n": 45,
+              "mean": 0.008888888888888889
+            }
+          }
+        },
+        "vsScripted": {
+          "policy<0.5/scripted1": 40,
+          "policy<0.5/scripted0": 20
+        }
+      },
+      "c0c1_s2027": {
+        "structures": 60,
+        "feasible": 60,
+        "excludedByGeometry": 0,
+        "clusters": 60,
+        "episodes": 1200,
+        "mean": 0.23833333333333334,
+        "ci95": [
+          0.16833333333333342,
+          0.31416666666666676
+        ],
+        "structuresAll20": 3,
+        "structuresZero": 18,
+        "level1": 0.5341666666666667,
+        "fallOrOutOfBounds": 0.006666666666666667,
+        "failureStages": {
+          "below-level1": 460,
+          "success": 286,
+          "level1-not-level2": 214,
+          "level2-not-goal": 240
+        },
+        "failureReasons": {
+          "Timeout": 906,
+          "Fall": 8
+        },
+        "scripted": {
+          "mean": 0.6666666666666666,
+          "ci95": [
+            0.55,
+            0.7833333333333333
+          ],
+          "completed": 40
+        },
+        "modelSha256": "a96f1946e354ffd7f55907fc59de93615fab0f0d83c7b9cadf8b4030fff8d8c0",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "0d9871d3f26ecd20cadcdbdda477f33c75c2307787cbd7b8ab13fe4440fb7ce2",
+        "droppedOutsideSet": {},
+        "byFeature": {
+          "constructionLevels": {
+            "3": {
+              "n": 58,
+              "mean": 0.24568965517241378
+            },
+            "4": {
+              "n": 2,
+              "mean": 0.025
+            }
+          },
+          "overhangCount": {
+            "2": {
+              "n": 58,
+              "mean": 0.24568965517241378
+            },
+            "3": {
+              "n": 2,
+              "mean": 0.025
+            }
+          },
+          "maxRise": {
+            "<0.6": {
+              "n": 42,
+              "mean": 0.3333333333333333
+            },
+            "0.8-1.0": {
+              "n": 5,
+              "mean": 0.01
+            },
+            ">=1.0": {
+              "n": 13,
+              "mean": 0.019230769230769232
+            }
+          },
+          "totalHeight": {
+            "1.5-2.0": {
+              "n": 43,
+              "mean": 0.31976744186046513
+            },
+            "2.0-2.5": {
+              "n": 14,
+              "mean": 0.039285714285714285
+            },
+            ">=2.5": {
+              "n": 3,
+              "mean": 0.0
+            }
+          },
+          "maxOverhang": {
+            "0.3-0.5": {
+              "n": 15,
+              "mean": 0.32
+            },
+            ">=0.5": {
+              "n": 45,
+              "mean": 0.2111111111111111
+            }
+          }
+        },
+        "vsScripted": {
+          "policy<0.5/scripted1": 34,
+          "policy>=0.5/scripted1": 6,
+          "policy>=0.5/scripted0": 6,
+          "policy<0.5/scripted0": 14
+        }
+      }
+    }
+  },
+  "twoStep": {
+    "c0c1_s2026": {
+      "episodes": 200,
+      "success": 1.0,
+      "level1": 1.0,
+      "level2": 1.0,
+      "reasons": {
+        "Success": 200
+      },
+      "modelSha256": "e4171e6ef151d22b0b4ca127fc5739af0a601c1b270f5a0b753820f01f2eb442",
+      "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc"
+    },
+    "c0c1_s2027": {
+      "episodes": 200,
+      "success": 1.0,
+      "level1": 1.0,
+      "level2": 1.0,
+      "reasons": {
+        "Success": 200
+      },
+      "modelSha256": "a96f1946e354ffd7f55907fc59de93615fab0f0d83c7b9cadf8b4030fff8d8c0",
+      "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc"
+    },
+    "height_s2026_5M": {
+      "episodes": 200,
+      "success": 0.965,
+      "level1": 1.0,
+      "level2": 0.97,
+      "reasons": {
+        "Success": 193,
+        "Timeout": 7
+      },
+      "modelSha256": "6c4a8801c25b8a7134c37a2a905d4a53a4a8160241e9f505deeeae564325f1e2",
+      "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc"
+    },
+    "height_s2027_5M": {
+      "episodes": 200,
+      "success": 1.0,
+      "level1": 1.0,
+      "level2": 1.0,
+      "reasons": {
+        "Success": 200
+      },
+      "modelSha256": "fb14299f72e05f3c1d7225b53003077701d9c0dec8e300a118532dbd572ec3ef",
+      "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc"
+    }
+  },
+  "paired": {
+    "c1-val/s2026": {
+      "curriculum": 0.9981481481481481,
+      "baseline": 0.05555555555555555,
+      "difference": 0.9425925925925925,
+      "ci95": [
+        0.876086956521739,
+        0.9870370370370368
+      ],
+      "curriculumBetter": 27,
+      "baselineBetter": 0
+    },
+    "c1-val/s2027": {
+      "curriculum": 1.0,
+      "baseline": 0.6074074074074074,
+      "difference": 0.3925925925925926,
+      "ci95": [
+        0.19444444444444448,
+        0.6115384615384616
+      ],
+      "curriculumBetter": 17,
+      "baselineBetter": 0
+    },
+    "v2-easy/s2026": {
+      "curriculum": 0.7833333333333333,
+      "baseline": 0.13083333333333333,
+      "difference": 0.6525,
+      "ci95": [
+        0.5483333333333332,
+        0.750833333333333
+      ],
+      "curriculumBetter": 47,
+      "baselineBetter": 0
+    },
+    "v2-easy/s2027": {
+      "curriculum": 1.0,
+      "baseline": 0.665,
+      "difference": 0.335,
+      "ci95": [
+        0.22416666666666668,
+        0.44916666666666666
+      ],
+      "curriculumBetter": 26,
+      "baselineBetter": 0
+    }
+  }
+}
