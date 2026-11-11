@@ -61,5 +61,6 @@
 
 - 完成标准规定"成功率只在通过几何可行性检查的结构上计算"（[LAYER3_DESIGN.md](LAYER3_DESIGN.md) §16）。
   - 在v2评估集上，分母就是全部180个结构。
-  - 如果以后改用别的评估集，应同时报告几何检查的假阴性率，即上面v1 Hard的现象。
+  - v2 Easy评估集不含单箱结构（单箱全部留给训练，见[LAYER3_GENERATOR_V2.md](LAYER3_GENERATOR_V2.md) §4.1）。
+  - 如果以后改用别的评估集，应同时报告几何检查的假阴性率，即上面v1 Hard的现象。第4层玩家搭建的结构必须报告未通过几何检查的比例（[LAYER4_DESIGN_NOTES.md](LAYER4_DESIGN_NOTES.md) §1）。
 - 脚本控制器的完成率（Easy 68%、Standard 82%、Hard 67%）可以作为一个参考水平，但不是策略必须超过的上限。

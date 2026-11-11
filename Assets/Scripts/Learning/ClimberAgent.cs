@@ -66,7 +66,8 @@ namespace PhysicalAI.Learning
                 var h=body.GetHandState((HandId)i);targets[i]=Project(Quaternion.Inverse(b.Rotation)*(h.Position-h.ShoulderPosition));previousGrip[i]=false;
                 body.SetHandTarget((HandId)i,targets[i],FreeEffort);body.SetGrab((HandId)i,false);
             }
-            SnapshotSpawn();
+            // Curriculum swaps the structure first; demonstration spawns stay on the two-step, the only structure with a state library.
+            if(ApplyCurriculum())SnapshotSpawn();else GroundSpawn();
             heightBest=body.GetBodyState().Position.y; // Ground spawn or restored snapshot: only height gained in this episode pays.
         }
         public static Vector3 Project(Vector3 q)
@@ -163,7 +164,12 @@ namespace PhysicalAI.Learning
             foreach(string label in new[] {"Success","Fall","OutOfBounds","UnrecoverableGrip","Timeout"})recorder.Add("Climb/End/"+label,reason==label?1:0);
             if(spawnStage!=null)recorder.Add("Climb/Spawn/"+spawnStage+"/Success",success?1:0);
             SpawnSchedule?.Report(spawnStage??"ground",success,level1,level2);
-            ClimbEpisodeLog.Write(name,success,level1,level2,decisions,elapsed,progressReward+rewardTime+rewardTerminal+heightReward,reason,SpawnSource);
+            if(StructurePool!="")
+            {
+                string pool="Climb/Pool/"+StructurePool+"/";recorder.Add(pool+"Success",success?1:0);recorder.Add(pool+"Level1Rate",level1?1:0);
+                if(spawnStage==null){recorder.Add(pool+"GroundSuccess",success?1:0);recorder.Add(pool+"GroundLevel1Rate",level1?1:0);}
+            }
+            ClimbEpisodeLog.Write(name,success,level1,level2,decisions,elapsed,progressReward+rewardTime+rewardTerminal+heightReward,reason,SpawnSource,StructureId,StructurePool);
             EndEpisode();
         }
         void Add(Vector3 value,float scale=1)

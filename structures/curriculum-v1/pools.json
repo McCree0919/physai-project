@@ -1,0 +1,1786 @@
+{
+    "version": 1,
+    "root": "../..",
+    "rule": "v2 train pool only; C0 = Easy single boxes, C1 = Easy two-level stacks; 17/85 C1 clusters (seed 17) held out for validation",
+    "twoStepShare": 0.25,
+    "twoStep": {
+        "id": "smoke-stairs",
+        "path": "structures/curriculum-v1/two-step.json",
+        "sha256": "efebb82860fc628de4f047c2ea082ddfb3ab1f3b7c641396acc85a59563665d7",
+        "cluster": "two-step"
+    },
+    "stages": [
+        {
+            "name": "C0",
+            "pool": "c0",
+            "structures": [
+                {
+                    "id": "stack2-easy-100000",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100000.json",
+                    "sha256": "5533ecff687d77214541dc304ff35535cba54fe2cc03a1143d53f1932d1b34c0",
+                    "cluster": "stack2-easy-100000"
+                },
+                {
+                    "id": "stack2-easy-100002",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100002.json",
+                    "sha256": "56c1ac43de6c975e6553e56ece11d1976e24fd69cc3679757fcde0836e97af65",
+                    "cluster": "stack2-easy-100002"
+                },
+                {
+                    "id": "stack2-easy-100006",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100006.json",
+                    "sha256": "ccd3287cc1f2f36316014daca7988ae32da022358008282a56760f7dd384d5e8",
+                    "cluster": "stack2-easy-100006"
+                },
+                {
+                    "id": "stack2-easy-100008",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100008.json",
+                    "sha256": "77023b058049eb3466bb507037dfa03e6d8a69b359751c71db9adb6288e51a1d",
+                    "cluster": "stack2-easy-100002"
+                },
+                {
+                    "id": "stack2-easy-100010",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100010.json",
+                    "sha256": "5a16e6d6a802df31c70b4e78321948a66a74c0d910aae9aec868880d0a1dd879",
+                    "cluster": "stack2-easy-100006"
+                },
+                {
+                    "id": "stack2-easy-100011",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100011.json",
+                    "sha256": "ed626cf7427f7a2db08e9bd3419527d6db9e870c6b4cd093c10b78de05b62a00",
+                    "cluster": "stack2-easy-100011"
+                },
+                {
+                    "id": "stack2-easy-100017",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100017.json",
+                    "sha256": "2f66d3bde1004218f67c2ba2298571bea26b36cd33c3d9f157db9ad5c38efce7",
+                    "cluster": "stack2-easy-100017"
+                },
+                {
+                    "id": "stack2-easy-100034",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100034.json",
+                    "sha256": "aefb4837607e21624004c23ad6921cdef885ab6d89480f07179f3391d1091918",
+                    "cluster": "stack2-easy-100006"
+                },
+                {
+                    "id": "stack2-easy-100038",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100038.json",
+                    "sha256": "e613b9ac21fdfd5b94f70cdebd179cdef6c0d75f4065f4db23c3414721ab0b99",
+                    "cluster": "stack2-easy-100000"
+                },
+                {
+                    "id": "stack2-easy-100052",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100052.json",
+                    "sha256": "8c902fb0ca4e826a66aff92c2116a1bd41631717b48a9f9d547c2973e964bbd8",
+                    "cluster": "stack2-easy-100000"
+                },
+                {
+                    "id": "stack2-easy-100059",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100059.json",
+                    "sha256": "330f6af7159718d424cfce43b3c03477c3f103c84bda0e299ff505865a6f636d",
+                    "cluster": "stack2-easy-100059"
+                },
+                {
+                    "id": "stack2-easy-100063",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100063.json",
+                    "sha256": "97cc0a9282e033d6a8f5be4a2cf465fe606224d90d236482e67350f5f953ed36",
+                    "cluster": "stack2-easy-100002"
+                }
+            ]
+        },
+        {
+            "name": "C1",
+            "pool": "c1",
+            "structures": [
+                {
+                    "id": "stack2-easy-100001",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100001.json",
+                    "sha256": "f9a23a555910f061e943eb3558fd9c3af0d173ef53f3bd8f1bb92d15cbc2ce07",
+                    "cluster": "stack2-easy-100001"
+                },
+                {
+                    "id": "stack2-easy-100007",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100007.json",
+                    "sha256": "821e508aa47de1ea60a7dcdd7c6a5104e5f6a37ba5ad3c136e739a7890ef0ef6",
+                    "cluster": "stack2-easy-100007"
+                },
+                {
+                    "id": "stack2-easy-100035",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100035.json",
+                    "sha256": "5b41d94fad182f423c174cc1105aa9f79c13d69dfa4411276556dce8ee120e4b",
+                    "cluster": "stack2-easy-100035"
+                },
+                {
+                    "id": "stack2-easy-100045",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100045.json",
+                    "sha256": "09fec87b9ccc72098920c596524dfa50370d81fbb21b8d569be461f3a728b853",
+                    "cluster": "stack2-easy-100045"
+                },
+                {
+                    "id": "stack2-easy-100056",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100056.json",
+                    "sha256": "ef7bac546981d394bc4ecf2116a55f829098ad624794928e60538263167de606",
+                    "cluster": "stack2-easy-100056"
+                },
+                {
+                    "id": "stack2-easy-100058",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100058.json",
+                    "sha256": "02343fea41f3162f1928f42af9b1e9a32a69a9149b26823501a4e2e90b0058c8",
+                    "cluster": "stack2-easy-100058"
+                },
+                {
+                    "id": "stack2-easy-100062",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100062.json",
+                    "sha256": "b36a89822fb12ee7d08c95460b62ab2acc412acfffdb7a9eab35bc14058a215e",
+                    "cluster": "stack2-easy-100062"
+                },
+                {
+                    "id": "stack2-easy-100064",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100064.json",
+                    "sha256": "773901a160172c506acedcdfe31d58465f47972f2bccf2f13ee1f69bb08528ef",
+                    "cluster": "stack2-easy-100064"
+                },
+                {
+                    "id": "stack2-easy-100072",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100072.json",
+                    "sha256": "8002b07f5d120234d4b4ba424bc7aee1b1f3d92c35256779d94956bb5606c3cf",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-100076",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100076.json",
+                    "sha256": "f47e38a424afab82542f935ec29a9345a1b3bde9654695d1aad6b0d3f4fcf4e2",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-100079",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100079.json",
+                    "sha256": "b381b87a5e04c2bf640c44e6749992f575d21300787ec7e2de3a4b44ba2d494e",
+                    "cluster": "stack2-easy-100079"
+                },
+                {
+                    "id": "stack2-easy-100099",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100099.json",
+                    "sha256": "84472f16c273d615f2aecc01d9dfe2f79e23e07ad2e999ff15a8543b13bb351c",
+                    "cluster": "stack2-easy-100079"
+                },
+                {
+                    "id": "stack2-easy-100102",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100102.json",
+                    "sha256": "f15a2166832232127c497304ae732a4457b00fe1122d15a2ce0c8f6c3276fb02",
+                    "cluster": "stack2-easy-100102"
+                },
+                {
+                    "id": "stack2-easy-100106",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100106.json",
+                    "sha256": "c088316132c7f4f15cb4ce95adc4ea40caec0e6d11bdc40fbd5b9317c17ee337",
+                    "cluster": "stack2-easy-100106"
+                },
+                {
+                    "id": "stack2-easy-100120",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100120.json",
+                    "sha256": "5b18154f041f71c79415e0eea1a3f43c51f50045fcbded4aa7ca419de716e08d",
+                    "cluster": "stack2-easy-100120"
+                },
+                {
+                    "id": "stack2-easy-100123",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100123.json",
+                    "sha256": "202e625fc6f68bbadbf12173ed9ef71be93fb6700b33a13b12bdb50b1b12c0f3",
+                    "cluster": "stack2-easy-100123"
+                },
+                {
+                    "id": "stack2-easy-100133",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100133.json",
+                    "sha256": "5762de741718bb5b1212ca1eed6b8f208f47fbdf5e9bc62b7a1194d8ecc6195e",
+                    "cluster": "stack2-easy-100133"
+                },
+                {
+                    "id": "stack2-easy-100137",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100137.json",
+                    "sha256": "42cb732b6985a646b23558b8d06be2bee7c772731391d93efa35dc17c9eb5dce",
+                    "cluster": "stack2-easy-100058"
+                },
+                {
+                    "id": "stack2-easy-100167",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100167.json",
+                    "sha256": "a3acd81907e1a192499c44fd40fdcab5d9e3956d5a8e52725f953d8655f70281",
+                    "cluster": "stack2-easy-100167"
+                },
+                {
+                    "id": "stack2-easy-100181",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100181.json",
+                    "sha256": "e73f9d43a1b55d687c5f49c80671d30ece8ee367a8ab0419f30ad89dd68b49e0",
+                    "cluster": "stack2-easy-100181"
+                },
+                {
+                    "id": "stack2-easy-100185",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100185.json",
+                    "sha256": "ecc970a9adce715951d15043a3bb355a49e8d4ac52b4673d2b6ac46ba2c57f23",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-100210",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100210.json",
+                    "sha256": "9103dcd1ed18853ff64821c506909d7482ac91f1474924c0fd95fe55309e1f64",
+                    "cluster": "stack2-easy-100056"
+                },
+                {
+                    "id": "stack2-easy-100236",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100236.json",
+                    "sha256": "d445edf331ba7013bf4115e545cab67f48f4ac967976ea2a29a047401cb4b6f1",
+                    "cluster": "stack2-easy-100123"
+                },
+                {
+                    "id": "stack2-easy-100238",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100238.json",
+                    "sha256": "4fb4e7bf77a76e8a4e50b864c5afbd1939cc159aa02dc3c4277fc5289306898e",
+                    "cluster": "stack2-easy-100102"
+                },
+                {
+                    "id": "stack2-easy-100246",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100246.json",
+                    "sha256": "0050d7abcb506fdbb20ac6c2c0cfaa95d71aac1142b75aa5fd458a320e4f1960",
+                    "cluster": "stack2-easy-100007"
+                },
+                {
+                    "id": "stack2-easy-100248",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100248.json",
+                    "sha256": "cbfbd7c04975e3603b1888a05cef09c4fc4d5e3500b23d27fb07133312bc2697",
+                    "cluster": "stack2-easy-100248"
+                },
+                {
+                    "id": "stack2-easy-100259",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100259.json",
+                    "sha256": "0e73b0bb618db17d7ee2a203581d977e2f8f134defffe435951518ddd9f0492e",
+                    "cluster": "stack2-easy-100259"
+                },
+                {
+                    "id": "stack2-easy-100280",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100280.json",
+                    "sha256": "565222d75a91a54f3d0900259cb02c54515bdec18e489f6ea9a73c17124dac47",
+                    "cluster": "stack2-easy-100280"
+                },
+                {
+                    "id": "stack2-easy-100301",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100301.json",
+                    "sha256": "d716d84b81b0b088c23686d60eeeed34771d7fa990da2b29fe9ebb358ad828b1",
+                    "cluster": "stack2-easy-100062"
+                },
+                {
+                    "id": "stack2-easy-100307",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100307.json",
+                    "sha256": "a8f473011dca8b2f4b9dec1cf011d7ed4f0d220386ca9e9dd50d01f8b7dbac3f",
+                    "cluster": "stack2-easy-100307"
+                },
+                {
+                    "id": "stack2-easy-100311",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100311.json",
+                    "sha256": "a33ab7f364a1d8002f8c652d821a460ff3cb1ccbe022ccbd243d2a5c027867b0",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-100317",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100317.json",
+                    "sha256": "fe9edb06fe4aaa752c88d87efe6e3d310614b8783578fbc9799eba814af677c7",
+                    "cluster": "stack2-easy-100317"
+                },
+                {
+                    "id": "stack2-easy-100321",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100321.json",
+                    "sha256": "77eec8a40e733df636a4b6452b1ff38303dfe0079ddf2983fdf07163ad4a22e9",
+                    "cluster": "stack2-easy-100062"
+                },
+                {
+                    "id": "stack2-easy-100334",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100334.json",
+                    "sha256": "8aec0859a27256aede86ef7297cbecf6f0b9b996e8c6011ae93b45f51dd3b346",
+                    "cluster": "stack2-easy-100334"
+                },
+                {
+                    "id": "stack2-easy-100336",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100336.json",
+                    "sha256": "18750da3d2663a71da6a44139cadf782b7d704d523600b506e0184bae71f4bb8",
+                    "cluster": "stack2-easy-100056"
+                },
+                {
+                    "id": "stack2-easy-100372",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100372.json",
+                    "sha256": "e784f055495484f8a4779333dc71ca49c6d779efbfd939ca05db03426c5ce2ef",
+                    "cluster": "stack2-easy-100372"
+                },
+                {
+                    "id": "stack2-easy-100382",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100382.json",
+                    "sha256": "dcbea5cd6e383bc12dbf0a3bfd3c3f43b29ab852f9adb727e132e3f57f2208e0",
+                    "cluster": "stack2-easy-100123"
+                },
+                {
+                    "id": "stack2-easy-100386",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100386.json",
+                    "sha256": "312d637c6742c2bc7c69b73588de837adb7c7be43928adcc965f3bf8044697bb",
+                    "cluster": "stack2-easy-100123"
+                },
+                {
+                    "id": "stack2-easy-100399",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100399.json",
+                    "sha256": "8cd3b9da1b7d1b95ccd4b8161c24fcda5f77e4b701dfb1c12e0bc829333cecc7",
+                    "cluster": "stack2-easy-100399"
+                },
+                {
+                    "id": "stack2-easy-100403",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100403.json",
+                    "sha256": "2611d1d3c18a66dfc7c941d9e9a513d2cc1040669dfd67b1f49d114d549820d1",
+                    "cluster": "stack2-easy-100317"
+                },
+                {
+                    "id": "stack2-easy-100437",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100437.json",
+                    "sha256": "3688ed573b3864098b36f71e0c4d10583cfa10950cd4cc7e2b0a0b0fe282d838",
+                    "cluster": "stack2-easy-100307"
+                },
+                {
+                    "id": "stack2-easy-100447",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100447.json",
+                    "sha256": "503abdc090a87b1b5f573906c8ece0d6335961e03f49b4c3110660e387616e6d",
+                    "cluster": "stack2-easy-100447"
+                },
+                {
+                    "id": "stack2-easy-100458",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100458.json",
+                    "sha256": "83652a33d41caac0e335deaeaf8d29a72ba880bc2a3d8760e6a8ddd8b6420c2e",
+                    "cluster": "stack2-easy-100056"
+                },
+                {
+                    "id": "stack2-easy-100474",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100474.json",
+                    "sha256": "ab17d30300c8f5d7580cda337b2eb49c887837bc2e9335e610855a82cde4b37b",
+                    "cluster": "stack2-easy-100474"
+                },
+                {
+                    "id": "stack2-easy-100485",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100485.json",
+                    "sha256": "dcbac7d0263e9771d8020d97cac8fd0ce0e7106ed5d9477cc9df6c2fad1abf04",
+                    "cluster": "stack2-easy-100007"
+                },
+                {
+                    "id": "stack2-easy-100501",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100501.json",
+                    "sha256": "dc5d74b5d4560f0f335a7782f50e60c79af22ca3904ac093bebfd0a27110162d",
+                    "cluster": "stack2-easy-100079"
+                },
+                {
+                    "id": "stack2-easy-100504",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100504.json",
+                    "sha256": "1248dcb8e81980f0a838fdfa407762160a584f32cd9efd526863dc4ddb1bc48c",
+                    "cluster": "stack2-easy-100504"
+                },
+                {
+                    "id": "stack2-easy-100512",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100512.json",
+                    "sha256": "3b3cc1734e57508fbbc575d2a31f66a742cea50dca59114ba0464f0d1a1adbc0",
+                    "cluster": "stack2-easy-100512"
+                },
+                {
+                    "id": "stack2-easy-100518",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100518.json",
+                    "sha256": "c51f7a0aa170eab4bca2051b3392e6fe5034d0578ab89fef330b15e91002d512",
+                    "cluster": "stack2-easy-100512"
+                },
+                {
+                    "id": "stack2-easy-100522",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100522.json",
+                    "sha256": "e17c88d45bf6ecdb2a8452305d4c8f415d7b8ee794fd6d3cf3e4da2da91883ec",
+                    "cluster": "stack2-easy-100123"
+                },
+                {
+                    "id": "stack2-easy-100577",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100577.json",
+                    "sha256": "bd705f9db31286358389be60466dd8502fb88d4764d4c5c88217f0e5ae4f910b",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-100583",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100583.json",
+                    "sha256": "0e4e777c666872b1b54e53f8045f7230d7899ceb42c2f3c3db6485d4501ef2a9",
+                    "cluster": "stack2-easy-100583"
+                },
+                {
+                    "id": "stack2-easy-100585",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100585.json",
+                    "sha256": "82de5d9e5193ac4bbb0da3af7d6351904f6c09b76366286a2ca3b521e2920ff9",
+                    "cluster": "stack2-easy-100056"
+                },
+                {
+                    "id": "stack2-easy-100587",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100587.json",
+                    "sha256": "406519eddde59fd302173020357902d557535da73cea8a13c0384cd56b4f60d9",
+                    "cluster": "stack2-easy-100474"
+                },
+                {
+                    "id": "stack2-easy-100600",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100600.json",
+                    "sha256": "34347bc332be2f2fa3b80a60d7c96a6941565a122cf6d8f6698fccdab6d97785",
+                    "cluster": "stack2-easy-100600"
+                },
+                {
+                    "id": "stack2-easy-100621",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100621.json",
+                    "sha256": "afd3d092de08e4d1ddb3fe696bbeee462601403ad0166c0244d19cc3cdba4755",
+                    "cluster": "stack2-easy-100123"
+                },
+                {
+                    "id": "stack2-easy-100635",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100635.json",
+                    "sha256": "d15fb9d94ea4ab041ce8c93b3cc8c77ceae2bfae3233dc5abc4a0b32970c61c1",
+                    "cluster": "stack2-easy-100635"
+                },
+                {
+                    "id": "stack2-easy-100652",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100652.json",
+                    "sha256": "e7b038f7c259a650d72e1d3e73ab324adc27f2a1a013a12931e6302afe977886",
+                    "cluster": "stack2-easy-100307"
+                },
+                {
+                    "id": "stack2-easy-100663",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100663.json",
+                    "sha256": "c1f8238df8dcedd87359fb87ff3b0e53107d97fbf0044d3bbeb529a68952ef73",
+                    "cluster": "stack2-easy-100663"
+                },
+                {
+                    "id": "stack2-easy-100675",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100675.json",
+                    "sha256": "fe8afd98b5264fb177dd4b7c2cf11a235c98fe24d615f5014d1a617c4c4f8f5c",
+                    "cluster": "stack2-easy-100600"
+                },
+                {
+                    "id": "stack2-easy-100682",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100682.json",
+                    "sha256": "112f370dbd1a3f01ab31afd25b8029382a5410a1e2a205ddc1d5e7d816cbc8c1",
+                    "cluster": "stack2-easy-100334"
+                },
+                {
+                    "id": "stack2-easy-100686",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100686.json",
+                    "sha256": "c205cda242bc5d91ff0d92d2a487de6c30c554b7edd22ab87c8f74b03bf054c9",
+                    "cluster": "stack2-easy-100307"
+                },
+                {
+                    "id": "stack2-easy-100696",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100696.json",
+                    "sha256": "351e36306124680625305ff2988c591a740c306a51593754b8d5c01800566cc5",
+                    "cluster": "stack2-easy-100307"
+                },
+                {
+                    "id": "stack2-easy-100709",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100709.json",
+                    "sha256": "5afb12c0886dba00bf269b279c5befbd04260ce7cefa17bc7c5d9ec4fbe7aaf8",
+                    "cluster": "stack2-easy-100709"
+                },
+                {
+                    "id": "stack2-easy-100713",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100713.json",
+                    "sha256": "1216c2b6d08e48c8c07c2bf48ae74645bb6f9760ec3f7dd83b4be112e190201e",
+                    "cluster": "stack2-easy-100062"
+                },
+                {
+                    "id": "stack2-easy-100740",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100740.json",
+                    "sha256": "619bed5bcc85fbe218d6761e00159ca78264ee0c12da1dae083920293da4c671",
+                    "cluster": "stack2-easy-100079"
+                },
+                {
+                    "id": "stack2-easy-100747",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100747.json",
+                    "sha256": "9bf88f6c710d747f353441bd20396e4514bdafc7edcb56ebb2bf6030cd5d564c",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-100757",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100757.json",
+                    "sha256": "712b587876362e4c416ab188397d1cff9b62e995710161b442078eb1775ef1de",
+                    "cluster": "stack2-easy-100474"
+                },
+                {
+                    "id": "stack2-easy-100761",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100761.json",
+                    "sha256": "b9941d61035794d66723ee798b368dab48c7e75ce2b7935bcd57249e10ff173f",
+                    "cluster": "stack2-easy-100123"
+                },
+                {
+                    "id": "stack2-easy-100774",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100774.json",
+                    "sha256": "42b19f081c0807b2daeb63b2400f27b4f43c6036f508c90c75591abdef99ef63",
+                    "cluster": "stack2-easy-100123"
+                },
+                {
+                    "id": "stack2-easy-100784",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100784.json",
+                    "sha256": "104b285da661eee74c4f65eefb8a1400a6d0cd82beeb6fd6398e721c64083161",
+                    "cluster": "stack2-easy-100007"
+                },
+                {
+                    "id": "stack2-easy-100788",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100788.json",
+                    "sha256": "cdcd9fb0144967632285846e2c8cc4b4802af27fb3f902e483e6547672409624",
+                    "cluster": "stack2-easy-100007"
+                },
+                {
+                    "id": "stack2-easy-100822",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100822.json",
+                    "sha256": "01d1fd8b68bbfc03056d7f76bc2d8c5aaf1205b59e98d2e14d6fedf057cdb8f5",
+                    "cluster": "stack2-easy-100583"
+                },
+                {
+                    "id": "stack2-easy-100832",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100832.json",
+                    "sha256": "cb0cf538e9b7dee8466beeb7503e206c90326819e0b4695a4f4a133e658bf620",
+                    "cluster": "stack2-easy-100832"
+                },
+                {
+                    "id": "stack2-easy-100849",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100849.json",
+                    "sha256": "52f49520d34a1e7443c8915b72bdc6fd6e0ccf45772b78ffed6e868b292fa10a",
+                    "cluster": "stack2-easy-100307"
+                },
+                {
+                    "id": "stack2-easy-100893",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100893.json",
+                    "sha256": "8267948440c3f3e9718d9c7d1d1c527217c799e8725c0094ced2625b460a15df",
+                    "cluster": "stack2-easy-100474"
+                },
+                {
+                    "id": "stack2-easy-100897",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100897.json",
+                    "sha256": "1785b2ebcf16a7cf031f5c327e768e5f1cb38da1cb901705de6ccbf62d812d4c",
+                    "cluster": "stack2-easy-100897"
+                },
+                {
+                    "id": "stack2-easy-100910",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100910.json",
+                    "sha256": "c472c704fc5878a379c0d91e192e1cd5863a38d05e2e85c4edfde80beb44e01e",
+                    "cluster": "stack2-easy-100372"
+                },
+                {
+                    "id": "stack2-easy-100924",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100924.json",
+                    "sha256": "056edd1c479003d8cf60467596cd1c18f3a6fd20a1dfac5429835272892d6e13",
+                    "cluster": "stack2-easy-100512"
+                },
+                {
+                    "id": "stack2-easy-100962",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100962.json",
+                    "sha256": "a6ebbdf7008d5cf9b3669273b36b2e2d650341d1dbb2ebc88ab1d77602866864",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-100968",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100968.json",
+                    "sha256": "41e88e675c62f320e9891a15899b036a2055c70cc11970425d3c439d053952ac",
+                    "cluster": "stack2-easy-100968"
+                },
+                {
+                    "id": "stack2-easy-100985",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100985.json",
+                    "sha256": "537c157b5f5558afd218dfaf928410b05569c60435a5737b6bcc18adffa50419",
+                    "cluster": "stack2-easy-100307"
+                },
+                {
+                    "id": "stack2-easy-100996",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-100996.json",
+                    "sha256": "20325a21772c576f706a27ba11ec8600c62b434fb43b17b5dfef4074963c292f",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-101023",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101023.json",
+                    "sha256": "c1b1ba4554b2ba21bbe7eebfa9e899049fb009332f2d4c8baafccd9b347d5a21",
+                    "cluster": "stack2-easy-100007"
+                },
+                {
+                    "id": "stack2-easy-101033",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101033.json",
+                    "sha256": "9257f4e08ebada98db0fe77b94aa869d91814c2113c0938db57b4041ba9e500a",
+                    "cluster": "stack2-easy-100123"
+                },
+                {
+                    "id": "stack2-easy-101042",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101042.json",
+                    "sha256": "676939138a76a973d2bd571fa84d1b650cfaa492fcdb1277d65927fca82c97bf",
+                    "cluster": "stack2-easy-101042"
+                },
+                {
+                    "id": "stack2-easy-101061",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101061.json",
+                    "sha256": "d373c038bbda34665a2945232a4f7757de323d0b6d02ecbca15710fefa3a86be",
+                    "cluster": "stack2-easy-100447"
+                },
+                {
+                    "id": "stack2-easy-101071",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101071.json",
+                    "sha256": "3efa9c83fedfe872fb93ba9ff8ecfcafc72f86d37464e424f14bd646ac17a050",
+                    "cluster": "stack2-easy-100307"
+                },
+                {
+                    "id": "stack2-easy-101075",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101075.json",
+                    "sha256": "dcc7283c6af5f83c337f937106c1c03bbfbafe8158998cbfac8f04af5b9ddef0",
+                    "cluster": "stack2-easy-101075"
+                },
+                {
+                    "id": "stack2-easy-101088",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101088.json",
+                    "sha256": "fa9bab40a13fb66de2882367618ed60f021f3190a051aaf1aee3ca6b0056b7ba",
+                    "cluster": "stack2-easy-101088"
+                },
+                {
+                    "id": "stack2-easy-101094",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101094.json",
+                    "sha256": "348b58078bb5a614364a9391c66dbe898cf3dc377cfbd70eb7836bf14e226760",
+                    "cluster": "stack2-easy-100058"
+                },
+                {
+                    "id": "stack2-easy-101132",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101132.json",
+                    "sha256": "59c09b11586aae7aa90c083a6f4f4e475d8bc605e16439e7f6b6b22ac5cc7905",
+                    "cluster": "stack2-easy-100474"
+                },
+                {
+                    "id": "stack2-easy-101159",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101159.json",
+                    "sha256": "9f9ae3efffbc47ae326703f21be8c78dc2f456f8e2551f533ada958876a88f11",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-101163",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101163.json",
+                    "sha256": "216e7bb082f7c256c28b7ad78b41b2a319e5c635bc1a2624007927701291927e",
+                    "cluster": "stack2-easy-100007"
+                },
+                {
+                    "id": "stack2-easy-101193",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101193.json",
+                    "sha256": "4467653cb9495ec62c34f9abd234c378c62095b549db36e5a942a1c5550a0635",
+                    "cluster": "stack2-easy-101193"
+                },
+                {
+                    "id": "stack2-easy-101234",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101234.json",
+                    "sha256": "f13ae164a47ee9a1228da387d423ee9e0b26df7a8be762d4dcdbc6a1ddbd5724",
+                    "cluster": "stack2-easy-101234"
+                },
+                {
+                    "id": "stack2-easy-101255",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101255.json",
+                    "sha256": "f285e87f13fc70e49a52411049bec4c82b0c5119a2def8ec4c5250c667b3abd4",
+                    "cluster": "stack2-easy-100079"
+                },
+                {
+                    "id": "stack2-easy-101262",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101262.json",
+                    "sha256": "aaea894c68918c0ddbe4106d458dfe9ed18fb44aae4a2f067b9bdbcd719fd126",
+                    "cluster": "stack2-easy-101262"
+                },
+                {
+                    "id": "stack2-easy-101268",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101268.json",
+                    "sha256": "8b09d7a6e3b5d2c0e2fc02dc9674dfe77b06488bb84fa21244e74d3f85ab8e51",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-101272",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101272.json",
+                    "sha256": "49ae322c78d2629b182b4c5a4f1488852040b532dc5070b31349a6a391daac17",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-101285",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101285.json",
+                    "sha256": "f56555e1145b29870ac1ebfcc3ba786dc061c6efce480c840db31f698d5cffb6",
+                    "cluster": "stack2-easy-101285"
+                },
+                {
+                    "id": "stack2-easy-101299",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101299.json",
+                    "sha256": "9b3518cf3bcaccef3a72b4f21a02f874459a96b8710353356704fb035a8d9439",
+                    "cluster": "stack2-easy-100123"
+                },
+                {
+                    "id": "stack2-easy-101337",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101337.json",
+                    "sha256": "9a8d74abda686a409e7ed6c797415d689de39a6001b2aa7373daa23ac5881a81",
+                    "cluster": "stack2-easy-101337"
+                },
+                {
+                    "id": "stack2-easy-101347",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101347.json",
+                    "sha256": "d863c1c2d3031394d3c58bb214a63c56ecfb87922c98dd847ba4abf73c0e67a4",
+                    "cluster": "stack2-easy-101088"
+                },
+                {
+                    "id": "stack2-easy-101360",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101360.json",
+                    "sha256": "2af6e97c9ea798908626711c34df184ad2a2d8cd5933fd9c63249f4b56d2ceaf",
+                    "cluster": "stack2-easy-100447"
+                },
+                {
+                    "id": "stack2-easy-101408",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101408.json",
+                    "sha256": "70b0ba477e812885165b5c034c7e08cfc9f6f330060cf5d4ebc6d46856502526",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-101435",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101435.json",
+                    "sha256": "05c0d2fe7321b213ef992aafb0f13b1df4ce92dd2175d1aa9e2e68e7692154cb",
+                    "cluster": "stack2-easy-100512"
+                },
+                {
+                    "id": "stack2-easy-101446",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101446.json",
+                    "sha256": "d7d70c6a8a654a4e2254aa28ef66dcd1a05704ce8e47b8f67873d0f2a869b9af",
+                    "cluster": "stack2-easy-101446"
+                },
+                {
+                    "id": "stack2-easy-101473",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101473.json",
+                    "sha256": "792c93d351509cb05eb38eea413205ce4fa3d0b5395736cd7d6d2b8c42a9d679",
+                    "cluster": "stack2-easy-100058"
+                },
+                {
+                    "id": "stack2-easy-101500",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101500.json",
+                    "sha256": "352013d17089534351efcd52a33bef9747ba407e4f230423f159c41e4a9bf5db",
+                    "cluster": "stack2-easy-101500"
+                },
+                {
+                    "id": "stack2-easy-101521",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101521.json",
+                    "sha256": "0cfb2f1d7f2086e2d38705d7425a6122da7e2410b349d8477f841df80576be19",
+                    "cluster": "stack2-easy-101521"
+                },
+                {
+                    "id": "stack2-easy-101534",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101534.json",
+                    "sha256": "8df2e9b12c2c4a14107892b38fd32031d0fcfc81f67de863cc5150e38b5e1e66",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-101538",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101538.json",
+                    "sha256": "41fdc00b3cc17954373abbfcf5a2b52b7a1c3a0767f0f832f58508d3e0a573e9",
+                    "cluster": "stack2-easy-100123"
+                },
+                {
+                    "id": "stack2-easy-101542",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101542.json",
+                    "sha256": "79a0f5d2fda5f06a673b3b1313603f3bca72cf9ea08e9f45f181a9ebd7bac118",
+                    "cluster": "stack2-easy-100056"
+                },
+                {
+                    "id": "stack2-easy-101548",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101548.json",
+                    "sha256": "45953cc991ff1c8c67dda63fcf9b446cbdf874f8e3c0b3343adc7459b83e3320",
+                    "cluster": "stack2-easy-101548"
+                },
+                {
+                    "id": "stack2-easy-101567",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101567.json",
+                    "sha256": "146e3f7339213ddcb989daf06bddbd3588ea02a993742fb114a3093209e64850",
+                    "cluster": "stack2-easy-101567"
+                },
+                {
+                    "id": "stack2-easy-101572",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101572.json",
+                    "sha256": "88f863e66460a96852d187e6d6ae16ef00f66174026435b5a48ceadcac2b76e0",
+                    "cluster": "stack2-easy-100007"
+                },
+                {
+                    "id": "stack2-easy-101582",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101582.json",
+                    "sha256": "6238c6ca644da276fc4976a63b4aa98c482903364af17792b74efa285b69be74",
+                    "cluster": "stack2-easy-100079"
+                },
+                {
+                    "id": "stack2-easy-101599",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101599.json",
+                    "sha256": "1dd01d0217474d47672aec8b285ff0ad6386da76affb543960bcd06ef4e248c3",
+                    "cluster": "stack2-easy-101446"
+                },
+                {
+                    "id": "stack2-easy-101609",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101609.json",
+                    "sha256": "b1061134eda479d7636bec0856cdcea325674fdbc9c5801446711ab0e74a156c",
+                    "cluster": "stack2-easy-100307"
+                },
+                {
+                    "id": "stack2-easy-101613",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101613.json",
+                    "sha256": "c360f44cb48b74883f136a22180ed202ea8efa8eabf42b8b1e9a25bec1c616b3",
+                    "cluster": "stack2-easy-100307"
+                },
+                {
+                    "id": "stack2-easy-101647",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101647.json",
+                    "sha256": "c59f8931bd4757c0085041dbfbb657c0e0f1ffa57e9b9e857c2eefc1b7dc5429",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-101674",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101674.json",
+                    "sha256": "b95b00eacbd1995eef33f77a079b3dca11b4c0f4ad444f17800084e078fbfc4c",
+                    "cluster": "stack2-easy-100474"
+                },
+                {
+                    "id": "stack2-easy-101722",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101722.json",
+                    "sha256": "4ee09df0a33cb50adb19e511b654a7c5207ac89ff92b0d90d7fdd61cd58d4001",
+                    "cluster": "stack2-easy-100307"
+                },
+                {
+                    "id": "stack2-easy-101739",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101739.json",
+                    "sha256": "43136813bfa8e43b4063cf307535f5e6458d484795dbf517ddf758360f451044",
+                    "cluster": "stack2-easy-100058"
+                },
+                {
+                    "id": "stack2-easy-101745",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101745.json",
+                    "sha256": "5626c4173f70187a01559a853a7ca19edd5e3e66a2752ef049f3b3b9e399ad0e",
+                    "cluster": "stack2-easy-101745"
+                },
+                {
+                    "id": "stack2-easy-101749",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101749.json",
+                    "sha256": "689a985227dfcbd4dbfd525686aa1a11eb7c8c96807e073fe6a219fd3d1f22ff",
+                    "cluster": "stack2-easy-100832"
+                },
+                {
+                    "id": "stack2-easy-101773",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101773.json",
+                    "sha256": "54796da01f99ee687db7845e814069acb144f8b5ee403d538ee609687d9c138e",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-101783",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101783.json",
+                    "sha256": "13cb400518f49e0ed9a1648db4e8595bc507be9ed51256128bf6360fdf5a7ef5",
+                    "cluster": "stack2-easy-101783"
+                },
+                {
+                    "id": "stack2-easy-101810",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101810.json",
+                    "sha256": "e9893fb94d719e0b161952f8b7bc29a4c678b4644551ac960d43624a0aa5c27b",
+                    "cluster": "stack2-easy-100474"
+                },
+                {
+                    "id": "stack2-easy-101858",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101858.json",
+                    "sha256": "9a26057b639d2aee65437926cc287663d56143857e852820fced069c7eb1a495",
+                    "cluster": "stack2-easy-101745"
+                },
+                {
+                    "id": "stack2-easy-101875",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101875.json",
+                    "sha256": "ac5da49f7c87535742d473aab8cc2eac52c6f4310dbe85997ba5a871bc916039",
+                    "cluster": "stack2-easy-100045"
+                },
+                {
+                    "id": "stack2-easy-101883",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101883.json",
+                    "sha256": "166b4305d184d19f1a91d147dd8fe8c0873a497a9613c9780f208a8f08f6b6a2",
+                    "cluster": "stack2-easy-100056"
+                },
+                {
+                    "id": "stack2-easy-101909",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101909.json",
+                    "sha256": "03f60d734abefc23630a0b3241b224a05c923cf622fa71a129d0bfe49db163b1",
+                    "cluster": "stack2-easy-100474"
+                },
+                {
+                    "id": "stack2-easy-101919",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101919.json",
+                    "sha256": "7631f381fdca3effd513eca1188b3a8a1c4c075939e5769bd357fd0d59d7c96d",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-101923",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101923.json",
+                    "sha256": "c3b083c9ea57727d02e128448c27795e1498d4a2089dfbb0b5024ca116f8e253",
+                    "cluster": "stack2-easy-101923"
+                },
+                {
+                    "id": "stack2-easy-101936",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101936.json",
+                    "sha256": "56bb71a97720b3fdf1068d80632476878ba6d391eb3fe5729270e0d3b350027b",
+                    "cluster": "stack2-easy-101262"
+                },
+                {
+                    "id": "stack2-easy-101946",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101946.json",
+                    "sha256": "ef6f6b289e24325ea4ae55415525b3e9ff39f179503d772d1b07b2a0e0893302",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-101950",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101950.json",
+                    "sha256": "a95c006a28bfdf446b3fab41d656710b6d3419b11d91418763af1087c5963b1c",
+                    "cluster": "stack2-easy-100123"
+                },
+                {
+                    "id": "stack2-easy-101984",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-101984.json",
+                    "sha256": "9a11f1995b74d2673c8aec5453d1e43cf375ecbb9520a7bd461724dee029489a",
+                    "cluster": "stack2-easy-100007"
+                },
+                {
+                    "id": "stack2-easy-102022",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102022.json",
+                    "sha256": "481111fe9e6bf948dd425b21323271a5c4750639f51be7d7400bf8dee197e665",
+                    "cluster": "stack2-easy-100474"
+                },
+                {
+                    "id": "stack2-easy-102045",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102045.json",
+                    "sha256": "09396a1d2d861893c4a322e01ce2fb5888f110f1a642d09442f0ed50bbf915da",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-102049",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102049.json",
+                    "sha256": "1b61ce1b6902b05f00bb8f99d39c0f64c8230cfce8eda4fa286e9f0b35d9edc4",
+                    "cluster": "stack2-easy-100474"
+                },
+                {
+                    "id": "stack2-easy-102110",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102110.json",
+                    "sha256": "29f3cfd064b85fb951b6c0b0bf440030a538be1c0a06557b21caf2a2587cbed4",
+                    "cluster": "stack2-easy-100123"
+                },
+                {
+                    "id": "stack2-easy-102114",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102114.json",
+                    "sha256": "0ffbdff0289ee98bfe315f430ed35ed9bda39ed0d6412210cdeda134952ce862",
+                    "cluster": "stack2-easy-101337"
+                },
+                {
+                    "id": "stack2-easy-102120",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102120.json",
+                    "sha256": "b8d2b3b9d0ff2fe0967abed1f8db810b15e1d0800104f84b85319041a6af3d0a",
+                    "cluster": "stack2-easy-101548"
+                },
+                {
+                    "id": "stack2-easy-102158",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102158.json",
+                    "sha256": "b32d916e48d403708a6d54ea8f118547a509e6823fcd41b3853c893ed96597b4",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-102172",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102172.json",
+                    "sha256": "d8ccecab3db0247b42bf4ce53ce4fff1f7813f4ba40a8be239288afd595d87b8",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-102175",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102175.json",
+                    "sha256": "ce3bd81df86edfb33bb83fd7954c8a4d26248e6891b33a17d2a2e4ebe710079c",
+                    "cluster": "stack2-easy-101262"
+                },
+                {
+                    "id": "stack2-easy-102189",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102189.json",
+                    "sha256": "2c13b6c093e51a8fc6e50d1b55a70fd4d95899f22879bb407adbf4aadc1b741e",
+                    "cluster": "stack2-easy-100123"
+                },
+                {
+                    "id": "stack2-easy-102195",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102195.json",
+                    "sha256": "90619c30a04e75ce5a82ae8dbc5c4fa24708a2ad44fcb1b4aafdc8c67a9cb3dc",
+                    "cluster": "stack2-easy-101262"
+                },
+                {
+                    "id": "stack2-easy-102246",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102246.json",
+                    "sha256": "1f2beb29bfa5656a2df33cf76253c3a95f57e257725f73418c7d01bc93e78728",
+                    "cluster": "stack2-easy-102246"
+                },
+                {
+                    "id": "stack2-easy-102250",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102250.json",
+                    "sha256": "48f3c526d011d2bb258c857587bbe6ab72cb27aada855560b031594c2fb80403",
+                    "cluster": "stack2-easy-100058"
+                },
+                {
+                    "id": "stack2-easy-102373",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102373.json",
+                    "sha256": "94b24f53c99b15f0f72af12c773707e197150734573277c48cf13c737fcd55bd",
+                    "cluster": "stack2-easy-101500"
+                },
+                {
+                    "id": "stack2-easy-102396",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102396.json",
+                    "sha256": "41df0f33b63a57dbece8d8010b4ae6fc54932264e5a2fc79ff6b90e5f9f4af7e",
+                    "cluster": "stack2-easy-102396"
+                },
+                {
+                    "id": "stack2-easy-102447",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102447.json",
+                    "sha256": "4b1565b2349a9a5d116f8c293ffce8645b9a58bc99fda7b6b51893c569adc491",
+                    "cluster": "stack2-easy-100474"
+                },
+                {
+                    "id": "stack2-easy-102495",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102495.json",
+                    "sha256": "0c23ac88d96dcdb35003733df833c97ec563b321c491780886c2ed03afd7e62a",
+                    "cluster": "stack2-easy-100123"
+                },
+                {
+                    "id": "stack2-easy-102499",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102499.json",
+                    "sha256": "34371032850ac2278021962a9bf309f053b9b3259ee026044246342ae1688922",
+                    "cluster": "stack2-easy-102499"
+                },
+                {
+                    "id": "stack2-easy-102507",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102507.json",
+                    "sha256": "f95136fb1970b5f531a8daf35b8df4424a4b3872ee859e8bb9c1085102383d14",
+                    "cluster": "stack2-easy-100056"
+                },
+                {
+                    "id": "stack2-easy-102526",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102526.json",
+                    "sha256": "03ed1ce09907fad00a7b62f3eac18a76542265b11f1de4ce245a47bc2310d348",
+                    "cluster": "stack2-easy-100832"
+                },
+                {
+                    "id": "stack2-easy-102574",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102574.json",
+                    "sha256": "8d1585a97a20c6c696e14ca471668349b953c920757e86c66066278833429d2e",
+                    "cluster": "stack2-easy-102574"
+                },
+                {
+                    "id": "stack2-easy-102587",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102587.json",
+                    "sha256": "d6ee5252e89611107edb33415d6b93e12be0da7101648289029630a80eb852ad",
+                    "cluster": "stack2-easy-100474"
+                },
+                {
+                    "id": "stack2-easy-102598",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102598.json",
+                    "sha256": "fe39ec4fc2c79c1da735d5f4c1b64ad9c726ddd34ab0072ec22a93f61e4b6b50",
+                    "cluster": "stack2-easy-100007"
+                },
+                {
+                    "id": "stack2-easy-102635",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102635.json",
+                    "sha256": "f51da6dcbf54e45a1823e367488fcf5fadba2e51e06ea878133cef7cf253680b",
+                    "cluster": "stack2-easy-100123"
+                },
+                {
+                    "id": "stack2-easy-102662",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102662.json",
+                    "sha256": "cf6712ab56567a20049956f831334ab04f858c69c976abf9a83f0362ac7c75c5",
+                    "cluster": "stack2-easy-100334"
+                },
+                {
+                    "id": "stack2-easy-102706",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102706.json",
+                    "sha256": "ec494a62c2f43eefb7c6de93d0f53cf8702771ed5f49a52506b4f7267e8137bd",
+                    "cluster": "stack2-easy-100968"
+                },
+                {
+                    "id": "stack2-easy-102765",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102765.json",
+                    "sha256": "7fc5b408b2f25fc250833f19f4f82e4f1972e50c4c24fce7d0e96fb85b72e86f",
+                    "cluster": "stack2-easy-100307"
+                },
+                {
+                    "id": "stack2-easy-102775",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102775.json",
+                    "sha256": "e45d25dce146b79314e285a2aa88d1a6edd4bf2b074b35a47769a2870ebfd6ce",
+                    "cluster": "stack2-easy-100447"
+                },
+                {
+                    "id": "stack2-easy-102799",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102799.json",
+                    "sha256": "d7063bc12093ee84a52c5b9f9fe3b6ac48e3ef4de68f9d4e44f890fe11d51866",
+                    "cluster": "stack2-easy-100307"
+                },
+                {
+                    "id": "stack2-easy-102809",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102809.json",
+                    "sha256": "a75e9879d880edc49d0fd55b88b7237b206cf466a524d31d6b688c19b30d5508",
+                    "cluster": "stack2-easy-100307"
+                },
+                {
+                    "id": "stack2-easy-102822",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102822.json",
+                    "sha256": "5613a165f85f712dc6ca8161307a4ac9a5fd70cf3ab9c8d4bf59b13d29ea3c1b",
+                    "cluster": "stack2-easy-100058"
+                },
+                {
+                    "id": "stack2-easy-102836",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102836.json",
+                    "sha256": "464be27beb062b6cac1bd98c838cf3e695e2618282c232da5f9fd8c8a9c66c37",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-102870",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102870.json",
+                    "sha256": "9b72cb0fb35c53683681a8f07a5c3704a0e4555adf8b8ec0771be96ae3d91c84",
+                    "cluster": "stack2-easy-100897"
+                },
+                {
+                    "id": "stack2-easy-102874",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102874.json",
+                    "sha256": "b0384d23d14bceb8bc17d8b3e9be5db3c03c8122a7364152166a182f601afcc2",
+                    "cluster": "stack2-easy-100123"
+                },
+                {
+                    "id": "stack2-easy-102899",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102899.json",
+                    "sha256": "fbad47daa51ba30554877159c29724a291b5e9abe90f76c9d0f7b50d8faf164c",
+                    "cluster": "stack2-easy-100056"
+                },
+                {
+                    "id": "stack2-easy-102901",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102901.json",
+                    "sha256": "44b4c5a12bcd5bf7297ee7c410ad746eb49877efd3af9a03d090f1fbfe1d6058",
+                    "cluster": "stack2-easy-101446"
+                },
+                {
+                    "id": "stack2-easy-102945",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102945.json",
+                    "sha256": "cc536726b47114e5b7f2e61872079f33a6167a3ae78fa329149926a1713b0aea",
+                    "cluster": "stack2-easy-102945"
+                },
+                {
+                    "id": "stack2-easy-102949",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102949.json",
+                    "sha256": "bdb98e88e1576fb48eb326d2a816c456d25f70fa1d5d32b1d9a402d1d9a6f963",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-102962",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102962.json",
+                    "sha256": "52a4f362a8eae13b6cd21ff0d767d9ac36e4bd439c518a715c00390ec5a98c9a",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-102972",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-102972.json",
+                    "sha256": "0e659f9414c0a8c7347967913b84ac4f43b69c02837d11a44a2b1d1aa90f5a69",
+                    "cluster": "stack2-easy-100062"
+                },
+                {
+                    "id": "stack2-easy-103006",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103006.json",
+                    "sha256": "79f80f8edc70410816d946ba0135d5a085f1279fe9a15fece967d99870a5d38e",
+                    "cluster": "stack2-easy-103006"
+                },
+                {
+                    "id": "stack2-easy-103037",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103037.json",
+                    "sha256": "fe5e1d395e70dc38eabd253037e07b29973badbb6279b320f19ee6ed16b86a0a",
+                    "cluster": "stack2-easy-100372"
+                },
+                {
+                    "id": "stack2-easy-103098",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103098.json",
+                    "sha256": "9bc1f454dd82cda3ab50908e27891606a973fd4c6afb93991d5dd0d08900b62a",
+                    "cluster": "stack2-easy-100307"
+                },
+                {
+                    "id": "stack2-easy-103136",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103136.json",
+                    "sha256": "d570073ce025c7ec2e3a07e100a26f4f28e437a0ec627cca302789ca17594c16",
+                    "cluster": "stack2-easy-100007"
+                },
+                {
+                    "id": "stack2-easy-103207",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103207.json",
+                    "sha256": "876eeb25a241cd8bfdb7d9f35b0c30e50d030246870633eba7d392484be4f4ea",
+                    "cluster": "stack2-easy-100709"
+                },
+                {
+                    "id": "stack2-easy-103211",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103211.json",
+                    "sha256": "4a8347afc40df533f4e10d845f81cf7d2f5ce242ad73fe833d4929f30b7a4367",
+                    "cluster": "stack2-easy-103211"
+                },
+                {
+                    "id": "stack2-easy-103221",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103221.json",
+                    "sha256": "5adbb23b56d9d80098d9144ab784d819ee8f09c6e37c37f92e647e237f5a8cfa",
+                    "cluster": "stack2-easy-100307"
+                },
+                {
+                    "id": "stack2-easy-103245",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103245.json",
+                    "sha256": "8ad4acac94f7bbefd3d42998e6c35c906a1e3443187d6a478b13d1cebf0b2efc",
+                    "cluster": "stack2-easy-100474"
+                },
+                {
+                    "id": "stack2-easy-103249",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103249.json",
+                    "sha256": "3cf573c7f14d685632cf25f1da1df14468104e2c36e06b2a840285b004ae0c88",
+                    "cluster": "stack2-easy-100897"
+                },
+                {
+                    "id": "stack2-easy-103276",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103276.json",
+                    "sha256": "77fdfb2552df7fe4568106df6aa14c968826e61c05265d760716906d6f188e68",
+                    "cluster": "stack2-easy-101548"
+                },
+                {
+                    "id": "stack2-easy-103286",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103286.json",
+                    "sha256": "0a82e3eb5c76acbbc9f02ae2778a6a8ea312f67341088352e005ae0e0bc8e4cd",
+                    "cluster": "stack2-easy-103286"
+                },
+                {
+                    "id": "stack2-easy-103320",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103320.json",
+                    "sha256": "1b648566f5e5839feaf4d9e904d14538683930bfc71e5ddcb37b5bb119f9d5d7",
+                    "cluster": "stack2-easy-100709"
+                },
+                {
+                    "id": "stack2-easy-103337",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103337.json",
+                    "sha256": "a534ed80eeb8be49caebef3ecd7b82b0bfb44bddfa9bb9bc602babb6babb46ab",
+                    "cluster": "stack2-easy-100307"
+                },
+                {
+                    "id": "stack2-easy-103347",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103347.json",
+                    "sha256": "c8c47affa70d8dbec3a8cd7f6db2527a82f47e1d336872c56666566f58a5692e",
+                    "cluster": "stack2-easy-103347"
+                },
+                {
+                    "id": "stack2-easy-103374",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103374.json",
+                    "sha256": "26055eac09132e6f0e32bb54460178f1baae43da966bf6ea16ee1442c56c6cf3",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-103385",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103385.json",
+                    "sha256": "34e4212fe7b931d86ee3ecf451b92abdda07e9c4bdc84a6516f5731879d291ad",
+                    "cluster": "stack2-easy-100123"
+                },
+                {
+                    "id": "stack2-easy-103395",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103395.json",
+                    "sha256": "82e8c7d20bd012ef1a07cdeb4cfec0917286706acc1ed2cf5a3368842cc6a14b",
+                    "cluster": "stack2-easy-100007"
+                },
+                {
+                    "id": "stack2-easy-103412",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103412.json",
+                    "sha256": "014760a8aec7fe88d1726b67835821cd37a92f2c772844e4633bd2d1367e0910",
+                    "cluster": "stack2-easy-102499"
+                },
+                {
+                    "id": "stack2-easy-103422",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103422.json",
+                    "sha256": "2cec475115d4d74e324c2293b1fb0c71b44b2d9448d2d663835c8edd950fb677",
+                    "cluster": "stack2-easy-100512"
+                },
+                {
+                    "id": "stack2-easy-103446",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103446.json",
+                    "sha256": "1aaa2af54e3373aa3746739a31deacebd37b1533d3a70cbec5c9a26e5720c99a",
+                    "cluster": "stack2-easy-100058"
+                },
+                {
+                    "id": "stack2-easy-103460",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103460.json",
+                    "sha256": "d49dbcdcb29ddc1bf463bf208dbdf8b509477b2d9cf0cb000c6dc537f2c1d72d",
+                    "cluster": "stack2-easy-100058"
+                },
+                {
+                    "id": "stack2-easy-103487",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103487.json",
+                    "sha256": "3fa998d5a7d2865c7503b57b61b454655a9cb3bc9c2c9a5eb1b6be101886a8a3",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-103586",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103586.json",
+                    "sha256": "6a5179839cd44808e5e17ee4e4a8c65c3bf7504c86e7d4be59cebbf4b2e62348",
+                    "cluster": "stack2-easy-101088"
+                },
+                {
+                    "id": "stack2-easy-103596",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103596.json",
+                    "sha256": "e8f8fcd5a995bfef9fefd4a30ae57b502d7a1998c9fa2354eb8ab9d7280f1ac0",
+                    "cluster": "stack2-easy-100307"
+                },
+                {
+                    "id": "stack2-easy-103647",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103647.json",
+                    "sha256": "0df2ed262a9a237f78210c1b5551cecaa3c872de678270ad7905bbca3a2c9d0a",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-103651",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103651.json",
+                    "sha256": "4ff348fc3483408a155c6b3d82c5aa06e971dba38d1e474df1f99e3ef35a9030",
+                    "cluster": "stack2-easy-100123"
+                },
+                {
+                    "id": "stack2-easy-103674",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103674.json",
+                    "sha256": "f620ef787e42ddd51b3bb354ffad22dd3f98569bc2f22b41c28a443137d87999",
+                    "cluster": "stack2-easy-100007"
+                },
+                {
+                    "id": "stack2-easy-103712",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103712.json",
+                    "sha256": "5a33c2aa1363f67412e6510053063d48bc2fb45993a910a142b6d1d4d22529f1",
+                    "cluster": "stack2-easy-103712"
+                },
+                {
+                    "id": "stack2-easy-103722",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103722.json",
+                    "sha256": "8e618f05ccbe6ee04275ddb47fbfcbf854c4070963c5eff29cd94966ecd87adc",
+                    "cluster": "stack2-easy-100832"
+                },
+                {
+                    "id": "stack2-easy-103787",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103787.json",
+                    "sha256": "64764b7b9bb59b937b338dfa5068740470e498ee7330c9697cb18191ef2c35cc",
+                    "cluster": "stack2-easy-100897"
+                },
+                {
+                    "id": "stack2-easy-103801",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103801.json",
+                    "sha256": "c254a2a9382742d160c2d3fca563b06d271d6b5c92f89dddd21c5140e392389d",
+                    "cluster": "stack2-easy-100512"
+                },
+                {
+                    "id": "stack2-easy-103862",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103862.json",
+                    "sha256": "5377d5819a3ece3200296e1311f187b5d409f752211b4478c6c4a5d3a82311b9",
+                    "cluster": "stack2-easy-101500"
+                },
+                {
+                    "id": "stack2-easy-103910",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103910.json",
+                    "sha256": "7e841ca1324eb85a31e6acee5abf531b9d843a71cc441e81152b02b9ad762dc3",
+                    "cluster": "stack2-easy-100123"
+                },
+                {
+                    "id": "stack2-easy-103913",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103913.json",
+                    "sha256": "b657ac07bc7ece3e01467494a9b047d1dd014f914c7404ae483ed001cc47fc20",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-103923",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103923.json",
+                    "sha256": "2f0ffb48f9477293974cef2d3637bd9c47bb3c7b4117d7c829c5d5356af308cb",
+                    "cluster": "stack2-easy-100062"
+                },
+                {
+                    "id": "stack2-easy-103927",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103927.json",
+                    "sha256": "6e8376dd5d3c89419bc47e68f30848f171c03de85cd464a830719d7f6de4395f",
+                    "cluster": "stack2-easy-100897"
+                },
+                {
+                    "id": "stack2-easy-103933",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-103933.json",
+                    "sha256": "9b2373111c40f00fd18484098290a53ad1a51af4fe7c8427c403c1dac42d5158",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-104036",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104036.json",
+                    "sha256": "effb394d571bcf2f4e2d5bf5d402a6d14e2e87dcb5b8487a9d5370b10d17fd9d",
+                    "cluster": "stack2-easy-100474"
+                },
+                {
+                    "id": "stack2-easy-104049",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104049.json",
+                    "sha256": "d2dfd2161e5204c53f878a9152f53712940692f2e939f27a94a4d5939b671970",
+                    "cluster": "stack2-easy-104049"
+                },
+                {
+                    "id": "stack2-easy-104158",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104158.json",
+                    "sha256": "8c1b07d34b8d1ff9e8bf7e3584aa391c5f299fca1368823440b3339bbb57ac3f",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-104199",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104199.json",
+                    "sha256": "4a5208edf2c954e4eb8c447e43a0e5dba05b37bbeed94fb1f562864ae610b018",
+                    "cluster": "stack2-easy-100512"
+                },
+                {
+                    "id": "stack2-easy-104237",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104237.json",
+                    "sha256": "9796aa03c01119888ecc0237c9e65c70fb92a9a633f090c645c1bd55cf25ceae",
+                    "cluster": "stack2-easy-100058"
+                },
+                {
+                    "id": "stack2-easy-104285",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104285.json",
+                    "sha256": "aa4833173f2371d0c7da724d29096a89ec4621724f87891bde350618b9c72a68",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-104312",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104312.json",
+                    "sha256": "5f4732850e47a24db2f7f1c7a791e376dbd98769acd4faee111d0b1e766b9b10",
+                    "cluster": "stack2-easy-100007"
+                },
+                {
+                    "id": "stack2-easy-104346",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104346.json",
+                    "sha256": "f9a8b5ae12bcf1e14554ad047033874d40f8fddc6c674585190489aadfa347e4",
+                    "cluster": "stack2-easy-100007"
+                },
+                {
+                    "id": "stack2-easy-104359",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104359.json",
+                    "sha256": "a8b010ae0d29b267687606bcd32b073a547f835b716fecf977bbd246da3b79df",
+                    "cluster": "stack2-easy-100512"
+                },
+                {
+                    "id": "stack2-easy-104363",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104363.json",
+                    "sha256": "cd42857afc69b225c83b1d09f4d66dcbff05513d9a31697a6a9e7a1bf3c70d2b",
+                    "cluster": "stack2-easy-100968"
+                },
+                {
+                    "id": "stack2-easy-104377",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104377.json",
+                    "sha256": "d0d4722041beea0a38fe1c1e192e0b3613aa35c7a434f3fbc15381ae65b39bd2",
+                    "cluster": "stack2-easy-100058"
+                },
+                {
+                    "id": "stack2-easy-104411",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104411.json",
+                    "sha256": "b0ed615ca4852f34b7ddf21717437a35523e988b016070ff28aca195e309823f",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-104417",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104417.json",
+                    "sha256": "35b5bb56b18a09330c66252bf85f72c83f5772fd53c1601044c08cc117a63994",
+                    "cluster": "stack2-easy-104417"
+                },
+                {
+                    "id": "stack2-easy-104421",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104421.json",
+                    "sha256": "5e7479a281a7f0ca9f21ac53b7384305e25088b00d334777ce0d971095a852e6",
+                    "cluster": "stack2-easy-100062"
+                },
+                {
+                    "id": "stack2-easy-104428",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104428.json",
+                    "sha256": "cf19008e0e97dd3f83549399e8db5ec5e3115713ff43b1956fb9c4a084cdc62a",
+                    "cluster": "stack2-easy-100600"
+                },
+                {
+                    "id": "stack2-easy-104438",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104438.json",
+                    "sha256": "a43fdd0719ab1f11d9bacc4ccdf93cef50e9b70dc8cb6dac1bf982669c242708",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-104499",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104499.json",
+                    "sha256": "0f70d8ee8fe6c4b19a8c14772398f5c96e268d54d083624d2c03f18dded76420",
+                    "cluster": "stack2-easy-100307"
+                },
+                {
+                    "id": "stack2-easy-104547",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104547.json",
+                    "sha256": "f1f5633d4a18d06697b40254fcdab5cdcaa118f9fb63af759f66c4e65159ec7c",
+                    "cluster": "stack2-easy-102574"
+                },
+                {
+                    "id": "stack2-easy-104560",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104560.json",
+                    "sha256": "6fb97576f9b06d6e8d3a86ed0c5fdee9540635186da4ba6d656e015690e2b82d",
+                    "cluster": "stack2-easy-100474"
+                },
+                {
+                    "id": "stack2-easy-104574",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104574.json",
+                    "sha256": "7ba68e44bc3dca6258c3f745e4e7e5e2281a5423d5039633d0033b52c4e7db66",
+                    "cluster": "stack2-easy-104574"
+                },
+                {
+                    "id": "stack2-easy-104622",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104622.json",
+                    "sha256": "80d59d325169d25b9ef2373caa89bac8f0085b8de8e84af741f3fb43e2fa46a2",
+                    "cluster": "stack2-easy-104622"
+                },
+                {
+                    "id": "stack2-easy-104673",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104673.json",
+                    "sha256": "eb347753be0e668889e7575aae5a913652e2818a3e80a4bef9307f5d5863dc7d",
+                    "cluster": "stack2-easy-101262"
+                },
+                {
+                    "id": "stack2-easy-104683",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104683.json",
+                    "sha256": "f7a0992ef3bd0a15b186ec20437a5818c283ef570c35a5352d1adaa124696801",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-104687",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104687.json",
+                    "sha256": "7b772938305e64944bebfc2703bdfeb6fcc5773c0bbeed15fb6a914122a42486",
+                    "cluster": "stack2-easy-104687"
+                },
+                {
+                    "id": "stack2-easy-104700",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104700.json",
+                    "sha256": "c4cbbc547500567f6734c33691253551e573799c394b47343da82440a7677c89",
+                    "cluster": "stack2-easy-100062"
+                },
+                {
+                    "id": "stack2-easy-104710",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104710.json",
+                    "sha256": "efa1ed2a63ab1a5c64456dfe43e26166f4ca5dbc845b32de74154c42f45f8fe7",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-104738",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104738.json",
+                    "sha256": "82b49f2e5c4d181f2949639e3ca5c1d65a571aa81b366f21c75574595ca4b16f",
+                    "cluster": "stack2-easy-100897"
+                },
+                {
+                    "id": "stack2-easy-104758",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104758.json",
+                    "sha256": "52b2968ac0bfc3cd929535326ad638c17aed5c3ce55e217965498beab3dc89fc",
+                    "cluster": "stack2-easy-100897"
+                },
+                {
+                    "id": "stack2-easy-104786",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104786.json",
+                    "sha256": "8c90c65dab75454d6141769c5e4800251b4e2a63279a5a5a67d31966ad79bd8b",
+                    "cluster": "stack2-easy-100474"
+                },
+                {
+                    "id": "stack2-easy-104813",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104813.json",
+                    "sha256": "36033fd739aae71e1a9f51bd246b7f8be16adf3a90c3f16e0f7538713d9eb506",
+                    "cluster": "stack2-easy-100062"
+                },
+                {
+                    "id": "stack2-easy-104857",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104857.json",
+                    "sha256": "40f9ba467b97d01837b6fcf50bea9628dd14c567b7ea57ba0a298c430aa7b8b8",
+                    "cluster": "stack2-easy-100600"
+                },
+                {
+                    "id": "stack2-easy-104878",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104878.json",
+                    "sha256": "5b60cc5bfd62ed74d0c5787e762884ce02b8d0fef90cbcee98a83e61329c91bd",
+                    "cluster": "stack2-easy-100307"
+                },
+                {
+                    "id": "stack2-easy-104888",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104888.json",
+                    "sha256": "926ba6112acb007297c18130fe8ab54d5641cfbcce8aefaf6858dbc24d8c1966",
+                    "cluster": "stack2-easy-100583"
+                },
+                {
+                    "id": "stack2-easy-104949",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104949.json",
+                    "sha256": "2a34ca27feeaf8210d88c5285d5de40b823d4585f260384ae7dd608927823bfc",
+                    "cluster": "stack2-easy-100072"
+                },
+                {
+                    "id": "stack2-easy-104953",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104953.json",
+                    "sha256": "36fa4d5e4e2ae82e5aa60ed994cc6da7f77d120f4e412d9872ea630b683f0a4b",
+                    "cluster": "stack2-easy-100259"
+                },
+                {
+                    "id": "stack2-easy-104959",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104959.json",
+                    "sha256": "c55637034bb3b60acecfb1337a2908a106bd0aa6389ad9bb1153492f86976d63",
+                    "cluster": "stack2-easy-100062"
+                },
+                {
+                    "id": "stack2-easy-104997",
+                    "path": "structures/box-stacks-v2/train/stack2-easy-104997.json",
+                    "sha256": "6edad7029e00c87a05a93c9ab6759b25534bb42bf0028eb27e8d706f6844741b",
+                    "cluster": "stack2-easy-100512"
+                }
+            ]
+        }
+    ],
+    "validation": [
+        {
+            "id": "stack2-easy-100009",
+            "path": "structures/box-stacks-v2/train/stack2-easy-100009.json",
+            "sha256": "b8e6902cf300721faf955b6dca78bafa769f90fc45bb96f60f5f0126879c08cc",
+            "cluster": "stack2-easy-100009"
+        },
+        {
+            "id": "stack2-easy-100012",
+            "path": "structures/box-stacks-v2/train/stack2-easy-100012.json",
+            "sha256": "1c5e40c19ec7f464fd91076c4d70739e972d04c6b6cbf8ff2172b2aa7ab09529",
+            "cluster": "stack2-easy-100012"
+        },
+        {
+            "id": "stack2-easy-100110",
+            "path": "structures/box-stacks-v2/train/stack2-easy-100110.json",
+            "sha256": "b7d1f330a7a7bff7ce736e5100b1daa15ab463336f8626d290d0f9bfd7632b1d",
+            "cluster": "stack2-easy-100110"
+        },
+        {
+            "id": "stack2-easy-100215",
+            "path": "structures/box-stacks-v2/train/stack2-easy-100215.json",
+            "sha256": "d8790a7fd416ac18e08f8118e41b9d05b3c644db4990b3449854d0ffc729e6a7",
+            "cluster": "stack2-easy-100215"
+        },
+        {
+            "id": "stack2-easy-100305",
+            "path": "structures/box-stacks-v2/train/stack2-easy-100305.json",
+            "sha256": "94bf398c0d15df5581ac6cd34e371de930232773b6344b67735df7b4ce042c83",
+            "cluster": "stack2-easy-100009"
+        },
+        {
+            "id": "stack2-easy-100409",
+            "path": "structures/box-stacks-v2/train/stack2-easy-100409.json",
+            "sha256": "1c25133fc64b879b7727b0420d90f9021e283dd87a46e0a18335d10d5284551b",
+            "cluster": "stack2-easy-100110"
+        },
+        {
+            "id": "stack2-easy-100478",
+            "path": "structures/box-stacks-v2/train/stack2-easy-100478.json",
+            "sha256": "cb84f48467c52757d52bed4db4bd93541b8054e02cd68279b90669b1e49f4ad1",
+            "cluster": "stack2-easy-100215"
+        },
+        {
+            "id": "stack2-easy-100481",
+            "path": "structures/box-stacks-v2/train/stack2-easy-100481.json",
+            "sha256": "25fbb038101a30b178db677ce75b6c2e67ee8da07d6d01d340ed5a961c1716d2",
+            "cluster": "stack2-easy-100481"
+        },
+        {
+            "id": "stack2-easy-100560",
+            "path": "structures/box-stacks-v2/train/stack2-easy-100560.json",
+            "sha256": "bc1d9dd246b2cd474d2ab9d8d7d74c2e4cb3023320a3058d7b782c27246b40b3",
+            "cluster": "stack2-easy-100560"
+        },
+        {
+            "id": "stack2-easy-100638",
+            "path": "structures/box-stacks-v2/train/stack2-easy-100638.json",
+            "sha256": "74228363df0d8ff17d53367d28263f08e4048c022d14f2f0b364487f509a624e",
+            "cluster": "stack2-easy-100638"
+        },
+        {
+            "id": "stack2-easy-101019",
+            "path": "structures/box-stacks-v2/train/stack2-easy-101019.json",
+            "sha256": "14853e3182f8bd1896b1e311ae4a582b46bd32144d4ef3cdb7e09cf8525b12e1",
+            "cluster": "stack2-easy-101019"
+        },
+        {
+            "id": "stack2-easy-101098",
+            "path": "structures/box-stacks-v2/train/stack2-easy-101098.json",
+            "sha256": "72ed6284ff526b2798bfb49de45fc85c9f11e5c37f9fe74bd8fc09bd1f39e2ff",
+            "cluster": "stack2-easy-101098"
+        },
+        {
+            "id": "stack2-easy-101169",
+            "path": "structures/box-stacks-v2/train/stack2-easy-101169.json",
+            "sha256": "698f57aa099b6b9cf014a851bc9d78e18c25b1b8e87299397e2763cbc28829d2",
+            "cluster": "stack2-easy-101169"
+        },
+        {
+            "id": "stack2-easy-102011",
+            "path": "structures/box-stacks-v2/train/stack2-easy-102011.json",
+            "sha256": "b48539bd7639b3f99a352e66d1cf08e631270b2950b2a7969f88e21f4c734d72",
+            "cluster": "stack2-easy-101098"
+        },
+        {
+            "id": "stack2-easy-102271",
+            "path": "structures/box-stacks-v2/train/stack2-easy-102271.json",
+            "sha256": "1f07079518504711ce3be5dd6da7ee612d2b223a9d9c94bb2df966a18595e095",
+            "cluster": "stack2-easy-100009"
+        },
+        {
+            "id": "stack2-easy-102512",
+            "path": "structures/box-stacks-v2/train/stack2-easy-102512.json",
+            "sha256": "2e4d56bfb98d8cf93c3e41756b50d06d93b0e9633124985e30bb7de1bcddc90e",
+            "cluster": "stack2-easy-102512"
+        },
+        {
+            "id": "stack2-easy-102524",
+            "path": "structures/box-stacks-v2/train/stack2-easy-102524.json",
+            "sha256": "a73e467736aeb175e603d2f3e43182a8dee20e363ae37ff6c470534fab61112c",
+            "cluster": "stack2-easy-100012"
+        },
+        {
+            "id": "stack2-easy-102554",
+            "path": "structures/box-stacks-v2/train/stack2-easy-102554.json",
+            "sha256": "c8c9d6e475e7287f97785a38afd8d62a06a4877e2fa467d7026b2ad233eb4d3b",
+            "cluster": "stack2-easy-100009"
+        },
+        {
+            "id": "stack2-easy-102673",
+            "path": "structures/box-stacks-v2/train/stack2-easy-102673.json",
+            "sha256": "d384a69373d2e208fc2daac972c38e4c09f20e7bbfab909c777cf00e97623d76",
+            "cluster": "stack2-easy-102673"
+        },
+        {
+            "id": "stack2-easy-102771",
+            "path": "structures/box-stacks-v2/train/stack2-easy-102771.json",
+            "sha256": "f0e32a02767d153bc6aaaca8ac86f11239dc893c8be955a7b25cfa647993822f",
+            "cluster": "stack2-easy-102771"
+        },
+        {
+            "id": "stack2-easy-103023",
+            "path": "structures/box-stacks-v2/train/stack2-easy-103023.json",
+            "sha256": "88211841fc06028d39fed89f15d7f866a47c27d99bf5ed331fd8add3fe54c83b",
+            "cluster": "stack2-easy-103023"
+        },
+        {
+            "id": "stack2-easy-103835",
+            "path": "structures/box-stacks-v2/train/stack2-easy-103835.json",
+            "sha256": "bf17e90233dbf9d5869f66cde79abac9bc1c2ba672ef5fd0575124a4468ca226",
+            "cluster": "stack2-easy-103835"
+        },
+        {
+            "id": "stack2-easy-104124",
+            "path": "structures/box-stacks-v2/train/stack2-easy-104124.json",
+            "sha256": "cb367e6802b40beffa50de3b11c3344d8bcfedd32f78287f79e50e33193bf551",
+            "cluster": "stack2-easy-104124"
+        },
+        {
+            "id": "stack2-easy-104210",
+            "path": "structures/box-stacks-v2/train/stack2-easy-104210.json",
+            "sha256": "d2b703412ec9dbe6c194af8074926fb5e17f3494eb937ddf07d9b22a8240b463",
+            "cluster": "stack2-easy-101098"
+        },
+        {
+            "id": "stack2-easy-104373",
+            "path": "structures/box-stacks-v2/train/stack2-easy-104373.json",
+            "sha256": "2bb2b9b1c1d56ca17923b75647fc171b791a5302ad3a9413a1946a40ac4ca433",
+            "cluster": "stack2-easy-103835"
+        },
+        {
+            "id": "stack2-easy-104509",
+            "path": "structures/box-stacks-v2/train/stack2-easy-104509.json",
+            "sha256": "bb60d202d0ca29207c9d77587fef5ef20269904ed6a06dcc7a65413c66693f83",
+            "cluster": "stack2-easy-101098"
+        },
+        {
+            "id": "stack2-easy-104537",
+            "path": "structures/box-stacks-v2/train/stack2-easy-104537.json",
+            "sha256": "e0949842375fda18271bdbf662b9bd28a7110f6ef0c0aa347b072c25c28e1afe",
+            "cluster": "stack2-easy-104537"
+        }
+    ]
+}

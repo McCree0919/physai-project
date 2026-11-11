@@ -328,16 +328,17 @@ Agent仅通过公开身体命令/快照操作；SDK自动MaxStep设0，由环境
 补充规定（用户确认）：
 1. **成功率只在通过几何可行性检查（`BoxStackFeasibility.Check`）的结构上计算。**
    - 【数据】v2评估集180个结构全部通过，所以分母就是全部结构（[LAYER3_FEASIBILITY_AUDIT.md](LAYER3_FEASIBILITY_AUDIT.md)）。
-   - 【数据】注意：审计发现几何检查是保守的。脚本控制器能完成16个被判为不可行的v1 Hard结构。若以后换评估集，应同时报告被排除结构的数量，以及脚本控制器在其上的完成数。
+   - 【数据】注意：审计发现几何检查是保守的。脚本控制器能完成16个被判为不可行的v1 Hard结构。若以后换评估集，应同时报告被排除结构的数量，以及脚本控制器在其上的完成数。第4层玩家搭建的结构同样适用（[LAYER4_DESIGN_NOTES.md](LAYER4_DESIGN_NOTES.md) §1）。
+   - v2 Easy评估集不含单箱结构，所以Easy成功率只衡量两层结构。
 2. **至少2个seed分别达标**，不只看均值。每个seed单独计算上表的每一项。
 3. **最终结果需在Player build中复核**。目前的评估在Editor播放模式中进行，因为这个worktree无法构建Player。修复前，Editor与Player在200回合基准上一致（84.5% vs 87.5%）。
 4. ResetBody遗留关节已修复（§16前提；修复前训练的checkpoint要在修复后的环境中重评）。
 5. 阈值在看到任何v2评估结果之前确定。如需调整，也必须在评估之前，并记录理由。
 - 参考水平（不是门槛）：脚本控制器在v2评估集上完成Easy 68%、Standard 82%、Hard 67%。
 
-## 17. 课程C0+C1可行性检查的计划（待用户确认后实施）
+## 17. 课程C0+C1可行性检查的计划（2026-11-11用户确认）
 
-用户已批准课程C0–C3，本轮先做C0+C1，2个seed，约800万步。实施前需要确认以下设计。
+用户已批准课程C0–C3，本轮先做C0+C1，2个seed，约800万步。以下设计已确认（§17.4记录确认内容、实施和修正）。
 
 ### 17.1 示范起点在新结构上如何处理
 
@@ -359,10 +360,11 @@ Agent仅通过公开身体命令/快照操作；SDK自动MaxStep设0，由环境
 | 阶段 | 结构 | 来源 |
 |---|---|---|
 | C0 | 训练两级台阶（25%）+ 单箱12个（Step/Tall/Wide各缩放和朝向） | `BoxStackGenerator.Smoke(true)` + `box-stacks-v2/train`中的单箱 |
-| C1 | 训练两级台阶（25%）+ 两层阶梯281个（139簇） | `box-stacks-v2/train`的Easy两层结构 |
+| C1 | 训练两级台阶（25%）+ 两层阶梯281个中的254个（68簇；另27个、17簇留作验证） | `box-stacks-v2/train`的Easy两层结构 |
 
 - **与已批准的C1相比的调整**：原计划"踏面从0.6m逐步减到0.1m，层高0.3–0.6m"。由于§2的硬约束（站立踏面≥0.451m，网格上为0.50m）和预设尺寸，C1的踏面范围改为0.50–0.80m，层高约0.5m（Step/Wide），第一层也可以是约1m的Tall。窄于0.50m的踏面只在Hard的可跳过窄沿中出现。
-- **验证结构**：从C1训练池中按簇留出20%（约28簇）作为课程验证集，只用于晋级判定和选checkpoint，不参与训练，也不是§16的评估集。
+- **验证结构**：从C1训练池中按簇留出20%作为课程验证集，只用于晋级判定和选checkpoint，不参与训练，也不是§16的评估集。
+  - 【修正】原写"139簇、约28簇"：139是Python聚类（不含镜像）对整个Easy训练池（含单箱）的簇数。按冻结时的规则（含镜像）只对两层结构聚类，实际为85簇，留出17簇（27个结构），见§17.4。
 
 ### 17.3 训练设置
 
@@ -384,3 +386,39 @@ Agent仅通过公开身体命令/快照操作；SDK自动MaxStep设0，由环境
   - (b) 把`Burst.Backend.dll`加入应用程序控制的允许列表；
   - (c) 在Editor中训练：单实例，吞吐低，需要先测吞吐。
   - 【推断】推荐(a)：在主工作目录检出与本worktree相同的提交，只做构建，再把`Builds/`复制到worktree，然后切回main。这一步会切换主工作目录的分支，需要你明确同意。
+
+### 17.4 确认内容与实施（2026-11-11）
+
+**用户确认**：
+- 示范起点只用于训练两级台阶（方案A）；固定课程C0 3M步、C1 5M步；从头训练；每回合开始时切换结构。
+- **早期止损点**：C1阶段到2M步时（即总步数约5M），如果C1新结构上从地面起点的一级登层率仍为0，就停止该seed的训练并汇报。下一步实验是补录示范状态库（方案B）。
+  - 判定的实现（`scripts/run_curriculum_c0c1.py`）：从C1开始（`Climb/Curriculum/Stage`首次>0的summary步）到其后2M步，统计运行时回合CSV中`pool=c1`且地面出生的回合。若Level 1的回合数为0，并且TensorBoard中`Climb/Pool/c1/GroundLevel1Rate`在这段时间里没有任何>0的值，则停止该seed，写`early_stop.json`。另一个seed照常训练。
+- Player build用方案(a)，即在主工作目录临时检出构建（条件和切换时间段见§17.5）。
+- 报告中注明：**v2 Easy评估集不含单箱结构**（单箱只有约4个独立簇，全部留给训练和C0，见[LAYER3_GENERATOR_V2.md](LAYER3_GENERATOR_V2.md) §4.1）。所以Easy评估集的成功率衡量的是两层结构，不包括单箱。
+
+**实施**：
+- `StructureSwap.Apply`（Structures）：替换场地的全部静态几何和目标，换成已冻结、已落定的文档，运行时不再落定。名称、层（8/9）和`ClimberSurface`与`StaticStructureLoader` + `ClimbTrainingBuilder.PrepareEnvironment`的结果相同；所有箱体使用场景中原有的同一个物理材质（`StaticStructurePhysics`，摩擦0.15）。
+- `ClimbCurriculum`（Learning）：从`--climb-curriculum=<pools.json>`加载各阶段的池，逐个校验sha256，并检查验证簇不在训练池中。
+  - 每回合：以`twoStepShare=0.25`的概率抽训练两级台阶，否则从当前阶段的池中均匀抽取。
+  - 阶段由环境参数`curriculum_stage`决定，默认−1表示不换结构，所以此前的实验可复现。
+  - 只有抽到两级台阶时才走示范出生，其他结构一律地面出生。
+- 统计：
+  - `Climb/Curriculum/Stage`、`Climb/Curriculum/TwoStepShare`；
+  - 每个池（two-step/c0/c1）的`Success`、`Level1Rate`、`GroundSuccess`、`GroundLevel1Rate`；
+  - 回合CSV增加`structure`、`pool`两列。
+- `structures/curriculum-v1/`（`Tools/Climb/Freeze Curriculum C0-C1`）：
+  - `two-step.json`：训练两级台阶，按场景构建器相同的方式落定。
+  - `pools.json`：C0为12个单箱（6簇）；C1训练为254个两层结构（68簇）；C1验证为27个（17簇，簇按seed 17打乱后取20%）。
+- `config/climb_curriculum_c0c1.yaml`：与`climb_height_shaping.yaml`的差别只有`max_steps: 8000000`和`curriculum_stage`课程（C0到progress 0.375，即3M步后进入C1）。
+- 构建：`ClimbTrainingBuilder.BuildCurriculum`直接构建已提交的`ClimbTraining`场景，不重新生成，输出到`Builds/ClimbCurriculum/`。
+
+**测试与可解性（【数据】）**：
+- `ClimbCurriculumTests`（4项）：
+  - 池只来自v2训练池，验证簇不参与训练；
+  - 换到别的结构再换回两级台阶后，`GeometryHash`与状态库记录的几何哈希一致；
+  - 400回合中，场地上恰好是抽到的结构，没有残留箱体，材质和层正确，两级台阶约占25%，示范出生只出现在两级台阶上；
+  - `curriculum_stage`<0时不换结构。
+- `FeasibilityAudit.GeneralizedControllerClimbsTheSwappedFrozenTwoStep`：换入的两级台阶上，脚本控制器4/4完成。
+- 脚本控制器在换入的结构上（`AuditCurriculumPools`，只作参考，不筛选）：两级台阶1/1，C0 9/12，C1训练170/254，C1验证18/27。几何检查全部通过。数据见[audit.csv](data/curriculum-audit/audit.csv)。
+- 测试中发现：在测试里新建的场地，身体配置哈希与场景中反序列化的身体不同，所以录好的状态库会因`BodyConfiguration`被拒绝。【推断】这是测试夹具的问题，不影响运行时，因为运行时用的是场景中的身体；依据：高度奖励训练中，场景身体上的示范实际恢复比例等于抽到比例（demoDrawn 0.498 = demoActual 0.498，隔离0%）。真实状态库在换结构后能否恢复，由训练前的Player冒烟运行检查（`Climb/Spawn/ActualDemoFraction`和`Rejected`）。
+

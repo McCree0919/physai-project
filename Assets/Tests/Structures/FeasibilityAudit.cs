@@ -20,7 +20,8 @@ public sealed class FeasibilityAudit
     [SetUp] public void Setup(){scale=Time.timeScale;simulation=Physics.simulationMode;}
     [TearDown] public void Cleanup(){foreach(var r in roots)if(r!=null)UnityEngine.Object.DestroyImmediate(r);roots.Clear();Time.timeScale=scale;Physics.simulationMode=simulation;}
 
-    IEnumerator Climb(List<(string set,string id,string difficulty,StructureDocument doc)> items,List<string> rows)
+    // swap: geometry goes in through StructureSwap (frozen settled document, as curriculum training does) instead of the loader's settlement.
+    IEnumerator Climb(List<(string set,string id,string difficulty,StructureDocument doc)> items,List<string> rows,bool swap=false)
     {
         Time.timeScale=25;Physics.simulationMode=SimulationMode.FixedUpdate;
         const int Batch=30;
@@ -29,7 +30,8 @@ public sealed class FeasibilityAudit
             var batch=items.Skip(start).Take(Batch).ToList();var runs=new List<(int index,BoxStackScriptController controller,FeasibilityReport report)>();
             for(int i=0;i<batch.Count;i++)
             {
-                var body=StaticStructureLoader.Load(batch[i].doc,new Vector3(600+(i%6)*14,0,600+(i/6)*14),Quaternion.identity);body.name="Audit_"+batch[i].id;roots.Add(body.gameObject);
+                var body=StaticStructureLoader.Load(swap?BoxStackGenerator.Smoke(false):batch[i].doc,new Vector3(600+(i%6)*14,0,600+(i/6)*14),Quaternion.identity);body.name="Audit_"+batch[i].id;roots.Add(body.gameObject);
+                if(swap)StructureSwap.Apply(body,batch[i].doc,SwapMaterial);
                 var controller=body.gameObject.AddComponent<BoxStackScriptController>();controller.Configure(body,BoxStackScriptController.Route(batch[i].doc));
                 runs.Add((i,controller,BoxStackFeasibility.Check(batch[i].doc)));
             }
@@ -53,6 +55,35 @@ public sealed class FeasibilityAudit
         yield return Climb(items,rows);
         Assert.AreEqual(8,rows.Count(r=>r.Split(',')[7]=="1"),string.Join("\n",rows));
     }
+
+    static PhysicsMaterial swapMaterial;
+    static PhysicsMaterial SwapMaterial => swapMaterial??(swapMaterial=new PhysicsMaterial("StaticStructurePhysics") {staticFriction=.15f,dynamicFriction=.15f,frictionCombine=PhysicsMaterialCombine.Average,bounceCombine=PhysicsMaterialCombine.Average});
+
+    [UnityTest] public IEnumerator GeneralizedControllerClimbsTheSwappedFrozenTwoStep()
+    {
+        var doc=StructureJson.Parse(File.ReadAllText("structures/curriculum-v1/two-step.json"));var rows=new List<string>();
+        yield return Climb(Enumerable.Range(0,4).Select(i=>("swap","two-step-"+i,"Smoke",doc)).ToList(),rows,true);
+        Assert.AreEqual(4,rows.Count(r=>r.Split(',')[7]=="1"),string.Join("\n",rows));
+    }
+
+    // Solvability check before curriculum training (AGENTS.md): the scripted controller on every C0/C1 structure, swapped in as training
+    // does. Reference only; nothing is filtered by the outcome.
+    [UnityTest,Explicit("Audit; run by name")]
+    public IEnumerator AuditCurriculumPools()
+    {
+        if(Environment.GetEnvironmentVariable("CLIMB_RUN_DIAGNOSTICS")!="1")Assert.Ignore("Set CLIMB_RUN_DIAGNOSTICS=1 to run this audit");
+        var file=JsonUtility.FromJson<PoolsView>(File.ReadAllText("structures/curriculum-v1/pools.json"));
+        var items=new List<(string set,string id,string difficulty,StructureDocument doc)> {("two-step",file.twoStep.id,"Control",StructureJson.Parse(File.ReadAllText(file.twoStep.path)))};
+        foreach(var stage in file.stages)foreach(var e in stage.structures)items.Add((stage.pool,e.id,"Easy",StructureJson.Parse(File.ReadAllText(e.path))));
+        foreach(var e in file.validation)items.Add(("c1-validation",e.id,"Easy",StructureJson.Parse(File.ReadAllText(e.path))));
+        var rows=new List<string>();yield return Climb(items,rows,true);
+        string folder=Path.GetFullPath(Path.Combine(Application.dataPath,"..","results","curriculum-audit"));Directory.CreateDirectory(folder);
+        File.WriteAllText(Path.Combine(folder,"audit.csv"),"set,id,difficulty,feasible,reason,route,requiredStanding,controllerSuccess,controllerFailed,tierReached,tierCount,stage,seconds\n"+string.Join("\n",rows)+"\n");
+        Debug.Log($"CURRICULUM_AUDIT_COMPLETE rows={rows.Count} folder={folder}");
+        Assert.AreEqual(items.Count,rows.Count);
+    }
+    [Serializable] sealed class PoolsView {public EntryView twoStep;public StageView[] stages;public EntryView[] validation;}
+    [Serializable] sealed class StageView {public string pool;public EntryView[] structures;}
 
     [UnityTest,Explicit("Audit; run by name")]
     public IEnumerator AuditFrozenEvaluationSets()

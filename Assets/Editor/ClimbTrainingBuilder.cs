@@ -51,4 +51,13 @@ public static class ClimbTrainingBuilder
         if(report.summary.result!=BuildResult.Succeeded||report.summary.totalErrors!=0)throw new BuildFailedException("Climb build failed");
         Debug.Log("CLIMB_BUILD_OK");
     }
+    // Curriculum player (LAYER3_DESIGN §17): the committed ClimbTraining scene as is (no regeneration, so a build leaves the checkout
+    // unchanged); structures are swapped at runtime from --climb-curriculum=<pools.json>.
+    public static void BuildCurriculum()
+    {
+        Directory.CreateDirectory("Builds/ClimbCurriculum");
+        var report=BuildPipeline.BuildPlayer(new BuildPlayerOptions {scenes=new[] {"Assets/Scenes/ClimbTraining.unity"},target=BuildTarget.StandaloneWindows64,locationPathName="Builds/ClimbCurriculum/Climb.exe"});
+        if(report.summary.result!=BuildResult.Succeeded||report.summary.totalErrors!=0)throw new BuildFailedException("Climb curriculum build failed");
+        Debug.Log("CLIMB_CURRICULUM_BUILD_OK");
+    }
 }

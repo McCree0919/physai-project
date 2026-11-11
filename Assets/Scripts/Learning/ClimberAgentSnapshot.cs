@@ -160,6 +160,13 @@ namespace PhysicalAI.Learning
             return "";
         }
 
+        // Curriculum episode on a structure without a state library: ground start, counted as a non-demonstration start.
+        void GroundSpawn()
+        {
+            SpawnSource="ground";spawnStage=null;
+            if((SnapshotLibrary??ClimbSnapshotLibrary.FromCommandLine())!=null)Academy.Instance.StatsRecorder.Add("Climb/Spawn/ActualDemoFraction",0);
+        }
+
         void SnapshotSpawn()
         {
             SpawnSource="ground";spawnStage=null;

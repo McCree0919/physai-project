@@ -29,7 +29,7 @@ public static class ClimbGeneratorV2Sets
         public Entry[] structures;public Skip[] skipped;
     }
 
-    sealed class Canon {public int[][] Boxes;public string Graph;}
+    internal sealed class Canon {public int[][] Boxes;public string Graph;}
     static int[][] Parse(string key) => key.Split(';').Select(b=>b.Split(',').Select(int.Parse).ToArray()).ToArray();
     static Canon Canonical(int[][] boxes)
     {
@@ -39,7 +39,7 @@ public static class ClimbGeneratorV2Sets
             if(i!=j&&Math.Abs(c[i][4]-c[j][1])<=1&&c[i][0]<c[j][3]&&c[j][0]<c[i][3]&&c[i][2]<c[j][5]&&c[j][2]<c[i][5])edges.Add(i+">"+j);
         return new Canon {Boxes=c,Graph=c.Length+"|"+string.Join(",",edges)+"|"+string.Join("",c.Select(b=>b[1]<=1?"g":"-"))};
     }
-    static Canon[] Variants(string key)
+    internal static Canon[] Variants(string key)
     {
         var boxes=Parse(key);var mirrored=boxes.Select(b=>new[] {-b[3],b[1],b[2],-b[0],b[4],b[5]}).ToArray();
         return new[] {Canonical(boxes),Canonical(mirrored)};
@@ -56,8 +56,8 @@ public static class ClimbGeneratorV2Sets
         }
         return best;
     }
-    static bool Linked(Canon[] a,Canon[] b){int d=Distance(a,b);return d>=0&&d<=1;}
-    static string Sha256(string text){using(var h=SHA256.Create())return string.Concat(h.ComputeHash(Encoding.UTF8.GetBytes(text)).Select(b=>b.ToString("x2")));}
+    internal static bool Linked(Canon[] a,Canon[] b){int d=Distance(a,b);return d>=0&&d<=1;}
+    internal static string Sha256(string text){using(var h=SHA256.Create())return string.Concat(h.ComputeHash(Encoding.UTF8.GetBytes(text)).Select(b=>b.ToString("x2")));}
 
     [MenuItem("Tools/Climb/Freeze Generator V2 Sets")]
     public static void Freeze()

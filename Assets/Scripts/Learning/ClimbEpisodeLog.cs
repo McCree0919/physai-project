@@ -7,7 +7,7 @@ namespace PhysicalAI.Learning
     public static class ClimbEpisodeLog
     {
         static StreamWriter writer;
-        public static void Write(string arena,bool success,bool first,bool second,int decisions,float seconds,float reward,string reason,string spawn="ground")
+        public static void Write(string arena,bool success,bool first,bool second,int decisions,float seconds,float reward,string reason,string spawn="ground",string structure="",string pool="")
         {
             if(writer==null)
             {
@@ -17,11 +17,11 @@ namespace PhysicalAI.Learning
                 if(folder==null){if(Application.isEditor)return;folder="results/climb-runtime";}
                 Directory.CreateDirectory(folder);
                 writer=new StreamWriter(Path.Combine(folder,"episodes-"+System.Diagnostics.Process.GetCurrentProcess().Id+".csv")){AutoFlush=true};
-                writer.WriteLine("unix_ms,arena,success,level1,level2,decisions,sim_seconds,reward,reason,spawn");
+                writer.WriteLine("unix_ms,arena,success,level1,level2,decisions,sim_seconds,reward,reason,spawn,structure,pool");
                 Application.quitting+=()=>{writer?.Dispose();writer=null;};
             }
             var ci=System.Globalization.CultureInfo.InvariantCulture;
-            writer.WriteLine(string.Join(",",DateTimeOffset.UtcNow.ToUnixTimeMilliseconds().ToString(),arena,success?"1":"0",first?"1":"0",second?"1":"0",decisions.ToString(),seconds.ToString("F4",ci),reward.ToString("F6",ci),reason,spawn));
+            writer.WriteLine(string.Join(",",DateTimeOffset.UtcNow.ToUnixTimeMilliseconds().ToString(),arena,success?"1":"0",first?"1":"0",second?"1":"0",decisions.ToString(),seconds.ToString("F4",ci),reward.ToString("F6",ci),reason,spawn,structure,pool));
         }
     }
 }
