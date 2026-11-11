@@ -300,3 +300,15 @@ Agent仅通过公开身体命令/快照操作；SDK自动MaxStep设0，由环境
   - `HeightShapingStartsFromRestoredSnapshotHeight`；
   - `HeightShapingCapMustStayBelowProgressCap`。
 - 关闭时可复现：用新构建、`target_mode=0`重跑试跑checkpoint 50回合，与`docs/data/climb-grip-diagnostics/checkpoint`逐回合比较：50/50回合、64/64运行时行一致。
+
+## 15. 路线决定：端到端恢复为主线（2026-11-10，用户决定）
+
+- **决定**：端到端PPO恢复为第3层主线；分层控制（[LAYER3_HIERARCHICAL_DESIGN.md](LAYER3_HIERARCHICAL_DESIGN.md)）保留为后备方案，暂不实施。
+- **理由**（【数据】，[LAYER3_HEIGHT_SHAPING.md](LAYER3_HEIGHT_SHAPING.md)）：
+  - 此前转向分层的依据是：端到端在示范初始化后，S1b→一级、S3→二级仍学不会，地面起点一级为0。
+  - 只加躯干高度新高奖励这一项后，事先约定的两项判定都达到：
+    - S1b起点的一级率在2.5M/5M时为61.5–100%，零动作基线为0；
+    - S3起点在两个seed上都出现二级，5M时为84.5%/100%。
+  - 地面起点的确定性成功率，5M时为87.5%（s2026）和100%（s2027）。
+- **仍未回答的问题**：上述结果只在训练用的固定两级台阶上取得。端到端能否泛化到其他结构，由零样本评估（[LAYER3_ZERO_SHOT.md](LAYER3_ZERO_SHOT.md)）和之后的生成器分布训练回答。
+- **何时启用后备方案**（【推断】，具体门槛待与第3层完成标准一起确认）：如果端到端在生成器分布上训练后，仍有某类结构长期学不会，再考虑分层设计中的技能分解。
