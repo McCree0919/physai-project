@@ -224,6 +224,9 @@ namespace PhysicalAI.Climber
         public void ResetBody(BodyReset reset)
         {
             for(int i=0;i<2;i++) { Release(i,0);cooldown[i]=0;armed[i]=true;wantsGrab[i]=false;peak[i]=0;effort[i]=appliedEffort[i]=0;forces[i]=Vector3.zero; }
+            // Release only schedules a deferred Destroy (breakForce 0); the joint would still take part in the next solve and pull the
+            // teleported hand back to its old grip point (LAYER3_RESETBODY_DIAGNOSTIC.md). Remove every grip joint now, as RestoreSnapshot does.
+            for(int i=0;i<2;i++) foreach(var stale in hands[i].GetComponents<FixedJoint>()) DestroyImmediate(stale);
             torso.position=transform.TransformPoint(reset.Torso);torso.rotation=transform.rotation*reset.Rotation;
             for(int i=0;i<2;i++) { hands[i].position=transform.TransformPoint(i==0?reset.LeftHand:reset.RightHand);hands[i].rotation=torso.rotation; }
             torso.linearVelocity=torso.angularVelocity=Vector3.zero;
