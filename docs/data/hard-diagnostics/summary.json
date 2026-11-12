@@ -1,768 +1,754 @@
 {
   "c0c1_s2026": {
-    "modelSha256": "e4171e6ef151d22b0b4ca127fc5739af0a601c1b270f5a0b753820f01f2eb442",
-    "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
-    "joinChecks": {
-      "ok": 1775
-    },
-    "groups": {
-      "0.5m": {
-        "all": {
-          "structures": 28,
-          "episodes": 560,
-          "requestRisingEdges": 68.275,
-          "gripSuccesses": 5.4536,
-          "rejectedHandTicks": 1316.6143,
-          "cooldownBlockedTicks": 14.1875,
-          "rearmBlockedTicks": 0.0,
-          "requestedHandTicks": 2025.5536,
-          "legalContactTicks": 535.0804,
-          "freeHandTicks": 5237.7875,
-          "maximumTorsoY": 1.2195,
-          "maximumGripTorsoY": 1.205,
-          "firstGripSeconds": 0.8742,
-          "grippedSeconds": 13.8574,
-          "physicsSamples": 2966.2696,
-          "episodesWithAnyGrip": 1.0,
-          "gripSuccessPerAttempt": 0.0799,
-          "legalContactShare": 0.1022,
-          "rejectionReasons": {
-            "NoContact": {
-              "ticks": 689492,
-              "share": 0.9352
-            },
-            "NotTop": {
-              "ticks": 47508,
-              "share": 0.0644
-            },
-            "TooFast": {
-              "ticks": 301,
-              "share": 0.0004
-            },
-            "TopOccluded": {
-              "ticks": 2,
-              "share": 0.0
-            },
-            "Occupied": {
-              "ticks": 1,
-              "share": 0.0
-            }
-          },
-          "reasons": {
-            "Timeout": 551,
-            "Success": 5,
-            "Fall": 4
-          }
-        },
-        "belowLevel1": {
-          "structures": 8,
-          "episodes": 111,
-          "requestRisingEdges": 35.322,
-          "gripSuccesses": 4.1622,
-          "rejectedHandTicks": 1064.7675,
-          "cooldownBlockedTicks": 9.8402,
-          "rearmBlockedTicks": 0.0,
-          "requestedHandTicks": 2548.828,
-          "legalContactTicks": 443.5593,
-          "freeHandTicks": 4490.8489,
-          "maximumTorsoY": 1.1081,
-          "maximumGripTorsoY": 1.1032,
-          "firstGripSeconds": 0.8685,
-          "grippedSeconds": 29.3922,
-          "physicsSamples": 2982.5346,
-          "episodesWithAnyGrip": 1.0,
-          "gripSuccessPerAttempt": 0.1079,
-          "legalContactShare": 0.0425,
-          "rejectionReasons": {
-            "NoContact": {
-              "ticks": 110761,
-              "share": 0.8216
-            },
-            "NotTop": {
-              "ticks": 24028,
-              "share": 0.1782
-            },
-            "TooFast": {
-              "ticks": 24,
-              "share": 0.0002
-            },
-            "Occupied": {
-              "ticks": 1,
-              "share": 0.0
-            }
-          },
-          "reasons": {
-            "Timeout": 110,
-            "Success": 1
-          }
-        },
-        "reachedLevel1": {
-          "structures": 27,
-          "episodes": 449,
-          "requestRisingEdges": 70.0231,
-          "gripSuccesses": 5.7059,
-          "rejectedHandTicks": 1348.2245,
-          "cooldownBlockedTicks": 14.2584,
-          "rearmBlockedTicks": 0.0,
-          "requestedHandTicks": 1995.6712,
-          "legalContactTicks": 588.2687,
-          "freeHandTicks": 5234.2069,
-          "maximumTorsoY": 1.264,
-          "maximumGripTorsoY": 1.248,
-          "firstGripSeconds": 0.8684,
-          "grippedSeconds": 12.651,
-          "physicsSamples": 2933.6976,
-          "episodesWithAnyGrip": 1.0,
-          "gripSuccessPerAttempt": 0.0762,
-          "legalContactShare": 0.114,
-          "rejectionReasons": {
-            "NoContact": {
-              "ticks": 578731,
-              "share": 0.9606
-            },
-            "NotTop": {
-              "ticks": 23480,
-              "share": 0.039
-            },
-            "TooFast": {
-              "ticks": 277,
-              "share": 0.0005
-            },
-            "TopOccluded": {
-              "ticks": 2,
-              "share": 0.0
-            }
-          },
-          "reasons": {
-            "Timeout": 441,
-            "Success": 4,
-            "Fall": 4
-          }
-        }
+    "v2-hard": {
+      "modelSha256": "e4171e6ef151d22b0b4ca127fc5739af0a601c1b270f5a0b753820f01f2eb442",
+      "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+      "joinChecks": {
+        "ok": 1775
       },
-      "~1.0m single": {
-        "all": {
-          "structures": 6,
-          "episodes": 120,
-          "requestRisingEdges": 31.2,
-          "gripSuccesses": 3.0083,
-          "rejectedHandTicks": 1915.3833,
-          "cooldownBlockedTicks": 11.4583,
-          "rearmBlockedTicks": 0.0,
-          "requestedHandTicks": 2898.9167,
-          "legalContactTicks": 255.6583,
-          "freeHandTicks": 5022.7583,
-          "maximumTorsoY": 0.9922,
-          "maximumGripTorsoY": 0.9917,
-          "firstGripSeconds": 0.1948,
-          "grippedSeconds": 19.3633,
-          "physicsSamples": 2997.4167,
-          "episodesWithAnyGrip": 1.0,
-          "gripSuccessPerAttempt": 0.0964,
-          "legalContactShare": 0.0509,
-          "rejectionReasons": {
-            "NoContact": {
-              "ticks": 226901,
-              "share": 0.9872
+      "groups": {
+        "0.5m": {
+          "all": {
+            "structures": 28,
+            "episodes": 560,
+            "requestRisingEdges": 68.275,
+            "gripSuccesses": 5.4536,
+            "rejectedHandTicks": 1316.6143,
+            "cooldownBlockedTicks": 14.1875,
+            "rearmBlockedTicks": 0.0,
+            "requestedHandTicks": 2025.5536,
+            "legalContactTicks": 535.0804,
+            "freeHandTicks": 5237.7875,
+            "maximumTorsoY": 1.2195,
+            "maximumGripTorsoY": 1.205,
+            "firstGripSeconds": 0.8742,
+            "grippedSeconds": 13.8574,
+            "physicsSamples": 2966.2696,
+            "episodesWithAnyGrip": 1.0,
+            "gripSuccessPerAttempt": 0.0799,
+            "legalContactShare": 0.1022,
+            "rejectionReasons": {
+              "NoContact": {
+                "ticks": 689492,
+                "share": 0.9352
+              },
+              "NotTop": {
+                "ticks": 47508,
+                "share": 0.0644
+              },
+              "TooFast": {
+                "ticks": 301,
+                "share": 0.0004
+              },
+              "TopOccluded": {
+                "ticks": 2,
+                "share": 0.0
+              },
+              "Occupied": {
+                "ticks": 1,
+                "share": 0.0
+              }
             },
-            "NotTop": {
-              "ticks": 2906,
-              "share": 0.0126
-            },
-            "TooFast": {
-              "ticks": 39,
-              "share": 0.0002
+            "reasons": {
+              "Timeout": 551,
+              "Success": 5,
+              "Fall": 4
             }
           },
-          "reasons": {
-            "Timeout": 120
+          "belowLevel1": {
+            "structures": 8,
+            "episodes": 111,
+            "requestRisingEdges": 35.322,
+            "gripSuccesses": 4.1622,
+            "rejectedHandTicks": 1064.7675,
+            "cooldownBlockedTicks": 9.8402,
+            "rearmBlockedTicks": 0.0,
+            "requestedHandTicks": 2548.828,
+            "legalContactTicks": 443.5593,
+            "freeHandTicks": 4490.8489,
+            "maximumTorsoY": 1.1081,
+            "maximumGripTorsoY": 1.1032,
+            "firstGripSeconds": 0.8685,
+            "grippedSeconds": 29.3922,
+            "physicsSamples": 2982.5346,
+            "episodesWithAnyGrip": 1.0,
+            "gripSuccessPerAttempt": 0.1079,
+            "legalContactShare": 0.0425,
+            "rejectionReasons": {
+              "NoContact": {
+                "ticks": 110761,
+                "share": 0.8216
+              },
+              "NotTop": {
+                "ticks": 24028,
+                "share": 0.1782
+              },
+              "TooFast": {
+                "ticks": 24,
+                "share": 0.0002
+              },
+              "Occupied": {
+                "ticks": 1,
+                "share": 0.0
+              }
+            },
+            "reasons": {
+              "Timeout": 110,
+              "Success": 1
+            }
+          },
+          "reachedLevel1": {
+            "structures": 27,
+            "episodes": 449,
+            "requestRisingEdges": 70.0231,
+            "gripSuccesses": 5.7059,
+            "rejectedHandTicks": 1348.2245,
+            "cooldownBlockedTicks": 14.2584,
+            "rearmBlockedTicks": 0.0,
+            "requestedHandTicks": 1995.6712,
+            "legalContactTicks": 588.2687,
+            "freeHandTicks": 5234.2069,
+            "maximumTorsoY": 1.264,
+            "maximumGripTorsoY": 1.248,
+            "firstGripSeconds": 0.8684,
+            "grippedSeconds": 12.651,
+            "physicsSamples": 2933.6976,
+            "episodesWithAnyGrip": 1.0,
+            "gripSuccessPerAttempt": 0.0762,
+            "legalContactShare": 0.114,
+            "rejectionReasons": {
+              "NoContact": {
+                "ticks": 578731,
+                "share": 0.9606
+              },
+              "NotTop": {
+                "ticks": 23480,
+                "share": 0.039
+              },
+              "TooFast": {
+                "ticks": 277,
+                "share": 0.0005
+              },
+              "TopOccluded": {
+                "ticks": 2,
+                "share": 0.0
+              }
+            },
+            "reasons": {
+              "Timeout": 441,
+              "Success": 4,
+              "Fall": 4
+            }
           }
         },
-        "belowLevel1": {
-          "structures": 6,
-          "episodes": 120,
-          "requestRisingEdges": 31.2,
-          "gripSuccesses": 3.0083,
-          "rejectedHandTicks": 1915.3833,
-          "cooldownBlockedTicks": 11.4583,
-          "rearmBlockedTicks": 0.0,
-          "requestedHandTicks": 2898.9167,
-          "legalContactTicks": 255.6583,
-          "freeHandTicks": 5022.7583,
-          "maximumTorsoY": 0.9922,
-          "maximumGripTorsoY": 0.9917,
-          "firstGripSeconds": 0.1948,
-          "grippedSeconds": 19.3633,
-          "physicsSamples": 2997.4167,
-          "episodesWithAnyGrip": 1.0,
-          "gripSuccessPerAttempt": 0.0964,
-          "legalContactShare": 0.0509,
-          "rejectionReasons": {
-            "NoContact": {
-              "ticks": 226901,
-              "share": 0.9872
+        "~1.0m single": {
+          "all": {
+            "structures": 6,
+            "episodes": 120,
+            "requestRisingEdges": 31.2,
+            "gripSuccesses": 3.0083,
+            "rejectedHandTicks": 1915.3833,
+            "cooldownBlockedTicks": 11.4583,
+            "rearmBlockedTicks": 0.0,
+            "requestedHandTicks": 2898.9167,
+            "legalContactTicks": 255.6583,
+            "freeHandTicks": 5022.7583,
+            "maximumTorsoY": 0.9922,
+            "maximumGripTorsoY": 0.9917,
+            "firstGripSeconds": 0.1948,
+            "grippedSeconds": 19.3633,
+            "physicsSamples": 2997.4167,
+            "episodesWithAnyGrip": 1.0,
+            "gripSuccessPerAttempt": 0.0964,
+            "legalContactShare": 0.0509,
+            "rejectionReasons": {
+              "NoContact": {
+                "ticks": 226901,
+                "share": 0.9872
+              },
+              "NotTop": {
+                "ticks": 2906,
+                "share": 0.0126
+              },
+              "TooFast": {
+                "ticks": 39,
+                "share": 0.0002
+              }
             },
-            "NotTop": {
-              "ticks": 2906,
-              "share": 0.0126
-            },
-            "TooFast": {
-              "ticks": 39,
-              "share": 0.0002
+            "reasons": {
+              "Timeout": 120
             }
           },
-          "reasons": {
-            "Timeout": 120
+          "belowLevel1": {
+            "structures": 6,
+            "episodes": 120,
+            "requestRisingEdges": 31.2,
+            "gripSuccesses": 3.0083,
+            "rejectedHandTicks": 1915.3833,
+            "cooldownBlockedTicks": 11.4583,
+            "rearmBlockedTicks": 0.0,
+            "requestedHandTicks": 2898.9167,
+            "legalContactTicks": 255.6583,
+            "freeHandTicks": 5022.7583,
+            "maximumTorsoY": 0.9922,
+            "maximumGripTorsoY": 0.9917,
+            "firstGripSeconds": 0.1948,
+            "grippedSeconds": 19.3633,
+            "physicsSamples": 2997.4167,
+            "episodesWithAnyGrip": 1.0,
+            "gripSuccessPerAttempt": 0.0964,
+            "legalContactShare": 0.0509,
+            "rejectionReasons": {
+              "NoContact": {
+                "ticks": 226901,
+                "share": 0.9872
+              },
+              "NotTop": {
+                "ticks": 2906,
+                "share": 0.0126
+              },
+              "TooFast": {
+                "ticks": 39,
+                "share": 0.0002
+              }
+            },
+            "reasons": {
+              "Timeout": 120
+            }
+          },
+          "reachedLevel1": {
+            "structures": 0,
+            "episodes": 0
           }
         },
-        "reachedLevel1": {
-          "structures": 0,
-          "episodes": 0,
-          "requestRisingEdges": null,
-          "gripSuccesses": null,
-          "rejectedHandTicks": null,
-          "cooldownBlockedTicks": null,
-          "rearmBlockedTicks": null,
-          "requestedHandTicks": null,
-          "legalContactTicks": null,
-          "freeHandTicks": null,
-          "maximumTorsoY": null,
-          "maximumGripTorsoY": null,
-          "firstGripSeconds": null,
-          "grippedSeconds": null,
-          "physicsSamples": null,
-          "episodesWithAnyGrip": null,
-          "gripSuccessPerAttempt": 0.0,
-          "legalContactShare": 0.0,
-          "rejectionReasons": {},
-          "reasons": {}
-        }
-      },
-      "~1.0m stacked": {
-        "all": {
-          "structures": 26,
-          "episodes": 520,
-          "requestRisingEdges": 52.7558,
-          "gripSuccesses": 3.1077,
-          "rejectedHandTicks": 1279.9923,
-          "cooldownBlockedTicks": 6.8077,
-          "rearmBlockedTicks": 0.0,
-          "requestedHandTicks": 2978.6423,
-          "legalContactTicks": 159.5923,
-          "freeHandTicks": 4216.4962,
-          "maximumTorsoY": 1.1072,
-          "maximumGripTorsoY": 1.0281,
-          "firstGripSeconds": 1.0819,
-          "grippedSeconds": 33.1156,
-          "physicsSamples": 2954.1692,
-          "episodesWithAnyGrip": 0.9481,
-          "gripSuccessPerAttempt": 0.0589,
-          "legalContactShare": 0.0378,
-          "rejectionReasons": {
-            "NoContact": {
-              "ticks": 644975,
-              "share": 0.969
+        "~1.0m stacked": {
+          "all": {
+            "structures": 26,
+            "episodes": 520,
+            "requestRisingEdges": 52.7558,
+            "gripSuccesses": 3.1077,
+            "rejectedHandTicks": 1279.9923,
+            "cooldownBlockedTicks": 6.8077,
+            "rearmBlockedTicks": 0.0,
+            "requestedHandTicks": 2978.6423,
+            "legalContactTicks": 159.5923,
+            "freeHandTicks": 4216.4962,
+            "maximumTorsoY": 1.1072,
+            "maximumGripTorsoY": 1.0281,
+            "firstGripSeconds": 1.0819,
+            "grippedSeconds": 33.1156,
+            "physicsSamples": 2954.1692,
+            "episodesWithAnyGrip": 0.9481,
+            "gripSuccessPerAttempt": 0.0589,
+            "legalContactShare": 0.0378,
+            "rejectionReasons": {
+              "NoContact": {
+                "ticks": 644975,
+                "share": 0.969
+              },
+              "NotTop": {
+                "ticks": 20414,
+                "share": 0.0307
+              },
+              "TooFast": {
+                "ticks": 127,
+                "share": 0.0002
+              },
+              "TopOccluded": {
+                "ticks": 80,
+                "share": 0.0001
+              }
             },
-            "NotTop": {
-              "ticks": 20414,
-              "share": 0.0307
-            },
-            "TooFast": {
-              "ticks": 127,
-              "share": 0.0002
-            },
-            "TopOccluded": {
-              "ticks": 80,
-              "share": 0.0001
+            "reasons": {
+              "Timeout": 508,
+              "Success": 12
             }
           },
-          "reasons": {
-            "Timeout": 508,
-            "Success": 12
-          }
-        },
-        "belowLevel1": {
-          "structures": 25,
-          "episodes": 455,
-          "requestRisingEdges": 51.1185,
-          "gripSuccesses": 3.6888,
-          "rejectedHandTicks": 1333.4736,
-          "cooldownBlockedTicks": 8.8093,
-          "rearmBlockedTicks": 0.0,
-          "requestedHandTicks": 3090.4505,
-          "legalContactTicks": 155.0935,
-          "freeHandTicks": 4246.7139,
-          "maximumTorsoY": 1.0625,
-          "maximumGripTorsoY": 0.9833,
-          "firstGripSeconds": 1.0828,
-          "grippedSeconds": 34.222,
-          "physicsSamples": 2997.4407,
-          "episodesWithAnyGrip": 0.9407,
-          "gripSuccessPerAttempt": 0.0492,
-          "legalContactShare": 0.0299,
-          "rejectionReasons": {
-            "NoContact": {
-              "ticks": 559570,
-              "share": 0.9653
+          "belowLevel1": {
+            "structures": 25,
+            "episodes": 455,
+            "requestRisingEdges": 51.1185,
+            "gripSuccesses": 3.6888,
+            "rejectedHandTicks": 1333.4736,
+            "cooldownBlockedTicks": 8.8093,
+            "rearmBlockedTicks": 0.0,
+            "requestedHandTicks": 3090.4505,
+            "legalContactTicks": 155.0935,
+            "freeHandTicks": 4246.7139,
+            "maximumTorsoY": 1.0625,
+            "maximumGripTorsoY": 0.9833,
+            "firstGripSeconds": 1.0828,
+            "grippedSeconds": 34.222,
+            "physicsSamples": 2997.4407,
+            "episodesWithAnyGrip": 0.9407,
+            "gripSuccessPerAttempt": 0.0492,
+            "legalContactShare": 0.0299,
+            "rejectionReasons": {
+              "NoContact": {
+                "ticks": 559570,
+                "share": 0.9653
+              },
+              "NotTop": {
+                "ticks": 19939,
+                "share": 0.0344
+              },
+              "TooFast": {
+                "ticks": 91,
+                "share": 0.0002
+              },
+              "TopOccluded": {
+                "ticks": 80,
+                "share": 0.0001
+              }
             },
-            "NotTop": {
-              "ticks": 19939,
-              "share": 0.0344
-            },
-            "TooFast": {
-              "ticks": 91,
-              "share": 0.0002
-            },
-            "TopOccluded": {
-              "ticks": 80,
-              "share": 0.0001
+            "reasons": {
+              "Timeout": 455
             }
           },
-          "reasons": {
-            "Timeout": 455
-          }
-        },
-        "reachedLevel1": {
-          "structures": 8,
-          "episodes": 65,
-          "requestRisingEdges": 69.1507,
-          "gripSuccesses": 6.9403,
-          "rejectedHandTicks": 1206.6771,
-          "cooldownBlockedTicks": 20.0521,
-          "rearmBlockedTicks": 0.0,
-          "requestedHandTicks": 2491.5625,
-          "legalContactTicks": 518.4639,
-          "freeHandTicks": 4429.3125,
-          "maximumTorsoY": 1.6008,
-          "maximumGripTorsoY": 1.5863,
-          "firstGripSeconds": 1.8395,
-          "grippedSeconds": 25.1548,
-          "physicsSamples": 2847.0729,
-          "episodesWithAnyGrip": 1.0,
-          "gripSuccessPerAttempt": 0.1012,
-          "legalContactShare": 0.0918,
-          "rejectionReasons": {
-            "NoContact": {
-              "ticks": 85405,
-              "share": 0.9941
+          "reachedLevel1": {
+            "structures": 8,
+            "episodes": 65,
+            "requestRisingEdges": 69.1507,
+            "gripSuccesses": 6.9403,
+            "rejectedHandTicks": 1206.6771,
+            "cooldownBlockedTicks": 20.0521,
+            "rearmBlockedTicks": 0.0,
+            "requestedHandTicks": 2491.5625,
+            "legalContactTicks": 518.4639,
+            "freeHandTicks": 4429.3125,
+            "maximumTorsoY": 1.6008,
+            "maximumGripTorsoY": 1.5863,
+            "firstGripSeconds": 1.8395,
+            "grippedSeconds": 25.1548,
+            "physicsSamples": 2847.0729,
+            "episodesWithAnyGrip": 1.0,
+            "gripSuccessPerAttempt": 0.1012,
+            "legalContactShare": 0.0918,
+            "rejectionReasons": {
+              "NoContact": {
+                "ticks": 85405,
+                "share": 0.9941
+              },
+              "NotTop": {
+                "ticks": 475,
+                "share": 0.0055
+              },
+              "TooFast": {
+                "ticks": 36,
+                "share": 0.0004
+              }
             },
-            "NotTop": {
-              "ticks": 475,
-              "share": 0.0055
-            },
-            "TooFast": {
-              "ticks": 36,
-              "share": 0.0004
+            "reasons": {
+              "Timeout": 53,
+              "Success": 12
             }
-          },
-          "reasons": {
-            "Timeout": 53,
-            "Success": 12
           }
         }
       }
     }
   },
   "c0c1_s2027": {
-    "modelSha256": "a96f1946e354ffd7f55907fc59de93615fab0f0d83c7b9cadf8b4030fff8d8c0",
-    "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
-    "joinChecks": {
-      "ok": 1804
-    },
-    "groups": {
-      "0.5m": {
-        "all": {
-          "structures": 28,
-          "episodes": 560,
-          "requestRisingEdges": 56.9179,
-          "gripSuccesses": 20.2179,
-          "rejectedHandTicks": 1338.3071,
-          "cooldownBlockedTicks": 70.6429,
-          "rearmBlockedTicks": 0.0,
-          "requestedHandTicks": 2810.5286,
-          "legalContactTicks": 801.9571,
-          "freeHandTicks": 3606.25,
-          "maximumTorsoY": 1.5663,
-          "maximumGripTorsoY": 1.5641,
-          "firstGripSeconds": 0.989,
-          "grippedSeconds": 25.4717,
-          "physicsSamples": 2503.9143,
-          "episodesWithAnyGrip": 1.0,
-          "gripSuccessPerAttempt": 0.3552,
-          "legalContactShare": 0.2224,
-          "rejectionReasons": {
-            "NoContact": {
-              "ticks": 703251,
-              "share": 0.9384
-            },
-            "NotTop": {
-              "ticks": 43480,
-              "share": 0.058
-            },
-            "TooFast": {
-              "ticks": 1258,
-              "share": 0.0017
-            },
-            "TopOccluded": {
-              "ticks": 994,
-              "share": 0.0013
-            },
-            "Occupied": {
-              "ticks": 469,
-              "share": 0.0006
-            }
-          },
-          "reasons": {
-            "Timeout": 430,
-            "Success": 125,
-            "Fall": 5
-          }
-        },
-        "belowLevel1": {
-          "structures": 17,
-          "episodes": 146,
-          "requestRisingEdges": 47.4312,
-          "gripSuccesses": 16.1375,
-          "rejectedHandTicks": 1277.9443,
-          "cooldownBlockedTicks": 54.5153,
-          "rearmBlockedTicks": 0.0,
-          "requestedHandTicks": 2851.5007,
-          "legalContactTicks": 669.6114,
-          "freeHandTicks": 3676.1609,
-          "maximumTorsoY": 1.4988,
-          "maximumGripTorsoY": 1.4957,
-          "firstGripSeconds": 0.9914,
-          "grippedSeconds": 28.2829,
-          "physicsSamples": 2597.601,
-          "episodesWithAnyGrip": 1.0,
-          "gripSuccessPerAttempt": 0.2225,
-          "legalContactShare": 0.1014,
-          "rejectionReasons": {
-            "NoContact": {
-              "ticks": 191175,
-              "share": 0.926
-            },
-            "NotTop": {
-              "ticks": 14499,
-              "share": 0.0702
-            },
-            "TopOccluded": {
-              "ticks": 433,
-              "share": 0.0021
-            },
-            "TooFast": {
-              "ticks": 313,
-              "share": 0.0015
-            },
-            "Occupied": {
-              "ticks": 25,
-              "share": 0.0001
-            }
-          },
-          "reasons": {
-            "Timeout": 117,
-            "Success": 29
-          }
-        },
-        "reachedLevel1": {
-          "structures": 26,
-          "episodes": 414,
-          "requestRisingEdges": 57.5402,
-          "gripSuccesses": 22.5697,
-          "rejectedHandTicks": 1379.6582,
-          "cooldownBlockedTicks": 79.3881,
-          "rearmBlockedTicks": 0.0,
-          "requestedHandTicks": 2793.3291,
-          "legalContactTicks": 849.9941,
-          "freeHandTicks": 3494.2222,
-          "maximumTorsoY": 1.6188,
-          "maximumGripTorsoY": 1.6162,
-          "firstGripSeconds": 0.9906,
-          "grippedSeconds": 23.5975,
-          "physicsSamples": 2414.2525,
-          "episodesWithAnyGrip": 1.0,
-          "gripSuccessPerAttempt": 0.388,
-          "legalContactShare": 0.2642,
-          "rejectionReasons": {
-            "NoContact": {
-              "ticks": 512076,
-              "share": 0.943
-            },
-            "NotTop": {
-              "ticks": 28981,
-              "share": 0.0534
-            },
-            "TooFast": {
-              "ticks": 945,
-              "share": 0.0017
-            },
-            "TopOccluded": {
-              "ticks": 561,
-              "share": 0.001
-            },
-            "Occupied": {
-              "ticks": 444,
-              "share": 0.0008
-            }
-          },
-          "reasons": {
-            "Timeout": 313,
-            "Fall": 5,
-            "Success": 96
-          }
-        }
+    "v2-hard": {
+      "modelSha256": "a96f1946e354ffd7f55907fc59de93615fab0f0d83c7b9cadf8b4030fff8d8c0",
+      "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+      "joinChecks": {
+        "ok": 1804
       },
-      "~1.0m single": {
-        "all": {
-          "structures": 6,
-          "episodes": 120,
-          "requestRisingEdges": 23.3917,
-          "gripSuccesses": 5.7167,
-          "rejectedHandTicks": 1184.1833,
-          "cooldownBlockedTicks": 19.775,
-          "rearmBlockedTicks": 0.0,
-          "requestedHandTicks": 3132.0167,
-          "legalContactTicks": 184.4583,
-          "freeHandTicks": 3151.975,
-          "maximumTorsoY": 1.9616,
-          "maximumGripTorsoY": 1.9616,
-          "firstGripSeconds": 0.342,
-          "grippedSeconds": 30.3789,
-          "physicsSamples": 2540.0167,
-          "episodesWithAnyGrip": 1.0,
-          "gripSuccessPerAttempt": 0.2444,
-          "legalContactShare": 0.0585,
-          "rejectionReasons": {
-            "NoContact": {
-              "ticks": 96590,
-              "share": 0.6797
+      "groups": {
+        "0.5m": {
+          "all": {
+            "structures": 28,
+            "episodes": 560,
+            "requestRisingEdges": 56.9179,
+            "gripSuccesses": 20.2179,
+            "rejectedHandTicks": 1338.3071,
+            "cooldownBlockedTicks": 70.6429,
+            "rearmBlockedTicks": 0.0,
+            "requestedHandTicks": 2810.5286,
+            "legalContactTicks": 801.9571,
+            "freeHandTicks": 3606.25,
+            "maximumTorsoY": 1.5663,
+            "maximumGripTorsoY": 1.5641,
+            "firstGripSeconds": 0.989,
+            "grippedSeconds": 25.4717,
+            "physicsSamples": 2503.9143,
+            "episodesWithAnyGrip": 1.0,
+            "gripSuccessPerAttempt": 0.3552,
+            "legalContactShare": 0.2224,
+            "rejectionReasons": {
+              "NoContact": {
+                "ticks": 703251,
+                "share": 0.9384
+              },
+              "NotTop": {
+                "ticks": 43480,
+                "share": 0.058
+              },
+              "TooFast": {
+                "ticks": 1258,
+                "share": 0.0017
+              },
+              "TopOccluded": {
+                "ticks": 994,
+                "share": 0.0013
+              },
+              "Occupied": {
+                "ticks": 469,
+                "share": 0.0006
+              }
             },
-            "NotTop": {
-              "ticks": 45257,
-              "share": 0.3185
-            },
-            "TooFast": {
-              "ticks": 255,
-              "share": 0.0018
+            "reasons": {
+              "Timeout": 430,
+              "Success": 125,
+              "Fall": 5
             }
           },
-          "reasons": {
-            "Success": 21,
-            "Timeout": 99
+          "belowLevel1": {
+            "structures": 17,
+            "episodes": 146,
+            "requestRisingEdges": 47.4312,
+            "gripSuccesses": 16.1375,
+            "rejectedHandTicks": 1277.9443,
+            "cooldownBlockedTicks": 54.5153,
+            "rearmBlockedTicks": 0.0,
+            "requestedHandTicks": 2851.5007,
+            "legalContactTicks": 669.6114,
+            "freeHandTicks": 3676.1609,
+            "maximumTorsoY": 1.4988,
+            "maximumGripTorsoY": 1.4957,
+            "firstGripSeconds": 0.9914,
+            "grippedSeconds": 28.2829,
+            "physicsSamples": 2597.601,
+            "episodesWithAnyGrip": 1.0,
+            "gripSuccessPerAttempt": 0.2225,
+            "legalContactShare": 0.1014,
+            "rejectionReasons": {
+              "NoContact": {
+                "ticks": 191175,
+                "share": 0.926
+              },
+              "NotTop": {
+                "ticks": 14499,
+                "share": 0.0702
+              },
+              "TopOccluded": {
+                "ticks": 433,
+                "share": 0.0021
+              },
+              "TooFast": {
+                "ticks": 313,
+                "share": 0.0015
+              },
+              "Occupied": {
+                "ticks": 25,
+                "share": 0.0001
+              }
+            },
+            "reasons": {
+              "Timeout": 117,
+              "Success": 29
+            }
+          },
+          "reachedLevel1": {
+            "structures": 26,
+            "episodes": 414,
+            "requestRisingEdges": 57.5402,
+            "gripSuccesses": 22.5697,
+            "rejectedHandTicks": 1379.6582,
+            "cooldownBlockedTicks": 79.3881,
+            "rearmBlockedTicks": 0.0,
+            "requestedHandTicks": 2793.3291,
+            "legalContactTicks": 849.9941,
+            "freeHandTicks": 3494.2222,
+            "maximumTorsoY": 1.6188,
+            "maximumGripTorsoY": 1.6162,
+            "firstGripSeconds": 0.9906,
+            "grippedSeconds": 23.5975,
+            "physicsSamples": 2414.2525,
+            "episodesWithAnyGrip": 1.0,
+            "gripSuccessPerAttempt": 0.388,
+            "legalContactShare": 0.2642,
+            "rejectionReasons": {
+              "NoContact": {
+                "ticks": 512076,
+                "share": 0.943
+              },
+              "NotTop": {
+                "ticks": 28981,
+                "share": 0.0534
+              },
+              "TooFast": {
+                "ticks": 945,
+                "share": 0.0017
+              },
+              "TopOccluded": {
+                "ticks": 561,
+                "share": 0.001
+              },
+              "Occupied": {
+                "ticks": 444,
+                "share": 0.0008
+              }
+            },
+            "reasons": {
+              "Timeout": 313,
+              "Fall": 5,
+              "Success": 96
+            }
           }
         },
-        "belowLevel1": {
-          "structures": 6,
-          "episodes": 103,
-          "requestRisingEdges": 23.7084,
-          "gripSuccesses": 5.5957,
-          "rejectedHandTicks": 1345.6055,
-          "cooldownBlockedTicks": 19.3001,
-          "rearmBlockedTicks": 0.0,
-          "requestedHandTicks": 3523.5103,
-          "legalContactTicks": 138.2166,
-          "freeHandTicks": 3330.8067,
-          "maximumTorsoY": 1.8722,
-          "maximumGripTorsoY": 1.8722,
-          "firstGripSeconds": 0.3546,
-          "grippedSeconds": 34.2604,
-          "physicsSamples": 2744.7057,
-          "episodesWithAnyGrip": 1.0,
-          "gripSuccessPerAttempt": 0.2317,
-          "legalContactShare": 0.0416,
-          "rejectionReasons": {
-            "NoContact": {
-              "ticks": 88108,
-              "share": 0.6609
+        "~1.0m single": {
+          "all": {
+            "structures": 6,
+            "episodes": 120,
+            "requestRisingEdges": 23.3917,
+            "gripSuccesses": 5.7167,
+            "rejectedHandTicks": 1184.1833,
+            "cooldownBlockedTicks": 19.775,
+            "rearmBlockedTicks": 0.0,
+            "requestedHandTicks": 3132.0167,
+            "legalContactTicks": 184.4583,
+            "freeHandTicks": 3151.975,
+            "maximumTorsoY": 1.9616,
+            "maximumGripTorsoY": 1.9616,
+            "firstGripSeconds": 0.342,
+            "grippedSeconds": 30.3789,
+            "physicsSamples": 2540.0167,
+            "episodesWithAnyGrip": 1.0,
+            "gripSuccessPerAttempt": 0.2444,
+            "legalContactShare": 0.0585,
+            "rejectionReasons": {
+              "NoContact": {
+                "ticks": 96590,
+                "share": 0.6797
+              },
+              "NotTop": {
+                "ticks": 45257,
+                "share": 0.3185
+              },
+              "TooFast": {
+                "ticks": 255,
+                "share": 0.0018
+              }
             },
-            "NotTop": {
-              "ticks": 45026,
-              "share": 0.3377
-            },
-            "TooFast": {
-              "ticks": 191,
-              "share": 0.0014
+            "reasons": {
+              "Success": 21,
+              "Timeout": 99
             }
           },
-          "reasons": {
-            "Timeout": 95,
-            "Success": 8
+          "belowLevel1": {
+            "structures": 6,
+            "episodes": 103,
+            "requestRisingEdges": 23.7084,
+            "gripSuccesses": 5.5957,
+            "rejectedHandTicks": 1345.6055,
+            "cooldownBlockedTicks": 19.3001,
+            "rearmBlockedTicks": 0.0,
+            "requestedHandTicks": 3523.5103,
+            "legalContactTicks": 138.2166,
+            "freeHandTicks": 3330.8067,
+            "maximumTorsoY": 1.8722,
+            "maximumGripTorsoY": 1.8722,
+            "firstGripSeconds": 0.3546,
+            "grippedSeconds": 34.2604,
+            "physicsSamples": 2744.7057,
+            "episodesWithAnyGrip": 1.0,
+            "gripSuccessPerAttempt": 0.2317,
+            "legalContactShare": 0.0416,
+            "rejectionReasons": {
+              "NoContact": {
+                "ticks": 88108,
+                "share": 0.6609
+              },
+              "NotTop": {
+                "ticks": 45026,
+                "share": 0.3377
+              },
+              "TooFast": {
+                "ticks": 191,
+                "share": 0.0014
+              }
+            },
+            "reasons": {
+              "Timeout": 95,
+              "Success": 8
+            }
+          },
+          "reachedLevel1": {
+            "structures": 4,
+            "episodes": 17,
+            "requestRisingEdges": 22.2708,
+            "gripSuccesses": 6.4167,
+            "rejectedHandTicks": 548.7542,
+            "cooldownBlockedTicks": 23.4583,
+            "rearmBlockedTicks": 0.0,
+            "requestedHandTicks": 1052.5375,
+            "legalContactTicks": 439.6333,
+            "freeHandTicks": 1603.4167,
+            "maximumTorsoY": 2.4847,
+            "maximumGripTorsoY": 2.4847,
+            "firstGripSeconds": 0.1974,
+            "grippedSeconds": 9.0535,
+            "physicsSamples": 1041.8708,
+            "episodesWithAnyGrip": 1.0,
+            "gripSuccessPerAttempt": 0.3288,
+            "legalContactShare": 0.2833,
+            "rejectionReasons": {
+              "NoContact": {
+                "ticks": 8482,
+                "share": 0.9664
+              },
+              "NotTop": {
+                "ticks": 231,
+                "share": 0.0263
+              },
+              "TooFast": {
+                "ticks": 64,
+                "share": 0.0073
+              }
+            },
+            "reasons": {
+              "Success": 13,
+              "Timeout": 4
+            }
           }
         },
-        "reachedLevel1": {
-          "structures": 4,
-          "episodes": 17,
-          "requestRisingEdges": 22.2708,
-          "gripSuccesses": 6.4167,
-          "rejectedHandTicks": 548.7542,
-          "cooldownBlockedTicks": 23.4583,
-          "rearmBlockedTicks": 0.0,
-          "requestedHandTicks": 1052.5375,
-          "legalContactTicks": 439.6333,
-          "freeHandTicks": 1603.4167,
-          "maximumTorsoY": 2.4847,
-          "maximumGripTorsoY": 2.4847,
-          "firstGripSeconds": 0.1974,
-          "grippedSeconds": 9.0535,
-          "physicsSamples": 1041.8708,
-          "episodesWithAnyGrip": 1.0,
-          "gripSuccessPerAttempt": 0.3288,
-          "legalContactShare": 0.2833,
-          "rejectionReasons": {
-            "NoContact": {
-              "ticks": 8482,
-              "share": 0.9664
+        "~1.0m stacked": {
+          "all": {
+            "structures": 26,
+            "episodes": 520,
+            "requestRisingEdges": 54.6231,
+            "gripSuccesses": 13.1596,
+            "rejectedHandTicks": 1291.9788,
+            "cooldownBlockedTicks": 51.2654,
+            "rearmBlockedTicks": 0.0,
+            "requestedHandTicks": 2964.0654,
+            "legalContactTicks": 367.7462,
+            "freeHandTicks": 3099.9519,
+            "maximumTorsoY": 1.5751,
+            "maximumGripTorsoY": 1.5722,
+            "firstGripSeconds": 0.8452,
+            "grippedSeconds": 31.2877,
+            "physicsSamples": 2360.3865,
+            "episodesWithAnyGrip": 1.0,
+            "gripSuccessPerAttempt": 0.2409,
+            "legalContactShare": 0.1186,
+            "rejectionReasons": {
+              "NoContact": {
+                "ticks": 597816,
+                "share": 0.8898
+              },
+              "NotTop": {
+                "ticks": 72983,
+                "share": 0.1086
+              },
+              "TooFast": {
+                "ticks": 620,
+                "share": 0.0009
+              },
+              "TopOccluded": {
+                "ticks": 332,
+                "share": 0.0005
+              },
+              "Occupied": {
+                "ticks": 78,
+                "share": 0.0001
+              }
             },
-            "NotTop": {
-              "ticks": 231,
-              "share": 0.0263
-            },
-            "TooFast": {
-              "ticks": 64,
-              "share": 0.0073
+            "reasons": {
+              "Success": 135,
+              "Timeout": 381,
+              "Fall": 4
             }
           },
-          "reasons": {
-            "Success": 13,
-            "Timeout": 4
-          }
-        }
-      },
-      "~1.0m stacked": {
-        "all": {
-          "structures": 26,
-          "episodes": 520,
-          "requestRisingEdges": 54.6231,
-          "gripSuccesses": 13.1596,
-          "rejectedHandTicks": 1291.9788,
-          "cooldownBlockedTicks": 51.2654,
-          "rearmBlockedTicks": 0.0,
-          "requestedHandTicks": 2964.0654,
-          "legalContactTicks": 367.7462,
-          "freeHandTicks": 3099.9519,
-          "maximumTorsoY": 1.5751,
-          "maximumGripTorsoY": 1.5722,
-          "firstGripSeconds": 0.8452,
-          "grippedSeconds": 31.2877,
-          "physicsSamples": 2360.3865,
-          "episodesWithAnyGrip": 1.0,
-          "gripSuccessPerAttempt": 0.2409,
-          "legalContactShare": 0.1186,
-          "rejectionReasons": {
-            "NoContact": {
-              "ticks": 597816,
-              "share": 0.8898
+          "belowLevel1": {
+            "structures": 22,
+            "episodes": 327,
+            "requestRisingEdges": 52.1959,
+            "gripSuccesses": 11.8647,
+            "rejectedHandTicks": 1104.7259,
+            "cooldownBlockedTicks": 45.5748,
+            "rearmBlockedTicks": 0.0,
+            "requestedHandTicks": 3047.9455,
+            "legalContactTicks": 351.8996,
+            "freeHandTicks": 2937.7411,
+            "maximumTorsoY": 1.4675,
+            "maximumGripTorsoY": 1.4663,
+            "firstGripSeconds": 0.7665,
+            "grippedSeconds": 36.9149,
+            "physicsSamples": 2417.6929,
+            "episodesWithAnyGrip": 1.0,
+            "gripSuccessPerAttempt": 0.1901,
+            "legalContactShare": 0.0972,
+            "rejectionReasons": {
+              "NoContact": {
+                "ticks": 357945,
+                "share": 0.9384
+              },
+              "NotTop": {
+                "ticks": 23231,
+                "share": 0.0609
+              },
+              "TooFast": {
+                "ticks": 193,
+                "share": 0.0005
+              },
+              "TopOccluded": {
+                "ticks": 87,
+                "share": 0.0002
+              }
             },
-            "NotTop": {
-              "ticks": 72983,
-              "share": 0.1086
-            },
-            "TooFast": {
-              "ticks": 620,
-              "share": 0.0009
-            },
-            "TopOccluded": {
-              "ticks": 332,
-              "share": 0.0005
-            },
-            "Occupied": {
-              "ticks": 78,
-              "share": 0.0001
+            "reasons": {
+              "Timeout": 260,
+              "Success": 67
             }
           },
-          "reasons": {
-            "Success": 135,
-            "Timeout": 381,
-            "Fall": 4
-          }
-        },
-        "belowLevel1": {
-          "structures": 22,
-          "episodes": 327,
-          "requestRisingEdges": 52.1959,
-          "gripSuccesses": 11.8647,
-          "rejectedHandTicks": 1104.7259,
-          "cooldownBlockedTicks": 45.5748,
-          "rearmBlockedTicks": 0.0,
-          "requestedHandTicks": 3047.9455,
-          "legalContactTicks": 351.8996,
-          "freeHandTicks": 2937.7411,
-          "maximumTorsoY": 1.4675,
-          "maximumGripTorsoY": 1.4663,
-          "firstGripSeconds": 0.7665,
-          "grippedSeconds": 36.9149,
-          "physicsSamples": 2417.6929,
-          "episodesWithAnyGrip": 1.0,
-          "gripSuccessPerAttempt": 0.1901,
-          "legalContactShare": 0.0972,
-          "rejectionReasons": {
-            "NoContact": {
-              "ticks": 357945,
-              "share": 0.9384
+          "reachedLevel1": {
+            "structures": 19,
+            "episodes": 193,
+            "requestRisingEdges": 66.3228,
+            "gripSuccesses": 19.1539,
+            "rejectedHandTicks": 1536.7082,
+            "cooldownBlockedTicks": 77.5557,
+            "rearmBlockedTicks": 0.0,
+            "requestedHandTicks": 2931.3392,
+            "legalContactTicks": 425.7999,
+            "freeHandTicks": 3338.3053,
+            "maximumTorsoY": 1.8292,
+            "maximumGripTorsoY": 1.8253,
+            "firstGripSeconds": 0.9186,
+            "grippedSeconds": 24.527,
+            "physicsSamples": 2327.6903,
+            "episodesWithAnyGrip": 1.0,
+            "gripSuccessPerAttempt": 0.3212,
+            "legalContactShare": 0.1515,
+            "rejectionReasons": {
+              "NoContact": {
+                "ticks": 239871,
+                "share": 0.8261
+              },
+              "NotTop": {
+                "ticks": 49752,
+                "share": 0.1713
+              },
+              "TooFast": {
+                "ticks": 427,
+                "share": 0.0015
+              },
+              "TopOccluded": {
+                "ticks": 245,
+                "share": 0.0008
+              },
+              "Occupied": {
+                "ticks": 78,
+                "share": 0.0003
+              }
             },
-            "NotTop": {
-              "ticks": 23231,
-              "share": 0.0609
-            },
-            "TooFast": {
-              "ticks": 193,
-              "share": 0.0005
-            },
-            "TopOccluded": {
-              "ticks": 87,
-              "share": 0.0002
+            "reasons": {
+              "Success": 68,
+              "Timeout": 121,
+              "Fall": 4
             }
-          },
-          "reasons": {
-            "Timeout": 260,
-            "Success": 67
-          }
-        },
-        "reachedLevel1": {
-          "structures": 19,
-          "episodes": 193,
-          "requestRisingEdges": 66.3228,
-          "gripSuccesses": 19.1539,
-          "rejectedHandTicks": 1536.7082,
-          "cooldownBlockedTicks": 77.5557,
-          "rearmBlockedTicks": 0.0,
-          "requestedHandTicks": 2931.3392,
-          "legalContactTicks": 425.7999,
-          "freeHandTicks": 3338.3053,
-          "maximumTorsoY": 1.8292,
-          "maximumGripTorsoY": 1.8253,
-          "firstGripSeconds": 0.9186,
-          "grippedSeconds": 24.527,
-          "physicsSamples": 2327.6903,
-          "episodesWithAnyGrip": 1.0,
-          "gripSuccessPerAttempt": 0.3212,
-          "legalContactShare": 0.1515,
-          "rejectionReasons": {
-            "NoContact": {
-              "ticks": 239871,
-              "share": 0.8261
-            },
-            "NotTop": {
-              "ticks": 49752,
-              "share": 0.1713
-            },
-            "TooFast": {
-              "ticks": 427,
-              "share": 0.0015
-            },
-            "TopOccluded": {
-              "ticks": 245,
-              "share": 0.0008
-            },
-            "Occupied": {
-              "ticks": 78,
-              "share": 0.0003
-            }
-          },
-          "reasons": {
-            "Success": 68,
-            "Timeout": 121,
-            "Fall": 4
           }
         }
       }

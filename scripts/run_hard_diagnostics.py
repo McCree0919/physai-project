@@ -4,7 +4,11 @@ structure by start order), on the diagnostic player Builds/ClimbDiagnosticsC2 (t
 in every arena; hash-checked against results/hard-diagnostics/player-sha256.txt), with --climb-diagnostic-output.
 The observer writes one JSON line per finished episode per arena; the runtime CSV one row per end per arena, both in order. They are
 joined by (arena, ordinal) and the join is verified per episode: observer episode index = ordinal, and observed physics samples / 50 Hz
-equals the CSV sim_seconds within 0.1 s. Writes results/hard-diagnostics/<label>/report.json; analysis: analyze_hard_diagnostics.py."""
+equals the CSV sim_seconds within 0.1 s. Writes results/hard-diagnostics/<label>/<set>/report.json; analysis: analyze_hard_diagnostics.py.
+--set v2-easy-tall (LAYER3_C2_REPORT §4, control for the Hard re-test): the v2 Easy structures whose effective first step is a single box of
+~1.0 m (first_step.csv: firstStand >= 0.9, not stacked; 13 structures), same protocol and player."""
+import argparse
+import csv
 import collections
 import json
 from pathlib import Path
@@ -23,7 +27,21 @@ OUT = ROOT/'results/hard-diagnostics'
 PLAYER = ROOT/'Builds/ClimbDiagnosticsC2/ClimbDiagnostics.exe'
 PLAYER_MANIFEST = OUT/'player-sha256.txt'
 MODELS = {k: base.MODELS[k] for k in ('c0c1_s2026', 'c0c1_s2027')}
-EVAL_SET = 'v2-hard'
+FIRST_STEP = ROOT/'docs/data/curriculum-c0c1-eval/first_step.csv'
+
+
+def pool_file(eval_set):
+    if eval_set == 'v2-hard':return base.pool_file('v2-hard')
+    assert eval_set == 'v2-easy-tall', eval_set
+    _, easy = base.pool_file('v2-easy')
+    first = {r['id']: r for r in csv.DictReader(open(FIRST_STEP, encoding='utf-8'))}
+    items = [e for e in easy if float(first[e['id']]['firstStand']) >= .9 and first[e['id']]['firstStacked'] != '1']
+    assert len(items) == 13, len(items)
+    c1 = json.loads(base.CURRICULUM.read_text());folder = OUT/'pools';folder.mkdir(parents=True, exist_ok=True);path = folder/f'{eval_set}.json'
+    text = json.dumps(dict(version=1, root='../../..', rule='diagnostic pool v2-easy-tall; not used for training', twoStepShare=0.0, twoStep=c1['twoStep'],
+                           stages=[dict(name='eval', pool='eval', structures=items)], validation=[]), indent=2)+'\n'
+    if not path.exists() or path.read_text() != text:path.write_text(text, encoding='utf-8')
+    return path, items
 
 
 def observer_rows(folder):
@@ -47,11 +65,11 @@ def join(rows, observed):
     return checks
 
 
-def run(label, model):
+def run(label, model, EVAL_SET):
     folder = OUT/label/EVAL_SET
     if (folder/'report.json').exists():print('SKIP', label, flush=True);return
     folder.mkdir(parents=True, exist_ok=True)
-    path, entries = base.pool_file(EVAL_SET);ids = {e['id'] for e in entries}
+    path, entries = pool_file(EVAL_SET);ids = {e['id'] for e in entries}
     args = ['--climb-output='+str(folder/'runtime'), '--climb-diagnostic-output='+str(folder/'diagnostics'), '--climb-curriculum='+str(path)]
     params = dict(base.ENV_PARAMS, curriculum_stage=0.0)
     channel = EngineConfigurationChannel();channel.set_configuration_parameters(time_scale=100)
@@ -101,7 +119,8 @@ def main():
         if line.strip():
             digest, name = line.split(' ', 1)
             assert base.sha(PLAYER.parent/name.lstrip('*')) == digest, f'player build file {name} does not match the recorded hash'
-    for label, model in MODELS.items():run(label, ROOT/model)
+    p = argparse.ArgumentParser();p.add_argument('--set', default='v2-hard', choices=['v2-hard', 'v2-easy-tall']);a = p.parse_args()
+    for label, model in MODELS.items():run(label, ROOT/model, a.set)
 
 
 if __name__ == '__main__':main()

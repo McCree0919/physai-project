@@ -3,7 +3,8 @@ Per C0+C1 checkpoint, v2 Hard episodes grouped by the effective first step (docs
 surface on the geometry route ~0.5 m, ~1.0 m single box, ~1.0 m two stacked boxes) and by outcome (never reached level 1 / reached it):
 grip attempts (rising edges of a hand's grab request), grip successes, rejected request ticks with their reasons, cooldown and re-arm
 blocking, legal-contact availability, maximum torso height (overall and while gripping) and time to first grip. Per-structure means are
-averaged with structures equally weighted, as in the evaluation. Writes docs/data/hard-diagnostics/{summary.json,episodes.csv}."""
+averaged with structures equally weighted, as in the evaluation. Sets: v2-hard (60 structures) and the control v2-easy-tall (13 Easy
+structures whose first step is a single ~1.0 m box). Writes docs/data/hard-diagnostics/{summary.json,episodes.csv}."""
 import collections
 import csv
 import json
@@ -28,6 +29,7 @@ def stats(episodes):
     by = collections.defaultdict(list)
     for e in episodes:by[e['structure']].append(e)
     out = dict(structures=len(by), episodes=len(episodes))
+    if not episodes:return out
     for f in FIELDS:
         per = [statistics.mean(float(e['observer'][f]) for e in v) for v in by.values()]
         out[f] = round(statistics.mean(per), 4) if per else None
@@ -48,19 +50,21 @@ def main():
     OUT.mkdir(parents=True, exist_ok=True)
     first = {r['id']: r for r in csv.DictReader(open(FIRST, encoding='utf-8'))}
     summary, rows = {}, []
-    for folder in sorted(p for p in SOURCE.iterdir() if (p/'v2-hard/report.json').exists()):
-        rep = json.loads((folder/'v2-hard/report.json').read_text());eps = rep['episodes']
-        assert len(eps) == 60*20 and all(e['observer'] for e in eps)
-        entry = dict(modelSha256=rep['summary']['modelSha256'], playerSha256=rep['summary']['playerSha256'], joinChecks=rep['summary']['joinChecks'], groups={})
-        for g in ('0.5m', '~1.0m single', '~1.0m stacked'):
-            sel = [e for e in eps if group(first[e['structure']]) == g]
-            entry['groups'][g] = dict(all=stats(sel), belowLevel1=stats([e for e in sel if e['level1'] != '1']), reachedLevel1=stats([e for e in sel if e['level1'] == '1']))
-        summary[folder.name] = entry
-        for e in eps:
-            o = e['observer']
-            rows.append(dict(model=folder.name, structure=e['structure'], group=group(first[e['structure']]), arena=e['arena'], success=e['success'], level1=e['level1'], level2=e['level2'],
-                             reason=e['reason'], sim_seconds=e['sim_seconds'], **{f: o[f] for f in FIELDS},
-                             rejections='|'.join(f'{k}:{v}' for k, v in zip(o['rejectionReasons'] or [], o['rejectionCounts'] or []))))
+    for folder in sorted(p for p in SOURCE.iterdir() if p.is_dir() and p.name != 'pools'):
+        for eval_set, count in (('v2-hard', 60), ('v2-easy-tall', 13)):
+            if not (folder/eval_set/'report.json').exists():continue
+            rep = json.loads((folder/eval_set/'report.json').read_text());eps = rep['episodes']
+            assert len(eps) == count*20 and all(e['observer'] for e in eps)
+            entry = dict(modelSha256=rep['summary']['modelSha256'], playerSha256=rep['summary']['playerSha256'], joinChecks=rep['summary']['joinChecks'], groups={})
+            for g in ('0.5m', '~1.0m single', '~1.0m stacked'):
+                sel = [e for e in eps if group(first[e['structure']]) == g]
+                if sel:entry['groups'][g] = dict(all=stats(sel), belowLevel1=stats([e for e in sel if e['level1'] != '1']), reachedLevel1=stats([e for e in sel if e['level1'] == '1']))
+            summary.setdefault(folder.name, {})[eval_set] = entry
+            for e in eps:
+                o = e['observer']
+                rows.append(dict(model=folder.name, set=eval_set, structure=e['structure'], group=group(first[e['structure']]), arena=e['arena'], success=e['success'], level1=e['level1'], level2=e['level2'],
+                                 reason=e['reason'], sim_seconds=e['sim_seconds'], **{f: o[f] for f in FIELDS},
+                                 rejections='|'.join(f'{k}:{v}' for k, v in zip(o['rejectionReasons'] or [], o['rejectionCounts'] or []))))
     (OUT/'summary.json').write_text(json.dumps(summary, indent=2)+'\n', encoding='utf-8')
     with open(OUT/'episodes.csv', 'w', encoding='utf-8', newline='') as stream:
         w = csv.DictWriter(stream, fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)

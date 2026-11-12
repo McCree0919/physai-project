@@ -103,6 +103,25 @@ public sealed class FeasibilityAudit
         Debug.Log($"FEASIBILITY_AUDIT_COMPLETE rows={rows.Count} folder={folder}");
         Assert.AreEqual(items.Count,rows.Count);
     }
+    // C2 acceptance (LAYER3_C2_REPORT.md): the C2 held-out sets A-D, the reserved F stratum and the A training structures that failed
+    // repeatedly in training, listed in results/curriculum-c2-eval/audit-targets.json. Swapped in as training does. Reference only;
+    // nothing is filtered by the outcome.
+    [UnityTest,Explicit("Audit; run by name")]
+    public IEnumerator AuditCurriculumC2()
+    {
+        if(Environment.GetEnvironmentVariable("CLIMB_RUN_DIAGNOSTICS")!="1")Assert.Ignore("Set CLIMB_RUN_DIAGNOSTICS=1 to run this audit");
+        var targets=JsonUtility.FromJson<TargetsView>(File.ReadAllText("results/curriculum-c2-eval/audit-targets.json"));
+        var items=new List<(string set,string id,string difficulty,StructureDocument doc)> {("control","training-two-step","Control",StructureJson.Parse(File.ReadAllText("structures/curriculum-v1/two-step.json")))};
+        foreach(var t in targets.items)items.Add((t.set,t.id,t.difficulty,StructureJson.Parse(File.ReadAllText(t.path))));
+        var rows=new List<string>();yield return Climb(items,rows,true);
+        string folder=Path.GetFullPath(Path.Combine(Application.dataPath,"..","results","curriculum-c2-eval","audit"));Directory.CreateDirectory(folder);
+        File.WriteAllText(Path.Combine(folder,"audit.csv"),"set,id,difficulty,feasible,reason,route,requiredStanding,controllerSuccess,controllerFailed,tierReached,tierCount,stage,seconds\n"+string.Join("\n",rows)+"\n");
+        Debug.Log($"CURRICULUM_C2_AUDIT_COMPLETE rows={rows.Count} folder={folder}");
+        Assert.AreEqual(items.Count,rows.Count);
+    }
+    [Serializable] sealed class TargetsView {public TargetView[] items;}
+    [Serializable] sealed class TargetView {public string set,id,path,difficulty;}
+
     [Serializable] sealed class ManifestView {public EntryView[] structures;}
     [Serializable] sealed class EntryView {public string id,difficulty,path;}
 }
