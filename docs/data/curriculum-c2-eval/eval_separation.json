@@ -1,0 +1,196 @@
+{
+ "c2-train": {
+  "structures": 604,
+  "linkedToEval": [],
+  "noSharedSupportGraph": 16,
+  "minDistance": 2,
+  "evalIdsInPool": [],
+  "histogram": {
+   "2": 304,
+   "3": 44,
+   "4": 36,
+   "5": 23,
+   "6": 48,
+   "7": 38,
+   "8": 27,
+   "9": 47,
+   "10": 21
+  }
+ },
+ "c0c1-train": {
+  "structures": 266,
+  "linkedToEval": [],
+  "noSharedSupportGraph": 12,
+  "minDistance": 2,
+  "evalIdsInPool": [],
+  "histogram": {
+   "2": 234,
+   "3": 18,
+   "4": 2
+  }
+ },
+ "evalNearDuplicatePairs": {
+  "count": 22,
+  "byTiers": {
+   "Easy-Standard": 22
+  },
+  "withinTier": 0,
+  "identical": 6,
+  "pairs": [
+   [
+    "stack2-easy-20003",
+    "stack2-standard-20017",
+    "Easy",
+    "Standard",
+    1
+   ],
+   [
+    "stack2-easy-20005",
+    "stack2-standard-20004",
+    "Easy",
+    "Standard",
+    0
+   ],
+   [
+    "stack2-easy-20011",
+    "stack2-standard-20021",
+    "Easy",
+    "Standard",
+    0
+   ],
+   [
+    "stack2-easy-20012",
+    "stack2-standard-20105",
+    "Easy",
+    "Standard",
+    1
+   ],
+   [
+    "stack2-easy-20014",
+    "stack2-standard-20017",
+    "Easy",
+    "Standard",
+    1
+   ],
+   [
+    "stack2-easy-20024",
+    "stack2-standard-20027",
+    "Easy",
+    "Standard",
+    1
+   ],
+   [
+    "stack2-easy-20030",
+    "stack2-standard-20029",
+    "Easy",
+    "Standard",
+    1
+   ],
+   [
+    "stack2-easy-20032",
+    "stack2-standard-20059",
+    "Easy",
+    "Standard",
+    1
+   ],
+   [
+    "stack2-easy-20035",
+    "stack2-standard-20086",
+    "Easy",
+    "Standard",
+    1
+   ],
+   [
+    "stack2-easy-20043",
+    "stack2-standard-20067",
+    "Easy",
+    "Standard",
+    0
+   ],
+   [
+    "stack2-easy-20045",
+    "stack2-standard-20069",
+    "Easy",
+    "Standard",
+    1
+   ],
+   [
+    "stack2-easy-20053",
+    "stack2-standard-20077",
+    "Easy",
+    "Standard",
+    0
+   ],
+   [
+    "stack2-easy-20055",
+    "stack2-standard-20013",
+    "Easy",
+    "Standard",
+    1
+   ],
+   [
+    "stack2-easy-20055",
+    "stack2-standard-20017",
+    "Easy",
+    "Standard",
+    1
+   ],
+   [
+    "stack2-easy-20068",
+    "stack2-standard-20031",
+    "Easy",
+    "Standard",
+    0
+   ],
+   [
+    "stack2-easy-20072",
+    "stack2-standard-20027",
+    "Easy",
+    "Standard",
+    1
+   ],
+   [
+    "stack2-easy-20076",
+    "stack2-standard-20100",
+    "Easy",
+    "Standard",
+    1
+   ],
+   [
+    "stack2-easy-20106",
+    "stack2-standard-20017",
+    "Easy",
+    "Standard",
+    1
+   ],
+   [
+    "stack2-easy-20125",
+    "stack2-standard-20036",
+    "Easy",
+    "Standard",
+    1
+   ],
+   [
+    "stack2-easy-20154",
+    "stack2-standard-20025",
+    "Easy",
+    "Standard",
+    0
+   ],
+   [
+    "stack2-easy-20160",
+    "stack2-standard-20017",
+    "Easy",
+    "Standard",
+    1
+   ],
+   [
+    "stack2-easy-20175",
+    "stack2-standard-20073",
+    "Easy",
+    "Standard",
+    1
+   ]
+  ]
+ }
+}
