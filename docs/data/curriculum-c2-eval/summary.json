@@ -1,0 +1,1377 @@
+{
+  "bootstrapResamples": 10000,
+  "sets": {
+    "c2-A": {
+      "c2_s2026": {
+        "structures": 45,
+        "feasible": 45,
+        "excludedByGeometry": 0,
+        "clusters": 30,
+        "episodes": 900,
+        "mean": 0.8966666666666666,
+        "ci95": [
+          0.7867647058823529,
+          0.9755555555555557
+        ],
+        "structuresAll20": 38,
+        "structuresZero": 3,
+        "level1": 0.9888888888888889,
+        "fallOrOutOfBounds": 0.0011111111111111111,
+        "failureStages": {
+          "level2-not-goal": 56,
+          "below-level1": 10,
+          "level1-not-level2": 27
+        },
+        "failureReasons": {
+          "Timeout": 92,
+          "Fall": 1
+        },
+        "scripted": {
+          "mean": 0.6444444444444445,
+          "completed": 29
+        },
+        "vsScripted": {
+          "policy>=0.5/scripted1": 29,
+          "policy>=0.5/scripted0": 11,
+          "policy<0.5/scripted0": 5
+        },
+        "modelSha256": "bb08ab192e15bb80e01344672b408ac7b5590cc194064d7a21a2e73cc21f0134",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "4da62b75a70be9c6c61794b36c934ce22813fbcb4613e5b8dca0aefa380c5825",
+        "droppedOutsideSet": {}
+      },
+      "c2_s2027": {
+        "structures": 45,
+        "feasible": 45,
+        "excludedByGeometry": 0,
+        "clusters": 30,
+        "episodes": 900,
+        "mean": 0.8566666666666667,
+        "ci95": [
+          0.7455555555555559,
+          0.9360465116279072
+        ],
+        "structuresAll20": 33,
+        "structuresZero": 3,
+        "level1": 1.0,
+        "fallOrOutOfBounds": 0.0,
+        "failureStages": {
+          "level1-not-level2": 85,
+          "level2-not-goal": 44
+        },
+        "failureReasons": {
+          "Timeout": 129
+        },
+        "scripted": {
+          "mean": 0.6444444444444445,
+          "completed": 29
+        },
+        "vsScripted": {
+          "policy>=0.5/scripted1": 28,
+          "policy>=0.5/scripted0": 11,
+          "policy<0.5/scripted0": 5,
+          "policy<0.5/scripted1": 1
+        },
+        "modelSha256": "32e71adee65e4d90acdf718911394204d3c5b46ec87ccf9c05ba1987718955d2",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "4da62b75a70be9c6c61794b36c934ce22813fbcb4613e5b8dca0aefa380c5825",
+        "droppedOutsideSet": {}
+      },
+      "c0c1_s2026": {
+        "structures": 45,
+        "feasible": 45,
+        "excludedByGeometry": 0,
+        "clusters": 30,
+        "episodes": 900,
+        "mean": 0.8877777777777778,
+        "ci95": [
+          0.7671428571428571,
+          0.9743902439024391
+        ],
+        "structuresAll20": 39,
+        "structuresZero": 5,
+        "level1": 0.9988888888888889,
+        "fallOrOutOfBounds": 0.0,
+        "failureStages": {
+          "level2-not-goal": 94,
+          "level1-not-level2": 7
+        },
+        "failureReasons": {
+          "Timeout": 101
+        },
+        "scripted": {
+          "mean": 0.6444444444444445,
+          "completed": 29
+        },
+        "vsScripted": {
+          "policy>=0.5/scripted1": 29,
+          "policy>=0.5/scripted0": 11,
+          "policy<0.5/scripted0": 5
+        },
+        "modelSha256": "e4171e6ef151d22b0b4ca127fc5739af0a601c1b270f5a0b753820f01f2eb442",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "4da62b75a70be9c6c61794b36c934ce22813fbcb4613e5b8dca0aefa380c5825",
+        "droppedOutsideSet": {}
+      },
+      "c0c1_s2027": {
+        "structures": 45,
+        "feasible": 45,
+        "excludedByGeometry": 0,
+        "clusters": 30,
+        "episodes": 900,
+        "mean": 0.8888888888888888,
+        "ci95": [
+          0.7692307692307693,
+          0.9761904761904762
+        ],
+        "structuresAll20": 40,
+        "structuresZero": 5,
+        "level1": 0.9811111111111112,
+        "fallOrOutOfBounds": 0.0,
+        "failureStages": {
+          "level2-not-goal": 77,
+          "level1-not-level2": 6,
+          "below-level1": 17
+        },
+        "failureReasons": {
+          "Timeout": 100
+        },
+        "scripted": {
+          "mean": 0.6444444444444445,
+          "completed": 29
+        },
+        "vsScripted": {
+          "policy>=0.5/scripted1": 29,
+          "policy>=0.5/scripted0": 11,
+          "policy<0.5/scripted0": 5
+        },
+        "modelSha256": "a96f1946e354ffd7f55907fc59de93615fab0f0d83c7b9cadf8b4030fff8d8c0",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "4da62b75a70be9c6c61794b36c934ce22813fbcb4613e5b8dca0aefa380c5825",
+        "droppedOutsideSet": {}
+      }
+    },
+    "c2-B": {
+      "c2_s2026": {
+        "structures": 30,
+        "feasible": 30,
+        "excludedByGeometry": 0,
+        "clusters": 30,
+        "episodes": 600,
+        "mean": 0.9883333333333333,
+        "ci95": [
+          0.9716666666666666,
+          1.0
+        ],
+        "structuresAll20": 27,
+        "structuresZero": 0,
+        "level1": 0.9966666666666667,
+        "fallOrOutOfBounds": 0.0,
+        "failureStages": {
+          "level2-not-goal": 7
+        },
+        "failureReasons": {
+          "Timeout": 7
+        },
+        "scripted": {
+          "mean": 0.6666666666666666,
+          "completed": 20
+        },
+        "vsScripted": {
+          "policy>=0.5/scripted1": 20,
+          "policy>=0.5/scripted0": 10
+        },
+        "modelSha256": "bb08ab192e15bb80e01344672b408ac7b5590cc194064d7a21a2e73cc21f0134",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "d86e21f7c273b197e200acec5de8da20332abfcf455f69858edb54aea58be4d2",
+        "droppedOutsideSet": {}
+      },
+      "c2_s2027": {
+        "structures": 30,
+        "feasible": 30,
+        "excludedByGeometry": 0,
+        "clusters": 30,
+        "episodes": 600,
+        "mean": 0.98,
+        "ci95": [
+          0.9583333333333333,
+          0.995
+        ],
+        "structuresAll20": 25,
+        "structuresZero": 0,
+        "level1": 0.9833333333333333,
+        "fallOrOutOfBounds": 0.0,
+        "failureStages": {
+          "level2-not-goal": 5,
+          "below-level1": 6,
+          "level1-not-level2": 1
+        },
+        "failureReasons": {
+          "Timeout": 12
+        },
+        "scripted": {
+          "mean": 0.6666666666666666,
+          "completed": 20
+        },
+        "vsScripted": {
+          "policy>=0.5/scripted1": 20,
+          "policy>=0.5/scripted0": 10
+        },
+        "modelSha256": "32e71adee65e4d90acdf718911394204d3c5b46ec87ccf9c05ba1987718955d2",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "d86e21f7c273b197e200acec5de8da20332abfcf455f69858edb54aea58be4d2",
+        "droppedOutsideSet": {}
+      },
+      "c0c1_s2026": {
+        "structures": 30,
+        "feasible": 30,
+        "excludedByGeometry": 0,
+        "clusters": 30,
+        "episodes": 600,
+        "mean": 0.01,
+        "ci95": [
+          0.0016666666666666668,
+          0.02166666666666667
+        ],
+        "structuresAll20": 0,
+        "structuresZero": 26,
+        "level1": 0.36666666666666664,
+        "fallOrOutOfBounds": 0.0,
+        "failureStages": {
+          "below-level1": 380,
+          "level2-not-goal": 179,
+          "level1-not-level2": 35
+        },
+        "failureReasons": {
+          "Timeout": 594
+        },
+        "scripted": {
+          "mean": 0.6666666666666666,
+          "completed": 20
+        },
+        "vsScripted": {
+          "policy<0.5/scripted1": 20,
+          "policy<0.5/scripted0": 10
+        },
+        "modelSha256": "e4171e6ef151d22b0b4ca127fc5739af0a601c1b270f5a0b753820f01f2eb442",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "d86e21f7c273b197e200acec5de8da20332abfcf455f69858edb54aea58be4d2",
+        "droppedOutsideSet": {}
+      },
+      "c0c1_s2027": {
+        "structures": 30,
+        "feasible": 30,
+        "excludedByGeometry": 0,
+        "clusters": 30,
+        "episodes": 600,
+        "mean": 0.6583333333333333,
+        "ci95": [
+          0.5283333333333333,
+          0.7866666666666666
+        ],
+        "structuresAll20": 11,
+        "structuresZero": 0,
+        "level1": 0.7116666666666667,
+        "fallOrOutOfBounds": 0.0016666666666666668,
+        "failureStages": {
+          "level2-not-goal": 111,
+          "below-level1": 91,
+          "level1-not-level2": 3
+        },
+        "failureReasons": {
+          "Timeout": 204,
+          "Fall": 1
+        },
+        "scripted": {
+          "mean": 0.6666666666666666,
+          "completed": 20
+        },
+        "vsScripted": {
+          "policy<0.5/scripted1": 8,
+          "policy<0.5/scripted0": 3,
+          "policy>=0.5/scripted1": 12,
+          "policy>=0.5/scripted0": 7
+        },
+        "modelSha256": "a96f1946e354ffd7f55907fc59de93615fab0f0d83c7b9cadf8b4030fff8d8c0",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "d86e21f7c273b197e200acec5de8da20332abfcf455f69858edb54aea58be4d2",
+        "droppedOutsideSet": {}
+      }
+    },
+    "c2-C": {
+      "c2_s2026": {
+        "structures": 30,
+        "feasible": 30,
+        "excludedByGeometry": 0,
+        "clusters": 30,
+        "episodes": 600,
+        "mean": 0.9983333333333333,
+        "ci95": [
+          0.9949999999999999,
+          1.0
+        ],
+        "structuresAll20": 29,
+        "structuresZero": 0,
+        "level1": 1.0,
+        "fallOrOutOfBounds": 0.0,
+        "failureStages": {
+          "level1-not-level2": 1
+        },
+        "failureReasons": {
+          "Timeout": 1
+        },
+        "scripted": {
+          "mean": 0.6666666666666666,
+          "completed": 20
+        },
+        "vsScripted": {
+          "policy>=0.5/scripted1": 20,
+          "policy>=0.5/scripted0": 10
+        },
+        "modelSha256": "bb08ab192e15bb80e01344672b408ac7b5590cc194064d7a21a2e73cc21f0134",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "e94197487e78902d610f24de1708b4deaebae506486f111096e3294f13aeb053",
+        "droppedOutsideSet": {}
+      },
+      "c2_s2027": {
+        "structures": 30,
+        "feasible": 30,
+        "excludedByGeometry": 0,
+        "clusters": 30,
+        "episodes": 600,
+        "mean": 0.9683333333333334,
+        "ci95": [
+          0.9349999999999999,
+          0.9933333333333333
+        ],
+        "structuresAll20": 24,
+        "structuresZero": 0,
+        "level1": 1.0,
+        "fallOrOutOfBounds": 0.0,
+        "failureStages": {
+          "level1-not-level2": 14,
+          "level2-not-goal": 5
+        },
+        "failureReasons": {
+          "Timeout": 19
+        },
+        "scripted": {
+          "mean": 0.6666666666666666,
+          "completed": 20
+        },
+        "vsScripted": {
+          "policy>=0.5/scripted1": 20,
+          "policy>=0.5/scripted0": 10
+        },
+        "modelSha256": "32e71adee65e4d90acdf718911394204d3c5b46ec87ccf9c05ba1987718955d2",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "e94197487e78902d610f24de1708b4deaebae506486f111096e3294f13aeb053",
+        "droppedOutsideSet": {}
+      },
+      "c0c1_s2026": {
+        "structures": 30,
+        "feasible": 30,
+        "excludedByGeometry": 0,
+        "clusters": 30,
+        "episodes": 600,
+        "mean": 0.008333333333333333,
+        "ci95": [
+          0.0,
+          0.023333333333333334
+        ],
+        "structuresAll20": 0,
+        "structuresZero": 28,
+        "level1": 0.8533333333333334,
+        "fallOrOutOfBounds": 0.006666666666666667,
+        "failureStages": {
+          "level1-not-level2": 466,
+          "level2-not-goal": 41,
+          "below-level1": 88
+        },
+        "failureReasons": {
+          "Timeout": 591,
+          "Fall": 4
+        },
+        "scripted": {
+          "mean": 0.6666666666666666,
+          "completed": 20
+        },
+        "vsScripted": {
+          "policy<0.5/scripted1": 20,
+          "policy<0.5/scripted0": 10
+        },
+        "modelSha256": "e4171e6ef151d22b0b4ca127fc5739af0a601c1b270f5a0b753820f01f2eb442",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "e94197487e78902d610f24de1708b4deaebae506486f111096e3294f13aeb053",
+        "droppedOutsideSet": {}
+      },
+      "c0c1_s2027": {
+        "structures": 30,
+        "feasible": 30,
+        "excludedByGeometry": 0,
+        "clusters": 30,
+        "episodes": 600,
+        "mean": 0.34833333333333333,
+        "ci95": [
+          0.23333333333333334,
+          0.46999999999999986
+        ],
+        "structuresAll20": 4,
+        "structuresZero": 7,
+        "level1": 0.7033333333333334,
+        "fallOrOutOfBounds": 0.011666666666666667,
+        "failureStages": {
+          "level1-not-level2": 176,
+          "below-level1": 126,
+          "level2-not-goal": 89
+        },
+        "failureReasons": {
+          "Timeout": 384,
+          "Fall": 7
+        },
+        "scripted": {
+          "mean": 0.6666666666666666,
+          "completed": 20
+        },
+        "vsScripted": {
+          "policy<0.5/scripted1": 15,
+          "policy<0.5/scripted0": 5,
+          "policy>=0.5/scripted0": 5,
+          "policy>=0.5/scripted1": 5
+        },
+        "modelSha256": "a96f1946e354ffd7f55907fc59de93615fab0f0d83c7b9cadf8b4030fff8d8c0",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "e94197487e78902d610f24de1708b4deaebae506486f111096e3294f13aeb053",
+        "droppedOutsideSet": {}
+      }
+    },
+    "c2-D": {
+      "c2_s2026": {
+        "structures": 30,
+        "feasible": 30,
+        "excludedByGeometry": 0,
+        "clusters": 30,
+        "episodes": 600,
+        "mean": 0.9633333333333334,
+        "ci95": [
+          0.9166666666666666,
+          0.9966666666666666
+        ],
+        "structuresAll20": 25,
+        "structuresZero": 0,
+        "level1": 0.9866666666666667,
+        "fallOrOutOfBounds": 0.0,
+        "failureStages": {
+          "level2-not-goal": 22
+        },
+        "failureReasons": {
+          "Timeout": 22
+        },
+        "scripted": {
+          "mean": 0.8,
+          "completed": 24
+        },
+        "vsScripted": {
+          "policy>=0.5/scripted1": 24,
+          "policy>=0.5/scripted0": 6
+        },
+        "modelSha256": "bb08ab192e15bb80e01344672b408ac7b5590cc194064d7a21a2e73cc21f0134",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "da413b33b01922d0377494b1f6a4e59698d1ce67ed40205b9d3738234d5dc3b5",
+        "droppedOutsideSet": {}
+      },
+      "c2_s2027": {
+        "structures": 30,
+        "feasible": 30,
+        "excludedByGeometry": 0,
+        "clusters": 30,
+        "episodes": 600,
+        "mean": 0.9233333333333333,
+        "ci95": [
+          0.8783333333333334,
+          0.9599999999999997
+        ],
+        "structuresAll20": 13,
+        "structuresZero": 0,
+        "level1": 0.9516666666666667,
+        "fallOrOutOfBounds": 0.0016666666666666668,
+        "failureStages": {
+          "level2-not-goal": 42,
+          "below-level1": 2,
+          "level1-not-level2": 2
+        },
+        "failureReasons": {
+          "Timeout": 45,
+          "Fall": 1
+        },
+        "scripted": {
+          "mean": 0.8,
+          "completed": 24
+        },
+        "vsScripted": {
+          "policy>=0.5/scripted1": 23,
+          "policy>=0.5/scripted0": 6,
+          "policy<0.5/scripted1": 1
+        },
+        "modelSha256": "32e71adee65e4d90acdf718911394204d3c5b46ec87ccf9c05ba1987718955d2",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "da413b33b01922d0377494b1f6a4e59698d1ce67ed40205b9d3738234d5dc3b5",
+        "droppedOutsideSet": {}
+      },
+      "c0c1_s2026": {
+        "structures": 30,
+        "feasible": 30,
+        "excludedByGeometry": 0,
+        "clusters": 30,
+        "episodes": 600,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "structuresAll20": 0,
+        "structuresZero": 30,
+        "level1": 0.09833333333333333,
+        "fallOrOutOfBounds": 0.0,
+        "failureStages": {
+          "below-level1": 541,
+          "level2-not-goal": 59
+        },
+        "failureReasons": {
+          "Timeout": 600
+        },
+        "scripted": {
+          "mean": 0.8,
+          "completed": 24
+        },
+        "vsScripted": {
+          "policy<0.5/scripted1": 24,
+          "policy<0.5/scripted0": 6
+        },
+        "modelSha256": "e4171e6ef151d22b0b4ca127fc5739af0a601c1b270f5a0b753820f01f2eb442",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "da413b33b01922d0377494b1f6a4e59698d1ce67ed40205b9d3738234d5dc3b5",
+        "droppedOutsideSet": {}
+      },
+      "c0c1_s2027": {
+        "structures": 30,
+        "feasible": 30,
+        "excludedByGeometry": 0,
+        "clusters": 30,
+        "episodes": 600,
+        "mean": 0.065,
+        "ci95": [
+          0.016666666666666666,
+          0.12833333333333333
+        ],
+        "structuresAll20": 0,
+        "structuresZero": 21,
+        "level1": 0.305,
+        "fallOrOutOfBounds": 0.0,
+        "failureStages": {
+          "below-level1": 401,
+          "level2-not-goal": 152,
+          "level1-not-level2": 8
+        },
+        "failureReasons": {
+          "Timeout": 561
+        },
+        "scripted": {
+          "mean": 0.8,
+          "completed": 24
+        },
+        "vsScripted": {
+          "policy<0.5/scripted1": 22,
+          "policy<0.5/scripted0": 6,
+          "policy>=0.5/scripted1": 2
+        },
+        "modelSha256": "a96f1946e354ffd7f55907fc59de93615fab0f0d83c7b9cadf8b4030fff8d8c0",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "da413b33b01922d0377494b1f6a4e59698d1ce67ed40205b9d3738234d5dc3b5",
+        "droppedOutsideSet": {}
+      }
+    },
+    "c2-F": {
+      "c2_s2026": {
+        "structures": 131,
+        "feasible": 131,
+        "excludedByGeometry": 0,
+        "clusters": 128,
+        "episodes": 2620,
+        "mean": 0.851145038167939,
+        "ci95": [
+          0.8141791044776121,
+          0.8863636363636367
+        ],
+        "structuresAll20": 59,
+        "structuresZero": 0,
+        "level1": 0.9935114503816794,
+        "fallOrOutOfBounds": 0.0061068702290076335,
+        "failureStages": {
+          "level2-not-goal": 235,
+          "level1-not-level2": 142,
+          "below-level1": 13
+        },
+        "failureReasons": {
+          "Timeout": 373,
+          "Fall": 16,
+          "UnrecoverableGrip": 1
+        },
+        "scripted": {
+          "mean": 0.916030534351145,
+          "completed": 120
+        },
+        "vsScripted": {
+          "policy>=0.5/scripted1": 109,
+          "policy>=0.5/scripted0": 11,
+          "policy<0.5/scripted1": 11
+        },
+        "modelSha256": "bb08ab192e15bb80e01344672b408ac7b5590cc194064d7a21a2e73cc21f0134",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "f4b564e156b496f851fe176ab3ad8f12494a670416766644ac4cdbdc65246bae",
+        "droppedOutsideSet": {}
+      },
+      "c2_s2027": {
+        "structures": 131,
+        "feasible": 131,
+        "excludedByGeometry": 0,
+        "clusters": 128,
+        "episodes": 2620,
+        "mean": 0.4118320610687023,
+        "ci95": [
+          0.3526717557251907,
+          0.47196969696969704
+        ],
+        "structuresAll20": 5,
+        "structuresZero": 25,
+        "level1": 0.9858778625954199,
+        "fallOrOutOfBounds": 0.0019083969465648854,
+        "failureStages": {
+          "level1-not-level2": 432,
+          "level2-not-goal": 1076,
+          "below-level1": 33
+        },
+        "failureReasons": {
+          "Timeout": 1536,
+          "Fall": 5
+        },
+        "scripted": {
+          "mean": 0.916030534351145,
+          "completed": 120
+        },
+        "vsScripted": {
+          "policy<0.5/scripted1": 65,
+          "policy>=0.5/scripted0": 5,
+          "policy>=0.5/scripted1": 55,
+          "policy<0.5/scripted0": 6
+        },
+        "modelSha256": "32e71adee65e4d90acdf718911394204d3c5b46ec87ccf9c05ba1987718955d2",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "f4b564e156b496f851fe176ab3ad8f12494a670416766644ac4cdbdc65246bae",
+        "droppedOutsideSet": {}
+      }
+    },
+    "v2-easy": {
+      "c2_s2026": {
+        "structures": 60,
+        "feasible": 60,
+        "excludedByGeometry": 0,
+        "clusters": 60,
+        "episodes": 1200,
+        "mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "structuresAll20": 60,
+        "structuresZero": 0,
+        "level1": 1.0,
+        "fallOrOutOfBounds": 0.0,
+        "failureStages": {},
+        "failureReasons": {},
+        "scripted": {
+          "mean": 0.6833333333333333,
+          "completed": 41
+        },
+        "vsScripted": {
+          "policy>=0.5/scripted0": 19,
+          "policy>=0.5/scripted1": 41
+        },
+        "modelSha256": "bb08ab192e15bb80e01344672b408ac7b5590cc194064d7a21a2e73cc21f0134",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "419ffb7a656347270dc9c230067b2ea1f8d6da4d121f4ae2a2df755f7fef4062",
+        "droppedOutsideSet": {}
+      },
+      "c2_s2027": {
+        "structures": 60,
+        "feasible": 60,
+        "excludedByGeometry": 0,
+        "clusters": 60,
+        "episodes": 1200,
+        "mean": 0.99,
+        "ci95": [
+          0.9791666666666666,
+          0.9983333333333333
+        ],
+        "structuresAll20": 54,
+        "structuresZero": 0,
+        "level1": 1.0,
+        "fallOrOutOfBounds": 0.0,
+        "failureStages": {
+          "level1-not-level2": 12
+        },
+        "failureReasons": {
+          "Timeout": 12
+        },
+        "scripted": {
+          "mean": 0.6833333333333333,
+          "completed": 41
+        },
+        "vsScripted": {
+          "policy>=0.5/scripted0": 19,
+          "policy>=0.5/scripted1": 41
+        },
+        "modelSha256": "32e71adee65e4d90acdf718911394204d3c5b46ec87ccf9c05ba1987718955d2",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "419ffb7a656347270dc9c230067b2ea1f8d6da4d121f4ae2a2df755f7fef4062",
+        "droppedOutsideSet": {}
+      }
+    },
+    "v2-standard": {
+      "c2_s2026": {
+        "structures": 60,
+        "feasible": 60,
+        "excludedByGeometry": 0,
+        "clusters": 60,
+        "episodes": 1200,
+        "mean": 0.9458333333333333,
+        "ci95": [
+          0.8875000000000001,
+          0.9925
+        ],
+        "structuresAll20": 53,
+        "structuresZero": 2,
+        "level1": 0.9991666666666666,
+        "fallOrOutOfBounds": 0.0008333333333333334,
+        "failureStages": {
+          "level1-not-level2": 6,
+          "level2-not-goal": 58,
+          "below-level1": 1
+        },
+        "failureReasons": {
+          "Timeout": 64,
+          "Fall": 1
+        },
+        "scripted": {
+          "mean": 0.8166666666666667,
+          "completed": 49
+        },
+        "vsScripted": {
+          "policy>=0.5/scripted1": 49,
+          "policy>=0.5/scripted0": 8,
+          "policy<0.5/scripted0": 3
+        },
+        "modelSha256": "bb08ab192e15bb80e01344672b408ac7b5590cc194064d7a21a2e73cc21f0134",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "90399f17a45a5b08f513641880a1b05465c1015c0aa8367e4a189587894e82e2",
+        "droppedOutsideSet": {}
+      },
+      "c2_s2027": {
+        "structures": 60,
+        "feasible": 60,
+        "excludedByGeometry": 0,
+        "clusters": 60,
+        "episodes": 1200,
+        "mean": 0.8791666666666667,
+        "ci95": [
+          0.8133333333333334,
+          0.9375000000000001
+        ],
+        "structuresAll20": 39,
+        "structuresZero": 1,
+        "level1": 0.995,
+        "fallOrOutOfBounds": 0.0,
+        "failureStages": {
+          "level1-not-level2": 91,
+          "level2-not-goal": 53,
+          "below-level1": 1
+        },
+        "failureReasons": {
+          "Timeout": 145
+        },
+        "scripted": {
+          "mean": 0.8166666666666667,
+          "completed": 49
+        },
+        "vsScripted": {
+          "policy>=0.5/scripted1": 46,
+          "policy>=0.5/scripted0": 8,
+          "policy<0.5/scripted1": 3,
+          "policy<0.5/scripted0": 3
+        },
+        "modelSha256": "32e71adee65e4d90acdf718911394204d3c5b46ec87ccf9c05ba1987718955d2",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "90399f17a45a5b08f513641880a1b05465c1015c0aa8367e4a189587894e82e2",
+        "droppedOutsideSet": {}
+      }
+    },
+    "v2-hard": {
+      "c2_s2026": {
+        "structures": 60,
+        "feasible": 60,
+        "excludedByGeometry": 0,
+        "clusters": 60,
+        "episodes": 1200,
+        "mean": 0.9783333333333333,
+        "ci95": [
+          0.9516666666666664,
+          0.9958333333333333
+        ],
+        "structuresAll20": 52,
+        "structuresZero": 0,
+        "level1": 0.9816666666666667,
+        "fallOrOutOfBounds": 0.0008333333333333334,
+        "failureStages": {
+          "level2-not-goal": 25,
+          "level1-not-level2": 1
+        },
+        "failureReasons": {
+          "Timeout": 25,
+          "Fall": 1
+        },
+        "scripted": {
+          "mean": 0.6666666666666666,
+          "completed": 40
+        },
+        "vsScripted": {
+          "policy>=0.5/scripted1": 39,
+          "policy>=0.5/scripted0": 20,
+          "policy<0.5/scripted1": 1
+        },
+        "modelSha256": "bb08ab192e15bb80e01344672b408ac7b5590cc194064d7a21a2e73cc21f0134",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "0d9871d3f26ecd20cadcdbdda477f33c75c2307787cbd7b8ab13fe4440fb7ce2",
+        "droppedOutsideSet": {}
+      },
+      "c2_s2027": {
+        "structures": 60,
+        "feasible": 60,
+        "excludedByGeometry": 0,
+        "clusters": 60,
+        "episodes": 1200,
+        "mean": 0.8825,
+        "ci95": [
+          0.81,
+          0.9450000000000001
+        ],
+        "structuresAll20": 41,
+        "structuresZero": 2,
+        "level1": 0.9941666666666666,
+        "fallOrOutOfBounds": 0.0,
+        "failureStages": {
+          "level2-not-goal": 99,
+          "level1-not-level2": 42
+        },
+        "failureReasons": {
+          "Timeout": 141
+        },
+        "scripted": {
+          "mean": 0.6666666666666666,
+          "completed": 40
+        },
+        "vsScripted": {
+          "policy>=0.5/scripted1": 34,
+          "policy>=0.5/scripted0": 20,
+          "policy<0.5/scripted1": 6
+        },
+        "modelSha256": "32e71adee65e4d90acdf718911394204d3c5b46ec87ccf9c05ba1987718955d2",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "0d9871d3f26ecd20cadcdbdda477f33c75c2307787cbd7b8ab13fe4440fb7ce2",
+        "droppedOutsideSet": {}
+      }
+    }
+  },
+  "twoStep": {
+    "c2_s2026": {
+      "episodes": 200,
+      "success": 1.0,
+      "fallOrOutOfBounds": 0.0,
+      "reasons": {
+        "Success": 200
+      }
+    },
+    "c2_s2027": {
+      "episodes": 200,
+      "success": 1.0,
+      "fallOrOutOfBounds": 0.0,
+      "reasons": {
+        "Success": 200
+      }
+    }
+  },
+  "paired": {
+    "c2-A/s2026": {
+      "c2": 0.8966666666666666,
+      "c0c1": 0.8877777777777778,
+      "difference": 0.008888888888888887,
+      "ci95": [
+        -0.0026315789473684258,
+        0.02857142857142857
+      ],
+      "c2Better": 3,
+      "c0c1Better": 2,
+      "equal": 40
+    },
+    "c2-B/s2026": {
+      "c2": 0.9883333333333333,
+      "c0c1": 0.01,
+      "difference": 0.9783333333333333,
+      "ci95": [
+        0.9583333333333334,
+        0.9933333333333333
+      ],
+      "c2Better": 30,
+      "c0c1Better": 0,
+      "equal": 0
+    },
+    "c2-C/s2026": {
+      "c2": 0.9983333333333333,
+      "c0c1": 0.008333333333333333,
+      "difference": 0.99,
+      "ci95": [
+        0.9733333333333334,
+        1.0
+      ],
+      "c2Better": 30,
+      "c0c1Better": 0,
+      "equal": 0
+    },
+    "c2-D/s2026": {
+      "c2": 0.9633333333333334,
+      "c0c1": 0.0,
+      "difference": 0.9633333333333334,
+      "ci95": [
+        0.9166666666666666,
+        0.9966666666666666
+      ],
+      "c2Better": 30,
+      "c0c1Better": 0,
+      "equal": 0
+    },
+    "c2-A/s2027": {
+      "c2": 0.8566666666666667,
+      "c0c1": 0.8888888888888888,
+      "difference": -0.03222222222222222,
+      "ci95": [
+        -0.07551020408163266,
+        0.007407407407407406
+      ],
+      "c2Better": 2,
+      "c0c1Better": 7,
+      "equal": 36
+    },
+    "c2-B/s2027": {
+      "c2": 0.98,
+      "c0c1": 0.6583333333333333,
+      "difference": 0.32166666666666666,
+      "ci95": [
+        0.19666666666666666,
+        0.44833333333333336
+      ],
+      "c2Better": 19,
+      "c0c1Better": 2,
+      "equal": 9
+    },
+    "c2-C/s2027": {
+      "c2": 0.9683333333333334,
+      "c0c1": 0.34833333333333333,
+      "difference": 0.62,
+      "ci95": [
+        0.505,
+        0.725
+      ],
+      "c2Better": 26,
+      "c0c1Better": 0,
+      "equal": 4
+    },
+    "c2-D/s2027": {
+      "c2": 0.9233333333333333,
+      "c0c1": 0.065,
+      "difference": 0.8583333333333333,
+      "ci95": [
+        0.7849999999999999,
+        0.9199999999999998
+      ],
+      "c2Better": 30,
+      "c0c1Better": 0,
+      "equal": 0
+    }
+  },
+  "acceptance": {
+    "s2026": {
+      "checks": {
+        "c2-B": {
+          "value": 0.9883333333333333,
+          "low": 0.9716666666666666,
+          "rule": ">=0.70 and lower >=0.60",
+          "passed": true
+        },
+        "c2-C": {
+          "value": 0.9983333333333333,
+          "low": 0.9949999999999999,
+          "rule": ">=0.70 and lower >=0.60",
+          "passed": true
+        },
+        "c2-D": {
+          "value": 0.9633333333333334,
+          "low": 0.9166666666666666,
+          "rule": ">=0.70 and lower >=0.60",
+          "passed": true
+        },
+        "c2-A": {
+          "value": 0.8966666666666666,
+          "low": 0.7867647058823529,
+          "rule": ">=0.95",
+          "passed": false
+        },
+        "two-step": {
+          "value": 1.0,
+          "rule": ">=0.90 (200 episodes)",
+          "passed": true
+        },
+        "v2-easy": {
+          "value": 1.0,
+          "low": 1.0,
+          "rule": ">=0.80 and lower >=0.70",
+          "passed": true
+        },
+        "c2-A fall+out": {
+          "value": 0.0011111111111111111,
+          "rule": "<=0.05",
+          "passed": true
+        },
+        "c2-B fall+out": {
+          "value": 0.0,
+          "rule": "<=0.05",
+          "passed": true
+        },
+        "c2-C fall+out": {
+          "value": 0.0,
+          "rule": "<=0.05",
+          "passed": true
+        },
+        "c2-D fall+out": {
+          "value": 0.0,
+          "rule": "<=0.05",
+          "passed": true
+        }
+      },
+      "passed": false
+    },
+    "s2027": {
+      "checks": {
+        "c2-B": {
+          "value": 0.98,
+          "low": 0.9583333333333333,
+          "rule": ">=0.70 and lower >=0.60",
+          "passed": true
+        },
+        "c2-C": {
+          "value": 0.9683333333333334,
+          "low": 0.9349999999999999,
+          "rule": ">=0.70 and lower >=0.60",
+          "passed": true
+        },
+        "c2-D": {
+          "value": 0.9233333333333333,
+          "low": 0.8783333333333334,
+          "rule": ">=0.70 and lower >=0.60",
+          "passed": true
+        },
+        "c2-A": {
+          "value": 0.8566666666666667,
+          "low": 0.7455555555555559,
+          "rule": ">=0.95",
+          "passed": false
+        },
+        "two-step": {
+          "value": 1.0,
+          "rule": ">=0.90 (200 episodes)",
+          "passed": true
+        },
+        "v2-easy": {
+          "value": 0.99,
+          "low": 0.9791666666666666,
+          "rule": ">=0.80 and lower >=0.70",
+          "passed": true
+        },
+        "c2-A fall+out": {
+          "value": 0.0,
+          "rule": "<=0.05",
+          "passed": true
+        },
+        "c2-B fall+out": {
+          "value": 0.0,
+          "rule": "<=0.05",
+          "passed": true
+        },
+        "c2-C fall+out": {
+          "value": 0.0,
+          "rule": "<=0.05",
+          "passed": true
+        },
+        "c2-D fall+out": {
+          "value": 0.0016666666666666668,
+          "rule": "<=0.05",
+          "passed": true
+        }
+      },
+      "passed": false
+    }
+  },
+  "auditA": {
+    "stack2-standard-100021": {
+      "feasible": "1",
+      "reason": "StandingChainToGoal",
+      "controllerSuccess": "0",
+      "tierReached": "1",
+      "tierCount": "2",
+      "stage": "Seek",
+      "training": {
+        "s2026": {
+          "episodes": 3,
+          "failures": 3
+        },
+        "s2027": null
+      }
+    },
+    "stack2-standard-100121": {
+      "feasible": "1",
+      "reason": "StandingChainToGoal",
+      "controllerSuccess": "0",
+      "tierReached": "1",
+      "tierCount": "2",
+      "stage": "Seek",
+      "training": {
+        "s2026": {
+          "episodes": 6,
+          "failures": 6
+        },
+        "s2027": {
+          "episodes": 3,
+          "failures": 2
+        }
+      }
+    },
+    "stack2-standard-100264": {
+      "feasible": "1",
+      "reason": "StandingChainToGoal",
+      "controllerSuccess": "0",
+      "tierReached": "1",
+      "tierCount": "2",
+      "stage": "Press",
+      "training": {
+        "s2026": null,
+        "s2027": {
+          "episodes": 7,
+          "failures": 4
+        }
+      }
+    },
+    "stack2-standard-100433": {
+      "feasible": "1",
+      "reason": "StandingChainToGoal",
+      "controllerSuccess": "0",
+      "tierReached": "1",
+      "tierCount": "2",
+      "stage": "Press",
+      "training": {
+        "s2026": null,
+        "s2027": {
+          "episodes": 8,
+          "failures": 8
+        }
+      }
+    },
+    "stack2-standard-100465": {
+      "feasible": "1",
+      "reason": "StandingChainToGoal",
+      "controllerSuccess": "0",
+      "tierReached": "1",
+      "tierCount": "2",
+      "stage": "Seek",
+      "training": {
+        "s2026": null,
+        "s2027": {
+          "episodes": 3,
+          "failures": 3
+        }
+      }
+    },
+    "stack2-standard-100469": {
+      "feasible": "1",
+      "reason": "StandingChainToGoal",
+      "controllerSuccess": "0",
+      "tierReached": "1",
+      "tierCount": "2",
+      "stage": "Seek",
+      "training": {
+        "s2026": {
+          "episodes": 3,
+          "failures": 3
+        },
+        "s2027": null
+      }
+    },
+    "stack2-standard-100482": {
+      "feasible": "1",
+      "reason": "StandingChainToGoal",
+      "controllerSuccess": "0",
+      "tierReached": "1",
+      "tierCount": "2",
+      "stage": "Press",
+      "training": {
+        "s2026": {
+          "episodes": 3,
+          "failures": 3
+        },
+        "s2027": null
+      }
+    },
+    "stack2-standard-100536": {
+      "feasible": "1",
+      "reason": "StandingChainToGoal",
+      "controllerSuccess": "0",
+      "tierReached": "1",
+      "tierCount": "2",
+      "stage": "Press",
+      "training": {
+        "s2026": {
+          "episodes": 5,
+          "failures": 5
+        },
+        "s2027": {
+          "episodes": 4,
+          "failures": 3
+        }
+      }
+    },
+    "stack2-standard-100634": {
+      "feasible": "1",
+      "reason": "StandingChainToGoal",
+      "controllerSuccess": "0",
+      "tierReached": "1",
+      "tierCount": "2",
+      "stage": "Seek",
+      "training": {
+        "s2026": {
+          "episodes": 3,
+          "failures": 2
+        },
+        "s2027": {
+          "episodes": 3,
+          "failures": 2
+        }
+      }
+    },
+    "stack2-standard-100658": {
+      "feasible": "1",
+      "reason": "StandingChainToGoal",
+      "controllerSuccess": "0",
+      "tierReached": "1",
+      "tierCount": "2",
+      "stage": "Press",
+      "training": {
+        "s2026": {
+          "episodes": 6,
+          "failures": 6
+        },
+        "s2027": {
+          "episodes": 3,
+          "failures": 3
+        }
+      }
+    },
+    "stack2-standard-100779": {
+      "feasible": "1",
+      "reason": "StandingChainToGoal",
+      "controllerSuccess": "0",
+      "tierReached": "1",
+      "tierCount": "2",
+      "stage": "Press",
+      "training": {
+        "s2026": null,
+        "s2027": {
+          "episodes": 7,
+          "failures": 5
+        }
+      }
+    },
+    "stack2-standard-100791": {
+      "feasible": "1",
+      "reason": "StandingChainToGoal",
+      "controllerSuccess": "0",
+      "tierReached": "1",
+      "tierCount": "2",
+      "stage": "Seek",
+      "training": {
+        "s2026": null,
+        "s2027": {
+          "episodes": 5,
+          "failures": 4
+        }
+      }
+    },
+    "stack2-standard-100852": {
+      "feasible": "1",
+      "reason": "StandingChainToGoal",
+      "controllerSuccess": "0",
+      "tierReached": "1",
+      "tierCount": "2",
+      "stage": "Seek",
+      "training": {
+        "s2026": {
+          "episodes": 3,
+          "failures": 3
+        },
+        "s2027": {
+          "episodes": 7,
+          "failures": 7
+        }
+      }
+    },
+    "stack2-standard-100888": {
+      "feasible": "1",
+      "reason": "StandingChainToGoal",
+      "controllerSuccess": "0",
+      "tierReached": "1",
+      "tierCount": "2",
+      "stage": "Seek",
+      "training": {
+        "s2026": {
+          "episodes": 4,
+          "failures": 4
+        },
+        "s2027": {
+          "episodes": 5,
+          "failures": 4
+        }
+      }
+    },
+    "stack2-standard-100905": {
+      "feasible": "1",
+      "reason": "StandingChainToGoal",
+      "controllerSuccess": "0",
+      "tierReached": "1",
+      "tierCount": "2",
+      "stage": "Seek",
+      "training": {
+        "s2026": null,
+        "s2027": {
+          "episodes": 5,
+          "failures": 3
+        }
+      }
+    }
+  }
+}

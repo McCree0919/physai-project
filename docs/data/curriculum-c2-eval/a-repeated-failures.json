@@ -1,0 +1,110 @@
+{
+  "rule": "last 10% of training episodes per seed, c2-A ground starts; >=3 episodes and failure share >=0.5 in a seed; union of seeds",
+  "perSeed": {
+    "s2026": {
+      "stack2-standard-100021": {
+        "episodes": 3,
+        "failures": 3
+      },
+      "stack2-standard-100469": {
+        "episodes": 3,
+        "failures": 3
+      },
+      "stack2-standard-100888": {
+        "episodes": 4,
+        "failures": 4
+      },
+      "stack2-standard-100482": {
+        "episodes": 3,
+        "failures": 3
+      },
+      "stack2-standard-100634": {
+        "episodes": 3,
+        "failures": 2
+      },
+      "stack2-standard-100852": {
+        "episodes": 3,
+        "failures": 3
+      },
+      "stack2-standard-100658": {
+        "episodes": 6,
+        "failures": 6
+      },
+      "stack2-standard-100536": {
+        "episodes": 5,
+        "failures": 5
+      },
+      "stack2-standard-100121": {
+        "episodes": 6,
+        "failures": 6
+      }
+    },
+    "s2027": {
+      "stack2-standard-100658": {
+        "episodes": 3,
+        "failures": 3
+      },
+      "stack2-standard-100791": {
+        "episodes": 5,
+        "failures": 4
+      },
+      "stack2-standard-100905": {
+        "episodes": 5,
+        "failures": 3
+      },
+      "stack2-standard-100264": {
+        "episodes": 7,
+        "failures": 4
+      },
+      "stack2-standard-100852": {
+        "episodes": 7,
+        "failures": 7
+      },
+      "stack2-standard-100779": {
+        "episodes": 7,
+        "failures": 5
+      },
+      "stack2-standard-100536": {
+        "episodes": 4,
+        "failures": 3
+      },
+      "stack2-standard-100888": {
+        "episodes": 5,
+        "failures": 4
+      },
+      "stack2-standard-100433": {
+        "episodes": 8,
+        "failures": 8
+      },
+      "stack2-standard-100465": {
+        "episodes": 3,
+        "failures": 3
+      },
+      "stack2-standard-100121": {
+        "episodes": 3,
+        "failures": 2
+      },
+      "stack2-standard-100634": {
+        "episodes": 3,
+        "failures": 2
+      }
+    }
+  },
+  "ids": [
+    "stack2-standard-100021",
+    "stack2-standard-100121",
+    "stack2-standard-100264",
+    "stack2-standard-100433",
+    "stack2-standard-100465",
+    "stack2-standard-100469",
+    "stack2-standard-100482",
+    "stack2-standard-100536",
+    "stack2-standard-100634",
+    "stack2-standard-100658",
+    "stack2-standard-100779",
+    "stack2-standard-100791",
+    "stack2-standard-100852",
+    "stack2-standard-100888",
+    "stack2-standard-100905"
+  ]
+}
