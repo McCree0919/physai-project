@@ -1,6 +1,7 @@
 {
     "version": 1,
     "rule": "v2 train pool only; C2 strata by effective rise (tall >= 0.9 m) on the geometry route, two standing levels only; per stratum 30 home clusters (40% below 75) held out with seed 17 after forcing C1 validation clusters to eval and C1 training clusters to train; 3 non-C1 structures that linked a C1 validation and a C1 training cluster excluded",
+    "excludedBridgeNote": "3 structures excluded from C2 train and eval (stack2-standard-100082, stack2-standard-100461, stack2-standard-100760): C1 clusters were linked over Easy only; each of these non-C1 structures links a C1 validation cluster with a C1 training cluster, i.e. it is a near-copy of both. Training on it would leak into the stratum evaluation (which holds all C1 validation structures), evaluating on it would test a near-copy of C1 training data; the C1 split is kept unchanged",
     "source": "structures/box-stacks-v2/train/manifest.json",
     "c1Pools": "structures/curriculum-v1/pools.json",
     "c1PoolsSha256": "19184a5f36ba859c11629c1651130b75a6ce19b3d9127cc166ed11d964c4cc04",

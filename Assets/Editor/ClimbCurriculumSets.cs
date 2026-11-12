@@ -70,7 +70,7 @@ public static class ClimbCurriculumSets
     }
     [Serializable] public sealed class StrataFile
     {
-        public int version=1;public string rule,source,c1Pools,c1PoolsSha256;public int splitSeed;public float tallRise;
+        public int version=1;public string rule,excludedBridgeNote,source,c1Pools,c1PoolsSha256;public int splitSeed;public float tallRise;
         public StratumSummary[] strata;public StratumEntry[] structures;
     }
 
@@ -164,7 +164,10 @@ public static class ClimbCurriculumSets
                 pools=StrataC2.Select(s=>new ClimbCurriculumSubPool {pool="c2-"+s,weight=WeightsC2[s],structures=rows.Where(r=>r.stratum==s&&r.split=="train").Select(Entry).ToArray()}).ToArray()}},
             validation=rows.Where(r=>StrataC2.Contains(r.stratum)&&r.split=="eval").Select(Entry).ToArray()};
         File.WriteAllText(RootC2+"/pools.json",JsonUtility.ToJson(file,true));
-        var strata=new StrataFile {rule=file.rule,source=ClimbGeneratorV2Sets.Root+"/train/manifest.json",c1Pools=Root+"/pools.json",c1PoolsSha256=ClimbGeneratorV2Sets.Sha256(c1Text),
+        var strata=new StrataFile {rule=file.rule,
+            excludedBridgeNote=$"{excluded.Count} structures excluded from C2 train and eval ({string.Join(", ",excluded.OrderBy(x=>x,StringComparer.Ordinal))}): C1 clusters were linked over Easy only; "+
+                $"each of these non-C1 structures links a C1 validation cluster with a C1 training cluster, i.e. it is a near-copy of both. Training on it would leak into the "+
+                $"stratum evaluation (which holds all C1 validation structures), evaluating on it would test a near-copy of C1 training data; the C1 split is kept unchanged",source=ClimbGeneratorV2Sets.Root+"/train/manifest.json",c1Pools=Root+"/pools.json",c1PoolsSha256=ClimbGeneratorV2Sets.Sha256(c1Text),
             splitSeed=SplitSeed,tallRise=TallRise,strata=summaries.ToArray(),structures=rows.ToArray()};
         File.WriteAllText(RootC2+"/strata.json",JsonUtility.ToJson(strata,true));
         var check=ClimbCurriculum.Load(RootC2+"/pools.json");
