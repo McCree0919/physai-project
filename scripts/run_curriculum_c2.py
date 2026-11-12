@@ -8,7 +8,7 @@ Early stops agreed with the user (section 4.1), ground starts only, per seed:
   2 forgetting  : at every 1M steps, if the two-step or c2-A ground-start success rate over the last 500k steps is below 85%.
 Both read the runtime episode CSVs (the step window is mapped to wall time through TensorBoard summary times) and TensorBoard
 (Climb/Pool/<pool>/GroundSuccess over the same summary steps); a seed is stopped only when both sources meet the condition, and every check
-is logged with both numbers. --smoke runs one short instance (no early stops) to check initialization, pools and spawns.
+is logged with both numbers. --smoke runs one short instance (1 env, SMOKE_EPISODES episodes, no early stops) and checks initialization, pool shares, spawns and logs.
 Re-running resumes an unfinished seed (--resume, no re-initialization) and skips finished or early-stopped ones."""
 import argparse
 import csv
@@ -34,6 +34,7 @@ INIT = {2026: 'climb_curriculum_c0c1_s2026', 2027: 'climb_curriculum_c0c1_s2027'
 MAX_STEPS, WINDOW, LEARN_CHECK, FORGET_EVERY, FORGET_MIN = 8_000_000, 500_000, 2_000_000, 1_000_000, .85
 TALL, KEEP = ('c2-B', 'c2-C', 'c2-D'), ('two-step', 'c2-A')
 POLL_SECONDS = 120
+SMOKE_EPISODES, SMOKE_SECONDS, SMOKE_SHARE_TOLERANCE = 2000, 2*3600, .03  # 2000 episodes: share SE <= 0.010, the +-0.03 tolerance is >= 3 SE
 
 
 def log(message):
@@ -156,6 +157,35 @@ def kill_tree(pid):
     subprocess.run(['taskkill', '/PID', str(pid), '/T', '/F'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
 
+def smoke_check(run_id, folder, rows):
+    """Stop conditions of the smoke run (user, 2026-11-11): exceptions, rejected structure swaps, sub-pool shares off by more than
+    SMOKE_SHARE_TOLERANCE, demonstration starts outside the training two-step, and episodes whose structure is not in their pool."""
+    pools = json.loads(POOLS.read_text(encoding='utf-8'));stage = pools['stages'][0];two = pools['twoStep']['id']
+    total = sum(q['weight'] for q in stage['pools'])
+    expected = {'two-step': pools['twoStepShare'], **{q['pool']: (1-pools['twoStepShare'])*q['weight']/total for q in stage['pools']}}
+    members = {'two-step': {two}, **{q['pool']: {e['id'] for e in q['structures']} for q in stage['pools']}}
+    failures = []
+    shares = {k: dict(expected=round(v, 4), observed=round(sum(r['pool'] == k for r in rows)/len(rows), 4)) for k, v in expected.items()}
+    for k, v in shares.items():
+        if abs(v['observed']-v['expected']) > SMOKE_SHARE_TOLERANCE:failures.append(f'share {k} {v["observed"]} vs {v["expected"]}')
+    unknown = sorted({r['pool'] for r in rows}-set(expected))
+    if unknown:failures.append(f'unknown pools {unknown}')
+    outside = [r for r in rows if r['pool'] in members and r['structure'] not in members[r['pool']]]
+    if outside:failures.append(f'{len(outside)} episodes on a structure outside their pool, e.g. {outside[0]["structure"]}/{outside[0]["pool"]}')
+    demo = [r for r in rows if r['spawn'] != 'ground']
+    bad_demo = [r for r in demo if r['pool'] != 'two-step' or r['structure'] != two]
+    if bad_demo:failures.append(f'{len(bad_demo)} demonstration starts outside the two-step, e.g. {bad_demo[0]["structure"]}')
+    logs = sorted(glob.glob(str(ROOT/'results'/run_id/'run_logs/Player-*.log')))+[str(folder/'console.txt')]
+    errors = []
+    for f in logs:
+        for line in open(f, encoding='utf-8', errors='replace'):
+            if 'Exception' in line or 'error CS' in line or 'Traceback' in line:errors.append(f'{Path(f).name}: {line.strip()[:300]}')
+    if not any('Player-' in f for f in logs):failures.append('no player log')
+    if errors:failures.append(f'{len(errors)} exception lines, first: {errors[0]}')
+    return dict(ok=not failures, failures=failures, episodes=len(rows), shares=shares, demoStarts=len(demo), demoOnTwoStep=len(demo)-len(bad_demo),
+                structuresSeen={k: len({r['structure'] for r in rows if r['pool'] == k}) for k in expected}, logsScanned=logs, exceptionLines=errors[:20])
+
+
 def train(seed, index, smoke=False):
     run_id = f'{PREFIX}_smoke_s{seed}' if smoke else f'{PREFIX}_s{seed}';folder = OUT/run_id;folder.mkdir(parents=True, exist_ok=True)
     if not smoke and trained(run_id):log(f'SKIP train {run_id} (complete)');return
@@ -180,8 +210,8 @@ def train(seed, index, smoke=False):
             if smoke:
                 time.sleep(20)
                 rows = monitor.episodes()
-                if len(rows) >= 120:kill_tree(process.pid);process.wait();break
-                if time.time()-started.timestamp() > 1800:kill_tree(process.pid);process.wait();raise RuntimeError('smoke run did not produce 120 episodes in 30 min')
+                if len(rows) >= SMOKE_EPISODES:kill_tree(process.pid);process.wait();break
+                if time.time()-started.timestamp() > SMOKE_SECONDS:kill_tree(process.pid);process.wait();raise RuntimeError(f'smoke run did not produce {SMOKE_EPISODES} episodes in {SMOKE_SECONDS} s')
                 continue
             time.sleep(POLL_SECONDS);stopped = monitor.poll()
             if stopped:
@@ -192,6 +222,9 @@ def train(seed, index, smoke=False):
         rows = monitor.episodes()
         log(f'SMOKE {run_id} episodes={len(rows)} rates={json.dumps(monitor.rates(rows))} pools={json.dumps({p: sum(r["pool"] == p for r in rows) for p in sorted({r["pool"] for r in rows})})} '
             f'spawns={json.dumps({s: sum(r["spawn"] == s for r in rows) for s in sorted({r["spawn"] for r in rows})})}')
+        check = smoke_check(run_id, folder, rows);(folder/'smoke_check.json').write_text(json.dumps(check, indent=2)+'\n', encoding='utf-8')
+        log(f'SMOKE_CHECK {run_id} ok={check["ok"]} failures={json.dumps(check["failures"])} shares={json.dumps(check["shares"])}')
+        if not check['ok']:raise RuntimeError(f'smoke check failed: {check["failures"]}')
         return
     if not stopped:monitor.poll()
     seconds = (datetime.datetime.now()-started).total_seconds()
