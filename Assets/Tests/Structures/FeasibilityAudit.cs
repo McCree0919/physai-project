@@ -119,6 +119,22 @@ public sealed class FeasibilityAudit
         Debug.Log($"CURRICULUM_C2_AUDIT_COMPLETE rows={rows.Count} folder={folder}");
         Assert.AreEqual(items.Count,rows.Count);
     }
+    // Layer 3 confirmation set (docs/LAYER3_CONFIRMATION_PREREG.md): geometry check and scripted controller on every structure, swapped
+    // in as the evaluation does. Reference only; nothing is filtered by the outcome.
+    [UnityTest,Explicit("Audit; run by name")]
+    public IEnumerator AuditConfirmationSet()
+    {
+        if(Environment.GetEnvironmentVariable("CLIMB_RUN_DIAGNOSTICS")!="1")Assert.Ignore("Set CLIMB_RUN_DIAGNOSTICS=1 to run this audit");
+        var m=JsonUtility.FromJson<ManifestView>(File.ReadAllText("structures/box-stacks-v3-confirm/manifest.json"));
+        var items=new List<(string set,string id,string difficulty,StructureDocument doc)> {("control","training-two-step","Control",StructureJson.Parse(File.ReadAllText("structures/curriculum-v1/two-step.json")))};
+        foreach(var e in m.structures)items.Add(("confirm",e.id,e.difficulty,StructureJson.Parse(File.ReadAllText(e.path))));
+        var rows=new List<string>();yield return Climb(items,rows,true);
+        string folder=Path.GetFullPath(Path.Combine(Application.dataPath,"..","results","confirm-audit"));Directory.CreateDirectory(folder);
+        File.WriteAllText(Path.Combine(folder,"audit.csv"),"set,id,difficulty,feasible,reason,route,requiredStanding,controllerSuccess,controllerFailed,tierReached,tierCount,stage,seconds\n"+string.Join("\n",rows)+"\n");
+        Debug.Log($"CONFIRM_AUDIT_COMPLETE rows={rows.Count} folder={folder}");
+        Assert.AreEqual(items.Count,rows.Count);
+    }
+
     [Serializable] sealed class TargetsView {public TargetView[] items;}
     [Serializable] sealed class TargetView {public string set,id,path,difficulty;}
 

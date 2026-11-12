@@ -45,7 +45,7 @@ public static class ClimbGeneratorV2Sets
         return new[] {Canonical(boxes),Canonical(mirrored)};
     }
     // Max bound difference in grid units if a and b share a support graph (either mirror), else -1.
-    static int Distance(Canon[] a,Canon[] b)
+    internal static int Distance(Canon[] a,Canon[] b)
     {
         int best=-1;
         foreach(var y in b)
