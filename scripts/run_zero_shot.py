@@ -103,4 +103,6 @@ def main():
         run(label, ROOT/model, folder, args.eval_set, None if args.total_episodes else args.episodes_per_arena, args.total_episodes)
 
 
-if __name__ == '__main__':main()
+if __name__ == '__main__':
+    import player_guard;player_guard.install()  # leftover check, kill-on-exit job, player log cap (player_guard.py)
+    main()

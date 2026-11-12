@@ -19,6 +19,7 @@ import json
 from pathlib import Path
 import subprocess
 import time
+import player_guard
 import numpy as np
 import onnxruntime as ort
 from mlagents_envs.environment import UnityEnvironment
@@ -136,7 +137,9 @@ def run(label, model, eval_set):
                     chosen = select(rows, ids)
                     if chosen:break
             if time.time()-started > 4*3600:raise RuntimeError(f'{label} {eval_set} did not complete in 4 h')
-    finally:env.close()
+    finally:
+        env.close()
+        player_guard.reap(f'{label} {eval_set}')  # a player that did not exit with the environment
     rows = read_rows(folder)
     dropped = collections.Counter(r['structure'] or '(scene)' for r in rows if ids is not None and r['structure'] not in ids)
     episodes = [r for v in chosen.values() for r in v]
@@ -165,4 +168,6 @@ def main():
             run(label, ROOT/MODELS[label], eval_set)
 
 
-if __name__ == '__main__':main()
+if __name__ == '__main__':
+    import player_guard;player_guard.install()  # leftover check, kill-on-exit job, player log cap (player_guard.py)
+    main()

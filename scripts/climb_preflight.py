@@ -33,4 +33,6 @@ def main():
         (folder/'report.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8');print(json.dumps(report))
     finally:env.close()
 
-if __name__=='__main__':main()
+if __name__ == '__main__':
+    import player_guard;player_guard.install()  # leftover check, kill-on-exit job, player log cap (player_guard.py)
+    main()

@@ -27,4 +27,6 @@ def main():
         print('DONE '+json.dumps(manifest['runs'][-1]),flush=True)
     print('BENCHMARKS_COMPLETE',flush=True)
 
-if __name__=='__main__':main()
+if __name__ == '__main__':
+    import player_guard;player_guard.install()  # leftover check, kill-on-exit job, player log cap (player_guard.py)
+    main()

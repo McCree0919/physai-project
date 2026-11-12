@@ -14,8 +14,7 @@ try {
     if(Test-Path -LiteralPath $output){Remove-Item -LiteralPath $output}
     $arguments="-batchmode -nographics -projectPath `"$root`" -runTests -testPlatform PlayMode -assemblyNames Climber.PlayModeTests;Structures.PlayModeTests -testResults `"$output`" -logFile `"$log`""
     Write-Host 'Close this project in Unity Editor before running batchmode.'
-    $process=Start-Process -FilePath $UnityPath -ArgumentList $arguments -WindowStyle Hidden -PassThru
-    $process.WaitForExit()
+    $process=Start-GuardedProcess -FilePath $UnityPath -ArgumentList $arguments -LogPath $log
     if(-not(Test-Path -LiteralPath $output)){throw "No test results: $log"}
     [xml]$results=Get-Content -LiteralPath $output -Raw
     $run=$results.'test-run'

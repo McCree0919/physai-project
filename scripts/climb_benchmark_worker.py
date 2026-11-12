@@ -57,4 +57,6 @@ def main():
     finally:
         done.set();thread.join(timeout=5);write('finish',seconds=elapsed(),steps=int(state['trainer'].get_step)if state['trainer']else 0,updates=state['updates'],budget_stop=state['budget']);writer.close()
 
-if __name__=='__main__':main()
+if __name__ == '__main__':
+    import player_guard;player_guard.install()  # leftover check, kill-on-exit job, player log cap (player_guard.py)
+    main()

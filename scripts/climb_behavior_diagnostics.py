@@ -93,4 +93,6 @@ def main():
     if args.spawn_stage and not args.snapshot_library:p.error('--spawn-stage requires --snapshot-library')
     for mode in args.modes:run(mode,args.episodes,Path(args.model),args.output,args.target_mode,args.worker_id,args.snapshot_library,args.spawn_stage,env_params)
 
-if __name__=='__main__':main()
+if __name__ == '__main__':
+    import player_guard;player_guard.install()  # leftover check, kill-on-exit job, player log cap (player_guard.py)
+    main()

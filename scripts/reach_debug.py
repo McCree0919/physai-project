@@ -202,4 +202,5 @@ def main():
 
 
 if __name__ == '__main__':
+    import player_guard;player_guard.install()  # leftover check, kill-on-exit job, player log cap (player_guard.py)
     main()

@@ -19,8 +19,7 @@ try {
     if (Test-Path -LiteralPath $resultPath) { Remove-Item -LiteralPath $resultPath }
     # Test Runner owns shutdown. Do not add -quit to this invocation.
     $arguments = "-batchmode -nographics -projectPath `"$root`" -runTests -testPlatform PlayMode -testFilter ClimberTests -testResults `"$resultPath`" -logFile `"$logPath`""
-    $process = Start-Process -FilePath $UnityPath -ArgumentList $arguments -WindowStyle Hidden -PassThru
-    $process.WaitForExit()
+    $process = Start-GuardedProcess -FilePath $UnityPath -ArgumentList $arguments -LogPath $logPath
     if (-not (Test-Path -LiteralPath $resultPath)) { throw "No test result XML. Log: $logPath" }
     [xml]$results = Get-Content -LiteralPath $resultPath -Raw
     $run = $results.'test-run'

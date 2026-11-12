@@ -21,6 +21,7 @@ from pathlib import Path
 import subprocess
 import sys
 import time
+import player_guard
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT/'results/climb-curriculum-c2'
@@ -186,6 +187,22 @@ def smoke_check(run_id, folder, rows):
                 structuresSeen={k: len({r['structure'] for r in rows if r['pool'] == k}) for k in expected}, logsScanned=logs, exceptionLines=errors[:20])
 
 
+def run_loop(process, smoke, started, monitor, folder, run_id, holder):
+    """Wait for the trainer: smoke stop at SMOKE_EPISODES, or the early-stop checks every POLL_SECONDS."""
+    while process.poll() is None:
+        if smoke:
+            time.sleep(20)
+            rows = monitor.episodes()
+            if len(rows) >= SMOKE_EPISODES:kill_tree(process.pid);process.wait();break
+            if time.time()-started.timestamp() > SMOKE_SECONDS:kill_tree(process.pid);process.wait();raise RuntimeError(f'smoke run did not produce {SMOKE_EPISODES} episodes in {SMOKE_SECONDS} s')
+            continue
+        time.sleep(POLL_SECONDS);stopped = holder['stopped'] = monitor.poll()
+        if stopped:
+            (folder/'early_stop.json').write_text(json.dumps(stopped, indent=2)+'\n', encoding='utf-8')
+            log(f'EARLY_STOP {run_id}: {stopped["check"]} {stopped["triggered"]}; stopping this seed')
+            kill_tree(process.pid);process.wait();break
+
+
 def train(seed, index, smoke=False):
     run_id = f'{PREFIX}_smoke_s{seed}' if smoke else f'{PREFIX}_s{seed}';folder = OUT/run_id;folder.mkdir(parents=True, exist_ok=True)
     if not smoke and trained(run_id):log(f'SKIP train {run_id} (complete)');return
@@ -205,19 +222,13 @@ def train(seed, index, smoke=False):
     log(f'START train {run_id} resume={resume} smoke={smoke}')
     started = datetime.datetime.now();monitor = Monitor(run_id, folder/'runtime');stopped = None
     with (folder/'console.txt').open('a', encoding='utf-8') as stream:
-        process = subprocess.Popen(command, cwd=ROOT, stdout=stream, stderr=subprocess.STDOUT)
-        while process.poll() is None:
-            if smoke:
-                time.sleep(20)
-                rows = monitor.episodes()
-                if len(rows) >= SMOKE_EPISODES:kill_tree(process.pid);process.wait();break
-                if time.time()-started.timestamp() > SMOKE_SECONDS:kill_tree(process.pid);process.wait();raise RuntimeError(f'smoke run did not produce {SMOKE_EPISODES} episodes in {SMOKE_SECONDS} s')
-                continue
-            time.sleep(POLL_SECONDS);stopped = monitor.poll()
-            if stopped:
-                (folder/'early_stop.json').write_text(json.dumps(stopped, indent=2)+'\n', encoding='utf-8')
-                log(f'EARLY_STOP {run_id}: {stopped["check"]} {stopped["triggered"]}; stopping this seed')
-                kill_tree(process.pid);process.wait();break
+        process = subprocess.Popen(command, cwd=ROOT, stdout=stream, stderr=subprocess.STDOUT);holder = {}
+        try:
+            run_loop(process, smoke, started, monitor, folder, run_id, holder)
+        finally:
+            if process.poll() is None:kill_tree(process.pid);process.wait()
+            player_guard.reap(f'after {run_id}')  # players the trainer left behind (mlagents may terminate its worker before the worker kills the player)
+        stopped = holder.get('stopped')
     if smoke:
         rows = monitor.episodes()
         log(f'SMOKE {run_id} episodes={len(rows)} rates={json.dumps(monitor.rates(rows))} pools={json.dumps({p: sum(r["pool"] == p for r in rows) for p in sorted({r["pool"] for r in rows})})} '
@@ -249,6 +260,7 @@ def main():
 
 
 if __name__ == '__main__':
+    import player_guard;player_guard.install()  # leftover check, kill-on-exit job, player log cap (player_guard.py)
     try:main()
     except Exception as error:
         log('FAILED '+repr(error));raise
