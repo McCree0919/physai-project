@@ -117,11 +117,12 @@ def main():
     # Paired curriculum - baseline, same seed, same structures (cluster bootstrap of the per-structure difference).
     summary['paired'] = {}
     for eval_set in ('c1-val', 'v2-easy'):
-        for seed in ('s2026', 's2027'):
-            a, b = scores.get((f'c0c1_{seed}', eval_set)), scores.get((f'height_{seed}_5M', eval_set))
+        for seed, baseline in ((s, b) for s in ('s2026', 's2027') for b in ('height_{}_5M', 'twostep8m_{}')):
+            a, b = scores.get((f'c0c1_{seed}', eval_set)), scores.get((baseline.format(seed), eval_set))
             if a and b:
                 d = {i: a[i]-b[i] for i in a}
-                summary['paired'][f'{eval_set}/{seed}'] = dict(curriculum=statistics.mean(a.values()), baseline=statistics.mean(b.values()), difference=statistics.mean(d.values()),
+                key = f'{eval_set}/{seed}' if baseline.startswith('height') else f'{eval_set}/{seed}/vs-twostep8m'
+                summary['paired'][key] = dict(curriculum=statistics.mean(a.values()), baseline=statistics.mean(b.values()), difference=statistics.mean(d.values()),
                                                                ci95=bootstrap(d, cluster), curriculumBetter=sum(v > 0 for v in d.values()), baselineBetter=sum(v < 0 for v in d.values()))
     (OUT/'summary.json').write_text(json.dumps(summary, indent=2)+'\n', encoding='utf-8')
     for name, rows in (('structures.csv', structure_rows), ('episodes.csv', episode_rows)):

@@ -39,9 +39,17 @@ MODELS = {
     'height_s2026_5M': 'results/climb_height_shaping_s2026/Climb/Climb-5000009.onnx',
     'height_s2027_5M': 'results/climb_height_shaping_s2027/Climb/Climb-5000007.onnx',
 }
+# Strict control (docs/LAYER3_CURRICULUM_C0C1.md §8): two-step only, 8M steps, post-fix environment. Final checkpoint = the one listed as
+# final_checkpoint in training_status.json (its .pt sibling in Climb/ has the same step count).
+def final_onnx(run_id):
+    status = json.loads((ROOT/'results'/run_id/'run_logs/training_status.json').read_text())['Climb']['final_checkpoint']
+    return f"results/{run_id}/Climb/Climb-{status['steps']}.onnx"
+for seed in ('2026', '2027'):
+    if (ROOT/f'results/climb_twostep_8m_s{seed}/run_logs/training_status.json').exists():MODELS[f'twostep8m_s{seed}'] = final_onnx(f'climb_twostep_8m_s{seed}')
 # Items 1-3 and 5 for the curriculum checkpoints; items 2-3 for the baselines, plus the two-step as a player-vs-editor check of §6.
 PLAN = {'c0c1_s2026': ['two-step', 'c1-val', 'v2-easy', 'v2-standard', 'v2-hard'], 'c0c1_s2027': ['two-step', 'c1-val', 'v2-easy', 'v2-standard', 'v2-hard'],
-        'height_s2026_5M': ['two-step', 'c1-val', 'v2-easy'], 'height_s2027_5M': ['two-step', 'c1-val', 'v2-easy']}
+        'height_s2026_5M': ['two-step', 'c1-val', 'v2-easy'], 'height_s2027_5M': ['two-step', 'c1-val', 'v2-easy'],
+        'twostep8m_s2026': ['two-step', 'c1-val', 'v2-easy'], 'twostep8m_s2027': ['two-step', 'c1-val', 'v2-easy']}
 ENV_PARAMS = {'target_mode': 0.0, 'height_reward_scale': 0.2, 'height_reward_cap': 0.2, 'spawn_seed': 0.0}
 PER_STRUCTURE, TWO_STEP_TOTAL, ARENAS = 20, 200, 16
 
@@ -151,6 +159,7 @@ def main():
         assert sha(PLAYER.parent/name.lstrip('*')) == digest, f'player build file {name} does not match the recorded hash'
     for label, sets in PLAN.items():
         if a.only and label != a.only:continue
+        if label not in MODELS:print('SKIP', label, '(not trained yet)', flush=True);continue
         for eval_set in sets:
             if a.set and eval_set != a.set:continue
             run(label, ROOT/MODELS[label], eval_set)
