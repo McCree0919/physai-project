@@ -60,4 +60,16 @@ public static class ClimbTrainingBuilder
         if(report.summary.result!=BuildResult.Succeeded||report.summary.totalErrors!=0)throw new BuildFailedException("Climb curriculum build failed");
         Debug.Log("CLIMB_CURRICULUM_BUILD_OK");
     }
+
+    // C2 (LAYER3_C2_DESIGN §5): one Unity run builds both players from committed scenes only, each into a new folder, so the C0+C1 and
+    // earlier diagnostic players stay byte-identical. Training: the unchanged ClimbTraining scene (weighted pools are a runtime change).
+    public static void BuildC2Players()
+    {
+        Directory.CreateDirectory("Builds/ClimbCurriculumC2");
+        var report=BuildPipeline.BuildPlayer(new BuildPlayerOptions {scenes=new[] {"Assets/Scenes/ClimbTraining.unity"},target=BuildTarget.StandaloneWindows64,locationPathName="Builds/ClimbCurriculumC2/Climb.exe"});
+        if(report.summary.result!=BuildResult.Succeeded||report.summary.totalErrors!=0)throw new BuildFailedException("Climb C2 build failed");
+        Debug.Log("CLIMB_CURRICULUM_C2_BUILD_OK");
+        ClimbDiagnosticsBuild.BuildCommitted("Builds/ClimbDiagnosticsC2/ClimbDiagnostics.exe");
+        Debug.Log("CLIMB_C2_PLAYERS_BUILD_OK");
+    }
 }

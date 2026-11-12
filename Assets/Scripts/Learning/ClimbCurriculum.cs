@@ -10,11 +10,15 @@ using UnityEngine;
 
 namespace PhysicalAI.Learning
 {
-    // Curriculum structure pools (LAYER3_DESIGN §17), loaded once per process from --climb-curriculum=<pools.json> (written by the editor
-    // menu Tools/Climb/Freeze Curriculum C0-C1). Each episode draws the training two-step with probability twoStepShare, otherwise a
-    // uniform structure of the active stage's pool. Validation structures are held out by cluster and never drawn.
+    // Curriculum structure pools (LAYER3_DESIGN §17, LAYER3_C2_DESIGN §1), loaded once per process from --climb-curriculum=<pools.json>
+    // (written by the editor menus Tools/Climb/Freeze Curriculum C0-C1 and C2). Each episode draws the training two-step with probability
+    // twoStepShare, otherwise a structure of the active stage. Version 1: a stage is one uniform pool (structures). Version 2: a stage may
+    // instead list weighted sub-pools (pools); a sub-pool is drawn with probability weight/sum(weights), then a uniform structure of it.
+    // A single-pool stage consumes exactly the same random draws as version 1, so earlier runs reproduce. Validation structures are held
+    // out by cluster and never drawn.
     [Serializable] public sealed class ClimbCurriculumEntry {public string id,path,sha256,cluster;}
-    [Serializable] public sealed class ClimbCurriculumStage {public string name,pool;public ClimbCurriculumEntry[] structures;}
+    [Serializable] public sealed class ClimbCurriculumSubPool {public string pool;public float weight;public ClimbCurriculumEntry[] structures;}
+    [Serializable] public sealed class ClimbCurriculumStage {public string name,pool;public ClimbCurriculumEntry[] structures;public ClimbCurriculumSubPool[] pools;}
     [Serializable] public sealed class ClimbCurriculumFile
     {
         public int version;public string root,rule;public float twoStepShare;
@@ -26,30 +30,57 @@ namespace PhysicalAI.Learning
         public const string TwoStepPool="two-step";
         public readonly float TwoStepShare;
         public readonly StructureDocument TwoStep;
-        readonly List<(string pool,StructureDocument[] docs)> stages=new List<(string,StructureDocument[])>();
+        public sealed class SubPool
+        {
+            public readonly string Pool;public readonly float Weight;public readonly StructureDocument[] Docs;
+            public SubPool(string pool,float weight,StructureDocument[] docs){Pool=pool;Weight=weight;Docs=docs;}
+        }
+        readonly List<SubPool[]> stages=new List<SubPool[]>();
         public int StageCount => stages.Count;
-        public IReadOnlyList<StructureDocument> Stage(int stage) => stages[stage].docs;
-        public string PoolOf(int stage) => stages[stage].pool;
+        // All structures of a stage, sub-pools in file order.
+        public IReadOnlyList<StructureDocument> Stage(int stage) => stages[stage].SelectMany(p=>p.Docs).ToList();
+        public IReadOnlyList<SubPool> SubPools(int stage) => stages[stage];
 
         public ClimbCurriculum(StructureDocument twoStep,float twoStepShare,IEnumerable<(string pool,StructureDocument[] docs)> stagePools)
+            : this(twoStep,twoStepShare,stagePools.Select(s=>new[] {new SubPool(s.pool,1,s.docs)})) {}
+        public ClimbCurriculum(StructureDocument twoStep,float twoStepShare,IEnumerable<SubPool[]> stagePools)
         {
             if(twoStepShare<0||twoStepShare>1)throw new ArgumentException("twoStepShare must be in [0,1]: "+twoStepShare);
             TwoStep=twoStep;TwoStepShare=twoStepShare;stages.AddRange(stagePools);
-            if(stages.Any(s=>s.docs.Length==0||s.pool==TwoStepPool))throw new ArgumentException("Every curriculum stage needs its own non-empty pool");
+            if(stages.Count==0||stages.Any(s=>s.Length==0))throw new ArgumentException("Every curriculum stage needs at least one pool");
+            var pools=stages.SelectMany(s=>s).ToList();
+            if(pools.Any(p=>p.Docs.Length==0||p.Pool==TwoStepPool||string.IsNullOrEmpty(p.Pool)))throw new ArgumentException("Every curriculum pool needs its own name and structures");
+            if(pools.Any(p=>!(p.Weight>0)||float.IsInfinity(p.Weight)))throw new ArgumentException("Curriculum pool weights must be positive and finite");
+            if(stages.Any(s=>s.Select(p=>p.Pool).Distinct().Count()!=s.Length))throw new ArgumentException("Pool names repeat within a stage");
         }
 
         public (string pool,StructureDocument doc) Sample(int stage,System.Random random)
         {
             if(stage<0||stage>=stages.Count)throw new ArgumentOutOfRangeException(nameof(stage),$"curriculum_stage {stage} outside 0..{stages.Count-1}");
             if(random.NextDouble()<TwoStepShare)return (TwoStepPool,TwoStep);
-            var docs=stages[stage].docs;return (stages[stage].pool,docs[random.Next(docs.Length)]);
+            var pools=stages[stage];var chosen=pools[0];
+            if(pools.Length>1)
+            {
+                // Only multi-pool stages draw a pool, so a single-pool stage keeps the version-1 random sequence.
+                double u=random.NextDouble()*pools.Sum(p=>(double)p.Weight);chosen=pools[pools.Length-1];
+                foreach(var p in pools){if(u<p.Weight){chosen=p;break;}u-=p.Weight;}
+            }
+            return (chosen.Pool,chosen.Docs[random.Next(chosen.Docs.Length)]);
         }
 
         static string Sha256(string text){using(var h=SHA256.Create())return string.Concat(h.ComputeHash(Encoding.UTF8.GetBytes(text)).Select(b=>b.ToString("x2")));}
         public static ClimbCurriculum Load(string path)
         {
             var file=JsonUtility.FromJson<ClimbCurriculumFile>(File.ReadAllText(path));
-            if(file==null||file.version!=1||file.twoStep==null||file.stages==null||file.stages.Length==0)throw new InvalidDataException("Malformed curriculum file "+path);
+            if(file==null||(file.version!=1&&file.version!=2)||file.twoStep==null||file.stages==null||file.stages.Length==0)throw new InvalidDataException("Malformed curriculum file "+path);
+            bool Weighted(ClimbCurriculumStage s) => s.pools!=null&&s.pools.Length>0;
+            foreach(var s in file.stages)
+            {
+                bool flat=s.structures!=null&&s.structures.Length>0;
+                if(Weighted(s)==flat)throw new InvalidDataException($"Curriculum stage {s.name} needs either structures or weighted pools, not both");
+                if(Weighted(s)&&file.version<2)throw new InvalidDataException($"Weighted pools in stage {s.name} need curriculum file version 2");
+            }
+            var entries=file.stages.SelectMany(s=>Weighted(s)?s.pools.SelectMany(p=>p.structures??new ClimbCurriculumEntry[0]):s.structures).ToList();
             string root=Path.GetFullPath(Path.Combine(Path.GetDirectoryName(Path.GetFullPath(path)),file.root??"."));
             StructureDocument Read(ClimbCurriculumEntry e)
             {
@@ -62,11 +93,14 @@ namespace PhysicalAI.Learning
             }
             var held=new HashSet<string>((file.validation??new ClimbCurriculumEntry[0]).Select(e=>e.id));
             var heldClusters=new HashSet<string>((file.validation??new ClimbCurriculumEntry[0]).Select(e=>e.cluster));
-            foreach(var e in file.stages.SelectMany(s=>s.structures))
+            foreach(var e in entries)
                 if(held.Contains(e.id)||(!string.IsNullOrEmpty(e.cluster)&&heldClusters.Contains(e.cluster)))throw new InvalidDataException($"Training structure {e.id} belongs to a held-out validation cluster");
-            var curriculum=new ClimbCurriculum(Read(file.twoStep),file.twoStepShare,file.stages.Select(s=>(s.pool,s.structures.Select(Read).ToArray())));
+            if(entries.Select(e=>e.id).Distinct().Count()!=entries.Count)throw new InvalidDataException("A structure appears in more than one curriculum pool");
+            var curriculum=new ClimbCurriculum(Read(file.twoStep),file.twoStepShare,file.stages.Select(s=>Weighted(s)
+                ?s.pools.Select(p=>new SubPool(p.pool,p.weight,(p.structures??new ClimbCurriculumEntry[0]).Select(Read).ToArray())).ToArray()
+                :new[] {new SubPool(s.pool,1,s.structures.Select(Read).ToArray())}));
             string Start(StructureDocument d) => string.Join("|",new[] {d.start.torso,d.start.leftHand,d.start.rightHand}.Select(p=>p.Position.ToString("R")+p.Rotation.ToString("R")));
-            foreach(var doc in curriculum.stages.SelectMany(s=>s.docs))
+            foreach(var doc in curriculum.stages.SelectMany(s=>s).SelectMany(p=>p.Docs))
                 if(Start(doc)!=Start(curriculum.TwoStep))throw new InvalidDataException($"Curriculum structure {doc.id} has a different start than the training two-step");
             return curriculum;
         }
@@ -79,7 +113,7 @@ namespace PhysicalAI.Learning
             foreach(string arg in Environment.GetCommandLineArgs())if(arg.StartsWith("--climb-curriculum="))
             {
                 commandLine=Load(arg.Substring("--climb-curriculum=".Length));
-                Debug.Log($"CLIMB_CURRICULUM twoStepShare={commandLine.TwoStepShare} stages={string.Join(",",commandLine.stages.Select(s=>s.pool+":"+s.docs.Length))}");
+                Debug.Log($"CLIMB_CURRICULUM twoStepShare={commandLine.TwoStepShare} stages={string.Join(",",commandLine.stages.Select(s=>string.Join("+",s.Select(p=>$"{p.Pool}:{p.Docs.Length}@{p.Weight}"))))}");
             }
             return commandLine;
         }

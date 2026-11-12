@@ -453,7 +453,11 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
+  CurriculumStage: -1
   TargetMode: 0
+  HeightRewardScale: 0
+  HeightRewardCap: 0
+  ExternalCommand: 0
 --- !u!114 &84813858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3477,7 +3481,11 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
+  CurriculumStage: -1
   TargetMode: 0
+  HeightRewardScale: 0
+  HeightRewardCap: 0
+  ExternalCommand: 0
 --- !u!114 &431976668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3897,7 +3905,11 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
+  CurriculumStage: -1
   TargetMode: 0
+  HeightRewardScale: 0
+  HeightRewardCap: 0
+  ExternalCommand: 0
 --- !u!114 &453511284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4807,7 +4819,11 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
+  CurriculumStage: -1
   TargetMode: 0
+  HeightRewardScale: 0
+  HeightRewardCap: 0
+  ExternalCommand: 0
 --- !u!114 &562405080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4984,7 +5000,11 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
+  CurriculumStage: -1
   TargetMode: 0
+  HeightRewardScale: 0
+  HeightRewardCap: 0
+  ExternalCommand: 0
 --- !u!114 &566818942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5161,7 +5181,11 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
+  CurriculumStage: -1
   TargetMode: 0
+  HeightRewardScale: 0
+  HeightRewardCap: 0
+  ExternalCommand: 0
 --- !u!114 &572963544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5338,7 +5362,11 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
+  CurriculumStage: -1
   TargetMode: 0
+  HeightRewardScale: 0
+  HeightRewardCap: 0
+  ExternalCommand: 0
 --- !u!114 &583292386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7684,7 +7712,11 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
+  CurriculumStage: -1
   TargetMode: 0
+  HeightRewardScale: 0
+  HeightRewardCap: 0
+  ExternalCommand: 0
 --- !u!114 &757294022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8809,7 +8841,11 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
+  CurriculumStage: -1
   TargetMode: 0
+  HeightRewardScale: 0
+  HeightRewardCap: 0
+  ExternalCommand: 0
 --- !u!114 &1063063477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9509,7 +9545,11 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
+  CurriculumStage: -1
   TargetMode: 0
+  HeightRewardScale: 0
+  HeightRewardCap: 0
+  ExternalCommand: 0
 --- !u!114 &1103102983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11190,7 +11230,11 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
+  CurriculumStage: -1
   TargetMode: 0
+  HeightRewardScale: 0
+  HeightRewardCap: 0
+  ExternalCommand: 0
 --- !u!114 &1212644157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12072,7 +12116,11 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
+  CurriculumStage: -1
   TargetMode: 0
+  HeightRewardScale: 0
+  HeightRewardCap: 0
+  ExternalCommand: 0
 --- !u!114 &1351580866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12735,7 +12783,11 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
+  CurriculumStage: -1
   TargetMode: 0
+  HeightRewardScale: 0
+  HeightRewardCap: 0
+  ExternalCommand: 0
 --- !u!114 &1371541484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13524,7 +13576,11 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
+  CurriculumStage: -1
   TargetMode: 0
+  HeightRewardScale: 0
+  HeightRewardCap: 0
+  ExternalCommand: 0
 --- !u!114 &1399383709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14546,7 +14602,11 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
+  CurriculumStage: -1
   TargetMode: 0
+  HeightRewardScale: 0
+  HeightRewardCap: 0
+  ExternalCommand: 0
 --- !u!114 &1543537173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15218,7 +15278,11 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
+  CurriculumStage: -1
   TargetMode: 0
+  HeightRewardScale: 0
+  HeightRewardCap: 0
+  ExternalCommand: 0
 --- !u!114 &1645500013
 MonoBehaviour:
   m_ObjectHideFlags: 0
