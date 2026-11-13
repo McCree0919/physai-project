@@ -1,0 +1,345 @@
+{
+  "bootstrapResamples": 10000,
+  "sets": {
+    "confirm-easy": {
+      "c2_s2026": {
+        "structures": 41,
+        "feasible": 41,
+        "excludedByGeometry": [],
+        "scriptedOnExcluded": 0,
+        "episodes": 820,
+        "mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "structuresAll20": 41,
+        "structuresZero": 0,
+        "level1": 1.0,
+        "fallOrOutOfBounds": 0.0,
+        "failureStages": {},
+        "failureReasons": {},
+        "scripted": {
+          "completed": 13,
+          "of": 41
+        },
+        "vsScripted": {
+          "policy>=0.5/scripted1": 13,
+          "policy>=0.5/scripted0": 28
+        },
+        "modelSha256": "bb08ab192e15bb80e01344672b408ac7b5590cc194064d7a21a2e73cc21f0134",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "755bd2e7efb24b3fef112b803da1bb2f4f1ceb57b6d07d79ba5618dcb0474b4b",
+        "droppedOutsideSet": {}
+      },
+      "c2_s2027": {
+        "structures": 41,
+        "feasible": 41,
+        "excludedByGeometry": [],
+        "scriptedOnExcluded": 0,
+        "episodes": 820,
+        "mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "structuresAll20": 41,
+        "structuresZero": 0,
+        "level1": 1.0,
+        "fallOrOutOfBounds": 0.0,
+        "failureStages": {},
+        "failureReasons": {},
+        "scripted": {
+          "completed": 13,
+          "of": 41
+        },
+        "vsScripted": {
+          "policy>=0.5/scripted1": 13,
+          "policy>=0.5/scripted0": 28
+        },
+        "modelSha256": "32e71adee65e4d90acdf718911394204d3c5b46ec87ccf9c05ba1987718955d2",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "755bd2e7efb24b3fef112b803da1bb2f4f1ceb57b6d07d79ba5618dcb0474b4b",
+        "droppedOutsideSet": {}
+      }
+    },
+    "confirm-standard": {
+      "c2_s2026": {
+        "structures": 60,
+        "feasible": 59,
+        "excludedByGeometry": [
+          "confirm-stack2-standard-300042"
+        ],
+        "scriptedOnExcluded": 0,
+        "episodes": 1180,
+        "mean": 0.9372881355932203,
+        "ci95": [
+          0.8796610169491527,
+          0.9822033898305085
+        ],
+        "structuresAll20": 50,
+        "structuresZero": 2,
+        "level1": 0.9991525423728813,
+        "fallOrOutOfBounds": 0.0,
+        "failureStages": {
+          "level1-not-level2": 22,
+          "level2-not-goal": 52
+        },
+        "failureReasons": {
+          "Timeout": 74
+        },
+        "scripted": {
+          "completed": 45,
+          "of": 59
+        },
+        "vsScripted": {
+          "policy>=0.5/scripted1": 45,
+          "policy>=0.5/scripted0": 12,
+          "policy<0.5/scripted0": 2
+        },
+        "modelSha256": "bb08ab192e15bb80e01344672b408ac7b5590cc194064d7a21a2e73cc21f0134",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "5d00c2da75c3b0dde73cc7a6e4f06684fbc34fe6d26bf2b382aa0bb3a548c697",
+        "droppedOutsideSet": {}
+      },
+      "c2_s2027": {
+        "structures": 60,
+        "feasible": 59,
+        "excludedByGeometry": [
+          "confirm-stack2-standard-300042"
+        ],
+        "scriptedOnExcluded": 0,
+        "episodes": 1180,
+        "mean": 0.7771186440677966,
+        "ci95": [
+          0.6881355932203388,
+          0.8584745762711863
+        ],
+        "structuresAll20": 32,
+        "structuresZero": 3,
+        "level1": 0.9932203389830508,
+        "fallOrOutOfBounds": 0.001694915254237288,
+        "failureStages": {
+          "level1-not-level2": 116,
+          "level2-not-goal": 140,
+          "below-level1": 7
+        },
+        "failureReasons": {
+          "Timeout": 261,
+          "Fall": 2
+        },
+        "scripted": {
+          "completed": 45,
+          "of": 59
+        },
+        "vsScripted": {
+          "policy>=0.5/scripted1": 36,
+          "policy>=0.5/scripted0": 11,
+          "policy<0.5/scripted0": 3,
+          "policy<0.5/scripted1": 9
+        },
+        "modelSha256": "32e71adee65e4d90acdf718911394204d3c5b46ec87ccf9c05ba1987718955d2",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "5d00c2da75c3b0dde73cc7a6e4f06684fbc34fe6d26bf2b382aa0bb3a548c697",
+        "droppedOutsideSet": {}
+      }
+    },
+    "confirm-hard": {
+      "c2_s2026": {
+        "structures": 60,
+        "feasible": 60,
+        "excludedByGeometry": [],
+        "scriptedOnExcluded": 0,
+        "episodes": 1200,
+        "mean": 0.9416666666666667,
+        "ci95": [
+          0.8975000000000001,
+          0.9758333333333336
+        ],
+        "structuresAll20": 43,
+        "structuresZero": 0,
+        "level1": 0.985,
+        "fallOrOutOfBounds": 0.0008333333333333334,
+        "failureStages": {
+          "level1-not-level2": 11,
+          "level2-not-goal": 57,
+          "below-level1": 2
+        },
+        "failureReasons": {
+          "Timeout": 68,
+          "Fall": 1,
+          "UnrecoverableGrip": 1
+        },
+        "scripted": {
+          "completed": 40,
+          "of": 60
+        },
+        "vsScripted": {
+          "policy>=0.5/scripted1": 39,
+          "policy>=0.5/scripted0": 20,
+          "policy<0.5/scripted1": 1
+        },
+        "modelSha256": "bb08ab192e15bb80e01344672b408ac7b5590cc194064d7a21a2e73cc21f0134",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "7beb59f3c9161442c30983bdbac93dc964ffad53fae69742cd0684fe32e21dc6",
+        "droppedOutsideSet": {}
+      },
+      "c2_s2027": {
+        "structures": 60,
+        "feasible": 60,
+        "excludedByGeometry": [],
+        "scriptedOnExcluded": 0,
+        "episodes": 1200,
+        "mean": 0.8108333333333333,
+        "ci95": [
+          0.735,
+          0.8799999999999998
+        ],
+        "structuresAll20": 30,
+        "structuresZero": 3,
+        "level1": 0.9941666666666666,
+        "fallOrOutOfBounds": 0.0008333333333333334,
+        "failureStages": {
+          "level2-not-goal": 141,
+          "level1-not-level2": 85,
+          "below-level1": 1
+        },
+        "failureReasons": {
+          "Timeout": 226,
+          "Fall": 1
+        },
+        "scripted": {
+          "completed": 40,
+          "of": 60
+        },
+        "vsScripted": {
+          "policy>=0.5/scripted1": 33,
+          "policy>=0.5/scripted0": 19,
+          "policy<0.5/scripted1": 7,
+          "policy<0.5/scripted0": 1
+        },
+        "modelSha256": "32e71adee65e4d90acdf718911394204d3c5b46ec87ccf9c05ba1987718955d2",
+        "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc",
+        "poolSha256": "7beb59f3c9161442c30983bdbac93dc964ffad53fae69742cd0684fe32e21dc6",
+        "droppedOutsideSet": {}
+      }
+    }
+  },
+  "twoStep": {
+    "c2_s2026": {
+      "episodes": 200,
+      "success": 1.0,
+      "fallOrOutOfBounds": 0.0,
+      "reasons": {
+        "Success": 200
+      },
+      "modelSha256": "bb08ab192e15bb80e01344672b408ac7b5590cc194064d7a21a2e73cc21f0134",
+      "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc"
+    },
+    "c2_s2027": {
+      "episodes": 200,
+      "success": 1.0,
+      "fallOrOutOfBounds": 0.0,
+      "reasons": {
+        "Success": 200
+      },
+      "modelSha256": "32e71adee65e4d90acdf718911394204d3c5b46ec87ccf9c05ba1987718955d2",
+      "playerSha256": "e1a9d9e062bbcdb91f76983fae8bb1e4fb8036d55289318ef91033f130d38ecc"
+    }
+  },
+  "acceptance": {
+    "s2026": {
+      "checks": {
+        "two-step": {
+          "value": 1.0,
+          "rule": ">=0.90 (200 episodes)",
+          "passed": true
+        },
+        "confirm-easy": {
+          "value": 1.0,
+          "low": 1.0,
+          "n": 41,
+          "rule": ">=0.80 and lower >=0.70",
+          "passed": true
+        },
+        "confirm-easy fall+out": {
+          "value": 0.0,
+          "rule": "<=0.05",
+          "passed": true
+        },
+        "confirm-standard": {
+          "value": 0.9372881355932203,
+          "low": 0.8796610169491527,
+          "n": 59,
+          "rule": ">=0.60 and lower >=0.50",
+          "passed": true
+        },
+        "confirm-standard fall+out": {
+          "value": 0.0,
+          "rule": "<=0.05",
+          "passed": true
+        },
+        "confirm-hard": {
+          "value": 0.9416666666666667,
+          "low": 0.8975000000000001,
+          "n": 60,
+          "rule": ">=0.30 and lower >=0.20",
+          "passed": true
+        },
+        "confirm-hard fall+out": {
+          "value": 0.0008333333333333334,
+          "rule": "<=0.05",
+          "passed": true
+        }
+      },
+      "passed": true
+    },
+    "s2027": {
+      "checks": {
+        "two-step": {
+          "value": 1.0,
+          "rule": ">=0.90 (200 episodes)",
+          "passed": true
+        },
+        "confirm-easy": {
+          "value": 1.0,
+          "low": 1.0,
+          "n": 41,
+          "rule": ">=0.80 and lower >=0.70",
+          "passed": true
+        },
+        "confirm-easy fall+out": {
+          "value": 0.0,
+          "rule": "<=0.05",
+          "passed": true
+        },
+        "confirm-standard": {
+          "value": 0.7771186440677966,
+          "low": 0.6881355932203388,
+          "n": 59,
+          "rule": ">=0.60 and lower >=0.50",
+          "passed": true
+        },
+        "confirm-standard fall+out": {
+          "value": 0.001694915254237288,
+          "rule": "<=0.05",
+          "passed": true
+        },
+        "confirm-hard": {
+          "value": 0.8108333333333333,
+          "low": 0.735,
+          "n": 60,
+          "rule": ">=0.30 and lower >=0.20",
+          "passed": true
+        },
+        "confirm-hard fall+out": {
+          "value": 0.0008333333333333334,
+          "rule": "<=0.05",
+          "passed": true
+        }
+      },
+      "passed": true
+    }
+  },
+  "allSeedsPassed": true
+}

@@ -1,0 +1,107 @@
+{
+  "tolerance": 0.0001,
+  "torch": "2.7.1+cu128",
+  "onnxruntime": "1.19.2",
+  "models": {
+    "c2_s2026": {
+      "onnx": "results/climb_curriculum_c2_s2026/Climb/Climb-8000057.onnx",
+      "onnxSha256": "bb08ab192e15bb80e01344672b408ac7b5590cc194064d7a21a2e73cc21f0134",
+      "pt": "results/climb_curriculum_c2_s2026/Climb/Climb-8000057.pt",
+      "ptSha256": "4f8a35d8d899ebc597e1d01f76d49866752905277b0b975a04c84f3c11401703",
+      "checks": {
+        "two-step": {
+          "n": 4000,
+          "continuousMaxAbsDiff": 1.4901161193847656e-06,
+          "continuousMeanAbsDiff": 1.0787591975258692e-07,
+          "continuousSaturatedShare": 0.2587083333333333,
+          "discreteDisagreements": 0,
+          "discreteDisagreementsAboveMargin": 0,
+          "minLogitMargin": 0.00017676502466201782,
+          "onnxRepeatIdentical": true
+        },
+        "two-step+noise": {
+          "n": 4000,
+          "continuousMaxAbsDiff": 2.1457672119140625e-06,
+          "continuousMeanAbsDiff": 1.731679475369674e-07,
+          "continuousSaturatedShare": 0.34625,
+          "discreteDisagreements": 0,
+          "discreteDisagreementsAboveMargin": 0,
+          "minLogitMargin": 0.00018605589866638184,
+          "onnxRepeatIdentical": true
+        },
+        "v2-standard": {
+          "n": 4000,
+          "continuousMaxAbsDiff": 1.1920928955078125e-06,
+          "continuousMeanAbsDiff": 1.1179165682051462e-07,
+          "continuousSaturatedShare": 0.21595833333333334,
+          "discreteDisagreements": 0,
+          "discreteDisagreementsAboveMargin": 0,
+          "minLogitMargin": 1.6570091247558594e-05,
+          "onnxRepeatIdentical": true
+        },
+        "v2-standard+noise": {
+          "n": 4000,
+          "continuousMaxAbsDiff": 1.8030405044555664e-06,
+          "continuousMeanAbsDiff": 1.6887432252588042e-07,
+          "continuousSaturatedShare": 0.35179166666666667,
+          "discreteDisagreements": 0,
+          "discreteDisagreementsAboveMargin": 0,
+          "minLogitMargin": 0.000143393874168396,
+          "onnxRepeatIdentical": true
+        }
+      },
+      "passed": true
+    },
+    "c2_s2027": {
+      "onnx": "results/climb_curriculum_c2_s2027/Climb/Climb-8000027.onnx",
+      "onnxSha256": "32e71adee65e4d90acdf718911394204d3c5b46ec87ccf9c05ba1987718955d2",
+      "pt": "results/climb_curriculum_c2_s2027/Climb/Climb-8000027.pt",
+      "ptSha256": "b856e588a943a14cc295fe77bd56de09d03655af229768137f9c59a0a0d428a8",
+      "checks": {
+        "two-step": {
+          "n": 4000,
+          "continuousMaxAbsDiff": 1.430511474609375e-06,
+          "continuousMeanAbsDiff": 1.1022503088042868e-07,
+          "continuousSaturatedShare": 0.26916666666666667,
+          "discreteDisagreements": 0,
+          "discreteDisagreementsAboveMargin": 0,
+          "minLogitMargin": 0.00304596871137619,
+          "onnxRepeatIdentical": true
+        },
+        "two-step+noise": {
+          "n": 4000,
+          "continuousMaxAbsDiff": 1.7881393432617188e-06,
+          "continuousMeanAbsDiff": 1.6418064774370578e-07,
+          "continuousSaturatedShare": 0.37333333333333335,
+          "discreteDisagreements": 0,
+          "discreteDisagreementsAboveMargin": 0,
+          "minLogitMargin": 4.252418875694275e-05,
+          "onnxRepeatIdentical": true
+        },
+        "v2-standard": {
+          "n": 4000,
+          "continuousMaxAbsDiff": 1.2516975402832031e-06,
+          "continuousMeanAbsDiff": 1.122810076026326e-07,
+          "continuousSaturatedShare": 0.18891666666666668,
+          "discreteDisagreements": 0,
+          "discreteDisagreementsAboveMargin": 0,
+          "minLogitMargin": 1.741945743560791e-05,
+          "onnxRepeatIdentical": true
+        },
+        "v2-standard+noise": {
+          "n": 4000,
+          "continuousMaxAbsDiff": 1.7881393432617188e-06,
+          "continuousMeanAbsDiff": 1.6788661127975502e-07,
+          "continuousSaturatedShare": 0.3645,
+          "discreteDisagreements": 0,
+          "discreteDisagreementsAboveMargin": 0,
+          "minLogitMargin": 1.2755393981933594e-05,
+          "onnxRepeatIdentical": true
+        }
+      },
+      "passed": true
+    }
+  },
+  "passed": true,
+  "time": "2026-11-12T16:45:06"
+}
