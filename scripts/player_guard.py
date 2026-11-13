@@ -76,7 +76,7 @@ def processes():
     """All processes with path and command line (CIM), as dicts: pid, ppid, name, path, cmd."""
     script = ('Get-CimInstance Win32_Process | Select-Object ProcessId,ParentProcessId,Name,ExecutablePath,CommandLine | ConvertTo-Json -Compress')
     out = subprocess.run(['powershell', '-NoProfile', '-NonInteractive', '-Command', script], capture_output=True, text=True, timeout=120).stdout
-    rows = json.loads(out) if out.strip() else []
+    rows = json.loads(out, strict=False) if out.strip() else []
     return [dict(pid=r['ProcessId'], ppid=r['ParentProcessId'], name=(r['Name'] or ''), path=(r['ExecutablePath'] or ''), cmd=(r['CommandLine'] or '')) for r in rows]
 
 
