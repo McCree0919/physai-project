@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 1,
+  "id": "confirm-stack2-standard-300192",
+  "units": {
+    "length": "m",
+    "mass": "kg",
+    "time": "s"
+  },
+  "bodyProfile": "layer1-validated",
+  "generator": {
+    "name": "boxStack",
+    "difficulty": "Standard",
+    "version": 2,
+    "seed": 300192,
+    "parameters": null,
+    "features": {
+      "levels": 3,
+      "constructionLevels": 3,
+      "overhangCount": 2,
+      "exposedTopEdges": 7,
+      "coarseMinimumTransitions": 3,
+      "maxRise": 1.05,
+      "maxVerticalFace": 1.05213571,
+      "maxUntoppedRise": 1.050626,
+      "maxOverhang": 0.5012419,
+      "maxGap": 0.0,
+      "totalHeight": 2.05
+    }
+  },
+  "materials": [
+    {
+      "id": "lowFriction",
+      "frictionCombine": "Average",
+      "bounceCombine": "Average",
+      "staticFriction": 0.15,
+      "dynamicFriction": 0.15,
+      "bounciness": 0.0
+    }
+  ],
+  "objects": [
+    {
+      "id": "ground",
+      "type": "box",
+      "motion": "static",
+      "materialId": "lowFriction",
+      "surfacePolicy": null,
+      "size": [
+        12.0,
+        0.2,
+        12.0
+      ],
+      "pose": {
+        "position": [
+          0.0,
+          -0.1,
+          2.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "massKg": null,
+      "graspable": false,
+      "movable": false
+    },
+    {
+      "id": "level0",
+      "type": "box",
+      "motion": "static",
+      "materialId": "lowFriction",
+      "surfacePolicy": "autoBoxTop",
+      "size": [
+        1.2,
+        0.5,
+        1.80000007
+      ],
+      "pose": {
+        "position": [
+          -3.74655647E-05,
+          0.250172,
+          0.9000092
+        ],
+        "rotation": [
+          2.02697338E-05,
+          2.79531582E-06,
+          9.198267E-05,
+          1.0
+        ]
+      },
+      "massKg": 25.0,
+      "graspable": true,
+      "settleAsDynamic": true,
+      "movable": false,
+      "presetId": "Wide"
+    },
+    {
+      "id": "level1",
+      "type": "box",
+      "motion": "static",
+      "materialId": "lowFriction",
+      "surfacePolicy": "autoBoxTop",
+      "size": [
+        1.25,
+        1.05000007,
+        1.25
+      ],
+      "pose": {
+        "position": [
+          -0.199895263,
+          1.02487707,
+          1.42590988
+        ],
+        "rotation": [
+          0.000695267168,
+          5.9271697E-06,
+          -0.000159438845,
+          0.999999762
+        ]
+      },
+      "massKg": 25.0,
+      "graspable": true,
+      "settleAsDynamic": true,
+      "movable": false,
+      "presetId": "Tall"
+    },
+    {
+      "id": "level2",
+      "type": "box",
+      "motion": "static",
+      "materialId": "lowFriction",
+      "surfacePolicy": "autoBoxTop",
+      "size": [
+        1.80000007,
+        0.5,
+        1.2
+      ],
+      "pose": {
+        "position": [
+          0.0005246574,
+          1.79851031,
+          1.95238447
+        ],
+        "rotation": [
+          0.0009818248,
+          7.682596E-06,
+          -0.000273418962,
+          0.9999995
+        ]
+      },
+      "massKg": 25.0,
+      "graspable": true,
+      "settleAsDynamic": true,
+      "movable": false,
+      "presetId": "Wide"
+    }
+  ],
+  "start": {
+    "torso": {
+      "position": [
+        0.0,
+        0.4,
+        -0.4
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "leftHand": {
+      "position": [
+        -0.3,
+        1.15,
+        -0.15
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "rightHand": {
+      "position": [
+        0.3,
+        0.95,
+        -0.15
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "goal": {
+    "frame": "structure",
+    "center": [
+      0.0005246574,
+      2.64851046,
+      1.95238447
+    ],
+    "size": [
+      0.6,
+      0.4,
+      0.6
+    ],
+    "dwellSeconds": 0.3,
+    "maxTorsoSpeed": 0.5
+  },
+  "validation": {
+    "passed": true,
+    "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+    "inputHash": "2c34530e6b8a8767f6318c782c151dbd4f8a39d2c1c920fa7cdf1e8134c2152e",
+    "unityVersion": "6000.3.24f1",
+    "scope": "dynamic-settle-then-static",
+    "staticObjects": 1,
+    "dynamicObjects": 3,
+    "simulationSteps": 151,
+    "simulatedSeconds": 3.01999879,
+    "fixedDeltaTime": 0.0199999921,
+    "maxPenetration": 0.00105673075,
+    "boxes": [
+      {
+        "id": "level0",
+        "displacement": 0.000176261761,
+        "angle": 0.0,
+        "speed": 0.0,
+        "angularSpeed": 0.0,
+        "windowDrift": 6.52943854E-05,
+        "windowAngle": 0.0,
+        "sleeping": true
+      },
+      {
+        "id": "level1",
+        "displacement": 0.000924158,
+        "angle": 0.0,
+        "speed": 0.0,
+        "angularSpeed": 0.0,
+        "windowDrift": 0.00022182407,
+        "windowAngle": 0.0,
+        "sleeping": true
+      },
+      {
+        "id": "level2",
+        "displacement": 0.00286015379,
+        "angle": 0.0,
+        "speed": 0.0,
+        "angularSpeed": 0.0,
+        "windowDrift": 0.000443717756,
+        "windowAngle": 0.0,
+        "sleeping": true
+      }
+    ]
+  }
+}

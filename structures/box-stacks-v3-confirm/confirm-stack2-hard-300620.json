@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "id": "confirm-stack2-hard-300620",
+  "units": {
+    "length": "m",
+    "mass": "kg",
+    "time": "s"
+  },
+  "bodyProfile": "layer1-validated",
+  "generator": {
+    "name": "boxStack",
+    "difficulty": "Hard",
+    "version": 2,
+    "seed": 300620,
+    "parameters": null,
+    "features": {
+      "levels": 3,
+      "constructionLevels": 3,
+      "overhangCount": 2,
+      "exposedTopEdges": 12,
+      "coarseMinimumTransitions": 2,
+      "maxRise": 0.5,
+      "maxVerticalFace": 1.0,
+      "maxUntoppedRise": 0.5004644,
+      "maxOverhang": 0.501726866,
+      "maxGap": 0.199972391,
+      "totalHeight": 1.5
+    }
+  },
+  "materials": [
+    {
+      "id": "lowFriction",
+      "frictionCombine": "Average",
+      "bounceCombine": "Average",
+      "staticFriction": 0.15,
+      "dynamicFriction": 0.15,
+      "bounciness": 0.0
+    }
+  ],
+  "objects": [
+    {
+      "id": "ground",
+      "type": "box",
+      "motion": "static",
+      "materialId": "lowFriction",
+      "surfacePolicy": null,
+      "size": [
+        12.0,
+        0.2,
+        12.0
+      ],
+      "pose": {
+        "position": [
+          0.0,
+          -0.1,
+          2.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "massKg": null,
+      "graspable": false,
+      "movable": false
+    },
+    {
+      "id": "level0",
+      "type": "box",
+      "motion": "static",
+      "materialId": "lowFriction",
+      "surfacePolicy": "autoBoxTop",
+      "size": [
+        1.9,
+        0.5,
+        1.25
+      ],
+      "pose": {
+        "position": [
+          -2.12173036E-05,
+          0.250262916,
+          0.6249929
+        ],
+        "rotation": [
+          5.071879E-05,
+          9.998369E-06,
+          7.26668441E-05,
+          1.0
+        ]
+      },
+      "massKg": 25.0,
+      "graspable": true,
+      "settleAsDynamic": true,
+      "movable": false,
+      "presetId": "Wide"
+    },
+    {
+      "id": "level1",
+      "type": "box",
+      "motion": "static",
+      "materialId": "lowFriction",
+      "surfacePolicy": "autoBoxTop",
+      "size": [
+        1.9,
+        0.5,
+        1.25
+      ],
+      "pose": {
+        "position": [
+          -0.200156048,
+          0.749431252,
+          1.12600565
+        ],
+        "rotation": [
+          0.00151729886,
+          -1.19394645E-06,
+          9.638422E-05,
+          0.9999989
+        ]
+      },
+      "massKg": 25.0,
+      "graspable": true,
+      "settleAsDynamic": true,
+      "movable": false,
+      "presetId": "Wide"
+    },
+    {
+      "id": "level2",
+      "type": "box",
+      "motion": "static",
+      "materialId": "lowFriction",
+      "surfacePolicy": "autoBoxTop",
+      "size": [
+        1.7,
+        0.5,
+        1.15
+      ],
+      "pose": {
+        "position": [
+          -0.2002762,
+          1.24832726,
+          1.32773483
+        ],
+        "rotation": [
+          0.00172530289,
+          -1.81838254E-06,
+          0.0001265473,
+          0.999998569
+        ]
+      },
+      "massKg": 25.0,
+      "graspable": true,
+      "settleAsDynamic": true,
+      "movable": false,
+      "presetId": "Wide"
+    },
+    {
+      "id": "island",
+      "type": "box",
+      "motion": "static",
+      "materialId": "lowFriction",
+      "surfacePolicy": "autoBoxTop",
+      "size": [
+        1.2,
+        1.0,
+        1.2
+      ],
+      "pose": {
+        "position": [
+          1.75,
+          0.5,
+          0.825
+        ],
+        "rotation": [
+          7.80578269E-10,
+          2.62116561E-11,
+          -1.63643987E-09,
+          1.0
+        ]
+      },
+      "massKg": 25.0,
+      "graspable": true,
+      "settleAsDynamic": true,
+      "movable": false,
+      "presetId": "Tall"
+    }
+  ],
+  "start": {
+    "torso": {
+      "position": [
+        0.0,
+        0.4,
+        -0.4
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "leftHand": {
+      "position": [
+        -0.3,
+        1.15,
+        -0.15
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "rightHand": {
+      "position": [
+        0.3,
+        0.95,
+        -0.15
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "goal": {
+    "frame": "structure",
+    "center": [
+      -0.2002762,
+      2.09832716,
+      1.32773483
+    ],
+    "size": [
+      0.6,
+      0.4,
+      0.6
+    ],
+    "dwellSeconds": 0.3,
+    "maxTorsoSpeed": 0.5
+  },
+  "validation": {
+    "passed": true,
+    "reason": "Dynamic settlement and coarse geometry passed; runtime boxes frozen static",
+    "inputHash": "d7489865529856dc273e59be3d0fce90cdaf2a961f0fbed78a385327734c0ed3",
+    "unityVersion": "6000.3.24f1",
+    "scope": "dynamic-settle-then-static",
+    "staticObjects": 1,
+    "dynamicObjects": 4,
+    "simulationSteps": 151,
+    "simulatedSeconds": 3.01999879,
+    "fixedDeltaTime": 0.0199999921,
+    "maxPenetration": 0.0011523962,
+    "boxes": [
+      {
+        "id": "level0",
+        "displacement": 0.000263866154,
+        "angle": 0.0,
+        "speed": 0.0,
+        "angularSpeed": 0.0,
+        "windowDrift": 4.20062279E-05,
+        "windowAngle": 0.0,
+        "sleeping": true
+      },
+      {
+        "id": "level1",
+        "displacement": 0.001165828,
+        "angle": 0.16785875,
+        "speed": 0.0,
+        "angularSpeed": 0.0,
+        "windowDrift": 0.000120370794,
+        "windowAngle": 0.0,
+        "sleeping": true
+      },
+      {
+        "id": "level2",
+        "displacement": 0.003217667,
+        "angle": 0.193826586,
+        "speed": 0.0,
+        "angularSpeed": 0.0,
+        "windowDrift": 0.000219455862,
+        "windowAngle": 0.0,
+        "sleeping": true
+      },
+      {
+        "id": "island",
+        "displacement": 0.0,
+        "angle": 0.0,
+        "speed": 0.0,
+        "angularSpeed": 0.0,
+        "windowDrift": 0.0,
+        "windowAngle": 0.0,
+        "sleeping": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+ "counts": {
+  "Easy": 41,
+  "Standard": 60,
+  "Hard": 60
+ },
+ "uniqueIds": true,
+ "hashMismatches": [],
+ "singleBox": [],
+ "vs-training-two-step": {
+  "references": 1,
+  "linked": [],
+  "minDistanceByTier": {
+   "Easy": 2,
+   "Standard": 9
+  },
+  "noSharedSupportGraph": 116
+ },
+ "vs-c2-train": {
+  "references": 604,
+  "linked": [],
+  "minDistanceByTier": {
+   "Easy": 2,
+   "Hard": 2,
+   "Standard": 2
+  },
+  "noSharedSupportGraph": 3
+ },
+ "vs-c0c1-train": {
+  "references": 266,
+  "linked": [],
+  "minDistanceByTier": {
+   "Easy": 2,
+   "Standard": 9
+  },
+  "noSharedSupportGraph": 116
+ },
+ "vs-v2-train-all": {
+  "references": 893,
+  "linked": [],
+  "minDistanceByTier": {
+   "Easy": 2,
+   "Hard": 2,
+   "Standard": 2
+  },
+  "noSharedSupportGraph": 0
+ },
+ "vs-v2-eval-all": {
+  "references": 180,
+  "linked": [],
+  "minDistanceByTier": {
+   "Easy": 2,
+   "Hard": 3,
+   "Standard": 2
+  },
+  "noSharedSupportGraph": 3
+ },
+ "withinConfirm": {
+  "linkedPairs": 0,
+  "acrossTiers": 0,
+  "pairs": [],
+  "minPairDistance": 2
+ }
+}

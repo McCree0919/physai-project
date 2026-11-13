@@ -15,7 +15,11 @@ using UnityEngine;
 public static class ClimbConfirmSet
 {
     public const string Root="structures/box-stacks-v3-confirm";
-    public const int PerDifficulty=60,FirstSeed=300000,SeedBudget=5000;
+    public const int PerDifficulty=60,FirstSeed=300000,SeedBudget=5000,EasySeedBudget=50000;
+    // Easy is near saturation under these rules (14 of 5000 candidates kept; about 41 independent within 50000 seeds), so Easy takes every
+    // independent structure within EasySeedBudget and its count is recorded, not required (user decision 2026-11-12, recorded in the
+    // pre-registration as a deviation from §7.2). Standard and Hard must reach PerDifficulty within SeedBudget.
+    static int Budget(BoxDifficulty d)=>d==BoxDifficulty.Easy?EasySeedBudget:SeedBudget;
 
     // Diagnostic only (writes nothing): how many Easy structures pass the separation rules (before settlement) as the seed budget grows.
     public static void CountEasyCandidates()
@@ -52,7 +56,7 @@ public static class ClimbConfirmSet
         foreach(BoxDifficulty difficulty in Enum.GetValues(typeof(BoxDifficulty)))
         {
             int count=0;
-            for(int seed=FirstSeed;seed<FirstSeed+SeedBudget&&count<PerDifficulty;seed++)
+            for(int seed=FirstSeed;seed<FirstSeed+Budget(difficulty)&&count<PerDifficulty;seed++)
             {
                 void Drop(string why)=>skipped.Add(new ClimbGeneratorV2Sets.Skip {difficulty=difficulty.ToString(),seed=seed,reason=why});
                 StructureDocument doc;
@@ -75,12 +79,12 @@ public static class ClimbConfirmSet
             Debug.Log($"CONFIRM_SET {difficulty} kept={count} skipped={skipped.Count(s=>s.difficulty==difficulty.ToString())} reasons="+string.Join(",",
                 skipped.Where(s=>s.difficulty==difficulty.ToString()).GroupBy(s=>s.reason.StartsWith("LinkedTo:v2-eval")?"LinkedToV2Eval":s.reason.StartsWith("LinkedTo:v2-train")?"LinkedToV2Train":
                     s.reason.StartsWith("LinkedToConfirm")?"LinkedToConfirm":s.reason.Split(':')[0]).OrderByDescending(g=>g.Count()).Select(g=>g.Key+"="+g.Count())));
-            if(count<PerDifficulty)shortTiers.Add($"{difficulty}:{count}");
+            if(count<PerDifficulty&&difficulty!=BoxDifficulty.Easy)shortTiers.Add($"{difficulty}:{count}");
         }
-        if(shortTiers.Count>0)throw new InvalidOperationException($"Too few confirmation structures within {SeedBudget} seeds per difficulty: {string.Join(",",shortTiers)} (need {PerDifficulty}); no manifest written");
+        if(shortTiers.Count>0)throw new InvalidOperationException($"Too few confirmation structures within {SeedBudget} seeds (Standard/Hard): {string.Join(",",shortTiers)} (need {PerDifficulty}); no manifest written");
         var manifest=new ClimbGeneratorV2Sets.Manifest {set="confirm",unityVersion=Application.unityVersion,generatorVersion=BoxStackGeneratorV2.Version,firstSeed=FirstSeed,perDifficulty=PerDifficulty,
             minTreadDepth=ClimberGeometry.MinTreadDepth,minTreadWidth=ClimberGeometry.MinTreadWidth,reach=ClimberGeometry.Reach,headroom=ClimberGeometry.Headroom,
-            rule="seeds from 300000 in order; single boxes dropped; kept if settlement passes and not linked (same support graph, all bounds within 0.05 m, mirrors included) "+
+            rule="seeds from 300000 in order (Easy: up to 50000 seeds, all independent structures kept, count not required; Standard/Hard: 60 within 5000 seeds); single boxes dropped; kept if settlement passes and not linked (same support graph, all bounds within 0.05 m, mirrors included) "+
                  "to the training two-step, any v2 eval or v2 train structure, or any kept confirmation structure of any difficulty; nearestEval = closest reference structure",
             structures=entries.ToArray(),skipped=skipped.ToArray()};
         File.WriteAllText(Root+"/manifest.json",JsonUtility.ToJson(manifest,true));

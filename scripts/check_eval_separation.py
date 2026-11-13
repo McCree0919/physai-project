@@ -2,7 +2,12 @@
 Independent of the C# freeze: for every structure of the C2 training pools (A-D) and of the C0/C1 pools, the smallest grid distance
 (0.05 m units, max over box bounds after canonical ordering) to any v2 eval structure with the same support graph, original or x-mirrored,
 across all difficulties. Linked = distance <= 1 (the §11 / generator-v2 rule). Also lists near-duplicate pairs inside the eval set
-(all difficulties). Prints a JSON summary."""
+(all difficulties). Prints a JSON summary.
+--confirm: the same check for the layer 3 confirmation set (structures/box-stacks-v3-confirm, LAYER3_CONFIRMATION_PREREG.md) against the
+training two-step, the C2 and C0/C1 pools, all v2 train structures (superset of the pools) and all v2 eval structures, plus every pair
+inside the confirmation set (within and across difficulties); also re-hashes every file and checks counts and box counts."""
+import hashlib
+import sys
 import collections
 import json
 from pathlib import Path
@@ -45,4 +50,35 @@ def main():
     print(json.dumps(out, indent=1))
 
 
-if __name__ == '__main__':main()
+def confirm():
+    m = json.loads((ROOT/'structures/box-stacks-v3-confirm/manifest.json').read_text())['structures']
+    ev = json.loads((ROOT/'structures/box-stacks-v2/eval/manifest.json').read_text())['structures']
+    train = json.loads((ROOT/'structures/box-stacks-v2/train/manifest.json').read_text())['structures']
+    tkey = {e['id']: e['geometryKey'] for e in train}
+    c2 = json.loads((ROOT/'structures/curriculum-v2/pools.json').read_text())
+    c1 = json.loads((ROOT/'structures/curriculum-v1/pools.json').read_text())
+    two = json.loads((ROOT/'structures/zero-shot-v1/manifest.json').read_text())['trainingGeometryKey']
+    refs = {'training-two-step': [('two-step', two)],
+            'c2-train': [(i, tkey[i]) for i in sorted({e['id'] for q in c2['stages'][0]['pools'] for e in q['structures']})],
+            'c0c1-train': [(i, tkey[i]) for i in sorted({e['id'] for s in c1['stages'] for e in s['structures']})],
+            'v2-train-all': [(e['id'], e['geometryKey']) for e in train],
+            'v2-eval-all': [(e['id'], e['geometryKey']) for e in ev]}
+    C = [(e['id'], e['difficulty'], variants(e['geometryKey'])) for e in m]
+    out = dict(counts=dict(collections.Counter(e['difficulty'] for e in m)), uniqueIds=len({e['id'] for e in m}) == len(m),
+               hashMismatches=[e['id'] for e in m if hashlib.sha256((ROOT/e['path']).read_bytes()).hexdigest() != e['sha256']],
+               singleBox=[e['id'] for e in m if len(boxes(e['geometryKey'])) < 2])
+    for name, items in refs.items():
+        R = [variants(k) for _, k in items];mins, linked = {}, []
+        for i, d, v in C:
+            ds = [x for x in (distance(v, r) for r in R) if x is not None]
+            if ds:mins.setdefault(d, []).append(min(ds))
+            if ds and min(ds) <= 1:linked.append(i)
+        out['vs-'+name] = dict(references=len(items), linked=linked, minDistanceByTier={d: min(x) for d, x in sorted(mins.items())},
+                               noSharedSupportGraph=len(C)-sum(len(x) for x in mins.values()))
+    pairs = [(a[0], b[0], a[1], b[1], d) for k, a in enumerate(C) for b in C[k+1:] for d in [distance(a[2], b[2])] if d is not None and d <= 1]
+    allpairs = [d for k, a in enumerate(C) for b in C[k+1:] for d in [distance(a[2], b[2])] if d is not None]
+    out['withinConfirm'] = dict(linkedPairs=len(pairs), acrossTiers=sum(p[2] != p[3] for p in pairs), pairs=pairs, minPairDistance=min(allpairs) if allpairs else None)
+    print(json.dumps(out, indent=1))
+
+
+if __name__ == '__main__':confirm() if '--confirm' in sys.argv else main()
