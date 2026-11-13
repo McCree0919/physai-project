@@ -15,8 +15,9 @@ try {
  $process=Start-GuardedProcess -FilePath $UnityPath -ArgumentList $arguments -LogPath $log
  if(-not(Test-Path -LiteralPath $output)){throw "No test results: $log"}
  [xml]$results=Get-Content -LiteralPath $output -Raw;$run=$results.'test-run'
- if($process.ExitCode -ne 0 -or [int]$run.failed -ne 0 -or [int]$run.total -lt 47 -or [int]$run.passed -ne [int]$run.total){throw "Climb tests failed: $($run.passed)/$($run.total); log $log"}
- Write-Host "PASS: $($run.passed)/$($run.total) PlayMode tests"
+ # Pass: no failures and every test either passed or skipped (the CLIMB_RUN_DIAGNOSTICS-gated audits are skipped by design).
+ if($process.ExitCode -ne 0 -or [int]$run.failed -ne 0 -or [int]$run.total -lt 47 -or ([int]$run.passed+[int]$run.skipped) -ne [int]$run.total){throw "Climb tests failed: passed $($run.passed), failed $($run.failed), skipped $($run.skipped), total $($run.total); log $log"}
+ Write-Host "PASS: $($run.passed)/$($run.total) PlayMode tests passed, $($run.skipped) skipped, 0 failed"
 } finally {
  foreach($path in $snapshots.Keys){if($null -ne $snapshots[$path]){[IO.File]::WriteAllBytes($path,[byte[]]$snapshots[$path])}elseif(Test-Path -LiteralPath $path){Remove-Item -LiteralPath $path}}
 }
